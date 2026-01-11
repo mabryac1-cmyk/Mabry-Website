@@ -1,38 +1,77 @@
-import { type User, type InsertUser } from "@shared/schema";
-import { randomUUID } from "crypto";
-
-// modify the interface with any CRUD methods
-// you might need
+import { db } from "./db";
+import {
+  services, locations, businessInfo,
+  type Service, type InsertService,
+  type Location, type InsertLocation,
+  type BusinessInfo, type InsertBusinessInfo
+} from "@shared/schema";
+import { eq } from "drizzle-orm";
 
 export interface IStorage {
-  getUser(id: string): Promise<User | undefined>;
-  getUserByUsername(username: string): Promise<User | undefined>;
-  createUser(user: InsertUser): Promise<User>;
+  // Services
+  getServices(): Promise<Service[]>;
+  getServiceBySlug(slug: string): Promise<Service | undefined>;
+  createService(service: InsertService): Promise<Service>;
+
+  // Locations
+  getLocations(): Promise<Location[]>;
+  getLocationBySlug(slug: string): Promise<Location | undefined>;
+  createLocation(location: InsertLocation): Promise<Location>;
+
+  // Business Info
+  getBusinessInfo(): Promise<BusinessInfo | undefined>;
+  createBusinessInfo(info: InsertBusinessInfo): Promise<BusinessInfo>;
 }
 
-export class MemStorage implements IStorage {
-  private users: Map<string, User>;
-
-  constructor() {
-    this.users = new Map();
+export class DatabaseStorage implements IStorage {
+  // Services
+  async getServices(): Promise<Service[]> {
+    return await db.select().from(services);
   }
 
-  async getUser(id: string): Promise<User | undefined> {
-    return this.users.get(id);
+  async getServiceBySlug(slug: string): Promise<Service | undefined> {
+    const [service] = await db.select().from(services).where(eq(services.slug, slug));
+    return service;
   }
 
-  async getUserByUsername(username: string): Promise<User | undefined> {
-    return Array.from(this.users.values()).find(
-      (user) => user.username === username,
-    );
+  async createService(insertService: InsertService): Promise<Service> {
+    const [service] = await db.insert(services).values(insertService).returning();
+    return service;
   }
 
-  async createUser(insertUser: InsertUser): Promise<User> {
-    const id = randomUUID();
-    const user: User = { ...insertUser, id };
-    this.users.set(id, user);
-    return user;
+  // Locations
+  async getLocations(): Promise<Location[]> {
+    return await db.select().from(locations);
+  }
+
+  async getLocationBySlug(slug: string): Promise<Location | undefined> {
+    const [location] = await db.select().from(locations).where(eq(locations.slug, slug));
+    return location;
+  }
+
+  async createLocation(insertLocation: InsertLocation): Promise<Location> {
+    const [location] = await db.insert(locations).values(insertLocation).returning();
+    return location;
+  }
+
+  // Business Info
+  async getBusinessInfo(): Promise<BusinessInfo | undefined> {
+    // Assuming we use 'main' as the key for the primary business info
+    const [info] = await db.select().from(businessInfo).where(eq(businessInfo.key, 'main'));
+    return info;
+  }
+
+  async createBusinessInfo(insertInfo: InsertBusinessInfo): Promise<BusinessInfo> {
+    // Upsert logic for business info if key exists
+    const [info] = await db.insert(businessInfo)
+      .values(insertInfo)
+      .onConflictDoUpdate({
+        target: businessInfo.key,
+        set: insertInfo
+      })
+      .returning();
+    return info;
   }
 }
 
-export const storage = new MemStorage();
+export const storage = new DatabaseStorage();
