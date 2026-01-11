@@ -31,7 +31,7 @@ export function Header() {
             </div>
             <div className="flex flex-col">
               <span className="font-bold text-lg leading-tight text-primary">
-                Mabry's AC & Heating
+                Mabry's Air Conditioning & Heating, Inc.
               </span>
               <span className="text-xs text-muted-foreground">
                 BBB A+ Rated
@@ -45,11 +45,11 @@ export function Header() {
             </Link>
             
             <div className="relative group" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
-              <button className="flex items-center gap-1 text-sm font-semibold hover:text-accent transition-colors">
+              <button className="flex items-center gap-1 text-sm font-semibold hover:text-accent transition-colors py-2">
                 Services <ChevronDown className="w-4 h-4" />
               </button>
               {servicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-56 bg-white shadow-lg rounded-lg border py-2">
+                <div className="absolute top-full left-0 w-56 bg-white shadow-lg rounded-lg border py-2">
                   {services.map((service) => (
                     <Link
                       key={service.slug}
@@ -64,11 +64,11 @@ export function Header() {
             </div>
 
             <div className="relative group" onMouseEnter={() => setAreasOpen(true)} onMouseLeave={() => setAreasOpen(false)}>
-              <button className="flex items-center gap-1 text-sm font-semibold hover:text-accent transition-colors">
+              <button className="flex items-center gap-1 text-sm font-semibold hover:text-accent transition-colors py-2">
                 Service Areas <ChevronDown className="w-4 h-4" />
               </button>
               {areasOpen && (
-                <div className="absolute top-full left-0 mt-2 w-56 bg-white shadow-lg rounded-lg border py-2">
+                <div className="absolute top-full left-0 w-56 bg-white shadow-lg rounded-lg border py-2">
                   {locations.map((location) => (
                     <Link
                       key={location.slug}
