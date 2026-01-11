@@ -25,14 +25,14 @@ export function Header() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center text-white group-hover:scale-105 transition-transform">
+          <div className="flex items-center gap-3">
+            <Link href="/" className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center text-white hover:scale-105 transition-transform">
               <Thermometer className="w-7 h-7" />
-            </div>
+            </Link>
             <div className="flex flex-col">
-              <span className="font-bold text-lg leading-tight text-primary">
+              <Link href="/" className="font-bold text-lg leading-tight text-primary hover:text-accent transition-colors">
                 Mabry's Air Conditioning & Heating, Inc.
-              </span>
+              </Link>
               <a 
                 href="https://www.bbb.org/us/tx/friendswood/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805/addressId/92394"
                 target="_blank"
@@ -42,7 +42,7 @@ export function Header() {
                 BBB A+ Rated
               </a>
             </div>
-          </Link>
+          </div>
 
           <nav className="hidden lg:flex items-center gap-8">
             <Link href="/" className="text-sm font-semibold hover:text-accent transition-colors">
