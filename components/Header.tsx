@@ -33,9 +33,14 @@ export function Header() {
               <span className="font-bold text-lg leading-tight text-primary">
                 Mabry's Air Conditioning & Heating, Inc.
               </span>
-              <span className="text-xs text-muted-foreground">
+              <a 
+                href="https://www.bbb.org/us/tx/friendswood/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805/addressId/92394"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-muted-foreground hover:text-accent transition-colors"
+              >
                 BBB A+ Rated
-              </span>
+              </a>
             </div>
           </Link>
 

@@ -17,9 +17,14 @@ export function Footer() {
               <p className="flex items-center gap-2">
                 <span className="font-semibold">License:</span> {businessInfo.license}
               </p>
-              <p className="flex items-center gap-2">
+              <a 
+                href="https://www.bbb.org/us/tx/friendswood/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805/addressId/92394"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-accent transition-colors"
+              >
                 <span className="font-semibold">BBB Rating:</span> {businessInfo.bbbRating}
-              </p>
+              </a>
             </div>
           </div>
 

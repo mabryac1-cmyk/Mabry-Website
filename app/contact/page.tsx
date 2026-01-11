@@ -107,13 +107,18 @@ export default function ContactPage() {
                     <p className="font-bold text-primary">{businessInfo.license}</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 bg-accent/10 p-4 rounded-xl">
+                <a 
+                  href="https://www.bbb.org/us/tx/friendswood/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805/addressId/92394"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 bg-accent/10 p-4 rounded-xl hover:bg-accent/20 transition-colors"
+                >
                   <Award className="w-8 h-8 text-accent" />
                   <div>
                     <p className="text-xs text-muted-foreground">BBB Rating</p>
                     <p className="font-bold text-primary">{businessInfo.bbbRating}</p>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
 

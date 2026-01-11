@@ -43,15 +43,20 @@ export default function AboutPage() {
             <div className="bg-gray-50 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-primary mb-6">Our Credentials</h3>
               <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent shrink-0">
+                <a 
+                  href="https://www.bbb.org/us/tx/friendswood/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805/addressId/92394"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-4 group"
+                >
+                  <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent shrink-0 group-hover:bg-accent/20 transition-colors">
                     <Award className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-primary">BBB A+ Accredited</h4>
+                    <h4 className="font-bold text-primary group-hover:text-accent transition-colors">BBB A+ Accredited</h4>
                     <p className="text-muted-foreground">Maintaining the highest rating from the Better Business Bureau through years of quality service.</p>
                   </div>
-                </div>
+                </a>
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent shrink-0">
                     <Shield className="w-6 h-6" />
