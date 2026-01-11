@@ -51,10 +51,8 @@ export async function registerRoutes(
 }
 
 async function seedDatabase() {
-  const existingServices = await storage.getServices();
-  if (existingServices.length === 0) {
-    console.log("Seeding services...");
-    await storage.createService({
+  const services = [
+    {
       name: "AC Repair",
       slug: "ac-repair",
       description: "Fast and reliable air conditioning repair services.",
@@ -68,8 +66,8 @@ async function seedDatabase() {
         </ul>
         <p>We service all major brands and models.</p>
       `
-    });
-    await storage.createService({
+    },
+    {
       name: "Furnace Installation",
       slug: "furnace-installation",
       description: "Professional furnace installation and replacement.",
@@ -82,8 +80,8 @@ async function seedDatabase() {
           <li>Warranty Protection</li>
         </ul>
       `
-    });
-    await storage.createService({
+    },
+    {
       name: "Duct Cleaning",
       slug: "duct-cleaning",
       description: "Improve your indoor air quality with thorough duct cleaning.",
@@ -91,52 +89,71 @@ async function seedDatabase() {
         <h2>Thorough Duct Cleaning</h2>
         <p>Breathe easier with our comprehensive air duct cleaning services. We remove dust, pollen, and allergens from your HVAC system.</p>
       `
-    });
+    }
+  ];
+
+  for (const service of services) {
+    const existing = await storage.getServiceBySlug(service.slug);
+    if (!existing) {
+      await storage.createService(service);
+    }
   }
 
-  const existingLocations = await storage.getLocations();
-  if (existingLocations.length === 0) {
-    console.log("Seeding locations...");
-    await storage.createLocation({
-      name: "Conroe",
-      slug: "conroe-tx",
+  const locations = [
+    {
+      name: "Friendswood",
+      slug: "friendswood-tx",
       state: "TX",
-      zipCodes: ["77301", "77302", "77303", "77304", "77384", "77385"],
-      latitude: "30.3119",
-      longitude: "-95.4560"
-    });
-    await storage.createLocation({
-      name: "The Woodlands",
-      slug: "the-woodlands-tx",
+      zipCodes: ["77546"],
+      latitude: "29.5294",
+      longitude: "-95.2010"
+    },
+    {
+      name: "Pearland",
+      slug: "pearland-tx",
       state: "TX",
-      zipCodes: ["77380", "77381", "77382", "77389"],
-      latitude: "30.1658",
-      longitude: "-95.4613"
-    });
-    await storage.createLocation({
-      name: "Spring",
-      slug: "spring-tx",
+      zipCodes: ["77581", "77584", "77588"],
+      latitude: "29.5636",
+      longitude: "-95.2860"
+    },
+    {
+      name: "Alvin",
+      slug: "alvin-tx",
       state: "TX",
-      zipCodes: ["77373", "77379", "77388", "77386"],
-      latitude: "30.0799",
-      longitude: "-95.4172"
-    });
+      zipCodes: ["77511", "77512"],
+      latitude: "29.4238",
+      longitude: "-95.2449"
+    },
+    {
+      name: "Clear Lake",
+      slug: "clear-lake-tx",
+      state: "TX",
+      zipCodes: ["77058", "77059", "77062"],
+      latitude: "29.5647",
+      longitude: "-95.1189"
+    }
+  ];
+
+  for (const loc of locations) {
+    const existing = await storage.getLocationBySlug(loc.slug);
+    if (!existing) {
+      await storage.createLocation(loc);
+    }
   }
 
-  const info = await storage.getBusinessInfo();
-  if (!info) {
-    console.log("Seeding business info...");
-    await storage.createBusinessInfo({
-      key: "main",
-      name: "Elite HVAC Solutions",
-      phone: "(555) 123-4567",
-      email: "service@elitehvac.com",
-      street: "123 Cool Breeze Ln",
-      city: "Conroe",
-      state: "TX",
-      zip: "77301",
-      geoLat: "30.3119",
-      geoLng: "-95.4560"
-    });
-  }
+  // Always update business info to the latest requested
+  const infoData = {
+    key: "main",
+    name: "Elite HVAC Solutions",
+    phone: "(555) 123-4567",
+    email: "service@elitehvac.com",
+    street: "123 Main St",
+    city: "Friendswood",
+    state: "TX",
+    zip: "77546",
+    geoLat: "29.5294",
+    geoLng: "-95.2010"
+  };
+
+  await storage.createBusinessInfo(infoData);
 }
