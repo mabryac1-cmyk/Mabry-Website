@@ -1,0 +1,113 @@
+Business Name:
+Mabry’s Air Conditioning & Heating, Inc.
+Business Type:
+Residential Air Conditioning and Heating Contractor (HVAC)
+License Number:
+TACLB12058E
+Years in Business:
+Established in 1986
+Service Type:
+Residential service only (no commercial work)
+Pricing Model:
+Flat-rate pricing with no hidden or surprise charges
+Trust & Credibility:
+BBB Accredited, A+ Rating, locally owned and operated, trusted in the community for decades
+Primary Service Areas:
+Friendswood, TX
+Pearland, TX
+Clear Lake (Houston), TX
+Alvin, TX
+🎯 WEBSITE GOAL
+Create a professional, trustworthy, easy-to-navigate website focused on strong local Google SEO, clear residential HVAC services, and converting visitors into phone calls and service requests.
+The site should emphasize:
+Local expertise in the listed cities
+Honest, flat-rate pricing
+Long-standing reputation since 1986
+BBB A+ rating and professional licensing
+🧭 REQUIRED SITE STRUCTURE & NAVIGATION
+Main Navigation Menu:
+Home
+About
+Services (dropdown)
+AC Repair
+Heating Repair & Maintenance
+AC Installation
+Service Areas (dropdown)
+Friendswood, TX
+Pearland, TX
+Clear Lake (Houston), TX
+Alvin, TX
+Reviews / Testimonials
+Contact
+🏠 HOME PAGE CONTENT GOALS
+Clear headline: Residential AC & Heating Experts Since 1986
+Mention flat-rate pricing, no hidden fees
+Highlight BBB A+ accreditation and Texas HVAC license number
+Emphasize local service in Friendswood, Pearland, Clear Lake, and Alvin
+Strong call-to-action: “Call Now for Service” and “Request Service”
+Brief overview of services with links to each service page
+Trust badges and customer satisfaction messaging
+ℹ️ ABOUT PAGE GOALS
+Company history since 1986
+Family/local business feel
+Commitment to honest pricing and quality workmanship
+Residential focus (not commercial)
+Licensing and professionalism
+Community trust and long-term reputation
+🔧 SERVICE PAGES (SEO-FOCUSED)
+Each service page should be written for both customers and Google, targeting local searches.
+AC Repair Page
+Fast, reliable residential AC repair
+Common problems fixed
+Benefits of professional repair
+Service areas mentioned
+Encourage scheduling service
+Heating Repair & Maintenance Page
+Furnace and heating system repair
+Seasonal maintenance importance
+Safety and efficiency benefits
+Residential focus only
+AC Installation Page
+New system installation and replacements
+Energy-efficient upgrades
+Proper sizing and professional installation
+Financing or consultation messaging if available
+Each service page should mention:
+Local cities served
+Licensed and insured technicians
+Flat-rate pricing model
+📍 SERVICE AREA PAGES (LOCAL SEO PAGES)
+Each city page should include:
+City-specific headline (example: “Air Conditioning & Heating Services in Pearland, TX”)
+Residential HVAC services offered in that city
+Mention of neighborhoods or local relevance
+Why homeowners in that city trust Mabry’s
+Call-to-action to schedule service
+Pages needed:
+Friendswood, TX
+Pearland, TX
+Clear Lake (Houston), TX
+Alvin, TX
+⭐ REVIEWS / TESTIMONIALS PAGE
+Display customer reviews
+Emphasize long-term reputation and repeat customers
+Encourage new customers to leave Google reviews
+📞 CONTACT PAGE
+Phone number prominently displayed
+Service request form
+Business hours
+Service area summary
+Trust signals (license number, BBB A+, years in business)
+🔍 SEO & TECHNICAL REQUIREMENTS
+Mobile-first design
+Fast loading
+Local business schema markup if available
+Each page should have:
+Unique page titles
+Meta descriptions
+Local keyword focus
+Example keywords to target:
+Air conditioning repair Friendswood TX
+HVAC company Pearland TX
+AC installation Clear Lake Houston
+Heating repair Alvin TX
