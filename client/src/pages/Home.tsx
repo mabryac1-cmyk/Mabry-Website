@@ -6,7 +6,7 @@ import { SeoHead } from "@/components/SeoHead";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { useServices, useLocations, useBusinessInfo } from "@/hooks/use-hvac";
 import { Button } from "@/components/ui/button";
-import { Shield, Clock, Award, ArrowRight, MapPin } from "lucide-react";
+import { Shield, Clock, Award, ArrowRight, MapPin, Thermometer } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Home() {
