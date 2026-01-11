@@ -79,7 +79,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-primary">Business Hours</h3>
-                    <p className="text-muted-foreground">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                    <p className="text-muted-foreground">Monday - Friday: 7:30 AM - 5:00 PM</p>
                     <p className="text-muted-foreground">Emergency service available</p>
                   </div>
                 </div>

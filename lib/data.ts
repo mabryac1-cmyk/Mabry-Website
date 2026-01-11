@@ -1,7 +1,7 @@
 export const businessInfo = {
   name: "Mabry's Air Conditioning & Heating, Inc.",
   phone: "281-482-8400",
-  email: "service@mabrysac.com",
+  email: "office@mabryac.com",
   address: {
     street: "123 Industrial Blvd",
     city: "Friendswood",
