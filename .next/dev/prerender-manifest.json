@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/areas/friendswood":{},"/areas/pearland":{},"/areas/clear-lake":{},"/areas/alvin":{}},"dynamicRoutes":{"/areas/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/areas/[slug]","routeRegex":"^\\/areas\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"1fa50ccaeafd2abf98a06224bb70b221","previewModeSigningKey":"c05927d7f3a27b7e34a0af17db8c6b68bf1aafda8b6fec4eac7fbf443d7c9df2","previewModeEncryptionKey":"777d03d075b16f08d937d4eca29164a36e81cf78b38017615632fdf3aee6d12c"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "b0c5805bf28796fe446a308220b10a47",
+    "previewModeSigningKey": "df63d72a75832cc4fd0a353a1251231fd2e54881f5bda5a636ee596d34cb1a1c",
+    "previewModeEncryptionKey": "963a21d3fcfcb338fcf7682c0ac3777ada2261ddff54bdc571cd9cfa5a065500"
+  }
+}
