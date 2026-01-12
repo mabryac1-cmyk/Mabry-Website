@@ -44,12 +44,12 @@ export default function Home() {
                 <Phone className="w-5 h-5" />
                 Call Now
               </a>
-              <Link 
-                href="/contact"
+              <a 
+                href={`mailto:${businessInfo.email}?subject=Quote Request from Website`}
                 className="border-2 border-white text-white hover:bg-white hover:text-primary font-bold uppercase tracking-wider py-4 px-8 text-lg rounded-lg transition-colors"
               >
                 Get a Quote
-              </Link>
+              </a>
             </div>
             <div className="pt-4 flex items-center gap-4 text-sm text-white/80">
               <span className="flex items-center gap-1">

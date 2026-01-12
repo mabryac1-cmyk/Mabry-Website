@@ -93,12 +93,12 @@ export function Header() {
             <Link href="/reviews" className="text-sm font-semibold hover:text-accent transition-colors">
               Reviews
             </Link>
-            <Link 
-              href="/contact" 
+            <a 
+              href={`mailto:${businessInfo.email}?subject=Quote Request from Website`}
               className="bg-accent hover:bg-accent/90 text-white font-bold px-6 py-3 rounded-lg transition-colors"
             >
               Get a Quote
-            </Link>
+            </a>
           </nav>
 
           <button className="lg:hidden p-2" onClick={() => setIsOpen(!isOpen)} data-testid="button-mobile-menu">
@@ -145,13 +145,13 @@ export function Header() {
             <Link href="/reviews" className="block text-lg font-semibold" onClick={() => setIsOpen(false)}>
               Reviews
             </Link>
-            <Link 
-              href="/contact" 
+            <a 
+              href={`mailto:${businessInfo.email}?subject=Quote Request from Website`}
               className="block w-full text-center bg-accent text-white font-bold py-3 rounded-lg"
               onClick={() => setIsOpen(false)}
             >
               Get a Quote
-            </Link>
+            </a>
           </div>
         </div>
       )}

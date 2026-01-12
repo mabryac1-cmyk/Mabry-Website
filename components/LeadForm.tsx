@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Send, Loader2, CheckCircle } from "lucide-react";
+import { Send, CheckCircle } from "lucide-react";
 
 const leadSchema = z.object({
   name: z.string().min(2, "Name is required"),
@@ -24,9 +24,7 @@ interface LeadFormProps {
 }
 
 export function LeadForm({ className = "", preselectedService, preselectedCity }: LeadFormProps) {
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-  const [error, setError] = useState<string | null>(null);
 
   const {
     register,
@@ -41,28 +39,20 @@ export function LeadForm({ className = "", preselectedService, preselectedCity }
     },
   });
 
-  const onSubmit = async (data: LeadFormData) => {
-    setIsSubmitting(true);
-    setError(null);
-
-    try {
-      const response = await fetch("/api/leads", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-
-      if (!response.ok) {
-        throw new Error("Failed to submit form");
-      }
-
-      setIsSuccess(true);
-      reset();
-    } catch (err) {
-      setError("Something went wrong. Please try again or call us directly.");
-    } finally {
-      setIsSubmitting(false);
-    }
+  const onSubmit = (data: LeadFormData) => {
+    const subject = encodeURIComponent("Quote Request from Website");
+    const body = encodeURIComponent(
+      `Name: ${data.name}\n` +
+      `Email: ${data.email}\n` +
+      `Phone: ${data.phone}\n` +
+      `Service: ${data.service || "Not specified"}\n` +
+      `City: ${data.city || "Not specified"}\n` +
+      `Message: ${data.message || "None"}`
+    );
+    
+    window.location.href = `mailto:office@mabryac.com?subject=${subject}&body=${body}`;
+    setIsSuccess(true);
+    reset();
   };
 
   if (isSuccess) {
@@ -152,27 +142,13 @@ export function LeadForm({ className = "", preselectedService, preselectedCity }
 
         <input type="hidden" {...register("city")} />
 
-        {error && (
-          <p className="text-red-500 text-sm">{error}</p>
-        )}
-
         <button
           type="submit"
-          disabled={isSubmitting}
-          className="w-full bg-accent hover:bg-accent/90 text-white font-bold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 disabled:opacity-50"
+          className="w-full bg-accent hover:bg-accent/90 text-white font-bold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2"
           data-testid="button-submit-lead"
         >
-          {isSubmitting ? (
-            <>
-              <Loader2 className="w-5 h-5 animate-spin" />
-              Sending...
-            </>
-          ) : (
-            <>
-              <Send className="w-5 h-5" />
-              Request Quote
-            </>
-          )}
+          <Send className="w-5 h-5" />
+          Request Quote
         </button>
       </form>
     </div>
