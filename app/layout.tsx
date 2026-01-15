@@ -18,7 +18,7 @@ const businessSchema = {
   "@id": "https://www.mabryac.com/#business",
   "name": "Mabry's Air Conditioning & Heating, Inc.",
   "url": "https://www.mabryac.com/",
-  "telephone": "+1-281-482-8400",
+  "telephone": "+1-281-331-5248",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "2110 S Gordon",

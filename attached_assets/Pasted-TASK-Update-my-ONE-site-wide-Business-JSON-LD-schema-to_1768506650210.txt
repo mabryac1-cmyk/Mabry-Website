@@ -1,0 +1,88 @@
+TASK: Update my ONE site-wide Business JSON-LD schema to use the Alvin address and the updated phone number.
+
+CONTEXT:
+- This is a Next.js 15 App Router website built in Replit.
+- The business schema is injected site-wide from app/layout.tsx (RootLayout).
+- I want to REPLACE the existing HVACBusiness/LocalBusiness schema with an updated version.
+- The ONLY change from the current correct schema is the phone number.
+
+IMPORTANT RULES:
+- Keep ONLY ONE HVACBusiness/LocalBusiness schema site-wide.
+- Do NOT create multiple business entities.
+- Do NOT add or keep any Friendswood physical address in the schema.
+- Friendswood must remain ONLY as an areaServed city (service area), not an address.
+- Do NOT remove any existing WebPage schemas on city pages (/areas/*).
+- Only update the Business schema.
+- Ensure the updated schema appears on EVERY page via app/layout.tsx.
+
+IMPLEMENTATION DETAILS:
+- In app/layout.tsx, locate the existing business schema object or JSON-LD <Script>.
+- Replace its contents entirely with the JSON below.
+- Keep the same injection method (next/script with application/ld+json).
+
+REPLACE WITH THIS EXACT JSON-LD (do not modify):
+
+{
+  "@context": "https://schema.org",
+  "@type": ["HVACBusiness", "LocalBusiness"],
+  "@id": "https://www.mabryac.com/#business",
+  "name": "Mabry’s Air Conditioning & Heating, Inc.",
+  "url": "https://www.mabryac.com/",
+  "telephone": "+1-281-331-5248",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2110 S Gordon",
+    "addressLocality": "Alvin",
+    "addressRegion": "TX",
+    "postalCode": "77511",
+    "addressCountry": "US"
+  },
+  "foundingDate": "1986",
+  "description": "Residential AC & heating services since 1986. Honest flat-rate pricing with no hidden charges.",
+  "priceRange": "$$",
+  "serviceType": [
+    "Air conditioning repair",
+    "Heating repair and maintenance",
+    "Air conditioning installation"
+  ],
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Friendswood",
+      "address": { "@type": "PostalAddress", "addressRegion": "TX", "addressCountry": "US" }
+    },
+    {
+      "@type": "City",
+      "name": "Pearland",
+      "address": { "@type": "PostalAddress", "addressRegion": "TX", "addressCountry": "US" }
+    },
+    {
+      "@type": "City",
+      "name": "Alvin",
+      "address": { "@type": "PostalAddress", "addressRegion": "TX", "addressCountry": "US" }
+    },
+    {
+      "@type": "Place",
+      "name": "Clear Lake (Houston)",
+      "address": { "@type": "PostalAddress", "addressRegion": "TX", "addressCountry": "US" }
+    }
+  ],
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Texas HVAC License",
+      "value": "TACLB12058E"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BBB Rating",
+      "value": "A+"
+    }
+  ]
+}
+
+AFTER IMPLEMENTATION:
+- Open https://mabryac.com
+- View Page Source → search for "HVACBusiness"
+- Confirm the phone number shows as +1-281-331-5248
+- Open a city page (ex: /areas/pearland) and confirm the same updated schema appears there.
