@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Send, CheckCircle } from "lucide-react";
+import { Send, CheckCircle, Loader2 } from "lucide-react";
 
 const leadSchema = z.object({
   name: z.string().min(2, "Name is required"),
@@ -25,6 +25,8 @@ interface LeadFormProps {
 
 export function LeadForm({ className = "", preselectedService, preselectedCity }: LeadFormProps) {
   const [isSuccess, setIsSuccess] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const {
     register,
@@ -39,20 +41,32 @@ export function LeadForm({ className = "", preselectedService, preselectedCity }
     },
   });
 
-  const onSubmit = (data: LeadFormData) => {
-    const subject = encodeURIComponent("Quote Request from Website");
-    const body = encodeURIComponent(
-      `Name: ${data.name}\n` +
-      `Email: ${data.email}\n` +
-      `Phone: ${data.phone}\n` +
-      `Service: ${data.service || "Not specified"}\n` +
-      `City: ${data.city || "Not specified"}\n` +
-      `Message: ${data.message || "None"}`
-    );
+  const onSubmit = async (data: LeadFormData) => {
+    setIsSubmitting(true);
+    setErrorMessage(null);
     
-    window.location.href = `mailto:office@mabryac.com?subject=${subject}&body=${body}`;
-    setIsSuccess(true);
-    reset();
+    try {
+      const response = await fetch('/api/leads', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+      
+      const result = await response.json();
+      
+      if (result.success) {
+        setIsSuccess(true);
+        reset();
+      } else {
+        setErrorMessage(result.message || 'Something went wrong. Please try again.');
+      }
+    } catch (error) {
+      setErrorMessage('Unable to submit. Please call us at 281-331-5248.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSuccess) {
@@ -142,13 +156,29 @@ export function LeadForm({ className = "", preselectedService, preselectedCity }
 
         <input type="hidden" {...register("city")} />
 
+        {errorMessage && (
+          <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg" data-testid="error-message">
+            {errorMessage}
+          </div>
+        )}
+
         <button
           type="submit"
-          className="w-full bg-accent hover:bg-accent/90 text-white font-bold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2"
+          disabled={isSubmitting}
+          className="w-full bg-accent hover:bg-accent/90 text-white font-bold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
           data-testid="button-submit-lead"
         >
-          <Send className="w-5 h-5" />
-          Request Quote
+          {isSubmitting ? (
+            <>
+              <Loader2 className="w-5 h-5 animate-spin" />
+              Sending...
+            </>
+          ) : (
+            <>
+              <Send className="w-5 h-5" />
+              Request Quote
+            </>
+          )}
         </button>
       </form>
     </div>
