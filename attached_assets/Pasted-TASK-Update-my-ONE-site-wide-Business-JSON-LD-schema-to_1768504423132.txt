@@ -1,22 +1,29 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import Script from "next/script";
-import "./globals.css";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
+TASK: Update my ONE site-wide Business JSON-LD schema to use the Alvin address as the ONLY physical location.
 
-const inter = Inter({ subsets: ["latin"] });
+CONTEXT:
+- This is a Next.js 15 App Router site.
+- The business schema is currently injected site-wide from app/layout.tsx (RootLayout).
+- I want to REPLACE the existing business schema (currently using Friendswood) with an updated one using Alvin.
 
-export const metadata: Metadata = {
-  title: "Mabry's Air Conditioning & Heating, Inc. | Friendswood TX HVAC",
-  description: "Residential AC & Heating Experts Since 1986. Serving Friendswood, Pearland, Clear Lake & Alvin. License TACLB12058E. BBB A+ Rating. Honest, flat-rate pricing.",
-};
+IMPORTANT RULES:
+- Keep ONLY ONE HVACBusiness/LocalBusiness schema site-wide.
+- Do NOT create multiple business entities.
+- Do NOT add or keep any Friendswood physical address in the schema.
+- Friendswood should remain ONLY as an areaServed city (service area), not an address.
+- Do NOT remove the existing city-page WebPage schemas (if present). Only update the Business schema.
+- After updating, ensure every page outputs the updated Alvin-based business schema.
 
-const businessSchema = {
+IMPLEMENTATION:
+- In app/layout.tsx, locate the existing businessSchema object (or JSON-LD Script block) and replace its JSON with the exact JSON below.
+- Keep the injection method the same (next/script + dangerouslySetInnerHTML or equivalent).
+
+REPLACE WITH THIS EXACT JSON-LD:
+
+{
   "@context": "https://schema.org",
   "@type": ["HVACBusiness", "LocalBusiness"],
   "@id": "https://www.mabryac.com/#business",
-  "name": "Mabry's Air Conditioning & Heating, Inc.",
+  "name": "Mabry’s Air Conditioning & Heating, Inc.",
   "url": "https://www.mabryac.com/",
   "telephone": "+1-281-482-8400",
   "address": {
@@ -61,27 +68,9 @@ const businessSchema = {
     { "@type": "PropertyValue", "name": "Texas HVAC License", "value": "TACLB12058E" },
     { "@type": "PropertyValue", "name": "BBB Rating", "value": "A+" }
   ]
-};
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
-      <head>
-        <Script
-          id="business-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
-        />
-      </head>
-      <body className={inter.className}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </body>
-    </html>
-  );
 }
+
+AFTER YOU IMPLEMENT IT:
+- Confirm by checking https://mabryac.com page source:
+  View Page Source → search "HVACBusiness" and "2110 S Gordon"
+- Also check a city page like /areas/pearland to confirm the same updated business schema appears site-wide.
