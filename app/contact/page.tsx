@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import { SchemaOrg } from "@/components/SchemaOrg";
 import { LeadForm } from "@/components/LeadForm";
 import { businessInfo, locations } from "@/lib/data";
 import { Phone, Mail, MapPin, Clock, Shield, Award, CheckCircle } from "lucide-react";
@@ -12,8 +11,6 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <SchemaOrg page="contact" />
-      
       <section className="bg-primary py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">Contact Us</h1>

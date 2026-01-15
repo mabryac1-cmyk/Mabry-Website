@@ -1,0 +1,73 @@
+TASK: Add ONE site-wide JSON-LD schema for my business across every page.
+
+PROJECT: Next.js 15+ App Router (Replit)
+
+WHERE TO ADD IT:
+- Edit: app/layout.tsx
+- Add the JSON-LD inside the <head> of RootLayout so it appears on ALL pages.
+- Use next/script (import Script from "next/script") and inject JSON with dangerouslySetInnerHTML.
+
+IMPORTANT RULES:
+- Create ONLY ONE business schema entity total.
+- Use ONLY ONE physical address (Friendswood) in the schema.
+- DO NOT add addresses for Pearland, Alvin, or Clear Lake.
+- Use areaServed to represent service areas.
+- Do NOT create separate schemas per city.
+
+USE THIS EXACT JSON-LD (do not change wording except to match existing code style):
+
+{
+  "@context": "https://schema.org",
+  "@type": ["HVACBusiness","LocalBusiness"],
+  "@id": "https://www.mabryac.com/#business",
+  "name": "Mabry’s Air Conditioning & Heating, Inc.",
+  "url": "https://www.mabryac.com/",
+  "telephone": "+1-281-482-8400",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3404 Volterra Circle",
+    "addressLocality": "Friendswood",
+    "addressRegion": "TX",
+    "postalCode": "77546",
+    "addressCountry": "US"
+  },
+  "foundingDate": "1986",
+  "description": "Residential AC & heating services since 1986. Honest flat-rate pricing with no hidden charges.",
+  "priceRange": "$$",
+  "serviceType": [
+    "Air conditioning repair",
+    "Heating repair and maintenance",
+    "Air conditioning installation"
+  ],
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Friendswood",
+      "address": { "@type": "PostalAddress", "addressRegion": "TX", "addressCountry": "US" }
+    },
+    {
+      "@type": "City",
+      "name": "Pearland",
+      "address": { "@type": "PostalAddress", "addressRegion": "TX", "addressCountry": "US" }
+    },
+    {
+      "@type": "City",
+      "name": "Alvin",
+      "address": { "@type": "PostalAddress", "addressRegion": "TX", "addressCountry": "US" }
+    },
+    {
+      "@type": "Place",
+      "name": "Clear Lake (Houston)",
+      "address": { "@type": "PostalAddress", "addressRegion": "TX", "addressCountry": "US" }
+    }
+  ],
+  "additionalProperty": [
+    { "@type": "PropertyValue", "name": "Texas HVAC License", "value": "TACLB12058E" },
+    { "@type": "PropertyValue", "name": "BBB Rating", "value": "A+" }
+  ]
+}
+
+AFTER YOU IMPLEMENT IT:
+- Confirm it appears on the live homepage HTML:
+  View Page Source → search for: application/ld+json
+- Confirm it also appears on a city page (ex: /areas/pearland) the same way.

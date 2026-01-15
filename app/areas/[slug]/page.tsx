@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { SchemaOrg } from "@/components/SchemaOrg";
 import { LeadForm } from "@/components/LeadForm";
 import { locations, getLocationBySlug, businessInfo, services } from "@/lib/data";
 import { ArrowLeft, Phone, CheckCircle, Wrench } from "lucide-react";
@@ -36,8 +35,6 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
 
   return (
     <>
-      <SchemaOrg page="area" locationName={location.name} />
-      
       <section className="bg-primary py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link href="/" className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors">

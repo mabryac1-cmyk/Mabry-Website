@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { SchemaOrg } from "@/components/SchemaOrg";
 import { LeadForm } from "@/components/LeadForm";
 import { businessInfo, services, locations } from "@/lib/data";
 import { Shield, Clock, Award, ArrowRight, MapPin, Phone, CheckCircle } from "lucide-react";
@@ -7,8 +6,6 @@ import { Shield, Clock, Award, ArrowRight, MapPin, Phone, CheckCircle } from "lu
 export default function Home() {
   return (
     <>
-      <SchemaOrg page="home" />
-      
       <section className="relative bg-primary overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <img 

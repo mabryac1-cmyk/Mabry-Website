@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { SchemaOrg } from "@/components/SchemaOrg";
 import { businessInfo, reviews } from "@/lib/data";
 import { Star, Quote, Phone, ExternalLink } from "lucide-react";
 
@@ -12,8 +11,6 @@ export const metadata: Metadata = {
 export default function ReviewsPage() {
   return (
     <>
-      <SchemaOrg page="reviews" />
-      
       <section className="bg-primary py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">Customer Reviews</h1>
