@@ -13,9 +13,12 @@ export async function POST(request: NextRequest) {
     
     try {
       const { client, fromEmail } = await getUncachableResendClient();
+      const actualFromEmail = 'Mabry\'s AC Website <noreply@mail.mabryac.com>';
       
-      await client.emails.send({
-        from: fromEmail || 'Mabry\'s AC Website <noreply@mail.mabryac.com>',
+      console.log("Attempting to send email from:", actualFromEmail);
+      
+      const emailResult = await client.emails.send({
+        from: actualFromEmail,
         to: 'office@mabryac.com',
         replyTo: validatedData.email,
         subject: `New Quote Request from ${validatedData.name}`,
@@ -31,8 +34,11 @@ export async function POST(request: NextRequest) {
           <p style="color: #666; font-size: 12px;">This lead was submitted via mabryac.com</p>
         `,
       });
-    } catch (emailError) {
-      console.error("Email send error:", emailError);
+      
+      console.log("Email send result:", JSON.stringify(emailResult));
+    } catch (emailError: any) {
+      console.error("Email send error:", emailError?.message || emailError);
+      console.error("Full error:", JSON.stringify(emailError));
     }
     
     return NextResponse.json(
