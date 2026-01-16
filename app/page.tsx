@@ -145,8 +145,7 @@ export default function Home() {
                 >
                   <MapPin className="w-4 h-4" />
                   {location.name}, {location.state}
-                  {location.isPrimary && <span className="text-xs">(HQ)</span>}
-                </Link>
+                                  </Link>
               ))}
             </div>
           </div>
