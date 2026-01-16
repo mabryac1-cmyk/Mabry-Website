@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   return {
     title: `${location.headline} | ${businessInfo.name}`,
-    description: `${location.description} License ${businessInfo.license}. BBB A+ Rated. Call ${businessInfo.phone} for service.`,
+    description: `${location.description} License ${businessInfo.license}. BBB A+ Rated. Call ${location.phone} for service.`,
   };
 }
 
@@ -44,11 +44,11 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
           <p className="text-xl text-white/90 max-w-2xl">{location.description}</p>
           <div className="mt-6 flex flex-wrap gap-4">
             <a 
-              href={`tel:${businessInfo.phone}`}
+              href={`tel:${location.phone}`}
               className="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
             >
               <Phone className="w-5 h-5" />
-              {businessInfo.phone}
+              {location.phone}
             </a>
             <div className="flex items-center gap-2 text-white/80">
               <CheckCircle className="w-5 h-5 text-accent" />
@@ -93,11 +93,11 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
                   Call us now or fill out the form to request service. We offer flat-rate pricing with no hidden charges.
                 </p>
                 <a 
-                  href={`tel:${businessInfo.phone}`}
+                  href={`tel:${location.phone}`}
                   className="inline-flex items-center gap-2 bg-accent text-white font-bold py-3 px-6 rounded-lg hover:bg-accent/90 transition-colors"
                 >
                   <Phone className="w-5 h-5" />
-                  Call {businessInfo.phone}
+                  Call {location.phone}
                 </a>
               </div>
             </div>
