@@ -2,9 +2,9 @@
 
 ## Overview
 
-This is a local business website for Mabry's Air Conditioning & Heating, Inc., a residential HVAC contractor based in Friendswood, Texas. The site is designed for strong local SEO, emphasizing trust signals (BBB A+ rating, established 1986, Texas license TACLB12058E) and converting visitors into leads through phone calls and service request forms.
+This is a local business website for Mabry's Air Conditioning & Heating, Inc., a residential HVAC contractor headquartered in Alvin, Texas (2110 S Gordon, Alvin, TX 77511). The site is designed for strong local SEO, emphasizing trust signals (BBB A+ rating, established 1986, Texas license TACLB12058E) and converting visitors into leads through phone calls and service request forms.
 
-The website serves homeowners in Friendswood, Pearland, Clear Lake, and Alvin, TX with services including AC repair, heating repair & maintenance, and AC installation.
+The website serves homeowners in Alvin (primary), Friendswood (SAB), Pearland, and Clear Lake, TX with services including AC repair, heating repair & maintenance, and AC installation. Alvin is the main physical location optimized for GBP; Friendswood is a Service Area Business (SAB) location.
 
 ## User Preferences
 

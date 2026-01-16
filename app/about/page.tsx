@@ -4,8 +4,8 @@ import { businessInfo, locations } from "@/lib/data";
 import { Shield, Award, Clock, Users, CheckCircle, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: `About Us | ${businessInfo.name} | Friendswood TX HVAC Since 1986`,
-  description: `Learn about ${businessInfo.name} - a family-owned residential HVAC company serving Friendswood, Pearland, Clear Lake & Alvin since 1986. License ${businessInfo.license}. BBB A+ Rated.`,
+  title: `About Us | ${businessInfo.name} | Alvin TX HVAC Since 1986`,
+  description: `Learn about ${businessInfo.name} - a family-owned residential HVAC company serving Alvin, Friendswood, Pearland & Clear Lake since 1986. License ${businessInfo.license}. BBB A+ Rated.`,
 };
 
 export default function AboutPage() {
@@ -27,7 +27,7 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold text-primary mb-6">Our Story</h2>
               <div className="prose prose-lg">
                 <p>
-                  Since 1986, {businessInfo.name} has been providing honest, reliable HVAC services to homeowners in Friendswood and the surrounding communities. What started as a small family business has grown into one of the most trusted names in residential air conditioning and heating.
+                  Since 1986, {businessInfo.name} has been providing honest, reliable HVAC services to homeowners in Alvin and the surrounding communities. What started as a small family business has grown into one of the most trusted names in residential air conditioning and heating.
                 </p>
                 <p>
                   For nearly four decades, we've built our reputation on doing things the right way: honest assessments, quality workmanship, and fair, flat-rate pricing with no hidden charges. We don't believe in surprise fees or upselling services you don't need.

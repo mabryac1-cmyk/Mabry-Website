@@ -5,7 +5,7 @@ import { Star, Quote, Phone, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
   title: `Customer Reviews | ${businessInfo.name} | BBB A+ Rated HVAC`,
-  description: `Read what customers say about ${businessInfo.name}. BBB A+ Rated since 1986. Honest, flat-rate HVAC service in Friendswood, Pearland, Clear Lake & Alvin.`,
+  description: `Read what customers say about ${businessInfo.name}. BBB A+ Rated since 1986. Honest, flat-rate HVAC service in Alvin, Friendswood, Pearland & Clear Lake.`,
 };
 
 export default function ReviewsPage() {

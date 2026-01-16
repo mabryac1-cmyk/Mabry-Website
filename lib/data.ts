@@ -140,16 +140,50 @@ export const services = [
 
 export const locations = [
   {
+    slug: "alvin",
+    name: "Alvin",
+    state: "TX",
+    zipCodes: ["77511", "77512"],
+    isPrimary: true,
+    headline: "Air Conditioning & Heating Services in Alvin, TX",
+    description: "Located in downtown Alvin since 1986. Your trusted local HVAC experts providing honest, flat-rate pricing and BBB A+ rated service.",
+    content: `
+      <h2>Your Hometown HVAC Company in Alvin, TX</h2>
+      <p>Located at 2110 S Gordon in downtown Alvin, Mabry's Air Conditioning & Heating has been your trusted local HVAC company since 1986. We're proud to call Alvin home and treat every customer like family.</p>
+
+      <h3>Our Services in Alvin</h3>
+      <ul>
+        <li>AC repair for all makes and models</li>
+        <li>Furnace and heating repair</li>
+        <li>New air conditioning installation</li>
+        <li>Preventive maintenance programs</li>
+      </ul>
+
+      <h3>Why Alvin Homeowners Trust Mabry's</h3>
+      <ul>
+        <li>Locally owned with our shop right here in downtown Alvin</li>
+        <li>Family-owned and operated since 1986</li>
+        <li>Upfront, flat-rate pricing - no hidden fees</li>
+        <li>BBB A+ Rating earned through quality service</li>
+        <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
+        <li>Residential specialists - we focus on homes</li>
+      </ul>
+
+      <p>From downtown Alvin to the surrounding areas, we provide prompt, professional HVAC service throughout the 77511 and 77512 zip codes. When your home's comfort is on the line, trust the company that Alvin families have relied on for decades.</p>
+    `,
+    keywords: ["HVAC Alvin TX", "AC repair Alvin TX", "heating repair Alvin TX", "air conditioning Alvin"],
+  },
+  {
     slug: "friendswood",
     name: "Friendswood",
     state: "TX",
     zipCodes: ["77546", "77549"],
-    isPrimary: true,
+    isPrimary: false,
     headline: "Air Conditioning & Heating Services in Friendswood, TX",
-    description: "Proudly serving Friendswood since 1986. As your local HVAC experts, we understand the unique cooling and heating needs of Friendswood homes.",
+    description: "Proudly serving Friendswood since 1986. Fast response times from our nearby Alvin location. BBB A+ rated HVAC service.",
     content: `
       <h2>Your Trusted HVAC Company in Friendswood, TX</h2>
-      <p>Mabry's Air Conditioning & Heating has been serving Friendswood homeowners since 1986. As a locally owned and operated company, we're your neighbors - and we treat every customer like family.</p>
+      <p>Mabry's Air Conditioning & Heating has been serving Friendswood homeowners since 1986. Based in nearby Alvin, we provide fast, reliable service throughout Friendswood and treat every customer like family.</p>
 
       <h3>Residential HVAC Services in Friendswood</h3>
       <ul>
@@ -179,10 +213,10 @@ export const locations = [
     zipCodes: ["77581", "77584", "77588"],
     isPrimary: false,
     headline: "Air Conditioning & Heating Services in Pearland, TX",
-    description: "Providing reliable residential HVAC services to Pearland homes. Fast response times from our nearby Friendswood location.",
+    description: "Providing reliable residential HVAC services to Pearland homes. Fast response times from our nearby Alvin location.",
     content: `
       <h2>Trusted HVAC Services for Pearland Homes</h2>
-      <p>Pearland homeowners have counted on Mabry's Air Conditioning & Heating for decades. Located just minutes away in Friendswood, we provide fast, reliable service throughout Pearland.</p>
+      <p>Pearland homeowners have counted on Mabry's Air Conditioning & Heating for decades. Located just minutes away in Alvin, we provide fast, reliable service throughout Pearland.</p>
 
       <h3>HVAC Services We Offer in Pearland</h3>
       <ul>
@@ -239,42 +273,6 @@ export const locations = [
       </ul>
     `,
     keywords: ["AC installation Clear Lake Houston", "HVAC Clear Lake TX", "air conditioning Clear Lake"],
-  },
-  {
-    slug: "alvin",
-    name: "Alvin",
-    state: "TX",
-    zipCodes: ["77511", "77512"],
-    isPrimary: false,
-    headline: "Air Conditioning & Heating Services in Alvin, TX",
-    description: "Quality residential HVAC services for Alvin, TX homeowners. Trusted flat-rate pricing and BBB A+ rated service.",
-    content: `
-      <h2>Dependable HVAC Service in Alvin, TX</h2>
-      <p>Alvin homeowners deserve an HVAC company they can trust. Mabry's Air Conditioning & Heating has been providing honest, reliable service since 1986.</p>
-
-      <h3>Our Services in Alvin</h3>
-      <ul>
-        <li>AC repair for all makes and models</li>
-        <li>Furnace and heating repair</li>
-        <li>New air conditioning installation</li>
-        <li>Preventive maintenance programs</li>
-      </ul>
-
-      <h3>Serving Alvin Homeowners</h3>
-      <p>From downtown Alvin to the surrounding areas, we provide prompt, professional HVAC service throughout the 77511 and 77512 zip codes.</p>
-
-      <h3>The Mabry's Difference</h3>
-      <ul>
-        <li>Family-owned and operated since 1986</li>
-        <li>Upfront, flat-rate pricing - no hidden fees</li>
-        <li>BBB A+ Rating earned through quality service</li>
-        <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
-        <li>Residential specialists - we focus on homes</li>
-      </ul>
-
-      <p>When your home's comfort is on the line, trust the company that Alvin families have relied on for decades.</p>
-    `,
-    keywords: ["heating repair Alvin TX", "HVAC Alvin TX", "AC service Alvin"],
   },
 ];
 

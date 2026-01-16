@@ -31,7 +31,7 @@ export default function Home() {
             </h1>
             <p className="text-xl text-white/90 max-w-lg leading-relaxed">
               {businessInfo.name} provides honest, flat-rate pricing with no hidden charges. 
-              Serving Friendswood, Pearland, Clear Lake & Alvin.
+              Serving Alvin, Friendswood, Pearland & Clear Lake.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <a 

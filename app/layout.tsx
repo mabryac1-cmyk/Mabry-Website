@@ -8,8 +8,8 @@ import { Footer } from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mabry's Air Conditioning & Heating, Inc. | Friendswood TX HVAC",
-  description: "Residential AC & Heating Experts Since 1986. Serving Friendswood, Pearland, Clear Lake & Alvin. License TACLB12058E. BBB A+ Rating. Honest, flat-rate pricing.",
+  title: "Mabry's Air Conditioning & Heating, Inc. | Alvin TX HVAC",
+  description: "Residential AC & Heating Experts Since 1986. Located in Alvin, TX serving Friendswood, Pearland & Clear Lake. License TACLB12058E. BBB A+ Rating. Honest, flat-rate pricing.",
 };
 
 const businessSchema = {
@@ -38,17 +38,17 @@ const businessSchema = {
   "areaServed": [
     {
       "@type": "City",
+      "name": "Alvin",
+      "address": { "@type": "PostalAddress", "addressRegion": "TX", "addressCountry": "US" }
+    },
+    {
+      "@type": "City",
       "name": "Friendswood",
       "address": { "@type": "PostalAddress", "addressRegion": "TX", "addressCountry": "US" }
     },
     {
       "@type": "City",
       "name": "Pearland",
-      "address": { "@type": "PostalAddress", "addressRegion": "TX", "addressCountry": "US" }
-    },
-    {
-      "@type": "City",
-      "name": "Alvin",
       "address": { "@type": "PostalAddress", "addressRegion": "TX", "addressCountry": "US" }
     },
     {

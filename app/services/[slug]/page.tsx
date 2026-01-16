@@ -20,8 +20,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: `${service.name} | ${businessInfo.name} | Friendswood TX`,
-    description: `${service.description} Serving Friendswood, Pearland, Clear Lake & Alvin. License ${businessInfo.license}. Call ${businessInfo.phone}.`,
+    title: `${service.name} | ${businessInfo.name} | Alvin TX`,
+    description: `${service.description} Serving Alvin, Friendswood, Pearland & Clear Lake. License ${businessInfo.license}. Call ${businessInfo.phone}.`,
   };
 }
 
