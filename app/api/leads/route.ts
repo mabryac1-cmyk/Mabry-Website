@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
       const { client, fromEmail } = await getUncachableResendClient();
       
       await client.emails.send({
-        from: fromEmail || 'onboarding@resend.dev',
+        from: fromEmail || 'Website <noreply@mail.mabryac.com>',
         to: 'office@mabryac.com',
         subject: `New Quote Request from ${validatedData.name}`,
         html: `
