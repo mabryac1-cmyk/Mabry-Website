@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/lib/db";
 import { leads, insertLeadSchema } from "@/lib/schema";
-import { getUncachableResendClient } from "@/lib/resend";
+import { getResendClient } from "@/lib/resend";
 
 export async function POST(request: NextRequest) {
   try {
@@ -12,13 +12,13 @@ export async function POST(request: NextRequest) {
     const [newLead] = await db.insert(leads).values(validatedData).returning();
     
     try {
-      const { client, fromEmail } = await getUncachableResendClient();
-      const actualFromEmail = 'Mabry\'s AC Website <noreply@mail.mabryac.com>';
+      const client = getResendClient();
+      const fromEmail = 'Mabry\'s AC Website <noreply@mail.mabryac.com>';
       
-      console.log("Attempting to send email from:", actualFromEmail);
+      console.log("Attempting to send email from:", fromEmail);
       
       const emailResult = await client.emails.send({
-        from: actualFromEmail,
+        from: fromEmail,
         to: 'office@mabryac.com',
         replyTo: validatedData.email,
         subject: `New Quote Request from ${validatedData.name}`,
