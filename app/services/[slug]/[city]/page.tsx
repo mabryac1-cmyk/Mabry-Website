@@ -41,6 +41,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       `air conditioning ${location.name}`,
       ...service.keywords.map(k => `${k} ${location.name}`),
     ],
+    alternates: {
+      canonical: `/services/${slug}/${city}`,
+    },
   };
 }
 
