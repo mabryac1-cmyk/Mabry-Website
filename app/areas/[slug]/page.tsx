@@ -76,14 +76,14 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
                   {services.map((service) => (
                     <Link 
                       key={service.slug}
-                      href={`/services/${service.slug}`}
+                      href={`/services/${service.slug}/${slug}`}
                       className="flex items-center gap-3 bg-white p-4 rounded-xl border hover:border-accent hover:shadow-md transition-all group"
                     >
                       <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary group-hover:bg-accent group-hover:text-white transition-colors">
                         <Wrench className="w-5 h-5" />
                       </div>
                       <span className="font-semibold text-primary group-hover:text-accent transition-colors">
-                        {service.name}
+                        {service.name} in {location.name}
                       </span>
                     </Link>
                   ))}

@@ -76,7 +76,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
               )}
 
               <div className="mt-12 bg-gray-50 rounded-2xl p-8">
-                <h3 className="text-2xl font-bold text-primary mb-4">Service Areas</h3>
+                <h3 className="text-2xl font-bold text-primary mb-4">{service.name} Service Areas</h3>
                 <p className="text-muted-foreground mb-6">
                   We provide {service.name.toLowerCase()} services throughout the greater Houston area:
                 </p>
@@ -84,11 +84,11 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                   {locations.map((location) => (
                     <Link 
                       key={location.slug}
-                      href={`/areas/${location.slug}`}
+                      href={`/services/${slug}/${location.slug}`}
                       className="flex items-center gap-2 bg-white px-4 py-2 rounded-full border hover:border-accent hover:text-accent transition-colors"
                     >
                       <MapPin className="w-4 h-4" />
-                      {location.name}, {location.state}
+                      {service.name} in {location.name}
                     </Link>
                   ))}
                 </div>

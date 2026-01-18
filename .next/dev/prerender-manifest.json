@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "f52d56f08d3733f61de0ea1c30f3a4a0",
-    "previewModeSigningKey": "b05376970c299cc00695ec2da52810b9664f311baa9532d6f63d42d2f66e95b4",
-    "previewModeEncryptionKey": "e0ae1f61e844646d8a35f36344d379e3a0ae0dc6373e40e78ab95ca8c87e42e0"
-  }
-}
+{"version":4,"routes":{"/services/ac-repair":{},"/services/heating-repair":{},"/services/ac-installation":{},"/areas/alvin":{},"/areas/friendswood":{},"/areas/pearland":{},"/areas/clear-lake":{}},"dynamicRoutes":{"/services/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/services/[slug]","routeRegex":"^\\/services\\/([^/]+?)(?:\\/)?$","allowHeader":[]},"/areas/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/areas/[slug]","routeRegex":"^\\/areas\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"5b89f3d9057278c2458fa7e627a0df67","previewModeSigningKey":"e3e97a089347b444b5db33dcd8eaf51b57e5b7ca4cc22990f4206031da81bc0f","previewModeEncryptionKey":"835569822ebd5326afdb80cb478065c1987e464db52c5cc9e2d971fee3540de7"}}
