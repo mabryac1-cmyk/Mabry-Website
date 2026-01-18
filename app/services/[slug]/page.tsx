@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LeadForm } from "@/components/LeadForm";
+import { FAQSection } from "@/components/FAQSection";
 import { services, getServiceBySlug, businessInfo, locations } from "@/lib/data";
 import { ArrowLeft, Phone, CheckCircle, MapPin } from "lucide-react";
 
@@ -67,6 +68,10 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                 dangerouslySetInnerHTML={{ __html: service.content }}
               />
               
+              {service.faqs && service.faqs.length > 0 && (
+                <FAQSection faqs={service.faqs} title={`${service.name} FAQs`} schemaId={`faq-schema-${service.slug}`} />
+              )}
+
               <div className="mt-12 bg-gray-50 rounded-2xl p-8">
                 <h3 className="text-2xl font-bold text-primary mb-4">Service Areas</h3>
                 <p className="text-muted-foreground mb-6">

@@ -23,6 +23,33 @@ export const businessInfo = {
   ],
 };
 
+export const generalFaqs = [
+  {
+    question: "What areas do you serve?",
+    answer: "We serve Alvin, Friendswood, Pearland, Clear Lake, and the surrounding greater Houston area. Our main location is in downtown Alvin at 2110 S Gordon."
+  },
+  {
+    question: "Are you licensed and insured?",
+    answer: "Yes, we are a fully licensed Texas HVAC contractor (License TACLB12058E) and carry full insurance for your protection."
+  },
+  {
+    question: "What does flat-rate pricing mean?",
+    answer: "Flat-rate pricing means you get a clear, upfront price before any work begins - no surprise charges, no hourly rates that add up, and no hidden fees. The price we quote is the price you pay."
+  },
+  {
+    question: "Do you offer emergency HVAC service?",
+    answer: "Yes, we offer emergency service for urgent AC and heating repairs. Call our main line and we'll do our best to help you as quickly as possible."
+  },
+  {
+    question: "How long has Mabry's been in business?",
+    answer: "Mabry's Air Conditioning & Heating has been family-owned and operated since 1986 - nearly 40 years of serving the Alvin and greater Houston area."
+  },
+  {
+    question: "Do you work on commercial properties?",
+    answer: "No, we specialize exclusively in residential HVAC service. This focus allows our technicians to be true experts in home cooling and heating systems."
+  }
+];
+
 export const services = [
   {
     slug: "ac-repair",
@@ -64,6 +91,28 @@ export const services = [
       </ul>
     `,
     keywords: ["air conditioning repair", "AC repair", "AC not cooling", "AC service"],
+    faqs: [
+      {
+        question: "How much does AC repair cost?",
+        answer: "AC repair costs vary depending on the issue, but we provide honest, flat-rate pricing with no hidden charges. We'll diagnose the problem and give you an upfront price before any work begins."
+      },
+      {
+        question: "Why is my AC blowing warm air?",
+        answer: "Common causes include low refrigerant, a dirty air filter, frozen evaporator coils, or a faulty compressor. Our technicians can diagnose the exact issue and provide a reliable fix."
+      },
+      {
+        question: "How long does AC repair take?",
+        answer: "Most AC repairs can be completed in one visit, typically within 1-3 hours. More complex issues may require ordering parts, but we'll keep you informed throughout the process."
+      },
+      {
+        question: "Do you repair all AC brands?",
+        answer: "Yes, our licensed technicians repair all major AC brands and models. We've been servicing residential air conditioners since 1986."
+      },
+      {
+        question: "Should I repair or replace my AC unit?",
+        answer: "Generally, if your unit is over 10-15 years old and repairs are becoming frequent, replacement may be more cost-effective. We'll give you an honest assessment to help you decide."
+      }
+    ],
   },
   {
     slug: "heating-repair",
@@ -98,6 +147,28 @@ export const services = [
       <p>Unlike companies that split their attention between commercial and residential work, we focus exclusively on homes. This means our technicians are experts in residential heating systems and understand the unique needs of homeowners.</p>
     `,
     keywords: ["heating repair", "furnace repair", "heater not working", "heating maintenance"],
+    faqs: [
+      {
+        question: "Why is my heater not producing heat?",
+        answer: "Common causes include a tripped breaker, thermostat issues, a dirty filter restricting airflow, or a faulty pilot light or igniter. Our technicians can diagnose and fix the problem quickly."
+      },
+      {
+        question: "How often should I have my heating system serviced?",
+        answer: "We recommend annual maintenance before the heating season begins. Regular tune-ups prevent breakdowns, improve efficiency, and extend your system's lifespan."
+      },
+      {
+        question: "Is a furnace tune-up worth it?",
+        answer: "Absolutely. A tune-up catches small problems before they become expensive repairs, ensures safe operation (especially important for gas furnaces), and keeps your system running efficiently."
+      },
+      {
+        question: "How long do furnaces typically last?",
+        answer: "With proper maintenance, most furnaces last 15-20 years. If your furnace is approaching this age and needing frequent repairs, it may be time to consider replacement."
+      },
+      {
+        question: "Do you service heat pumps?",
+        answer: "Yes, we service and repair all types of residential heating systems including heat pumps, gas furnaces, and electric heaters."
+      }
+    ],
   },
   {
     slug: "ac-installation",
@@ -135,6 +206,28 @@ export const services = [
       <p>We provide clear, upfront pricing for all installations - no hidden fees or surprise charges. You'll know exactly what to expect before we begin.</p>
     `,
     keywords: ["AC installation", "new air conditioner", "AC replacement", "HVAC installation"],
+    faqs: [
+      {
+        question: "How much does a new AC system cost?",
+        answer: "AC installation costs depend on your home's size, the system's efficiency rating, and installation complexity. We provide free consultations and upfront, flat-rate pricing with no hidden fees."
+      },
+      {
+        question: "How long does AC installation take?",
+        answer: "A typical residential AC installation takes one day. More complex installations involving ductwork modifications may take longer, but we'll let you know upfront."
+      },
+      {
+        question: "What size AC do I need for my home?",
+        answer: "Proper sizing requires a load calculation based on your home's square footage, insulation, windows, and other factors. An oversized or undersized unit won't cool efficiently - we ensure you get the right fit."
+      },
+      {
+        question: "What brands do you install?",
+        answer: "We install quality, energy-efficient systems from trusted manufacturers. During your consultation, we'll recommend options that fit your budget and cooling needs."
+      },
+      {
+        question: "Should I replace my AC before it completely fails?",
+        answer: "If your system is 10-15+ years old, uses R-22 refrigerant (being phased out), or needs frequent repairs, proactive replacement can save money on energy bills and prevent an emergency breakdown."
+      }
+    ],
   },
 ];
 

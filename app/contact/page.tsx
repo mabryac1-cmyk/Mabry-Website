@@ -96,6 +96,26 @@ export default function ContactPage() {
                 </div>
               </div>
 
+              <div className="mt-8 rounded-2xl overflow-hidden border">
+                <iframe
+                  src="https://www.google.com/maps?q=2110+S+Gordon+St,+Alvin,+TX+77511&output=embed"
+                  width="100%"
+                  height="250"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Mabry's Air Conditioning & Heating location in Alvin, TX"
+                  data-testid="google-map-embed"
+                />
+                <div className="bg-white p-4">
+                  <p className="font-semibold text-primary">{businessInfo.name}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {businessInfo.address.street}, {businessInfo.address.city}, {businessInfo.address.state} {businessInfo.address.zip}
+                  </p>
+                </div>
+              </div>
+
               <div className="mt-8 grid grid-cols-2 gap-4">
                 <div className="flex items-center gap-3 bg-accent/10 p-4 rounded-xl">
                   <Shield className="w-8 h-8 text-accent" />

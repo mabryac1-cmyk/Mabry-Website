@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { LeadForm } from "@/components/LeadForm";
-import { businessInfo, services, locations } from "@/lib/data";
+import { FAQSection } from "@/components/FAQSection";
+import { businessInfo, services, locations, generalFaqs } from "@/lib/data";
 import { Shield, Clock, Award, ArrowRight, MapPin, Phone, CheckCircle } from "lucide-react";
 
 export default function Home() {
@@ -129,7 +130,7 @@ export default function Home() {
               Proudly Serving Your Community
             </h2>
             <p className="text-white/80 mb-8 max-w-2xl mx-auto relative z-10">
-              Based in Friendswood, we provide expert HVAC services to homes throughout the greater Houston area.
+              Based in Alvin, we provide expert HVAC services to homes throughout the greater Houston area.
             </p>
             
             <div className="flex flex-wrap justify-center gap-4 relative z-10">
@@ -152,7 +153,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="lg:hidden py-16 px-4 bg-gray-50">
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Get answers to common questions about our HVAC services, pricing, and service areas.
+            </p>
+          </div>
+          <FAQSection faqs={generalFaqs} title="" schemaId="faq-schema-homepage" />
+        </div>
+      </section>
+
+      <section className="lg:hidden py-16 px-4 bg-white">
         <div className="max-w-md mx-auto">
           <LeadForm />
         </div>
