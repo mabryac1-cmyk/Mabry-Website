@@ -87,10 +87,11 @@ export default function ReviewsPage() {
                   Please consider leaving us a review on Google.
                 </p>
                 <a 
-                  href="https://www.google.com/search?q=Mabry%27s+Air+Conditioning+%26+Heating+Friendswood+TX"
+                  href="https://g.page/r/CYYTwAG-fhnzEBM/review"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary text-white font-bold py-3 px-6 rounded-lg hover:bg-primary/90 transition-colors"
+                  data-testid="link-google-review"
                 >
                   Leave a Google Review <ExternalLink className="w-4 h-4" />
                 </a>
