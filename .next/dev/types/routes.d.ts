@@ -5,7 +5,7 @@ type AppRoutes = "/" | "/about" | "/areas/[slug]" | "/contact" | "/reviews" | "/
 type AppRouteHandlerRoutes = "/api/leads"
 type PageRoutes = never
 type LayoutRoutes = "/"
-type RedirectRoutes = never
+type RedirectRoutes = "/ac-repair" | "/alvin-heating-repair" | "/friendswood-ac-repair" | "/heater-repair" | "/home" | "/offers" | "/promotions" | "/services" | "/services-1" | "/services-2"
 type RewriteRoutes = never
 type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRoutes | AppRouteHandlerRoutes
 
@@ -13,10 +13,20 @@ type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRo
 interface ParamMap {
   "/": {}
   "/about": {}
+  "/ac-repair": {}
+  "/alvin-heating-repair": {}
   "/api/leads": {}
   "/areas/[slug]": { "slug": string; }
   "/contact": {}
+  "/friendswood-ac-repair": {}
+  "/heater-repair": {}
+  "/home": {}
+  "/offers": {}
+  "/promotions": {}
   "/reviews": {}
+  "/services": {}
+  "/services-1": {}
+  "/services-2": {}
   "/services/[slug]": { "slug": string; }
   "/services/[slug]/[city]": { "slug": string; "city": string; }
 }
