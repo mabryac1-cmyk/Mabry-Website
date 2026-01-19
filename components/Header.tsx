@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Phone, Menu, X, ChevronDown, Thermometer } from "lucide-react";
 import { businessInfo, services, locations } from "@/lib/data";
+import logoImage from "@/attached_assets/mabrys-ac-heating-alvin-tx-logo_1768859481677.png";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,8 +32,15 @@ export function Header() {
               <Thermometer className="w-7 h-7" />
             </Link>
             <div className="flex flex-col">
-              <Link href="/" className="font-bold text-lg leading-tight text-primary hover:text-accent transition-colors">
-                Mabry's Air Conditioning & Heating, Inc.
+              <Link href="/" className="hover:opacity-80 transition-opacity">
+                <Image 
+                  src={logoImage} 
+                  alt="Mabry's Air Conditioning & Heating, Inc." 
+                  width={200}
+                  height={60}
+                  className="h-12 w-auto"
+                  priority
+                />
               </Link>
               <a 
                 href="https://www.bbb.org/us/tx/friendswood/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805/addressId/92394"
