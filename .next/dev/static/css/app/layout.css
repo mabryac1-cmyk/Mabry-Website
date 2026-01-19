@@ -1236,8 +1236,8 @@ video {
 .h-16 {
   height: 4rem;
 }
-.h-20 {
-  height: 5rem;
+.h-24 {
+  height: 6rem;
 }
 .h-4 {
   height: 1rem;
@@ -1259,6 +1259,9 @@ video {
 }
 .h-8 {
   height: 2rem;
+}
+.h-\[84px\] {
+  height: 84px;
 }
 .h-full {
   height: 100%;
