@@ -51,9 +51,9 @@ export function Header() {
                 <Image 
                   src={bbbBadge} 
                   alt="BBB Accredited Business - A+ Rating" 
-                  width={140}
-                  height={54}
-                  className="h-[44px] w-auto"
+                  width={120}
+                  height={46}
+                  className="h-[38px] w-auto"
                 />
               </a>
               <a 
