@@ -40,7 +40,7 @@ export function Header() {
                 priority
               />
             </Link>
-            <div className="hidden sm:flex items-center gap-4">
+            <div className="hidden sm:flex items-center gap-4 ml-8">
               <a 
                 href="https://www.bbb.org/us/tx/friendswood/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805"
                 target="_blank"
