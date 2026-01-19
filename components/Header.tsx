@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { Phone, Menu, X, ChevronDown, Thermometer } from "lucide-react";
+import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import { businessInfo, services, locations } from "@/lib/data";
 import logoImage from "@/attached_assets/mabrys-ac-heating-alvin-tx-logo_1768859481677.png";
 
@@ -27,31 +27,16 @@ export function Header() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="flex items-center gap-3">
-            <Link href="/" className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center text-white hover:scale-105 transition-transform">
-              <Thermometer className="w-7 h-7" />
-            </Link>
-            <div className="flex flex-col">
-              <Link href="/" className="hover:opacity-80 transition-opacity">
-                <Image 
-                  src={logoImage} 
-                  alt="Mabry's Air Conditioning & Heating, Inc." 
-                  width={200}
-                  height={60}
-                  className="h-12 w-auto"
-                  priority
-                />
-              </Link>
-              <a 
-                href="https://www.bbb.org/us/tx/friendswood/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805/addressId/92394"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs text-muted-foreground hover:text-accent transition-colors"
-              >
-                BBB A+ Rated
-              </a>
-            </div>
-          </div>
+          <Link href="/" className="hover:opacity-80 transition-opacity">
+            <Image 
+              src={logoImage} 
+              alt="Mabry's Air Conditioning & Heating, Inc." 
+              width={280}
+              height={84}
+              className="h-16 w-auto"
+              priority
+            />
+          </Link>
 
           <nav className="hidden lg:flex items-center gap-8">
             <Link href="/" className="text-sm font-semibold hover:text-accent transition-colors">
