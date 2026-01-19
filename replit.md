@@ -10,6 +10,8 @@ The website serves homeowners in Alvin (primary), Friendswood (SAB), Pearland, a
 
 Preferred communication style: Simple, everyday language.
 
+**GitHub Backup**: Remind user to push to GitHub after significant website changes. Repository: `mabryac1-cmyk/Mabry-Website`
+
 ## System Architecture
 
 ### Frontend Architecture
