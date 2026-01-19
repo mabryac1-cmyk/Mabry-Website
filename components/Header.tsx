@@ -6,6 +6,8 @@ import { useState } from "react";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import { businessInfo, services, locations } from "@/lib/data";
 import logoImage from "@/attached_assets/mabrys-ac-heating-alvin-tx-logo_1768859481677.png";
+import bbbBadge from "@/attached_assets/BBB_copy_1768861233663.png";
+import googleBadge from "@/attached_assets/Google_1768861239793.png";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,17 +28,51 @@ export function Header() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-24">
-          <Link href="/" className="hover:opacity-80 transition-opacity">
-            <Image 
-              src={logoImage} 
-              alt="Mabry's Air Conditioning & Heating, Inc." 
-              width={364}
-              height={109}
-              className="h-[84px] w-auto"
-              priority
-            />
-          </Link>
+        <div className="flex justify-between items-center py-3">
+          <div className="flex flex-col gap-2">
+            <Link href="/" className="hover:opacity-80 transition-opacity">
+              <Image 
+                src={logoImage} 
+                alt="Mabry's Air Conditioning & Heating, Inc." 
+                width={364}
+                height={109}
+                className="h-[84px] w-auto"
+                priority
+              />
+            </Link>
+            <div className="flex items-center gap-3">
+              <a 
+                href="https://www.bbb.org/us/tx/friendswood/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity"
+                title="BBB Accredited Business - A+ Rating"
+              >
+                <Image 
+                  src={bbbBadge} 
+                  alt="BBB Accredited Business - A+ Rating" 
+                  width={120}
+                  height={46}
+                  className="h-[36px] w-auto"
+                />
+              </a>
+              <a 
+                href="https://www.google.com/maps/place/Mabry's+Air+Conditioning+%26+Heating"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity"
+                title="Google 5-Star Reviews"
+              >
+                <Image 
+                  src={googleBadge} 
+                  alt="Google 5-Star Reviews" 
+                  width={80}
+                  height={40}
+                  className="h-[32px] w-auto"
+                />
+              </a>
+            </div>
+          </div>
 
           <nav className="hidden lg:flex items-center gap-8">
             <Link href="/" className="text-sm font-semibold hover:text-accent transition-colors">
