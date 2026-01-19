@@ -29,18 +29,18 @@ export function Header() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-3">
-          <div className="flex flex-col gap-2">
+          <div className="flex items-center gap-6">
             <Link href="/" className="hover:opacity-80 transition-opacity">
               <Image 
                 src={logoImage} 
                 alt="Mabry's Air Conditioning & Heating, Inc." 
-                width={364}
-                height={109}
-                className="h-[84px] w-auto"
+                width={400}
+                height={120}
+                className="h-[96px] w-auto"
                 priority
               />
             </Link>
-            <div className="flex items-center gap-3">
+            <div className="hidden sm:flex items-center gap-4">
               <a 
                 href="https://www.bbb.org/us/tx/friendswood/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805"
                 target="_blank"
@@ -51,9 +51,9 @@ export function Header() {
                 <Image 
                   src={bbbBadge} 
                   alt="BBB Accredited Business - A+ Rating" 
-                  width={120}
-                  height={46}
-                  className="h-[36px] w-auto"
+                  width={140}
+                  height={54}
+                  className="h-[44px] w-auto"
                 />
               </a>
               <a 
@@ -66,9 +66,9 @@ export function Header() {
                 <Image 
                   src={googleBadge} 
                   alt="Google 5-Star Reviews" 
-                  width={80}
-                  height={40}
-                  className="h-[32px] w-auto"
+                  width={100}
+                  height={50}
+                  className="h-[40px] w-auto"
                 />
               </a>
             </div>
