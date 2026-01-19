@@ -25,7 +25,7 @@ const businessSchema = {
   "telephone": "+1-281-331-5248",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "2110 S Gordon",
+    "streetAddress": "2110 S Gordon St",
     "addressLocality": "Alvin",
     "addressRegion": "TX",
     "postalCode": "77511",

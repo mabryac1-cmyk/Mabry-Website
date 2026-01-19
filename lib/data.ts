@@ -3,7 +3,7 @@ export const businessInfo = {
   phone: "281-331-5248",
   email: "office@mabryac.com",
   address: {
-    street: "2110 S Gordon",
+    street: "2110 S Gordon St",
     city: "Alvin",
     state: "TX",
     zip: "77511",
@@ -26,7 +26,7 @@ export const businessInfo = {
 export const generalFaqs = [
   {
     question: "What areas do you serve?",
-    answer: "We serve Alvin, Friendswood, Pearland, Clear Lake, and the surrounding greater Houston area. Our main location is in downtown Alvin at 2110 S Gordon."
+    answer: "We serve Alvin, Friendswood, Pearland, Clear Lake, and the surrounding greater Houston area. Our main location is in downtown Alvin at 2110 S Gordon St."
   },
   {
     question: "Are you licensed and insured?",
@@ -243,7 +243,7 @@ export const locations = [
     description: "Located in downtown Alvin since 1986. Your trusted local HVAC experts providing honest, flat-rate pricing and BBB A+ rated service.",
     content: `
       <h2>Your Hometown HVAC Company in Alvin, TX</h2>
-      <p>Located at 2110 S Gordon in downtown Alvin, Mabry's Air Conditioning & Heating has been your trusted local HVAC company since 1986. We're proud to call Alvin home and treat every customer like family.</p>
+      <p>Located at 2110 S Gordon St in downtown Alvin, Mabry's Air Conditioning & Heating has been your trusted local HVAC company since 1986. We're proud to call Alvin home and treat every customer like family.</p>
 
       <h3>Our Services in Alvin</h3>
       <ul>
