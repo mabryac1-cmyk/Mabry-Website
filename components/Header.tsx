@@ -57,7 +57,7 @@ export function Header() {
                 />
               </a>
               <a 
-                href="https://www.google.com/maps/place/Mabry's+Air+Conditioning+%26+Heating"
+                href="https://share.google/tQHl90FISHBjGCNIM"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:opacity-80 transition-opacity"
