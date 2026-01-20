@@ -22,7 +22,7 @@ export default function Home() {
               href="https://www.bbb.org/us/tx/friendswood/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805/addressId/92394"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 border border-accent/40 text-accent font-semibold text-sm uppercase tracking-wider hover:bg-accent/30 transition-colors"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 border-2 border-accent/50 text-white font-semibold text-sm uppercase tracking-wider hover:bg-accent/30 transition-colors"
             >
               <Award className="w-4 h-4" />
               <span>BBB A+ Rated Since 1986</span>

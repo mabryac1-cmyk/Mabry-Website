@@ -438,6 +438,14 @@ export const reviews = [
     text: "My AC went out - a critical emergency! Mabry's had a tech out in under an hour. He found the problem, located the part, and had us back in the cool within hours. This company has it together! Highly recommended.",
     date: "2023",
   },
+  {
+    id: 9,
+    name: "Lance M.",
+    location: "Texas",
+    rating: 5,
+    text: "Mabry's made it as easy as possible for me and this whole ordeal hardly took up any of my time. Spoke with Nate and he is a very friendly person that took care of me and was a pleasure working with.",
+    date: "2023",
+  },
 ];
 
 export function getServiceBySlug(slug: string) {
