@@ -61,6 +61,41 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/work',
+        destination: '/about',
+        permanent: true,
+      },
+      {
+        source: '/dickinson-heating-repair',
+        destination: '/services/heating-repair',
+        permanent: true,
+      },
+      {
+        source: '/webster-heating-repair',
+        destination: '/services/heating-repair',
+        permanent: true,
+      },
+      {
+        source: '/deer-park-heating-repair',
+        destination: '/services/heating-repair',
+        permanent: true,
+      },
+      {
+        source: '/league-city-ac-repair',
+        destination: '/services/ac-repair',
+        permanent: true,
+      },
+      {
+        source: '/seabrook-ac-repair',
+        destination: '/services/ac-repair',
+        permanent: true,
+      },
+      {
+        source: '/sugar-land-ac-repair',
+        destination: '/services/ac-repair',
+        permanent: true,
+      },
     ];
   },
 }
