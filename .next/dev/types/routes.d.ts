@@ -5,7 +5,7 @@ type AppRoutes = "/" | "/about" | "/areas/[slug]" | "/contact" | "/reviews" | "/
 type AppRouteHandlerRoutes = "/api/leads"
 type PageRoutes = never
 type LayoutRoutes = "/"
-type RedirectRoutes = "/ac-repair" | "/alvin-heating-repair" | "/cart" | "/deer-park-heating-repair" | "/dickinson-heating-repair" | "/friendswood-ac-repair" | "/heater-repair" | "/home" | "/league-city-ac-repair" | "/offers" | "/promotions" | "/seabrook-ac-repair" | "/services" | "/services-1" | "/services-2" | "/sugar-land-ac-repair" | "/webster-heating-repair" | "/work"
+type RedirectRoutes = "/ac-repair" | "/alvin-heating-repair" | "/cart" | "/deer-park-heating-repair" | "/dickinson-heating-repair" | "/friendswood-ac-repair" | "/heater-repair" | "/home" | "/league-city-ac-repair" | "/offers" | "/promotions" | "/seabrook-ac-repair" | "/services" | "/services-1" | "/services-2" | "/sugar-land-ac-repair" | "/webster-ac-repair" | "/webster-heating-repair" | "/work"
 type RewriteRoutes = never
 type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRoutes | AppRouteHandlerRoutes
 
@@ -35,6 +35,7 @@ interface ParamMap {
   "/services/[slug]": { "slug": string; }
   "/services/[slug]/[city]": { "slug": string; "city": string; }
   "/sugar-land-ac-repair": {}
+  "/webster-ac-repair": {}
   "/webster-heating-repair": {}
   "/work": {}
 }

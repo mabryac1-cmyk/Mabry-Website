@@ -102,6 +102,11 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/webster-ac-repair',
+        destination: '/services/ac-repair',
+        permanent: true,
+      },
     ];
   },
 }
