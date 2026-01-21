@@ -97,6 +97,11 @@ const nextConfig = {
         destination: '/services/ac-repair',
         permanent: true,
       },
+      {
+        source: '/cart',
+        destination: '/',
+        permanent: true,
+      },
     ];
   },
 }
