@@ -107,6 +107,16 @@ const nextConfig = {
         destination: '/services/ac-repair',
         permanent: true,
       },
+      {
+        source: '/rosharon-heating-repair',
+        destination: '/services/heating-repair',
+        permanent: true,
+      },
+      {
+        source: '/kemah-heating-repair',
+        destination: '/services/heating-repair',
+        permanent: true,
+      },
     ];
   },
 }
