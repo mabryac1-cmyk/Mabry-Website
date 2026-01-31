@@ -275,10 +275,10 @@ export const locations = [
     phone: "281-482-8400",
     isPrimary: false,
     headline: "Air Conditioning & Heating Services in Friendswood, TX",
-    description: "Proudly serving Friendswood since 1986. Fast response times from our nearby Alvin location. BBB A+ rated HVAC service.",
+    description: "Trusted local HVAC service for Friendswood families since 1986. BBB A+ rated with fast response times.",
     content: `
       <h2>Your Trusted HVAC Company in Friendswood, TX</h2>
-      <p>Mabry's Air Conditioning & Heating has been serving Friendswood homeowners since 1986. Based in nearby Alvin, we provide fast, reliable service throughout Friendswood and treat every customer like family.</p>
+      <p>Mabry's Air Conditioning & Heating has been serving Friendswood homeowners since 1986. We provide fast, reliable service throughout Friendswood and treat every customer like family.</p>
 
       <h3>Residential HVAC Services in Friendswood</h3>
       <ul>
@@ -309,10 +309,10 @@ export const locations = [
     phone: "281-482-8400",
     isPrimary: false,
     headline: "Air Conditioning & Heating Services in Pearland, TX",
-    description: "Providing reliable residential HVAC services to Pearland homes. Fast response times from our nearby Alvin location.",
+    description: "Trusted local HVAC service for Pearland families since 1986. BBB A+ rated with fast response times.",
     content: `
       <h2>Trusted HVAC Services for Pearland Homes</h2>
-      <p>Pearland homeowners have counted on Mabry's Air Conditioning & Heating for decades. Located just minutes away in Alvin, we provide fast, reliable service throughout Pearland.</p>
+      <p>Pearland homeowners have counted on Mabry's Air Conditioning & Heating for decades. We provide fast, reliable service throughout Pearland and are committed to keeping your family comfortable.</p>
 
       <h3>HVAC Services We Offer in Pearland</h3>
       <ul>
