@@ -5,7 +5,7 @@ import { Phone, Mail, MapPin, Clock, Shield, Award, CheckCircle } from "lucide-r
 
 export const metadata: Metadata = {
   title: `Contact Us | ${businessInfo.name} | Call ${businessInfo.phone}`,
-  description: `Contact ${businessInfo.name} for residential AC and heating service. Serving Alvin, Friendswood, Pearland, Clear Lake & more cities across the greater Houston area. License ${businessInfo.license}. BBB A+ Rated.`,
+  description: `Contact ${businessInfo.name} for residential AC and heating service. Serving Alvin, Friendswood, Pearland, Clear Lake & surrounding cities across the greater Houston area. License ${businessInfo.license}. BBB A+ Rated.`,
   alternates: {
     canonical: "/contact",
   },

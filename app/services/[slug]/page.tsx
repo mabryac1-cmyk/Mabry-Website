@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   return {
     title: `${service.name} | ${businessInfo.name} | Alvin TX`,
-    description: `${service.description} Serving Alvin, Friendswood, Pearland, Clear Lake & more cities across the greater Houston area. License ${businessInfo.license}. Call ${businessInfo.phone}.`,
+    description: `${service.description} Serving Alvin, Friendswood, Pearland, Clear Lake & surrounding cities across the greater Houston area. License ${businessInfo.license}. Call ${businessInfo.phone}.`,
     alternates: {
       canonical: `/services/${slug}`,
     },
