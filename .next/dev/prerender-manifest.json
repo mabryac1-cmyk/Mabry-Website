@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "9df191d35f54d57fd26b013322dafa1b",
-    "previewModeSigningKey": "bf391a54e00c626ee97af49fce6bfc5f6090a08e486ce1fdc3a288454017bc53",
-    "previewModeEncryptionKey": "5c3b961b736a1b5781c45c2bb659ff58f9c8fc1e8002be12ea63822d1e56625c"
-  }
-}
+{"version":4,"routes":{"/areas/alvin":{},"/areas/friendswood":{},"/areas/pearland":{},"/areas/clear-lake":{},"/areas/deer-park":{},"/areas/league-city":{},"/areas/pasadena":{},"/areas/sienna":{},"/areas/angleton":{},"/services/ac-repair/alvin":{},"/services/ac-repair/friendswood":{},"/services/ac-repair/pearland":{},"/services/ac-repair/clear-lake":{},"/services/ac-repair/deer-park":{},"/services/ac-repair/league-city":{},"/services/ac-repair/pasadena":{},"/services/ac-repair/sienna":{},"/services/ac-repair/angleton":{},"/services/heating-repair/alvin":{},"/services/heating-repair/friendswood":{},"/services/heating-repair/pearland":{},"/services/heating-repair/clear-lake":{},"/services/heating-repair/deer-park":{},"/services/heating-repair/league-city":{},"/services/heating-repair/pasadena":{},"/services/heating-repair/sienna":{},"/services/heating-repair/angleton":{},"/services/ac-installation/alvin":{},"/services/ac-installation/friendswood":{},"/services/ac-installation/pearland":{},"/services/ac-installation/clear-lake":{},"/services/ac-installation/deer-park":{},"/services/ac-installation/league-city":{},"/services/ac-installation/pasadena":{},"/services/ac-installation/sienna":{},"/services/ac-installation/angleton":{}},"dynamicRoutes":{"/areas/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/areas/[slug]","routeRegex":"^\\/areas\\/([^/]+?)(?:\\/)?$","allowHeader":[]},"/services/[slug]/[city]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/services/[slug]/[city]","routeRegex":"^\\/services\\/([^/]+?)\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"5e65d070347ed66181203d23de996d6e","previewModeSigningKey":"05cfed810dbeecdb6ea6df3f9f3b2817ca7fb525abc92dc842757f08853507c4","previewModeEncryptionKey":"92831dbd09cf99b56b5d398026991a8374741fe8b25bf76f075e2827bf319698"}}

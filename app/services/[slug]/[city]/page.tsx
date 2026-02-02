@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   const title = `${service.name} in ${location.name}, ${location.state} | ${businessInfo.name}`;
-  const description = `${service.description} Serving ${location.name}, ${location.state}. License ${businessInfo.license}. BBB ${businessInfo.bbbRating} Rated. Call ${businessInfo.phone} for service.`;
+  const description = `${service.description} Serving ${location.name}, ${location.state}. License ${businessInfo.license}. BBB ${businessInfo.bbbRating} Rated. Call ${location.phone} for service.`;
 
   return {
     title,
@@ -82,11 +82,11 @@ export default async function ServiceCityPage({ params }: { params: Promise<{ sl
           </p>
           <div className="mt-6 flex flex-wrap gap-4">
             <a 
-              href={`tel:${businessInfo.phone}`}
+              href={`tel:${location.phone}`}
               className="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
             >
               <Phone className="w-5 h-5" />
-              {businessInfo.phone}
+              {location.phone}
             </a>
             <div className="flex items-center gap-4 text-white/80">
               <span className="flex items-center gap-2">
@@ -138,11 +138,11 @@ export default async function ServiceCityPage({ params }: { params: Promise<{ sl
                   Call us now or fill out the form. Flat-rate pricing with no hidden charges.
                 </p>
                 <a 
-                  href={`tel:${businessInfo.phone}`}
+                  href={`tel:${location.phone}`}
                   className="inline-flex items-center gap-2 bg-accent text-white font-bold py-3 px-6 rounded-lg hover:bg-accent/90 transition-colors"
                 >
                   <Phone className="w-5 h-5" />
-                  Call {businessInfo.phone}
+                  Call {location.phone}
                 </a>
               </div>
 

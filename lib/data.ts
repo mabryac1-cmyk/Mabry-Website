@@ -26,7 +26,7 @@ export const businessInfo = {
 export const generalFaqs = [
   {
     question: "What areas do you serve?",
-    answer: "We serve Alvin, Friendswood, Pearland, Clear Lake, and the surrounding greater Houston area. Our main location is in downtown Alvin at 2110 S Gordon St."
+    answer: "We serve Alvin, Friendswood, Pearland, Clear Lake, League City, Deer Park, Pasadena, Sienna, Angleton, and the surrounding greater Houston area. Our main location is in downtown Alvin at 2110 S Gordon St."
   },
   {
     question: "Are you licensed and insured?",
@@ -370,6 +370,182 @@ export const locations = [
       </ul>
     `,
     keywords: ["AC installation Clear Lake Houston", "HVAC Clear Lake TX", "air conditioning Clear Lake"],
+  },
+  {
+    slug: "deer-park",
+    name: "Deer Park",
+    state: "TX",
+    zipCodes: ["77536"],
+    phone: "281-482-8400",
+    isPrimary: false,
+    headline: "Air Conditioning & Heating Services in Deer Park, TX",
+    description: "Reliable residential HVAC service for Deer Park homeowners. BBB A+ rated with flat-rate pricing since 1986.",
+    content: `
+      <h2>Reliable HVAC Services for Deer Park Homes</h2>
+      <p>Deer Park homeowners deserve an HVAC company they can count on. Mabry's Air Conditioning & Heating has been providing honest, dependable service to the greater Houston area since 1986, and we're proud to serve the Deer Park community.</p>
+
+      <h3>Residential HVAC Services in Deer Park</h3>
+      <ul>
+        <li>AC repair - fast response times</li>
+        <li>Heating repair and furnace service</li>
+        <li>New AC system installation</li>
+        <li>Preventive maintenance programs</li>
+      </ul>
+
+      <h3>Serving the Deer Park Community</h3>
+      <p>From neighborhoods near Deer Park High School to the areas around the San Jacinto Monument, we provide service throughout Deer Park and the 77536 zip code.</p>
+
+      <h3>Why Deer Park Homeowners Trust Mabry's</h3>
+      <ul>
+        <li>Nearly 40 years of experience serving the Houston area</li>
+        <li>Flat-rate pricing with no hidden charges</li>
+        <li>BBB A+ Accredited Business</li>
+        <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
+        <li>Residential specialists who understand homes</li>
+      </ul>
+    `,
+    keywords: ["HVAC Deer Park TX", "AC repair Deer Park", "heating repair Deer Park TX", "air conditioning Deer Park"],
+  },
+  {
+    slug: "league-city",
+    name: "League City",
+    state: "TX",
+    zipCodes: ["77573", "77574"],
+    phone: "281-482-8400",
+    isPrimary: false,
+    headline: "Air Conditioning & Heating Services in League City, TX",
+    description: "Trusted HVAC service for League City families. BBB A+ rated with flat-rate pricing since 1986.",
+    content: `
+      <h2>Trusted HVAC Services for League City Homes</h2>
+      <p>League City is one of the fastest-growing communities in the Houston area, and Mabry's Air Conditioning & Heating is proud to serve its residents. Since 1986, we've built our reputation on honest service and fair pricing.</p>
+
+      <h3>HVAC Services We Offer in League City</h3>
+      <ul>
+        <li>AC repair - same-day service available</li>
+        <li>Heating repair and furnace maintenance</li>
+        <li>New AC system installation and replacement</li>
+        <li>Seasonal maintenance programs</li>
+      </ul>
+
+      <h3>Serving All League City Neighborhoods</h3>
+      <p>From South Shore Harbour to Tuscan Lakes, from Victory Lakes to Bay Colony, we service homes throughout League City including zip codes 77573 and 77574.</p>
+
+      <h3>Why League City Residents Choose Mabry's</h3>
+      <ul>
+        <li>Nearly 40 years serving the greater Houston area</li>
+        <li>Honest, flat-rate pricing - no surprises</li>
+        <li>BBB A+ Rating you can trust</li>
+        <li>Residential-only focus means we specialize in homes</li>
+        <li>Licensed and insured (TACLB12058E)</li>
+      </ul>
+    `,
+    keywords: ["HVAC League City TX", "AC repair League City", "heating repair League City TX", "air conditioning League City"],
+  },
+  {
+    slug: "pasadena",
+    name: "Pasadena",
+    state: "TX",
+    zipCodes: ["77504", "77505"],
+    phone: "281-482-8400",
+    isPrimary: false,
+    headline: "Air Conditioning & Heating Services in Pasadena, TX",
+    description: "Expert residential HVAC service for Pasadena homeowners. BBB A+ rated with flat-rate pricing since 1986.",
+    content: `
+      <h2>Expert HVAC Services for Pasadena Homes</h2>
+      <p>Pasadena homeowners in the 77504 and 77505 areas can count on Mabry's Air Conditioning & Heating for reliable, honest HVAC service. We've been serving the greater Houston area since 1986.</p>
+
+      <h3>Residential HVAC Services in Pasadena</h3>
+      <ul>
+        <li>AC repair for all makes and models</li>
+        <li>Heating repair and furnace service</li>
+        <li>New AC installation and replacement</li>
+        <li>Preventive maintenance programs</li>
+      </ul>
+
+      <h3>Serving South Pasadena Neighborhoods</h3>
+      <p>We provide service throughout the southern Pasadena area, including neighborhoods near Pasadena Memorial High School, South Shaver, and the Burke Road corridor. Our service area covers the 77504 and 77505 zip codes.</p>
+
+      <h3>Why Pasadena Homeowners Trust Mabry's</h3>
+      <ul>
+        <li>Nearly 40 years of proven experience</li>
+        <li>Flat-rate pricing with no hidden fees</li>
+        <li>BBB A+ Accredited Business</li>
+        <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
+        <li>Residential specialists who focus on homes</li>
+      </ul>
+    `,
+    keywords: ["HVAC Pasadena TX", "AC repair Pasadena", "heating repair Pasadena TX", "air conditioning Pasadena"],
+  },
+  {
+    slug: "sienna",
+    name: "Sienna",
+    state: "TX",
+    zipCodes: ["77459"],
+    phone: "281-331-5248",
+    isPrimary: false,
+    headline: "Air Conditioning & Heating Services in Sienna, TX",
+    description: "Trusted HVAC service for Sienna Plantation homeowners. BBB A+ rated with flat-rate pricing since 1986.",
+    content: `
+      <h2>Quality HVAC Services for Sienna Homes</h2>
+      <p>Sienna is known for its beautiful master-planned community and family-friendly neighborhoods. Mabry's Air Conditioning & Heating is proud to serve Sienna homeowners with the same honest, reliable service we've provided since 1986.</p>
+
+      <h3>HVAC Services We Offer in Sienna</h3>
+      <ul>
+        <li>AC repair - fast response times</li>
+        <li>Heating repair and furnace maintenance</li>
+        <li>New AC system installation</li>
+        <li>Seasonal maintenance programs</li>
+      </ul>
+
+      <h3>Serving the Sienna Community</h3>
+      <p>From Waters Lake to Sawmill Lake, from Sienna Village to the Club Sienna areas, we service homes throughout the Sienna Plantation community and the 77459 zip code.</p>
+
+      <h3>Why Sienna Homeowners Choose Mabry's</h3>
+      <ul>
+        <li>Nearly 40 years serving the greater Houston area</li>
+        <li>Flat-rate pricing with no hidden charges</li>
+        <li>BBB A+ Accredited Business</li>
+        <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
+        <li>Residential specialists who understand homes</li>
+      </ul>
+    `,
+    keywords: ["HVAC Sienna TX", "AC repair Sienna", "heating repair Sienna TX", "air conditioning Sienna Plantation"],
+  },
+  {
+    slug: "angleton",
+    name: "Angleton",
+    state: "TX",
+    zipCodes: ["77515", "77516"],
+    phone: "281-331-5248",
+    isPrimary: false,
+    headline: "Air Conditioning & Heating Services in Angleton, TX",
+    description: "Reliable residential HVAC service for Angleton homeowners. BBB A+ rated with flat-rate pricing since 1986.",
+    content: `
+      <h2>Reliable HVAC Services for Angleton Homes</h2>
+      <p>As the county seat of Brazoria County, Angleton is at the heart of our service area. Mabry's Air Conditioning & Heating has been providing honest, dependable HVAC service to the region since 1986, and we're proud to serve Angleton homeowners.</p>
+
+      <h3>Residential HVAC Services in Angleton</h3>
+      <ul>
+        <li>AC repair for all makes and models</li>
+        <li>Heating repair and furnace service</li>
+        <li>New AC installation and replacement</li>
+        <li>Preventive maintenance programs</li>
+      </ul>
+
+      <h3>Serving the Angleton Community</h3>
+      <p>From downtown Angleton to the surrounding neighborhoods, including areas near Angleton High School and the Brazoria County Courthouse, we service homes throughout Angleton and the 77515 and 77516 zip codes.</p>
+
+      <h3>Why Angleton Homeowners Trust Mabry's</h3>
+      <ul>
+        <li>Based nearby in Alvin - just a short drive away</li>
+        <li>Nearly 40 years of proven experience</li>
+        <li>Flat-rate pricing with no hidden fees</li>
+        <li>BBB A+ Accredited Business</li>
+        <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
+        <li>Residential specialists who focus on homes</li>
+      </ul>
+    `,
+    keywords: ["HVAC Angleton TX", "AC repair Angleton", "heating repair Angleton TX", "air conditioning Angleton"],
   },
 ];
 
