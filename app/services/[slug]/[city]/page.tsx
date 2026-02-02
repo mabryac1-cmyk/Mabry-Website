@@ -109,8 +109,8 @@ export default async function ServiceCityPage({ params }: { params: Promise<{ sl
               <div className="prose prose-lg max-w-none mb-8">
                 <h2>{service.name} Services for {location.name} Homeowners</h2>
                 <p>
-                  Looking for reliable {service.name.toLowerCase()} in {location.name}, {location.state}? 
-                  {businessInfo.name} has been the trusted choice for residential HVAC services since {businessInfo.established}. 
+                  Looking for reliable {service.name.toLowerCase()} in {location.name}, {location.state}?{" "}
+                  {businessInfo.name} has been the trusted choice for residential HVAC services since {businessInfo.established}.{" "}
                   We specialize in keeping {location.name} homes comfortable year-round with honest, flat-rate pricing.
                 </p>
               </div>

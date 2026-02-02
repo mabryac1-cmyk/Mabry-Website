@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/areas/alvin":{},"/areas/friendswood":{},"/areas/pearland":{},"/areas/clear-lake":{},"/areas/deer-park":{},"/areas/league-city":{},"/areas/pasadena":{},"/areas/sienna":{},"/areas/angleton":{},"/services/ac-repair/alvin":{},"/services/ac-repair/friendswood":{},"/services/ac-repair/pearland":{},"/services/ac-repair/clear-lake":{},"/services/ac-repair/deer-park":{},"/services/ac-repair/league-city":{},"/services/ac-repair/pasadena":{},"/services/ac-repair/sienna":{},"/services/ac-repair/angleton":{},"/services/heating-repair/alvin":{},"/services/heating-repair/friendswood":{},"/services/heating-repair/pearland":{},"/services/heating-repair/clear-lake":{},"/services/heating-repair/deer-park":{},"/services/heating-repair/league-city":{},"/services/heating-repair/pasadena":{},"/services/heating-repair/sienna":{},"/services/heating-repair/angleton":{},"/services/ac-installation/alvin":{},"/services/ac-installation/friendswood":{},"/services/ac-installation/pearland":{},"/services/ac-installation/clear-lake":{},"/services/ac-installation/deer-park":{},"/services/ac-installation/league-city":{},"/services/ac-installation/pasadena":{},"/services/ac-installation/sienna":{},"/services/ac-installation/angleton":{}},"dynamicRoutes":{"/areas/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/areas/[slug]","routeRegex":"^\\/areas\\/([^/]+?)(?:\\/)?$","allowHeader":[]},"/services/[slug]/[city]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/services/[slug]/[city]","routeRegex":"^\\/services\\/([^/]+?)\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"fe5178168b1d5c3872f974479aaf9e6b","previewModeSigningKey":"e62133504254919f8d48341a646baa7655f1efe9a4e28eedb114ab77ab5a450e","previewModeEncryptionKey":"bdba4f465fa32d643fae01d2a34ef1d8ac7473867b5d0a7fa755c631df58f51b"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "1a9a53db76172fdaf85903ce516b5876",
+    "previewModeSigningKey": "68cc8b9c11e6579d34130c63ed5e7aa5f786a7804be0b9c48af41b378a2c8c80",
+    "previewModeEncryptionKey": "6b2a2404ef34ebfc29099a0bc46a78c19f592ecd1c798eb5d1bf1d63b55e2195"
+  }
+}
