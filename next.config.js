@@ -117,6 +117,31 @@ const nextConfig = {
         destination: '/services/heating-repair',
         permanent: true,
       },
+      {
+        source: '/ac-service-alvin',
+        destination: '/services/ac-repair/alvin',
+        permanent: true,
+      },
+      {
+        source: '/furnace-repair-pearland-tx',
+        destination: '/services/heating-repair/pearland',
+        permanent: true,
+      },
+      {
+        source: '/manvel-heating-repair',
+        destination: '/services/heating-repair',
+        permanent: true,
+      },
+      {
+        source: '/missouri-city-heating-repair',
+        destination: '/services/heating-repair',
+        permanent: true,
+      },
+      {
+        source: '/reffers',
+        destination: '/',
+        permanent: true,
+      },
     ];
   },
 }
