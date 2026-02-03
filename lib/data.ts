@@ -26,7 +26,7 @@ export const businessInfo = {
 export const generalFaqs = [
   {
     question: "What areas do you serve?",
-    answer: "We serve Alvin, Friendswood, Pearland, Clear Lake, League City, Deer Park, Pasadena, Sienna, Angleton, and the surrounding greater Houston area. Our main location is in downtown Alvin at 2110 S Gordon St."
+    answer: "We serve Alvin, Friendswood, Pearland, Clear Lake, League City, Deer Park, Pasadena, Sienna, Angleton, Manvel, Rosharon, and the surrounding greater Houston area. Our main location is in downtown Alvin at 2110 S Gordon St."
   },
   {
     question: "Are you licensed and insured?",
@@ -546,6 +546,78 @@ export const locations = [
       </ul>
     `,
     keywords: ["HVAC Angleton TX", "AC repair Angleton", "heating repair Angleton TX", "air conditioning Angleton"],
+  },
+  {
+    slug: "manvel",
+    name: "Manvel",
+    state: "TX",
+    zipCodes: ["77578"],
+    phone: "281-331-5248",
+    isPrimary: false,
+    headline: "Air Conditioning & Heating Services in Manvel, TX",
+    description: "Trusted residential HVAC service for Manvel homeowners. BBB A+ rated with flat-rate pricing since 1986.",
+    content: `
+      <h2>Trusted HVAC Services for Manvel Homes</h2>
+      <p>Manvel has grown rapidly in recent years, and Mabry's Air Conditioning & Heating is proud to serve this thriving community. Based nearby in Alvin, we provide fast, reliable HVAC service with the same honest approach we've used since 1986.</p>
+
+      <h3>Residential HVAC Services in Manvel</h3>
+      <ul>
+        <li>AC repair - fast response times</li>
+        <li>Heating repair and furnace maintenance</li>
+        <li>New AC system installation</li>
+        <li>Seasonal maintenance programs</li>
+      </ul>
+
+      <h3>Serving the Manvel Community</h3>
+      <p>From Rodeo Palms to Pomona, from Manvel Town Center to the surrounding neighborhoods, we service homes throughout Manvel and the 77578 zip code.</p>
+
+      <h3>Why Manvel Homeowners Choose Mabry's</h3>
+      <ul>
+        <li>Based nearby in Alvin - quick response times</li>
+        <li>Nearly 40 years serving the greater Houston area</li>
+        <li>Flat-rate pricing with no hidden charges</li>
+        <li>BBB A+ Accredited Business</li>
+        <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
+        <li>Residential specialists who understand homes</li>
+      </ul>
+    `,
+    keywords: ["HVAC Manvel TX", "AC repair Manvel", "heating repair Manvel TX", "air conditioning Manvel"],
+  },
+  {
+    slug: "rosharon",
+    name: "Rosharon",
+    state: "TX",
+    zipCodes: ["77583"],
+    phone: "281-331-5248",
+    isPrimary: false,
+    headline: "Air Conditioning & Heating Services in Rosharon, TX",
+    description: "Reliable residential HVAC service for Rosharon homeowners. BBB A+ rated with flat-rate pricing since 1986.",
+    content: `
+      <h2>Reliable HVAC Services for Rosharon Homes</h2>
+      <p>Rosharon residents can count on Mabry's Air Conditioning & Heating for dependable, honest HVAC service. Located nearby in Alvin, we've been serving the Brazoria County area since 1986.</p>
+
+      <h3>Residential HVAC Services in Rosharon</h3>
+      <ul>
+        <li>AC repair for all makes and models</li>
+        <li>Heating repair and furnace service</li>
+        <li>New AC installation and replacement</li>
+        <li>Preventive maintenance programs</li>
+      </ul>
+
+      <h3>Serving the Rosharon Community</h3>
+      <p>From the rural homesteads to the newer developments, we service homes throughout Rosharon and the 77583 zip code. Our proximity in Alvin means fast response times for your HVAC needs.</p>
+
+      <h3>Why Rosharon Homeowners Trust Mabry's</h3>
+      <ul>
+        <li>Based nearby in Alvin - just minutes away</li>
+        <li>Nearly 40 years of proven experience</li>
+        <li>Flat-rate pricing with no hidden fees</li>
+        <li>BBB A+ Accredited Business</li>
+        <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
+        <li>Residential specialists who focus on homes</li>
+      </ul>
+    `,
+    keywords: ["HVAC Rosharon TX", "AC repair Rosharon", "heating repair Rosharon TX", "air conditioning Rosharon"],
   },
 ];
 
