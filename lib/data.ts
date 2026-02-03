@@ -86,7 +86,7 @@ export const services = [
         <li>Flat-rate pricing - no hidden or surprise charges</li>
         <li>Texas licensed HVAC contractor (TACLB12058E)</li>
         <li>BBB A+ Accredited Business</li>
-        <li>Serving Friendswood, Pearland, Clear Lake & Alvin</li>
+        <li>Serving Alvin, Friendswood, Pearland, Clear Lake & surrounding cities</li>
         <li>Residential specialists - we know homes</li>
       </ul>
     `,
