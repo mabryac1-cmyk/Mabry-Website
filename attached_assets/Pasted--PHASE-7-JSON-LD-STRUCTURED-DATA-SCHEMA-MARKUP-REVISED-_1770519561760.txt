@@ -1,0 +1,216 @@
+## PHASE 7: JSON-LD STRUCTURED DATA (SCHEMA MARKUP) — REVISED
+
+Add JSON-LD schema markup to help Google understand the business and connect the website to both Google Business Profiles. 
+
+**IMPORTANT RULES:**
+- There is ONE business entity (not two). Mabry's is one company with one physical location (Alvin) and a second service area phone line (Friendswood).
+- Do NOT create a separate HVACBusiness or LocalBusiness entity for Friendswood.
+- Do NOT include aggregateRating (review counts/ratings) in the schema at all.
+
+### 7A: Homepage Schema
+
+Add this to the `<head>` section of the homepage:
+
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HVACBusiness",
+  "@id": "https://www.mabryac.com/#business",
+  "name": "Mabry's Air Conditioning & Heating, Inc.",
+  "url": "https://www.mabryac.com",
+  "logo": "https://www.mabryac.com/_next/static/media/mabrys-ac-heating-alvin-tx-logo_1768859481677.7306ed6b.png",
+  "image": "https://www.mabryac.com/_next/static/media/mabrys-ac-heating-alvin-tx-logo_1768859481677.7306ed6b.png",
+  "description": "Family-owned residential HVAC company serving the greater Houston area since 1986. AC repair, heating repair, and installation with flat-rate pricing and no hidden charges. BBB A+ rated. License TACLB12058E.",
+  "foundingDate": "1986",
+  "priceRange": "$$",
+  "currenciesAccepted": "USD",
+  "paymentAccepted": "Cash, Credit Card, Check",
+  "telephone": "+1-281-331-5248",
+  "email": "office@mabryac.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2110 S Gordon St",
+    "addressLocality": "Alvin",
+    "addressRegion": "TX",
+    "postalCode": "77511",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 29.4046,
+    "longitude": -95.2450
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+1-281-331-5248",
+      "contactType": "customer service",
+      "areaServed": [
+        {"@type": "City", "name": "Alvin", "addressRegion": "TX"},
+        {"@type": "City", "name": "Manvel", "addressRegion": "TX"},
+        {"@type": "City", "name": "Angleton", "addressRegion": "TX"},
+        {"@type": "City", "name": "Rosharon", "addressRegion": "TX"},
+        {"@type": "City", "name": "Sienna", "addressRegion": "TX"}
+      ],
+      "availableLanguage": "English"
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+1-281-482-8400",
+      "contactType": "customer service",
+      "areaServed": [
+        {"@type": "City", "name": "Friendswood", "addressRegion": "TX"},
+        {"@type": "City", "name": "Pearland", "addressRegion": "TX"},
+        {"@type": "City", "name": "Clear Lake", "addressRegion": "TX"},
+        {"@type": "City", "name": "League City", "addressRegion": "TX"},
+        {"@type": "City", "name": "Deer Park", "addressRegion": "TX"},
+        {"@type": "City", "name": "Pasadena", "addressRegion": "TX"}
+      ],
+      "availableLanguage": "English"
+    }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "07:30",
+      "closes": "17:00"
+    }
+  ],
+  "areaServed": [
+    {"@type": "City", "name": "Alvin", "addressRegion": "TX"},
+    {"@type": "City", "name": "Friendswood", "addressRegion": "TX"},
+    {"@type": "City", "name": "Pearland", "addressRegion": "TX"},
+    {"@type": "City", "name": "Clear Lake", "addressRegion": "TX"},
+    {"@type": "City", "name": "League City", "addressRegion": "TX"},
+    {"@type": "City", "name": "Deer Park", "addressRegion": "TX"},
+    {"@type": "City", "name": "Pasadena", "addressRegion": "TX"},
+    {"@type": "City", "name": "Manvel", "addressRegion": "TX"},
+    {"@type": "City", "name": "Angleton", "addressRegion": "TX"},
+    {"@type": "City", "name": "Rosharon", "addressRegion": "TX"},
+    {"@type": "City", "name": "Sienna", "addressRegion": "TX"},
+    {"@type": "City", "name": "Webster", "addressRegion": "TX"},
+    {"@type": "City", "name": "Seabrook", "addressRegion": "TX"},
+    {"@type": "City", "name": "Kemah", "addressRegion": "TX"},
+    {"@type": "City", "name": "Dickinson", "addressRegion": "TX"},
+    {"@type": "City", "name": "La Marque", "addressRegion": "TX"}
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "HVAC Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AC Repair",
+          "description": "Fast, reliable residential AC repair for all makes and models."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Heating Repair & Maintenance",
+          "description": "Professional furnace and heating system repair and seasonal maintenance."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AC Installation",
+          "description": "Professional AC installation and replacement with energy-efficient systems."
+        }
+      }
+    ]
+  },
+  "sameAs": [
+    "https://www.bbb.org/us/tx/alvin/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805",
+    "https://www.yelp.com/biz/mabrys-air-conditioning-and-heating-friendswood-3",
+    "https://www.yelp.com/biz/mabrys-air-conditioning-and-heating-alvin-2",
+    "https://nextdoor.com/pages/mabrys-air-conditioning-heating-alvin-tx/"
+  ]
+}
+</script>
+```
+
+### 7B: Friendswood Area Page Schema
+
+On the `/areas/friendswood` page, add a SMALLER schema block that references the SAME business entity (using the @id from the homepage) and describes this page's specific focus. Do NOT create a second HVACBusiness entity.
+
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "HVAC Services in Friendswood, TX",
+  "description": "Residential AC repair, heating service, and installation for Friendswood, TX homeowners. Flat-rate pricing, BBB A+ rated. Call 281-482-8400.",
+  "url": "https://www.mabryac.com/areas/friendswood",
+  "about": {
+    "@type": "HVACBusiness",
+    "@id": "https://www.mabryac.com/#business"
+  },
+  "mainEntity": {
+    "@type": "Service",
+    "name": "HVAC Services in Friendswood, TX",
+    "provider": {
+      "@type": "HVACBusiness",
+      "@id": "https://www.mabryac.com/#business"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Friendswood",
+      "addressRegion": "TX"
+    },
+    "telephone": "+1-281-482-8400"
+  }
+}
+</script>
+```
+
+### 7C: Alvin Area Page Schema
+
+Same approach for `/areas/alvin` — reference the same business entity:
+
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "HVAC Services in Alvin, TX",
+  "description": "Residential AC repair, heating service, and installation for Alvin, TX homeowners. Flat-rate pricing, BBB A+ rated. Call 281-331-5248.",
+  "url": "https://www.mabryac.com/areas/alvin",
+  "about": {
+    "@type": "HVACBusiness",
+    "@id": "https://www.mabryac.com/#business"
+  },
+  "mainEntity": {
+    "@type": "Service",
+    "name": "HVAC Services in Alvin, TX",
+    "provider": {
+      "@type": "HVACBusiness",
+      "@id": "https://www.mabryac.com/#business"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Alvin",
+      "addressRegion": "TX"
+    },
+    "telephone": "+1-281-331-5248"
+  }
+}
+</script>
+```
+
+### 7D: Validation
+
+After implementing all schema markup, test each page using Google's Rich Results Test:
+https://search.google.com/test/rich-results
+
+Enter each URL and confirm:
+- No errors are reported
+- The HVACBusiness entity is detected correctly
+- The contactPoints show both phone numbers (on homepage)
+- No aggregateRating appears anywhere

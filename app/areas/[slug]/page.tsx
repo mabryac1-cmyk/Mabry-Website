@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Script from "next/script";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LeadForm } from "@/components/LeadForm";
@@ -36,8 +37,39 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
     notFound();
   }
 
+  const pageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": `HVAC Services in ${location.name}, ${location.state}`,
+    "description": `Residential AC repair, heating service, and installation for ${location.name}, ${location.state} homeowners. Flat-rate pricing, BBB A+ rated. Call ${location.phone}.`,
+    "url": `https://www.mabryac.com/areas/${slug}`,
+    "about": {
+      "@type": "HVACBusiness",
+      "@id": "https://www.mabryac.com/#business"
+    },
+    "mainEntity": {
+      "@type": "Service",
+      "name": `HVAC Services in ${location.name}, ${location.state}`,
+      "provider": {
+        "@type": "HVACBusiness",
+        "@id": "https://www.mabryac.com/#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": location.name,
+        "addressRegion": location.state
+      },
+      "telephone": `+1-${location.phone}`
+    }
+  };
+
   return (
     <>
+      <Script
+        id={`area-schema-${slug}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
+      />
       <section className="bg-primary py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link href="/" className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors">

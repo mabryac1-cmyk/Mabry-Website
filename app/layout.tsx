@@ -18,11 +18,19 @@ export const metadata: Metadata = {
 
 const businessSchema = {
   "@context": "https://schema.org",
-  "@type": ["HVACBusiness", "LocalBusiness"],
+  "@type": "HVACBusiness",
   "@id": "https://www.mabryac.com/#business",
   "name": "Mabry's Air Conditioning & Heating, Inc.",
-  "url": "https://www.mabryac.com/",
+  "url": "https://www.mabryac.com",
+  "logo": "https://www.mabryac.com/_next/static/media/mabrys-ac-heating-alvin-tx-logo_1768859481677.7306ed6b.png",
+  "image": "https://www.mabryac.com/_next/static/media/mabrys-ac-heating-alvin-tx-logo_1768859481677.7306ed6b.png",
+  "description": "Family-owned residential HVAC company serving the greater Houston area since 1986. AC repair, heating repair, and installation with flat-rate pricing and no hidden charges. BBB A+ rated. License TACLB12058E.",
+  "foundingDate": "1986",
+  "priceRange": "$$",
+  "currenciesAccepted": "USD",
+  "paymentAccepted": "Cash, Credit Card, Check",
   "telephone": "+1-281-331-5248",
+  "email": "office@mabryac.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "2110 S Gordon St",
@@ -31,39 +39,101 @@ const businessSchema = {
     "postalCode": "77511",
     "addressCountry": "US"
   },
-  "foundingDate": "1986",
-  "description": "Residential AC & heating services since 1986. Honest flat-rate pricing with no hidden charges.",
-  "priceRange": "$$",
-  "serviceType": [
-    "Air conditioning repair",
-    "Heating repair and maintenance",
-    "Air conditioning installation"
-  ],
-  "areaServed": [
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 29.4046,
+    "longitude": -95.2450
+  },
+  "contactPoint": [
     {
-      "@type": "City",
-      "name": "Alvin",
-      "address": { "@type": "PostalAddress", "addressRegion": "TX", "addressCountry": "US" }
+      "@type": "ContactPoint",
+      "telephone": "+1-281-331-5248",
+      "contactType": "customer service",
+      "areaServed": [
+        {"@type": "City", "name": "Alvin", "addressRegion": "TX"},
+        {"@type": "City", "name": "Manvel", "addressRegion": "TX"},
+        {"@type": "City", "name": "Angleton", "addressRegion": "TX"},
+        {"@type": "City", "name": "Rosharon", "addressRegion": "TX"},
+        {"@type": "City", "name": "Sienna", "addressRegion": "TX"}
+      ],
+      "availableLanguage": "English"
     },
     {
-      "@type": "City",
-      "name": "Friendswood",
-      "address": { "@type": "PostalAddress", "addressRegion": "TX", "addressCountry": "US" }
-    },
-    {
-      "@type": "City",
-      "name": "Pearland",
-      "address": { "@type": "PostalAddress", "addressRegion": "TX", "addressCountry": "US" }
-    },
-    {
-      "@type": "Place",
-      "name": "Clear Lake (Houston)",
-      "address": { "@type": "PostalAddress", "addressRegion": "TX", "addressCountry": "US" }
+      "@type": "ContactPoint",
+      "telephone": "+1-281-482-8400",
+      "contactType": "customer service",
+      "areaServed": [
+        {"@type": "City", "name": "Friendswood", "addressRegion": "TX"},
+        {"@type": "City", "name": "Pearland", "addressRegion": "TX"},
+        {"@type": "City", "name": "Clear Lake", "addressRegion": "TX"},
+        {"@type": "City", "name": "League City", "addressRegion": "TX"},
+        {"@type": "City", "name": "Deer Park", "addressRegion": "TX"},
+        {"@type": "City", "name": "Pasadena", "addressRegion": "TX"}
+      ],
+      "availableLanguage": "English"
     }
   ],
-  "additionalProperty": [
-    { "@type": "PropertyValue", "name": "Texas HVAC License", "value": "TACLB12058E" },
-    { "@type": "PropertyValue", "name": "BBB Rating", "value": "A+" }
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "07:30",
+      "closes": "17:00"
+    }
+  ],
+  "areaServed": [
+    {"@type": "City", "name": "Alvin", "addressRegion": "TX"},
+    {"@type": "City", "name": "Friendswood", "addressRegion": "TX"},
+    {"@type": "City", "name": "Pearland", "addressRegion": "TX"},
+    {"@type": "City", "name": "Clear Lake", "addressRegion": "TX"},
+    {"@type": "City", "name": "League City", "addressRegion": "TX"},
+    {"@type": "City", "name": "Deer Park", "addressRegion": "TX"},
+    {"@type": "City", "name": "Pasadena", "addressRegion": "TX"},
+    {"@type": "City", "name": "Manvel", "addressRegion": "TX"},
+    {"@type": "City", "name": "Angleton", "addressRegion": "TX"},
+    {"@type": "City", "name": "Rosharon", "addressRegion": "TX"},
+    {"@type": "City", "name": "Sienna", "addressRegion": "TX"},
+    {"@type": "City", "name": "Webster", "addressRegion": "TX"},
+    {"@type": "City", "name": "Seabrook", "addressRegion": "TX"},
+    {"@type": "City", "name": "Kemah", "addressRegion": "TX"},
+    {"@type": "City", "name": "Dickinson", "addressRegion": "TX"},
+    {"@type": "City", "name": "La Marque", "addressRegion": "TX"}
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "HVAC Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AC Repair",
+          "description": "Fast, reliable residential AC repair for all makes and models."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Heating Repair & Maintenance",
+          "description": "Professional furnace and heating system repair and seasonal maintenance."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AC Installation",
+          "description": "Professional AC installation and replacement with energy-efficient systems."
+        }
+      }
+    ]
+  },
+  "sameAs": [
+    "https://www.bbb.org/us/tx/alvin/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805",
+    "https://www.yelp.com/biz/mabrys-air-conditioning-and-heating-friendswood-3",
+    "https://www.yelp.com/biz/mabrys-air-conditioning-and-heating-alvin-2",
+    "https://nextdoor.com/pages/mabrys-air-conditioning-heating-alvin-tx/"
   ]
 };
 
