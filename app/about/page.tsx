@@ -4,7 +4,7 @@ import { businessInfo, locations } from "@/lib/data";
 import { Shield, Award, Clock, Users, CheckCircle, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: `About Us | ${businessInfo.name} | Alvin TX HVAC Since 1986`,
+  title: `About Mabry's Air Conditioning & Heating | Family-Owned Since 1986 | Alvin & Friendswood TX`,
   description: `Learn about ${businessInfo.name} - a family-owned residential HVAC company serving Alvin, Friendswood, Pearland & Clear Lake since 1986. License ${businessInfo.license}. BBB A+ Rated.`,
   alternates: {
     canonical: "/about",
@@ -30,7 +30,7 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold text-primary mb-6">Our Story</h2>
               <div className="prose prose-lg">
                 <p>
-                  Since 1986, {businessInfo.name} has been providing honest, reliable HVAC services to homeowners in Alvin and the surrounding communities. What started as a small family business has grown into one of the most trusted names in residential air conditioning and heating.
+                  Since 1986, {businessInfo.name} has been providing honest, reliable HVAC services to homeowners across the greater Houston area. Starting in Friendswood and expanding to our current office and shop in Alvin, we've built nearly four decades of trust serving families in both communities and the surrounding cities.
                 </p>
                 <p>
                   For nearly four decades, we've built our reputation on doing things the right way: honest assessments, quality workmanship, and fair, flat-rate pricing with no hidden charges. We don't believe in surprise fees or upselling services you don't need.
@@ -119,11 +119,18 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 
-                href={`tel:${businessInfo.phone}`}
+                href="tel:281-331-5248"
                 className="bg-accent hover:bg-accent/90 text-white font-bold py-4 px-8 rounded-lg flex items-center gap-2 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                Call {businessInfo.phone}
+                Call Alvin: 281-331-5248
+              </a>
+              <a 
+                href="tel:281-482-8400"
+                className="bg-accent hover:bg-accent/90 text-white font-bold py-4 px-8 rounded-lg flex items-center gap-2 transition-colors"
+              >
+                <Phone className="w-5 h-5" />
+                Call Friendswood: 281-482-8400
               </a>
               <Link 
                 href="/contact"
