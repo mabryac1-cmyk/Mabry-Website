@@ -1,0 +1,60 @@
+## PHASE 9: CONTENT REVIEW — FRIENDSWOOD AREA PAGE
+
+The Friendswood area page (`/areas/friendswood`) currently says "Based in nearby Alvin" which subtly undermines the Friendswood GBP connection.
+
+**Change:**
+"Mabry's Air Conditioning & Heating has been serving Friendswood homeowners since 1986. Based in nearby Alvin, we provide fast, reliable service throughout Friendswood and treat every customer like family."
+
+**To:**
+"Mabry's Air Conditioning & Heating has been serving Friendswood homeowners since 1986. Friendswood is where our story began, and we take immense pride in serving the families throughout the 77546 and 77549 zip codes. We treat every customer like family."
+
+This reinforces the Friendswood connection without downplaying it in favor of Alvin.
+
+---
+
+## PHASE 10: VERIFY EVERYTHING
+
+After all phases are complete, verify:
+
+1. **Redirects:** Visit each old URL and confirm it redirects to a live page (not a 404)
+2. **Header:** Both phone numbers visible on desktop and mobile
+3. **Footer:** Both locations displayed on desktop and mobile
+4. **Homepage:** Title tag, hero text, and two-locations section all correct
+5. **Contact page:** Both phone numbers and both locations shown
+6. **Friendswood pages:** All show 281-482-8400 (not 281-331-5248)
+7. **Alvin pages:** All show 281-331-5248 (not 281-482-8400)
+8. **Schema:** Use Google's Rich Results Test (https://search.google.com/test/rich-results) to validate the JSON-LD on the homepage
+9. **Mobile:** Check all changes on a mobile device — phone numbers should be tap-to-call
+10. **About page:** Story mentions both Friendswood history and Alvin location
+
+---
+
+## REFERENCE: TERRITORY ASSIGNMENTS
+
+Use this reference whenever you need to determine which phone number belongs on which page.
+
+### ALVIN TERRITORY (Western) — Phone: 281-331-5248
+- Alvin
+- Manvel
+- Angleton
+- Rosharon
+- Sienna
+- Iowa Colony
+- Liverpool
+- Santa Fe
+- Danbury
+
+### FRIENDSWOOD TERRITORY (Eastern) — Phone: 281-482-8400
+- Friendswood
+- Pearland
+- Clear Lake / Clear Lake City
+- League City
+- Deer Park
+- Pasadena
+- Webster
+- Seabrook
+- Kemah
+- Nassau Bay
+- La Marque
+- Dickinson
+- Missouri City (if served)

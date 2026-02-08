@@ -278,7 +278,7 @@ export const locations = [
     description: "Trusted local HVAC service for Friendswood families since 1986. BBB A+ rated with fast response times.",
     content: `
       <h2>Your Trusted HVAC Company in Friendswood, TX</h2>
-      <p>Mabry's Air Conditioning & Heating has been serving Friendswood homeowners since 1986. We provide fast, reliable service throughout Friendswood with a commitment to treat every customer like family.</p>
+      <p>Mabry's Air Conditioning & Heating has been serving Friendswood homeowners since 1986. Friendswood is where our story began, and we take immense pride in serving the families throughout the 77546 and 77549 zip codes. We treat every customer like family.</p>
 
       <h3>Residential HVAC Services in Friendswood</h3>
       <ul>
