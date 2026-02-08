@@ -129,43 +129,45 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Link href="/areas/alvin" className="group">
-              <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 h-full">
-                <h3 className="text-xl font-bold text-primary mb-4 uppercase tracking-wide">Alvin Office & Shop</h3>
-                <div className="space-y-3 text-gray-700">
-                  <p className="flex items-start gap-3">
-                    <MapPin className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                    <span>2110 S Gordon St<br />Alvin, TX 77511</span>
-                  </p>
-                  <a href="tel:281-331-5248" className="flex items-center gap-3 hover:text-accent transition-colors font-semibold" onClick={(e) => e.stopPropagation()}>
-                    <Phone className="w-5 h-5 text-accent shrink-0" />
-                    <span>281-331-5248</span>
-                  </a>
-                  <p className="text-sm text-muted-foreground pt-2">
-                    Serving: Alvin, Manvel, Angleton, Rosharon, Sienna & surrounding areas
-                  </p>
-                </div>
+            <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 h-full">
+              <h3 className="text-xl font-bold text-primary mb-4 uppercase tracking-wide">Alvin Office & Shop</h3>
+              <div className="space-y-3 text-gray-700">
+                <p className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-accent shrink-0 mt-0.5" />
+                  <span>2110 S Gordon St<br />Alvin, TX 77511</span>
+                </p>
+                <a href="tel:281-331-5248" className="flex items-center gap-3 hover:text-accent transition-colors font-semibold">
+                  <Phone className="w-5 h-5 text-accent shrink-0" />
+                  <span>281-331-5248</span>
+                </a>
+                <p className="text-sm text-muted-foreground pt-2">
+                  Serving: Alvin, Manvel, Angleton, Rosharon, Sienna & surrounding areas
+                </p>
+                <Link href="/areas/alvin" className="inline-flex items-center gap-1 text-sm font-semibold text-accent hover:text-accent/80 transition-colors pt-1">
+                  View Alvin Area <ArrowRight className="w-4 h-4" />
+                </Link>
               </div>
-            </Link>
+            </div>
 
-            <Link href="/areas/friendswood" className="group">
-              <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 h-full">
-                <h3 className="text-xl font-bold text-primary mb-4 uppercase tracking-wide">Friendswood Service Area</h3>
-                <div className="space-y-3 text-gray-700">
-                  <p className="flex items-start gap-3">
-                    <MapPin className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                    <span>Serving Friendswood, TX 77546</span>
-                  </p>
-                  <a href="tel:281-482-8400" className="flex items-center gap-3 hover:text-accent transition-colors font-semibold" onClick={(e) => e.stopPropagation()}>
-                    <Phone className="w-5 h-5 text-accent shrink-0" />
-                    <span>281-482-8400</span>
-                  </a>
-                  <p className="text-sm text-muted-foreground pt-2">
-                    Serving: Friendswood, Pearland, Clear Lake, League City, Deer Park, Pasadena & surrounding areas
-                  </p>
-                </div>
+            <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 h-full">
+              <h3 className="text-xl font-bold text-primary mb-4 uppercase tracking-wide">Friendswood Service Area</h3>
+              <div className="space-y-3 text-gray-700">
+                <p className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-accent shrink-0 mt-0.5" />
+                  <span>Serving Friendswood, TX 77546</span>
+                </p>
+                <a href="tel:281-482-8400" className="flex items-center gap-3 hover:text-accent transition-colors font-semibold">
+                  <Phone className="w-5 h-5 text-accent shrink-0" />
+                  <span>281-482-8400</span>
+                </a>
+                <p className="text-sm text-muted-foreground pt-2">
+                  Serving: Friendswood, Pearland, Clear Lake, League City, Deer Park, Pasadena & surrounding areas
+                </p>
+                <Link href="/areas/friendswood" className="inline-flex items-center gap-1 text-sm font-semibold text-accent hover:text-accent/80 transition-colors pt-1">
+                  View Friendswood Area <ArrowRight className="w-4 h-4" />
+                </Link>
               </div>
-            </Link>
+            </div>
           </div>
         </div>
       </section>
