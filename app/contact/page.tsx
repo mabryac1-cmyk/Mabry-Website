@@ -20,13 +20,22 @@ export default function ContactPage() {
           <p className="text-xl text-white/90 max-w-2xl mx-auto mb-6">
             Ready to schedule service? Call us now or fill out the form below.
           </p>
-          <a 
-            href={`tel:${businessInfo.phone}`}
-            className="inline-flex items-center gap-3 bg-accent hover:bg-accent/90 text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors"
-          >
-            <Phone className="w-6 h-6" />
-            {businessInfo.phone}
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a 
+              href="tel:281-331-5248"
+              className="inline-flex items-center gap-3 bg-accent hover:bg-accent/90 text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors"
+            >
+              <Phone className="w-6 h-6" />
+              Alvin: 281-331-5248
+            </a>
+            <a 
+              href="tel:281-482-8400"
+              className="inline-flex items-center gap-3 bg-white hover:bg-white/90 text-primary font-bold py-4 px-8 rounded-lg text-xl transition-colors"
+            >
+              <Phone className="w-6 h-6" />
+              Friendswood: 281-482-8400
+            </a>
+          </div>
         </div>
       </section>
 
@@ -42,9 +51,13 @@ export default function ContactPage() {
                     <Phone className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-primary">Phone</h3>
-                    <a href={`tel:${businessInfo.phone}`} className="text-accent hover:text-accent/80 text-lg font-semibold">
-                      {businessInfo.phone}
+                    <h3 className="font-bold text-primary">Alvin Office</h3>
+                    <a href="tel:281-331-5248" className="text-accent hover:text-accent/80 text-lg font-semibold">
+                      281-331-5248
+                    </a>
+                    <h3 className="font-bold text-primary mt-3">Friendswood Service Area</h3>
+                    <a href="tel:281-482-8400" className="text-accent hover:text-accent/80 text-lg font-semibold">
+                      281-482-8400
                     </a>
                   </div>
                 </div>
@@ -66,9 +79,13 @@ export default function ContactPage() {
                     <MapPin className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-primary">Location</h3>
+                    <h3 className="font-bold text-primary">Alvin Office & Shop</h3>
                     <p className="text-muted-foreground">
-                      {businessInfo.address.city}, {businessInfo.address.state} {businessInfo.address.zip}
+                      2110 S Gordon St<br />Alvin, TX 77511
+                    </p>
+                    <h3 className="font-bold text-primary mt-3">Friendswood Service Area</h3>
+                    <p className="text-muted-foreground">
+                      Serving Friendswood, TX 77546
                     </p>
                   </div>
                 </div>
