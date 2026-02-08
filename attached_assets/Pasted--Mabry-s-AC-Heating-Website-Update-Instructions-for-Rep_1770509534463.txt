@@ -1,0 +1,51 @@
+# Mabry's AC & Heating — Website Update Instructions for Replit
+## Complete Implementation Guide — February 7, 2026
+
+This document contains all changes needed for mabryac.com. Please implement them in the order listed (Phase 1 first, then Phase 2, etc.). Do not skip phases. Test each phase before moving to the next.
+
+---
+
+## PHASE 1: 301 REDIRECTS (DO THIS FIRST — URGENT)
+
+Google Search Console is reporting 23 pages returning 404 errors. These are old URLs from the previous website that need to permanently redirect to their new equivalents. Add ALL of the following as **permanent 301 redirects** in `next.config.js`.
+
+**Every single one of these must be implemented. Do not skip any.**
+
+```
+/sienna-heating-repair → /services/heating-repair/sienna
+/service-areas → /areas/alvin
+/missouri-city-heating-repair → /services/heating-repair/sienna
+/ac-service-alvin → /services/ac-repair/alvin
+/furnace-repair-pearland-tx → /services/heating-repair/pearland
+/rosharon-heating-repair → /services/heating-repair/rosharon
+/webster-ac-repair → /services/ac-repair/webster
+/kemah-heating-repair → /services/heating-repair/kemah
+/dickinson-heating-repair → /services/heating-repair/dickinson
+/webster-heating-repair → /services/heating-repair/webster
+/deer-park-heating-repair → /services/heating-repair/deer-park
+/league-city-ac-repair → /services/ac-repair/league-city
+/seabrook-ac-repair → /services/ac-repair/seabrook
+/work → /
+/offers → /promotions
+/home → /
+/ac-repair → /services/ac-repair
+/friendswood-ac-repair → /services/ac-repair/friendswood
+/alvin-heating-repair → /services/heating-repair/alvin
+/services-2 → /services/ac-repair
+/services → /services/ac-repair
+/promotions → / (redirect to homepage if promotions page no longer exists; if it does still exist, keep it)
+/services-1 → /services/ac-repair
+/alvin-tx-ac-repair → /areas/alvin
+/friendswood-hvac-services → /areas/friendswood
+/pearland-ac-repair → /areas/pearland
+/deer-park-ac-repair → /areas/deer-park
+/friendswood-heating-repair → /services/heating-repair/friendswood
+```
+
+**IMPORTANT:** If any of the destination pages listed above do not currently exist on the site, you need to EITHER:
+(a) Create that page, OR
+(b) Redirect to the closest parent page instead (e.g., if `/services/heating-repair/kemah` doesn't exist, redirect to `/services/heating-repair` or `/areas/kemah` — whichever does exist)
+
+No old URL should ever return a 404. Every one must land on a live page.
+
+**After implementing:** Manually test at least 5-6 of these by visiting the old URL in a browser and confirming it redirects to the correct new page.

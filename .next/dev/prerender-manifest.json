@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/areas/alvin":{},"/areas/friendswood":{},"/areas/pearland":{},"/areas/clear-lake":{},"/areas/deer-park":{},"/areas/league-city":{},"/areas/pasadena":{},"/areas/sienna":{},"/areas/angleton":{},"/areas/manvel":{},"/areas/rosharon":{}},"dynamicRoutes":{"/areas/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/areas/[slug]","routeRegex":"^\\/areas\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"65be5ee65a8557765b3f89ebf993179b","previewModeSigningKey":"ede7c8fe242b3177e163fea94c9bdbf76c97748845de98629263ea68d7242b4a","previewModeEncryptionKey":"7cec8b6d10effd033aa623c9187218b9fb1de117370363ed8e34ee5579157d26"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "851405541194bc5bc6bd4349244d0cb8",
+    "previewModeSigningKey": "877728667eca7b8fcc0b9504b27d6030e40f85d00c169456f2ad2865f8828a5a",
+    "previewModeEncryptionKey": "c7746224db0fe2e471c2a99db032978f6a29fb8f48c32e5a61bd0cda138af7cf"
+  }
+}
