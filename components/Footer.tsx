@@ -62,31 +62,55 @@ export function Footer() {
 
           <div>
             <h4 className="text-lg font-bold mb-4">Contact Us</h4>
-            <ul className="space-y-3">
-              <li>
-                <a href={`tel:${businessInfo.phone}`} className="flex items-center gap-3 text-white/80 hover:text-accent transition-colors">
-                  <Phone className="w-5 h-5 shrink-0" />
-                  <span>{businessInfo.phone}</span>
-                </a>
-              </li>
-              <li>
-                <a href={`mailto:${businessInfo.email}`} className="flex items-center gap-3 text-white/80 hover:text-accent transition-colors">
-                  <Mail className="w-5 h-5 shrink-0" />
-                  <span>{businessInfo.email}</span>
-                </a>
-              </li>
-              <li className="flex items-start gap-3 text-white/80">
-                <MapPin className="w-5 h-5 shrink-0 mt-0.5" />
-                <span>
-                  {businessInfo.address.street}<br />
-                  {businessInfo.address.city}, {businessInfo.address.state} {businessInfo.address.zip}
-                </span>
-              </li>
-              <li className="flex items-center gap-3 text-white/80">
-                <Clock className="w-5 h-5 shrink-0" />
-                <span>Mon-Fri: 7:30am-5pm</span>
-              </li>
-            </ul>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <p className="font-bold text-sm uppercase tracking-wider mb-3 text-white/90">Alvin Office & Shop</p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2 text-white/80 text-sm">
+                    <MapPin className="w-4 h-4 shrink-0 mt-0.5" />
+                    <span>
+                      {businessInfo.address.street}<br />
+                      {businessInfo.address.city}, {businessInfo.address.state} {businessInfo.address.zip}
+                    </span>
+                  </li>
+                  <li>
+                    <a href="tel:281-331-5248" className="flex items-center gap-2 text-white/80 hover:text-accent transition-colors text-sm">
+                      <Phone className="w-4 h-4 shrink-0" />
+                      <span>281-331-5248</span>
+                    </a>
+                  </li>
+                  <li className="flex items-center gap-2 text-white/80 text-sm">
+                    <Clock className="w-4 h-4 shrink-0" />
+                    <span>Mon-Fri: 7:30am-5pm</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p className="font-bold text-sm uppercase tracking-wider mb-3 text-white/90">Friendswood Service Area</p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2 text-white/80 text-sm">
+                    <MapPin className="w-4 h-4 shrink-0 mt-0.5" />
+                    <span>Serving Friendswood, TX 77546</span>
+                  </li>
+                  <li>
+                    <a href="tel:281-482-8400" className="flex items-center gap-2 text-white/80 hover:text-accent transition-colors text-sm">
+                      <Phone className="w-4 h-4 shrink-0" />
+                      <span>281-482-8400</span>
+                    </a>
+                  </li>
+                  <li className="flex items-center gap-2 text-white/80 text-sm">
+                    <Clock className="w-4 h-4 shrink-0" />
+                    <span>Mon-Fri: 7:30am-5pm</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-4">
+              <a href={`mailto:${businessInfo.email}`} className="flex items-center gap-2 text-white/80 hover:text-accent transition-colors text-sm">
+                <Mail className="w-4 h-4 shrink-0" />
+                <span>{businessInfo.email}</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
