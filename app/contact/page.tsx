@@ -4,7 +4,7 @@ import { businessInfo, locations } from "@/lib/data";
 import { Phone, Mail, MapPin, Clock, Shield, Award, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: `Contact Us | ${businessInfo.name} | Call ${businessInfo.phone}`,
+  title: `Contact Mabry's AC & Heating | Alvin: 281-331-5248 | Friendswood: 281-482-8400`,
   description: `Contact ${businessInfo.name} for residential AC and heating service. Serving Alvin, Friendswood, Pearland, Clear Lake & surrounding cities across the greater Houston area. License ${businessInfo.license}. BBB A+ Rated.`,
   alternates: {
     canonical: "/contact",

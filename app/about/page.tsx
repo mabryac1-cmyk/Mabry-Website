@@ -4,7 +4,7 @@ import { businessInfo, locations } from "@/lib/data";
 import { Shield, Award, Clock, Users, CheckCircle, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: `About Mabry's Air Conditioning & Heating | Family-Owned Since 1986 | Alvin & Friendswood TX`,
+  title: `About Mabry's AC & Heating | Family-Owned Since 1986 | Alvin & Friendswood TX`,
   description: `Learn about ${businessInfo.name} - a family-owned residential HVAC company serving Alvin, Friendswood, Pearland & Clear Lake since 1986. License ${businessInfo.license}. BBB A+ Rated.`,
   alternates: {
     canonical: "/about",

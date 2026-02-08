@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return { title: "Page Not Found" };
   }
 
-  const title = `${service.name} in ${location.name}, ${location.state} | ${businessInfo.name}`;
+  const title = `${service.name} in ${location.name}, ${location.state} | Mabry's AC & Heating | ${location.phone}`;
   const description = `${service.description} Serving ${location.name}, ${location.state}. License ${businessInfo.license}. BBB ${businessInfo.bbbRating} Rated. Call ${location.phone} for service.`;
 
   return {
