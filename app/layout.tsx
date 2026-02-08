@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.mabryac.com"),
-  title: "Mabry's Air Conditioning & Heating, Inc. | Alvin TX HVAC",
-  description: "Residential AC & Heating Experts Since 1986. Located in Alvin, TX serving Friendswood, Pearland & Clear Lake. License TACLB12058E. BBB A+ Rating. Honest, flat-rate pricing.",
+  title: "Mabry's Air Conditioning & Heating | Alvin & Friendswood TX | HVAC Since 1986",
+  description: "Residential AC repair, heating service & installation serving Alvin, Friendswood, Pearland & Clear Lake TX since 1986. BBB A+ rated. Flat-rate pricing. Alvin: 281-331-5248 | Friendswood: 281-482-8400",
   alternates: {
     canonical: "/",
   },

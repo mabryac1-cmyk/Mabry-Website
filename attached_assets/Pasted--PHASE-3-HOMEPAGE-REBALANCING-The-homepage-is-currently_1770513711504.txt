@@ -1,0 +1,56 @@
+## PHASE 3: HOMEPAGE REBALANCING
+
+The homepage is currently too heavily weighted toward Alvin. It needs to present both locations as equals.
+
+### 3A: Update the Title Tag
+
+**Current:** `Mabry's Air Conditioning & Heating, Inc. | Alvin TX HVAC`
+
+**Change to:** `Mabry's Air Conditioning & Heating | Alvin & Friendswood TX | HVAC Since 1986`
+
+### 3B: Update the Meta Description
+
+**Change to:** `Residential AC repair, heating service & installation serving Alvin, Friendswood, Pearland & Clear Lake TX since 1986. BBB A+ rated. Flat-rate pricing. Alvin: 281-331-5248 | Friendswood: 281-482-8400`
+
+### 3C: Update the Hero Section Text
+
+**Current:** "Mabry's Air Conditioning & Heating, Inc. provides honest, flat-rate pricing with no hidden charges. Serving Alvin, Friendswood, Pearland, Clear Lake & surrounding cities across the greater Houston area."
+
+**Change to:** "With locations serving Alvin and Friendswood, Mabry's Air Conditioning & Heating, Inc. provides honest, flat-rate pricing with no hidden charges. Serving Alvin, Friendswood, Pearland, Clear Lake & surrounding cities across the greater Houston area."
+
+### 3D: Update the "Proudly Serving Your Community" Section
+
+**Current text:** "Based in Alvin, we provide expert HVAC services to homes throughout the greater Houston area."
+
+**Change to:** "With our office and shop in Alvin and a dedicated service area covering Friendswood, we provide expert HVAC services to homes throughout the greater Houston area."
+
+### 3E: Add a "Two Locations" Section
+
+Add a new section to the homepage (ideally between the hero and the services section, or between services and service areas). It should display both locations in a visually prominent two-column layout:
+
+```
+OUR LOCATIONS
+
+[Column 1]
+ALVIN OFFICE & SHOP
+2110 S Gordon St
+Alvin, TX 77511
+📞 281-331-5248
+Serving: Alvin, Manvel, Angleton, Rosharon, Sienna & surrounding areas
+
+[Column 2]
+FRIENDSWOOD SERVICE AREA
+Serving Friendswood, TX 77546
+📞 281-482-8400
+Serving: Friendswood, Pearland, Clear Lake, League City, Deer Park, Pasadena & surrounding areas
+```
+
+Each phone number should be a clickable `tel:` link. Each location should also link to its respective area page (`/areas/alvin` and `/areas/friendswood`).
+
+### 3F: Update the FAQ Section
+
+**Current FAQ answer for "What areas do you serve?":**
+"We serve Alvin, Friendswood, Pearland, Clear Lake, League City, Deer Park, Pasadena, Sienna, Angleton, Manvel, Rosharon, and the surrounding greater Houston area. Our main location is in downtown Alvin at 2110 S Gordon St."
+
+**Change to:**
+"We serve Alvin, Friendswood, Pearland, Clear Lake, League City, Deer Park, Pasadena, Sienna, Angleton, Manvel, Rosharon, and the surrounding greater Houston area. Our office and shop is located at 2110 S Gordon St in Alvin (281-331-5248), and we have a dedicated service area covering Friendswood and the eastern territory (281-482-8400)."

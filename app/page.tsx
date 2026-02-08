@@ -31,7 +31,7 @@ export default function Home() {
               Residential AC & Heating Experts Since 1986
             </h1>
             <p className="text-xl text-white/90 max-w-lg leading-relaxed">
-              {businessInfo.name} provides honest, flat-rate pricing with no hidden charges. 
+              With locations serving Alvin and Friendswood, {businessInfo.name} provides honest, flat-rate pricing with no hidden charges. 
               Serving Alvin, Friendswood, Pearland, Clear Lake & surrounding cities across the greater Houston area.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
@@ -123,6 +123,55 @@ export default function Home() {
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4 text-primary">Our Locations</h2>
+            <div className="w-24 h-1 bg-accent mx-auto"></div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Link href="/areas/alvin" className="group">
+              <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 h-full">
+                <h3 className="text-xl font-bold text-primary mb-4 uppercase tracking-wide">Alvin Office & Shop</h3>
+                <div className="space-y-3 text-gray-700">
+                  <p className="flex items-start gap-3">
+                    <MapPin className="w-5 h-5 text-accent shrink-0 mt-0.5" />
+                    <span>2110 S Gordon St<br />Alvin, TX 77511</span>
+                  </p>
+                  <a href="tel:281-331-5248" className="flex items-center gap-3 hover:text-accent transition-colors font-semibold" onClick={(e) => e.stopPropagation()}>
+                    <Phone className="w-5 h-5 text-accent shrink-0" />
+                    <span>281-331-5248</span>
+                  </a>
+                  <p className="text-sm text-muted-foreground pt-2">
+                    Serving: Alvin, Manvel, Angleton, Rosharon, Sienna & surrounding areas
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            <Link href="/areas/friendswood" className="group">
+              <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 h-full">
+                <h3 className="text-xl font-bold text-primary mb-4 uppercase tracking-wide">Friendswood Service Area</h3>
+                <div className="space-y-3 text-gray-700">
+                  <p className="flex items-start gap-3">
+                    <MapPin className="w-5 h-5 text-accent shrink-0 mt-0.5" />
+                    <span>Serving Friendswood, TX 77546</span>
+                  </p>
+                  <a href="tel:281-482-8400" className="flex items-center gap-3 hover:text-accent transition-colors font-semibold" onClick={(e) => e.stopPropagation()}>
+                    <Phone className="w-5 h-5 text-accent shrink-0" />
+                    <span>281-482-8400</span>
+                  </a>
+                  <p className="text-sm text-muted-foreground pt-2">
+                    Serving: Friendswood, Pearland, Clear Lake, League City, Deer Park, Pasadena & surrounding areas
+                  </p>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-primary rounded-3xl p-8 lg:p-16 text-center relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
             
@@ -130,7 +179,7 @@ export default function Home() {
               Proudly Serving Your Community
             </h2>
             <p className="text-white/80 mb-8 max-w-2xl mx-auto relative z-10">
-              Based in Alvin, we provide expert HVAC services to homes throughout the greater Houston area.
+              With our office and shop in Alvin and a dedicated service area covering Friendswood, we provide expert HVAC services to homes throughout the greater Houston area.
             </p>
             
             <div className="flex flex-wrap justify-center gap-4 relative z-10">

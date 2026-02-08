@@ -26,7 +26,7 @@ export const businessInfo = {
 export const generalFaqs = [
   {
     question: "What areas do you serve?",
-    answer: "We serve Alvin, Friendswood, Pearland, Clear Lake, League City, Deer Park, Pasadena, Sienna, Angleton, Manvel, Rosharon, and the surrounding greater Houston area. Our main location is in downtown Alvin at 2110 S Gordon St."
+    answer: "We serve Alvin, Friendswood, Pearland, Clear Lake, League City, Deer Park, Pasadena, Sienna, Angleton, Manvel, Rosharon, and the surrounding greater Houston area. Our office and shop is located at 2110 S Gordon St in Alvin (281-331-5248), and we have a dedicated service area covering Friendswood and the eastern territory (281-482-8400)."
   },
   {
     question: "Are you licensed and insured?",
