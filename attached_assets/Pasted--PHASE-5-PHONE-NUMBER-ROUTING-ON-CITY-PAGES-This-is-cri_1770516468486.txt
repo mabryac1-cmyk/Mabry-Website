@@ -1,0 +1,91 @@
+## PHASE 5: PHONE NUMBER ROUTING ON CITY PAGES
+
+This is critical for GBP alignment. Each city/area page and each city-specific service page must display the correct phone number for that territory.
+
+### WESTERN TERRITORY — Display phone: 281-331-5248
+These pages should show the ALVIN phone number (281-331-5248) in ALL call-to-action buttons, headers, and contact sections:
+
+- /areas/alvin
+- /areas/manvel
+- /areas/angleton
+- /areas/rosharon
+- /areas/sienna
+- /services/ac-repair/alvin
+- /services/ac-repair/manvel
+- /services/ac-repair/angleton
+- /services/ac-repair/rosharon
+- /services/ac-repair/sienna
+- /services/heating-repair/alvin
+- /services/heating-repair/manvel
+- /services/heating-repair/angleton
+- /services/heating-repair/rosharon
+- /services/heating-repair/sienna
+- /services/ac-installation/alvin
+- /services/ac-installation/manvel
+- /services/ac-installation/angleton
+- /services/ac-installation/rosharon
+- /services/ac-installation/sienna
+- And any other pages targeting these cities
+
+### EASTERN TERRITORY — Display phone: 281-482-8400
+These pages should show the FRIENDSWOOD phone number (281-482-8400) in ALL call-to-action buttons, headers, and contact sections:
+
+- /areas/friendswood
+- /areas/pearland
+- /areas/clear-lake
+- /areas/league-city
+- /areas/deer-park
+- /areas/pasadena
+- /services/ac-repair/friendswood
+- /services/ac-repair/pearland
+- /services/ac-repair/clear-lake
+- /services/ac-repair/league-city
+- /services/ac-repair/deer-park
+- /services/ac-repair/pasadena
+- /services/heating-repair/friendswood
+- /services/heating-repair/pearland
+- /services/heating-repair/clear-lake
+- /services/heating-repair/league-city
+- /services/heating-repair/deer-park
+- /services/heating-repair/pasadena
+- /services/ac-installation/friendswood
+- /services/ac-installation/pearland
+- /services/ac-installation/clear-lake
+- /services/ac-installation/league-city
+- /services/ac-installation/deer-park
+- /services/ac-installation/pasadena
+- And any other pages targeting these cities (Webster, Seabrook, Kemah, Nassau Bay, La Marque, Dickinson)
+
+### IMPLEMENTATION SUGGESTION
+The cleanest way to do this is to create a territory mapping object/config that assigns each city to either "alvin" or "friendswood" and determines the phone number dynamically. For example:
+
+```javascript
+const territoryConfig = {
+  alvin: { phone: "281-331-5248", label: "Alvin Office" },
+  friendswood: { phone: "281-482-8400", label: "Friendswood Service Area" }
+};
+
+const cityTerritory = {
+  "alvin": "alvin",
+  "manvel": "alvin",
+  "angleton": "alvin",
+  "rosharon": "alvin",
+  "sienna": "alvin",
+  "friendswood": "friendswood",
+  "pearland": "friendswood",
+  "clear-lake": "friendswood",
+  "league-city": "friendswood",
+  "deer-park": "friendswood",
+  "pasadena": "friendswood",
+  "webster": "friendswood",
+  "seabrook": "friendswood",
+  "kemah": "friendswood",
+  "nassau-bay": "friendswood",
+  "la-marque": "friendswood",
+  "dickinson": "friendswood"
+};
+```
+
+This way, when rendering any city page, you just look up the city slug and get the correct phone number automatically.
+
+**IMPORTANT:** The site-wide header should still show BOTH numbers (from Phase 2). This phone routing only applies to the page-specific CTAs, hero sections, and "Call Now" buttons on individual city/service pages.
