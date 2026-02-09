@@ -81,7 +81,7 @@ export function Footer() {
                   </li>
                   <li className="flex items-center gap-2 text-white/80 text-sm">
                     <Clock className="w-4 h-4 shrink-0" />
-                    <span>Mon-Fri: 7:30am-5pm</span>
+                    <span>Mon-Fri: 7am-7pm | Sat: 7am-1pm</span>
                   </li>
                 </ul>
               </div>
@@ -100,7 +100,7 @@ export function Footer() {
                   </li>
                   <li className="flex items-center gap-2 text-white/80 text-sm">
                     <Clock className="w-4 h-4 shrink-0" />
-                    <span>Mon-Fri: 7:30am-5pm</span>
+                    <span>Mon-Fri: 7am-7pm | Sat: 7am-1pm</span>
                   </li>
                 </ul>
               </div>

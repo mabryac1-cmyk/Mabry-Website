@@ -52,8 +52,14 @@ export function SchemaOrg({ page = "home", serviceName, locationName }: SchemaOr
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "07:30",
-        "closes": "17:00",
+        "opens": "07:00",
+        "closes": "19:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "07:00",
+        "closes": "13:00",
       },
     ],
     "areaServed": areaServed,

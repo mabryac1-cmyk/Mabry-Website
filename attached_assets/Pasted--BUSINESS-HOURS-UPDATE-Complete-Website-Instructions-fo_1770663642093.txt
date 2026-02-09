@@ -1,0 +1,195 @@
+# BUSINESS HOURS UPDATE — Complete Website Instructions for Replit
+## Mabry's Air Conditioning & Heating, Inc. — February 9, 2026
+
+---
+
+## OVERVIEW
+
+We are changing our business hours from the current schedule to new extended hours. This change must be reflected **everywhere** on the website — every page, the footer, the contact page, and most importantly the JSON-LD schema markup. Both locations use the same hours.
+
+### OLD HOURS (replace everywhere):
+- Monday - Friday: 7:30 AM - 5:00 PM
+- Saturday: not listed
+- Sunday: not listed
+
+### NEW HOURS (use everywhere):
+- **Monday - Friday: 7:00 AM - 7:00 PM**
+- **Saturday: 7:00 AM - 1:00 PM**
+- **Sunday: Closed**
+
+---
+
+## STEP 1: UPDATE THE SITE-WIDE FOOTER
+
+The footer appears on EVERY page of the website. It currently shows hours for both locations.
+
+**Current footer text (both locations):**
+```
+Mon-Fri: 7:30am-5pm
+```
+
+**Change BOTH locations in the footer to:**
+```
+Mon-Fri: 7am-7pm | Sat: 7am-1pm
+```
+
+Make sure BOTH the Alvin Office & Shop section AND the Friendswood Service Area section in the footer are updated to the same new hours. They must match exactly.
+
+---
+
+## STEP 2: UPDATE THE CONTACT PAGE (/contact)
+
+The contact page has a "Business Hours" section that currently reads:
+
+```
+Monday - Friday: 7:30 AM - 5:00 PM
+Emergency service available
+```
+
+**Change this to:**
+```
+Monday - Friday: 7:00 AM - 7:00 PM
+Saturday: 7:00 AM - 1:00 PM
+Sunday: Closed
+Emergency service available
+```
+
+Also check: the contact page footer (same as site-wide footer) must also reflect the new hours from Step 1.
+
+---
+
+## STEP 3: UPDATE THE JSON-LD SCHEMA MARKUP
+
+This is the most important change for search engines. The schema markup is in the `<head>` section — likely in a layout file, a metadata component, or injected via Next.js Head/metadata.
+
+**Find the `openingHoursSpecification` block in the schema.** It currently looks something like this:
+
+```json
+"openingHoursSpecification": [
+  {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "07:30",
+    "closes": "17:00"
+  }
+]
+```
+
+**Replace it with this (adds Saturday, updates all times):**
+
+```json
+"openingHoursSpecification": [
+  {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "07:00",
+    "closes": "19:00"
+  },
+  {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Saturday"],
+    "opens": "07:00",
+    "closes": "13:00"
+  }
+]
+```
+
+**IMPORTANT:** The schema may appear in multiple places:
+- Homepage schema (the main HVACBusiness entity with `@id`)
+- Friendswood area page schema (`/areas/friendswood`)
+- Alvin area page schema (`/areas/alvin`)
+- Possibly other area/service pages
+
+**Search the entire codebase** for `07:30` and `17:00` to find ALL instances of the old hours in schema markup. Every single one must be updated. Use a project-wide search (grep or find-in-files) to make sure nothing is missed.
+
+---
+
+## STEP 4: FULL-SITE AUDIT — SEARCH FOR ALL OLD HOURS REFERENCES
+
+This is critical. Do a **project-wide search** for ALL of the following strings and replace them with the new hours:
+
+### Search for these strings across ALL files:
+```
+7:30am-5pm        →  7am-7pm | Sat: 7am-1pm
+7:30am-5:00pm     →  7:00am-7:00pm (or formatted to match context)
+7:30 AM - 5:00 PM →  7:00 AM - 7:00 PM
+7:30 AM - 5 PM    →  7:00 AM - 7:00 PM
+07:30              →  07:00 (in schema JSON-LD contexts)
+17:00              →  19:00 (in schema JSON-LD contexts for weekdays)
+Mon-Fri: 7:30     →  Mon-Fri: 7:00 (or 7am)
+```
+
+### Pages to specifically verify after the search-and-replace:
+1. **Homepage** (`/`) — footer, any hours mention in content
+2. **Contact page** (`/contact`) — Business Hours section + footer
+3. **About page** (`/about`) — footer, any hours mention in content
+4. **Reviews page** (`/reviews`) — footer
+5. **All area pages:**
+   - `/areas/alvin`
+   - `/areas/friendswood`
+   - `/areas/pearland`
+   - `/areas/clear-lake`
+   - `/areas/league-city`
+   - `/areas/deer-park`
+   - `/areas/pasadena`
+   - `/areas/sienna`
+   - `/areas/angleton`
+   - `/areas/manvel`
+   - `/areas/rosharon`
+6. **All service pages:**
+   - `/services/ac-repair`
+   - `/services/heating-repair`
+   - `/services/ac-installation`
+   - And ALL city-specific service sub-pages (e.g., `/services/ac-repair/friendswood`, `/services/heating-repair/alvin`, etc.)
+7. **Any data files** (`lib/data.ts`, config files, constants files) that might contain hours as variables or constants
+8. **The FAQ section** on the homepage — check if any FAQ answer mentions hours
+
+---
+
+## STEP 5: VERIFY THE SCHEMA IS VALID
+
+After making the schema changes, verify the markup is still valid:
+
+1. Open the site in a browser
+2. View page source on the homepage
+3. Find the `<script type="application/ld+json">` block
+4. Copy the entire JSON block
+5. Paste it into https://search.google.com/test/rich-results or https://validator.schema.org
+6. Confirm no errors are reported
+7. Confirm `openingHoursSpecification` shows:
+   - Monday-Friday: opens 07:00, closes 19:00
+   - Saturday: opens 07:00, closes 13:00
+
+---
+
+## STEP 6: VERIFY CONSISTENCY
+
+After all changes are made and published, manually check these pages on the live site:
+
+- [ ] Homepage footer shows new hours for BOTH locations
+- [ ] Contact page Business Hours section shows new hours
+- [ ] Contact page footer shows new hours
+- [ ] About page footer shows new hours
+- [ ] At least 2-3 area pages show correct footer hours
+- [ ] Schema markup on homepage shows correct times
+- [ ] No page anywhere on the site still shows "7:30" or "5:00" or "5pm" for hours
+
+---
+
+## SUMMARY OF ALL CHANGES
+
+| Location on Website | Old Value | New Value |
+|---|---|---|
+| Footer (Alvin) | Mon-Fri: 7:30am-5pm | Mon-Fri: 7am-7pm \| Sat: 7am-1pm |
+| Footer (Friendswood) | Mon-Fri: 7:30am-5pm | Mon-Fri: 7am-7pm \| Sat: 7am-1pm |
+| Contact page hours | Monday - Friday: 7:30 AM - 5:00 PM | Monday - Friday: 7:00 AM - 7:00 PM + Saturday: 7:00 AM - 1:00 PM + Sunday: Closed |
+| Schema weekday opens | 07:30 | 07:00 |
+| Schema weekday closes | 17:00 | 19:00 |
+| Schema Saturday | (not present) | opens: 07:00, closes: 13:00 |
+| Any other reference | 7:30am-5pm or similar | Updated to match new hours |
+
+**Do NOT change anything else** — no phone numbers, no addresses, no descriptions, no content. Only hours.
+
+---
+
+*End of instructions. Please implement all steps and republish the site.*
