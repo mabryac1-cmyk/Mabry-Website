@@ -145,26 +145,13 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">{location.headline}</h1>
           <p className="text-xl text-white/90 max-w-2xl">{location.description}</p>
           <div className="mt-6 flex flex-wrap gap-4 items-center">
-            {areaGoalCompletion[slug] && areaGoalCompletion[slug].phoneButtons.length > 1 ? (
-              areaGoalCompletion[slug].phoneButtons.map((btn, i) => (
-                <a
-                  key={i}
-                  href={`tel:${btn.tel}`}
-                  className="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
-                >
-                  <Phone className="w-5 h-5" />
-                  {btn.label}: {btn.number}
-                </a>
-              ))
-            ) : (
-              <a
-                href={`tel:${location.phone}`}
-                className="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
-              >
-                <Phone className="w-5 h-5" />
-                {location.phone}
-              </a>
-            )}
+            <a
+              href={`tel:${location.phone}`}
+              className="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
+            >
+              <Phone className="w-5 h-5" />
+              {location.phone}
+            </a>
             <div className="flex items-center gap-2 text-white/80">
               <CheckCircle className="w-5 h-5 text-accent" />
               <span>Serving {location.zipCodes.join(", ")}</span>

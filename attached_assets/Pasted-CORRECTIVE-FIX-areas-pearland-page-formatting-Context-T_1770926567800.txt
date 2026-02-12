@@ -1,0 +1,44 @@
+CORRECTIVE FIX — /areas/pearland page formatting
+
+Context: This is a Next.js site. Do NOT create new pages or change routing. We are ONLY fixing the existing /areas/pearland page so it matches the Alvin and Friendswood service area pages.
+
+PROBLEM:
+The Pearland page now shows the TWO-button phone choice TWICE:
+1) In the HERO section (orange buttons in the blue hero area)
+2) Again in the GoalCompletionBlock card below (orange buttons)
+
+This duplication makes Pearland look inconsistent vs Alvin/Friendswood.
+
+GOAL:
+Make /areas/pearland follow the SAME template structure as /areas/alvin and /areas/friendswood:
+- Hero area should look like other city pages (title + short intro)
+- The “answer-first / CTA / trust bullets” should be handled by GoalCompletionBlock below the hero
+- Pearland should have the two-button phone choice ONLY ONCE (inside GoalCompletionBlock)
+
+REQUIRED CHANGES (Pearland page only):
+1) REMOVE the two orange phone buttons from the Pearland HERO section.
+   - Do not show the two-button CTA row inside the hero.
+   - Do not show any duplicate phone CTA row in the hero.
+   - Keep the hero title/subtitle styling the same as other city pages.
+
+2) KEEP the two-button phone choice ONLY in the GoalCompletionBlock card (below the hero).
+   - Ensure the two buttons remain:
+     Button A label EXACTLY: "Alvin / Manvel / Sienna: 281-331-5248" → tel:2813315248
+     Button B label EXACTLY: "Friendswood / Pearland / Clear Lake: 281-482-8400" → tel:2814828400
+
+3) Ensure Pearland’s page spacing/layout matches Alvin/Friendswood:
+   - After the hero, the GoalCompletionBlock should appear in the same position and with the same card styling.
+   - The quote form column stays in the right column (like other city pages).
+   - No extra phone CTA blocks above the GoalCompletionBlock besides the normal header numbers.
+
+4) DO NOT change:
+   - Header phone numbers
+   - Page URL or slug
+   - Any other /areas/* pages in this request
+   - Any global styles unless absolutely required to remove the Pearland hero CTA row
+
+DELIVERABLE:
+Confirm the Pearland page now matches Alvin/Friendswood structure:
+- Hero has NO duplicate two-button CTA row
+- GoalCompletionBlock is the single place the two-button choice appears
+- Page looks consistent with other service area pages
