@@ -1,0 +1,69 @@
+We need to FIX /areas/pearland and UPDATE all existing /areas/* pages so they are consistent with the Alvin and Friendswood service-area page template.
+
+IMPORTANT CONTEXT:
+- This is a Next.js site (keep everything in Next.js patterns; do not create raw HTML pages).
+- Do NOT change URLs, routing, navigation, or page slugs.
+- Do NOT redesign the entire site. We are only standardizing the /areas/* page templates/sections.
+- Keep all existing content below the fold as much as possible—only standardize the TOP section so every /areas/* page looks consistent.
+
+GOAL:
+Every /areas/* page must have the same “service area page” structure as:
+- /areas/alvin
+- /areas/friendswood
+
+CURRENT PROBLEM:
+- /areas/pearland is using a different layout (it looks like homepage styling) and must be changed to match the Alvin/Friendswood format.
+- These pages are not updated like Alvin/Friendswood and must be updated to the same template:
+  /areas/clear-lake
+  /areas/deer-park
+  /areas/league-city
+  /areas/pasadena
+  /areas/sienna
+  /areas/angleton
+  /areas/manvel
+  /areas/rosharon
+  (and any other existing /areas/* pages)
+
+WHAT TO IMPLEMENT:
+1) Identify the exact component/layout used by /areas/alvin and /areas/friendswood (the hero + goal completion block section).
+2) Make ALL /areas/* pages use that same component/layout at the top of the page.
+
+3) Fix /areas/pearland specifically:
+   - It must NOT use the homepage hero/template.
+   - It must use the same service-area hero/template as Alvin/Friendswood.
+   - Pearland should use the TWO-button CTA style (like the screenshot) but with consistent spacing, typography, and block styling matching Alvin/Friendswood.
+
+4) Ensure the “GoalCompletionBlock” (or whatever it is called in the code) appears near the top of EVERY /areas/* page:
+   - On Alvin/Friendswood it appears right under the hero.
+   - Replicate that placement for every city page.
+
+5) CTA / phone rules for area pages:
+   - Alvin page: single primary button → tel:2813315248
+   - Friendswood page: single primary button → tel:2814828400
+   - Pearland page: two buttons:
+        Button A label EXACTLY: "Alvin / Manvel / Sienna: 281-331-5248" → tel:2813315248
+        Button B label EXACTLY: "Friendswood / Pearland / Clear Lake: 281-482-8400" → tel:2814828400
+     (note: this is intentionally ordered with Friendswood first because the GBPs are Alvin & Friendswood)
+
+6) The “Serving:” line under the buttons should remain (or be added) for each page, matching the Alvin/Friendswood style.
+
+7) Keep styling consistent:
+   - Use the same classes/styles already used on /areas/alvin and /areas/friendswood for:
+     - hero spacing
+     - the goal completion card
+     - CTA button sizes
+     - bullet/check icon styling
+   - No custom one-off CSS per city unless absolutely necessary.
+
+DELIVERABLE / CONFIRMATION:
+After changes, confirm with screenshots (or by describing visually) that these pages now match Alvin/Friendswood formatting:
+- /areas/pearland (fixed to match)
+- /areas/clear-lake
+- /areas/deer-park
+- /areas/league-city
+- /areas/pasadena
+- /areas/sienna
+- /areas/angleton
+- /areas/manvel
+- /areas/rosharon
+And confirm all phone buttons still click correctly with tel: links.
