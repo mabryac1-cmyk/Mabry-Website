@@ -1,0 +1,247 @@
+PHASE 1: IMPLEMENT “GOAL COMPLETION” FOR LOCAL SEO (HIGH IMPACT, LOW RISK)
+
+IMPORTANT RULES (PHASE 1):
+- Do NOT create any new pages.
+- Do NOT redesign navigation.
+- Do NOT add new schema or rewrite schema (only update hours inside existing schema IF it already exists).
+- Only update existing components/pages described below.
+- Keep Friendswood as SAB: do NOT show a Friendswood street address anywhere.
+
+═══════════════════════════════════════════════════════════════════
+A) STANDARDIZE BUSINESS HOURS (GLOBAL)
+═══════════════════════════════════════════════════════════════════
+
+OFFICIAL HOURS:
+- Mon–Fri: 7:00 AM – 7:00 PM
+- Sat: 7:00 AM – 1:00 PM
+- Sun: Closed (ONLY show Sunday if a component already shows Sunday)
+
+REQUIREMENTS:
+1) Create ONE shared config/constant for hours and render from it everywhere hours appear (footer, contact page, any hours widgets/components).
+2) Search the entire codebase and replace ALL hard-coded hour strings (examples: “7:30”, “5:00 PM”, “17:00”, etc.) so they match the official hours above.
+3) Display formatting must be IDENTICAL everywhere:
+   Mon–Fri: 7:00 AM – 7:00 PM
+   Sat: 7:00 AM – 1:00 PM
+4) If schema JSON-LD already exists and includes hours, update ONLY the hour values to match the official hours. Do NOT add new schema.
+
+DELIVERABLE:
+- Confirm there are no remaining hour strings that conflict with the official hours.
+
+═══════════════════════════════════════════════════════════════════
+B) HOMEPAGE “GOAL COMPLETION” (EQUAL WEIGHT: ALVIN / FRIENDSWOOD / PEARLAND)
+═══════════════════════════════════════════════════════════════════
+
+B1) UPDATE HOMEPAGE TITLE TAG (align by meaning, not word-for-word):
+Set homepage <title> EXACTLY to:
+HVAC Contractor in Alvin, Friendswood & Pearland, TX | Mabry’s AC & Heating
+
+B2) HOMEPAGE META DESCRIPTION (keep concise, goal-completion friendly):
+Set homepage meta description EXACTLY to:
+Licensed HVAC contractor serving Alvin, Friendswood & Pearland. AC repair, heating service & installations. Call 281-331-5248 or 281-482-8400.
+
+(Do not exceed ~160 characters. No keyword stuffing.)
+
+B3) UPDATE HOMEPAGE H1:
+Set homepage H1 EXACTLY to:
+AC Repair & Heating Service in Alvin, Friendswood & Pearland
+
+B4) UPDATE HOMEPAGE HERO/INTRO PARAGRAPH (FIRST SENTENCE EXACT):
+The FIRST sentence of the homepage intro paragraph must be EXACTLY:
+Need AC repair or heating service in Alvin, Friendswood, Pearland, or nearby areas? Call now for fast residential HVAC service from licensed pros (TACLB12058E).
+
+Then continue the paragraph as needed, but keep it short and conversion-focused.
+
+B5) ADD A COMPACT PHONE CHOICE BLOCK (in the hero, above the fold)
+Even though numbers are in the header, add a compact, visually distinct phone choice block immediately below the first paragraph and above the fold.
+
+Display EXACTLY:
+
+Call to schedule service:
+Alvin / Manvel / Sienna: 281-331-5248
+Pearland / Friendswood / Clear Lake: 281-482-8400
+
+PHONE BLOCK REQUIREMENTS:
+- Both numbers must be clickable tel: links:
+  tel:2813315248 and tel:2814828400
+- Numbers bold and slightly larger than body text.
+- Mobile: stack vertically, large tap targets (min 44px, ideally 48px).
+- Desktop: stacked or side-by-side (choose best clean layout).
+- Light border or subtle background to stand out, but keep it compact.
+
+B6) ADD A SMALL TRUST LINE (still above the fold, AFTER the phone block)
+Add this trust line EXACTLY (pipe separators):
+Serving homeowners since 1986 | Licensed TACLB12058E
+
+IMPORTANT:
+- Do NOT lead with trust/history. This must come AFTER service + phone.
+- Only include “BBB A+” here if it is already shown/verified consistently on the site; otherwise omit.
+
+B7) ABOVE-THE-FOLD REQUIREMENT (MOBILE)
+On iPhone 12/13 Pro size (390x844), ensure without scrolling the user can see:
+- H1
+- the first sentence (at least)
+- the phone choice block
+- at least the trust line
+
+═══════════════════════════════════════════════════════════════════
+C) CREATE A REUSABLE GoalCompletionBlock COMPONENT (FOR MONEY PAGES)
+═══════════════════════════════════════════════════════════════════
+
+Create a reusable component named: GoalCompletionBlock
+
+PURPOSE:
+Implement “answer first → call now → trust proof” near the top of key pages.
+
+COMPONENT CONTENT (STRUCTURE GUIDELINE):
+1) Answer-first paragraph (1–2 sentences, service + city/coverage immediately)
+2) Phone CTA area:
+   - either ONE call button (city page) OR TWO call buttons (service pages)
+3) Trust bullets (max 4–5 bullets), BUT only include claims that are true and already supported on the site.
+   REQUIRED safe bullets:
+   - Licensed TACLB12058E
+   - Serving homeowners since 1986
+   Optional bullets ONLY if already stated consistently on site:
+   - BBB A+ rated
+   - Upfront / flat-rate pricing
+   - Same-day availability
+
+STYLING REQUIREMENTS:
+- Visually separated (light border or subtle background), padding 20–30px.
+- Mobile-first, stacked vertically.
+- Phone buttons: 48px height on mobile, bold, high contrast, spaced (min 12px between).
+- Keep the block near the top (right under H1/hero), so it’s near/above the fold.
+
+═══════════════════════════════════════════════════════════════════
+D) INSERT GoalCompletionBlock ON THESE EXISTING PAGES ONLY
+═══════════════════════════════════════════════════════════════════
+
+Insert directly after the H1 (or after hero H1 section) and before other content, on:
+- /services/ac-repair
+- /services/ac-installation
+- /services/heating-repair
+- /areas/alvin
+- /areas/friendswood
+- /areas/pearland (ONLY if this page already exists)
+
+DO NOT insert on any other pages.
+
+═══════════════════════════════════════════════════════════════════
+E) PAGE-SPECIFIC COPY + CTA BUTTONS (USE EXACTLY)
+═══════════════════════════════════════════════════════════════════
+
+E1) PAGE: /services/ac-repair
+Answer paragraph EXACTLY:
+Need AC repair in Alvin, Friendswood, Pearland, or nearby areas? Our licensed HVAC technicians provide fast air conditioning repair with honest pricing.
+
+Phone CTA:
+TWO BUTTONS (stacked vertically on mobile):
+- Button 1 text EXACTLY: Alvin / Manvel / Sienna: 281-331-5248
+  link: tel:2813315248
+- Button 2 text EXACTLY: Pearland / Friendswood / Clear Lake: 281-482-8400
+  link: tel:2814828400
+
+E2) PAGE: /services/ac-installation
+Answer paragraph EXACTLY:
+Need a new AC unit in Alvin, Friendswood, Pearland, or nearby areas? We install energy-efficient systems with proper sizing and expert installation.
+
+Phone CTA:
+TWO BUTTONS:
+- Alvin / Manvel / Sienna: 281-331-5248 → tel:2813315248
+- Pearland / Friendswood / Clear Lake: 281-482-8400 → tel:2814828400
+
+E3) PAGE: /services/heating-repair
+Answer paragraph EXACTLY:
+Heater not working in Alvin, Friendswood, Pearland, or nearby areas? Our licensed technicians provide fast heating repair with same-day availability.
+
+Phone CTA:
+TWO BUTTONS:
+- Alvin / Manvel / Sienna: 281-331-5248 → tel:2813315248
+- Pearland / Friendswood / Clear Lake: 281-482-8400 → tel:2814828400
+
+E4) PAGE: /areas/alvin
+Answer paragraph EXACTLY:
+Need AC repair or heating service in Alvin? Call 281-331-5248 for fast service. We serve Alvin and nearby areas with licensed residential HVAC service.
+
+Phone CTA:
+ONE BUTTON:
+- Call Alvin: 281-331-5248 → tel:2813315248
+
+Additional small text below button:
+Serving: Alvin, Manvel, Rosharon, Sienna, Angleton
+
+E5) PAGE: /areas/friendswood
+Answer paragraph EXACTLY:
+Need AC repair or heating service in Friendswood? Call 281-482-8400 for fast service. We serve Friendswood and nearby areas with licensed residential HVAC service.
+
+Phone CTA:
+ONE BUTTON:
+- Call Friendswood: 281-482-8400 → tel:2814828400
+
+Additional small text below button:
+Serving: Friendswood, League City, Clear Lake, Deer Park, Pasadena, Pearland
+
+E6) PAGE: /areas/pearland (ONLY if page already exists)
+Answer paragraph EXACTLY:
+Need AC repair or heating service in Pearland? Call the number below and we’ll dispatch the closest technician. Licensed residential HVAC service with honest pricing.
+
+Phone CTA:
+TWO BUTTONS (NO “east/west” wording):
+- Alvin / Manvel / Sienna: 281-331-5248 → tel:2813315248
+- Pearland / Friendswood / Clear Lake: 281-482-8400 → tel:2814828400
+
+Additional small text below:
+Not sure which to call? Either number works — we’ll dispatch the closest technician.
+
+═══════════════════════════════════════════════════════════════════
+F) DO NOT MODIFY THESE ITEMS
+═══════════════════════════════════════════════════════════════════
+
+Do NOT change/remove:
+- Navigation structure
+- Footer structure (beyond hours standardization and ensuring no Friendswood address)
+- Page URLs or routing
+- Contact forms
+- Existing schema (do not add, do not rewrite; only update hours if already present)
+- Any pages not listed above
+
+Keep:
+- Header phone numbers as-is (these new CTAs complement them)
+- Existing content below the fold (FAQs, reviews, service details)
+
+═══════════════════════════════════════════════════════════════════
+G) QA CHECKLIST (CONFIRM AFTER CHANGES)
+═══════════════════════════════════════════════════════════════════
+
+HOURS:
+[ ] Footer hours match official format
+[ ] Contact page hours match official format
+[ ] No old “7:30 / 5:00” hour strings remain
+[ ] Any existing schema hours updated to official hours (only if present)
+
+HOMEPAGE:
+[ ] Title tag matches exactly the specified title
+[ ] Meta description matches exactly the specified description
+[ ] H1 matches exactly the specified H1
+[ ] First sentence matches exactly the specified first sentence
+[ ] Phone choice block visible above the fold on mobile
+[ ] Both phone numbers clickable tel links
+[ ] Trust line appears below phone block above the fold
+
+MONEY PAGES:
+[ ] GoalCompletionBlock inserted on the specified pages only
+[ ] Service pages show TWO phone buttons with correct labels/links
+[ ] Alvin page shows ONE button using 281-331-5248
+[ ] Friendswood page shows ONE button using 281-482-8400
+[ ] Pearland page (if exists) shows TWO buttons without “east/west”
+
+MOBILE:
+[ ] No horizontal scroll
+[ ] Buttons easy to tap (48px height)
+[ ] Text readable without zoom
+[ ] Above-the-fold content meets requirements on iPhone 390x844
+
+DELIVERABLE:
+Reply with:
+- list of files/components changed
+- confirmation each QA item above is met
+- any conflicts found that prevented exact implementation

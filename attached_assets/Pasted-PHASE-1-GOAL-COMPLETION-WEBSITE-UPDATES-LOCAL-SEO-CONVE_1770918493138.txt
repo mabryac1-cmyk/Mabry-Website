@@ -1,0 +1,82 @@
+PHASE 1: “GOAL COMPLETION” WEBSITE UPDATES (LOCAL SEO + CONVERSION)
+IMPORTANT: Do NOT create any new pages, do NOT redesign navigation, and do NOT add/modify schema in this phase. Only update existing components/pages as described below.
+
+A) STANDARDIZE BUSINESS HOURS (GLOBAL)
+Official hours:
+- Mon–Fri: 7:00 AM – 7:00 PM
+- Sat: 7:00 AM – 1:00 PM
+- Sun: Closed (only show if already shown on the site)
+
+Requirements:
+1) Create ONE shared constant/config for business hours and render from it everywhere (header/footer, contact page, any components).
+2) Replace all hard-coded hour strings throughout the codebase (including “7:30”, “5pm”, “5:00”, etc.).
+3) Display formatting must be identical everywhere:
+   Mon–Fri: 7:00 AM – 7:00 PM
+   Sat: 7:00 AM – 1:00 PM
+
+B) HOMEPAGE GOAL COMPLETION (EQUAL WEIGHT: ALVIN / FRIENDSWOOD / PEARLAND)
+1) Update homepage <title> tag EXACTLY to:
+   HVAC Contractor in Alvin, Friendswood & Pearland, TX | Mabry’s AC & Heating
+
+2) Update homepage H1 EXACTLY to:
+   AC Repair & Heating Service in Alvin, Friendswood & Pearland
+
+3) Update the homepage hero/intro paragraph so the FIRST sentence is EXACTLY:
+   Need AC repair or heating service in Alvin, Friendswood, Pearland, or nearby areas? Call now for fast residential HVAC service from licensed pros (TACLB12058E).
+
+4) Add a compact ABOVE-THE-FOLD phone choice block in the homepage hero (even though phone numbers exist in the header). Display EXACTLY:
+
+   Call to schedule service:
+   Alvin / Manvel / Sienna: 281-331-5248
+   Pearland / Friendswood / Clear Lake: 281-482-8400
+
+Phone block requirements:
+- Both numbers must be clickable tel: links (tel:2813315248 and tel:2814828400)
+- Keep it compact and readable on mobile (stack vertically)
+- Do NOT show any Friendswood address anywhere (SAB compliance)
+
+5) Add a small trust line/badge below the phone choice block:
+   Serving homeowners since 1986.
+(Keep it small—do not lead with a long company history above the fold.)
+
+C) REUSABLE “GOAL COMPLETION” BLOCK ON MONEY PAGES
+Create a reusable component named GoalCompletionBlock and insert it near the top (under H1/hero) on these EXISTING pages only:
+- /services/ac-repair
+- /services/ac-installation
+- /services/heating-repair
+- /areas/alvin
+- /areas/friendswood
+- /areas/pearland (if it exists)
+
+GoalCompletionBlock must include:
+1) A 1–2 sentence “answer first” paragraph:
+   - For /areas/* pages: include “AC repair & heating” + that city in the first sentence.
+   - For /services/* pages: include the service + “Alvin, Friendswood, Pearland” in the first sentence.
+2) Prominent phone CTA area ABOVE THE FOLD.
+3) Trust stack bullets (3–5 max), using only claims already supported elsewhere on the site:
+   - Licensed TACLB12058E
+   - Serving homeowners since 1986
+   - Residential HVAC repair/install/maintenance
+   - Upfront/flat-rate pricing (ONLY if already stated on the site)
+   - BBB A+ (ONLY if already shown elsewhere on the site)
+
+D) PHONE CTA RULES (KEEP TERRITORY SEPARATION, DO NOT IMPLY FRIENDSWOOD ADDRESS)
+Primary CTAs must be:
+- /areas/alvin -> primary call uses 281-331-5248 (tel link)
+- /areas/friendswood -> primary call uses 281-482-8400 (tel link)
+- /areas/pearland -> show BOTH numbers using the SAME labels used on the homepage phone choice block
+
+E) FIX /services/ac-repair ABOVE-THE-FOLD CTA (CRITICAL)
+On /services/ac-repair, ABOVE THE FOLD:
+1) First sentence must start with:
+   Need AC repair in Alvin, Friendswood, Pearland, or nearby areas?
+2) Show TWO clearly labeled call buttons (no modal, no confusion):
+   - Alvin / Manvel / Sienna: 281-331-5248 (tel link)
+   - Pearland / Friendswood / Clear Lake: 281-482-8400 (tel link)
+3) On mobile, stack the two buttons vertically with large tap targets (min 44px height, ideally 48px).
+
+QA / DELIVERABLES (REPORT BACK WHAT YOU DID)
+1) Confirm all old hour strings were removed and replaced with the shared hours config.
+2) Confirm homepage title tag + H1 updated exactly as specified.
+3) Confirm homepage phone choice block is visible above the fold on mobile.
+4) Confirm /services/ac-repair shows the two-button CTA above the fold on mobile.
