@@ -3,8 +3,35 @@ import Script from "next/script";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LeadForm } from "@/components/LeadForm";
+import { GoalCompletionBlock } from "@/components/GoalCompletionBlock";
 import { locations, getLocationBySlug, businessInfo, services } from "@/lib/data";
 import { ArrowLeft, Phone, CheckCircle, Wrench } from "lucide-react";
+
+const areaGoalCompletion: Record<string, {
+  paragraph: string;
+  phoneButtons: { label: string; number: string; tel: string }[];
+  servingText?: string;
+  servingNote?: string;
+}> = {
+  alvin: {
+    paragraph: "Need AC repair or heating service in Alvin? Call 281-331-5248 for fast service. We serve Alvin and nearby areas with licensed residential HVAC service.",
+    phoneButtons: [{ label: "Call Alvin", number: "281-331-5248", tel: "2813315248" }],
+    servingText: "Serving: Alvin, Manvel, Rosharon, Sienna, Angleton",
+  },
+  friendswood: {
+    paragraph: "Need AC repair or heating service in Friendswood? Call 281-482-8400 for fast service. We serve Friendswood and nearby areas with licensed residential HVAC service.",
+    phoneButtons: [{ label: "Call Friendswood", number: "281-482-8400", tel: "2814828400" }],
+    servingText: "Serving: Friendswood, League City, Clear Lake, Deer Park, Pasadena, Pearland",
+  },
+  pearland: {
+    paragraph: "Need AC repair or heating service in Pearland? Call the number below and we'll dispatch the closest technician. Licensed residential HVAC service with honest pricing.",
+    phoneButtons: [
+      { label: "Alvin / Manvel / Sienna", number: "281-331-5248", tel: "2813315248" },
+      { label: "Pearland / Friendswood / Clear Lake", number: "281-482-8400", tel: "2814828400" },
+    ],
+    servingNote: "Not sure which to call? Either number works — we'll dispatch the closest technician.",
+  },
+};
 
 export async function generateStaticParams() {
   return locations.map((location) => ({
@@ -97,6 +124,14 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
+              {areaGoalCompletion[slug] && (
+                <GoalCompletionBlock
+                  answerParagraph={areaGoalCompletion[slug].paragraph}
+                  phoneButtons={areaGoalCompletion[slug].phoneButtons}
+                  servingText={areaGoalCompletion[slug].servingText}
+                  servingNote={areaGoalCompletion[slug].servingNote}
+                />
+              )}
               <div 
                 className="prose prose-lg max-w-none"
                 dangerouslySetInnerHTML={{ __html: location.content }}

@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { LeadForm } from "@/components/LeadForm";
-import { businessInfo, locations } from "@/lib/data";
+import { businessInfo, businessHours, locations } from "@/lib/data";
 import { Phone, Mail, MapPin, Clock, Shield, Award, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -96,9 +96,9 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-primary">Business Hours</h3>
-                    <p className="text-muted-foreground">Monday - Friday: 7:00 AM - 7:00 PM</p>
-                    <p className="text-muted-foreground">Saturday: 7:00 AM - 1:00 PM</p>
-                    <p className="text-muted-foreground">Sunday: Closed</p>
+                    {businessHours.displayFull.map((line, i) => (
+                      <p key={i} className="text-muted-foreground">{line}</p>
+                    ))}
                     <p className="text-muted-foreground">Emergency service available</p>
                   </div>
                 </div>

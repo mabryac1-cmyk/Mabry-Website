@@ -1,8 +1,17 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import { LeadForm } from "@/components/LeadForm";
 import { FAQSection } from "@/components/FAQSection";
 import { businessInfo, services, locations, generalFaqs } from "@/lib/data";
 import { Shield, Clock, Award, ArrowRight, MapPin, Phone, CheckCircle } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "HVAC Contractor in Alvin, Friendswood & Pearland, TX | Mabry's AC & Heating",
+  description: "Licensed HVAC contractor serving Alvin, Friendswood & Pearland. AC repair, heating service & installations. Call 281-331-5248 or 281-482-8400.",
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (
@@ -18,45 +27,38 @@ export default function Home() {
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white space-y-6">
-            <a 
-              href="https://www.bbb.org/us/tx/friendswood/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805/addressId/92394"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 border-2 border-accent/50 text-white font-semibold text-sm uppercase tracking-wider hover:bg-accent/30 transition-colors"
-            >
-              <Award className="w-4 h-4" />
-              <span>BBB A+ Rated Since 1986</span>
-            </a>
-            <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-shadow">
-              Residential AC & Heating Experts Since 1986
+            <h1 className="text-3xl lg:text-5xl font-bold leading-tight text-shadow">
+              AC Repair & Heating Service in Alvin, Friendswood & Pearland
             </h1>
-            <p className="text-xl text-white/90 max-w-lg leading-relaxed">
-              With locations serving Alvin and Friendswood, {businessInfo.name} provides honest, flat-rate pricing with no hidden charges. 
-              Serving Alvin, Friendswood, Pearland, Clear Lake & surrounding cities across the greater Houston area.
+            <p className="text-lg text-white/90 max-w-lg leading-relaxed">
+              Need AC repair or heating service in Alvin, Friendswood, Pearland, or nearby areas? Call now for fast residential HVAC service from licensed pros (TACLB12058E).
             </p>
-            <div className="flex flex-wrap gap-4 pt-4">
-              <a 
-                href={`tel:${businessInfo.phone}`}
-                className="bg-accent hover:bg-accent/90 text-white font-bold uppercase tracking-wider py-4 px-8 text-lg rounded-lg shadow-xl shadow-accent/20 flex items-center gap-2 transition-colors"
-              >
-                <Phone className="w-5 h-5" />
-                Call Now
-              </a>
-              <a 
-                href={`mailto:${businessInfo.email}?subject=Quote Request from Website`}
-                className="border-2 border-white text-white hover:bg-white hover:text-primary font-bold uppercase tracking-wider py-4 px-8 text-lg rounded-lg transition-colors"
-              >
-                Get a Quote
-              </a>
+
+            <div className="bg-white/10 border border-white/20 rounded-lg p-4 max-w-md">
+              <p className="text-white/90 text-sm font-semibold mb-3">Call to schedule service:</p>
+              <div className="flex flex-col gap-3">
+                <a
+                  href="tel:2813315248"
+                  className="flex items-center gap-2 bg-accent hover:bg-accent/90 text-white font-bold py-3 px-5 rounded-lg text-base transition-colors min-h-[48px]"
+                  data-testid="link-phone-alvin-hero"
+                >
+                  <Phone className="w-5 h-5 shrink-0" />
+                  Alvin / Manvel / Sienna: 281-331-5248
+                </a>
+                <a
+                  href="tel:2814828400"
+                  className="flex items-center gap-2 bg-accent hover:bg-accent/90 text-white font-bold py-3 px-5 rounded-lg text-base transition-colors min-h-[48px]"
+                  data-testid="link-phone-friendswood-hero"
+                >
+                  <Phone className="w-5 h-5 shrink-0" />
+                  Pearland / Friendswood / Clear Lake: 281-482-8400
+                </a>
+              </div>
             </div>
-            <div className="pt-4 flex items-center gap-4 text-sm text-white/80">
-              <span className="flex items-center gap-1">
-                <CheckCircle className="w-4 h-4 text-accent" /> License {businessInfo.license}
-              </span>
-              <span className="flex items-center gap-1">
-                <CheckCircle className="w-4 h-4 text-accent" /> Insured
-              </span>
-            </div>
+
+            <p className="text-sm text-white/70">
+              Serving homeowners since 1986 | Licensed {businessInfo.license} | BBB A+ Rated
+            </p>
           </div>
 
           <div className="hidden lg:block">

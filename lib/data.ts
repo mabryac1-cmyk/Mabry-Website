@@ -1,3 +1,15 @@
+export const businessHours = {
+  weekdays: { days: "Mon–Fri", open: "7:00 AM", close: "7:00 PM" },
+  saturday: { days: "Sat", open: "7:00 AM", close: "1:00 PM" },
+  sunday: { days: "Sun", label: "Closed" },
+  displayShort: "Mon-Fri: 7am-7pm | Sat: 7am-1pm",
+  displayFull: [
+    "Monday - Friday: 7:00 AM - 7:00 PM",
+    "Saturday: 7:00 AM - 1:00 PM",
+    "Sunday: Closed",
+  ],
+};
+
 export const businessInfo = {
   name: "Mabry's Air Conditioning & Heating, Inc.",
   phone: "281-331-5248",

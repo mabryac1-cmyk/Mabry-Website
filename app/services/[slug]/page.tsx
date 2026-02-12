@@ -3,8 +3,20 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LeadForm } from "@/components/LeadForm";
 import { FAQSection } from "@/components/FAQSection";
+import { GoalCompletionBlock } from "@/components/GoalCompletionBlock";
 import { services, getServiceBySlug, businessInfo, locations } from "@/lib/data";
 import { ArrowLeft, Phone, CheckCircle, MapPin } from "lucide-react";
+
+const goalCompletionCopy: Record<string, string> = {
+  "ac-repair": "Need AC repair in Alvin, Friendswood, Pearland, or nearby areas? Our licensed HVAC technicians provide fast air conditioning repair with honest pricing.",
+  "ac-installation": "Need a new AC unit in Alvin, Friendswood, Pearland, or nearby areas? We install energy-efficient systems with proper sizing and expert installation.",
+  "heating-repair": "Heater not working in Alvin, Friendswood, Pearland, or nearby areas? Our licensed technicians provide fast heating repair with same-day availability.",
+};
+
+const dualPhoneButtons = [
+  { label: "Alvin / Manvel / Sienna", number: "281-331-5248", tel: "2813315248" },
+  { label: "Pearland / Friendswood / Clear Lake", number: "281-482-8400", tel: "2814828400" },
+];
 
 export async function generateStaticParams() {
   return services.map((service) => ({
@@ -66,6 +78,12 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
+              {goalCompletionCopy[slug] && (
+                <GoalCompletionBlock
+                  answerParagraph={goalCompletionCopy[slug]}
+                  phoneButtons={dualPhoneButtons}
+                />
+              )}
               <div 
                 className="prose prose-lg max-w-none"
                 dangerouslySetInnerHTML={{ __html: service.content }}

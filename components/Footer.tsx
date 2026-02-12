@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
-import { businessInfo, services, locations } from "@/lib/data";
+import { businessInfo, businessHours, services, locations } from "@/lib/data";
 
 export function Footer() {
   return (
@@ -81,7 +81,7 @@ export function Footer() {
                   </li>
                   <li className="flex items-center gap-2 text-white/80 text-sm">
                     <Clock className="w-4 h-4 shrink-0" />
-                    <span>Mon-Fri: 7am-7pm | Sat: 7am-1pm</span>
+                    <span>{businessHours.displayShort}</span>
                   </li>
                 </ul>
               </div>
@@ -100,7 +100,7 @@ export function Footer() {
                   </li>
                   <li className="flex items-center gap-2 text-white/80 text-sm">
                     <Clock className="w-4 h-4 shrink-0" />
-                    <span>Mon-Fri: 7am-7pm | Sat: 7am-1pm</span>
+                    <span>{businessHours.displayShort}</span>
                   </li>
                 </ul>
               </div>
