@@ -31,6 +31,46 @@ const areaGoalCompletion: Record<string, {
     ],
     servingNote: "Not sure which to call? Either number works — we'll dispatch the closest technician.",
   },
+  "clear-lake": {
+    paragraph: "Need AC repair or heating service in Clear Lake? Call 281-482-8400 for fast service. We serve Clear Lake and nearby areas with licensed residential HVAC service.",
+    phoneButtons: [{ label: "Call Clear Lake", number: "281-482-8400", tel: "2814828400" }],
+    servingText: "Serving: Friendswood, League City, Clear Lake, Deer Park, Pasadena, Pearland",
+  },
+  "deer-park": {
+    paragraph: "Need AC repair or heating service in Deer Park? Call 281-482-8400 for fast service. We serve Deer Park and nearby areas with licensed residential HVAC service.",
+    phoneButtons: [{ label: "Call Deer Park", number: "281-482-8400", tel: "2814828400" }],
+    servingText: "Serving: Friendswood, League City, Clear Lake, Deer Park, Pasadena, Pearland",
+  },
+  "league-city": {
+    paragraph: "Need AC repair or heating service in League City? Call 281-482-8400 for fast service. We serve League City and nearby areas with licensed residential HVAC service.",
+    phoneButtons: [{ label: "Call League City", number: "281-482-8400", tel: "2814828400" }],
+    servingText: "Serving: Friendswood, League City, Clear Lake, Deer Park, Pasadena, Pearland",
+  },
+  pasadena: {
+    paragraph: "Need AC repair or heating service in Pasadena? Call 281-482-8400 for fast service. We serve Pasadena and nearby areas with licensed residential HVAC service.",
+    phoneButtons: [{ label: "Call Pasadena", number: "281-482-8400", tel: "2814828400" }],
+    servingText: "Serving: Friendswood, League City, Clear Lake, Deer Park, Pasadena, Pearland",
+  },
+  sienna: {
+    paragraph: "Need AC repair or heating service in Sienna? Call 281-331-5248 for fast service. We serve Sienna and nearby areas with licensed residential HVAC service.",
+    phoneButtons: [{ label: "Call Sienna", number: "281-331-5248", tel: "2813315248" }],
+    servingText: "Serving: Alvin, Manvel, Rosharon, Sienna, Angleton",
+  },
+  angleton: {
+    paragraph: "Need AC repair or heating service in Angleton? Call 281-331-5248 for fast service. We serve Angleton and nearby areas with licensed residential HVAC service.",
+    phoneButtons: [{ label: "Call Angleton", number: "281-331-5248", tel: "2813315248" }],
+    servingText: "Serving: Alvin, Manvel, Rosharon, Sienna, Angleton",
+  },
+  manvel: {
+    paragraph: "Need AC repair or heating service in Manvel? Call 281-331-5248 for fast service. We serve Manvel and nearby areas with licensed residential HVAC service.",
+    phoneButtons: [{ label: "Call Manvel", number: "281-331-5248", tel: "2813315248" }],
+    servingText: "Serving: Alvin, Manvel, Rosharon, Sienna, Angleton",
+  },
+  rosharon: {
+    paragraph: "Need AC repair or heating service in Rosharon? Call 281-331-5248 for fast service. We serve Rosharon and nearby areas with licensed residential HVAC service.",
+    phoneButtons: [{ label: "Call Rosharon", number: "281-331-5248", tel: "2813315248" }],
+    servingText: "Serving: Alvin, Manvel, Rosharon, Sienna, Angleton",
+  },
 };
 
 export async function generateStaticParams() {
