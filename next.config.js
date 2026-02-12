@@ -38,6 +38,7 @@ const nextConfig = {
       { source: '/alvin-tx-ac-repair', destination: '/areas/alvin', permanent: true },
       { source: '/friendswood-hvac-services', destination: '/areas/friendswood', permanent: true },
       { source: '/pearland-ac-repair', destination: '/areas/pearland', permanent: true },
+      { source: '/pearland-ac-heating-repair', destination: '/areas/pearland', permanent: true },
       { source: '/deer-park-ac-repair', destination: '/areas/deer-park', permanent: true },
       { source: '/friendswood-heating-repair', destination: '/services/heating-repair/friendswood', permanent: true },
       { source: '/heater-repair', destination: '/services/heating-repair', permanent: true },
