@@ -24,12 +24,9 @@ const areaGoalCompletion: Record<string, {
     servingText: "Serving: Friendswood, League City, Clear Lake, Deer Park, Pasadena, Pearland",
   },
   pearland: {
-    paragraph: "Need AC repair or heating service in Pearland? Call the number below and we'll dispatch the closest technician. Licensed residential HVAC service with honest pricing.",
-    phoneButtons: [
-      { label: "Alvin / Manvel / Sienna", number: "281-331-5248", tel: "2813315248" },
-      { label: "Friendswood / Pearland / Clear Lake", number: "281-482-8400", tel: "2814828400" },
-    ],
-    servingNote: "Not sure which to call? Either number works — we'll dispatch the closest technician.",
+    paragraph: "Need AC repair or heating service in Pearland? Call 281-482-8400 for fast service. We serve Pearland and nearby areas with licensed residential HVAC service.",
+    phoneButtons: [{ label: "Call Pearland", number: "281-482-8400", tel: "2814828400" }],
+    servingText: "Serving: Friendswood, League City, Clear Lake, Deer Park, Pasadena, Pearland",
   },
   "clear-lake": {
     paragraph: "Need AC repair or heating service in Clear Lake? Call 281-482-8400 for fast service. We serve Clear Lake and nearby areas with licensed residential HVAC service.",
