@@ -51,7 +51,7 @@ export default function Home() {
                   data-testid="link-phone-friendswood-hero"
                 >
                   <Phone className="w-5 h-5 shrink-0" />
-                  Pearland / Friendswood / Clear Lake: 281-482-8400
+                  Friendswood / Pearland / Clear Lake: 281-482-8400
                 </a>
               </div>
             </div>

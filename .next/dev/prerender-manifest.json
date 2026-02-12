@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "e64fad1778b610479c1518d32f0a8fb1",
-    "previewModeSigningKey": "627152d2d33590de6dda6ae71cc9248e6cbec2639a037f06534676ab8a106454",
-    "previewModeEncryptionKey": "3d3ef8a0164e60a45a910d80e945f9da5694617bec9a3e6c6464ad6865db5f81"
-  }
-}
+{"version":4,"routes":{"/services/ac-repair":{},"/services/heating-repair":{},"/services/ac-installation":{}},"dynamicRoutes":{"/services/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/services/[slug]","routeRegex":"^\\/services\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"e64fad1778b610479c1518d32f0a8fb1","previewModeSigningKey":"627152d2d33590de6dda6ae71cc9248e6cbec2639a037f06534676ab8a106454","previewModeEncryptionKey":"3d3ef8a0164e60a45a910d80e945f9da5694617bec9a3e6c6464ad6865db5f81"}}
