@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import { businessInfo, services, locations } from "@/lib/data";
 import logoImage from "@/attached_assets/mabrys-ac-heating-alvin-tx-logo_1768859481677.png";
@@ -13,9 +13,25 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [areasOpen, setAreasOpen] = useState(false);
+  const headerRef = useRef<HTMLElement>(null);
+  const [headerHeight, setHeaderHeight] = useState(0);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+      if (headerRef.current) {
+        setHeaderHeight(headerRef.current.getBoundingClientRect().height);
+      }
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white shadow-md">
+    <header ref={headerRef} className="sticky top-0 z-50 w-full bg-white shadow-md">
       <div className="bg-primary text-white py-2 px-4 text-sm">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <span className="hidden sm:inline">Residential HVAC Experts Since 1986 | License {businessInfo.license}</span>
@@ -155,7 +171,7 @@ export function Header() {
       </div>
 
       {isOpen && (
-        <div className="lg:hidden bg-white border-t">
+        <div className="lg:hidden fixed left-0 right-0 bottom-0 bg-white overflow-y-auto border-t z-50" style={{ top: `${headerHeight}px` }}>
           <div className="px-4 py-6 space-y-4">
             <Link href="/" className="block text-lg font-semibold" onClick={() => setIsOpen(false)}>
               Home
