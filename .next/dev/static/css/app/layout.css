@@ -1783,6 +1783,12 @@ video {
 .text-white\/90 {
   color: rgb(255 255 255 / 0.9);
 }
+.text-white\/50 {
+  color: rgb(255 255 255 / 0.5);
+}
+.underline {
+  text-decoration-line: underline;
+}
 .opacity-20 {
   opacity: 0.2;
 }
@@ -1935,6 +1941,10 @@ body {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-white\/70:hover {
+  color: rgb(255 255 255 / 0.7);
 }
 
 .hover\:opacity-80:hover {

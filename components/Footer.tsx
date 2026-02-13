@@ -26,6 +26,10 @@ export function Footer() {
                 <span className="font-semibold">BBB Rating:</span> {businessInfo.bbbRating}
               </a>
             </div>
+            <p className="mt-4 text-xs text-white/50 leading-relaxed">
+              Regulated by the Texas Department of Licensing and Regulation, P.O. Box 12157, Austin, Texas 78711, 1-800-803-9202, 512-463-6599,{" "}
+              <a href="https://www.tdlr.texas.gov" target="_blank" rel="noopener noreferrer" className="underline hover:text-white/70 transition-colors">www.tdlr.texas.gov</a>
+            </p>
           </div>
 
           <div>
