@@ -10,6 +10,5 @@
   "/privacy/page": "/privacy",
   "/reviews/page": "/reviews",
   "/services/[slug]/[city]/page": "/services/[slug]/[city]",
-  "/services/[slug]/page": "/services/[slug]",
-  "/sitemap.xml/route": "/sitemap.xml"
+  "/services/[slug]/page": "/services/[slug]"
 }

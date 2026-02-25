@@ -10,6 +10,5 @@
   "/privacy/page": "app/privacy/page.js",
   "/reviews/page": "app/reviews/page.js",
   "/services/[slug]/[city]/page": "app/services/[slug]/[city]/page.js",
-  "/services/[slug]/page": "app/services/[slug]/page.js",
-  "/sitemap.xml/route": "app/sitemap.xml/route.js"
+  "/services/[slug]/page": "app/services/[slug]/page.js"
 }

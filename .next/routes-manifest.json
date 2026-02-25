@@ -311,12 +311,6 @@
       "regex": "^/reviews(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/reviews(?:/)?$"
-    },
-    {
-      "page": "/sitemap.xml",
-      "regex": "^/sitemap\\.xml(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/sitemap\\.xml(?:/)?$"
     }
   ],
   "dataRoutes": [],
