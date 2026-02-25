@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7340adf74ff47ec0.js"],"ViewportBoundary"]
+3:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7340adf74ff47ec0.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"ihMJEFRT2YpnseHNdesM4","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"HVAC Services in Deer Park, TX | Mabry's AC & Heating | 281-482-8400"}],["$","meta","1",{"name":"description","content":"Reliable residential HVAC service for Deer Park homeowners. BBB A+ rated with flat-rate pricing since 1986. License TACLB12058E. BBB A+ Rated. Call 281-482-8400 for service."}],["$","link","2",{"rel":"canonical","href":"https://www.mabryac.com/areas/deer-park"}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
