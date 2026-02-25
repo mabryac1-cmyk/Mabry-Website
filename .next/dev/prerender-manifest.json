@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/services/ac-repair":{},"/services/heating-repair":{},"/services/ac-installation":{},"/areas/alvin":{},"/areas/friendswood":{},"/areas/pearland":{},"/areas/clear-lake":{},"/areas/deer-park":{},"/areas/league-city":{},"/areas/pasadena":{},"/areas/sienna":{},"/areas/angleton":{},"/areas/manvel":{},"/areas/rosharon":{}},"dynamicRoutes":{"/services/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/services/[slug]","routeRegex":"^\\/services\\/([^/]+?)(?:\\/)?$","allowHeader":[]},"/areas/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/areas/[slug]","routeRegex":"^\\/areas\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"d714af8b4f0a32c5b55b03ab19753948","previewModeSigningKey":"a468a9fc043da0c8936670560741fe38e6e2a3ff0cc346febd8d8f2c6ee7cda9","previewModeEncryptionKey":"9b6441b4c840b7497c7d3a3db23a1760f0a4552b1a5186783d7e883ef6b49fb1"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "eb401e854780ffd3a9282f7a34a83c97",
+    "previewModeSigningKey": "5ce983d7d701e082e3f84ea8c5d6c5dfa9dcd0fa9c13468f15f23bb746fc000f",
+    "previewModeEncryptionKey": "7c7200fd6d201aabe09cd2ae83ce1a2079413a082284ab3cf3b5bd01e72a3f0e"
+  }
+}

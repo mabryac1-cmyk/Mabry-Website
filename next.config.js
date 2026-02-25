@@ -35,6 +35,7 @@ const nextConfig = {
       { source: '/services', destination: '/services/ac-repair', permanent: true },
       { source: '/promotions', destination: '/', permanent: true },
       { source: '/services-1', destination: '/services/ac-repair', permanent: true },
+      { source: '/ac-repair-alvin-tx', destination: '/areas/alvin', permanent: true },
       { source: '/alvin-tx-ac-repair', destination: '/areas/alvin', permanent: true },
       { source: '/friendswood-hvac-services', destination: '/areas/friendswood', permanent: true },
       { source: '/pearland-ac-repair', destination: '/areas/pearland', permanent: true },

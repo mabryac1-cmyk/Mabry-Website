@@ -5,7 +5,7 @@ type AppRoutes = "/" | "/about" | "/app-support" | "/areas/[slug]" | "/contact" 
 type AppRouteHandlerRoutes = "/api/leads"
 type PageRoutes = never
 type LayoutRoutes = "/"
-type RedirectRoutes = "/ac-repair" | "/ac-service-alvin" | "/alvin-heating-repair" | "/alvin-tx-ac-repair" | "/cart" | "/deer-park-ac-repair" | "/deer-park-heating-repair" | "/dickinson-heating-repair" | "/friendswood-ac-repair" | "/friendswood-heating-repair" | "/friendswood-hvac-services" | "/furnace-repair-pearland-tx" | "/heater-repair" | "/home" | "/kemah-heating-repair" | "/league-city-ac-repair" | "/manvel-heating-repair" | "/missouri-city-heating-repair" | "/offers" | "/pearland-ac-heating-repair" | "/pearland-ac-repair" | "/promotions" | "/reffers" | "/rosharon-heating-repair" | "/seabrook-ac-repair" | "/service-areas" | "/services" | "/services-1" | "/services-2" | "/sienna-heating-repair" | "/sugar-land-ac-repair" | "/webster-ac-repair" | "/webster-heating-repair" | "/work"
+type RedirectRoutes = "/ac-repair" | "/ac-repair-alvin-tx" | "/ac-service-alvin" | "/alvin-heating-repair" | "/alvin-tx-ac-repair" | "/cart" | "/deer-park-ac-repair" | "/deer-park-heating-repair" | "/dickinson-heating-repair" | "/friendswood-ac-repair" | "/friendswood-heating-repair" | "/friendswood-hvac-services" | "/furnace-repair-pearland-tx" | "/heater-repair" | "/home" | "/kemah-heating-repair" | "/league-city-ac-repair" | "/manvel-heating-repair" | "/missouri-city-heating-repair" | "/offers" | "/pearland-ac-heating-repair" | "/pearland-ac-repair" | "/promotions" | "/reffers" | "/rosharon-heating-repair" | "/seabrook-ac-repair" | "/service-areas" | "/services" | "/services-1" | "/services-2" | "/sienna-heating-repair" | "/sugar-land-ac-repair" | "/webster-ac-repair" | "/webster-heating-repair" | "/work"
 type RewriteRoutes = never
 type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRoutes | AppRouteHandlerRoutes
 
@@ -14,6 +14,7 @@ interface ParamMap {
   "/": {}
   "/about": {}
   "/ac-repair": {}
+  "/ac-repair-alvin-tx": {}
   "/ac-service-alvin": {}
   "/alvin-heating-repair": {}
   "/alvin-tx-ac-repair": {}
