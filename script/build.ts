@@ -60,16 +60,35 @@ build.on("close", (code) => {
     mkdirSync("dist", { recursive: true });
     
     const startScript = `
-const { spawn } = require("child_process");
+const http = require("http");
+const { parse } = require("url");
+const next = require("next");
+const fs = require("fs");
+const path = require("path");
 
-const server = spawn("npx", ["next", "start", "-p", process.env.PORT || "5000", "-H", "0.0.0.0"], {
-  stdio: "inherit",
-  cwd: process.cwd(),
-  env: { ...process.env, NODE_ENV: "production" },
-});
+const port = parseInt(process.env.PORT || "5000", 10);
+const app = next({ dev: false, hostname: "0.0.0.0", port });
+const handle = app.getRequestHandler();
 
-server.on("close", (code) => {
-  process.exit(code || 0);
+const STATIC_FILES = {
+  "/sitemap.xml": { file: path.join(__dirname, "sitemap.xml"), type: "application/xml" },
+  "/robots.txt": { file: path.join(__dirname, "robots.txt"), type: "text/plain" },
+};
+
+app.prepare().then(() => {
+  http.createServer((req, res) => {
+    const parsedUrl = parse(req.url, true);
+    const staticFile = STATIC_FILES[parsedUrl.pathname];
+    if (staticFile && fs.existsSync(staticFile.file)) {
+      res.setHeader("Content-Type", staticFile.type);
+      res.setHeader("Cache-Control", "public, max-age=3600");
+      fs.createReadStream(staticFile.file).pipe(res);
+      return;
+    }
+    handle(req, res, parsedUrl);
+  }).listen(port, "0.0.0.0", () => {
+    console.log("Production server running on port " + port);
+  });
 });
 `;
     writeFileSync("dist/index.cjs", startScript);
