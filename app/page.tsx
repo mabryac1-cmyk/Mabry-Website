@@ -43,7 +43,7 @@ export default function Home() {
                   data-testid="link-phone-alvin-hero"
                 >
                   <Phone className="w-5 h-5 shrink-0" />
-                  Alvin / Manvel / Sienna: 281-331-5248
+                  Alvin / Manvel / Santa Fe: 281-331-5248
                 </a>
                 <a
                   href="tel:2814828400"
