@@ -1,3 +1,9 @@
 {
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/about/page": "app/about/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/reviews/page": "app/reviews/page.js",
+  "/services/[slug]/page": "app/services/[slug]/page.js",
+  "/areas/[slug]/page": "app/areas/[slug]/page.js",
+  "/services/[slug]/[city]/page": "app/services/[slug]/[city]/page.js"
 }
