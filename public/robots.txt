@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.mabryac.com/sitemap.xml
+Sitemap: https://mabryac.com/sitemap.xml
