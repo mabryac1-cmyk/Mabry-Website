@@ -11,6 +11,7 @@ const goalCompletionCopy: Record<string, string> = {
   "ac-repair": "Need AC repair in Alvin, Friendswood, Pearland, or nearby areas? Our licensed HVAC technicians provide fast air conditioning repair with honest pricing.",
   "ac-installation": "Need a new AC unit in Alvin, Friendswood, Pearland, or nearby areas? We install energy-efficient systems with proper sizing and expert installation.",
   "heating-repair": "Heater not working in Alvin, Friendswood, Pearland, or nearby areas? Our licensed technicians provide fast heating repair with same-day availability.",
+  "ac-maintenance": "Schedule your AC or heating tune-up in Alvin, Friendswood, Pearland, or nearby areas. Annual maintenance prevents costly breakdowns and keeps your system running efficiently all year.",
 };
 
 const dualPhoneButtons = [

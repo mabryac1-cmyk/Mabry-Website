@@ -29,9 +29,10 @@ export function SchemaOrg({ page = "home", serviceName, locationName }: SchemaOr
   const schema = {
     "@context": "https://schema.org",
     "@type": "HVACBusiness",
+    "@id": "https://mabryac.com/#business",
     "name": businessInfo.name,
     "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80",
-    "telephone": businessInfo.phone,
+    "telephone": [businessInfo.phone, "281-482-8400"],
     "email": businessInfo.email,
     "address": {
       "@type": "PostalAddress",
@@ -46,8 +47,9 @@ export function SchemaOrg({ page = "home", serviceName, locationName }: SchemaOr
       "latitude": businessInfo.address.lat,
       "longitude": businessInfo.address.lng,
     },
-    "url": "https://mabrysac.com",
+    "url": "https://mabryac.com",
     "priceRange": "$$",
+    "foundingYear": businessInfo.established,
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -68,9 +70,22 @@ export function SchemaOrg({ page = "home", serviceName, locationName }: SchemaOr
       "@type": "AggregateRating",
       "ratingValue": "4.9",
       "reviewCount": "127",
+      "bestRating": "5",
+      "worstRating": "1",
     },
     "sameAs": [],
-    "description": `${businessInfo.name} has been providing residential HVAC services since ${businessInfo.established}. License ${businessInfo.license}. BBB ${businessInfo.bbbRating} Rating.`,
+    "knowsAbout": [
+      "Air Conditioning Repair",
+      "Heating Repair",
+      "HVAC Installation",
+      "AC Maintenance",
+      "Trane HVAC Systems",
+      "Carrier HVAC Systems",
+      "Lennox HVAC Systems",
+      "Rheem HVAC Systems",
+      "Residential HVAC Service",
+    ],
+    "description": `${businessInfo.name} has been providing residential AC repair, heating repair, and HVAC installation in Alvin, Friendswood, Pearland, and the greater Houston area since ${businessInfo.established}. License ${businessInfo.license}. BBB ${businessInfo.bbbRating} Accredited.`,
   };
 
   return (

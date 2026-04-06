@@ -8,7 +8,7 @@ import { Footer } from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.mabryac.com"),
+  metadataBase: new URL("https://mabryac.com"),
   title: "Mabry's Air Conditioning & Heating | Alvin & Friendswood TX | HVAC Since 1986",
   description: "Residential AC repair, heating service & installation serving Alvin, Friendswood, Pearland & Clear Lake TX since 1986. BBB A+ rated. Flat-rate pricing. Alvin: 281-331-5248 | Friendswood: 281-482-8400",
   alternates: {
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
 const businessSchema = {
   "@context": "https://schema.org",
   "@type": "HVACBusiness",
-  "@id": "https://www.mabryac.com/#business",
+  "@id": "https://mabryac.com/#business",
   "name": "Mabry's Air Conditioning & Heating, Inc.",
-  "url": "https://www.mabryac.com",
+  "url": "https://mabryac.com",
   "logo": "https://www.mabryac.com/_next/static/media/mabrys-ac-heating-alvin-tx-logo_1768859481677.7306ed6b.png",
   "image": "https://www.mabryac.com/_next/static/media/mabrys-ac-heating-alvin-tx-logo_1768859481677.7306ed6b.png",
   "description": "Family-owned residential HVAC company serving the greater Houston area since 1986. AC repair, heating repair, and installation with flat-rate pricing and no hidden charges. BBB A+ rated. License TACLB12058E.",
@@ -131,6 +131,14 @@ const businessSchema = {
           "@type": "Service",
           "name": "AC Installation",
           "description": "Professional AC installation and replacement with energy-efficient systems."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AC & Heating Maintenance",
+          "description": "Annual AC tune-up and heating maintenance to prevent breakdowns and extend equipment life."
         }
       }
     ]

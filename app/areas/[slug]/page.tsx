@@ -85,8 +85,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: `HVAC Services in ${location.name}, ${location.state} | Mabry's AC & Heating | ${location.phone}`,
-    description: `${location.description} License ${businessInfo.license}. BBB A+ Rated. Call ${location.phone} for service.`,
+    title: `AC Repair & HVAC Service in ${location.name}, TX | Mabry's AC & Heating`,
+    description: `${location.description} Serving ${location.zipCodes.join(" & ")} with flat-rate pricing. License ${businessInfo.license}. BBB A+ Rated. Call ${location.phone}.`,
     alternates: {
       canonical: `/areas/${slug}`,
     },
