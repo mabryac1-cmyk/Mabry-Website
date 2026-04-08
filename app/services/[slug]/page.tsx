@@ -94,6 +94,38 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                 <FAQSection faqs={service.faqs} title={`${service.name} FAQs`} schemaId={`faq-schema-${service.slug}`} />
               )}
 
+              {slug === "ac-installation" && (
+                <div className="mt-8 bg-accent/10 border border-accent/30 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                  <div>
+                    <p className="text-sm font-bold uppercase tracking-wider text-accent mb-1">Financing Available</p>
+                    <p className="text-xl font-bold text-primary">Finance a New System for as Low as $38/Week*</p>
+                    <p className="text-sm text-muted-foreground mt-1">*With approved credit through participating lenders</p>
+                  </div>
+                  <Link
+                    href="/promotions"
+                    className="shrink-0 bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg transition-colors whitespace-nowrap"
+                  >
+                    Apply Now →
+                  </Link>
+                </div>
+              )}
+
+              {slug === "ac-maintenance" && (
+                <div className="mt-8 bg-accent/10 border border-accent/30 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                  <div>
+                    <p className="text-sm font-bold uppercase tracking-wider text-accent mb-1">Special Offer — Through May 15, 2026</p>
+                    <p className="text-xl font-bold text-primary">Pre-Season AC Tune-Up — $89</p>
+                    <p className="text-sm text-muted-foreground mt-1">Standard residential systems · Call to schedule</p>
+                  </div>
+                  <Link
+                    href="/promotions"
+                    className="shrink-0 bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg transition-colors whitespace-nowrap"
+                  >
+                    See Offer Details →
+                  </Link>
+                </div>
+              )}
+
               <div className="mt-12 bg-gray-50 rounded-2xl p-8">
                 <h3 className="text-2xl font-bold text-primary mb-4">{service.name} Service Areas</h3>
                 <p className="text-muted-foreground mb-6">
