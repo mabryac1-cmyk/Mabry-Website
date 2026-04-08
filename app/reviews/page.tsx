@@ -4,8 +4,8 @@ import { businessInfo, reviews } from "@/lib/data";
 import { Star, Quote, Phone, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: `Customer Reviews | Mabry's AC & Heating | Alvin & Friendswood TX`,
-  description: `Read what customers say about ${businessInfo.name}. BBB A+ Rated since 1986. Honest, flat-rate HVAC service in Alvin, Friendswood, Pearland & Clear Lake.`,
+  title: `Customer Reviews | Mabry's AC & Heating | Greater Houston Area`,
+  description: `Read what customers say about ${businessInfo.name}. BBB A+ Rated since 1986. Honest, flat-rate HVAC service across the Greater Houston area.`,
   alternates: {
     canonical: "/reviews",
   },

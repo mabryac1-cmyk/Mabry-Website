@@ -131,17 +131,17 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
     "@type": "WebPage",
     "name": `HVAC Services in ${location.name}, ${location.state}`,
     "description": `Residential AC repair, heating service, and installation for ${location.name}, ${location.state} homeowners. Flat-rate pricing, BBB A+ rated. Call ${location.phone}.`,
-    "url": `https://www.mabryac.com/areas/${slug}`,
+    "url": `https://mabryac.com/areas/${slug}`,
     "about": {
       "@type": "HVACBusiness",
-      "@id": "https://www.mabryac.com/#business"
+      "@id": "https://mabryac.com/#business"
     },
     "mainEntity": {
       "@type": "Service",
       "name": `HVAC Services in ${location.name}, ${location.state}`,
       "provider": {
         "@type": "HVACBusiness",
-        "@id": "https://www.mabryac.com/#business"
+        "@id": "https://mabryac.com/#business"
       },
       "areaServed": {
         "@type": "City",

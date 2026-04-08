@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Phone, CheckCircle, CreditCard, DollarSign, Wrench } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Promotions & Financing | Mabry's AC & Heating | Alvin & Friendswood TX",
-  description: "Special offers on AC tune-ups, AC repairs, and flexible financing for new HVAC systems. Finance a new AC & heating system for as low as $38/week. Serving Alvin, Friendswood & Pearland TX.",
+  title: "HVAC Promotions & Special Offers | Mabry's AC & Heating | Houston Area",
+  description: "Special offers on AC tune-ups, AC repairs, and flexible financing for new HVAC systems. Finance a new AC & heating system for as low as $38/week. Serving the Greater Houston area.",
   alternates: {
     canonical: "/promotions",
   },

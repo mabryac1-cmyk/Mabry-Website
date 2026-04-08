@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mabryac.com"),
-  title: "Mabry's Air Conditioning & Heating | Alvin & Friendswood TX | HVAC Since 1986",
-  description: "Residential AC repair, heating service & installation serving Alvin, Friendswood, Pearland & Clear Lake TX since 1986. BBB A+ rated. Flat-rate pricing. Alvin: 281-331-5248 | Friendswood: 281-482-8400",
+  title: "Mabry's Air Conditioning & Heating | Greater Houston Area HVAC Since 1986",
+  description: "Residential AC repair, heating service & installation serving the Greater Houston area since 1986. Alvin, Friendswood, Pearland, Sugar Land, Bellaire & more. BBB A+ rated. Flat-rate pricing. 281-331-5248",
   alternates: {
     canonical: "/",
   },
@@ -22,8 +22,8 @@ const businessSchema = {
   "@id": "https://mabryac.com/#business",
   "name": "Mabry's Air Conditioning & Heating, Inc.",
   "url": "https://mabryac.com",
-  "logo": "https://www.mabryac.com/_next/static/media/mabrys-ac-heating-alvin-tx-logo_1768859481677.7306ed6b.png",
-  "image": "https://www.mabryac.com/_next/static/media/mabrys-ac-heating-alvin-tx-logo_1768859481677.7306ed6b.png",
+  "logo": "https://mabryac.com/logo.png",
+  "image": "https://mabryac.com/logo.png",
   "description": "Family-owned residential HVAC company serving the greater Houston area since 1986. AC repair, heating repair, and installation with flat-rate pricing and no hidden charges. BBB A+ rated. License TACLB12058E.",
   "foundingDate": "1986",
   "priceRange": "$$",
@@ -54,7 +54,11 @@ const businessSchema = {
         {"@type": "City", "name": "Manvel", "addressRegion": "TX"},
         {"@type": "City", "name": "Angleton", "addressRegion": "TX"},
         {"@type": "City", "name": "Rosharon", "addressRegion": "TX"},
-        {"@type": "City", "name": "Sienna", "addressRegion": "TX"}
+        {"@type": "City", "name": "Sienna", "addressRegion": "TX"},
+        {"@type": "City", "name": "Sugar Land", "addressRegion": "TX"},
+        {"@type": "City", "name": "Bellaire", "addressRegion": "TX"},
+        {"@type": "City", "name": "West University Place", "addressRegion": "TX"},
+        {"@type": "City", "name": "Houston", "addressRegion": "TX"}
       ],
       "availableLanguage": "English"
     },
@@ -103,7 +107,11 @@ const businessSchema = {
     {"@type": "City", "name": "Seabrook", "addressRegion": "TX"},
     {"@type": "City", "name": "Kemah", "addressRegion": "TX"},
     {"@type": "City", "name": "Dickinson", "addressRegion": "TX"},
-    {"@type": "City", "name": "La Marque", "addressRegion": "TX"}
+    {"@type": "City", "name": "La Marque", "addressRegion": "TX"},
+    {"@type": "City", "name": "Sugar Land", "addressRegion": "TX"},
+    {"@type": "City", "name": "Bellaire", "addressRegion": "TX"},
+    {"@type": "City", "name": "West University Place", "addressRegion": "TX"},
+    {"@type": "City", "name": "Houston", "addressRegion": "TX"}
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
