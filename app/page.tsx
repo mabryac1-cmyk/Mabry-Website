@@ -6,8 +6,8 @@ import { businessInfo, services, locations, generalFaqs } from "@/lib/data";
 import { Shield, Clock, Award, ArrowRight, MapPin, Phone, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HVAC Contractor in Alvin, Friendswood & Pearland, TX | Mabry's AC & Heating",
-  description: "Licensed HVAC contractor serving Alvin, Friendswood & Pearland. AC repair, heating service & installations. Call 281-331-5248 or 281-482-8400.",
+  title: "AC Repair & Heating Service | Greater Houston Area | Mabry's AC & Heating",
+  description: "Licensed HVAC contractor serving the Greater Houston area — Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake, League City & surrounding communities. Call 281-331-5248 or 281-482-8400.",
   alternates: {
     canonical: "/",
   },
@@ -28,10 +28,10 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white space-y-6">
             <h1 className="text-3xl lg:text-5xl font-bold leading-tight text-shadow">
-              AC Repair & Heating Service in Alvin, Friendswood & Pearland
+              AC Repair & Heating Service in the Greater Houston Area
             </h1>
             <p className="text-lg text-white/90 max-w-lg leading-relaxed">
-              Need AC repair or heating service in Alvin, Friendswood, Pearland, or nearby areas? Call now for fast residential HVAC service from licensed pros (TACLB12058E).
+              Proudly serving Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake, League City, and communities throughout the Greater Houston area. Fast, licensed residential HVAC service since 1986 (TACLB12058E).
             </p>
 
             <div className="bg-white/10 border border-white/20 rounded-lg p-4 max-w-md">

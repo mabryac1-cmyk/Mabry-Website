@@ -805,6 +805,168 @@ export const locations = [
     `,
     keywords: ["HVAC Rosharon TX", "AC repair Rosharon", "heating repair Rosharon TX", "air conditioning Rosharon 77583"],
   },
+  {
+    slug: "sugar-land",
+    name: "Sugar Land",
+    state: "TX",
+    zipCodes: ["77478", "77479", "77498", "77496"],
+    phone: "281-331-5248",
+    isPrimary: false,
+    headline: "AC Repair & HVAC Service in Sugar Land, TX — Trusted Since 1986",
+    description: "Reliable residential HVAC service for Sugar Land homeowners. Flat-rate pricing, no hidden charges. Serving First Colony, Riverstone, Telfair & surrounding Fort Bend County communities.",
+    content: `
+      <h2>AC Repair & HVAC Service for Sugar Land Homeowners</h2>
+      <p>Sugar Land has grown into one of the most sought-after communities in Greater Houston — and Mabry's Air Conditioning & Heating has been serving Fort Bend County homeowners since 1986. Whether you're in an established First Colony home, a newer Riverstone or Telfair property, or anywhere across the Sugar Land area, you deserve HVAC service from a company that treats your home like their own.</p>
+
+      <p>We bring nearly four decades of Gulf Coast HVAC experience to every Sugar Land service call — flat-rate pricing, licensed technicians, and honest work.</p>
+
+      <h3>HVAC Services We Provide in Sugar Land</h3>
+      <ul>
+        <li><strong>AC repair</strong> — fast diagnosis and repair on all makes and models</li>
+        <li><strong>Heating repair</strong> — furnace and heat pump service when those cold fronts hit</li>
+        <li><strong>New AC installation</strong> — Trane, Carrier, Lennox, Rheem and other top brands, properly sized</li>
+        <li><strong>Annual maintenance tune-ups</strong> — pre-season service to prevent summer breakdowns</li>
+      </ul>
+
+      <h3>We Know Sugar Land Homes</h3>
+      <p>Sugar Land's housing stock is remarkably diverse. First Colony — one of the Houston area's original master-planned communities — features homes built throughout the 1980s and 1990s, many of which are now approaching their second or third HVAC replacement cycle. Newer developments like Riverstone, Telfair, New Territory, and Commonwealth include homes built in the 2000s and 2010s that benefit from professional maintenance to maximize equipment life in our demanding Gulf Coast climate.</p>
+
+      <p>Fort Bend County's heat and humidity are relentless. The combination of high summer temperatures and moisture levels that regularly push into the 90% range means your AC system is under sustained stress for nine months out of the year. Regular maintenance isn't optional here — it's what separates a system that lasts 15 years from one that fails at year 10.</p>
+
+      <h3>Why Sugar Land Homeowners Choose Mabry's</h3>
+      <ul>
+        <li>Nearly 40 years serving Greater Houston and Fort Bend County</li>
+        <li>Flat-rate pricing — you know the cost before we start</li>
+        <li>All major brands serviced: Trane, Carrier, Lennox, Rheem, Goodman, American Standard</li>
+        <li>BBB A+ Accredited Business</li>
+        <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
+        <li>Residential specialists — homes are our only business</li>
+      </ul>
+
+      <p>From Sugar Creek to Greatwood, First Colony to Riverstone — call Mabry's at 281-331-5248 for honest, flat-rate HVAC service.</p>
+    `,
+    keywords: ["HVAC Sugar Land TX", "AC repair Sugar Land TX", "heating repair Sugar Land", "air conditioning Sugar Land 77478 77479", "AC service Fort Bend County"],
+  },
+  {
+    slug: "bellaire",
+    name: "Bellaire",
+    state: "TX",
+    zipCodes: ["77401"],
+    phone: "281-331-5248",
+    isPrimary: false,
+    headline: "AC Repair & HVAC Service in Bellaire, TX — Experienced Houston Area Experts",
+    description: "Trusted residential HVAC service for Bellaire homeowners. Flat-rate pricing, all major brands serviced. Serving the 77401 area with licensed AC repair, installation & maintenance.",
+    content: `
+      <h2>AC Repair & Heating Service in Bellaire, TX</h2>
+      <p>Bellaire — Houston's "City of Homes" — is one of the most distinctive residential communities in the greater Houston area. Nestled inside Loop 610 and surrounded by the city of Houston, Bellaire is a true neighborhood community where homeowners invest in their properties and expect quality service from the contractors they invite in. Mabry's Air Conditioning & Heating has been providing that level of service to Houston-area homeowners since 1986.</p>
+
+      <h3>HVAC Services We Provide in Bellaire</h3>
+      <ul>
+        <li><strong>AC repair</strong> — fast, accurate diagnosis on all makes and models</li>
+        <li><strong>Heating repair</strong> — furnace and heat pump service</li>
+        <li><strong>New AC installation</strong> — proper load calculation and licensed installation</li>
+        <li><strong>Annual maintenance tune-ups</strong> — protect your investment with pre-season service</li>
+      </ul>
+
+      <h3>We Know Bellaire Homes</h3>
+      <p>Bellaire's housing stock tells the story of Houston's post-war growth and its ongoing reinvention. The 77401 zip code is home to a remarkable mix of original mid-century ranch homes — many built in the 1950s and 1960s — alongside the newer luxury custom homes and tear-down rebuilds that have transformed many Bellaire streets over the past two decades.</p>
+
+      <p>Older Bellaire homes often present specific HVAC considerations: ductwork that may be original or only partially updated, attic configurations that challenge airflow, and systems that may be approaching or past their expected service life. Newer construction in Bellaire tends toward high-efficiency systems and zoned cooling — equipment that rewards skilled, experienced technicians who understand modern systems.</p>
+
+      <p>Inside Loop 610, the urban heat island effect adds to Houston's already demanding cooling load. Bellaire homes run their AC hard, and that demands reliable equipment and a contractor who shows up when things go wrong.</p>
+
+      <h3>Why Bellaire Homeowners Choose Mabry's</h3>
+      <ul>
+        <li>Nearly 40 years of Greater Houston HVAC experience</li>
+        <li>Flat-rate pricing — no hourly surprises, no hidden fees</li>
+        <li>All major brands: Trane, Carrier, Lennox, Rheem, Goodman, American Standard, York</li>
+        <li>BBB A+ Accredited Business</li>
+        <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
+        <li>Residential specialists — homes are all we do</li>
+      </ul>
+    `,
+    keywords: ["HVAC Bellaire TX", "AC repair Bellaire TX", "heating repair Bellaire", "air conditioning Bellaire 77401", "AC service Bellaire Houston"],
+  },
+  {
+    slug: "west-university",
+    name: "West University Place",
+    state: "TX",
+    zipCodes: ["77005"],
+    phone: "281-331-5248",
+    isPrimary: false,
+    headline: "AC Repair & HVAC Service in West University Place, TX — Licensed Experts",
+    description: "Reliable residential HVAC service for West University Place homeowners. Flat-rate pricing, experienced technicians. Serving the 77005 area with AC repair, installation & maintenance.",
+    content: `
+      <h2>HVAC Service for West University Place Homes</h2>
+      <p>West University Place — "West U" to those who live there — is one of the most prestigious small cities in Texas, a tight-knit residential enclave completely surrounded by Houston. Homeowners here have high standards, and rightly so. Mabry's Air Conditioning & Heating brings nearly 40 years of Greater Houston HVAC experience and the same flat-rate, no-surprises approach that has built our reputation since 1986.</p>
+
+      <h3>HVAC Services We Provide in West University Place</h3>
+      <ul>
+        <li><strong>AC repair</strong> — fast, licensed repair on all makes and models</li>
+        <li><strong>Heating repair</strong> — furnace and heat pump service</li>
+        <li><strong>New AC installation</strong> — energy-efficient systems, properly sized for your home</li>
+        <li><strong>Annual maintenance tune-ups</strong> — protect your system before the Houston summer heat arrives</li>
+      </ul>
+
+      <h3>We Know West U Homes</h3>
+      <p>West University Place's housing stock ranges from charming original bungalows and craftsman homes built in the 1920s and 1930s to the substantial custom rebuilds that have become increasingly common as land values have risen. These older homes present real HVAC challenges — limited attic clearance, ductwork that may have been routed around original architectural features, and cooling loads that older systems were never designed to handle in today's climate.</p>
+
+      <p>Newer West U homes, including the two-story custom builds that have reshaped many blocks, often feature zoned systems, high-efficiency equipment, and complex installations that require experienced technicians. Either way, you need someone who knows what they're doing and charges you a fair, transparent price.</p>
+
+      <p>Houston's urban heat — amplified inside the Loop — means West U homes run their AC for the better part of nine months. That's a serious cooling load, and it demands a contractor who treats your equipment right.</p>
+
+      <h3>Why West U Homeowners Choose Mabry's</h3>
+      <ul>
+        <li>Nearly four decades of Greater Houston residential HVAC experience</li>
+        <li>Flat-rate pricing — you know exactly what you're paying before we start</li>
+        <li>All major brands serviced and installed</li>
+        <li>BBB A+ Accredited Business</li>
+        <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
+        <li>Residential specialists — homes are our entire focus</li>
+      </ul>
+    `,
+    keywords: ["HVAC West University Place TX", "AC repair West University TX", "heating repair West U Houston", "air conditioning 77005", "AC service West University Place"],
+  },
+  {
+    slug: "rice-village",
+    name: "Rice Village",
+    state: "TX",
+    zipCodes: ["77005", "77025"],
+    phone: "281-331-5248",
+    isPrimary: false,
+    headline: "AC Repair & HVAC Service Near Rice Village, Houston TX — Local Experts",
+    description: "Dependable residential HVAC service for homes in and around Rice Village, Houston. Flat-rate pricing, all major brands. Serving the Museum District, Southampton & surrounding Houston neighborhoods.",
+    content: `
+      <h2>AC Repair & Heating Service for Rice Village & Surrounding Houston Neighborhoods</h2>
+      <p>The Rice Village area — anchored by Rice University and one of Houston's most beloved urban neighborhoods — is home to a dense, established residential community with a mix of housing styles that spans nearly a century. Mabry's Air Conditioning & Heating has been serving Greater Houston homeowners since 1986, bringing experienced, licensed HVAC service to homes that range from original 1930s craftsmen to modern luxury builds.</p>
+
+      <h3>HVAC Services We Provide in the Rice Village Area</h3>
+      <ul>
+        <li><strong>AC repair</strong> — accurate diagnosis and repair on all makes and models</li>
+        <li><strong>Heating repair</strong> — furnace and heat pump service throughout the year</li>
+        <li><strong>New AC installation</strong> — top brands, proper load calculations, licensed installation</li>
+        <li><strong>Annual maintenance tune-ups</strong> — prevent breakdowns before Houston's brutal summer heat arrives</li>
+      </ul>
+
+      <h3>We Know These Houston Neighborhoods</h3>
+      <p>The streets around Rice Village — Southampton, Boulevard Oaks, Braeswood Place, and the Museum District — contain some of Houston's most character-rich residential architecture. Many homes in these neighborhoods were built between the 1920s and 1950s, featuring mature tree canopies, historic detailing, and HVAC systems that have often been retrofitted into spaces not originally designed for modern equipment.</p>
+
+      <p>These older homes require technicians who can think creatively about ductwork routing, equipment placement, and airflow challenges that newer tract homes simply don't present. At the same time, the high-end renovation and new construction that has reshaped parts of this area brings its own demands — high-efficiency systems, zoned cooling, and equipment that needs to perform to a higher standard.</p>
+
+      <p>Inside Houston's Loop 610, the heat load is real and sustained. Homes here run their AC nearly year-round, and that demands reliable equipment and a contractor who shows up fast when something fails.</p>
+
+      <h3>Why Homeowners in This Area Choose Mabry's</h3>
+      <ul>
+        <li>Nearly 40 years serving Greater Houston residential customers</li>
+        <li>Flat-rate pricing — no hidden fees, no hourly rates that surprise you</li>
+        <li>Trane, Carrier, Lennox, Rheem, Goodman, American Standard and more</li>
+        <li>BBB A+ Accredited Business</li>
+        <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
+        <li>Residential only — homes are our entire business</li>
+      </ul>
+    `,
+    keywords: ["HVAC Rice Village Houston", "AC repair Rice Village TX", "heating repair Museum District Houston", "air conditioning Southampton Houston", "AC service 77005 77025"],
+  },
 ];
 
 export const reviews = [
