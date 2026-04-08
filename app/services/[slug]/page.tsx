@@ -118,10 +118,10 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                     <p className="text-sm text-muted-foreground mt-1">*With approved credit through participating lenders</p>
                   </div>
                   <Link
-                    href="/promotions"
+                    href="/financing"
                     className="shrink-0 bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg transition-colors whitespace-nowrap"
                   >
-                    Check Out Our Financing Offers →
+                    See Financing Options →
                   </Link>
                 </div>
               )}

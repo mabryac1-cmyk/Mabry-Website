@@ -159,6 +159,9 @@ export function Header() {
             <Link href="/promotions" className="text-sm font-semibold hover:text-accent transition-colors">
               Promotions
             </Link>
+            <Link href="/financing" className="text-sm font-semibold hover:text-accent transition-colors">
+              Financing
+            </Link>
             <Link
               href="/contact"
               className="bg-accent hover:bg-accent/90 text-white font-bold px-6 py-3 rounded-lg transition-colors"
@@ -213,6 +216,9 @@ export function Header() {
             </Link>
             <Link href="/promotions" className="block text-lg font-semibold" onClick={() => setIsOpen(false)}>
               Promotions
+            </Link>
+            <Link href="/financing" className="block text-lg font-semibold" onClick={() => setIsOpen(false)}>
+              Financing
             </Link>
             <Link
               href="/contact"
