@@ -32,7 +32,6 @@ const nextConfig = {
       { source: '/alvin-heating-repair', destination: '/services/heating-repair/alvin', permanent: true },
       { source: '/services-2', destination: '/services/ac-repair', permanent: true },
       { source: '/services', destination: '/services/ac-repair', permanent: true },
-      { source: '/promotions', destination: '/', permanent: true },
       { source: '/services-1', destination: '/services/ac-repair', permanent: true },
       { source: '/ac-repair-alvin-tx', destination: '/areas/alvin', permanent: true },
       { source: '/alvin-tx-ac-repair', destination: '/areas/alvin', permanent: true },
