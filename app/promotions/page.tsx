@@ -90,14 +90,14 @@ export default function PromotionsPage() {
                         className="flex items-center justify-center gap-2 bg-accent hover:bg-accent/90 text-white font-bold py-3 px-4 rounded-lg transition-colors text-sm"
                       >
                         <Phone className="w-4 h-4" />
-                        Alvin / Manvel / Santa Fe: 281-331-5248
+                        South &amp; Southwest Houston: 281-331-5248
                       </a>
                       <a
                         href="tel:2814828400"
                         className="flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold py-3 px-4 rounded-lg transition-colors text-sm"
                       >
                         <Phone className="w-4 h-4" />
-                        Friendswood / Pearland / Clear Lake: 281-482-8400
+                        Bay Area &amp; Southeast Houston: 281-482-8400
                       </a>
                     </div>
                   </div>
@@ -224,14 +224,14 @@ export default function PromotionsPage() {
                         className="flex items-center justify-center gap-2 bg-accent hover:bg-accent/90 text-white font-bold py-3 px-4 rounded-lg transition-colors text-sm"
                       >
                         <Phone className="w-4 h-4" />
-                        Alvin / Manvel / Santa Fe: 281-331-5248
+                        South &amp; Southwest Houston: 281-331-5248
                       </a>
                       <a
                         href="tel:2814828400"
                         className="flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold py-3 px-4 rounded-lg transition-colors text-sm"
                       >
                         <Phone className="w-4 h-4" />
-                        Friendswood / Pearland / Clear Lake: 281-482-8400
+                        Bay Area &amp; Southeast Houston: 281-482-8400
                       </a>
                     </div>
                   </div>

@@ -39,21 +39,21 @@ export function Header() {
           <div className="flex items-center gap-3">
             <a href="tel:281-331-5248" className="hidden sm:flex items-center gap-1.5 hover:text-accent transition-colors font-semibold">
               <Phone className="w-3.5 h-3.5" />
-              <span>Alvin: 281-331-5248</span>
+              <span>281-331-5248</span>
             </a>
             <span className="hidden sm:inline text-white/40">|</span>
             <a href="tel:281-482-8400" className="hidden sm:flex items-center gap-1.5 hover:text-accent transition-colors font-semibold">
               <Phone className="w-3.5 h-3.5" />
-              <span>Friendswood: 281-482-8400</span>
+              <span>281-482-8400</span>
             </a>
             <div className="flex sm:hidden flex-col items-end gap-0.5">
               <a href="tel:281-331-5248" className="flex items-center gap-1.5 hover:text-accent transition-colors font-semibold">
                 <Phone className="w-3.5 h-3.5" />
-                <span>Alvin: 281-331-5248</span>
+                <span>281-331-5248</span>
               </a>
               <a href="tel:281-482-8400" className="flex items-center gap-1.5 hover:text-accent transition-colors font-semibold">
                 <Phone className="w-3.5 h-3.5" />
-                <span>Friendswood: 281-482-8400</span>
+                <span>281-482-8400</span>
               </a>
             </div>
           </div>

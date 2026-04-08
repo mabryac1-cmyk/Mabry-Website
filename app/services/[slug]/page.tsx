@@ -15,8 +15,8 @@ const goalCompletionCopy: Record<string, string> = {
 };
 
 const dualPhoneButtons = [
-  { label: "Alvin / Manvel / Santa Fe", number: "281-331-5248", tel: "2813315248" },
-  { label: "Friendswood / Pearland / Clear Lake", number: "281-482-8400", tel: "2814828400" },
+  { label: "South & Southwest Houston", number: "281-331-5248", tel: "2813315248" },
+  { label: "Bay Area & Southeast Houston", number: "281-482-8400", tel: "2814828400" },
 ];
 
 export async function generateStaticParams() {
