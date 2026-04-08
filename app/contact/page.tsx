@@ -4,8 +4,8 @@ import { businessInfo, businessHours, locations } from "@/lib/data";
 import { Phone, Mail, MapPin, Clock, Shield, Award, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: `Contact Mabry's AC & Heating | Alvin: 281-331-5248 | Friendswood: 281-482-8400`,
-  description: `Contact ${businessInfo.name} for residential AC and heating service. Serving Alvin, Friendswood, Pearland, Clear Lake & surrounding cities across the greater Houston area. License ${businessInfo.license}. BBB A+ Rated.`,
+  title: `Contact Us | Mabry's AC & Heating | Greater Houston Area`,
+  description: `Contact ${businessInfo.name} for residential AC and heating service. Serving Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake & the greater Houston area. License ${businessInfo.license}. BBB A+ Rated.`,
   alternates: {
     canonical: "/contact",
   },
@@ -26,14 +26,14 @@ export default function ContactPage() {
               className="inline-flex items-center gap-3 bg-accent hover:bg-accent/90 text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors"
             >
               <Phone className="w-6 h-6" />
-              Alvin: 281-331-5248
+              South &amp; Southwest Houston: 281-331-5248
             </a>
             <a 
               href="tel:281-482-8400"
               className="inline-flex items-center gap-3 bg-white hover:bg-white/90 text-primary font-bold py-4 px-8 rounded-lg text-xl transition-colors"
             >
               <Phone className="w-6 h-6" />
-              Friendswood: 281-482-8400
+              Bay Area &amp; Southeast Houston: 281-482-8400
             </a>
           </div>
         </div>
