@@ -967,6 +967,52 @@ export const locations = [
     `,
     keywords: ["HVAC Rice Village Houston", "AC repair Rice Village TX", "heating repair Museum District Houston", "air conditioning Southampton Houston", "AC service 77005 77025"],
   },
+  {
+    slug: "houston",
+    name: "Houston",
+    state: "TX",
+    zipCodes: ["77025", "77031", "77035", "77058", "77096"],
+    phone: "281-331-5248",
+    isPrimary: false,
+    headline: "AC Repair & HVAC Service in South & Southwest Houston, TX",
+    description: "Trusted residential HVAC service for South & Southwest Houston homeowners. Serving Meyerland, Braeswood, Westbury, Braeburn, Clear Lake & surrounding Houston communities. Flat-rate pricing, BBB A+ rated since 1986.",
+    content: `
+      <h2>AC Repair & Heating Service for South & Southwest Houston Homes</h2>
+      <p>Mabry's Air Conditioning & Heating has been serving Houston-area homeowners since 1986 — nearly four decades of residential HVAC experience in one of the most demanding climates in the country. We serve the South and Southwest Houston corridor, including Meyerland, Braeswood Place, Westbury, Braeburn, Willow Meadows, and the communities that connect Houston's inner loop to the suburbs further south.</p>
+
+      <p>We're not a massive call center operation. We're a family-owned company with a real shop and real technicians who know Houston homes — and we charge flat-rate pricing with no hidden fees.</p>
+
+      <h3>HVAC Services We Provide in South & Southwest Houston</h3>
+      <ul>
+        <li><strong>AC repair</strong> — fast, accurate diagnosis on all makes and models</li>
+        <li><strong>Heating repair</strong> — furnace and heat pump service throughout the year</li>
+        <li><strong>New AC installation</strong> — energy-efficient systems, properly sized for your home</li>
+        <li><strong>Annual maintenance tune-ups</strong> — pre-season service to prevent breakdowns during Houston's brutal summers</li>
+      </ul>
+
+      <h3>We Know South Houston Homes</h3>
+      <p>The South and Southwest Houston corridor is one of the most diverse stretches of residential real estate in the city. Meyerland and Braeswood Place feature established mid-century homes — many rebuilt or substantially renovated after flooding in recent years — alongside long-term residents who have invested in their properties for decades. Westbury and Braeburn include a mix of 1960s and 1970s ranch homes, many with original ductwork configurations that require experienced hands to service correctly.</p>
+
+      <p>Further south, the Clear Lake area — technically Houston's 77058 and 77059 zip codes — brings a different character: NASA-era development, established tree-lined streets, and homes that have seen one or more full HVAC replacement cycles. These are communities where homeowners know the value of a contractor they can trust and a price they can count on before the work begins.</p>
+
+      <p>Houston's Gulf Coast climate hits these neighborhoods hard. The combination of sustained summer heat, high humidity, and the occasional tropical moisture event means your AC system works harder here than almost anywhere in the country. Nine-month cooling seasons, heat indexes regularly above 105°F, and condensate drain systems under constant stress — we've been diagnosing these exact conditions in these exact neighborhoods for nearly 40 years.</p>
+
+      <h3>Adjacent Areas We Also Serve</h3>
+      <p>Our South & Southwest Houston service area connects directly to the communities we serve further south and west, including Bellaire, West University Place, Rice Village, Sugar Land, Friendswood, and Pearland. If you're in any of these communities or on the border between them, we serve you.</p>
+
+      <h3>Why South Houston Homeowners Choose Mabry's</h3>
+      <ul>
+        <li>Nearly 40 years of Greater Houston residential HVAC experience</li>
+        <li>Flat-rate pricing — you know the full cost before we start</li>
+        <li>All major brands: Trane, Carrier, Lennox, Rheem, Goodman, American Standard, York, Bryant</li>
+        <li>BBB A+ Accredited Business</li>
+        <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
+        <li>Residential specialists — homes are our entire focus</li>
+        <li>Family-owned and operated — you talk to us, not a call center</li>
+      </ul>
+    `,
+    keywords: ["HVAC South Houston TX", "AC repair South Houston", "heating repair Southwest Houston", "air conditioning Meyerland Houston", "AC service Braeswood Westbury Houston", "HVAC Clear Lake Houston TX"],
+  },
 ];
 
 export const reviews = [

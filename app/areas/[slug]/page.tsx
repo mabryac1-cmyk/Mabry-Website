@@ -88,6 +88,11 @@ const areaGoalCompletion: Record<string, {
     phoneButtons: [{ label: "Call Rice Village Area", number: "281-331-5248", tel: "2813315248" }],
     servingText: "Serving: Rice Village, West University Place, Southampton, Museum District & surrounding Houston neighborhoods",
   },
+  houston: {
+    paragraph: "Need AC repair or heating service in South or Southwest Houston? Call 281-331-5248 for fast service. We serve Meyerland, Braeswood, Westbury, Braeburn, Clear Lake & surrounding Houston communities with licensed residential HVAC service.",
+    phoneButtons: [{ label: "Call South & Southwest Houston", number: "281-331-5248", tel: "2813315248" }],
+    servingText: "Serving: Meyerland, Braeswood Place, Westbury, Braeburn, Clear Lake, Willow Meadows & surrounding South Houston communities",
+  },
 };
 
 export async function generateStaticParams() {
