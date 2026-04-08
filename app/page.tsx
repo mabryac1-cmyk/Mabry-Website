@@ -150,7 +150,7 @@ export default function Home() {
                   <span>281-331-5248</span>
                 </a>
                 <p className="text-sm text-muted-foreground pt-2">
-                  Serving: Alvin, Manvel, Angleton, Rosharon, Sienna & surrounding areas
+                  Serving South & Southwest Houston — Alvin, Manvel, Sugar Land, Sienna & surrounding communities
                 </p>
                 <Link href="/areas/alvin" className="inline-flex items-center gap-1 text-sm font-semibold text-accent hover:text-accent/80 transition-colors pt-1">
                   View Alvin Area <ArrowRight className="w-4 h-4" />
@@ -170,7 +170,7 @@ export default function Home() {
                   <span>281-482-8400</span>
                 </a>
                 <p className="text-sm text-muted-foreground pt-2">
-                  Serving: Friendswood, Pearland, Clear Lake, League City, Deer Park, Pasadena & surrounding areas
+                  Serving Bay Area & Southeast Houston — Friendswood, Pearland, Clear Lake, League City, Bellaire & surrounding communities
                 </p>
                 <Link href="/areas/friendswood" className="inline-flex items-center gap-1 text-sm font-semibold text-accent hover:text-accent/80 transition-colors pt-1">
                   View Friendswood Area <ArrowRight className="w-4 h-4" />

@@ -8,10 +8,10 @@ import { services, getServiceBySlug, businessInfo, locations } from "@/lib/data"
 import { ArrowLeft, Phone, CheckCircle, MapPin } from "lucide-react";
 
 const goalCompletionCopy: Record<string, string> = {
-  "ac-repair": "Need AC repair in Alvin, Friendswood, Pearland, or nearby areas? Our licensed HVAC technicians provide fast air conditioning repair with honest pricing.",
-  "ac-installation": "Need a new AC unit in Alvin, Friendswood, Pearland, or nearby areas? We install energy-efficient systems with proper sizing and expert installation.",
-  "heating-repair": "Heater not working in Alvin, Friendswood, Pearland, or nearby areas? Our licensed technicians provide fast heating repair with same-day availability.",
-  "ac-maintenance": "Schedule your AC or heating tune-up in Alvin, Friendswood, Pearland, or nearby areas. Annual maintenance prevents costly breakdowns and keeps your system running efficiently all year.",
+  "ac-repair": "Need AC repair in the Greater Houston area? Our licensed HVAC technicians serve Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake, League City, and surrounding communities with fast, honest-priced AC repair.",
+  "ac-installation": "Need a new AC system in the Greater Houston area? We serve Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake, League City, and surrounding communities with energy-efficient installations and expert sizing.",
+  "heating-repair": "Heater not working in the Greater Houston area? Our licensed technicians serve Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake, League City, and surrounding communities with fast heating repair and same-day availability.",
+  "ac-maintenance": "Schedule your AC or heating tune-up anywhere in the Greater Houston area. We serve Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake, League City, and surrounding communities. Annual maintenance prevents costly breakdowns all year.",
 };
 
 const dualPhoneButtons = [
@@ -34,8 +34,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: `${service.name} | Alvin, Friendswood & Pearland TX | Mabry's AC & Heating`,
-    description: `${service.description} Serving Alvin, Friendswood, Pearland, Clear Lake & surrounding cities across the greater Houston area. License ${businessInfo.license}. Call ${businessInfo.phone}.`,
+    title: `${service.name} | Greater Houston Area | Mabry's AC & Heating`,
+    description: `${service.description} Serving Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake, League City & the greater Houston area. License ${businessInfo.license}. Call ${businessInfo.phone}.`,
     alternates: {
       canonical: `/services/${slug}`,
     },
