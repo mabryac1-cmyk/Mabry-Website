@@ -94,6 +94,22 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                 <FAQSection faqs={service.faqs} title={`${service.name} FAQs`} schemaId={`faq-schema-${service.slug}`} />
               )}
 
+              {slug === "ac-repair" && (
+                <div className="mt-8 bg-accent/10 border border-accent/30 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                  <div>
+                    <p className="text-sm font-bold uppercase tracking-wider text-accent mb-1">Special Offer</p>
+                    <p className="text-xl font-bold text-primary">10% Off Any AC or Heating Repair</p>
+                    <p className="text-sm text-muted-foreground mt-1">Applies to repair services only · Not valid on new equipment</p>
+                  </div>
+                  <Link
+                    href="/promotions"
+                    className="shrink-0 bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg transition-colors whitespace-nowrap"
+                  >
+                    Check Out Our Current Repair Discount →
+                  </Link>
+                </div>
+              )}
+
               {slug === "ac-installation" && (
                 <div className="mt-8 bg-accent/10 border border-accent/30 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                   <div>
@@ -105,7 +121,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                     href="/promotions"
                     className="shrink-0 bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg transition-colors whitespace-nowrap"
                   >
-                    Apply Now →
+                    Check Out Our Financing Offers →
                   </Link>
                 </div>
               )}
@@ -121,7 +137,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                     href="/promotions"
                     className="shrink-0 bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg transition-colors whitespace-nowrap"
                   >
-                    See Offer Details →
+                    Check Out Our Current $89 Tune-Up Special →
                   </Link>
                 </div>
               )}
