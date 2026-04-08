@@ -110,9 +110,7 @@ export default function FinancingPage() {
             <h2 className="text-2xl font-bold text-primary mb-6">What Financing Covers</h2>
             <ul className="space-y-3">
               {[
-                "Complete new AC & heating system — fully installed",
-                "All major brands: Trane, Carrier, Lennox, Rheem, Goodman, American Standard",
-                "Proper load calculation and sizing for your home",
+                "New AC & heating system or equipment — fully installed",
                 "Licensed installation by our certified HVAC technicians",
                 "100% financing available with approved credit — no money down",
                 "Flexible loan terms to fit your monthly budget",
