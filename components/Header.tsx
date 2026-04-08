@@ -150,17 +150,17 @@ export function Header() {
               )}
             </div>
 
-            <Link href="/about" className="text-sm font-semibold hover:text-accent transition-colors">
-              About
-            </Link>
-            <Link href="/reviews" className="text-sm font-semibold hover:text-accent transition-colors">
-              Reviews
-            </Link>
             <Link href="/promotions" className="text-sm font-semibold hover:text-accent transition-colors">
               Promotions
             </Link>
             <Link href="/financing" className="text-sm font-semibold hover:text-accent transition-colors">
               Financing
+            </Link>
+            <Link href="/reviews" className="text-sm font-semibold hover:text-accent transition-colors">
+              Reviews
+            </Link>
+            <Link href="/about" className="text-sm font-semibold hover:text-accent transition-colors">
+              About
             </Link>
             <Link
               href="/contact"
@@ -208,17 +208,17 @@ export function Header() {
                 </Link>
               ))}
             </div>
-            <Link href="/about" className="block text-lg font-semibold" onClick={() => setIsOpen(false)}>
-              About
-            </Link>
-            <Link href="/reviews" className="block text-lg font-semibold" onClick={() => setIsOpen(false)}>
-              Reviews
-            </Link>
             <Link href="/promotions" className="block text-lg font-semibold" onClick={() => setIsOpen(false)}>
               Promotions
             </Link>
             <Link href="/financing" className="block text-lg font-semibold" onClick={() => setIsOpen(false)}>
               Financing
+            </Link>
+            <Link href="/reviews" className="block text-lg font-semibold" onClick={() => setIsOpen(false)}>
+              Reviews
+            </Link>
+            <Link href="/about" className="block text-lg font-semibold" onClick={() => setIsOpen(false)}>
+              About
             </Link>
             <Link
               href="/contact"
