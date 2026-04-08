@@ -53,6 +53,12 @@ export default function Home() {
                   <Phone className="w-5 h-5 shrink-0" />
                   Friendswood / Pearland / Clear Lake: 281-482-8400
                 </a>
+                <Link
+                  href="/promotions"
+                  className="flex items-center justify-center gap-1 text-white/80 hover:text-white text-sm font-semibold transition-colors pt-1"
+                >
+                  🏷️ See Our Current Offers &amp; Discounts →
+                </Link>
               </div>
             </div>
 
@@ -123,26 +129,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Promotions Banner */}
-      <section className="py-10 bg-accent">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="text-white text-center md:text-left">
-              <p className="text-sm font-bold uppercase tracking-widest text-white/80 mb-1">Limited-Time Offers</p>
-              <h2 className="text-2xl lg:text-3xl font-bold">
-                $89 Pre-Season AC Tune-Up &nbsp;·&nbsp; Financing as Low as $38/Week*
-              </h2>
-              <p className="text-white/80 text-sm mt-1">Tune-up special valid through May 15, 2026 &nbsp;|&nbsp; *With approved credit</p>
-            </div>
-            <Link
-              href="/promotions"
-              className="shrink-0 bg-white hover:bg-white/90 text-accent font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
-            >
-              See All Offers →
-            </Link>
-          </div>
-        </div>
-      </section>
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
