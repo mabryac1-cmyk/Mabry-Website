@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Phone, DollarSign } from "lucide-react";
+import { Phone, DollarSign, CheckCircle, ClipboardList, Wrench } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "HVAC Financing | New AC & Heating Systems | Mabry's AC & Heating",
@@ -69,10 +69,67 @@ export default function FinancingPage() {
             </div>
           </div>
 
+          {/* How it works */}
+          <div className="bg-white rounded-2xl shadow-md p-8">
+            <h2 className="text-2xl font-bold text-primary text-center mb-8">How It Works</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              {[
+                {
+                  icon: ClipboardList,
+                  step: "1",
+                  title: "Apply Online",
+                  desc: "Complete the simple online application in just a few minutes from your phone or computer.",
+                },
+                {
+                  icon: CheckCircle,
+                  step: "2",
+                  title: "Get Approved",
+                  desc: "Receive a fast financing decision. Once approved, we confirm your installation date.",
+                },
+                {
+                  icon: Wrench,
+                  step: "3",
+                  title: "Get It Installed",
+                  desc: "Our licensed technicians arrive on your scheduled day and install your new system.",
+                },
+              ].map((item) => (
+                <div key={item.step} className="text-center">
+                  <div className="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <item.icon className="w-7 h-7 text-accent" />
+                  </div>
+                  <div className="text-xs font-bold text-accent uppercase tracking-widest mb-1">Step {item.step}</div>
+                  <h3 className="text-lg font-bold text-primary mb-2">{item.title}</h3>
+                  <p className="text-muted-foreground text-sm">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* What's covered */}
+          <div className="bg-white rounded-2xl shadow-md p-8">
+            <h2 className="text-2xl font-bold text-primary mb-6">What Financing Covers</h2>
+            <ul className="space-y-3">
+              {[
+                "Complete new AC & heating system — fully installed",
+                "All major brands: Trane, Carrier, Lennox, Rheem, Goodman, American Standard",
+                "Proper load calculation and sizing for your home",
+                "Licensed installation by our certified HVAC technicians",
+                "100% financing available with approved credit — no money down",
+                "Flexible loan terms to fit your monthly budget",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-accent shrink-0 mt-0.5" />
+                  <span className="text-gray-700">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Phone numbers */}
-          <div className="pt-2">
-            <p className="text-center text-sm font-bold text-primary uppercase tracking-wider mb-4">
-              Questions? Call Us:
+          <div className="bg-white rounded-2xl shadow-md p-8">
+            <h2 className="text-2xl font-bold text-primary text-center mb-2">Have Questions?</h2>
+            <p className="text-center text-muted-foreground mb-6">
+              Call us — we're happy to walk you through the financing process before you apply.
             </p>
             <div className="flex flex-col gap-3">
               <a
@@ -95,7 +152,7 @@ export default function FinancingPage() {
           {/* Disclosure */}
           <div className="border-t pt-8">
             <p className="text-xs text-muted-foreground leading-relaxed text-center">
-              <strong>Financing Disclosure:</strong> *Financing example based on a financed amount of $11,500 at 9.99% APR for 120 months with a monthly payment of approximately $151.80 ($35.06/week). Actual payment depends on amount financed and loan terms selected. 100% financing available with approved credit through participating lenders; standard rates apply. Financing terms are subject to change without notice. Financing applies to new equipment purchases and installations only. Promotional pricing, special offers, and discounts cannot be combined with rebates, coupons, other promotional offers, manufacturer incentives, or other discounts unless explicitly stated in writing. Service Finance Company, LLC | FHA Title I Lender.
+              <strong>Financing Disclosure:</strong> *Financing example based on a financed amount of $11,500 at 9.99% APR for 120 months with a monthly payment of approximately $151.80 ($35.06/week). Actual payment depends on amount financed and loan terms selected. 100% financing available with approved credit through participating lenders; standard rates apply. Financing terms are subject to change without notice. Financing applies to new equipment purchases and installations only. Promotional pricing, special offers, and discounts cannot be combined with rebates, coupons, other promotional offers, manufacturer incentives, promotional financing offers, or other discounts unless explicitly stated in writing. Service Finance Company, LLC | FHA Title I Lender.
             </p>
           </div>
 
