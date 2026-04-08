@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { Phone, CheckCircle, CreditCard, DollarSign } from "lucide-react";
+import { Phone, CheckCircle, CreditCard, DollarSign, Wrench } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Promotions & Financing | Mabry's AC & Heating | Alvin & Friendswood TX",
-  description: "Special offers on AC tune-ups and flexible financing for new HVAC systems. Finance a new AC & heating system for as low as $38/week. Serving Alvin, Friendswood & Pearland TX.",
+  description: "Special offers on AC tune-ups, AC repairs, and flexible financing for new HVAC systems. Finance a new AC & heating system for as low as $38/week. Serving Alvin, Friendswood & Pearland TX.",
   alternates: {
     canonical: "/promotions",
   },
@@ -28,53 +28,41 @@ export default function PromotionsPage() {
       </section>
 
       <section className="py-16 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
 
-          {/* ── Tune-Up Special ── */}
+          {/* ── Limited-Time Special Offers ── */}
           <div>
-            <h2 className="text-3xl font-bold text-primary text-center mb-8">
-              Limited-Time Special Offer
+            <h2 className="text-3xl font-bold text-primary text-center mb-10">
+              Limited-Time Special Offers
             </h2>
 
-            <div className="max-w-lg mx-auto">
-              <div className="relative bg-white rounded-2xl shadow-xl border-2 border-accent overflow-hidden">
+            <div className="grid md:grid-cols-3 gap-8 items-start">
 
+              {/* ── Card 1: $89 Tune-Up ── */}
+              <div className="bg-white rounded-2xl shadow-xl border-2 border-accent overflow-hidden flex flex-col">
                 {/* Badge */}
-                <div className="bg-accent text-white text-center py-3 px-6">
-                  <span className="text-sm font-bold uppercase tracking-widest">Special Offer — Now Through May 15, 2026</span>
+                <div className="bg-accent text-white text-center py-3 px-4">
+                  <span className="text-xs font-bold uppercase tracking-widest">Special Offer — Now Through May 15, 2026</span>
                 </div>
 
-                {/* WOW burst */}
-                <div className="flex justify-center mt-6 mb-2">
-                  <div className="relative flex items-center justify-center">
-                    <svg viewBox="0 0 120 120" className="w-28 h-28 text-accent" fill="currentColor">
-                      <polygon points="60,0 67,40 100,20 80,50 120,55 85,68 105,100 68,83 65,120 52,83 15,100 35,68 0,55 40,50 20,20 53,40" />
-                    </svg>
-                    <div className="absolute text-white text-center leading-tight">
-                      <div className="text-xs font-bold uppercase">WOW</div>
-                      <div className="text-xs font-semibold">SPECIAL</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="px-8 pb-8">
-                  <h3 className="text-2xl font-bold text-primary text-center mb-1">
+                <div className="px-6 py-6 flex flex-col flex-1">
+                  <h3 className="text-xl font-bold text-primary text-center mb-1">
                     Pre-Season AC Tune-Up
                   </h3>
-                  <p className="text-center text-muted-foreground mb-4">
+                  <p className="text-center text-muted-foreground text-sm mb-4">
                     Get your AC ready before the Houston summer heat arrives
                   </p>
 
                   {/* Price */}
-                  <div className="bg-primary rounded-xl py-5 px-6 text-center mb-6">
-                    <p className="text-white/80 text-sm font-semibold uppercase tracking-wider mb-1">Special Promotional Price</p>
-                    <p className="text-6xl font-bold text-white">$89</p>
-                    <p className="text-accent font-semibold mt-1">Standard Residential Systems</p>
+                  <div className="bg-primary rounded-xl py-4 px-4 text-center mb-5">
+                    <p className="text-white/80 text-xs font-semibold uppercase tracking-wider mb-1">Special Promotional Price</p>
+                    <p className="text-5xl font-bold text-white">$89</p>
+                    <p className="text-accent text-sm font-semibold mt-1">Standard Residential Systems</p>
                   </div>
 
                   {/* What's included */}
                   <div className="mb-6">
-                    <p className="text-sm font-bold text-primary uppercase tracking-wider mb-3">What's Included:</p>
+                    <p className="text-xs font-bold text-primary uppercase tracking-wider mb-3">What's Included:</p>
                     <ul className="space-y-2">
                       {[
                         "Refrigerant level check",
@@ -85,7 +73,7 @@ export default function PromotionsPage() {
                         "Electrical connections check",
                         "Overall system performance check",
                       ].map((item) => (
-                        <li key={item} className="flex items-center gap-3 text-sm">
+                        <li key={item} className="flex items-center gap-2 text-sm">
                           <CheckCircle className="w-4 h-4 text-accent shrink-0" />
                           <span>{item}</span>
                         </li>
@@ -93,32 +81,167 @@ export default function PromotionsPage() {
                     </ul>
                   </div>
 
-                  {/* Schedule Now — phone buttons */}
-                  <div>
-                    <p className="text-center text-sm font-bold text-primary mb-3">Call to Schedule:</p>
-                    <div className="flex flex-col gap-3">
+                  {/* Phone buttons */}
+                  <div className="mt-auto">
+                    <p className="text-center text-xs font-bold text-primary mb-3 uppercase tracking-wider">Call to Schedule:</p>
+                    <div className="flex flex-col gap-2">
                       <a
                         href="tel:2813315248"
-                        className="flex items-center justify-center gap-2 bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+                        className="flex items-center justify-center gap-2 bg-accent hover:bg-accent/90 text-white font-bold py-3 px-4 rounded-lg transition-colors text-sm"
                       >
-                        <Phone className="w-5 h-5" />
+                        <Phone className="w-4 h-4" />
                         Alvin / Manvel / Santa Fe: 281-331-5248
                       </a>
                       <a
                         href="tel:2814828400"
-                        className="flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+                        className="flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold py-3 px-4 rounded-lg transition-colors text-sm"
                       >
-                        <Phone className="w-5 h-5" />
+                        <Phone className="w-4 h-4" />
                         Friendswood / Pearland / Clear Lake: 281-482-8400
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
+
+              {/* ── Card 2: $38/week Financing ── */}
+              <div className="bg-white rounded-2xl shadow-xl border-2 border-accent overflow-hidden flex flex-col">
+                {/* Badge */}
+                <div className="bg-accent text-white text-center py-3 px-4">
+                  <span className="text-xs font-bold uppercase tracking-widest">Special Offer</span>
+                </div>
+
+                <div className="px-6 py-6 flex flex-col flex-1">
+                  <h3 className="text-xl font-bold text-primary text-center mb-1">
+                    New AC & Heating System
+                  </h3>
+                  <p className="text-center text-muted-foreground text-sm mb-4">
+                    Don't let cost stand between your family and a comfortable home
+                  </p>
+
+                  {/* Price */}
+                  <div className="bg-primary rounded-xl py-4 px-4 text-center mb-5">
+                    <p className="text-white/80 text-xs font-semibold uppercase tracking-wider mb-1">Complete System — Fully Installed</p>
+                    <p className="text-white font-bold leading-none mt-2">
+                      <span className="text-2xl">As Low As</span>
+                    </p>
+                    <p className="text-5xl font-bold text-white mt-1">
+                      $38<span className="text-xl font-semibold text-white/80">/week</span><span className="text-accent text-lg">*</span>
+                    </p>
+                    <p className="text-white/70 text-xs mt-2">With approved credit through participating lenders</p>
+                  </div>
+
+                  {/* Highlights */}
+                  <div className="mb-6">
+                    <p className="text-xs font-bold text-primary uppercase tracking-wider mb-3">Why Finance With Us:</p>
+                    <ul className="space-y-2">
+                      {[
+                        "100% financing available with approved credit",
+                        "Flexible terms to fit your budget",
+                        "Fast & easy application process",
+                        "New system installed same day or next day",
+                        "All major brands available",
+                      ].map((item) => (
+                        <li key={item} className="flex items-center gap-2 text-sm">
+                          <CheckCircle className="w-4 h-4 text-accent shrink-0" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Apply Now button */}
+                  <div className="mt-auto flex flex-col gap-2">
+                    <a
+                      href={SFC_FINANCING_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 bg-accent hover:bg-accent/90 text-white font-bold py-3 px-4 rounded-lg transition-colors text-sm"
+                    >
+                      Apply Now →
+                    </a>
+                    <a
+                      href="tel:2813315248"
+                      className="flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold py-3 px-4 rounded-lg transition-colors text-sm"
+                    >
+                      <Phone className="w-4 h-4" />
+                      Call to Learn More
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* ── Card 3: 10% Off AC Repair ── */}
+              <div className="bg-white rounded-2xl shadow-xl border-2 border-accent overflow-hidden flex flex-col">
+                {/* Badge */}
+                <div className="bg-accent text-white text-center py-3 px-4">
+                  <span className="text-xs font-bold uppercase tracking-widest">Special Offer</span>
+                </div>
+
+                <div className="px-6 py-6 flex flex-col flex-1">
+                  <h3 className="text-xl font-bold text-primary text-center mb-1">
+                    AC Repair Discount
+                  </h3>
+                  <p className="text-center text-muted-foreground text-sm mb-4">
+                    Save on your next AC or heating repair service call
+                  </p>
+
+                  {/* Discount callout */}
+                  <div className="bg-primary rounded-xl py-4 px-4 text-center mb-5">
+                    <p className="text-white/80 text-xs font-semibold uppercase tracking-wider mb-1">Repair Service Discount</p>
+                    <p className="text-5xl font-bold text-white">10%</p>
+                    <p className="text-accent text-sm font-semibold mt-1">Off Any AC or Heating Repair</p>
+                  </div>
+
+                  {/* Details */}
+                  <div className="mb-6">
+                    <p className="text-xs font-bold text-primary uppercase tracking-wider mb-3">Offer Details:</p>
+                    <ul className="space-y-2">
+                      {[
+                        "Applies to AC & heating repair services",
+                        "All major brands serviced",
+                        "Experienced, licensed technicians",
+                        "Same-day service available",
+                        "No hidden fees — upfront pricing",
+                      ].map((item) => (
+                        <li key={item} className="flex items-center gap-2 text-sm">
+                          <CheckCircle className="w-4 h-4 text-accent shrink-0" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="text-xs text-muted-foreground mt-4 italic">
+                      * Applies to repair services only. Does not apply to new equipment purchases or installations.
+                    </p>
+                  </div>
+
+                  {/* Phone buttons */}
+                  <div className="mt-auto">
+                    <p className="text-center text-xs font-bold text-primary mb-3 uppercase tracking-wider">Call to Schedule:</p>
+                    <div className="flex flex-col gap-2">
+                      <a
+                        href="tel:2813315248"
+                        className="flex items-center justify-center gap-2 bg-accent hover:bg-accent/90 text-white font-bold py-3 px-4 rounded-lg transition-colors text-sm"
+                      >
+                        <Phone className="w-4 h-4" />
+                        Alvin / Manvel / Santa Fe: 281-331-5248
+                      </a>
+                      <a
+                        href="tel:2814828400"
+                        className="flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold py-3 px-4 rounded-lg transition-colors text-sm"
+                      >
+                        <Phone className="w-4 h-4" />
+                        Friendswood / Pearland / Clear Lake: 281-482-8400
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
 
-          {/* ── Financing ── */}
+          {/* ── Financing Available ── */}
           <div>
             <h2 className="text-3xl font-bold text-primary text-center mb-2">
               Financing Available
@@ -126,15 +249,6 @@ export default function PromotionsPage() {
             <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
               Don't let cost stand between your family and a comfortable home. Flexible financing options make a new AC and heating system more affordable than you think.
             </p>
-
-            {/* $38/week callout */}
-            <div className="bg-primary rounded-2xl p-8 text-center mb-8 max-w-2xl mx-auto">
-              <p className="text-white/80 text-sm font-semibold uppercase tracking-wider mb-2">New Complete AC & Heating System</p>
-              <p className="text-5xl lg:text-6xl font-bold text-white mb-2">
-                As Low As $38<span className="text-2xl font-semibold text-white/80">/week</span><span className="text-accent">*</span>
-              </p>
-              <p className="text-white/70 text-sm">With approved credit through participating lenders</p>
-            </div>
 
             {/* Two cards */}
             <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
@@ -184,7 +298,7 @@ export default function PromotionsPage() {
           {/* ── Disclosure ── */}
           <div className="border-t pt-8">
             <p className="text-xs text-muted-foreground leading-relaxed text-center max-w-3xl mx-auto">
-              <strong>Promotional Pricing & Financing Disclosure:</strong> $89 AC tune-up special valid through May 15, 2026 on standard residential systems only. Promotional pricing may not be combined with financing offers, other discounts, coupons, or special promotions unless explicitly stated. *Financing example based on a financed amount of $11,500 at 9.99% APR for 120 months with a monthly payment of approximately $151.80 ($35.06/week). Actual payment depends on amount financed and loan terms selected. 100% financing available with approved credit through participating lenders; standard rates apply. Financing terms are subject to change without notice. Service Finance Company, LLC | FHA Title I Lender.
+              <strong>Promotional Pricing & Financing Disclosure:</strong> $89 AC tune-up special valid through May 15, 2026 on standard residential systems only. 10% repair discount applies to repair services only and does not apply to new equipment purchases or installations. Promotional pricing may not be combined with financing offers, other discounts, coupons, or special promotions unless explicitly stated. *Financing example based on a financed amount of $11,500 at 9.99% APR for 120 months with a monthly payment of approximately $151.80 ($35.06/week). Actual payment depends on amount financed and loan terms selected. 100% financing available with approved credit through participating lenders; standard rates apply. Financing terms are subject to change without notice. Service Finance Company, LLC | FHA Title I Lender.
             </p>
           </div>
 
@@ -194,7 +308,7 @@ export default function PromotionsPage() {
       {/* Bottom CTA */}
       <section className="py-12 bg-primary">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold text-white mb-2">Questions About Financing or Our Special Offer?</h2>
+          <h2 className="text-2xl font-bold text-white mb-2">Questions About Our Special Offers or Financing?</h2>
           <p className="text-white/80 mb-6">Call us — we're happy to walk you through your options.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
