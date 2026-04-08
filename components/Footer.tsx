@@ -125,6 +125,7 @@ export function Footer() {
             <p>&copy; {new Date().getFullYear()} {businessInfo.name}. All rights reserved.</p>
             <div className="flex gap-6">
               <Link href="/about" className="hover:text-white transition-colors">About</Link>
+              <Link href="/promotions" className="hover:text-white transition-colors">Promotions</Link>
               <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
               <Link href="/reviews" className="hover:text-white transition-colors">Reviews</Link>
               <Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link>

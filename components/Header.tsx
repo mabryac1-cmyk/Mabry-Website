@@ -156,7 +156,10 @@ export function Header() {
             <Link href="/reviews" className="text-sm font-semibold hover:text-accent transition-colors">
               Reviews
             </Link>
-            <Link 
+            <Link href="/promotions" className="text-sm font-semibold hover:text-accent transition-colors">
+              Promotions
+            </Link>
+            <Link
               href="/contact"
               className="bg-accent hover:bg-accent/90 text-white font-bold px-6 py-3 rounded-lg transition-colors"
             >
@@ -208,7 +211,10 @@ export function Header() {
             <Link href="/reviews" className="block text-lg font-semibold" onClick={() => setIsOpen(false)}>
               Reviews
             </Link>
-            <Link 
+            <Link href="/promotions" className="block text-lg font-semibold" onClick={() => setIsOpen(false)}>
+              Promotions
+            </Link>
+            <Link
               href="/contact"
               className="block w-full text-center bg-accent text-white font-bold py-3 rounded-lg"
               onClick={() => setIsOpen(false)}
