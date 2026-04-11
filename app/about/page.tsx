@@ -123,14 +123,14 @@ export default function AboutPage() {
                 className="bg-accent hover:bg-accent/90 text-white font-bold py-4 px-8 rounded-lg flex items-center gap-2 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                Call Alvin: 281-331-5248
+                281-331-5248
               </a>
               <a 
                 href="tel:281-482-8400"
                 className="bg-accent hover:bg-accent/90 text-white font-bold py-4 px-8 rounded-lg flex items-center gap-2 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                Call Friendswood: 281-482-8400
+                281-482-8400
               </a>
               <Link 
                 href="/contact"

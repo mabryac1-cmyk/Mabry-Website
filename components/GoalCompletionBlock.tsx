@@ -41,7 +41,7 @@ export function GoalCompletionBlock({
             data-testid={`link-phone-cta-${i}`}
           >
             <Phone className="w-5 h-5 shrink-0" />
-            {btn.label}: {btn.number}
+            {btn.label ? `${btn.label}: ${btn.number}` : btn.number}
           </a>
         ))}
       </div>

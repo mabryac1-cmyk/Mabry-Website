@@ -43,7 +43,7 @@ export default function Home() {
                   data-testid="link-phone-alvin-hero"
                 >
                   <Phone className="w-5 h-5 shrink-0" />
-                  South &amp; Southwest Houston: 281-331-5248
+                  281-331-5248
                 </a>
                 <a
                   href="tel:2814828400"
@@ -51,7 +51,7 @@ export default function Home() {
                   data-testid="link-phone-friendswood-hero"
                 >
                   <Phone className="w-5 h-5 shrink-0" />
-                  Bay Area &amp; Southeast Houston: 281-482-8400
+                  281-482-8400
                 </a>
                 <Link
                   href="/promotions"

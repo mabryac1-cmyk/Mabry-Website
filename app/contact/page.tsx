@@ -26,14 +26,14 @@ export default function ContactPage() {
               className="inline-flex items-center gap-3 bg-accent hover:bg-accent/90 text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors"
             >
               <Phone className="w-6 h-6" />
-              South &amp; Southwest Houston: 281-331-5248
+              281-331-5248
             </a>
             <a 
               href="tel:281-482-8400"
               className="inline-flex items-center gap-3 bg-white hover:bg-white/90 text-primary font-bold py-4 px-8 rounded-lg text-xl transition-colors"
             >
               <Phone className="w-6 h-6" />
-              Bay Area &amp; Southeast Houston: 281-482-8400
+              281-482-8400
             </a>
           </div>
         </div>
