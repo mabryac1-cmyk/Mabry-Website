@@ -1,9 +1,10 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 import { LeadForm } from "@/components/LeadForm";
 import { FAQSection } from "@/components/FAQSection";
 import { businessInfo, services, locations, generalFaqs } from "@/lib/data";
-import { Shield, Clock, Award, ArrowRight, MapPin, Phone, CheckCircle } from "lucide-react";
+import { Shield, Clock, Award, ArrowRight, MapPin, Phone, CheckCircle, Star } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "AC Repair in Alvin, Friendswood & Pearland | Greater Houston Area | Mabry's AC & Heating",
@@ -240,6 +241,27 @@ export default function Home() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <div className="flex items-center justify-center gap-1 mb-3">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
+              ))}
+            </div>
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-3">
+              What Our Customers Say
+            </h2>
+            <p className="text-muted-foreground max-w-xl mx-auto">
+              5.0 stars on Google · Serving the Greater Houston Area since 1986
+            </p>
+          </div>
+          {/* Elfsight Google Reviews Widget */}
+          <Script src="https://elfsightcdn.com/platform.js" strategy="lazyOnload" />
+          <div className="elfsight-app-35a13954-516a-4f3e-aead-43fd4158b663" data-elfsight-app-lazy></div>
         </div>
       </section>
 
