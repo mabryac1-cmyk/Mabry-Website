@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: `${service.name} | Greater Houston Area | Mabry's AC & Heating`,
+    title: `${service.name} in Alvin, Friendswood & Pearland | Greater Houston | Mabry's AC & Heating`,
     description: `${service.description} Serving Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake, League City & the greater Houston area. License ${businessInfo.license}. Call ${businessInfo.phone}.`,
     alternates: {
       canonical: `/services/${slug}`,

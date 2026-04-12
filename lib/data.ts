@@ -66,7 +66,7 @@ export const services = [
   {
     slug: "ac-repair",
     name: "AC Repair",
-    title: "AC Repair in the Greater Houston Area",
+    title: "AC Repair in Alvin, Friendswood, Pearland & the Greater Houston Area",
     shortDescription: "Fast, reliable residential AC repair",
     description: "Fast, reliable residential AC repair services. We fix all makes and models with honest, flat-rate pricing.",
     content: `
@@ -142,7 +142,7 @@ export const services = [
   {
     slug: "heating-repair",
     name: "Heating Repair",
-    title: "Heating Repair in the Greater Houston Area",
+    title: "Heating Repair in Alvin, Friendswood, Pearland & the Greater Houston Area",
     shortDescription: "Furnace and heating system repair and maintenance",
     description: "Professional furnace and heating system repair for all makes and models. Keep your home warm and safe all winter.",
     content: `
@@ -218,7 +218,7 @@ export const services = [
   {
     slug: "ac-installation",
     name: "AC Installation",
-    title: "AC Installation in the Greater Houston Area",
+    title: "AC Installation in Alvin, Friendswood, Pearland & the Greater Houston Area",
     shortDescription: "New system installation and energy-efficient upgrades",
     description: "Professional AC installation and replacement. We help you choose the right energy-efficient system for your Houston-area home.",
     content: `
@@ -296,7 +296,7 @@ export const services = [
   {
     slug: "ac-maintenance",
     name: "AC & Heating Maintenance",
-    title: "AC & Heating Tune-Up in the Greater Houston Area",
+    title: "AC & Heating Tune-Up in Alvin, Friendswood, Pearland & the Greater Houston Area",
     shortDescription: "Annual AC and heating tune-up to prevent breakdowns",
     description: "Annual AC tune-up and heating maintenance to prevent costly breakdowns, lower energy bills, and extend equipment life.",
     content: `
