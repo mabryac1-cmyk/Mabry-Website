@@ -89,21 +89,19 @@ export function Header() {
                   className="h-[38px] w-auto"
                 />
               </a>
-              <a 
-                href="https://share.google/tQHl90FISHBjGCNIM"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/reviews"
                 className="hover:opacity-80 transition-opacity"
                 title="Google 5-Star Reviews"
               >
-                <Image 
-                  src={googleBadge} 
-                  alt="Google 5-Star Reviews" 
+                <Image
+                  src={googleBadge}
+                  alt="Google 5-Star Reviews"
                   width={100}
                   height={50}
                   className="h-[40px] w-auto"
                 />
-              </a>
+              </Link>
             </div>
           </div>
 

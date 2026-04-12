@@ -1,7 +1,8 @@
 import { Metadata } from "next";
+import Script from "next/script";
 import Link from "next/link";
-import { businessInfo, reviews } from "@/lib/data";
-import { Star, Quote, Phone, ExternalLink } from "lucide-react";
+import { businessInfo } from "@/lib/data";
+import { Star, Phone, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
   title: `Customer Reviews | Mabry's AC & Heating | Greater Houston Area`,
@@ -24,32 +25,15 @@ export default function ReviewsPage() {
             {[1, 2, 3, 4, 5].map((star) => (
               <Star key={star} className="w-8 h-8 fill-accent text-accent" />
             ))}
-            <span className="text-white ml-2 text-lg font-semibold">4.9 Average Rating</span>
+            <span className="text-white ml-2 text-lg font-semibold">5.0 on Google</span>
           </div>
         </div>
       </section>
 
       <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {reviews.map((review) => (
-              <div key={review.id} className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 flex flex-col">
-                <div className="flex items-center gap-1 mb-4">
-                  {[...Array(review.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-accent text-accent" />
-                  ))}
-                </div>
-                <Quote className="w-8 h-8 text-primary/20 mb-4" />
-                <p className="text-gray-700 flex-grow mb-6 italic">
-                  "{review.text}"
-                </p>
-                <div className="border-t pt-4">
-                  <p className="font-bold text-primary">{review.name}</p>
-                  <p className="text-sm text-muted-foreground">{review.location} • {review.date}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Script src="https://elfsightcdn.com/platform.js" strategy="lazyOnload" />
+          <div className="elfsight-app-35a13954-516a-4f3e-aead-43fd4158b663" data-elfsight-app-lazy></div>
         </div>
       </section>
 
@@ -71,8 +55,8 @@ export default function ReviewsPage() {
                 <p className="text-muted-foreground">BBB Rating</p>
               </div>
               <div className="bg-white p-6 rounded-xl shadow-sm">
-                <p className="text-4xl font-bold text-accent mb-2">4.9</p>
-                <p className="text-muted-foreground">Average Rating</p>
+                <p className="text-4xl font-bold text-accent mb-2">5.0</p>
+                <p className="text-muted-foreground">Google Rating</p>
               </div>
             </div>
           </div>
