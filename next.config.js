@@ -77,6 +77,12 @@ const nextConfig = {
       { source: '/angleton-ac-repair',      destination: '/services/ac-repair/angleton',      permanent: true },
       { source: '/angleton-heating-repair', destination: '/services/heating-repair/angleton', permanent: true },
 
+      // ── Friendswood combos ──
+      { source: '/friendswood-ac-heating-repair', destination: '/areas/friendswood', permanent: true },
+
+      // ── Service area catch-alls ──
+      { source: '/ac-service-areas',   destination: '/', permanent: true },
+
       // ── Clear Lake / Pasadena ──
       { source: '/clear-lake-ac-repair',      destination: '/services/ac-repair/clear-lake',      permanent: true },
       { source: '/clear-lake-heating-repair', destination: '/services/heating-repair/clear-lake', permanent: true },
