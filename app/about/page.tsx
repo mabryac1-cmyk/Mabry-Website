@@ -4,19 +4,52 @@ import { businessInfo, locations } from "@/lib/data";
 import { Shield, Award, Clock, Users, CheckCircle, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: `About Mabry's AC & Heating | Family-Owned Houston Area HVAC Since 1986`,
-  description: `Learn about ${businessInfo.name} - a family-owned residential HVAC company serving the Greater Houston area since 1986. License ${businessInfo.license}. BBB A+ Rated.`,
+  title: `About Mabry's AC & Heating | Alvin & Friendswood TX | Family-Owned Since 1986`,
+  description: `Family-owned HVAC company serving Alvin, Friendswood, Pearland & Greater Houston since 1986. BBB Gold Star Award winner. Voted Favorite AC Company — Alvin Sun & Advertiser. License ${businessInfo.license}.`,
   alternates: {
     canonical: "/about",
   },
 };
 
+const aboutSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "url": "https://mabryac.com/about",
+  "name": "About Mabry's Air Conditioning & Heating",
+  "description": "Family-owned residential HVAC company serving Alvin, Friendswood, Pearland & Greater Houston since 1986.",
+  "mainEntity": {
+    "@type": "HVACBusiness",
+    "name": "Mabry's Air Conditioning & Heating, Inc.",
+    "url": "https://mabryac.com",
+    "foundingDate": "1986",
+    "description": "Family-owned residential HVAC company serving Alvin, Friendswood, Pearland and the Greater Houston area since 1986.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2110 S Gordon St",
+      "addressLocality": "Alvin",
+      "addressRegion": "TX",
+      "postalCode": "77511",
+      "addressCountry": "US"
+    },
+    "award": [
+      "BBB Gold Star Award — Multiple Winner",
+      "Voted Favorite AC Company — Alvin Sun & Advertiser"
+    ],
+    "hasCredential": "Texas HVAC License TACLB12058E",
+    "slogan": "Honest, flat-rate HVAC service since 1986"
+  }
+};
+
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+      />
       <section className="bg-primary py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">About {businessInfo.name}</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">Alvin &amp; Friendswood&apos;s Trusted HVAC Company — Since 1986</h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
             Family-owned and operated since 1986. Your trusted residential HVAC experts.
           </p>

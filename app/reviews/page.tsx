@@ -5,19 +5,38 @@ import { businessInfo } from "@/lib/data";
 import { Star, Phone, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: `Customer Reviews | Mabry's AC & Heating | Greater Houston Area`,
-  description: `Read what customers say about ${businessInfo.name}. BBB A+ Rated since 1986. Honest, flat-rate HVAC service across the Greater Houston area.`,
+  title: `5-Star Google Reviews | Mabry's AC & Heating | Alvin, Friendswood & Pearland TX`,
+  description: `See why homeowners in Alvin, Friendswood & Pearland give Mabry's AC & Heating a perfect 5.0 rating on Google. 37+ verified reviews. BBB A+ Rated since 1986. Read reviews or leave your own.`,
   alternates: {
     canonical: "/reviews",
   },
 };
 
+const reviewsSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Mabry's Air Conditioning & Heating, Inc.",
+  "url": "https://mabryac.com",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "1",
+    "reviewCount": "37",
+    "ratingCount": "37"
+  }
+};
+
 export default function ReviewsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewsSchema) }}
+      />
       <section className="bg-primary py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">Customer Reviews</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">5-Star Google Reviews — Mabry&apos;s AC &amp; Heating</h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
             See why homeowners have trusted {businessInfo.name} since 1986.
           </p>

@@ -4,19 +4,50 @@ import { businessInfo, businessHours, locations } from "@/lib/data";
 import { Phone, Mail, MapPin, Clock, Shield, Award, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: `Contact Us | Mabry's AC & Heating | Greater Houston Area`,
-  description: `Contact ${businessInfo.name} for residential AC and heating service. Serving Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake & the greater Houston area. License ${businessInfo.license}. BBB A+ Rated.`,
+  title: `Contact Mabry's AC & Heating | Alvin 281-331-5248 | Friendswood 281-482-8400`,
+  description: `Contact Mabry's AC & Heating for HVAC service in Alvin, Friendswood, Pearland & Greater Houston. Alvin: 281-331-5248 · Friendswood: 281-482-8400. Open Mon–Fri 7am–7pm & Saturdays. License ${businessInfo.license}.`,
   alternates: {
     canonical: "/contact",
   },
 };
 
+const contactSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Mabry's AC & Heating",
+  "url": "https://mabryac.com/contact",
+  "description": "Contact Mabry's Air Conditioning & Heating for AC repair, heating repair, installation and maintenance in Alvin, Friendswood, Pearland and the Greater Houston area.",
+  "mainEntity": {
+    "@type": "HVACBusiness",
+    "name": "Mabry's Air Conditioning & Heating, Inc.",
+    "url": "https://mabryac.com",
+    "telephone": ["281-331-5248", "281-482-8400"],
+    "email": "office@mabryac.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2110 S Gordon St",
+      "addressLocality": "Alvin",
+      "addressRegion": "TX",
+      "postalCode": "77511",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "07:00", "closes": "13:00" }
+    ]
+  }
+};
+
 export default function ContactPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
       <section className="bg-primary py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">Contact Us</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">Contact Mabry&apos;s AC &amp; Heating — Alvin &amp; Friendswood</h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto mb-6">
             Ready to schedule service? Call us now or fill out the form below.
           </p>

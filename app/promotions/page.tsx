@@ -3,11 +3,49 @@ import Link from "next/link";
 import { Phone, CheckCircle, CreditCard, DollarSign, Wrench } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HVAC Promotions & Special Offers | Mabry's AC & Heating | Houston Area",
-  description: "Special offers on AC tune-ups, AC repairs, and flexible financing for new HVAC systems. Finance a new AC & heating system for as low as $38/week. Serving the Greater Houston area.",
+  title: "$89 AC Tune-Up & 10% Off Repairs | Mabry's AC & Heating | Alvin & Houston Area",
+  description: "Current HVAC special offers: $89 pre-season AC tune-up (through May 15, 2026), 10% off AC & heating repairs, new system financing from $38/week. Serving Alvin, Friendswood, Pearland & Greater Houston.",
   alternates: {
     canonical: "/promotions",
   },
+};
+
+const promotionsSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Mabry's AC & Heating Special Offers",
+  "url": "https://mabryac.com/promotions",
+  "itemListElement": [
+    {
+      "@type": "Offer",
+      "position": 1,
+      "name": "Pre-Season AC Tune-Up — $89",
+      "description": "Pre-season AC tune-up special for standard residential systems. Includes refrigerant check, capacitor inspection, coil inspection, drain flush, thermostat calibration, and system performance check.",
+      "price": "89",
+      "priceCurrency": "USD",
+      "validThrough": "2026-05-15",
+      "availability": "https://schema.org/InStock",
+      "seller": { "@type": "HVACBusiness", "name": "Mabry's Air Conditioning & Heating, Inc." }
+    },
+    {
+      "@type": "Offer",
+      "position": 2,
+      "name": "10% Off AC or Heating Repair",
+      "description": "10% discount on any AC or heating repair service. Applies to repair services only, not new equipment or installations.",
+      "priceSpecification": { "@type": "UnitPriceSpecification", "referenceQuantity": { "@type": "QuantitativeValue", "value": "10", "unitText": "%" } },
+      "availability": "https://schema.org/InStock",
+      "seller": { "@type": "HVACBusiness", "name": "Mabry's Air Conditioning & Heating, Inc." }
+    },
+    {
+      "@type": "Offer",
+      "position": 3,
+      "name": "New AC & Heating System Financing from $38/Week",
+      "description": "Finance a new complete AC and heating system for as low as $38/week with approved credit. 100% financing available through participating lenders.",
+      "priceSpecification": { "@type": "UnitPriceSpecification", "price": "38", "priceCurrency": "USD", "unitText": "WK" },
+      "availability": "https://schema.org/InStock",
+      "seller": { "@type": "HVACBusiness", "name": "Mabry's Air Conditioning & Heating, Inc." }
+    }
+  ]
 };
 
 const SFC_FINANCING_URL = "https://apply.svcfin.com/home/dealerAuthentication?id=400303655&key=1742219857";
@@ -15,11 +53,15 @@ const SFC_FINANCING_URL = "https://apply.svcfin.com/home/dealerAuthentication?id
 export default function PromotionsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(promotionsSchema) }}
+      />
       {/* Hero */}
       <section className="bg-primary py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            Promotions & Financing
+            Current HVAC Special Offers — Alvin, Friendswood &amp; Greater Houston
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
             Special offers and flexible financing options for Alvin, Friendswood, Pearland & surrounding Houston-area homeowners.

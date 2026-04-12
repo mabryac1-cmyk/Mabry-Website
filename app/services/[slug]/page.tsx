@@ -7,6 +7,61 @@ import { GoalCompletionBlock } from "@/components/GoalCompletionBlock";
 import { services, getServiceBySlug, businessInfo, locations } from "@/lib/data";
 import { ArrowLeft, Phone, CheckCircle, MapPin } from "lucide-react";
 
+const serviceSchema = (service: { name: string; slug: string; description: string }) => ({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": `https://mabryac.com/services/${service.slug}`,
+  "name": service.name,
+  "serviceType": service.name,
+  "description": service.description,
+  "url": `https://mabryac.com/services/${service.slug}`,
+  "provider": {
+    "@type": "HVACBusiness",
+    "name": "Mabry's Air Conditioning & Heating, Inc.",
+    "url": "https://mabryac.com",
+    "telephone": ["281-331-5248", "281-482-8400"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2110 S Gordon St",
+      "addressLocality": "Alvin",
+      "addressRegion": "TX",
+      "postalCode": "77511",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Alvin", "addressRegion": "TX" },
+    { "@type": "City", "name": "Friendswood", "addressRegion": "TX" },
+    { "@type": "City", "name": "Pearland", "addressRegion": "TX" },
+    { "@type": "City", "name": "Sugar Land", "addressRegion": "TX" },
+    { "@type": "City", "name": "Bellaire", "addressRegion": "TX" },
+    { "@type": "City", "name": "Clear Lake", "addressRegion": "TX" },
+    { "@type": "City", "name": "League City", "addressRegion": "TX" },
+    { "@type": "City", "name": "Deer Park", "addressRegion": "TX" },
+    { "@type": "City", "name": "Pasadena", "addressRegion": "TX" },
+    { "@type": "City", "name": "Manvel", "addressRegion": "TX" },
+    { "@type": "City", "name": "Angleton", "addressRegion": "TX" },
+    { "@type": "City", "name": "Rosharon", "addressRegion": "TX" },
+    { "@type": "City", "name": "Sienna", "addressRegion": "TX" },
+    { "@type": "City", "name": "West University Place", "addressRegion": "TX" },
+    { "@type": "City", "name": "Houston", "addressRegion": "TX" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": `${service.name} Services`,
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": service.name,
+          "description": service.description
+        }
+      }
+    ]
+  }
+});
+
 const goalCompletionCopy: Record<string, string> = {
   "ac-repair": "Need AC repair in the Greater Houston area? Our licensed HVAC technicians serve Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake, League City, and surrounding communities with fast, honest-priced AC repair.",
   "ac-installation": "Need a new AC system in the Greater Houston area? We serve Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake, League City, and surrounding communities with energy-efficient installations and expert sizing.",
@@ -52,6 +107,10 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(service)) }}
+      />
       <section className="bg-primary py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link href="/" className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors">

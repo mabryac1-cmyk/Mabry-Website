@@ -2,11 +2,41 @@ import { Metadata } from "next";
 import { Phone, DollarSign, CheckCircle, ClipboardList, Wrench } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HVAC Financing | New AC & Heating Systems | Mabry's AC & Heating",
-  description: "Finance a new AC & heating system for as low as $38/week with approved credit. Fast, easy application. Serving the Greater Houston area. Call 281-331-5248.",
+  title: "HVAC Financing from $38/Week | New AC & Heating | Mabry's Alvin & Houston Area",
+  description: "Finance a new AC & heating system for as low as $38/week with approved credit. 100% financing available. Serving Alvin, Friendswood, Pearland & Greater Houston. Call 281-331-5248.",
   alternates: {
     canonical: "/financing",
   },
+};
+
+const financingSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "HVAC Financing — Mabry's AC & Heating",
+  "url": "https://mabryac.com/financing",
+  "description": "Finance a new AC and heating system for as low as $38/week with approved credit through Mabry's AC & Heating.",
+  "mainEntity": {
+    "@type": "Offer",
+    "name": "HVAC System Financing",
+    "description": "Finance a new complete AC and heating system installed by Mabry's licensed technicians. 100% financing available with approved credit. Payments from $38/week.",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "38",
+      "priceCurrency": "USD",
+      "unitText": "WK"
+    },
+    "availability": "https://schema.org/InStock",
+    "areaServed": [
+      "Alvin, TX", "Friendswood, TX", "Pearland, TX", "Sugar Land, TX",
+      "Clear Lake, TX", "League City, TX", "Bellaire, TX"
+    ],
+    "seller": {
+      "@type": "HVACBusiness",
+      "name": "Mabry's Air Conditioning & Heating, Inc.",
+      "url": "https://mabryac.com",
+      "telephone": "281-331-5248"
+    }
+  }
 };
 
 const SFC_FINANCING_URL = "https://apply.svcfin.com/home/dealerAuthentication?id=400303655&key=1742219857";
@@ -14,11 +44,15 @@ const SFC_FINANCING_URL = "https://apply.svcfin.com/home/dealerAuthentication?id
 export default function FinancingPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(financingSchema) }}
+      />
       {/* Hero */}
       <section className="bg-primary py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            HVAC Financing
+            Finance a New AC &amp; Heating System — As Low As $38/Week
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
             Don't let cost stand between your family and a comfortable home. Get a new AC & heating system today with flexible financing options.
