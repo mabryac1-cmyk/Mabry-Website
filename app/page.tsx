@@ -34,10 +34,20 @@ export default function Home() {
               Full-Service HVAC — Air Conditioning, Heating &amp; Maintenance Since 1986
             </h2>
 
-            <div className="flex flex-wrap gap-2">
-              <span className="inline-flex items-center gap-1.5 bg-accent/25 border border-accent/50 text-white text-xs font-semibold px-3 py-1.5 rounded-full">
-                <Award className="w-3.5 h-3.5 shrink-0" /> BBB Gold Star Award — Multiple Winner
-              </span>
+            <div className="flex flex-wrap items-center gap-3">
+              <a
+                href="https://www.bbb.org/us/tx/alvin/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white rounded-lg px-3 py-2 flex items-center gap-2.5 hover:bg-white/90 transition-colors shrink-0"
+                aria-label="BBB Accredited Business A+ Rated — view our profile"
+              >
+                <img src="/bbb-seal.png" alt="BBB Accredited Business" width={36} height={51} className="shrink-0" />
+                <div className="leading-tight">
+                  <div className="text-primary text-sm font-bold">A+ Rated</div>
+                  <div className="text-gray-500 text-xs">Gold Star Award Winner</div>
+                </div>
+              </a>
               <span className="inline-flex items-center gap-1.5 bg-accent/25 border border-accent/50 text-white text-xs font-semibold px-3 py-1.5 rounded-full">
                 <Award className="w-3.5 h-3.5 shrink-0" /> Voted Favorite AC Company — Alvin Sun &amp; Advertiser
               </span>
