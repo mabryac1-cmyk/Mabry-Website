@@ -6,8 +6,8 @@ import { businessInfo, services, locations, generalFaqs } from "@/lib/data";
 import { Shield, Clock, Award, ArrowRight, MapPin, Phone, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "AC Repair & Heating Service | Greater Houston Area | Mabry's AC & Heating",
-  description: "Licensed HVAC contractor serving the Greater Houston area — Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake, League City & surrounding communities. Call 281-331-5248 or 281-482-8400.",
+  title: "AC Repair in Alvin, Friendswood & Pearland | Greater Houston Area | Mabry's AC & Heating",
+  description: "Licensed HVAC contractor serving Alvin, Friendswood, Pearland & the Greater Houston area. Open Mon–Fri 7am–7pm & Saturdays. Flat-rate pricing — no after-hours fees. Call 281-331-5248 or 281-482-8400.",
   alternates: {
     canonical: "/",
   },
@@ -28,14 +28,31 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white space-y-6">
             <h1 className="text-3xl lg:text-5xl font-bold leading-tight text-shadow">
-              AC Repair & Heating Service in the Greater Houston Area
+              AC Repair in Alvin, Friendswood, Pearland & the Greater Houston Area
             </h1>
+            <h2 className="text-xl lg:text-2xl font-semibold text-white/90 leading-snug">
+              Full-Service HVAC — Air Conditioning, Heating &amp; Maintenance Since 1986
+            </h2>
+
+            <div className="flex flex-wrap gap-2">
+              <span className="inline-flex items-center gap-1.5 bg-accent/25 border border-accent/50 text-white text-xs font-semibold px-3 py-1.5 rounded-full">
+                <Award className="w-3.5 h-3.5 shrink-0" /> BBB Gold Star Award — Multiple Winner
+              </span>
+              <span className="inline-flex items-center gap-1.5 bg-accent/25 border border-accent/50 text-white text-xs font-semibold px-3 py-1.5 rounded-full">
+                <Award className="w-3.5 h-3.5 shrink-0" /> Voted Favorite AC Company — Alvin Sun &amp; Advertiser
+              </span>
+            </div>
+
             <p className="text-lg text-white/90 max-w-lg leading-relaxed">
-              Proudly serving Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake, League City, and communities throughout the Greater Houston area. Fast, licensed residential HVAC service since 1986 (TACLB12058E).
+              Proudly serving Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake, League City, and communities throughout the Greater Houston area. Licensed residential HVAC — {businessInfo.license}.
             </p>
 
             <div className="bg-white/10 border border-white/20 rounded-lg p-4 max-w-md">
-              <p className="text-white/90 text-sm font-semibold mb-3">Call to schedule service:</p>
+              <p className="text-white/90 text-sm font-semibold mb-1">Call for Urgent or Emergency Service:</p>
+              <p className="text-white/70 text-xs mb-3 flex items-center gap-1.5">
+                <Clock className="w-3.5 h-3.5 shrink-0" />
+                Mon–Fri 7am–7pm · Sat 7am–1pm · On-call after hours — flat-rate pricing, no after-hours fees
+              </p>
               <div className="flex flex-col gap-3">
                 <a
                   href="tel:2813315248"
