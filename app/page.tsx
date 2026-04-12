@@ -126,7 +126,16 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 3 — Reviews (moved up for trust signal) */}
       <section className="py-20 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Script src="https://elfsightcdn.com/platform.js" strategy="lazyOnload" />
+          <div className="elfsight-app-35a13954-516a-4f3e-aead-43fd4158b663" data-elfsight-app-lazy></div>
+        </div>
+      </section>
+
+      {/* 4 — Our HVAC Services */}
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-primary">Our HVAC Services</h2>
@@ -139,7 +148,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service) => (
               <Link key={service.slug} href={`/services/${service.slug}`} className="group">
-                <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100 h-full flex flex-col">
+                <div className="bg-gray-50 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100 h-full flex flex-col">
                   <div className="h-48 bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
                     <div className="text-white text-center px-6">
                       <h3 className="text-2xl font-bold">{service.name}</h3>
@@ -160,8 +169,8 @@ export default function Home() {
         </div>
       </section>
 
-
-      <section className="py-20 bg-white">
+      {/* 5 — Our Locations */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4 text-primary">Our Locations</h2>
@@ -169,7 +178,7 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 h-full">
+            <div className="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 h-full">
               <h3 className="text-xl font-bold text-primary mb-4 uppercase tracking-wide">Alvin Office & Shop</h3>
               <div className="space-y-3 text-gray-700">
                 <p className="flex items-start gap-3">
@@ -189,7 +198,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 h-full">
+            <div className="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 h-full">
               <h3 className="text-xl font-bold text-primary mb-4 uppercase tracking-wide">Friendswood Service Area</h3>
               <div className="space-y-3 text-gray-700">
                 <p className="flex items-start gap-3">
@@ -212,46 +221,40 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50">
+      {/* 6 — Proudly Serving Your Community (city pills) */}
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-primary rounded-3xl p-8 lg:p-16 text-center relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
-            
+
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 relative z-10">
               Proudly Serving Your Community
             </h2>
             <p className="text-white/80 mb-8 max-w-2xl mx-auto relative z-10">
               With our office and shop in Alvin and a dedicated service area covering Friendswood, we provide expert HVAC services to homes throughout the greater Houston area.
             </p>
-            
+
             <div className="flex flex-wrap justify-center gap-4 relative z-10">
               {locations.map((location) => (
-                <Link 
-                  key={location.slug} 
+                <Link
+                  key={location.slug}
                   href={`/areas/${location.slug}`}
                   className={`px-6 py-3 rounded-full font-semibold flex items-center gap-2 transition-all ${
-                    location.isPrimary 
-                      ? "bg-accent text-white hover:bg-accent/90" 
+                    location.isPrimary
+                      ? "bg-accent text-white hover:bg-accent/90"
                       : "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white hover:text-primary"
                   }`}
                 >
                   <MapPin className="w-4 h-4" />
                   {location.name}, {location.state}
-                                  </Link>
+                </Link>
               ))}
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Elfsight Google Reviews Widget */}
-          <Script src="https://elfsightcdn.com/platform.js" strategy="lazyOnload" />
-          <div className="elfsight-app-35a13954-516a-4f3e-aead-43fd4158b663" data-elfsight-app-lazy></div>
-        </div>
-      </section>
-
+      {/* 7 — FAQ */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
