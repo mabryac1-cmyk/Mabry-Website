@@ -547,7 +547,7 @@ export const locations = [
     phone: "281-482-8400",
     isPrimary: false,
     headline: "AC Repair & HVAC Service in Deer Park, TX — BBB A+ Rated",
-    description: "Reliable residential HVAC service for Deer Park homeowners in zip code 77536. Flat-rate pricing, BBB A+ rated since 1986.",
+    description: "Reliable residential HVAC service for Deer Park homeowners. Fast response, licensed HVAC contractor serving the 77536 area since 1986.",
     content: `
       <h2>Reliable HVAC Service for Deer Park Homeowners — Honest Work, Flat-Rate Pricing</h2>
       <p>Deer Park is a hardworking community, and Deer Park homeowners expect contractors who show up, do the work right, and charge a fair price. That's exactly what Mabry's Air Conditioning & Heating has been delivering since 1986. We serve the 77536 zip code with the same flat-rate pricing and straight talk we give every customer in the greater Houston area.</p>
@@ -623,7 +623,7 @@ export const locations = [
     phone: "281-482-8400",
     isPrimary: false,
     headline: "AC Repair & HVAC Service in Pasadena, TX (South Pasadena) — Flat-Rate Pricing",
-    description: "Expert residential HVAC service for South Pasadena homeowners in 77504 and 77505. Honest flat-rate pricing, BBB A+ rated since 1986.",
+    description: "Expert residential HVAC service for South Pasadena homeowners. Licensed HVAC contractor serving the south side of Greater Houston since 1986.",
     content: `
       <h2>HVAC Service for South Pasadena Homeowners — 77504 and 77505</h2>
       <p>Mabry's Air Conditioning & Heating serves the residential communities in South Pasadena — specifically the 77504 and 77505 zip codes. These are established neighborhoods with hardworking families who value honest work and fair pricing. That's exactly what we've delivered since 1986.</p>
@@ -661,7 +661,7 @@ export const locations = [
     phone: "281-331-5248",
     isPrimary: false,
     headline: "AC Repair & HVAC Service in Sienna (Missouri City), TX",
-    description: "Trusted HVAC service for Sienna Plantation homeowners. Serving Waters Lake, Sawmill Lake, Sienna Village & all Sienna neighborhoods. BBB A+ rated.",
+    description: "Trusted HVAC service for Sienna Plantation homeowners. Serving Waters Lake, Sawmill Lake, Sienna Village & all Sienna neighborhoods.",
     content: `
       <h2>HVAC Service for Sienna — Waters Lake, Sawmill Lake, Sienna Village & All Neighborhoods</h2>
       <p>Sienna Plantation is one of the premier master-planned communities in Fort Bend County, and the homeowners here have high standards — for their neighborhood, their homes, and the contractors they invite inside. Mabry's Air Conditioning & Heating brings those same high standards to every job. We've been serving Fort Bend County homeowners since 1986 with flat-rate pricing and work you can stand behind.</p>
@@ -699,7 +699,7 @@ export const locations = [
     phone: "281-331-5248",
     isPrimary: false,
     headline: "AC Repair & HVAC Service in Angleton, TX — Brazoria County's Trusted Choice",
-    description: "Reliable residential HVAC service for Angleton homeowners. Based just up Highway 35 in Alvin — fast response times for Brazoria County. BBB A+ rated.",
+    description: "Reliable residential HVAC service for Angleton homeowners. Based just up Highway 35 in Alvin — fast response times for Brazoria County.",
     content: `
       <h2>HVAC Service for Angleton — Brazoria County Homeowners Deserve Honest Work</h2>
       <p>As the county seat of Brazoria County, Angleton is at the heart of our service territory. Mabry's is based just up Highway 35 in Alvin, which means fast response times for Angleton homeowners without the drive fees that larger Houston-based companies charge. We've been the trusted HVAC resource for Brazoria County families since 1986.</p>
@@ -737,7 +737,7 @@ export const locations = [
     phone: "281-331-5248",
     isPrimary: false,
     headline: "AC Repair & HVAC Service in Manvel, TX — Your Neighbor in Alvin",
-    description: "Fast HVAC service for Manvel homeowners. We're just down the road in Alvin — serving Rodeo Palms, Pomona & all Manvel neighborhoods. BBB A+ rated.",
+    description: "Fast HVAC service for Manvel homeowners. We're just down the road in Alvin — serving Rodeo Palms, Pomona & all Manvel neighborhoods.",
     content: `
       <h2>HVAC Service for Manvel — Rodeo Palms, Pomona & All Neighborhoods</h2>
       <p>Manvel has grown dramatically in recent years, transforming from a quiet rural community into a thriving suburb with new master-planned neighborhoods. Mabry's Air Conditioning & Heating is just down the road in Alvin — your true local neighbor for HVAC service. We've watched Manvel grow and have been proud to serve the families who call it home.</p>
@@ -775,7 +775,7 @@ export const locations = [
     phone: "281-331-5248",
     isPrimary: false,
     headline: "AC Repair & HVAC Service in Rosharon, TX — Brazoria County Experts",
-    description: "Dependable residential HVAC service for Rosharon homeowners. Based nearby in Alvin — quick response for the 77583 area. BBB A+ rated since 1986.",
+    description: "Dependable residential HVAC service for Rosharon homeowners. Based nearby in Alvin — quick response for Brazoria County since 1986.",
     content: `
       <h2>HVAC Service for Rosharon — Dependable, Local, Flat-Rate</h2>
       <p>Rosharon sits in the heart of Brazoria County, along the Highway 288 corridor that has seen significant growth in recent years. Mabry's Air Conditioning & Heating is based just a few miles away in Alvin — close enough for fast response without the drive fees that larger Houston contractors charge to reach this area. We've been serving Brazoria County families since 1986.</p>
@@ -813,7 +813,7 @@ export const locations = [
     phone: "281-331-5248",
     isPrimary: false,
     headline: "AC Repair & HVAC Service in Sugar Land, TX — Trusted Since 1986",
-    description: "Reliable residential HVAC service for Sugar Land homeowners. Flat-rate pricing, no hidden charges. Serving First Colony, Riverstone, Telfair & surrounding Fort Bend County communities.",
+    description: "Reliable residential HVAC service for Sugar Land homeowners. No hidden charges. Serving First Colony, Riverstone, Telfair & surrounding Fort Bend County communities.",
     content: `
       <h2>AC Repair & HVAC Service for Sugar Land Homeowners</h2>
       <p>Sugar Land has grown into one of the most sought-after communities in Greater Houston — and Mabry's Air Conditioning & Heating has been serving Fort Bend County homeowners since 1986. Whether you're in an established First Colony home, a newer Riverstone or Telfair property, or anywhere across the Sugar Land area, you deserve HVAC service from a company that treats your home like their own.</p>
@@ -855,7 +855,7 @@ export const locations = [
     phone: "281-331-5248",
     isPrimary: false,
     headline: "AC Repair & HVAC Service in Bellaire, TX — Experienced Houston Area Experts",
-    description: "Trusted residential HVAC service for Bellaire homeowners. Flat-rate pricing, all major brands serviced. Serving the 77401 area with licensed AC repair, installation & maintenance.",
+    description: "Trusted residential HVAC service for Bellaire homeowners. All major brands serviced. Licensed AC repair, installation & maintenance.",
     content: `
       <h2>AC Repair & Heating Service in Bellaire, TX</h2>
       <p>Bellaire — Houston's "City of Homes" — is one of the most distinctive residential communities in the greater Houston area. Nestled inside Loop 610 and surrounded by the city of Houston, Bellaire is a true neighborhood community where homeowners invest in their properties and expect quality service from the contractors they invite in. Mabry's Air Conditioning & Heating has been providing that level of service to Houston-area homeowners since 1986.</p>
@@ -895,7 +895,7 @@ export const locations = [
     phone: "281-331-5248",
     isPrimary: false,
     headline: "AC Repair & HVAC Service in West University Place, TX — Licensed Experts",
-    description: "Reliable residential HVAC service for West University Place homeowners. Flat-rate pricing, experienced technicians. Serving the 77005 area with AC repair, installation & maintenance.",
+    description: "Reliable residential HVAC service for West University Place homeowners. Experienced technicians. Licensed AC repair, installation & maintenance.",
     content: `
       <h2>HVAC Service for West University Place Homes</h2>
       <p>West University Place — "West U" to those who live there — is one of the most prestigious small cities in Texas, a tight-knit residential enclave completely surrounded by Houston. Homeowners here have high standards, and rightly so. Mabry's Air Conditioning & Heating brings nearly 40 years of Greater Houston HVAC experience and the same flat-rate, no-surprises approach that has built our reputation since 1986.</p>
@@ -935,7 +935,7 @@ export const locations = [
     phone: "281-331-5248",
     isPrimary: false,
     headline: "AC Repair & HVAC Service Near Rice Village, Houston TX — Local Experts",
-    description: "Dependable residential HVAC service for homes in and around Rice Village, Houston. Flat-rate pricing, all major brands. Serving the Museum District, Southampton & surrounding Houston neighborhoods.",
+    description: "Dependable residential HVAC service for homes in and around Rice Village, Houston. All major brands serviced. Serving the Museum District, Southampton & surrounding Houston neighborhoods.",
     content: `
       <h2>AC Repair & Heating Service for Rice Village & Surrounding Houston Neighborhoods</h2>
       <p>The Rice Village area — anchored by Rice University and one of Houston's most beloved urban neighborhoods — is home to a dense, established residential community with a mix of housing styles that spans nearly a century. Mabry's Air Conditioning & Heating has been serving Greater Houston homeowners since 1986, bringing experienced, licensed HVAC service to homes that range from original 1930s craftsmen to modern luxury builds.</p>
@@ -975,7 +975,7 @@ export const locations = [
     phone: "281-331-5248",
     isPrimary: false,
     headline: "AC Repair & HVAC Service in South & Southwest Houston, TX",
-    description: "Trusted residential HVAC service for South & Southwest Houston homeowners. Serving Meyerland, Braeswood, Westbury, Braeburn, Clear Lake & surrounding Houston communities. Flat-rate pricing, BBB A+ rated since 1986.",
+    description: "Trusted residential HVAC service for South & Southwest Houston homeowners. Serving Meyerland, Braeswood, Westbury, Braeburn, Clear Lake & surrounding Houston communities. BBB A+ rated since 1986.",
     content: `
       <h2>AC Repair & Heating Service for South & Southwest Houston Homes</h2>
       <p>Mabry's Air Conditioning & Heating has been serving Houston-area homeowners since 1986 — nearly four decades of residential HVAC experience in one of the most demanding climates in the country. We serve the South and Southwest Houston corridor, including Meyerland, Braeswood Place, Westbury, Braeburn, Willow Meadows, and the communities that connect Houston's inner loop to the suburbs further south.</p>

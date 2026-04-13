@@ -158,7 +158,7 @@ export async function generateMetadata({
   if (!service || !location) return { title: "Page Not Found" };
 
   const title = `${service.name} in ${location.name}, TX | Mabry's AC & Heating`;
-  const description = `Licensed ${service.name.toLowerCase()} for ${location.name}, TX homeowners. Flat-rate pricing, no hidden charges. BBB A+ rated. License ${businessInfo.license}. Call ${location.phone} — serving ${location.zipCodes.join(", ")}.`;
+  const description = `Licensed ${service.name} for ${location.name}, TX homeowners. Flat-rate pricing, no hidden charges. BBB A+ rated. License ${businessInfo.license}. Call ${location.phone} — serving ${location.zipCodes.join(", ")}.`;
 
   return {
     title,

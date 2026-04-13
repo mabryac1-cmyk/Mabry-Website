@@ -3,7 +3,8 @@ import { businessInfo } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: `Privacy Policy | ${businessInfo.name}`,
-  description: `Privacy policy for ${businessInfo.name}. Information about how we collect and use customer data.`,
+  description: `Privacy policy for Mabry's AC & Heating — how we collect and use customer data.`,
+  robots: { index: false, follow: true },
   alternates: {
     canonical: "/privacy",
   },
