@@ -7,8 +7,8 @@ import { businessInfo, services, locations, generalFaqs } from "@/lib/data";
 import { Shield, Clock, Award, ArrowRight, MapPin, Phone, CheckCircle, Star } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Mabry's AC & Heating | Greater Houston Area HVAC Since 1986",
-  description: "Family-owned HVAC contractor serving Alvin, Friendswood, Pearland & the Greater Houston area since 1986. AC repair, heating, installation & maintenance. Flat-rate pricing, BBB A+. Call 281-331-5248 or 281-482-8400.",
+  title: "AC Repair in Friendswood, Alvin & Pearland TX | Mabry's HVAC Since 1986",
+  description: "Family-owned HVAC contractor serving Friendswood, Alvin, Pearland & the Greater Houston area since 1986. AC repair, heating, installation & maintenance. Flat-rate pricing, BBB A+. Call 281-331-5248 or 281-482-8400.",
   alternates: {
     canonical: "/",
   },
@@ -29,7 +29,7 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white space-y-5">
             <h1 className="text-3xl lg:text-5xl font-bold leading-tight text-shadow">
-              Greater Houston Area AC &amp; Heating Service Since 1986
+              AC Repair &amp; Heating in Friendswood, Alvin &amp; Pearland — Family-Owned Since 1986
             </h1>
             <h2 className="text-xl lg:text-2xl font-semibold text-white/90 leading-snug">
               Full-Service HVAC — Air Conditioning, Heating &amp; Maintenance Since 1986
