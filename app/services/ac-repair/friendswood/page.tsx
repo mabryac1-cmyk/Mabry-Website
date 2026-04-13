@@ -8,7 +8,7 @@ import { businessInfo } from "@/lib/data";
 import { ArrowLeft, Phone, CheckCircle, Wrench, Shield, Clock, Award } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Same-Day AC Repair Friendswood TX | Mabry's Air Conditioning & Heating",
+  title: "Same-Day AC Repair Friendswood TX | Mabry's AC & Heating",
   description: "Same-day AC repair in Friendswood TX. Flat-rate pricing, no extra charge for evenings or weekends. Serving the 77546 & 77549 zip codes since 1986. BBB A+. Call 281-482-8400.",
   alternates: { canonical: "/services/ac-repair/friendswood" },
 };

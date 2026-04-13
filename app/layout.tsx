@@ -58,6 +58,7 @@ const businessSchema = {
         {"@type": "City", "name": "Sugar Land", "addressRegion": "TX"},
         {"@type": "City", "name": "Bellaire", "addressRegion": "TX"},
         {"@type": "City", "name": "West University Place", "addressRegion": "TX"},
+        {"@type": "City", "name": "Rice Village", "addressRegion": "TX"},
         {"@type": "City", "name": "Houston", "addressRegion": "TX"}
       ],
       "availableLanguage": "English"
@@ -111,6 +112,7 @@ const businessSchema = {
     {"@type": "City", "name": "Sugar Land", "addressRegion": "TX"},
     {"@type": "City", "name": "Bellaire", "addressRegion": "TX"},
     {"@type": "City", "name": "West University Place", "addressRegion": "TX"},
+    {"@type": "City", "name": "Rice Village", "addressRegion": "TX"},
     {"@type": "City", "name": "Houston", "addressRegion": "TX"}
   ],
   "hasOfferCatalog": {

@@ -110,7 +110,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: `AC Repair & HVAC Service in ${location.name}, TX | Mabry's AC & Heating`,
+    title: `AC Repair ${location.name} TX | Mabry's AC & Heating`,
     description: `${location.description} Serving ${location.zipCodes.join(" & ")} with flat-rate pricing. License ${businessInfo.license}. BBB A+ Rated. Call ${location.phone}.`,
     alternates: {
       canonical: `/areas/${slug}`,

@@ -184,6 +184,14 @@ export default async function ServiceCityPage({
   const location = getLocationBySlug(city);
   if (!service || !location) notFound();
 
+  const serviceTaglines: Record<string, string> = {
+    "ac-repair": "Same-Day Service, Flat-Rate Pricing",
+    "heating-repair": "Fast, Reliable Service",
+    "ac-installation": "Licensed Installation, Proper Sizing",
+    "ac-maintenance": "Prevent Breakdowns, Extend System Life",
+  };
+  const tagline = serviceTaglines[slug] ?? "";
+
   const otherLocations = locations.filter((l) => l.slug !== location.slug);
   const ctx = cityContext[location.slug] ?? {
     intro: `${businessInfo.name} has been serving ${location.name} homeowners since ${businessInfo.established}.`,
@@ -197,7 +205,7 @@ export default async function ServiceCityPage({
     "@id": `https://mabryac.com/services/${slug}/${city}`,
     name: `${service.name} in ${location.name}, TX`,
     serviceType: service.name,
-    description: `Licensed ${service.name.toLowerCase()} for ${location.name}, TX homeowners. Flat-rate pricing, BBB A+ rated. License ${businessInfo.license}.`,
+    description: `Licensed ${service.name} for ${location.name}, TX homeowners. Flat-rate pricing, BBB A+ rated. License ${businessInfo.license}.`,
     provider: {
       "@type": "HVACBusiness",
       "@id": "https://mabryac.com/#business",
@@ -253,7 +261,7 @@ export default async function ServiceCityPage({
             <span className="text-white">{location.name}</span>
           </div>
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            {service.name} in {location.name}, {location.state}
+            {service.name} in {location.name}, {location.state}{tagline ? ` — ${tagline}` : ""}
           </h1>
           <p className="text-xl text-white/90 max-w-2xl">
             {service.description} Trusted by homeowners in {location.name} since{" "}
