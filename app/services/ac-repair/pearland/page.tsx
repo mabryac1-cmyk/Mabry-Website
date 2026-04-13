@@ -8,7 +8,7 @@ import { businessInfo } from "@/lib/data";
 import { Phone, CheckCircle, Wrench, Shield, Clock, Award } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "AC Repair Pearland TX | Same-Day Service | Mabry's Air Conditioning & Heating",
+  title: "Same-Day AC Repair Pearland TX | Mabry's Air Conditioning & Heating",
   description: "Same-day AC repair in Pearland TX — Shadow Creek Ranch, Silverlake, Old Townsite & all neighborhoods. Flat-rate pricing, BBB A+. No extra charge for evenings or weekends. Call 281-482-8400.",
   alternates: { canonical: "/services/ac-repair/pearland" },
 };

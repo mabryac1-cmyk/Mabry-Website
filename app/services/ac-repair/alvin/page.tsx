@@ -8,7 +8,7 @@ import { businessInfo } from "@/lib/data";
 import { ArrowLeft, Phone, CheckCircle, Wrench, Shield, Clock, Award } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "AC Repair Alvin TX | Same-Day Service | Mabry's Air Conditioning & Heating",
+  title: "Same-Day AC Repair Alvin TX | Mabry's Air Conditioning & Heating",
   description: "Same-day AC repair in Alvin TX. Flat-rate pricing, no extra charge for evenings or weekends. Shop at 2110 S Gordon St — your neighbors since 1986. BBB A+. Call 281-331-5248.",
   alternates: { canonical: "/services/ac-repair/alvin" },
 };
