@@ -90,6 +90,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   const metaTitle = slug === "ac-repair"
     ? `AC Repair in Alvin, Friendswood & Pearland — Done Right Since 1986 | Mabry's AC & Heating`
+    : slug === "ac-maintenance"
+    ? `AC & Heating Tune-Up in Alvin, Friendswood & Pearland | Greater Houston | Mabry's AC & Heating`
     : `${service.name} in Alvin, Friendswood & Pearland | Greater Houston | Mabry's AC & Heating`;
 
   return {
