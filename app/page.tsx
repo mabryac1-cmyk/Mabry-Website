@@ -7,7 +7,7 @@ import { businessInfo, services, locations, generalFaqs } from "@/lib/data";
 import { Shield, Clock, Award, ArrowRight, MapPin, Phone, CheckCircle, Star } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "AC Repair in Alvin, Friendswood & Pearland | Greater Houston Area | Mabry's AC & Heating",
+  title: "AC Repair Alvin, Friendswood & Pearland | Mabry's AC & Heating",
   description: "Licensed HVAC contractor serving Alvin, Friendswood, Pearland & the Greater Houston area. Open Mon–Fri 7am–7pm & Saturdays. Flat-rate pricing — no after-hours fees. Call 281-331-5248 or 281-482-8400.",
   alternates: {
     canonical: "/",

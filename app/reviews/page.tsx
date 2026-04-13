@@ -6,7 +6,7 @@ import { Star, Phone, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
   title: `5-Star Google Reviews | Mabry's AC & Heating | Alvin, Friendswood & Pearland TX`,
-  description: `See why homeowners in Alvin, Friendswood & Pearland give Mabry's AC & Heating a perfect 5.0 rating on Google. 37+ verified reviews. BBB A+ Rated since 1986. Read reviews or leave your own.`,
+  description: `See why homeowners in Alvin, Friendswood & Pearland give Mabry's AC & Heating a perfect 5.0 rating on Google. BBB A+ Rated since 1986. Read reviews or leave your own.`,
   alternates: {
     canonical: "/reviews",
   },
@@ -21,9 +21,7 @@ const reviewsSchema = {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
     "bestRating": "5",
-    "worstRating": "1",
-    "reviewCount": "37",
-    "ratingCount": "37"
+    "worstRating": "1"
   }
 };
 
