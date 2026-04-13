@@ -88,8 +88,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return { title: "Service Not Found" };
   }
 
+  const metaTitle = slug === "ac-repair"
+    ? `AC Repair in Alvin, Friendswood & Pearland — Done Right Since 1986 | Mabry's AC & Heating`
+    : `${service.name} in Alvin, Friendswood & Pearland | Greater Houston | Mabry's AC & Heating`;
+
   return {
-    title: `${service.name} in Alvin, Friendswood & Pearland | Greater Houston | Mabry's AC & Heating`,
+    title: metaTitle,
     description: `${service.description} Serving Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake, League City & the greater Houston area. License ${businessInfo.license}. Call ${businessInfo.phone}.`,
     alternates: {
       canonical: `/services/${slug}`,

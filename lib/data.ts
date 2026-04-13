@@ -66,7 +66,7 @@ export const services = [
   {
     slug: "ac-repair",
     name: "AC Repair",
-    title: "AC Repair in Alvin, Friendswood, Pearland & the Greater Houston Area",
+    title: "AC Repair in Alvin, Friendswood & Pearland — Done Right Since 1986",
     shortDescription: "Fast, reliable residential AC repair",
     description: "Fast, reliable residential AC repair services. We fix all makes and models with honest, flat-rate pricing.",
     content: `
