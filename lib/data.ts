@@ -468,7 +468,7 @@ export const locations = [
     name: "Pearland",
     state: "TX",
     zipCodes: ["77581", "77584", "77588"],
-    phone: "281-482-8400",
+    phone: "281-331-5248",
     isPrimary: false,
     headline: "AC Repair & HVAC Service in Pearland, TX — Fast, Reliable, Flat-Rate",
     description: "Trusted HVAC service for Pearland families since 1986. Serving Shadow Creek Ranch, Silverlake, Old Townsite & all Pearland neighborhoods.",
@@ -496,7 +496,7 @@ export const locations = [
         <li>BBB A+ Rating backed by nearly 40 years of honest work</li>
         <li>Residential-only focus — homes are our specialty</li>
         <li>Licensed and insured (TACLB12058E)</li>
-        <li>Dedicated service line for Pearland: 281-482-8400</li>
+        <li>Dedicated service line for Pearland: 281-331-5248</li>
       </ul>
     `,
     keywords: ["HVAC company Pearland TX", "AC repair Pearland", "heating repair Pearland TX", "AC service Pearland 77584"],

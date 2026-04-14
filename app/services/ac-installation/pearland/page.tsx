@@ -9,14 +9,14 @@ import { Phone, CheckCircle, Wrench, Shield, Clock, Award } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "AC Installation Pearland TX | New Systems & Replacement | Mabry's AC & Heating",
-  description: "Professional AC installation & replacement in Pearland TX — Shadow Creek Ranch, Silverlake, Old Townsite & all neighborhoods. Proper sizing, financing available, BBB A+. Call 281-482-8400.",
+  description: "Professional AC installation & replacement in Pearland TX — Shadow Creek Ranch, Silverlake, Old Townsite & all neighborhoods. Proper sizing, financing available, BBB A+. Call 281-331-5248.",
   alternates: { canonical: "/services/ac-installation/pearland" },
 };
 
 const faqs = [
   {
     question: "How much does AC installation cost in Pearland TX?",
-    answer: "A complete AC system replacement in Pearland typically ranges from $6,000–$14,000+ fully installed, depending on system size, SEER2 efficiency rating, brand, and whether any ductwork work is needed. We provide free, no-obligation in-home estimates. Call 281-482-8400.",
+    answer: "A complete AC system replacement in Pearland typically ranges from $6,000–$14,000+ fully installed, depending on system size, SEER2 efficiency rating, brand, and whether any ductwork work is needed. We provide free, no-obligation in-home estimates. Call 281-331-5248.",
   },
   {
     question: "My AC is 15 years old in Pearland — should I repair or replace it?",
@@ -32,13 +32,13 @@ const faqs = [
   },
   {
     question: "Do you offer free estimates on new AC systems in Pearland?",
-    answer: "Yes — free, no-obligation in-home estimates for all Pearland homeowners. We assess your home, calculate proper sizing, and provide a written quote before any work begins. Call 281-482-8400 or fill out the form.",
+    answer: "Yes — free, no-obligation in-home estimates for all Pearland homeowners. We assess your home, calculate proper sizing, and provide a written quote before any work begins. Call 281-331-5248 or fill out the form.",
   },
 ];
 
 const content = `
   <h2>AC Installation &amp; Replacement in Pearland, TX — All Neighborhoods, Properly Sized</h2>
-  <p>Pearland has become one of Texas's largest cities — and its housing spans every era of construction, from 1970s Old Townsite homes to mid-2000s Shadow Creek Ranch and Silverlake communities to new construction along the Highway 288 corridor. Each generation of homes has different HVAC needs, and a one-size-fits-all approach doesn't work. Mabry's Air Conditioning &amp; Heating has been serving Pearland homeowners through all of this growth since 1986. Call 281-482-8400 for a free estimate.</p>
+  <p>Pearland has become one of Texas's largest cities — and its housing spans every era of construction, from 1970s Old Townsite homes to mid-2000s Shadow Creek Ranch and Silverlake communities to new construction along the Highway 288 corridor. Each generation of homes has different HVAC needs, and a one-size-fits-all approach doesn't work. Mabry's Air Conditioning &amp; Heating has been serving Pearland homeowners through all of this growth since 1986. Call 281-331-5248 for a free estimate.</p>
 
   <h3>How Much Does AC Replacement Cost in Pearland, TX?</h3>
   <p>A complete AC system replacement in Pearland typically ranges from <strong>$6,000–$14,000+ fully installed</strong>, depending on:</p>
@@ -49,7 +49,7 @@ const content = `
     <li>Whether ductwork modifications are needed</li>
     <li>AC-only vs. full HVAC system replacement</li>
   </ul>
-  <p>We provide free, no-obligation in-home estimates. Call 281-482-8400 or fill out the form on this page.</p>
+  <p>We provide free, no-obligation in-home estimates. Call 281-331-5248 or fill out the form on this page.</p>
 
   <h3>Is It Time to Replace Your Pearland AC?</h3>
   <p>Many Pearland homeowners — especially in Shadow Creek Ranch and Silverlake — are at a critical decision point. Builder-grade systems installed in the mid-2000s are now 15–20 years old. In Pearland's Gulf Coast climate with long cooling seasons, that's a full service life for most systems.</p>
@@ -112,7 +112,7 @@ export default function AcInstallationPearlandPage() {
     description: "Professional AC installation and replacement in Pearland, TX. Proper sizing, all major brands, licensed installation. BBB A+ rated. License TACLB12058E.",
     provider: { "@type": "HVACBusiness", "@id": "https://mabryac.com/#business" },
     areaServed: { "@type": "City", name: "Pearland", addressRegion: "TX" },
-    telephone: "+1-281-482-8400",
+    telephone: "+1-281-331-5248",
   };
 
   return (
@@ -136,8 +136,8 @@ export default function AcInstallationPearlandPage() {
             Free estimates, proper sizing, all major brands, financing available. Serving Pearland homeowners since 1986.
           </p>
           <div className="flex flex-wrap gap-4 items-center mb-6">
-            <a href="tel:2814828400" className="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors">
-              <Phone className="w-5 h-5" /> 281-482-8400
+            <a href="tel:2813315248" className="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors">
+              <Phone className="w-5 h-5" /> 281-331-5248
             </a>
             <div className="flex items-center gap-2 text-white/80">
               <CheckCircle className="w-5 h-5 text-accent" />
@@ -196,9 +196,9 @@ export default function AcInstallationPearlandPage() {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
               <GoalCompletionBlock
-                answerParagraph="Replacing your AC in Pearland? Call 281-482-8400 for a free estimate. Proper sizing for your home, all major brands, licensed installation, financing available."
-                phoneButtons={[{ label: "Call Pearland", number: "281-482-8400", tel: "2814828400" }]}
-                servingText="New AC installations throughout Pearland, Friendswood, League City, Clear Lake, Deer Park & surrounding areas"
+                answerParagraph="Replacing your AC in Pearland? Call 281-331-5248 for a free estimate. Proper sizing for your home, all major brands, licensed installation, financing available."
+                phoneButtons={[{ label: "Call Pearland", number: "281-331-5248", tel: "2813315248" }]}
+                servingText="New AC installations throughout Pearland, Alvin, Manvel, Sugar Land, Sienna & surrounding areas"
               />
               <div className="prose prose-lg max-w-none" dangerouslySetInnerHTML={{ __html: content }} />
 
@@ -218,9 +218,9 @@ export default function AcInstallationPearlandPage() {
 
               <div className="mt-8 p-6 bg-accent/10 rounded-xl border border-accent/20">
                 <h4 className="font-bold text-primary mb-2">Get a Free AC Installation Estimate in Pearland</h4>
-                <p className="text-muted-foreground mb-4">No obligation. Proper sizing, written quote, all major brands. Call 281-482-8400 or fill out the form.</p>
-                <a href="tel:2814828400" className="inline-flex items-center gap-2 bg-accent text-white font-bold py-3 px-6 rounded-lg hover:bg-accent/90 transition-colors">
-                  <Phone className="w-5 h-5" /> Call 281-482-8400
+                <p className="text-muted-foreground mb-4">No obligation. Proper sizing, written quote, all major brands. Call 281-331-5248 or fill out the form.</p>
+                <a href="tel:2813315248" className="inline-flex items-center gap-2 bg-accent text-white font-bold py-3 px-6 rounded-lg hover:bg-accent/90 transition-colors">
+                  <Phone className="w-5 h-5" /> Call 281-331-5248
                 </a>
               </div>
             </div>

@@ -9,7 +9,7 @@ import { Phone, CheckCircle, Wrench, Shield, Clock, Award } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Same-Day AC Repair Pearland TX | Mabry's AC & Heating",
-  description: "Same-day AC repair in Pearland TX — Shadow Creek Ranch, Silverlake, Old Townsite & all neighborhoods. Flat-rate pricing, BBB A+. No extra charge for evenings or weekends. Call 281-482-8400.",
+  description: "Same-day AC repair in Pearland TX — Shadow Creek Ranch, Silverlake, Old Townsite & all neighborhoods. Flat-rate pricing, BBB A+. No extra charge for evenings or weekends. Call 281-331-5248.",
   alternates: { canonical: "/services/ac-repair/pearland" },
 };
 
@@ -38,7 +38,7 @@ const faqs = [
 
 const content = `
   <h2>AC Repair in Pearland, TX — All Neighborhoods, All Brands, Same-Day Service</h2>
-  <p>Pearland summers are no joke — heat indexes above 110°F combined with Gulf Coast humidity make a broken AC a genuine emergency. Whether you're in Shadow Creek Ranch, Silverlake, Old Townsite, or anywhere along the Highway 288 corridor, Mabry's Air Conditioning &amp; Heating is your local choice for fast, honest AC repair. Call 281-482-8400.</p>
+  <p>Pearland summers are no joke — heat indexes above 110°F combined with Gulf Coast humidity make a broken AC a genuine emergency. Whether you're in Shadow Creek Ranch, Silverlake, Old Townsite, or anywhere along the Highway 288 corridor, Mabry's Air Conditioning &amp; Heating is your local choice for fast, honest AC repair. Call 281-331-5248.</p>
 
   <h3>Common AC Problems We Fix in Pearland</h3>
   <ul>
@@ -97,7 +97,7 @@ export default function AcRepairPearlandPage() {
     description: "Same-day residential AC repair in Pearland, TX. Flat-rate pricing, all makes and models. BBB A+ rated. License TACLB12058E.",
     provider: { "@type": "HVACBusiness", "@id": "https://mabryac.com/#business" },
     areaServed: { "@type": "City", name: "Pearland", addressRegion: "TX" },
-    telephone: "+1-281-482-8400",
+    telephone: "+1-281-331-5248",
   };
 
   return (
@@ -121,8 +121,8 @@ export default function AcRepairPearlandPage() {
             Shadow Creek Ranch, Silverlake, Old Townsite — wherever you are in Pearland, we're your same-day AC repair team. Flat-rate pricing, no extra charge for evenings or weekends.
           </p>
           <div className="flex flex-wrap gap-4 items-center mb-6">
-            <a href="tel:2814828400" className="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors">
-              <Phone className="w-5 h-5" /> 281-482-8400
+            <a href="tel:2813315248" className="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors">
+              <Phone className="w-5 h-5" /> 281-331-5248
             </a>
             <div className="flex items-center gap-2 text-white/80">
               <CheckCircle className="w-5 h-5 text-accent" />
@@ -181,9 +181,9 @@ export default function AcRepairPearlandPage() {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
               <GoalCompletionBlock
-                answerParagraph="AC not working in Pearland? Call 281-482-8400 for same-day service. We serve Shadow Creek Ranch, Silverlake, Old Townsite, and all Pearland neighborhoods with flat-rate pricing."
-                phoneButtons={[{ label: "Call Pearland", number: "281-482-8400", tel: "2814828400" }]}
-                servingText="Same-day AC repair: Pearland, Friendswood, League City, Clear Lake, Deer Park & surrounding areas"
+                answerParagraph="AC not working in Pearland? Call 281-331-5248 for same-day service. We serve Shadow Creek Ranch, Silverlake, Old Townsite, and all Pearland neighborhoods with flat-rate pricing."
+                phoneButtons={[{ label: "Call Pearland", number: "281-331-5248", tel: "2813315248" }]}
+                servingText="Same-day AC repair: Pearland, Alvin, Manvel, Sugar Land, Sienna & surrounding areas"
               />
               <div className="prose prose-lg max-w-none" dangerouslySetInnerHTML={{ __html: content }} />
 
@@ -204,8 +204,8 @@ export default function AcRepairPearlandPage() {
               <div className="mt-8 p-6 bg-accent/10 rounded-xl border border-accent/20">
                 <h4 className="font-bold text-primary mb-2">AC Not Working in Pearland? Call Now.</h4>
                 <p className="text-muted-foreground mb-4">Same-day service available. Flat-rate pricing — know your cost before we start.</p>
-                <a href="tel:2814828400" className="inline-flex items-center gap-2 bg-accent text-white font-bold py-3 px-6 rounded-lg hover:bg-accent/90 transition-colors">
-                  <Phone className="w-5 h-5" /> Call 281-482-8400
+                <a href="tel:2813315248" className="inline-flex items-center gap-2 bg-accent text-white font-bold py-3 px-6 rounded-lg hover:bg-accent/90 transition-colors">
+                  <Phone className="w-5 h-5" /> Call 281-331-5248
                 </a>
               </div>
             </div>

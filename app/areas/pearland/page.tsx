@@ -9,7 +9,7 @@ import { ArrowLeft, Phone, CheckCircle, Wrench, Shield, Clock, Award } from "luc
 
 export const metadata: Metadata = {
   title: "AC Repair Pearland TX | Mabry's AC & Heating",
-  description: "Fast, reliable AC repair & HVAC service in Pearland TX — Shadow Creek Ranch, Silverlake, Old Townsite & all neighborhoods. Flat-rate pricing, BBB A+. Call 281-482-8400.",
+  description: "Fast, reliable AC repair & HVAC service in Pearland TX — Shadow Creek Ranch, Silverlake, Old Townsite & all neighborhoods. Flat-rate pricing, BBB A+. Call 281-331-5248.",
   alternates: {
     canonical: "/areas/pearland",
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const pearlandFaqs = [
   {
     question: "How fast can you respond to AC repairs in Pearland?",
-    answer: "We offer same-day service for most AC repairs in Pearland's 77581, 77584, and 77588 zip codes. Call 281-482-8400 to schedule — we'll get you taken care of quickly.",
+    answer: "We offer same-day service for most AC repairs in Pearland's 77581, 77584, and 77588 zip codes. Call 281-331-5248 to schedule — we'll get you taken care of quickly.",
   },
   {
     question: "Do you charge extra for evening or weekend service calls in Pearland?",
@@ -62,7 +62,7 @@ const pearlandContent = `
     <li>BBB A+ Accredited Business — multiple BBB Gold Star Award winner</li>
     <li>Residential-only focus — homes are our specialty</li>
     <li>Licensed and insured (TACLB12058E)</li>
-    <li>Dedicated service line for Pearland: 281-482-8400</li>
+    <li>Dedicated service line for Pearland: 281-331-5248</li>
   </ul>
 `;
 
@@ -71,7 +71,7 @@ export default function PearlandPage() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "AC Repair & HVAC Service in Pearland, TX",
-    "description": "Residential AC repair, heating service, and installation for Pearland, TX homeowners. Flat-rate pricing, BBB A+ rated. Call 281-482-8400.",
+    "description": "Residential AC repair, heating service, and installation for Pearland, TX homeowners. Flat-rate pricing, BBB A+ rated. Call 281-331-5248.",
     "url": "https://mabryac.com/areas/pearland",
     "about": {
       "@type": "HVACBusiness",
@@ -89,7 +89,7 @@ export default function PearlandPage() {
         "name": "Pearland",
         "addressRegion": "TX"
       },
-      "telephone": "+1-281-482-8400"
+      "telephone": "+1-281-331-5248"
     }
   };
 
@@ -115,11 +115,11 @@ export default function PearlandPage() {
           </p>
           <div className="flex flex-wrap gap-4 items-center mb-6">
             <a
-              href="tel:2814828400"
+              href="tel:2813315248"
               className="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
             >
               <Phone className="w-5 h-5" />
-              281-482-8400
+              281-331-5248
             </a>
             <div className="flex items-center gap-2 text-white/80">
               <CheckCircle className="w-5 h-5 text-accent" />
@@ -194,9 +194,9 @@ export default function PearlandPage() {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
               <GoalCompletionBlock
-                answerParagraph="Need AC repair or heating service in Pearland? Call 281-482-8400 for fast service. We serve Pearland and nearby areas with licensed residential HVAC service."
-                phoneButtons={[{ label: "Call Pearland", number: "281-482-8400", tel: "2814828400" }]}
-                servingText="Serving: Pearland, Friendswood, League City, Clear Lake, Deer Park, Pasadena"
+                answerParagraph="Need AC repair or heating service in Pearland? Call 281-331-5248 for fast service. We serve Pearland and nearby areas with licensed residential HVAC service."
+                phoneButtons={[{ label: "Call Pearland", number: "281-331-5248", tel: "2813315248" }]}
+                servingText="Serving: Pearland, Alvin, Manvel, Sugar Land, Sienna, Missouri City"
               />
               <div
                 className="prose prose-lg max-w-none"
@@ -231,11 +231,11 @@ export default function PearlandPage() {
                   Call us now or fill out the form. Flat-rate pricing, no hidden charges.
                 </p>
                 <a
-                  href="tel:2814828400"
+                  href="tel:2813315248"
                   className="inline-flex items-center gap-2 bg-accent text-white font-bold py-3 px-6 rounded-lg hover:bg-accent/90 transition-colors"
                 >
                   <Phone className="w-5 h-5" />
-                  Call 281-482-8400
+                  Call 281-331-5248
                 </a>
               </div>
             </div>
