@@ -19,7 +19,8 @@ const reviewsSchema = {
   "url": "https://mabryac.com",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "5.0",
+    "ratingValue": "4.9",
+    "reviewCount": "125",
     "bestRating": "5",
     "worstRating": "1"
   }
