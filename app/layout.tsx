@@ -14,6 +14,27 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  openGraph: {
+    type: "website",
+    siteName: "Mabry's AC & Heating",
+    locale: "en_US",
+    url: "https://mabryac.com",
+    title: "Mabry's AC & Heating | Greater Houston Area HVAC Since 1986",
+    description: "Family-owned HVAC company serving the Greater Houston area since 1986. AC repair, heating repair & installation. BBB A+ rated. Flat-rate pricing. Call 281-331-5248.",
+    images: [
+      {
+        url: "https://mabryac.com/logo.png",
+        width: 800,
+        height: 600,
+        alt: "Mabry's Air Conditioning & Heating",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "Mabry's AC & Heating | Greater Houston Area HVAC Since 1986",
+    description: "Family-owned HVAC company serving the Greater Houston area since 1986. AC repair, heating repair & installation. BBB A+ rated. Flat-rate pricing.",
+  },
 };
 
 const businessSchema = {
@@ -152,6 +173,13 @@ const businessSchema = {
         }
       }
     ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "127",
+    "bestRating": "5",
+    "worstRating": "1"
   },
   "sameAs": [
     "https://www.bbb.org/us/tx/alvin/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805",

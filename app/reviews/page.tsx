@@ -1,38 +1,21 @@
 import { Metadata } from "next";
 import Script from "next/script";
 import Link from "next/link";
+// Script is used for Elfsight widget below
 import { businessInfo } from "@/lib/data";
 import { Star, Phone, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
   title: `5-Star Google Reviews | Mabry's AC & Heating | Alvin, Friendswood & Pearland TX`,
-  description: `See why homeowners in Alvin, Friendswood & Pearland give Mabry's AC & Heating a perfect 5.0 rating on Google. BBB A+ Rated since 1986. Read reviews or leave your own.`,
+  description: `See why homeowners in Alvin, Friendswood & Pearland trust Mabry's AC & Heating — 4.9 stars across 127 Google reviews. BBB A+ Rated since 1986. Read reviews or leave your own.`,
   alternates: {
     canonical: "/reviews",
   },
 };
 
-const reviewsSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Mabry's Air Conditioning & Heating, Inc.",
-  "url": "https://mabryac.com",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "125",
-    "bestRating": "5",
-    "worstRating": "1"
-  }
-};
-
 export default function ReviewsPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewsSchema) }}
-      />
       <section className="bg-primary py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">5-Star Google Reviews — Mabry&apos;s AC &amp; Heating</h1>
@@ -43,7 +26,7 @@ export default function ReviewsPage() {
             {[1, 2, 3, 4, 5].map((star) => (
               <Star key={star} className="w-8 h-8 fill-accent text-accent" />
             ))}
-            <span className="text-white ml-2 text-lg font-semibold">5.0 on Google</span>
+            <span className="text-white ml-2 text-lg font-semibold">4.9 on Google (127 reviews)</span>
           </div>
         </div>
       </section>
@@ -73,7 +56,7 @@ export default function ReviewsPage() {
                 <p className="text-muted-foreground">BBB Rating</p>
               </div>
               <div className="bg-white p-6 rounded-xl shadow-sm">
-                <p className="text-4xl font-bold text-accent mb-2">5.0</p>
+                <p className="text-4xl font-bold text-accent mb-2">4.9</p>
                 <p className="text-muted-foreground">Google Rating</p>
               </div>
             </div>
