@@ -7,7 +7,7 @@ import { Star, Phone, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
   title: `5-Star Google Reviews | Mabry's AC & Heating | Alvin, Friendswood & Pearland TX`,
-  description: `See why homeowners in Alvin, Friendswood & Pearland trust Mabry's AC & Heating — 4.9 stars across 127 Google reviews. BBB A+ Rated since 1986. Read reviews or leave your own.`,
+  description: `See why homeowners in Alvin, Friendswood & Pearland trust Mabry's AC & Heating — 4.9 stars across 130 Google reviews. BBB A+ Rated since 1986. Read reviews or leave your own.`,
   alternates: {
     canonical: "/reviews",
   },
@@ -26,7 +26,7 @@ export default function ReviewsPage() {
             {[1, 2, 3, 4, 5].map((star) => (
               <Star key={star} className="w-8 h-8 fill-accent text-accent" />
             ))}
-            <span className="text-white ml-2 text-lg font-semibold">4.9 on Google (127 reviews)</span>
+            <span className="text-white ml-2 text-lg font-semibold">4.9 on Google (130 reviews)</span>
           </div>
         </div>
       </section>
