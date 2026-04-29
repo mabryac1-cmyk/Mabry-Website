@@ -43,7 +43,7 @@ const cityContext: Record<string, { intro: string; climate: string; housing: str
     intro:
       "Deer Park homeowners have relied on Mabry's for dependable HVAC service since 1986. Flat-rate pricing, no surprises — that's how we do business in the 77536 area.",
     climate:
-      "Deer Park's location in East Harris County, near the Ship Channel and Galveston Bay, means Gulf Coast humidity is a constant factor. Condensate drains, outdoor unit corrosion, and coil maintenance are recurring HVAC concerns for Deer Park homes — and proximity to the industrial corridor means filters and coils collect particulate faster than in most residential areas.",
+      "Deer Park's location in East Harris County, near the Ship Channel and Galveston Bay, means Gulf Coast humidity is a constant factor and AC equipment runs nearly nonstop from May through October. Condensate drains, outdoor unit corrosion in waterfront-adjacent areas, and coil maintenance are recurring HVAC concerns we address regularly throughout the 77536 area.",
     housing:
       "Deer Park's established residential neighborhoods range from post-war homes near the city's historic core to mid-century subdivisions developed through the 1960s–1980s and newer developments on the outskirts of the 77536 area. Many Deer Park homes are at or past the typical 15–20 year replacement age for their HVAC systems.",
   },
@@ -59,7 +59,7 @@ const cityContext: Record<string, { intro: string; climate: string; housing: str
     intro:
       "Mabry's serves the residential communities of South Pasadena — the 77504 and 77505 zip codes — with the flat-rate, licensed HVAC service Greater Houston homeowners have relied on since 1986.",
     climate:
-      "Pasadena's location in the Houston Ship Channel corridor and its proximity to Galveston Bay means Gulf Coast heat and humidity define the local climate. Heat indexes regularly above 110°F and sustained humidity make reliable AC non-negotiable for Pasadena families — and proximity to the industrial corridor means HVAC filters and coils collect particulate at an accelerated rate.",
+      "Pasadena's location in the Houston Ship Channel corridor and its proximity to Galveston Bay means Gulf Coast heat and humidity define the local climate. Heat indexes regularly above 110°F and sustained humidity make reliable AC non-negotiable for Pasadena families, and AC systems in this part of Greater Houston run nearly nonstop from May through October.",
     housing:
       "The South Pasadena neighborhoods we serve — along the Burke Road corridor and throughout 77504 and 77505 — include established residential areas with homes built primarily from the 1960s through the 1990s. These homes often have older ductwork, original-era equipment that's been replaced once or twice, and in some cases attic ductwork that has developed leaks or deteriorated over the decades.",
   },

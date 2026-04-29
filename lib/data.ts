@@ -563,7 +563,7 @@ export const locations = [
       <h3>We Know Deer Park Homes</h3>
       <p>Deer Park's residential neighborhoods range from post-war homes built in the 1940s and 50s near the city's older core to established mid-century neighborhoods developed through the 1960s–1980s and some newer developments toward the outskirts of the 77536 area. Many of Deer Park's homes are now at or past the typical 15–20 year replacement age for their HVAC systems, and our technicians have worked in them all.</p>
 
-      <p>The proximity to industrial areas along the Houston Ship Channel means Deer Park air quality can put additional stress on HVAC filters and equipment. We often find systems here that are running harder than they need to be due to restricted airflow from dirty filters or coils — simple maintenance issues that cost homeowners real money on their monthly electric bills.</p>
+      <p>Deer Park sits along the Houston Ship Channel and the eastern edge of Galveston Bay, which means high Gulf Coast humidity year-round and the kind of summer heat that has AC equipment running nearly nonstop from May through October. The hardworking families of Deer Park deserve HVAC contractors who show up when called and stand behind their work. Routine maintenance — filter changes, coil cleanings, condensate line checks — keeps your equipment running efficiently and your monthly electric bills under control.</p>
 
       <h3>Why Deer Park Homeowners Trust Mabry's</h3>
       <ul>
@@ -639,7 +639,7 @@ export const locations = [
       <h3>We Know South Pasadena's Homes</h3>
       <p>The South Pasadena neighborhoods we serve — along the Burke Road corridor, near Pasadena Memorial High School, and throughout the 77504 and 77505 zip codes — include established residential areas with homes built primarily from the 1960s through the 1990s. These homes often have older ductwork, original-era equipment that's been replaced one or two times, and in some cases attic ductwork that has developed leaks or deterioration over the decades.</p>
 
-      <p>Proximity to the industrial corridor means South Pasadena homes often see more particulate in the air that taxes AC filters — and homeowners sometimes go longer between filter changes than they should, reducing airflow and system efficiency. We check filter condition and airflow on every service call.</p>
+      <p>The Houston Ship Channel corridor and Galveston Bay proximity mean Pasadena's Gulf Coast climate runs hot and humid for most of the year, and AC systems here log serious runtime hours from May through October. Regular filter changes, coil cleanings, and airflow checks keep your equipment running efficiently and your monthly electric bills manageable — we cover all of that on every service call.</p>
 
       <h3>Why Pasadena Homeowners Trust Mabry's</h3>
       <ul>
