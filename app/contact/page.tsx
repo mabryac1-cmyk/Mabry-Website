@@ -4,7 +4,7 @@ import { businessInfo, businessHours, locations } from "@/lib/data";
 import { Phone, Mail, MapPin, Clock, Shield, Award, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: `Contact Mabry's AC & Heating | Alvin 281-331-5248 | Friendswood 281-482-8400`,
+  title: `Contact Mabry's AC & Heating | Alvin Friendswood Pearland TX HVAC`,
   description: `Contact Mabry's AC & Heating for HVAC service in Alvin, Friendswood, Pearland & Greater Houston. Alvin: 281-331-5248 · Friendswood: 281-482-8400. Open Mon–Fri 7am–7pm & Saturdays. License ${businessInfo.license}.`,
   alternates: {
     canonical: "/contact",
@@ -47,7 +47,10 @@ export default function ContactPage() {
       />
       <section className="bg-primary py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">Contact Mabry&apos;s AC &amp; Heating — Alvin &amp; Friendswood</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">Contact Mabry&apos;s AC &amp; Heating — Alvin, Friendswood, Pearland, and Surrounding Cities</h1>
+          <p className="text-base text-white/80 max-w-3xl mx-auto mb-3">
+            Serving Alvin, Friendswood, Pearland, and the surrounding Greater Houston area since 1986.
+          </p>
           <p className="text-xl text-white/90 max-w-2xl mx-auto mb-6">
             Ready to schedule service? Call us now or fill out the form below.
           </p>
