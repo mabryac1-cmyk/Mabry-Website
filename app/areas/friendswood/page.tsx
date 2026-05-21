@@ -115,7 +115,7 @@ export default function FriendswoodPage() {
             AC Repair &amp; HVAC Service in Friendswood, TX — Trusted Since 1986
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mb-6">
-            Serving Friendswood and Clear Lake area families for nearly 40 years. Dedicated Friendswood service line: 281-482-8400. Flat-rate pricing, BBB A+.
+            Serving Friendswood families for nearly 40 years — along with the Greater Clear Lake area. Flat-rate pricing, BBB A+.
           </p>
           <div className="flex flex-wrap gap-4 items-center mb-6">
             <a
