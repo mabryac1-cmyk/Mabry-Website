@@ -30,6 +30,20 @@ export function Footer() {
               Regulated by the Texas Department of Licensing and Regulation, P.O. Box 12157, Austin, Texas 78711, 1-800-803-9202, 512-463-6599,{" "}
               <a href="https://www.tdlr.texas.gov" target="_blank" rel="noopener noreferrer" className="underline hover:text-white/70 transition-colors">www.tdlr.texas.gov</a>
             </p>
+            <div className="mt-4 flex items-center gap-3">
+              <a
+                href="https://www.facebook.com/profile.php?id=61553264866519"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Mabry's Air Conditioning & Heating on Facebook"
+                className="flex items-center gap-2 text-white/70 hover:text-white transition-colors text-sm"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
+                Follow us on Facebook
+              </a>
+            </div>
           </div>
 
           <div>
