@@ -228,6 +228,20 @@ export default function AlvinPage() {
                 </div>
               </div>
 
+              {/* Map */}
+              <div className="mt-8 rounded-2xl overflow-hidden border border-gray-200">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.820954145225!2d-95.24747572405899!3d29.40479337525195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864088b4552e3209%3A0xf3197ebe01c01386!2sMabry%27s%20Air%20Conditioning%20%26%20Heating%2C%20Inc.!5e0!3m2!1sen!2sus!4v1777494176144!5m2!1sen!2sus"
+                  width="100%"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Mabry's Air Conditioning & Heating — 2110 S Gordon St, Alvin TX"
+                />
+              </div>
+
               {/* CTA */}
               <div className="mt-8 p-6 bg-accent/10 rounded-xl border border-accent/20">
                 <h4 className="font-bold text-primary mb-2">Ready to Schedule Service in Alvin?</h4>
