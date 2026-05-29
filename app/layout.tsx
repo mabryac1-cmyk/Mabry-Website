@@ -183,6 +183,7 @@ const businessSchema = {
   },
   "sameAs": [
     "https://www.facebook.com/profile.php?id=61553264866519",
+    "https://www.instagram.com/mabryac/",
     "https://www.bbb.org/us/tx/alvin/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805",
     "https://www.yelp.com/biz/mabrys-air-conditioning-and-heating-friendswood-3",
     "https://www.yelp.com/biz/mabrys-air-conditioning-and-heating-alvin-2",
