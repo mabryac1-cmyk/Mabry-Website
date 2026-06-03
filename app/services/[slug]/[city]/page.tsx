@@ -295,6 +295,16 @@ export default async function ServiceCityPage({
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
 
+              {/* Pricing cross-link */}
+              <div className="mb-6 p-4 bg-primary/5 rounded-xl border border-primary/10 text-sm flex items-center justify-between gap-4">
+                <span className="text-primary">
+                  <strong>Want to see pricing before you call?</strong> We publish all our rates upfront.
+                </span>
+                <Link href="/pricing" className="text-accent font-semibold hover:text-accent/80 whitespace-nowrap transition-colors">
+                  View {location.name} HVAC pricing →
+                </Link>
+              </div>
+
               {/* ── CITY-SPECIFIC INTRO ── */}
               <div className="prose prose-lg max-w-none mb-8">
                 {slug === "ac-repair" && (

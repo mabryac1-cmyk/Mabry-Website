@@ -109,7 +109,10 @@ export function Header() {
             <Link href="/" className="text-sm font-semibold hover:text-accent transition-colors">
               Home
             </Link>
-            
+            <Link href="/pricing" className="text-sm font-semibold hover:text-accent transition-colors">
+              Pricing
+            </Link>
+
             <div className="relative group" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
               <button className="flex items-center gap-1 text-sm font-semibold hover:text-accent transition-colors py-2">
                 Services <ChevronDown className="w-4 h-4" />
@@ -179,6 +182,9 @@ export function Header() {
           <div className="px-4 py-6 space-y-4">
             <Link href="/" className="block text-lg font-semibold" onClick={() => setIsOpen(false)}>
               Home
+            </Link>
+            <Link href="/pricing" className="block text-lg font-semibold" onClick={() => setIsOpen(false)}>
+              Pricing
             </Link>
             <div className="space-y-2">
               <p className="text-sm font-bold text-muted-foreground uppercase">Services</p>
