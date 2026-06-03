@@ -33,15 +33,46 @@ const pricingSchema = {
       {
         "@type": "ListItem",
         position: 1,
-        name: "Service Call",
-        description: "Flat $79 service call — diagnosis and upfront quote before any work begins",
+        item: {
+          "@type": "Service",
+          name: "HVAC Service Call & Diagnostic",
+          description:
+            "Flat $79 service call — full system diagnosis and upfront written quote before any work begins. No hourly charges, no hidden fees.",
+          provider: { "@id": "https://mabryac.com/#business" },
+          areaServed: "Greater Houston, TX",
+          offers: {
+            "@type": "Offer",
+            price: "79.00",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+            url: "https://mabryac.com/pricing",
+            priceValidUntil: "2026-12-31",
+          },
+        },
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: "AC Installation",
-        description:
-          "Full system installation pricing for Trane TruComfort, Trane single-stage, and RunTru equipment",
+        item: {
+          "@type": "Service",
+          name: "AC Installation",
+          description:
+            "Full residential AC system installation — Trane TruComfort variable-speed, Trane single-stage, and RunTru equipment. Flat-rate installation pricing with no hidden fees.",
+          provider: { "@id": "https://mabryac.com/#business" },
+          areaServed: "Greater Houston, TX",
+        },
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        item: {
+          "@type": "Service",
+          name: "AC & Heating Repair",
+          description:
+            "Flat-rate residential HVAC repair pricing. Diagnosis fee waived when repair is performed. Upfront quote before any work begins.",
+          provider: { "@id": "https://mabryac.com/#business" },
+          areaServed: "Greater Houston, TX",
+        },
       },
     ],
   },
