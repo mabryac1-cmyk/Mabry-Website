@@ -28,22 +28,23 @@ export interface ModelInfo {
 // Returns the final customer-facing quote price for a given list price + formula.
 export function quotePrice(listPrice: number, formula: FormulaKey): number {
   const taxMarkup = 1.12; // 12% covers taxes, financing, overhead, unforeseen misc
+  const operatingMultiplier = 1.05; // 5% operating cost inflation adjustment (effective 2026-06-11)
   switch (formula) {
     case "trucomfort_system":
       // TruComfort variable-speed full system (5TTV8X gas/elec, 5TWV8X HP)
-      return Math.round((listPrice + 1000 + 300) * taxMarkup + 9500);
+      return Math.round(((listPrice + 1000 + 300) * taxMarkup + 9500) * operatingMultiplier);
     case "trane_single_system":
       // Trane single-stage full system (5TTR6, 5TTR4, 5TWR6, 5TWR4)
-      return Math.round((listPrice + 300) * taxMarkup + 8500);
+      return Math.round(((listPrice + 300) * taxMarkup + 8500) * operatingMultiplier);
     case "trane_condcoil":
       // Trane single-stage condenser + coil only
-      return Math.round((listPrice + 300) * taxMarkup + 5500);
+      return Math.round(((listPrice + 300) * taxMarkup + 5500) * operatingMultiplier);
     case "runtru_system":
       // RunTru full system (A5AC5 gas/elec, A5HP5 HP)
-      return Math.round((listPrice + 300) * taxMarkup + 8000);
+      return Math.round(((listPrice + 300) * taxMarkup + 8000) * operatingMultiplier);
     case "runtru_condcoil":
       // RunTru condenser + coil only
-      return Math.round((listPrice + 300) * taxMarkup + 5000);
+      return Math.round(((listPrice + 300) * taxMarkup + 5000) * operatingMultiplier);
   }
 }
 
