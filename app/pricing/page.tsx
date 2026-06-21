@@ -201,7 +201,14 @@ export default function PricingPage() {
               className="bg-accent hover:bg-accent/90 text-white font-bold py-4 px-8 rounded-lg flex items-center justify-center gap-2 transition-colors"
             >
               <Phone className="w-5 h-5" />
-              Call Alvin: 281-331-5248
+              281-331-5248
+            </a>
+            <a
+              href="tel:2814828400"
+              className="bg-accent hover:bg-accent/90 text-white font-bold py-4 px-8 rounded-lg flex items-center justify-center gap-2 transition-colors"
+            >
+              <Phone className="w-5 h-5" />
+              281-482-8400
             </a>
             <Link
               href="/contact"
