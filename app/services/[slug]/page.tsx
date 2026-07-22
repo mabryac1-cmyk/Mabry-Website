@@ -63,10 +63,10 @@ const serviceSchema = (service: { name: string; slug: string; description: strin
 });
 
 const goalCompletionCopy: Record<string, string> = {
-  "ac-repair": "Need AC repair in the Greater Houston area? Our licensed HVAC technicians serve Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake, League City, and surrounding communities with fast, honest-priced AC repair.",
-  "ac-installation": "Need a new AC system in the Greater Houston area? We serve Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake, League City, and surrounding communities with energy-efficient installations and expert sizing.",
-  "heating-repair": "Heater not working in the Greater Houston area? Our licensed technicians serve Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake, League City, and surrounding communities with fast heating repair and same-day availability.",
-  "ac-maintenance": "Schedule your AC or heating tune-up anywhere in the Greater Houston area. We serve Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake, League City, and surrounding communities. Annual maintenance prevents costly breakdowns all year.",
+  "ac-repair": "Need AC repair in the Greater Houston area? Our licensed HVAC technicians serve Alvin, Friendswood, Pearland, Manvel, Clear Lake, League City, Deer Park, Pasadena, and surrounding communities with fast, honest-priced AC repair.",
+  "ac-installation": "Need a new AC system in the Greater Houston area? We serve Alvin, Friendswood, Pearland, Manvel, Clear Lake, League City, Deer Park, Pasadena, and surrounding communities with energy-efficient installations and expert sizing.",
+  "heating-repair": "Heater not working in the Greater Houston area? Our licensed technicians serve Alvin, Friendswood, Pearland, Manvel, Clear Lake, League City, Deer Park, Pasadena, and surrounding communities with fast heating repair and same-day availability.",
+  "ac-maintenance": "Schedule your AC or heating tune-up anywhere in the Greater Houston area. We serve Alvin, Friendswood, Pearland, Manvel, Clear Lake, League City, Deer Park, Pasadena, and surrounding communities. Annual maintenance prevents costly breakdowns all year.",
 };
 
 const dualPhoneButtons = [
@@ -96,7 +96,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   return {
     title: metaTitle,
-    description: `${service.description} Serving Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake, League City & the greater Houston area. License ${businessInfo.license}. Call ${businessInfo.phone}.`,
+    description: `${service.description} Serving Alvin, Friendswood, Pearland, Manvel, Clear Lake, League City, Deer Park, Pasadena & the greater Houston area. License ${businessInfo.license}. Call ${businessInfo.phone}.`,
     alternates: {
       canonical: `/services/${slug}`,
     },

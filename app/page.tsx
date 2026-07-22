@@ -90,7 +90,7 @@ export default function Home() {
             </div>
 
             <p className="text-lg text-white/90 max-w-lg leading-relaxed">
-              Proudly serving Alvin, Friendswood, Pearland, Sugar Land, Bellaire, Clear Lake, League City, and communities throughout the Greater Houston area. Licensed residential HVAC — {businessInfo.license}.
+              Proudly serving Alvin, Friendswood, Pearland, Manvel, Clear Lake, League City, Deer Park, Pasadena, and communities throughout the Greater Houston area. Licensed residential HVAC — {businessInfo.license}.
             </p>
 
             <p className="text-sm text-white/70">
@@ -190,7 +190,7 @@ export default function Home() {
                   <span>281-331-5248</span>
                 </a>
                 <p className="text-sm text-muted-foreground pt-2">
-                  Serving South & Southwest Houston — Alvin, Manvel, Sugar Land, Sienna & surrounding communities
+                  Serving South & Southwest Houston — Alvin, Manvel, Pearland, Sienna & surrounding communities
                 </p>
                 <Link href="/areas/alvin" className="inline-flex items-center gap-1 text-sm font-semibold text-accent hover:text-accent/80 transition-colors pt-1">
                   View Alvin Area <ArrowRight className="w-4 h-4" />
@@ -210,7 +210,7 @@ export default function Home() {
                   <span>281-482-8400</span>
                 </a>
                 <p className="text-sm text-muted-foreground pt-2">
-                  Serving Bay Area & Southeast Houston — Friendswood, Pearland, Clear Lake, League City, Bellaire & surrounding communities
+                  Serving Bay Area & Southeast Houston — Friendswood, Clear Lake, League City, Deer Park, Pasadena & surrounding communities
                 </p>
                 <Link href="/areas/friendswood" className="inline-flex items-center gap-1 text-sm font-semibold text-accent hover:text-accent/80 transition-colors pt-1">
                   View Friendswood Area <ArrowRight className="w-4 h-4" />

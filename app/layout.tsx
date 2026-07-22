@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://mabryac.com"),
   title: "Mabry's AC & Heating | Greater Houston Area HVAC Since 1986",
-  description: "Residential AC repair, heating service & installation serving the Greater Houston area since 1986. Alvin, Friendswood, Pearland, Sugar Land, Bellaire & more. BBB A+ rated. Flat-rate pricing. 281-331-5248",
+  description: "Residential AC repair, heating service & installation serving the Greater Houston area since 1986. Alvin, Friendswood, Pearland, Manvel, Deer Park, Pasadena & more. BBB A+ rated. Flat-rate pricing. 281-331-5248",
   alternates: {
     canonical: "/",
   },
