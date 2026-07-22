@@ -167,7 +167,7 @@ export function Header() {
               href="/contact"
               className="bg-accent hover:bg-accent/90 text-white font-bold px-6 py-3 rounded-lg transition-colors"
             >
-              Contact Us
+              Schedule Today
             </Link>
           </nav>
 
@@ -229,7 +229,7 @@ export function Header() {
               className="block w-full text-center bg-accent text-white font-bold py-3 rounded-lg"
               onClick={() => setIsOpen(false)}
             >
-              Contact Us
+              Schedule Today
             </Link>
           </div>
         </div>

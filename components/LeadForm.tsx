@@ -74,9 +74,9 @@ export function LeadForm({ className = "", preselectedService, preselectedCity }
       <div className={`bg-white rounded-2xl p-8 shadow-xl ${className}`}>
         <div className="text-center space-y-4">
           <CheckCircle className="w-16 h-16 text-green-500 mx-auto" />
-          <h3 className="text-2xl font-bold text-primary">Thank You!</h3>
+          <h3 className="text-2xl font-bold text-primary">Thanks — We&apos;ve Got It.</h3>
           <p className="text-muted-foreground">
-            We've received your request and will contact you shortly.
+            We&apos;ve received your request. A real person will call you back shortly.
           </p>
         </div>
       </div>
@@ -85,9 +85,9 @@ export function LeadForm({ className = "", preselectedService, preselectedCity }
 
   return (
     <div className={`bg-white rounded-2xl p-8 shadow-xl ${className}`}>
-      <h3 className="text-2xl font-bold text-primary mb-2">Get a Free Quote</h3>
+      <h3 className="text-2xl font-bold text-primary mb-2">Schedule Today</h3>
       <p className="text-muted-foreground mb-6">
-        No hidden charges. Honest, flat-rate pricing.
+        Same-day service often available. Flat-rate pricing — no hidden charges. A real person calls you back fast.
       </p>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
@@ -176,7 +176,7 @@ export function LeadForm({ className = "", preselectedService, preselectedCity }
           ) : (
             <>
               <Send className="w-5 h-5" />
-              Request Quote
+              Schedule Today
             </>
           )}
         </button>
