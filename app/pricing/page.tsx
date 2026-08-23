@@ -208,9 +208,12 @@ export default function PricingPage() {
             <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-4">
               New AC & Heating System Installation
             </h2>
-            <p className="text-gray-600 text-lg leading-relaxed">
+            <p className="text-gray-600 text-lg leading-relaxed mb-3">
               Complete system pricing starting at these amounts — fully installed by our licensed technicians.
               Use the tool below to build your exact quote based on your home&apos;s specific needs.
+            </p>
+            <p className="text-gray-500 text-base">
+              Serving Alvin, Friendswood, Pearland &amp; Greater Houston since 1986.
             </p>
           </div>
 
