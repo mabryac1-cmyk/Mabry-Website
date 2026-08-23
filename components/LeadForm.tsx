@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import Link from "next/link";
 import { Send, CheckCircle, Loader2 } from "lucide-react";
 
 const leadSchema = z.object({
@@ -85,9 +86,23 @@ export function LeadForm({ className = "", preselectedService, preselectedCity }
 
   return (
     <div className={`bg-white rounded-2xl p-8 shadow-xl ${className}`}>
-      <h3 className="text-2xl font-bold text-primary mb-2">Schedule Today</h3>
-      <p className="text-muted-foreground mb-6">
-        Same-day service often available. Flat-rate pricing — no hidden charges. A real person calls you back fast.
+      {/* Service Call Pricing Ribbon */}
+      <div className="mb-5 p-3 bg-accent/10 rounded-lg border border-accent/30">
+        <p className="text-sm text-gray-800 leading-snug">
+          <span className="font-bold text-primary">$79 Flat-Rate Service Call.</span>{" "}
+          We come out, diagnose the issue, and walk you through the fix — no overtime charges, no surprises.
+        </p>
+        <Link
+          href="/pricing"
+          className="text-xs font-bold text-accent hover:underline mt-1.5 inline-block"
+        >
+          See all our upfront pricing →
+        </Link>
+      </div>
+
+      <h3 className="text-2xl font-bold text-primary mb-1">Schedule Today</h3>
+      <p className="text-muted-foreground mb-5">
+        Same-day service often available. A real person calls you back fast.
       </p>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
