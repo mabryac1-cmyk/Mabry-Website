@@ -212,7 +212,7 @@ export default function PricingPage() {
               Complete system pricing starting at these amounts — fully installed by our licensed technicians.
               Use the tool below to build your exact quote based on your home&apos;s specific needs.
             </p>
-            <p className="text-gray-500 text-base">
+            <p className="text-gray-600 text-lg leading-relaxed">
               Serving Alvin, Friendswood, Pearland &amp; Greater Houston since 1986.
             </p>
           </div>
