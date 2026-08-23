@@ -82,18 +82,78 @@ export default function FriendswoodPage() {
       "@id": "https://mabryac.com/#business"
     },
     "mainEntity": {
-      "@type": "Service",
-      "name": "AC Repair & HVAC Service in Friendswood, TX",
-      "provider": {
-        "@type": "HVACBusiness",
-        "@id": "https://mabryac.com/#business"
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Friendswood",
-        "addressRegion": "TX"
-      },
-      "telephone": "+1-281-482-8400"
+      "@type": "ItemList",
+      "name": "HVAC Services & Installation Pricing in Friendswood, TX",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Service",
+            "name": "AC Repair & HVAC Service in Friendswood, TX",
+            "provider": { "@id": "https://mabryac.com/#business" },
+            "areaServed": { "@type": "City", "name": "Friendswood", "addressRegion": "TX" },
+            "telephone": "+1-281-482-8400"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Service",
+            "name": "RunTru by Trane AC & Heating System Installation in Friendswood, TX — Value Tier",
+            "description": "Complete new RunTru by Trane AC and heating system installation for Friendswood homeowners. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Serving the Bay Area since 1986.",
+            "provider": { "@id": "https://mabryac.com/#business" },
+            "areaServed": { "@type": "City", "name": "Friendswood", "addressRegion": "TX" },
+            "offers": {
+              "@type": "Offer",
+              "price": "11480.00",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://mabryac.com/pricing",
+              "priceValidUntil": "2026-12-31"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Service",
+            "name": "Trane Single-Stage AC & Heating System Installation in Friendswood, TX — Standard Tier",
+            "description": "Complete new Trane single-stage AC and heating system installation for Friendswood homeowners — our most popular installation tier. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Serving the Bay Area since 1986.",
+            "provider": { "@id": "https://mabryac.com/#business" },
+            "areaServed": { "@type": "City", "name": "Friendswood", "addressRegion": "TX" },
+            "offers": {
+              "@type": "Offer",
+              "price": "12660.00",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://mabryac.com/pricing",
+              "priceValidUntil": "2026-12-31"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Service",
+            "name": "Trane TruComfort Variable-Speed AC & Heating System Installation in Friendswood, TX — Premium Tier",
+            "description": "Complete new Trane TruComfort variable-speed AC and heating system installation for Friendswood homeowners — Trane's flagship premium tier with whisper-quiet operation and lowest utility bills. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Serving the Bay Area since 1986.",
+            "provider": { "@id": "https://mabryac.com/#business" },
+            "areaServed": { "@type": "City", "name": "Friendswood", "addressRegion": "TX" },
+            "offers": {
+              "@type": "Offer",
+              "price": "17357.00",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://mabryac.com/pricing",
+              "priceValidUntil": "2026-12-31"
+            }
+          }
+        }
+      ]
     }
   };
 

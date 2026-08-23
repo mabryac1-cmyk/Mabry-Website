@@ -82,18 +82,78 @@ export default function AlvinPage() {
       "@id": "https://mabryac.com/#business"
     },
     "mainEntity": {
-      "@type": "Service",
-      "name": "AC Repair & HVAC Service in Alvin, TX",
-      "provider": {
-        "@type": "HVACBusiness",
-        "@id": "https://mabryac.com/#business"
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Alvin",
-        "addressRegion": "TX"
-      },
-      "telephone": "+1-281-331-5248"
+      "@type": "ItemList",
+      "name": "HVAC Services & Installation Pricing in Alvin, TX",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Service",
+            "name": "AC Repair & HVAC Service in Alvin, TX",
+            "provider": { "@id": "https://mabryac.com/#business" },
+            "areaServed": { "@type": "City", "name": "Alvin", "addressRegion": "TX" },
+            "telephone": "+1-281-331-5248"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Service",
+            "name": "RunTru by Trane AC & Heating System Installation in Alvin, TX — Value Tier",
+            "description": "Complete new RunTru by Trane AC and heating system installation for Alvin homeowners. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Family-owned and operated at 2110 S Gordon St in Alvin since 1986.",
+            "provider": { "@id": "https://mabryac.com/#business" },
+            "areaServed": { "@type": "City", "name": "Alvin", "addressRegion": "TX" },
+            "offers": {
+              "@type": "Offer",
+              "price": "11480.00",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://mabryac.com/pricing",
+              "priceValidUntil": "2026-12-31"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Service",
+            "name": "Trane Single-Stage AC & Heating System Installation in Alvin, TX — Standard Tier",
+            "description": "Complete new Trane single-stage AC and heating system installation for Alvin homeowners — our most popular installation tier. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Family-owned since 1986.",
+            "provider": { "@id": "https://mabryac.com/#business" },
+            "areaServed": { "@type": "City", "name": "Alvin", "addressRegion": "TX" },
+            "offers": {
+              "@type": "Offer",
+              "price": "12660.00",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://mabryac.com/pricing",
+              "priceValidUntil": "2026-12-31"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Service",
+            "name": "Trane TruComfort Variable-Speed AC & Heating System Installation in Alvin, TX — Premium Tier",
+            "description": "Complete new Trane TruComfort variable-speed AC and heating system installation for Alvin homeowners — Trane's flagship premium tier with whisper-quiet operation and lowest utility bills. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Family-owned since 1986.",
+            "provider": { "@id": "https://mabryac.com/#business" },
+            "areaServed": { "@type": "City", "name": "Alvin", "addressRegion": "TX" },
+            "offers": {
+              "@type": "Offer",
+              "price": "17357.00",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://mabryac.com/pricing",
+              "priceValidUntil": "2026-12-31"
+            }
+          }
+        }
+      ]
     }
   };
 
