@@ -55,11 +55,25 @@ const pricingSchema = {
         position: 2,
         item: {
           "@type": "Service",
-          name: "AC Installation",
+          name: "RunTru by Trane AC & Heating Installation — Value Tier",
           description:
-            "Full residential AC system installation — Trane TruComfort variable-speed, Trane single-stage, and RunTru equipment. Flat-rate installation pricing with no hidden fees.",
+            "Complete RunTru by Trane AC and heating system installation, fully installed. Reliable Trane quality at our most accessible price point. Up to 15.2 SEER2. Serving Alvin, Friendswood, Pearland and the Greater Houston area.",
           provider: { "@id": "https://mabryac.com/#business" },
           areaServed: "Greater Houston, TX",
+          offers: {
+            "@type": "Offer",
+            price: "11480.00",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+            url: "https://mabryac.com/pricing",
+            priceValidUntil: "2026-12-31",
+            priceSpecification: {
+              "@type": "PriceSpecification",
+              price: "11480.00",
+              priceCurrency: "USD",
+              valueAddedTaxIncluded: false,
+            },
+          },
         },
       },
       {
@@ -67,9 +81,61 @@ const pricingSchema = {
         position: 3,
         item: {
           "@type": "Service",
+          name: "Trane Single-Stage AC & Heating Installation — Standard Tier",
+          description:
+            "Complete Trane single-stage AC and heating system installation, fully installed. Our most popular tier — legendary Trane reliability with quiet, efficient performance. Up to 16 SEER2. Serving Alvin, Friendswood, Pearland and the Greater Houston area.",
+          provider: { "@id": "https://mabryac.com/#business" },
+          areaServed: "Greater Houston, TX",
+          offers: {
+            "@type": "Offer",
+            price: "12660.00",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+            url: "https://mabryac.com/pricing",
+            priceValidUntil: "2026-12-31",
+            priceSpecification: {
+              "@type": "PriceSpecification",
+              price: "12660.00",
+              priceCurrency: "USD",
+              valueAddedTaxIncluded: false,
+            },
+          },
+        },
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        item: {
+          "@type": "Service",
+          name: "Trane TruComfort Variable-Speed AC & Heating Installation — Premium Tier",
+          description:
+            "Complete Trane TruComfort variable-speed AC and heating system installation, fully installed. Trane's flagship variable-speed system — whisper-quiet operation, precisely controlled comfort, and the lowest energy bills. Up to 18 SEER2. Serving Alvin, Friendswood, Pearland and the Greater Houston area.",
+          provider: { "@id": "https://mabryac.com/#business" },
+          areaServed: "Greater Houston, TX",
+          offers: {
+            "@type": "Offer",
+            price: "17357.00",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+            url: "https://mabryac.com/pricing",
+            priceValidUntil: "2026-12-31",
+            priceSpecification: {
+              "@type": "PriceSpecification",
+              price: "17357.00",
+              priceCurrency: "USD",
+              valueAddedTaxIncluded: false,
+            },
+          },
+        },
+      },
+      {
+        "@type": "ListItem",
+        position: 5,
+        item: {
+          "@type": "Service",
           name: "AC & Heating Repair",
           description:
-            "Flat-rate residential HVAC repair pricing. Diagnosis fee waived when repair is performed. Upfront quote before any work begins.",
+            "Flat-rate residential HVAC repair pricing. Diagnosis fee waived when repair is performed. Upfront quote before any work begins. Serving Alvin, Friendswood, Pearland and the Greater Houston area.",
           provider: { "@id": "https://mabryac.com/#business" },
           areaServed: "Greater Houston, TX",
         },
@@ -128,6 +194,144 @@ export default function PricingPage() {
               <CheckCircle className="w-4 h-4 text-accent" />
               Serving Greater Houston Since 1986
             </span>
+          </div>
+        </div>
+      </section>
+
+      {/* Installation Tier Cards — Option B (visible pricing above the wizard) */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
+              Authorized Trane® Dealer
+            </div>
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-4">
+              New AC & Heating System Installation
+            </h2>
+            <p className="text-gray-600 text-lg leading-relaxed mb-3">
+              Complete system pricing starting at these amounts — fully installed by our licensed technicians.
+              Use the tool below to build your exact quote based on your home&apos;s specific needs.
+            </p>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              Serving Alvin, Friendswood, Pearland &amp; Greater Houston since 1986.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {/* Value Tier — RunTru */}
+            <div className="rounded-2xl border-2 border-gray-200 p-8 bg-gray-50 shadow-sm flex flex-col">
+              <div className="text-xs font-bold uppercase tracking-widest text-gray-600 mb-3">
+                Value Tier
+              </div>
+              <h3 className="text-2xl font-black text-primary mb-2">RunTru by Trane</h3>
+              <p className="text-sm text-gray-600 mb-6 leading-relaxed">
+                Reliable Trane quality at our most accessible price point. A major upgrade for budget-conscious homeowners.
+              </p>
+              <div className="mb-6">
+                <span className="text-sm text-gray-600">Starting at</span>
+                <div className="text-4xl font-black text-primary">$11,480</div>
+                <div className="text-xs text-gray-500 mt-1">Complete system, fully installed</div>
+              </div>
+              <ul className="space-y-2 text-sm text-gray-700 mb-6 flex-grow">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                  <span>Up to 15.2 SEER2 efficiency</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                  <span>Full manufacturer warranty</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                  <span>Professional installation included</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                  <span>AC + heating system, complete</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Standard Tier — Trane Single-Stage (Most Popular) */}
+            <div className="relative rounded-2xl border-2 border-accent p-8 bg-white shadow-xl flex flex-col">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wide shadow">
+                Most Popular
+              </div>
+              <div className="text-xs font-bold uppercase tracking-widest text-accent mb-3">
+                Standard Tier
+              </div>
+              <h3 className="text-2xl font-black text-primary mb-2">Trane Single-Stage</h3>
+              <p className="text-sm text-gray-600 mb-6 leading-relaxed">
+                Our most popular tier — legendary Trane reliability with quiet, efficient performance at a smart price.
+              </p>
+              <div className="mb-6">
+                <span className="text-sm text-gray-600">Starting at</span>
+                <div className="text-4xl font-black text-primary">$12,660</div>
+                <div className="text-xs text-gray-500 mt-1">Complete system, fully installed</div>
+              </div>
+              <ul className="space-y-2 text-sm text-gray-700 mb-6 flex-grow">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                  <span>Up to 16 SEER2 efficiency</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                  <span>Quieter than standard systems</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                  <span>Full manufacturer warranty</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                  <span>Professional installation included</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Premium Tier — Trane TruComfort */}
+            <div className="rounded-2xl border-2 border-primary/20 p-8 bg-primary/5 shadow-sm flex flex-col">
+              <div className="text-xs font-bold uppercase tracking-widest text-primary mb-3">
+                Premium Tier
+              </div>
+              <h3 className="text-2xl font-black text-primary mb-2">Trane TruComfort®</h3>
+              <p className="text-sm text-gray-600 mb-6 leading-relaxed">
+                Trane&apos;s flagship variable-speed system. Whisper-quiet, precisely controlled comfort, and the lowest energy bills.
+              </p>
+              <div className="mb-6">
+                <span className="text-sm text-gray-600">Starting at</span>
+                <div className="text-4xl font-black text-primary">$17,357</div>
+                <div className="text-xs text-gray-500 mt-1">Complete system, fully installed</div>
+              </div>
+              <ul className="space-y-2 text-sm text-gray-700 mb-6 flex-grow">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                  <span>Up to 18 SEER2 efficiency</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                  <span>Variable-speed for precise comfort</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                  <span>Whisper-quiet operation</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                  <span>Lowest monthly utility bills</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-10 text-center max-w-2xl mx-auto">
+            <p className="text-sm text-gray-600 mb-3">
+              Final price depends on system size, configuration, and home-specific factors like ductwork and electrical requirements.
+              Every quote is honest and upfront — no hidden fees.
+            </p>
+            <p className="text-base text-primary font-bold">
+              ↓ Get your exact price with the tool below ↓
+            </p>
           </div>
         </div>
       </section>
