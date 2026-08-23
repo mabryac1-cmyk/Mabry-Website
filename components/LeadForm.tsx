@@ -89,7 +89,7 @@ export function LeadForm({ className = "", preselectedService, preselectedCity }
       {/* Service Call Pricing Ribbon */}
       <div className="mb-5 p-3 bg-accent/10 rounded-lg border border-accent/30">
         <p className="text-sm text-gray-800 leading-snug">
-          <span className="font-bold text-primary">💰 $79 Flat-Rate Service Call.</span>{" "}
+          <span className="font-bold text-primary">$79 Flat-Rate Service Call.</span>{" "}
           We come out, diagnose the issue, and walk you through the fix — no overtime charges, no surprises.
         </p>
         <Link
