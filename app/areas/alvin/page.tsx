@@ -228,6 +228,25 @@ export default function AlvinPage() {
                 </div>
               </div>
 
+              {/* New System Installation Pricing */}
+              <div className="mt-8 p-8 bg-primary/5 rounded-2xl border-2 border-primary/10">
+                <div className="text-xs font-bold uppercase tracking-widest text-accent mb-3">
+                  New System Installation Pricing
+                </div>
+                <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                  For our Alvin neighbors and the surrounding community, our flat-rate installation
+                  pricing keeps things simple. Complete new AC &amp; heating system installations start at
+                  just <strong className="text-primary">$11,480</strong> — the same honest, transparent
+                  approach we&apos;ve used since we opened our doors on South Gordon Street in 1986.
+                </p>
+                <Link
+                  href="/pricing"
+                  className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+                >
+                  See Full Pricing Details →
+                </Link>
+              </div>
+
               {/* Map */}
               <div className="mt-8 rounded-2xl overflow-hidden border border-gray-200">
                 <iframe
