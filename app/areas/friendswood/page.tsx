@@ -228,6 +228,26 @@ export default function FriendswoodPage() {
                 </div>
               </div>
 
+              {/* New System Installation Pricing */}
+              <div className="mt-8 p-8 bg-primary/5 rounded-2xl border-2 border-primary/10">
+                <div className="text-xs font-bold uppercase tracking-widest text-accent mb-3">
+                  New System Installation Pricing
+                </div>
+                <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                  Friendswood homeowners have several options when it&apos;s time to replace their AC &amp;
+                  heating system. Our most popular tier — the trusted Trane Single-Stage — starts at
+                  <strong className="text-primary"> $12,660</strong> for a complete installation. From the
+                  Forest of Friendswood to communities throughout the Bay Area, we keep our pricing flat-rate
+                  and straightforward. No surprises.
+                </p>
+                <Link
+                  href="/pricing"
+                  className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+                >
+                  See Full Pricing Details →
+                </Link>
+              </div>
+
               {/* CTA */}
               <div className="mt-8 p-6 bg-accent/10 rounded-xl border border-accent/20">
                 <h4 className="font-bold text-primary mb-2">Ready to Schedule Service in Friendswood?</h4>
