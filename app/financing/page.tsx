@@ -97,9 +97,6 @@ export default function FinancingPage() {
                 <DollarSign className="w-6 h-6 shrink-0" />
                 Apply Here — It Only Takes a Moment
               </a>
-              <p className="text-muted-foreground text-xs mt-4">
-                Applying does not affect your credit score
-              </p>
             </div>
           </div>
 
