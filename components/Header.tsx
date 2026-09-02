@@ -112,6 +112,9 @@ export function Header() {
             <Link href="/pricing" className="text-sm font-semibold hover:text-accent transition-colors">
               Pricing
             </Link>
+            <Link href="/find-your-size" className="text-sm font-semibold hover:text-accent transition-colors">
+              Find Your Size
+            </Link>
 
             <div className="relative group" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
               <button className="flex items-center gap-1 text-sm font-semibold hover:text-accent transition-colors py-2">
@@ -185,6 +188,9 @@ export function Header() {
             </Link>
             <Link href="/pricing" className="block text-lg font-semibold" onClick={() => setIsOpen(false)}>
               Pricing
+            </Link>
+            <Link href="/find-your-size" className="block text-lg font-semibold" onClick={() => setIsOpen(false)}>
+              Find Your Size
             </Link>
             <div className="space-y-2">
               <p className="text-sm font-bold text-muted-foreground uppercase">Services</p>
