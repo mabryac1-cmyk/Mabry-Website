@@ -42,42 +42,44 @@ function computeTonnage(inputs: {
 }) {
   const { sqft, bedrooms, age, windows, sun, ceiling } = inputs;
 
+  // Houston Zone 2 baselines (25°TD design, all-in load per sqft)
+  // Calibrated against actual ACCA Manual J calculations for local homes.
+  // These already account for ductwork and safety margin at typical values —
+  // do NOT stack additional duct/safety multipliers on top.
   const baseTable: Record<HomeAge, Record<WindowType, number>> = {
-    older: { single: 35, double: 30 },
-    average: { single: 30, double: 25 },
-    newer: { single: 25, double: 18 },
+    older: { single: 26, double: 22 },
+    average: { single: 22, double: 18 },
+    newer: { single: 20, double: 16 },
   };
   const baseBtuPerSqft = baseTable[age][windows];
 
   const ceilingMult: Record<CeilingHeight, number> = {
     "8ft": 1.0,
-    "9ft": 1.08,
-    "10ft+": 1.15,
+    "9ft": 1.05,
+    "10ft+": 1.10,
   };
 
   const sunMult: Record<SunExposure, number> = {
-    shaded: 0.9,
+    shaded: 0.95,
     average: 1.0,
-    full: 1.1,
+    full: 1.05,
   };
 
   const envelope = sqft * baseBtuPerSqft * ceilingMult[ceiling] * sunMult[sun];
+  // People load: 2 people per bedroom × 530 BTU (sensible + latent combined)
   const peopleLoad = bedrooms * 2 * 530;
   const appliances = 1200;
 
-  const subtotal = envelope + peopleLoad + appliances;
-  const withDuct = subtotal * 1.15;
-  const withSafety = withDuct * 1.10;
+  const total = envelope + peopleLoad + appliances;
 
-  const tonsRaw = withSafety / 12000;
+  const tonsRaw = total / 12000;
   const tonsRounded = Math.ceil(tonsRaw * 2) / 2;
 
   return {
     envelope: Math.round(envelope),
     peopleLoad: Math.round(peopleLoad),
     appliances,
-    withDuct: Math.round(withDuct),
-    withSafety: Math.round(withSafety),
+    total: Math.round(total),
     tonsRaw,
     tons: tonsRounded,
     baseBtuPerSqft,
@@ -309,7 +311,7 @@ export default function SizingTool() {
               <span className="text-2xl text-white/80 font-bold">tons</span>
             </div>
             <div className="text-white/70 text-sm mb-6">
-              ({result.withSafety.toLocaleString()} BTUs)
+              ({result.total.toLocaleString()} BTUs)
             </div>
             <Link
               href="/pricing"
@@ -336,17 +338,12 @@ export default function SizingTool() {
                 <span>Appliances</span>
                 <span className="font-semibold">{result.appliances.toLocaleString()} BTU</span>
               </div>
-              <div className="flex justify-between text-gray-700 pt-2 border-t border-gray-100">
-                <span>+ Duct load (15%)</span>
-                <span className="font-semibold">{(result.withDuct - result.envelope - result.peopleLoad - result.appliances).toLocaleString()} BTU</span>
-              </div>
-              <div className="flex justify-between text-gray-700">
-                <span>+ Safety margin (10%)</span>
-                <span className="font-semibold">{(result.withSafety - result.withDuct).toLocaleString()} BTU</span>
-              </div>
               <div className="flex justify-between text-primary pt-2 border-t border-gray-100 font-bold">
                 <span>Total load</span>
-                <span>{result.withSafety.toLocaleString()} BTU</span>
+                <span>{result.total.toLocaleString()} BTU</span>
+              </div>
+              <div className="pt-2 text-xs text-gray-500 leading-relaxed">
+                Baselines calibrated for Houston Zone 2 design conditions (75° inside, 100° outside, 25°TD). Duct and safety margins already included.
               </div>
             </div>
           </div>
