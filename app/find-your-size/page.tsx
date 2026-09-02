@@ -110,17 +110,15 @@ export default function FindYourSizePage() {
           {/* Disclosure footnote */}
           <div className="max-w-4xl mx-auto mt-10 bg-white border-l-4 border-accent rounded-r-lg p-6 shadow-sm">
             <p className="text-sm text-gray-700 leading-relaxed">
-              <span className="font-bold text-primary">Please note:</span> This
-              sizing tool provides a general &quot;ball park&quot; estimate based
-              on the information you enter. Actual system sizing depends on many
-              build variables — insulation quality, ductwork condition, home
-              orientation, window placement, air-sealing, and more — that only an
-              in-home evaluation can properly assess. Every home is different. For
-              an accurate recommendation and quote,{" "}
-              <Link href="/contact" className="text-accent font-bold hover:underline">
-                schedule a free in-home consultation
-              </Link>{" "}
-              with one of our comfort advisors.
+              This sizing tool provides a general Manual J estimate based on the
+              information you enter. Actual system sizing depends on many build
+              variables — insulation quality, ductwork condition, home
+              orientation, window placement, air-sealing, and more.{" "}
+              <a href="tel:2813315248" className="text-accent font-bold hover:underline">
+                Call us
+              </a>{" "}
+              to schedule a free in-home consultation, quote, or estimate with
+              one of our comfort advisors.
             </p>
           </div>
         </div>

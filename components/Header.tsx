@@ -113,7 +113,7 @@ export function Header() {
               Pricing
             </Link>
             <Link href="/find-your-size" className="text-sm font-semibold hover:text-accent transition-colors">
-              Find Your Size
+              Size
             </Link>
 
             <div className="relative group" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
@@ -190,7 +190,7 @@ export function Header() {
               Pricing
             </Link>
             <Link href="/find-your-size" className="block text-lg font-semibold" onClick={() => setIsOpen(false)}>
-              Find Your Size
+              Size
             </Link>
             <div className="space-y-2">
               <p className="text-sm font-bold text-muted-foreground uppercase">Services</p>
