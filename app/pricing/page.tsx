@@ -62,14 +62,14 @@ const pricingSchema = {
           areaServed: "Greater Houston, TX",
           offers: {
             "@type": "Offer",
-            price: "11480.00",
+            price: "12140.00",
             priceCurrency: "USD",
             availability: "https://schema.org/InStock",
             url: "https://mabryac.com/pricing",
             priceValidUntil: "2026-12-31",
             priceSpecification: {
               "@type": "PriceSpecification",
-              price: "11480.00",
+              price: "12140.00",
               priceCurrency: "USD",
               valueAddedTaxIncluded: false,
             },
@@ -81,21 +81,21 @@ const pricingSchema = {
         position: 3,
         item: {
           "@type": "Service",
-          name: "Trane Single-Stage AC & Heating Installation — Standard Tier",
+          name: "Trane Single-Stage AC & Heating Installation — Choice Tier",
           description:
             "Complete Trane single-stage AC and heating system installation, fully installed. Our most popular tier — legendary Trane reliability with quiet, efficient performance. Up to 16 SEER2. Serving Alvin, Friendswood, Pearland and the Greater Houston area.",
           provider: { "@id": "https://mabryac.com/#business" },
           areaServed: "Greater Houston, TX",
           offers: {
             "@type": "Offer",
-            price: "12660.00",
+            price: "13637.00",
             priceCurrency: "USD",
             availability: "https://schema.org/InStock",
             url: "https://mabryac.com/pricing",
             priceValidUntil: "2026-12-31",
             priceSpecification: {
               "@type": "PriceSpecification",
-              price: "12660.00",
+              price: "13637.00",
               priceCurrency: "USD",
               valueAddedTaxIncluded: false,
             },
@@ -107,21 +107,21 @@ const pricingSchema = {
         position: 4,
         item: {
           "@type": "Service",
-          name: "Trane TruComfort Variable-Speed AC & Heating Installation — Premium Tier",
+          name: "Trane TruComfort Variable-Speed AC & Heating Installation — Premier Tier",
           description:
             "Complete Trane TruComfort variable-speed AC and heating system installation, fully installed. Trane's flagship variable-speed system — whisper-quiet operation, precisely controlled comfort, and the lowest energy bills. Up to 18 SEER2. Serving Alvin, Friendswood, Pearland and the Greater Houston area.",
           provider: { "@id": "https://mabryac.com/#business" },
           areaServed: "Greater Houston, TX",
           offers: {
             "@type": "Offer",
-            price: "17357.00",
+            price: "18272.00",
             priceCurrency: "USD",
             availability: "https://schema.org/InStock",
             url: "https://mabryac.com/pricing",
             priceValidUntil: "2026-12-31",
             priceSpecification: {
               "@type": "PriceSpecification",
-              price: "17357.00",
+              price: "18272.00",
               priceCurrency: "USD",
               valueAddedTaxIncluded: false,
             },
@@ -221,7 +221,7 @@ export default function PricingPage() {
             {/* Value Tier — RunTru */}
             <div className="rounded-2xl border-2 border-gray-200 p-8 bg-gray-50 shadow-sm flex flex-col">
               <div className="text-xs font-bold uppercase tracking-widest text-gray-600 mb-3">
-                Value Tier
+                Value
               </div>
               <h3 className="text-2xl font-black text-primary mb-2">RunTru by Trane</h3>
               <p className="text-sm text-gray-600 mb-6 leading-relaxed">
@@ -229,7 +229,7 @@ export default function PricingPage() {
               </p>
               <div className="mb-6">
                 <span className="text-sm text-gray-600">Starting at</span>
-                <div className="text-4xl font-black text-primary">$11,480</div>
+                <div className="text-4xl font-black text-primary">$12,140</div>
                 <div className="text-xs text-gray-500 mt-1">Complete system, fully installed</div>
               </div>
               <ul className="space-y-2 text-sm text-gray-700 mb-6 flex-grow">
@@ -252,13 +252,13 @@ export default function PricingPage() {
               </ul>
             </div>
 
-            {/* Standard Tier — Trane Single-Stage (Most Popular) */}
+            {/* Choice Tier — Trane Single-Stage (Most Popular) */}
             <div className="relative rounded-2xl border-2 border-accent p-8 bg-white shadow-xl flex flex-col">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wide shadow">
                 Most Popular
               </div>
               <div className="text-xs font-bold uppercase tracking-widest text-accent mb-3">
-                Standard Tier
+                Choice
               </div>
               <h3 className="text-2xl font-black text-primary mb-2">Trane Single-Stage</h3>
               <p className="text-sm text-gray-600 mb-6 leading-relaxed">
@@ -266,7 +266,7 @@ export default function PricingPage() {
               </p>
               <div className="mb-6">
                 <span className="text-sm text-gray-600">Starting at</span>
-                <div className="text-4xl font-black text-primary">$12,660</div>
+                <div className="text-4xl font-black text-primary">$13,637</div>
                 <div className="text-xs text-gray-500 mt-1">Complete system, fully installed</div>
               </div>
               <ul className="space-y-2 text-sm text-gray-700 mb-6 flex-grow">
@@ -289,10 +289,10 @@ export default function PricingPage() {
               </ul>
             </div>
 
-            {/* Premium Tier — Trane TruComfort */}
+            {/* Premier Tier — Trane TruComfort */}
             <div className="rounded-2xl border-2 border-primary/20 p-8 bg-primary/5 shadow-sm flex flex-col">
               <div className="text-xs font-bold uppercase tracking-widest text-primary mb-3">
-                Premium Tier
+                Premier
               </div>
               <h3 className="text-2xl font-black text-primary mb-2">Trane TruComfort®</h3>
               <p className="text-sm text-gray-600 mb-6 leading-relaxed">
@@ -300,7 +300,7 @@ export default function PricingPage() {
               </p>
               <div className="mb-6">
                 <span className="text-sm text-gray-600">Starting at</span>
-                <div className="text-4xl font-black text-primary">$17,357</div>
+                <div className="text-4xl font-black text-primary">$18,272</div>
                 <div className="text-xs text-gray-500 mt-1">Complete system, fully installed</div>
               </div>
               <ul className="space-y-2 text-sm text-gray-700 mb-6 flex-grow">

@@ -103,7 +103,7 @@ export default function PearlandPage() {
             "areaServed": { "@type": "City", "name": "Pearland", "addressRegion": "TX" },
             "offers": {
               "@type": "Offer",
-              "price": "11480.00",
+              "price": "12140.00",
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock",
               "url": "https://mabryac.com/pricing",
@@ -116,13 +116,13 @@ export default function PearlandPage() {
           "position": 3,
           "item": {
             "@type": "Service",
-            "name": "Trane Single-Stage AC & Heating System Installation in Pearland, TX — Standard Tier",
+            "name": "Trane Single-Stage AC & Heating System Installation in Pearland, TX — Choice Tier",
             "description": "Complete new Trane single-stage AC and heating system installation for Pearland homeowners — our most popular installation tier, serving Silverlake, Shadow Creek Ranch, and surrounding neighborhoods. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Family-owned since 1986.",
             "provider": { "@id": "https://mabryac.com/#business" },
             "areaServed": { "@type": "City", "name": "Pearland", "addressRegion": "TX" },
             "offers": {
               "@type": "Offer",
-              "price": "12660.00",
+              "price": "13637.00",
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock",
               "url": "https://mabryac.com/pricing",
@@ -135,13 +135,13 @@ export default function PearlandPage() {
           "position": 4,
           "item": {
             "@type": "Service",
-            "name": "Trane TruComfort Variable-Speed AC & Heating System Installation in Pearland, TX — Premium Tier",
-            "description": "Complete new Trane TruComfort variable-speed AC and heating system installation for Pearland homeowners — Trane's flagship premium tier with whisper-quiet operation and lowest utility bills, serving Silverlake, Shadow Creek Ranch, and surrounding neighborhoods. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Family-owned since 1986.",
+            "name": "Trane TruComfort Variable-Speed AC & Heating System Installation in Pearland, TX — Premier Tier",
+            "description": "Complete new Trane TruComfort variable-speed AC and heating system installation for Pearland homeowners — Trane's flagship Premier tier with whisper-quiet operation and lowest utility bills, serving Silverlake, Shadow Creek Ranch, and surrounding neighborhoods. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Family-owned since 1986.",
             "provider": { "@id": "https://mabryac.com/#business" },
             "areaServed": { "@type": "City", "name": "Pearland", "addressRegion": "TX" },
             "offers": {
               "@type": "Offer",
-              "price": "17357.00",
+              "price": "18272.00",
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock",
               "url": "https://mabryac.com/pricing",
@@ -292,8 +292,8 @@ export default function PearlandPage() {
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
                   Whether you&apos;re in Silverlake, Shadow Creek Ranch, or anywhere across Pearland, we&apos;ve
                   kept our pricing simple for nearly four decades. Complete AC &amp; heating system installations
-                  start at just <strong className="text-primary">$11,480</strong> — with our most popular
-                  Trane Single-Stage tier at <strong className="text-primary">$12,660</strong>. Honest,
+                  start at just <strong className="text-primary">$12,140</strong> — with our most popular
+                  Trane Single-Stage tier at <strong className="text-primary">$13,637</strong>. Honest,
                   flat-rate pricing since 1986.
                 </p>
                 <Link

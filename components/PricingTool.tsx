@@ -62,14 +62,27 @@ export default function PricingTool() {
 
   const goBack = () => {
     if (step === "quote") {
-      if (furnace) setStep("furnaceBtu");
-      else setStep("tonnage");
-    } else if (step === "tonnage") setStep("model");
-    else if (step === "model") setStep("systemType");
-    else if (step === "furnaceBtu") setStep("furnaceTier");
-    else if (step === "furnaceTier") setStep("systemType");
-    else if (step === "systemType") setStep("brand");
-    else if (step === "service") setStep("brand");
+      if (furnace) {
+        setFurnace(null);
+        setStep("furnaceBtu");
+      } else {
+        setTonnage(null);
+        setStep("tonnage");
+      }
+    } else if (step === "tonnage") {
+      setSystem(null);
+      setStep("model");
+    } else if (step === "model") {
+      setStep("systemType");
+    } else if (step === "furnaceBtu") {
+      setFurnaceTier(null);
+      setStep("furnaceTier");
+    } else if (step === "furnaceTier") {
+      setStep("systemType");
+    } else if (step === "systemType") {
+      setSystemType(null);
+      setStep("brand");
+    } else if (step === "service") setStep("brand");
   };
 
   const availableSystemTypes = useMemo<SystemTypeV2[]>(() => {
@@ -211,6 +224,11 @@ export default function PricingTool() {
                 key={t}
                 onClick={() => {
                   setSystemType(t);
+                  // Clear all downstream state so breadcrumb + quote only reflect the current path
+                  setSystem(null);
+                  setTonnage(null);
+                  setFurnaceTier(null);
+                  setFurnace(null);
                   if (t === "furnace") setStep("furnaceTier");
                   else setStep("model");
                 }}
@@ -234,6 +252,7 @@ export default function PricingTool() {
                 key={s.key}
                 onClick={() => {
                   setSystem(s);
+                  setTonnage(null);
                   setStep("tonnage");
                 }}
                 className="group bg-white border-2 border-gray-200 hover:border-accent hover:shadow-lg rounded-2xl p-5 text-left transition-all flex items-center justify-between gap-4"
@@ -284,6 +303,7 @@ export default function PricingTool() {
                 key={t}
                 onClick={() => {
                   setFurnaceTier(t);
+                  setFurnace(null);
                   setStep("furnaceBtu");
                 }}
                 className="group bg-white border-2 border-gray-200 hover:border-accent hover:shadow-lg rounded-2xl p-5 text-left transition-all flex items-center justify-between gap-4"
