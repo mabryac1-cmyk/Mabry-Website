@@ -2647,3 +2647,111 @@ export const STANDALONE_FURNACES: StandaloneFurnace[] = [
   { model: "S8V2C080M5PCB*", cost: 2000 },
   { model: "S8V2C100M5PCB*", cost: 2059 },
 ];
+// ============================================================================
+// V2 HELPERS (Phase 2 additions)
+// ============================================================================
+
+// Furnace tier definitions for the new "Furnace" system type.
+// All three tiers use the "standalone_furnace" scenario at profit $5,500.
+export type FurnaceTier = "standard" | "enhanced" | "twostage_vs";
+
+export const FURNACE_TIER_INFO: Record<FurnaceTier, { name: string; description: string; series: string }> = {
+  standard:    { name: "Standard",              description: "Reliable single-stage 80% AFUE gas furnace.",                 series: "S8B1" },
+  enhanced:    { name: "Enhanced",              description: "Upgraded 80% AFUE single-stage — better build & warranty.",  series: "S8X1" },
+  twostage_vs: { name: "2-Stage Variable Speed", description: "Two-stage variable speed — quieter, more even heat.",        series: "S8V2" },
+};
+
+// Furnaces for a given tier (filters STANDALONE_FURNACES by series prefix)
+export function getFurnacesByTier(tier: FurnaceTier): StandaloneFurnace[] {
+  const info = FURNACE_TIER_INFO[tier];
+  return STANDALONE_FURNACES.filter((f) => f.model.startsWith(info.series));
+}
+
+// Extract BTU size in "40k"/"60k"/"80k"/"100k" form from a furnace model number.
+// Furnace model numbers include the BTU capacity: S8B1B040 = 40k, S8B1B060 = 60k, etc.
+export function furnaceBtuSize(model: string): string {
+  // Match the 040/060/080/100 group after the series letters.
+  const m = model.match(/[A-Z]0?(\d{2,3})M/);
+  if (!m) return "?";
+  return `${parseInt(m[1], 10)}k`;
+}
+
+// Section → (Brand, SystemType) mapping for SYSTEMS_V2 entries.
+export function sectionBrand(section: SectionKey): Brand {
+  return section.startsWith("runtru_") ? "runtru" : "trane";
+}
+export function sectionSystemType(section: SectionKey): SystemType {
+  if (section === "split_gas" || section === "runtru_gas_elec") return "gas";
+  if (section === "split_electric" || section === "runtru_electric") return "electric";
+  if (section === "split_hp" || section === "runtru_hp") return "heatpump";
+  return "condcoil";
+}
+
+// SystemTypeV2 adds "furnace" (Trane only) on top of the existing SystemType.
+export type SystemTypeV2 = SystemType | "furnace";
+
+export const SYSTEM_TYPE_INFO_V2: Record<SystemTypeV2, { name: string; description: string }> = {
+  gas:      { name: "Gas Heat System",       description: "Outdoor unit + gas furnace + coil" },
+  electric: { name: "Electric Heat System",  description: "Outdoor unit + air handler with heat strips" },
+  heatpump: { name: "Heat Pump System",      description: "Outdoor heat pump + air handler" },
+  condcoil: { name: "Condenser + Coil Only", description: "Outdoor unit + coil replacement" },
+  furnace:  { name: "Furnace",               description: "Furnace-only replacement" },
+};
+
+// Systems matching a (brand, systemType) — NOT for "furnace" (that flow uses tiers).
+export function getSystemsByBrandAndType(brand: Brand, systemType: SystemType): SystemV2[] {
+  return SYSTEMS_V2.filter(
+    (s) => sectionBrand(s.section) === brand && sectionSystemType(s.section) === systemType
+  );
+}
+
+// Sort systems for display: Premier > Priority > Choice > Value, then by SEER descending.
+const TIER_ORDER: Record<Tier, number> = { premier: 1, priority: 2, choice: 3, value: 4 };
+// Within-tier order: lower number = shown first (higher SEER first).
+const BASE_ORDER: Record<string, number> = {
+  "5TTV0X": 1, "5TWV0X": 1, // Premier SEER 20 (top)
+  "5TTV8X": 2, "5TWV8X": 2, // Premier SEER 18
+  "5TTR7":  1, "5TWR7":  1, // Priority SEER 17
+  "5TTR6":  1, "5TWR6":  1, // Choice   SEER 16
+  "5TTR4":  2, "5TWR4":  2, // Choice   SEER 14
+  "A5AC5":  1, "A5HP5":  1, // Value    SEER 15
+};
+export function sortSystemsByTier(systems: SystemV2[]): SystemV2[] {
+  return [...systems].sort((a, b) => {
+    const tierDiff = TIER_ORDER[a.tier] - TIER_ORDER[b.tier];
+    if (tierDiff !== 0) return tierDiff;
+    const orderA = BASE_ORDER[a.base] ?? 99;
+    const orderB = BASE_ORDER[b.base] ?? 99;
+    return orderA - orderB;
+  });
+}
+
+// Available system types for a given brand. Trane gets "furnace" too.
+export function getAvailableSystemTypesV2(brand: Brand): SystemTypeV2[] {
+  const set = new Set<SystemTypeV2>();
+  SYSTEMS_V2.filter((s) => sectionBrand(s.section) === brand).forEach((s) => {
+    set.add(sectionSystemType(s.section));
+  });
+  if (brand === "trane") set.add("furnace");
+  const order: SystemTypeV2[] = ["gas", "electric", "heatpump", "condcoil", "furnace"];
+  return order.filter((t) => set.has(t));
+}
+
+// Available tonnages for a given system.
+export function getSystemTonnages(sys: SystemV2): string[] {
+  return Object.keys(sys.tonnages).sort((a, b) => parseFloat(a) - parseFloat(b));
+}
+
+// Display label for a tier (badge text on model cards).
+export const TIER_DISPLAY: Record<Tier, string> = {
+  premier: "PREMIER",
+  priority: "PRIORITY",
+  choice: "CHOICE",
+  value: "VALUE",
+};
+
+// Furnace retail (uses standalone_furnace scenario; tier does not affect profit for furnace).
+export function furnaceRetail(cost: number): number {
+  // Any tier works — same profit for furnace. Use "choice" as the ceremonial tier.
+  return calcRetail(cost, "choice", "standalone_furnace");
+}
