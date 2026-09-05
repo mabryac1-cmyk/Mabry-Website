@@ -547,6 +547,8 @@ function QuoteCard({
             </div>
           </div>
         )}
+
+        <SystemDetailsExpander system={system} tonnage={tonnage} furnace={furnace} furnaceTier={furnaceTier} />
       </div>
 
       <div className="text-xs text-muted-foreground mt-4 px-2 text-center">
@@ -578,6 +580,155 @@ function IncludeItem({ children }: { children: React.ReactNode }) {
       <span className="text-accent font-bold mt-0.5" aria-hidden>✓</span>
       <span>{children}</span>
     </li>
+  );
+}
+
+function DetailRow({ label, value }: { label: string; value: string | null | undefined }) {
+  if (!value) return null;
+  return (
+    <div className="flex justify-between gap-4 py-1.5 border-b border-gray-100 last:border-b-0">
+      <span className="text-sm text-muted-foreground">{label}</span>
+      <span className="text-sm font-semibold text-primary text-right tabular-nums">{value}</span>
+    </div>
+  );
+}
+
+function SystemDetailsExpander({
+  system,
+  tonnage,
+  furnace,
+  furnaceTier,
+}: {
+  system: SystemV2 | null;
+  tonnage: string | null;
+  furnace: StandaloneFurnace | null;
+  furnaceTier: FurnaceTier | null;
+}) {
+  const [expanded, setExpanded] = useState(false);
+
+  // Build the detail rows depending on which flow produced the quote.
+  let equipmentRows: React.ReactNode = null;
+  let specsRows: React.ReactNode = null;
+  let dimensionsRows: React.ReactNode = null;
+  let footnote: string;
+
+  if (system && tonnage) {
+    const t = system.tonnages[tonnage];
+    if (!t) return null;
+    const c = t.combo;
+    const ccapFormatted = c.ccap2 ? `${parseInt(c.ccap2, 10).toLocaleString()} BTU/h` : null;
+    const controllerLine =
+      system.tier === "premier" || system.tier === "priority"
+        ? "Trane Link (required)"
+        : null;
+
+    equipmentRows = (
+      <>
+        <DetailRow label="Outdoor Unit" value={t.model} />
+        <DetailRow label="Furnace" value={c.furn} />
+        <DetailRow label="Evaporator Coil" value={c.coil} />
+        <DetailRow label="Air Handler" value={c.ah} />
+        <DetailRow label="Heat Kit" value={c.hk} />
+        <DetailRow label="Controller" value={controllerLine} />
+      </>
+    );
+    specsRows = (
+      <>
+        <DetailRow label="AHRI Certificate" value={c.ahri} />
+        <DetailRow label="SEER2 Rating" value={c.seer2} />
+        <DetailRow label="EER2 Rating" value={c.eer2} />
+        <DetailRow label="HSPF2 Rating" value={c.hspf2} />
+        <DetailRow label="Cooling Capacity" value={ccapFormatted} />
+      </>
+    );
+    dimensionsRows = (
+      <>
+        <DetailRow label="Outdoor Unit" value={t.condDims} />
+        <DetailRow label="Indoor Unit" value={c.indoorDims} />
+      </>
+    );
+    footnote =
+      "Model numbers and AHRI certification are useful for warranty registration, tax rebates, utility rebates, and insurance documentation.";
+  } else if (furnace && furnaceTier) {
+    const tierInfo = FURNACE_TIER_INFO[furnaceTier];
+    const afueRow =
+      furnaceTier === "twostage_vs"
+        ? "80% AFUE (Two-Stage Variable Speed)"
+        : "80% AFUE (Single-Stage)";
+    equipmentRows = (
+      <>
+        <DetailRow label="Furnace" value={furnace.model} />
+        <DetailRow label="BTU Capacity" value={`${furnaceBtuSize(furnace.model)} BTU`} />
+        <DetailRow label="Tier" value={tierInfo.name} />
+      </>
+    );
+    specsRows = <DetailRow label="Efficiency" value={afueRow} />;
+    dimensionsRows = null;
+    footnote =
+      "Furnace model number is useful for warranty registration and future service. Full manufacturer spec sheet available on request.";
+  } else {
+    return null;
+  }
+
+  return (
+    <div className="border-t border-gray-100">
+      <button
+        onClick={() => setExpanded(!expanded)}
+        className="w-full px-6 py-4 flex items-center justify-between gap-3 hover:bg-gray-50 transition-colors"
+        aria-expanded={expanded}
+      >
+        <div className="flex items-center gap-2">
+          <span
+            className={`text-accent text-sm transition-transform inline-block ${expanded ? "rotate-90" : ""}`}
+            aria-hidden
+          >
+            ▸
+          </span>
+          <span className="text-sm font-semibold text-primary">
+            System Details
+          </span>
+          <span className="text-xs text-muted-foreground hidden sm:inline">
+            — model numbers, AHRI cert, specs
+          </span>
+        </div>
+        <span className="text-xs text-muted-foreground">
+          {expanded ? "Hide" : "Show"}
+        </span>
+      </button>
+
+      {expanded && (
+        <div className="px-6 pb-6 space-y-5">
+          <div>
+            <div className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-2">
+              Equipment Models in this System
+            </div>
+            <div>{equipmentRows}</div>
+          </div>
+
+          {specsRows && (
+            <div>
+              <div className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-2">
+                Certification &amp; Specs
+              </div>
+              <div>{specsRows}</div>
+            </div>
+          )}
+
+          {dimensionsRows && (
+            <div>
+              <div className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-2">
+                Dimensions
+              </div>
+              <div>{dimensionsRows}</div>
+            </div>
+          )}
+
+          <div className="text-xs text-muted-foreground italic bg-gray-50 rounded-lg p-3 leading-relaxed">
+            {footnote}
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
 

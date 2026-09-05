@@ -499,6 +499,21 @@ export function systemRetail(sys: SystemV2, tonnage: string): number {
   return calcRetail(wholesale, sys.tier, scenario);
 }
 
+// ============================================================================
+// DATA SOURCE OF TRUTH
+// ============================================================================
+// Sourced from: Hunton Distribution / Trane price book PDF dated 06/29/2026.
+// Local file: ~/Desktop/06-29-0026 Trane.pdf
+//
+// WHEN TRANE PUBLISHES A NEW PRICE BOOK, refresh EVERY field for the affected
+// models — condCost, furnCost, coilCost, ahri, seer2, eer2, hspf2, ccap2,
+// dimensions. Model numbers themselves can change. Do NOT just update prices.
+//
+// The System Details expander on /pricing surfaces AHRI cert numbers, SEER2/
+// EER2/HSPF2 ratings, and physical dimensions to customers for use in warranty
+// registration and tax/utility rebate paperwork. Stale data here shows up in
+// customers' rebate applications, so refresh promptly after each Trane update.
+// ============================================================================
 export const SYSTEMS_V2: SystemV2[] = [
   {
     key: "5TTV0X__split_gas",
