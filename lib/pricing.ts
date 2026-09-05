@@ -502,17 +502,26 @@ export function systemRetail(sys: SystemV2, tonnage: string): number {
 // ============================================================================
 // DATA SOURCE OF TRUTH
 // ============================================================================
-// Sourced from: Hunton Distribution / Trane price book PDF dated 06/29/2026.
-// Local file: ~/Desktop/06-29-0026 Trane.pdf
+// PRICING FIELDS (condCost, furnCost, coilCost, ahCost, hkCost) and MODEL
+// NUMBERS: sourced from Hunton Distribution / Trane price book PDF dated
+// 06/29/2026 (local file: ~/Desktop/06-29-0026 Trane.pdf). Spot-verified
+// against PDF for 5TTV8X, 5TTV0X, 5TTR7. Considered CORRECT and safe to use.
 //
-// WHEN TRANE PUBLISHES A NEW PRICE BOOK, refresh EVERY field for the affected
-// models — condCost, furnCost, coilCost, ahri, seer2, eer2, hspf2, ccap2,
-// dimensions. Model numbers themselves can change. Do NOT just update prices.
+// SPEC FIELDS — DO NOT TRUST WITHOUT RE-VERIFICATION:
+//     ahri, seer2, eer2, hspf2, ccap2, condDims, indoorDims
+// These were extracted by the Price Book Hub session's demo and contain
+// SYSTEMATIC ERRORS discovered 2026-09-05: Value tier A5AC5 3T Gas showed
+// SEER 14.3 / AHRI 215480359 when the actual PDF says SEER 15.2 / AHRI
+// 215480355; Premier 20 (5TTV0X) had Premier 18's (5TTV8X) specs pasted in.
+// These fields are NOT currently surfaced anywhere in the UI (System Details
+// expander was removed 2026-09-05 for exactly this reason).
 //
-// The System Details expander on /pricing surfaces AHRI cert numbers, SEER2/
-// EER2/HSPF2 ratings, and physical dimensions to customers for use in warranty
-// registration and tax/utility rebate paperwork. Stale data here shows up in
-// customers' rebate applications, so refresh promptly after each Trane update.
+// BEFORE re-enabling any UI that displays SEER/EER/HSPF/CCAP/AHRI/dimensions,
+// EVERY value below must be re-extracted directly from the current Trane PDF
+// on a per-matchup basis and spot-checked with Tom.
+//
+// Source-of-truth policy: only the current Hunton/Trane PDF price book counts.
+// See [[feedback_trane_pdf_ssot]] in memory.
 // ============================================================================
 export const SYSTEMS_V2: SystemV2[] = [
   {
