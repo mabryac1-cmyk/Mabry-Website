@@ -449,7 +449,7 @@ const TAX_FINANCE_MULT = 1.11;
 
 // Profit targets by scenario+tier ($). Undefined = tier not permitted for scenario.
 const PROFIT_TABLE: Record<Scenario, Partial<Record<Tier, number>>> = {
-  complete_system:      { premier: 10000, priority: 9500, choice: 9500, value: 8000 },
+  complete_system:      { premier: 10500, priority: 9500, choice: 9500, value: 8750 },
   cond_coil:            { choice: 7000, value: 5500 }, // Premier/Priority NOT allowed
   standalone_condenser: { premier: 4500, priority: 4500, choice: 4500, value: 4500 },
   standalone_coil:      { premier: 4500, priority: 4500, choice: 4500, value: 4500 },
