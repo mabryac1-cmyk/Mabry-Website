@@ -107,7 +107,7 @@ export default function AlvinPage() {
             "areaServed": { "@type": "City", "name": "Alvin", "addressRegion": "TX" },
             "offers": {
               "@type": "Offer",
-              "price": "11480.00",
+              "price": "12140.00",
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock",
               "url": "https://mabryac.com/pricing",
@@ -120,13 +120,13 @@ export default function AlvinPage() {
           "position": 3,
           "item": {
             "@type": "Service",
-            "name": "Trane Single-Stage AC & Heating System Installation in Alvin, TX — Standard Tier",
+            "name": "Trane Single-Stage AC & Heating System Installation in Alvin, TX — Choice Tier",
             "description": "Complete new Trane single-stage AC and heating system installation for Alvin homeowners — our most popular installation tier. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Family-owned since 1986.",
             "provider": { "@id": "https://mabryac.com/#business" },
             "areaServed": { "@type": "City", "name": "Alvin", "addressRegion": "TX" },
             "offers": {
               "@type": "Offer",
-              "price": "12660.00",
+              "price": "13637.00",
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock",
               "url": "https://mabryac.com/pricing",
@@ -139,13 +139,13 @@ export default function AlvinPage() {
           "position": 4,
           "item": {
             "@type": "Service",
-            "name": "Trane TruComfort Variable-Speed AC & Heating System Installation in Alvin, TX — Premium Tier",
-            "description": "Complete new Trane TruComfort variable-speed AC and heating system installation for Alvin homeowners — Trane's flagship premium tier with whisper-quiet operation and lowest utility bills. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Family-owned since 1986.",
+            "name": "Trane TruComfort Variable-Speed AC & Heating System Installation in Alvin, TX — Premier Tier",
+            "description": "Complete new Trane TruComfort variable-speed AC and heating system installation for Alvin homeowners — Trane's flagship Premier tier with whisper-quiet operation and lowest utility bills. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Family-owned since 1986.",
             "provider": { "@id": "https://mabryac.com/#business" },
             "areaServed": { "@type": "City", "name": "Alvin", "addressRegion": "TX" },
             "offers": {
               "@type": "Offer",
-              "price": "17357.00",
+              "price": "18272.00",
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock",
               "url": "https://mabryac.com/pricing",
@@ -296,7 +296,7 @@ export default function AlvinPage() {
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
                   For our Alvin neighbors and the surrounding community, our flat-rate installation
                   pricing keeps things simple. Complete new AC &amp; heating system installations start at
-                  just <strong className="text-primary">$11,480</strong> — the same honest, transparent
+                  just <strong className="text-primary">$12,140</strong> — the same honest, transparent
                   approach we&apos;ve used since we opened our doors on South Gordon Street in 1986.
                 </p>
                 <Link

@@ -6,73 +6,115 @@ import {
   ADD_ONS,
   Brand,
   BRAND_INFO,
-  ModelInfo,
-  MODELS,
   SERVICE_CATEGORIES,
   ServiceCategory,
   ServiceItem,
   SystemType,
-  SYSTEM_TYPE_INFO,
   formatCurrency,
-  getModelsByBrandAndType,
-  quotePrice,
+  // V2 imports
+  SystemV2,
+  SystemTypeV2,
+  SYSTEM_TYPE_INFO_V2,
+  StandaloneFurnace,
+  FurnaceTier,
+  FURNACE_TIER_INFO,
+  TIER_DISPLAY,
+  getAvailableSystemTypesV2,
+  getSystemsByBrandAndType,
+  sortSystemsByTier,
+  getSystemTonnages,
+  getFurnacesByTier,
+  furnaceBtuSize,
+  systemRetail,
+  furnaceRetail,
 } from "@/lib/pricing";
 
-type Step = "brand" | "systemType" | "model" | "tonnage" | "quote" | "service";
+type Step =
+  | "brand"
+  | "systemType"
+  | "model"
+  | "tonnage"
+  | "furnaceTier"
+  | "furnaceBtu"
+  | "quote"
+  | "service";
 
 export default function PricingTool() {
   const [step, setStep] = useState<Step>("brand");
   const [brand, setBrand] = useState<Brand | null>(null);
-  const [systemType, setSystemType] = useState<SystemType | null>(null);
-  const [model, setModel] = useState<ModelInfo | null>(null);
+  const [systemType, setSystemType] = useState<SystemTypeV2 | null>(null);
+  const [system, setSystem] = useState<SystemV2 | null>(null);
   const [tonnage, setTonnage] = useState<string | null>(null);
+  const [furnaceTier, setFurnaceTier] = useState<FurnaceTier | null>(null);
+  const [furnace, setFurnace] = useState<StandaloneFurnace | null>(null);
   const [selectedAddOns, setSelectedAddOns] = useState<string[]>([]);
 
   const reset = () => {
     setStep("brand");
     setBrand(null);
     setSystemType(null);
-    setModel(null);
+    setSystem(null);
     setTonnage(null);
+    setFurnaceTier(null);
+    setFurnace(null);
     setSelectedAddOns([]);
   };
 
   const goBack = () => {
-    if (step === "quote") setStep("tonnage");
-    else if (step === "tonnage") setStep("model");
-    else if (step === "model") setStep("systemType");
-    else if (step === "systemType") setStep("brand");
-    else if (step === "service") setStep("brand");
+    if (step === "quote") {
+      if (furnace) {
+        setFurnace(null);
+        setStep("furnaceBtu");
+      } else {
+        setTonnage(null);
+        setStep("tonnage");
+      }
+    } else if (step === "tonnage") {
+      setSystem(null);
+      setStep("model");
+    } else if (step === "model") {
+      setStep("systemType");
+    } else if (step === "furnaceBtu") {
+      setFurnaceTier(null);
+      setStep("furnaceTier");
+    } else if (step === "furnaceTier") {
+      setStep("systemType");
+    } else if (step === "systemType") {
+      setSystemType(null);
+      setStep("brand");
+    } else if (step === "service") setStep("brand");
   };
 
-  const availableSystemTypes = useMemo<SystemType[]>(() => {
+  const availableSystemTypes = useMemo<SystemTypeV2[]>(() => {
     if (!brand) return [];
-    const types = new Set<SystemType>();
-    MODELS.filter((m) => m.brand === brand).forEach((m) => types.add(m.systemType));
-    const order: SystemType[] = ["gas", "electric", "heatpump", "condcoil"];
-    return order.filter((t) => types.has(t));
+    return getAvailableSystemTypesV2(brand);
   }, [brand]);
 
-  const availableModels = useMemo<ModelInfo[]>(() => {
-    if (!brand || !systemType) return [];
-    return getModelsByBrandAndType(brand, systemType);
+  const availableSystems = useMemo<SystemV2[]>(() => {
+    if (!brand || !systemType || systemType === "furnace") return [];
+    return sortSystemsByTier(getSystemsByBrandAndType(brand, systemType as SystemType));
   }, [brand, systemType]);
 
   const availableTonnages = useMemo<string[]>(() => {
-    if (!model) return [];
-    return Object.keys(model.prices).sort((a, b) => parseFloat(a) - parseFloat(b));
-  }, [model]);
+    if (!system) return [];
+    return getSystemTonnages(system);
+  }, [system]);
+
+  const availableFurnaces = useMemo<StandaloneFurnace[]>(() => {
+    if (!furnaceTier) return [];
+    return getFurnacesByTier(furnaceTier);
+  }, [furnaceTier]);
 
   const availableAddOns = useMemo(() => {
-    if (!systemType) return [];
-    return ADD_ONS.filter((a) => (a.availableOn as SystemType[]).includes(systemType));
+    if (!systemType || systemType === "furnace") return [];
+    return ADD_ONS.filter((a) => (a.availableOn as SystemType[]).includes(systemType as SystemType));
   }, [systemType]);
 
   const baseQuote = useMemo(() => {
-    if (!model || !tonnage) return null;
-    const listPrice = model.prices[tonnage];
-    return quotePrice(listPrice, model.formula);
-  }, [model, tonnage]);
+    if (system && tonnage) return systemRetail(system, tonnage);
+    if (furnace) return furnaceRetail(furnace.cost);
+    return null;
+  }, [system, tonnage, furnace]);
 
   const addOnTotal = useMemo(() => {
     return selectedAddOns.reduce((sum, id) => {
@@ -109,7 +151,15 @@ export default function PricingTool() {
         </div>
       )}
 
-      <Breadcrumbs brand={brand} systemType={systemType} model={model} tonnage={tonnage} step={step} />
+      <Breadcrumbs
+        brand={brand}
+        systemType={systemType}
+        system={system}
+        tonnage={tonnage}
+        furnaceTier={furnaceTier}
+        furnace={furnace}
+        step={step}
+      />
 
       {/* Landing / brand selection */}
       {step === "brand" && (
@@ -174,14 +224,20 @@ export default function PricingTool() {
                 key={t}
                 onClick={() => {
                   setSystemType(t);
-                  setStep("model");
+                  // Clear all downstream state so breadcrumb + quote only reflect the current path
+                  setSystem(null);
+                  setTonnage(null);
+                  setFurnaceTier(null);
+                  setFurnace(null);
+                  if (t === "furnace") setStep("furnaceTier");
+                  else setStep("model");
                 }}
                 className="group bg-white border-2 border-gray-200 hover:border-accent hover:shadow-lg rounded-2xl p-5 text-left transition-all"
               >
                 <div className="text-lg font-semibold text-primary group-hover:text-accent transition-colors">
-                  {SYSTEM_TYPE_INFO[t].name}
+                  {SYSTEM_TYPE_INFO_V2[t].name}
                 </div>
-                <div className="text-sm text-muted-foreground mt-1">{SYSTEM_TYPE_INFO[t].description}</div>
+                <div className="text-sm text-muted-foreground mt-1">{SYSTEM_TYPE_INFO_V2[t].description}</div>
               </button>
             ))}
           </div>
@@ -191,25 +247,26 @@ export default function PricingTool() {
       {step === "model" && (
         <StepCard title="Choose Model" subtitle="Select the equipment model.">
           <div className="grid gap-3">
-            {availableModels.map((m) => (
+            {availableSystems.map((s) => (
               <button
-                key={m.id}
+                key={s.key}
                 onClick={() => {
-                  setModel(m);
+                  setSystem(s);
+                  setTonnage(null);
                   setStep("tonnage");
                 }}
                 className="group bg-white border-2 border-gray-200 hover:border-accent hover:shadow-lg rounded-2xl p-5 text-left transition-all flex items-center justify-between gap-4"
               >
                 <div>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 flex-wrap">
                     <span className="text-lg font-bold text-primary group-hover:text-accent transition-colors">
-                      {m.shortName}
+                      {s.base}
                     </span>
                     <span className="text-xs font-semibold uppercase tracking-wide bg-accent text-white px-2 py-0.5 rounded">
-                      {m.tier}
+                      {TIER_DISPLAY[s.tier]}
                     </span>
                   </div>
-                  <div className="text-sm text-muted-foreground mt-1">{m.longName}</div>
+                  <div className="text-sm text-muted-foreground mt-1">{s.seriesLabel}</div>
                 </div>
                 <span className="text-accent text-2xl" aria-hidden>›</span>
               </button>
@@ -218,7 +275,7 @@ export default function PricingTool() {
         </StepCard>
       )}
 
-      {step === "tonnage" && model && (
+      {step === "tonnage" && system && (
         <StepCard title="System Size" subtitle="Choose the equipment tonnage.">
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             {availableTonnages.map((t) => (
@@ -238,10 +295,58 @@ export default function PricingTool() {
         </StepCard>
       )}
 
-      {step === "quote" && model && tonnage && baseQuote !== null && (
+      {step === "furnaceTier" && (
+        <StepCard title="Choose Furnace Type" subtitle="Select the furnace grade.">
+          <div className="grid gap-3">
+            {(Object.keys(FURNACE_TIER_INFO) as FurnaceTier[]).map((t) => (
+              <button
+                key={t}
+                onClick={() => {
+                  setFurnaceTier(t);
+                  setFurnace(null);
+                  setStep("furnaceBtu");
+                }}
+                className="group bg-white border-2 border-gray-200 hover:border-accent hover:shadow-lg rounded-2xl p-5 text-left transition-all flex items-center justify-between gap-4"
+              >
+                <div>
+                  <div className="text-lg font-bold text-primary group-hover:text-accent transition-colors">
+                    {FURNACE_TIER_INFO[t].name}
+                  </div>
+                  <div className="text-sm text-muted-foreground mt-1">{FURNACE_TIER_INFO[t].description}</div>
+                </div>
+                <span className="text-accent text-2xl" aria-hidden>›</span>
+              </button>
+            ))}
+          </div>
+        </StepCard>
+      )}
+
+      {step === "furnaceBtu" && furnaceTier && (
+        <StepCard title="Furnace Size" subtitle="Choose the BTU capacity for your home.">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {availableFurnaces.map((f) => (
+              <button
+                key={f.model}
+                onClick={() => {
+                  setFurnace(f);
+                  setStep("quote");
+                }}
+                className="bg-white border-2 border-gray-200 hover:border-accent hover:shadow-lg rounded-xl py-5 text-center transition-all"
+              >
+                <div className="text-2xl font-bold text-primary">{furnaceBtuSize(f.model)}</div>
+                <div className="text-sm text-muted-foreground">BTU</div>
+              </button>
+            ))}
+          </div>
+        </StepCard>
+      )}
+
+      {step === "quote" && baseQuote !== null && (
         <QuoteCard
-          model={model}
+          system={system}
           tonnage={tonnage}
+          furnaceTier={furnaceTier}
+          furnace={furnace}
           baseQuote={baseQuote}
           totalQuote={totalQuote}
           availableAddOns={availableAddOns}
@@ -293,14 +398,18 @@ function StepCard({
 function Breadcrumbs({
   brand,
   systemType,
-  model,
+  system,
   tonnage,
+  furnaceTier,
+  furnace,
   step,
 }: {
   brand: Brand | null;
-  systemType: SystemType | null;
-  model: ModelInfo | null;
+  systemType: SystemTypeV2 | null;
+  system: SystemV2 | null;
   tonnage: string | null;
+  furnaceTier: FurnaceTier | null;
+  furnace: StandaloneFurnace | null;
   step: Step;
 }) {
   if (step === "brand") return null;
@@ -309,9 +418,11 @@ function Breadcrumbs({
     items.push("Service & Repair");
   } else {
     if (brand) items.push(BRAND_INFO[brand].name);
-    if (systemType) items.push(SYSTEM_TYPE_INFO[systemType].name);
-    if (model) items.push(model.shortName);
+    if (systemType) items.push(SYSTEM_TYPE_INFO_V2[systemType].name);
+    if (system) items.push(system.base);
     if (tonnage) items.push(`${tonnage} ton`);
+    if (furnaceTier) items.push(FURNACE_TIER_INFO[furnaceTier].name);
+    if (furnace) items.push(`${furnaceBtuSize(furnace.model)} BTU`);
   }
   return (
     <div className="text-xs uppercase tracking-wider text-muted-foreground font-semibold mb-3">
@@ -321,8 +432,10 @@ function Breadcrumbs({
 }
 
 function QuoteCard({
-  model,
+  system,
   tonnage,
+  furnaceTier,
+  furnace,
   baseQuote,
   totalQuote,
   availableAddOns,
@@ -330,8 +443,10 @@ function QuoteCard({
   toggleAddOn,
   onReset,
 }: {
-  model: ModelInfo;
-  tonnage: string;
+  system: SystemV2 | null;
+  tonnage: string | null;
+  furnaceTier: FurnaceTier | null;
+  furnace: StandaloneFurnace | null;
   baseQuote: number;
   totalQuote: number;
   availableAddOns: typeof ADD_ONS[number][];
@@ -339,6 +454,26 @@ function QuoteCard({
   toggleAddOn: (id: string) => void;
   onReset: () => void;
 }) {
+  // Build headline + subhead for either a system quote or a furnace quote.
+  let headline: string;
+  let subhead: string;
+  if (system && tonnage) {
+    const stName = SYSTEM_TYPE_INFO_V2[
+      system.section === "cond_coil" || system.section === "runtru_cond_coil" ? "condcoil"
+      : system.section === "split_gas" || system.section === "runtru_gas_elec" ? "gas"
+      : system.section === "split_electric" || system.section === "runtru_electric" ? "electric"
+      : "heatpump"
+    ].name;
+    headline = `${system.base} — ${tonnage} Ton ${stName}`;
+    subhead = system.seriesLabel;
+  } else if (furnace && furnaceTier) {
+    headline = `${FURNACE_TIER_INFO[furnaceTier].name} Furnace — ${furnaceBtuSize(furnace.model)} BTU`;
+    subhead = furnace.model;
+  } else {
+    headline = "Your Quote";
+    subhead = "";
+  }
+
   return (
     <div>
       <div className="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
@@ -346,10 +481,8 @@ function QuoteCard({
           <div className="text-xs uppercase tracking-wider text-primary font-semibold">
             Your Quote
           </div>
-          <div className="text-xl sm:text-2xl font-bold mt-1 text-primary">
-            {model.shortName} — {tonnage} Ton {SYSTEM_TYPE_INFO[model.systemType].name}
-          </div>
-          <div className="text-sm text-muted-foreground mt-1">{model.longName}</div>
+          <div className="text-xl sm:text-2xl font-bold mt-1 text-primary">{headline}</div>
+          {subhead && <div className="text-sm text-muted-foreground mt-1">{subhead}</div>}
         </div>
 
         <div className="px-6 py-8 text-center border-b border-gray-100">
@@ -447,6 +580,7 @@ function IncludeItem({ children }: { children: React.ReactNode }) {
     </li>
   );
 }
+
 
 function ServicePage() {
   const [query, setQuery] = useState("");

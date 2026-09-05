@@ -107,7 +107,7 @@ export default function FriendswoodPage() {
             "areaServed": { "@type": "City", "name": "Friendswood", "addressRegion": "TX" },
             "offers": {
               "@type": "Offer",
-              "price": "11480.00",
+              "price": "12140.00",
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock",
               "url": "https://mabryac.com/pricing",
@@ -120,13 +120,13 @@ export default function FriendswoodPage() {
           "position": 3,
           "item": {
             "@type": "Service",
-            "name": "Trane Single-Stage AC & Heating System Installation in Friendswood, TX — Standard Tier",
+            "name": "Trane Single-Stage AC & Heating System Installation in Friendswood, TX — Choice Tier",
             "description": "Complete new Trane single-stage AC and heating system installation for Friendswood homeowners — our most popular installation tier. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Serving the Bay Area since 1986.",
             "provider": { "@id": "https://mabryac.com/#business" },
             "areaServed": { "@type": "City", "name": "Friendswood", "addressRegion": "TX" },
             "offers": {
               "@type": "Offer",
-              "price": "12660.00",
+              "price": "13637.00",
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock",
               "url": "https://mabryac.com/pricing",
@@ -139,13 +139,13 @@ export default function FriendswoodPage() {
           "position": 4,
           "item": {
             "@type": "Service",
-            "name": "Trane TruComfort Variable-Speed AC & Heating System Installation in Friendswood, TX — Premium Tier",
-            "description": "Complete new Trane TruComfort variable-speed AC and heating system installation for Friendswood homeowners — Trane's flagship premium tier with whisper-quiet operation and lowest utility bills. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Serving the Bay Area since 1986.",
+            "name": "Trane TruComfort Variable-Speed AC & Heating System Installation in Friendswood, TX — Premier Tier",
+            "description": "Complete new Trane TruComfort variable-speed AC and heating system installation for Friendswood homeowners — Trane's flagship Premier tier with whisper-quiet operation and lowest utility bills. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Serving the Bay Area since 1986.",
             "provider": { "@id": "https://mabryac.com/#business" },
             "areaServed": { "@type": "City", "name": "Friendswood", "addressRegion": "TX" },
             "offers": {
               "@type": "Offer",
-              "price": "17357.00",
+              "price": "18272.00",
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock",
               "url": "https://mabryac.com/pricing",
@@ -296,7 +296,7 @@ export default function FriendswoodPage() {
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
                   Friendswood homeowners have several options when it&apos;s time to replace their AC &amp;
                   heating system. Our most popular tier — the trusted Trane Single-Stage — starts at
-                  <strong className="text-primary"> $12,660</strong> for a complete installation. From the
+                  <strong className="text-primary"> $13,637</strong> for a complete installation. From the
                   Forest of Friendswood to communities throughout the Bay Area, we keep our pricing flat-rate
                   and straightforward. No surprises.
                 </p>
