@@ -57,6 +57,9 @@ const friendswoodContent = `
 
   <p>The Gulf Coast humidity that defines Friendswood's climate means condensate drain maintenance is critical — clogged drains are one of the most common service calls we make in the 77546 area during summer.</p>
 
+  <h3>Recent Friendswood Work</h3>
+  <p>Friendswood holds its contractors to a high standard — the city's inspection process is among the more rigorous in our service area, and honestly, we like it that way. This past July, when a heat wave pushed an aging Friendswood system past its limit, we installed a complete new AC and heating system and passed the City of Friendswood inspection without a single issue. Passing a stringent inspection isn't luck — it's what a proper, to-code installation looks like every time, and it's the standard Friendswood families have counted on from us for nearly four decades.</p>
+
   <h3>Why Friendswood Homeowners Choose Mabry's</h3>
   <ul>
     <li>Dedicated Friendswood service line — 281-482-8400</li>

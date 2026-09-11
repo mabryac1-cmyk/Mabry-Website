@@ -55,6 +55,9 @@ const pearlandContent = `
 
   <p>Older Pearland homes often have aging ductwork and systems approaching or past replacement age. Homes in Shadow Creek Ranch and Silverlake that were built with builder-grade equipment in the mid-2000s are now 15–20 years old — prime replacement territory. Our team is experienced across all of it.</p>
 
+  <h3>Recent Pearland Work</h3>
+  <p>A lot of Pearland's larger homes run two separate HVAC systems, and when both age out together — common in the mid-2000s Shadow Creek Ranch and Silverlake builds — the repair bills and energy costs pile up fast. We recently helped a Pearland homeowner break that cycle: he'd been sinking money into repeated repairs and high energy bills on two tired old systems, so we replaced both with new complete systems sized right for his home. No more throwing good money after bad on equipment past its prime — just lower, more predictable bills. Both installs passed inspection the first time, which for us is the rule, not the exception. Across nearly four decades we've built a first-time permit inspection pass rate near the top of the industry, because we do the job to code the first time, every time.</p>
+
   <h3>Why Pearland Residents Choose Mabry's</h3>
   <ul>
     <li>Nearly 40 years of experience — including decades serving Pearland</li>

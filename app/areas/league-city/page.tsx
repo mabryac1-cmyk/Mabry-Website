@@ -44,7 +44,7 @@ const leagueCityFaqs = [
 
 const leagueCityContent = `
   <h2>HVAC Service in League City, TX — The Bay Area's Family-Owned AC Company Since 1986</h2>
-  <p>League City is one of the fastest-growing cities in Galveston County, sitting right on the edge of Clear Lake and the NASA-Johnson Space Center area. We've been servicing AC units in League City homes for nearly 40 years out of our Friendswood operation — close enough that response times feel like we're right next door, because we essentially are.</p>
+  <p>League City is one of the fastest-growing cities in Galveston County, sitting right on the edge of Clear Lake and the NASA-Johnson Space Center area. We've been servicing AC units in League City homes for nearly 40 years — close by in the Bay Area, so response times feel like we're right next door, because we essentially are.</p>
 
   <p>From the older established neighborhoods near Old League City and Heritage Park to the master-planned communities that have built up over the last two decades, we know the housing here. And we know what the Bay Area climate does to HVAC equipment.</p>
 

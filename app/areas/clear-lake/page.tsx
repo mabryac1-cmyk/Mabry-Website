@@ -44,7 +44,7 @@ const clearLakeFaqs = [
 
 const clearLakeContent = `
   <h2>HVAC Service in Clear Lake, TX — The Bay Area's Family-Owned AC Company Since 1986</h2>
-  <p>Clear Lake is one of the most distinctive communities in the Houston metro — it grew up around NASA-Johnson Space Center in the 1960s and developed into the cultural and residential heart of the Bay Area. Today it's home to engineers, aerospace professionals, families, and waterfront homeowners across the 77058, 77059, and 77062 zip codes. We've been servicing AC units in Clear Lake homes for nearly 40 years out of our Friendswood operation, just minutes away across NASA Parkway.</p>
+  <p>Clear Lake is one of the most distinctive communities in the Houston metro — it grew up around NASA-Johnson Space Center in the 1960s and developed into the cultural and residential heart of the Bay Area. Today it's home to engineers, aerospace professionals, families, and waterfront homeowners across the 77058, 77059, and 77062 zip codes. We've been servicing AC units in Clear Lake homes for nearly 40 years, and we know this Bay Area community — its waterfront humidity and salt air included — inside and out.</p>
 
   <p>Family-owned since 1986. Licensed Texas HVAC contractor (TACLB12058E). BBB A+ accredited. We know this community.</p>
 
@@ -65,7 +65,7 @@ const clearLakeContent = `
 
   <h3>Why Clear Lake Homeowners Choose Mabry's</h3>
   <ul>
-    <li>Bay Area–based — our shop is in Friendswood, minutes from NASA Parkway</li>
+    <li>Bay Area–based — a local company that knows Clear Lake and the NASA Parkway communities</li>
     <li>Flat-rate pricing with no hidden charges — we tell you the price before we start</li>
     <li>No extra charge for evenings or weekends — ever</li>
     <li>Family-owned and operated since 1986 — talk to us, not a national call center</li>

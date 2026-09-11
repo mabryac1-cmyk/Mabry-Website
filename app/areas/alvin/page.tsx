@@ -57,9 +57,12 @@ const alvinContent = `
 
   <p>Our Gulf Coast climate — high humidity, 9-month cooling seasons, and heat indexes that push past 110°F — is tough on HVAC equipment. We've been diagnosing the specific failure patterns common to Brazoria County homes for four decades.</p>
 
+  <h3>Recent Alvin Work</h3>
+  <p>During one of this summer's worst heat waves, an Alvin homeowner's old system broke down completely — about the worst time there is to lose cooling on the Gulf Coast. We replaced it start to finish with a new 5-ton Trane gas system and got her home comfortable again fast. And because we install to Alvin's code the first time, the job passed City of Alvin inspection on our workmanship — the same standard we hold ourselves to on every install. Passing local inspection isn't automatic in this trade; it's the difference between a job done right and a job done fast.</p>
+
   <h3>Why Alvin Families Have Trusted Us for Generations</h3>
   <ul>
-    <li>Our shop is in your backyard — fast response times, no travel fees</li>
+    <li>Our shop is in your backyard — fast response times</li>
     <li>Flat-rate pricing with no hidden charges — we tell you the price before we start</li>
     <li>Family-owned and operated — you talk to us, not a call center</li>
     <li>BBB A+ Accredited Business — multiple BBB Gold Star Award winner</li>

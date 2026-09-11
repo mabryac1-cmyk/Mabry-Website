@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const angletonFaqs = [
   {
     question: "How fast can you get to Angleton for AC repair?",
-    answer: "Our shop is in Alvin at 2110 S Gordon St — a straight shot down Highway 35 to Angleton, typically a 30-minute drive. We offer same-day service for most AC repairs in Angleton's 77515 and 77516 zip codes and don't charge a separate travel fee to come down.",
+    answer: "Angleton is right in our home service territory, so we can be there quick. We offer same-day service for most AC repairs in Angleton's 77515 and 77516 zip codes, with flat-rate pricing — the price we quote is the price you pay.",
   },
   {
     question: "Do you service older homes in downtown Angleton?",
@@ -30,7 +30,7 @@ const angletonFaqs = [
   },
   {
     question: "Are you a local Brazoria County HVAC company or a chain?",
-    answer: "Family-owned and based right here in Brazoria County. Mabry's Air Conditioning & Heating has been operating from our Alvin shop since 1986 — nearly 40 years serving Angleton and surrounding communities. Not a franchise, not a national chain.",
+    answer: "Family-owned and based right here in Brazoria County. Mabry's Air Conditioning & Heating has been serving Angleton and the surrounding communities since 1986 — nearly 40 years. Not a franchise, not a national chain.",
   },
   {
     question: "Do you charge extra for evening or weekend service in Angleton?",
@@ -44,7 +44,7 @@ const angletonFaqs = [
 
 const angletonContent = `
   <h2>HVAC Service in Angleton, TX — Brazoria County's Trusted Local AC Company</h2>
-  <p>Angleton is the seat of Brazoria County, and it's right in our backyard. Our shop sits about 30 minutes north up Highway 35 in Alvin, and we've been making the drive down for residential AC repair, heating service, and installations for nearly 40 years. When the AC goes out in July down here, you don't want to wait on a Houston company — you want a Brazoria County HVAC company that already knows the area.</p>
+  <p>Angleton is the seat of Brazoria County, and it's right in our home territory. We've been handling residential AC repair, heating service, and installations for Angleton homeowners for nearly 40 years. When the AC goes out in July down here, you don't want to wait on a Houston company — you want a Brazoria County HVAC company that already knows the area.</p>
 
   <p>That's where Mabry's comes in. Family-owned since 1986, fully licensed (TACLB12058E), and BBB A+ accredited.</p>
 
@@ -63,7 +63,7 @@ const angletonContent = `
 
   <h3>Why Angleton Homeowners Choose Mabry's</h3>
   <ul>
-    <li>Brazoria County–based — we're not driving in from Houston, we're coming from Alvin</li>
+    <li>Brazoria County–based — a local company that knows Angleton, not a Houston outfit</li>
     <li>Flat-rate pricing with no hidden charges — we tell you the price before we start the work</li>
     <li>No extra charge for evenings or weekends — ever</li>
     <li>Family-owned and operated since 1986 — talk to us, not a national call center</li>
@@ -120,7 +120,7 @@ export default function AngletonPage() {
             AC Repair &amp; HVAC Service in Angleton, TX — Brazoria County's Trusted Choice Since 1986
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mb-6">
-            Family-owned and Brazoria County–based. Our Alvin shop is just 30 minutes up Highway 35 — same-day AC repair for Angleton homes, no extra charge for evenings or weekends.
+            Family-owned and Brazoria County–based since 1986 — same-day AC repair for Angleton homes, no extra charge for evenings or weekends.
           </p>
           <div className="flex flex-wrap gap-4 items-center mb-6">
             <a
