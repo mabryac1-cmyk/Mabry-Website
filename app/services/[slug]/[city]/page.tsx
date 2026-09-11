@@ -73,7 +73,7 @@ const cityContext: Record<string, { intro: string; climate: string; housing: str
   },
   "angleton": {
     intro:
-      "Angleton is in Mabry's home territory — we're just up Highway 35 in Alvin. That means fast response times for Angleton homeowners without the travel fees that larger Houston-based companies charge to reach Brazoria County.",
+      "Angleton is right in Mabry's home territory — the county seat of Brazoria County, where we've served homeowners since 1986. Fast response times for Angleton without the travel fees that larger Houston-based companies charge to reach Brazoria County.",
     climate:
       "Angleton's Brazoria County location subjects homes to full Gulf Coast heat and humidity — the area regularly sees summer heat indexes above 105°F and cooling seasons that stretch from spring through October. Annual condensate drain maintenance remains important in Angleton's 77515 and 77516 zip codes despite being somewhat further from the bay.",
     housing:
@@ -81,7 +81,7 @@ const cityContext: Record<string, { intro: string; climate: string; housing: str
   },
   "manvel": {
     intro:
-      "Mabry's is just down the road from Manvel, based in Alvin — your true local neighbor for HVAC service in the 77578 area. Fast response, no travel fees, honest flat-rate pricing.",
+      "Mabry's is your true local neighbor for HVAC service in the Manvel 77578 area — fast response, no travel fees, honest flat-rate pricing since 1986.",
     climate:
       "Manvel's Brazoria County location means full Gulf Coast heat loads in summer. The rapid residential growth in Manvel has brought many newer homes whose builder-grade systems need proper maintenance to achieve their full lifespan under these demanding climate conditions.",
     housing:
@@ -89,7 +89,7 @@ const cityContext: Record<string, { intro: string; climate: string; housing: str
   },
   "rosharon": {
     intro:
-      "Rosharon sits in the heart of Brazoria County, close to our Alvin shop. We've been serving Rosharon and the surrounding 77583 zip code since 1986 with honest, flat-rate pricing.",
+      "Rosharon sits in the heart of Brazoria County. We've been serving Rosharon and the surrounding 77583 zip code since 1986 with honest, flat-rate pricing and fast response.",
     climate:
       "Rosharon's rural Brazoria County setting doesn't insulate it from Gulf Coast heat and humidity. Summer heat indexes above 100°F and a 9-month effective cooling season mean residential HVAC systems in the 77583 area work as hard as anywhere in the greater Houston area.",
     housing:
@@ -105,7 +105,7 @@ const cityContext: Record<string, { intro: string; climate: string; housing: str
   },
   "lake-jackson": {
     intro:
-      "Lake Jackson — the planned Brazoria County town built for Dow Chemical in the 1940s, famous for street names like This Way, That Way, and Winding Way — sits just south of our Alvin shop. We've served the Brazosport area with flat-rate, licensed HVAC since 1986.",
+      "Lake Jackson — the planned Brazoria County town built for Dow Chemical in the 1940s, famous for street names like This Way, That Way, and Winding Way — is part of the Brazosport-area community we've served with flat-rate, licensed HVAC since 1986.",
     climate:
       "This far south in Brazoria County, Lake Jackson sits close to the Gulf. The Brazosport area's heat, relentless humidity, and salt-influenced coastal air are hard on residential equipment. Condensate drain clogs are among the most common calls we get in the 77566 area — Gulf humidity fills drip pans fast, and an overflowing pan can cause real water damage inside a home.",
     housing:

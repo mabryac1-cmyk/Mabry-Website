@@ -681,7 +681,7 @@ export const locations = [
 
       <h3>Why Sienna Homeowners Choose Mabry's</h3>
       <ul>
-        <li>Based nearby in Alvin — fast response for Sienna and Missouri City</li>
+        <li>Fast response for Sienna and Missouri City — no travel fees</li>
         <li>Flat-rate pricing — zero surprises on your invoice</li>
         <li>BBB A+ Accredited — you can verify our reputation</li>
         <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
@@ -699,14 +699,14 @@ export const locations = [
     phone: "281-331-5248",
     isPrimary: false,
     headline: "AC Repair & HVAC Service in Angleton, TX — Brazoria County's Trusted Choice",
-    description: "Reliable residential HVAC service for Angleton homeowners. Based just up Highway 35 in Alvin — fast response times for Brazoria County.",
+    description: "Reliable residential HVAC service for Angleton homeowners. Fast response times for Brazoria County, flat-rate pricing since 1986.",
     content: `
       <h2>HVAC Service for Angleton — Brazoria County Homeowners Deserve Honest Work</h2>
-      <p>As the county seat of Brazoria County, Angleton is at the heart of our service territory. Mabry's is based just up Highway 35 in Alvin, which means fast response times for Angleton homeowners without the drive fees that larger Houston-based companies charge. We've been the trusted HVAC resource for Brazoria County families since 1986.</p>
+      <p>As the county seat of Brazoria County, Angleton is at the heart of our service territory. Mabry's delivers fast response times for Angleton homeowners without the drive fees that larger Houston-based companies charge. We've been the trusted HVAC resource for Brazoria County families since 1986.</p>
 
       <h3>HVAC Services We Provide in Angleton</h3>
       <ul>
-        <li><strong>AC repair</strong> — all makes and models, quick dispatch from nearby Alvin</li>
+        <li><strong>AC repair</strong> — all makes and models, quick response</li>
         <li><strong>Heating repair</strong> — furnace and heat pump service</li>
         <li><strong>New AC installation</strong> — energy-efficient systems, proper sizing</li>
         <li><strong>Annual maintenance tune-ups</strong> — prevent breakdowns in Brazoria County's demanding climate</li>
@@ -719,7 +719,7 @@ export const locations = [
 
       <h3>Why Angleton Homeowners Trust Mabry's</h3>
       <ul>
-        <li>Based just 15 minutes away in Alvin — genuinely local, fast response</li>
+        <li>Genuinely local service — fast response for Angleton</li>
         <li>Flat-rate pricing — what we quote is what you pay</li>
         <li>Nearly 40 years of experience in Brazoria County</li>
         <li>BBB A+ Accredited Business</li>
@@ -737,10 +737,10 @@ export const locations = [
     phone: "281-331-5248",
     isPrimary: false,
     headline: "AC Repair & HVAC Service in Manvel, TX — Your Neighbor in Alvin",
-    description: "Fast HVAC service for Manvel homeowners. We're just down the road in Alvin — serving Rodeo Palms, Pomona & all Manvel neighborhoods.",
+    description: "Fast HVAC service for Manvel homeowners since 1986 — serving Rodeo Palms, Pomona & all Manvel neighborhoods with flat-rate pricing.",
     content: `
       <h2>HVAC Service for Manvel — Rodeo Palms, Pomona & All Neighborhoods</h2>
-      <p>Manvel has grown dramatically in recent years, transforming from a quiet rural community into a thriving suburb with new master-planned neighborhoods. Mabry's Air Conditioning & Heating is just down the road in Alvin — your true local neighbor for HVAC service. We've watched Manvel grow and have been proud to serve the families who call it home.</p>
+      <p>Manvel has grown dramatically in recent years, transforming from a quiet rural community into a thriving suburb with new master-planned neighborhoods. Mabry's Air Conditioning & Heating is your true local neighbor for HVAC service in Manvel. We've watched Manvel grow and have been proud to serve the families who call it home.</p>
 
       <h3>HVAC Services We Provide in Manvel</h3>
       <ul>
@@ -753,11 +753,11 @@ export const locations = [
       <h3>We Know Manvel's Growing Communities</h3>
       <p>Manvel's 77578 zip code now includes established communities like Rodeo Palms — one of the area's original planned neighborhoods — alongside newer developments like Pomona, which has brought thousands of newer homes to the area. Many Manvel homeowners are dealing with one of two situations: newer homes (2010s–2020s construction) with builder-grade systems that benefit from annual maintenance to hit their expected lifespan, or older rural properties and estate homes with less standard HVAC configurations that require experienced technicians.</p>
 
-      <p>The Brazoria County climate — humid, hot, and demanding — is the same challenge all our service area homeowners face. Our close proximity means we can respond quickly and don't pad your bill with drive-time charges.</p>
+      <p>The Brazoria County climate — humid, hot, and demanding — is the same challenge all our service area homeowners face. We respond quickly and never pad your bill with drive-time charges.</p>
 
       <h3>Why Manvel Homeowners Choose Mabry's</h3>
       <ul>
-        <li>Just down the road in Alvin — fast response, no long drive fees</li>
+        <li>Fast response for Manvel — no long drive fees</li>
         <li>Nearly 40 years serving Brazoria County communities</li>
         <li>Flat-rate pricing — no hidden charges</li>
         <li>BBB A+ Accredited Business</li>
@@ -775,14 +775,14 @@ export const locations = [
     phone: "281-331-5248",
     isPrimary: false,
     headline: "AC Repair & HVAC Service in Rosharon, TX — Brazoria County Experts",
-    description: "Dependable residential HVAC service for Rosharon homeowners. Based nearby in Alvin — quick response for Brazoria County since 1986.",
+    description: "Dependable residential HVAC service for Rosharon homeowners. Quick response for Brazoria County, flat-rate pricing since 1986.",
     content: `
       <h2>HVAC Service for Rosharon — Dependable, Local, Flat-Rate</h2>
-      <p>Rosharon sits in the heart of Brazoria County, along the Highway 288 corridor that has seen significant growth in recent years. Mabry's Air Conditioning & Heating is based just a few miles away in Alvin — close enough for fast response without the drive fees that larger Houston contractors charge to reach this area. We've been serving Brazoria County families since 1986.</p>
+      <p>Rosharon sits in the heart of Brazoria County, along the Highway 288 corridor that has seen significant growth in recent years. Mabry's Air Conditioning & Heating serves Rosharon with fast response and honest, flat-rate pricing — without the drive fees that larger Houston contractors charge to reach this area. We've been serving Brazoria County families since 1986.</p>
 
       <h3>HVAC Services We Provide in Rosharon</h3>
       <ul>
-        <li><strong>AC repair</strong> — all makes and models, quick dispatch from Alvin</li>
+        <li><strong>AC repair</strong> — all makes and models, quick response</li>
         <li><strong>Heating repair</strong> — furnace and heat pump service</li>
         <li><strong>New AC installation</strong> — energy-efficient systems with proper sizing</li>
         <li><strong>Annual maintenance tune-ups</strong> — prevent breakdowns before they happen</li>
@@ -795,7 +795,7 @@ export const locations = [
 
       <h3>Why Rosharon Homeowners Trust Mabry's</h3>
       <ul>
-        <li>Minutes away in Alvin — fast response for the 77583 area</li>
+        <li>Fast response for the 77583 area — no long drive fees</li>
         <li>Honest, flat-rate pricing with no hidden fees</li>
         <li>Nearly 40 years of Brazoria County experience</li>
         <li>BBB A+ Accredited Business</li>
@@ -813,14 +813,14 @@ export const locations = [
     phone: "281-331-5248",
     isPrimary: false,
     headline: "AC Repair & HVAC Service in Lake Jackson, TX — Brazoria County Experts",
-    description: "Residential HVAC service for Lake Jackson homeowners. Dispatched from nearby Alvin — fast response across Brazoria County and the Brazosport area since 1986.",
+    description: "Residential HVAC service for Lake Jackson homeowners. Fast, flat-rate service across Brazoria County and the Brazosport area since 1986.",
     content: `
       <h2>HVAC Service for Lake Jackson — Local to Brazoria County, Flat-Rate Pricing</h2>
-      <p>Lake Jackson is one of Brazoria County's most distinctive communities — a planned town originally built in the 1940s to house Dow Chemical workers, and still known today for its one-of-a-kind street names like This Way, That Way, Winding Way, and Circle Way, alongside the botanical streets — Camellia, Oleander, Silverbell, and Magnolia. Mabry's Air Conditioning & Heating dispatches to Lake Jackson from our shop in nearby Alvin, giving Brazosport-area families fast response without the long-haul trip fees the big Houston companies tack on. We've served Brazoria County since 1986.</p>
+      <p>Lake Jackson is one of Brazoria County's most distinctive communities — a planned town originally built in the 1940s to house Dow Chemical workers, and still known today for its one-of-a-kind street names like This Way, That Way, Winding Way, and Circle Way, alongside the botanical streets — Camellia, Oleander, Silverbell, and Magnolia. Mabry's Air Conditioning & Heating serves Lake Jackson and the Brazosport area with fast response and honest, flat-rate pricing — without the long-haul trip fees the big Houston companies tack on. We've served Brazoria County families since 1986.</p>
 
       <h3>HVAC Services We Provide in Lake Jackson</h3>
       <ul>
-        <li><strong>AC repair</strong> — all makes and models, dispatched from nearby Alvin</li>
+        <li><strong>AC repair</strong> — all makes and models, fast response</li>
         <li><strong>Heating repair</strong> — furnace and heat pump service</li>
         <li><strong>New AC installation</strong> — energy-efficient systems, properly sized for your home</li>
         <li><strong>Annual maintenance tune-ups</strong> — critical this close to the Gulf</li>
@@ -833,7 +833,7 @@ export const locations = [
 
       <h3>Why Lake Jackson Homeowners Trust Mabry's</h3>
       <ul>
-        <li>Dispatched from nearby Alvin — quick response for the 77566 area</li>
+        <li>Fast, reliable response for the 77566 area</li>
         <li>Honest, flat-rate pricing with no hidden fees</li>
         <li>Nearly 40 years of Brazoria County and Gulf Coast experience</li>
         <li>BBB A+ Accredited Business</li>
