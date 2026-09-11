@@ -103,29 +103,13 @@ const cityContext: Record<string, { intro: string; climate: string; housing: str
     housing:
       "Sugar Land includes master-planned communities like First Colony and Riverstone spanning multiple decades of construction. First Colony homes from the 1980s and 1990s are approaching their second or third HVAC replacement cycle. Newer Riverstone, Telfair, and New Territory homes from the 2000s–2010s benefit from the maintenance that protects newer systems from premature failure.",
   },
-  "bellaire": {
+  "lake-jackson": {
     intro:
-      "Bellaire — the 'City of Homes' inside Houston's Loop 610 — is a community where homeowners invest in their properties and expect quality service. Mabry's brings nearly four decades of Greater Houston HVAC experience to every Bellaire service call.",
+      "Lake Jackson — the planned Brazoria County town built for Dow Chemical in the 1940s, famous for street names like This Way, That Way, and Winding Way — sits just south of our Alvin shop. We've served the Brazosport area with flat-rate, licensed HVAC since 1986.",
     climate:
-      "Inside Loop 610, the urban heat island effect adds to Houston's already demanding cooling load. Bellaire homes run their AC hard — for the better part of nine months — and that requires reliable equipment and a contractor who shows up fast when something fails. High humidity, sustained summer heat, and condensate systems under constant stress are facts of life in the 77401 zip code.",
+      "This far south in Brazoria County, Lake Jackson sits close to the Gulf. The Brazosport area's heat, relentless humidity, and salt-influenced coastal air are hard on residential equipment. Condensate drain clogs are among the most common calls we get in the 77566 area — Gulf humidity fills drip pans fast, and an overflowing pan can cause real water damage inside a home.",
     housing:
-      "Bellaire's 77401 zip code features a remarkable mix of original mid-century ranch homes (many built in the 1950s and 1960s) alongside the newer luxury custom homes and tear-down rebuilds that have transformed many Bellaire streets over the past two decades. Older homes may have original or partially updated ductwork; newer construction often features zoned cooling and high-efficiency equipment.",
-  },
-  "west-university": {
-    intro:
-      "West University Place — 'West U' — is one of Texas's most prestigious small cities, a residential enclave surrounded by Houston. Mabry's brings nearly 40 years of Greater Houston experience and flat-rate, no-surprises pricing to West U homeowners.",
-    climate:
-      "Houston's urban heat, amplified inside Loop 610, means West U homes run their AC for the better part of nine months — a serious cooling load. High humidity, heat island effects, and sustained summer temperatures make reliable HVAC performance critical in the 77005 zip code.",
-    housing:
-      "West University Place's housing ranges from charming original bungalows and craftsman homes built in the 1920s–1930s to substantial custom rebuilds that have reshaped many blocks as land values have risen. Older homes present real HVAC challenges — limited attic clearance, complex ductwork routing, and cooling loads that older systems were never designed for. Newer builds often feature zoned systems and high-efficiency equipment.",
-  },
-  "rice-village": {
-    intro:
-      "The Rice Village area — anchored by Rice University and the Museum District — is home to some of Houston's most character-rich residential neighborhoods. Mabry's has served Greater Houston homeowners since 1986 with licensed, flat-rate HVAC service.",
-    climate:
-      "Inside Houston's Loop 610, the sustained heat load is real. Homes in the Rice Village area, Southampton, Boulevard Oaks, and Braeswood Place run their AC nearly year-round — and Gulf Coast humidity means condensate drain systems are under constant stress. That demands reliable equipment and a contractor who responds fast when something fails.",
-    housing:
-      "The streets around Rice Village include homes built between the 1920s and 1950s alongside high-end renovations and newer construction. Many of these older homes have HVAC systems retrofitted into spaces not originally designed for modern equipment — requiring technicians who can navigate complex ductwork routing, limited attic access, and configurations that newer tract homes simply don't present.",
+      "Lake Jackson's housing runs from the original mid-century Dow-era homes — many past the typical HVAC replacement age — to newer developments that have grown the 77566 area over recent decades. Older planned-town homes often have ductwork and equipment through one or two replacement cycles; newer builds reward the proactive maintenance that protects them from premature Gulf Coast failure.",
   },
   "houston": {
     intro:
