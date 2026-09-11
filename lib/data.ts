@@ -407,6 +407,9 @@ export const locations = [
 
       <p>Our Gulf Coast climate — high humidity, 9-month cooling seasons, and heat indexes that push past 110°F — is tough on HVAC equipment. We've been diagnosing the specific failure patterns common to Brazoria County homes for four decades.</p>
 
+      <h3>Recent Alvin Work</h3>
+      <p>During one of this summer's worst heat waves, an Alvin homeowner's old system broke down completely — about the worst time there is to lose cooling on the Gulf Coast. We replaced it start to finish with a new 5-ton Trane gas system and got her home comfortable again fast. And because we install to Alvin's code the first time, the job passed City of Alvin inspection on our workmanship — the same standard we hold ourselves to on every install. Passing local inspection isn't automatic in this trade; it's the difference between a job done right and a job done fast.</p>
+
       <h3>Why Alvin Families Have Trusted Us for Generations</h3>
       <ul>
         <li>Our shop is in your backyard — fast response times</li>
@@ -449,6 +452,9 @@ export const locations = [
 
       <p>The Gulf Coast humidity that defines Friendswood's climate means condensate drain maintenance is critical — clogged drains are one of the most common service calls we make in the 77546 area during summer.</p>
 
+      <h3>Recent Friendswood Work</h3>
+      <p>Friendswood holds its contractors to a high standard — the city's inspection process is among the more rigorous in our service area, and honestly, we like it that way. This past July, when a heat wave pushed an aging Friendswood system past its limit, we installed a complete new AC and heating system and passed the City of Friendswood inspection without a single issue. Passing a stringent inspection isn't luck — it's what a proper, to-code installation looks like every time, and it's the standard Friendswood families have counted on from us for nearly four decades.</p>
+
       <h3>Why Friendswood Homeowners Choose Mabry's</h3>
       <ul>
         <li>Dedicated Friendswood service line — 281-482-8400</li>
@@ -488,6 +494,9 @@ export const locations = [
       <p>Pearland spans three zip codes — 77581, 77584, and 77588 — and straddles both Brazoria and Harris counties. The city includes a wide range of housing: 1970s-era homes in Old Pearland and Country Place, the large-scale master-planned communities of Shadow Creek Ranch and Silverlake (built largely in the 2000s), and newer developments along the Highway 288 corridor. Each era of construction has its own HVAC challenges.</p>
 
       <p>Older Pearland homes often have aging ductwork and systems approaching or past replacement age. Homes in Shadow Creek Ranch and Silverlake that were built with builder-grade equipment in the mid-2000s are now 15–20 years old — prime replacement territory. Our team is experienced across all of it.</p>
+
+      <h3>Recent Pearland Work</h3>
+      <p>A lot of Pearland's larger homes run two separate HVAC systems, and when both age out together — common in the mid-2000s Shadow Creek Ranch and Silverlake builds — the repair bills and energy costs pile up fast. We recently helped a Pearland homeowner break that cycle: he'd been sinking money into repeated repairs and high energy bills on two tired old systems, so we replaced both with new complete systems sized right for his home. No more throwing good money after bad on equipment past its prime — just lower, more predictable bills. Both installs passed inspection the first time, which for us is the rule, not the exception. Across nearly four decades we've built a first-time permit inspection pass rate near the top of the industry, because we do the job to code the first time, every time.</p>
 
       <h3>Why Pearland Residents Choose Mabry's</h3>
       <ul>
