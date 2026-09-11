@@ -88,6 +88,17 @@ const nextConfig = {
       { source: '/clear-lake-heating-repair', destination: '/services/heating-repair/clear-lake', permanent: true },
       { source: '/pasadena-ac-repair',        destination: '/services/ac-repair/pasadena',        permanent: true },
       { source: '/pasadena-heating-repair',   destination: '/services/heating-repair/pasadena',   permanent: true },
+
+      // ── Retired aspirational cities (removed 2026-09-11, not in GBP) ──
+      // Bellaire, West University Place, Rice Village: 3 area pages + 12 service+city combos.
+      // All three are inside Loop 610 → point area pages to the kept Houston page;
+      // service combos drop the city and keep the service page.
+      { source: '/areas/bellaire',                    destination: '/areas/houston',    permanent: true },
+      { source: '/areas/west-university',             destination: '/areas/houston',    permanent: true },
+      { source: '/areas/rice-village',                destination: '/areas/houston',    permanent: true },
+      { source: '/services/:service/bellaire',        destination: '/services/:service', permanent: true },
+      { source: '/services/:service/west-university', destination: '/services/:service', permanent: true },
+      { source: '/services/:service/rice-village',    destination: '/services/:service', permanent: true },
     ];
   },
 }

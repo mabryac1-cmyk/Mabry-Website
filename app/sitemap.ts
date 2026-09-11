@@ -18,10 +18,8 @@ const locations = [
   "angleton",
   "manvel",
   "rosharon",
+  "lake-jackson",
   "sugar-land",
-  "bellaire",
-  "west-university",
-  "rice-village",
   "houston",
 ];
 
