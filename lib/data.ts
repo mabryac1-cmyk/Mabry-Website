@@ -409,7 +409,7 @@ export const locations = [
 
       <h3>Why Alvin Families Have Trusted Us for Generations</h3>
       <ul>
-        <li>Our shop is in your backyard — fast response times, no travel fees</li>
+        <li>Our shop is in your backyard — fast response times</li>
         <li>Flat-rate pricing with no hidden charges — we tell you the price before we start</li>
         <li>Family-owned and operated — you talk to us, not a call center</li>
         <li>BBB A+ Accredited Business</li>
@@ -681,7 +681,7 @@ export const locations = [
 
       <h3>Why Sienna Homeowners Choose Mabry's</h3>
       <ul>
-        <li>Fast response for Sienna and Missouri City — no travel fees</li>
+        <li>Fast response for Sienna and Missouri City — we can be there quick</li>
         <li>Flat-rate pricing — zero surprises on your invoice</li>
         <li>BBB A+ Accredited — you can verify our reputation</li>
         <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
@@ -702,7 +702,7 @@ export const locations = [
     description: "Reliable residential HVAC service for Angleton homeowners. Fast response times for Brazoria County, flat-rate pricing since 1986.",
     content: `
       <h2>HVAC Service for Angleton — Brazoria County Homeowners Deserve Honest Work</h2>
-      <p>As the county seat of Brazoria County, Angleton is at the heart of our service territory. Mabry's delivers fast response times for Angleton homeowners without the drive fees that larger Houston-based companies charge. We've been the trusted HVAC resource for Brazoria County families since 1986.</p>
+      <p>As the county seat of Brazoria County, Angleton is at the heart of our service territory. Mabry's delivers fast response times and honest, flat-rate pricing for Angleton homeowners. We've been the trusted HVAC resource for Brazoria County families since 1986.</p>
 
       <h3>HVAC Services We Provide in Angleton</h3>
       <ul>
@@ -753,11 +753,11 @@ export const locations = [
       <h3>We Know Manvel's Growing Communities</h3>
       <p>Manvel's 77578 zip code now includes established communities like Rodeo Palms — one of the area's original planned neighborhoods — alongside newer developments like Pomona, which has brought thousands of newer homes to the area. Many Manvel homeowners are dealing with one of two situations: newer homes (2010s–2020s construction) with builder-grade systems that benefit from annual maintenance to hit their expected lifespan, or older rural properties and estate homes with less standard HVAC configurations that require experienced technicians.</p>
 
-      <p>The Brazoria County climate — humid, hot, and demanding — is the same challenge all our service area homeowners face. We respond quickly and never pad your bill with drive-time charges.</p>
+      <p>The Brazoria County climate — humid, hot, and demanding — is the same challenge all our service area homeowners face. We respond quickly and keep our pricing honest and flat-rate — the price we quote is the price you pay.</p>
 
       <h3>Why Manvel Homeowners Choose Mabry's</h3>
       <ul>
-        <li>Fast response for Manvel — no long drive fees</li>
+        <li>Fast response for Manvel when you need us</li>
         <li>Nearly 40 years serving Brazoria County communities</li>
         <li>Flat-rate pricing — no hidden charges</li>
         <li>BBB A+ Accredited Business</li>
@@ -778,7 +778,7 @@ export const locations = [
     description: "Dependable residential HVAC service for Rosharon homeowners. Quick response for Brazoria County, flat-rate pricing since 1986.",
     content: `
       <h2>HVAC Service for Rosharon — Dependable, Local, Flat-Rate</h2>
-      <p>Rosharon sits in the heart of Brazoria County, along the Highway 288 corridor that has seen significant growth in recent years. Mabry's Air Conditioning & Heating serves Rosharon with fast response and honest, flat-rate pricing — without the drive fees that larger Houston contractors charge to reach this area. We've been serving Brazoria County families since 1986.</p>
+      <p>Rosharon sits in the heart of Brazoria County, along the Highway 288 corridor that has seen significant growth in recent years. Mabry's Air Conditioning & Heating serves Rosharon with fast response and honest, flat-rate pricing — the price we quote is the price you pay. We've been serving Brazoria County families since 1986.</p>
 
       <h3>HVAC Services We Provide in Rosharon</h3>
       <ul>
@@ -795,7 +795,7 @@ export const locations = [
 
       <h3>Why Rosharon Homeowners Trust Mabry's</h3>
       <ul>
-        <li>Fast response for the 77583 area — no long drive fees</li>
+        <li>Fast response for the 77583 area when you need us</li>
         <li>Honest, flat-rate pricing with no hidden fees</li>
         <li>Nearly 40 years of Brazoria County experience</li>
         <li>BBB A+ Accredited Business</li>
@@ -816,7 +816,7 @@ export const locations = [
     description: "Residential HVAC service for Lake Jackson homeowners. Fast, flat-rate service across Brazoria County and the Brazosport area since 1986.",
     content: `
       <h2>HVAC Service for Lake Jackson — Local to Brazoria County, Flat-Rate Pricing</h2>
-      <p>Lake Jackson is one of Brazoria County's most distinctive communities — a planned town originally built in the 1940s to house Dow Chemical workers, and still known today for its one-of-a-kind street names like This Way, That Way, Winding Way, and Circle Way, alongside the botanical streets — Camellia, Oleander, Silverbell, and Magnolia. Mabry's Air Conditioning & Heating serves Lake Jackson and the Brazosport area with fast response and honest, flat-rate pricing — without the long-haul trip fees the big Houston companies tack on. We've served Brazoria County families since 1986.</p>
+      <p>Lake Jackson is one of Brazoria County's most distinctive communities — a planned town originally built in the 1940s to house Dow Chemical workers, and still known today for its one-of-a-kind street names like This Way, That Way, Winding Way, and Circle Way, alongside the botanical streets — Camellia, Oleander, Silverbell, and Magnolia. Mabry's Air Conditioning & Heating serves Lake Jackson and the Brazosport area with fast response and honest, flat-rate pricing — the price we quote is the price you pay. We've served Brazoria County families since 1986.</p>
 
       <h3>HVAC Services We Provide in Lake Jackson</h3>
       <ul>

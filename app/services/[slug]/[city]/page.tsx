@@ -73,7 +73,7 @@ const cityContext: Record<string, { intro: string; climate: string; housing: str
   },
   "angleton": {
     intro:
-      "Angleton is right in Mabry's home territory — the county seat of Brazoria County, where we've served homeowners since 1986. Fast response times for Angleton without the travel fees that larger Houston-based companies charge to reach Brazoria County.",
+      "Angleton is right in Mabry's home territory — the county seat of Brazoria County, where we've served homeowners since 1986. Fast response times and honest, flat-rate pricing for Angleton — the price we quote is the price you pay.",
     climate:
       "Angleton's Brazoria County location subjects homes to full Gulf Coast heat and humidity — the area regularly sees summer heat indexes above 105°F and cooling seasons that stretch from spring through October. Annual condensate drain maintenance remains important in Angleton's 77515 and 77516 zip codes despite being somewhat further from the bay.",
     housing:
@@ -81,7 +81,7 @@ const cityContext: Record<string, { intro: string; climate: string; housing: str
   },
   "manvel": {
     intro:
-      "Mabry's is your true local neighbor for HVAC service in the Manvel 77578 area — fast response, no travel fees, honest flat-rate pricing since 1986.",
+      "Mabry's is your true local neighbor for HVAC service in the Manvel 77578 area — fast response and honest, flat-rate pricing since 1986.",
     climate:
       "Manvel's Brazoria County location means full Gulf Coast heat loads in summer. The rapid residential growth in Manvel has brought many newer homes whose builder-grade systems need proper maintenance to achieve their full lifespan under these demanding climate conditions.",
     housing:
