@@ -74,9 +74,9 @@ const areaGoalCompletion: Record<string, {
     servingText: "Serving: Sugar Land, Missouri City, Sienna, Pearland & surrounding Fort Bend County",
   },
   houston: {
-    paragraph: "Need AC repair or heating service in South or Southwest Houston? Call 281-331-5248 for fast service. We serve Meyerland, Braeswood, Westbury, Braeburn, Clear Lake & surrounding Houston communities with licensed residential HVAC service.",
-    phoneButtons: [{ label: "Call South & Southwest Houston", number: "281-331-5248", tel: "2813315248" }],
-    servingText: "Serving: Meyerland, Braeswood Place, Westbury, Braeburn, Clear Lake, Willow Meadows & surrounding South Houston communities",
+    paragraph: "Need AC repair or heating service in the Clear Lake area of Houston? Call 281-331-5248 for fast service. We serve Clear Lake City, the NASA area, and Southeast Houston's 77058, 77059 & 77062 neighborhoods with licensed residential HVAC service.",
+    phoneButtons: [{ label: "Call Clear Lake Area Houston", number: "281-331-5248", tel: "2813315248" }],
+    servingText: "Serving: Clear Lake City, Space Center, NASA area & Southeast Houston (77058, 77059, 77062)",
   },
 };
 
