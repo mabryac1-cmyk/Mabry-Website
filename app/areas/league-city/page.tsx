@@ -61,6 +61,11 @@ const leagueCityContent = `
 
   <p>Then there's the climate. League City sits on the western shore of Clear Lake and Galveston Bay, which means high humidity year-round, hurricane and tropical storm exposure, and salt-laden air that accelerates corrosion on outdoor condenser coils and electrical contactors — especially in waterfront communities like South Shore Harbour and Marina Bay. We've been diagnosing the specific failure patterns of Bay Area homes for four decades, and we know what salt air does to a condenser.</p>
 
+  <h3>Recent League City Work — Standing Behind an Install, Years Later</h3>
+  <p>One of the best parts of being a family business that's been here since 1986 is that a lot of our League City customers aren't one-time calls — they're people we've worked with for years. We recently heard from a homeowner we'd originally outfitted with two complete Trane systems, a 3&frac12;-ton and a 2&frac12;-ton, tied into their existing ductwork with new plenums, media filters, and fresh drain lines. That install was years back, and the equipment has been running well ever since.</p>
+  <p>This time it was something small: water dripping down from a ceiling vent in a bathroom. In a Bay Area summer that's almost always a condensate drain line backing up — the line that carries away the water your AC pulls out of our humid air. In this climate those lines work hard, and a partial clog can send water backing up into the pan and out where it doesn't belong. Because we'd installed the system, we knew exactly how it was piped: we cleared the line, checked the drain pan and the safety float switch, and had the family back to normal the same afternoon — no ceiling damage, and cool air right through the hottest stretch of the summer.</p>
+  <p>That's the part we're proud of. Whether it's a two-system installation or clearing a drain line years later, League City homeowners get the same family company on the other end of the phone. We install it, and we stand behind it.</p>
+
   <h3>Why League City Homeowners Choose Mabry's</h3>
   <ul>
     <li>Bay Area–based — we're not driving in from Houston, we're already here</li>
