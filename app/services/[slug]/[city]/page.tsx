@@ -113,11 +113,11 @@ const cityContext: Record<string, { intro: string; climate: string; housing: str
   },
   "houston": {
     intro:
-      "Mabry's serves the South and Southwest Houston corridor — Meyerland, Braeswood Place, Westbury, Braeburn, Willow Meadows, and the communities connecting Houston's inner loop to the suburbs further south and west.",
+      "Mabry's serves the Clear Lake area of Houston — Clear Lake City, the Space Center and NASA-area neighborhoods, and Southeast Houston's 77058, 77059, and 77062 zip codes that were annexed into the city decades ago but kept their Clear Lake identity.",
     climate:
-      "Houston's Gulf Coast climate hits South Houston hard. The combination of sustained summer heat, high humidity, and the urban heat island effect means AC systems in this area work harder than almost anywhere in the country — with heat indexes above 105°F common from May through September and cooling seasons that run nine months or more.",
+      "This corner of Houston sits right by Galveston Bay, so its Gulf Coast climate is relentless — sustained summer heat, year-round humidity, and salt-influenced air that's harder on outdoor equipment than it is inland. AC systems here run nine months a year with heat indexes above 105°F common from May through September.",
     housing:
-      "South and Southwest Houston includes a remarkable range of housing: mid-century ranch homes in Meyerland and Braeswood (many rebuilt or renovated after flooding), established 1960s–70s neighborhoods in Westbury and Braeburn, and the NASA-era communities in the Clear Lake corridor. Each era and neighborhood has its own HVAC challenges — we've worked in them all.",
+      "The Clear Lake area of Houston grew up around NASA's Johnson Space Center, so much of the housing in the 77058, 77059, and 77062 zip codes dates to the aerospace boom of the 1960s through 1980s. Many of these well-built homes still run original single-stage equipment and older ductwork — prime territory for repair, replacement, and efficiency upgrades, all of which we handle.",
   },
 };
 
