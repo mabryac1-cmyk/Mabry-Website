@@ -63,6 +63,9 @@ const clearLakeContent = `
 
   <p>Then there's the climate. Clear Lake sits right on Galveston Bay, which means high humidity year-round, hurricane and tropical storm exposure (Hurricane Ike's 2008 storm surge devastated parts of this area), and the kind of summer heat where AC systems run nearly nonstop from May through October. Equipment in Clear Lake homes works harder than equipment in inland communities — which is why annual maintenance pays for itself many times over.</p>
 
+  <h3>Recent Clear Lake Work</h3>
+  <p>Here's what that coastal wear looks like in practice. We recently replaced a Clear Lake homeowner's outdoor condenser that was badly corroded and worn out after years in this salt-air environment, along with a matching new evaporator coil. Her furnace, though, was still in good shape — so we left it alone and saved her a significant amount of money rather than selling her a full system she didn't need. That's the honest approach that's earned our reputation over nearly four decades: replace what's actually failed, keep what's still good, and get you comfortable again fast.</p>
+
   <h3>Why Clear Lake Homeowners Choose Mabry's</h3>
   <ul>
     <li>Bay Area–based — a local company that knows Clear Lake and the NASA Parkway communities</li>
