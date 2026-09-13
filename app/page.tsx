@@ -90,7 +90,7 @@ export default function Home() {
             </div>
 
             <p className="text-lg text-white/90 max-w-lg leading-relaxed">
-              Proudly serving Alvin, Friendswood, Pearland, Manvel, Clear Lake, League City, Deer Park, Pasadena, and communities throughout the Greater Houston area. Licensed residential HVAC — {businessInfo.license}.
+              Proudly serving Alvin, Friendswood, Pearland, Manvel, Clear Lake, League City, Deer Park, Missouri City, and communities throughout the Greater Houston area. Licensed residential HVAC — {businessInfo.license}.
             </p>
 
             <p className="text-sm text-white/70">
