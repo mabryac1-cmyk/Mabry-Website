@@ -574,6 +574,11 @@ export const locations = [
 
       <p>Deer Park sits along the Houston Ship Channel and the eastern edge of Galveston Bay, which means high Gulf Coast humidity year-round and the kind of summer heat that has AC equipment running nearly nonstop from May through October. The hardworking families of Deer Park deserve HVAC contractors who show up when called and stand behind their work. Routine maintenance — filter changes, coil cleanings, condensate line checks — keeps your equipment running efficiently and your monthly electric bills under control.</p>
 
+      <h3>Recent Deer Park Work — Getting a New Homeowner Moved In</h3>
+      <p>We work in Deer Park regularly, and the jobs run the full range — from a quick service call to a complete system replacement. One we're proud of was a family that had just purchased a home here. The house needed a full HVAC system — the old equipment had quit working entirely, and the new owners were eager to get moved in. We replaced the complete air conditioning and heating system, ductwork included, and got them up and running quickly so they could settle into their new home.</p>
+      <p>That cooling turned out to be about more than comfort. The family had a list of projects to tackle inside the house before they were fully settled, and honestly, in a Deer Park summer, none of those interior home projects happen without air conditioning.</p>
+      <p>A complete system with new ductwork is one of the bigger jobs we do, and it's a good reminder of what a fresh, properly sized system does for a home from day one: quiet, even cooling, better efficiency, and heating you can count on when the Deer Park cold snaps roll through.</p>
+
       <h3>Why Deer Park Homeowners Trust Mabry's</h3>
       <ul>
         <li>No-nonsense flat-rate pricing — the price we quote is the price you pay</li>
