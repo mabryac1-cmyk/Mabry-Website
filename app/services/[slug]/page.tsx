@@ -34,7 +34,6 @@ const serviceSchema = (service: { name: string; slug: string; description: strin
     { "@type": "City", "name": "Friendswood", "addressRegion": "TX" },
     { "@type": "City", "name": "Pearland", "addressRegion": "TX" },
     { "@type": "City", "name": "Sugar Land", "addressRegion": "TX" },
-    { "@type": "City", "name": "Bellaire", "addressRegion": "TX" },
     { "@type": "City", "name": "Clear Lake", "addressRegion": "TX" },
     { "@type": "City", "name": "League City", "addressRegion": "TX" },
     { "@type": "City", "name": "Deer Park", "addressRegion": "TX" },
@@ -43,7 +42,6 @@ const serviceSchema = (service: { name: string; slug: string; description: strin
     { "@type": "City", "name": "Angleton", "addressRegion": "TX" },
     { "@type": "City", "name": "Rosharon", "addressRegion": "TX" },
     { "@type": "City", "name": "Sienna", "addressRegion": "TX" },
-    { "@type": "City", "name": "West University Place", "addressRegion": "TX" },
     { "@type": "City", "name": "Houston", "addressRegion": "TX" }
   ],
   "hasOfferCatalog": {

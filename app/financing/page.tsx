@@ -28,7 +28,7 @@ const financingSchema = {
     "availability": "https://schema.org/InStock",
     "areaServed": [
       "Alvin, TX", "Friendswood, TX", "Pearland, TX", "Sugar Land, TX",
-      "Clear Lake, TX", "League City, TX", "Bellaire, TX"
+      "Clear Lake, TX", "League City, TX"
     ],
     "seller": {
       "@type": "HVACBusiness",
