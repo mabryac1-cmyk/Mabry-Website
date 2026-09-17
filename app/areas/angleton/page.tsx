@@ -61,6 +61,11 @@ const angletonContent = `
 
   <p>The Gulf Coast climate doesn't make any of this easier. Angleton sits roughly 20 miles inland from the coast, which means high humidity year-round, brutal summer heat indexes, and salt air that can accelerate corrosion on outdoor condenser coils — especially on homes closer to the Brazos River bottom or further south toward Lake Jackson. We've been diagnosing the specific failure patterns of Brazoria County homes for four decades, and we know what to look for.</p>
 
+  <h3>Recent Angleton Work — Honoring an Informed Homeowner's Choice</h3>
+  <p>Not every customer comes to us unsure of what they want. On a recent Angleton install, the homeowner had done a lot of her own research and had settled on a specific high-efficiency air conditioning and heating system she wanted for her home. We think that's great — an informed homeowner asks better questions and ends up happier with the result.</p>
+  <p>Our job was to make sure her choice was the right fit. Before we ordered anything, we did a thorough review of her home and her existing ductwork to confirm the system she'd picked would be properly sized and would perform the way it was designed to — because even the best equipment underperforms if the home and ductwork aren't matched to it. Everything checked out, and we were glad to install exactly the system she wanted, paired with the top-quality installation standards we hold ourselves to on every job.</p>
+  <p>She's thrilled — both with the high-efficiency system she researched and chose, and with the company that made sure it was done right. Whether you already know exactly what you want or you'd like us to help you weigh the options, we're happy to meet you wherever you are.</p>
+
   <h3>Why Angleton Homeowners Choose Mabry's</h3>
   <ul>
     <li>Brazoria County–based — a local company that knows Angleton, not a Houston outfit</li>
