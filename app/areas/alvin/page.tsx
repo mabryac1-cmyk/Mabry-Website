@@ -196,7 +196,7 @@ export default function AlvinPage() {
 
           {/* Service area — inclusive city strip */}
           <div className="mb-6 max-w-3xl">
-            <p className="text-white/90 text-sm sm:text-base leading-relaxed">
+            <p className="text-white/90 text-xl leading-relaxed">
               <span className="font-semibold text-white">Proudly serving Alvin &amp; the surrounding area:</span>{" "}
               {[
                 { name: "Pearland", href: "/areas/pearland" },
@@ -205,6 +205,7 @@ export default function AlvinPage() {
                 { name: "Missouri City", href: "/areas/sienna" },
                 { name: "Rosharon", href: "/areas/rosharon" },
                 { name: "Angleton", href: "/areas/angleton" },
+                { name: "Lake Jackson", href: "/areas/lake-jackson" },
                 { name: "Sugar Land", href: "/areas/sugar-land" },
               ].map((c, i, arr) => (
                 <span key={c.name}>

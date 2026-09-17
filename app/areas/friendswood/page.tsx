@@ -196,7 +196,7 @@ export default function FriendswoodPage() {
 
           {/* Service area — inclusive city strip */}
           <div className="mb-6 max-w-3xl">
-            <p className="text-white/90 text-sm sm:text-base leading-relaxed">
+            <p className="text-white/90 text-xl leading-relaxed">
               <span className="font-semibold text-white">Proudly serving Friendswood &amp; the Bay Area:</span>{" "}
               {[
                 { name: "League City", href: "/areas/league-city" },
