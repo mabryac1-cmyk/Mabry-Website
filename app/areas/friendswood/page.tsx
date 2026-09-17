@@ -201,6 +201,7 @@ export default function FriendswoodPage() {
               {[
                 { name: "League City", href: "/areas/league-city" },
                 { name: "Clear Lake", href: "/areas/clear-lake" },
+                { name: "Kemah", href: "/areas/clear-lake" },
                 { name: "Deer Park", href: "/areas/deer-park" },
                 { name: "Pasadena", href: "/areas/pasadena" },
                 { name: "Webster", href: "/areas/league-city" },
