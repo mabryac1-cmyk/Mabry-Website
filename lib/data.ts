@@ -777,11 +777,17 @@ export const locations = [
 
       <p>The Brazoria County climate — humid, hot, and demanding — is the same challenge all our service area homeowners face. We respond quickly and keep our pricing honest and flat-rate — the price we quote is the price you pay.</p>
 
+      <h3>Recent Manvel Work — Looking After the Neighbors Who Need It Most</h3>
+      <p>Not long ago we were called out to a Manvel home where a retired U.S. military veteran and his wife — both up in years now — had lost their air conditioning during one of the hottest stretches of the summer. We care about every customer, but we pay extra attention to our elderly neighbors, because extreme summer heat and hard winter cold carry real health risks for them. Whenever we can, we move seniors up the schedule, and this was one of those times.</p>
+      <p>Our technicians went out hoping to get the family cooling again with a repair, but this system had reached the end of the road — it was beyond fixing and needed to be replaced. We got their new system installed quickly so they weren't left in the heat. And we were glad to take care of them on the price, too: on top of our senior discount, this gentleman had earned his veteran's discount, and we were honored to give him both.</p>
+      <p>That's the kind of company we've tried to be for nearly 40 years — the one you'd want showing up for your own parents or grandparents.</p>
+
       <h3>Why Manvel Homeowners Choose Mabry's</h3>
       <ul>
         <li>Fast response for Manvel when you need us</li>
         <li>Nearly 40 years serving Brazoria County communities</li>
         <li>Flat-rate pricing — no hidden charges</li>
+        <li>Senior and veteran discounts — our way of saying thank you</li>
         <li>BBB A+ Accredited Business</li>
         <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
         <li>Manvel service line: 281-331-5248</li>
