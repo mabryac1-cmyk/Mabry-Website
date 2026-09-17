@@ -175,7 +175,7 @@ export default function FriendswoodPage() {
             <ArrowLeft className="w-4 h-4" /> Back to Home
           </Link>
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            AC Repair &amp; HVAC Service in Friendswood, TX — Trusted Since 1986
+            AC Repair &amp; HVAC Serving Friendswood, TX &amp; the Greater Bay Area — Trusted Since 1986
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mb-6">
             Serving Friendswood families for nearly 40 years — along with the Greater Clear Lake area. Flat-rate pricing, BBB A+.

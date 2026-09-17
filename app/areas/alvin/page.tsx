@@ -175,7 +175,7 @@ export default function AlvinPage() {
             <ArrowLeft className="w-4 h-4" /> Back to Home
           </Link>
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            AC Repair &amp; HVAC Service in Alvin, TX — Your Local Experts Since 1986
+            AC Repair &amp; HVAC Serving Alvin, TX &amp; the Greater Houston Area — Your Local Experts Since 1986
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mb-6">
             Alvin&apos;s hometown HVAC company since 1986, proudly serving the Alvin, Pearland, and Manvel areas from our shop at 2110 S Gordon St — minutes from wherever you are.
