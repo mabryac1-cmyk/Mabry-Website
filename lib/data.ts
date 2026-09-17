@@ -821,11 +821,17 @@ export const locations = [
 
       <p>The Brazoria County climate is no different here — high humidity, long cooling seasons, and the occasional cold front that tests heating systems that haven't run in months.</p>
 
+      <h3>Recent Rosharon Work — A New System Plus Cleaner, Healthier Air</h3>
+      <p>A late-summer system failure is about the worst timing there is for losing your cooling. We fix far more systems than we replace — but every now and then we go out, look things over, and have to give a homeowner the honest answer: this system is old and worn out, and the cost and risk of repairing it just don't add up against a proper replacement. That was the case on a recent Rosharon job, and we walked the customer through why a new system was the smarter money.</p>
+      <p>What made this one a little different is that the homeowner wanted to do more than just replace what he had — he wanted his new setup to make the air in his home genuinely healthier. Along with the new air conditioning and heating system, we installed a high-efficiency media filter to trap far more dust and allergens than a standard one-inch filter, plus a UV germicidal light mounted at the coil to help inhibit the mold and mildew growth our humid Gulf Coast air loves to encourage. In a climate like Rosharon's, those two upgrades make a real difference in how clean and fresh a home feels.</p>
+      <p>He was thrilled with the new system — cooler, quieter, and with noticeably cleaner air than before. If you're already replacing a system, it's often the ideal moment to add air-quality improvements like these, and we're always glad to talk through the options.</p>
+
       <h3>Why Rosharon Homeowners Trust Mabry's</h3>
       <ul>
         <li>Fast response for the 77583 area when you need us</li>
         <li>Honest, flat-rate pricing with no hidden fees</li>
         <li>Nearly 40 years of Brazoria County experience</li>
+        <li>Indoor air-quality options — media filters, UV germicidal lights &amp; more</li>
         <li>BBB A+ Accredited Business</li>
         <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
         <li>Rosharon service line: 281-331-5248</li>
