@@ -190,8 +190,34 @@ export default function AlvinPage() {
             </a>
             <div className="flex items-center gap-2 text-white/80">
               <CheckCircle className="w-5 h-5 text-accent" />
-              <span>Serving 77511, 77512</span>
+              <span>Serving 77511, 77512, 77578, 77581, 77584, 77459 &amp; nearby</span>
             </div>
+          </div>
+
+          {/* Service area — inclusive city strip */}
+          <div className="mb-6 max-w-3xl">
+            <p className="text-white/90 text-sm sm:text-base leading-relaxed">
+              <span className="font-semibold text-white">Proudly serving Alvin &amp; the surrounding area:</span>{" "}
+              {[
+                { name: "Pearland", href: "/areas/pearland" },
+                { name: "Manvel", href: "/areas/manvel" },
+                { name: "Sienna", href: "/areas/sienna" },
+                { name: "Missouri City", href: "/areas/sienna" },
+                { name: "Rosharon", href: "/areas/rosharon" },
+                { name: "Angleton", href: "/areas/angleton" },
+                { name: "Sugar Land", href: "/areas/sugar-land" },
+              ].map((c, i, arr) => (
+                <span key={c.name}>
+                  <Link
+                    href={c.href}
+                    className="underline decoration-white/30 underline-offset-2 hover:decoration-accent hover:text-accent transition-colors"
+                  >
+                    {c.name}
+                  </Link>
+                  {i < arr.length - 1 && <span className="text-white/40"> · </span>}
+                </span>
+              ))}
+            </p>
           </div>
 
           {/* Trust badges */}

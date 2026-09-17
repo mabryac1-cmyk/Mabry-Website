@@ -190,8 +190,32 @@ export default function FriendswoodPage() {
             </a>
             <div className="flex items-center gap-2 text-white/80">
               <CheckCircle className="w-5 h-5 text-accent" />
-              <span>Serving 77546, 77549</span>
+              <span>Serving 77546, 77573, 77058, 77536, 77504, 77598 &amp; nearby</span>
             </div>
+          </div>
+
+          {/* Service area — inclusive city strip */}
+          <div className="mb-6 max-w-3xl">
+            <p className="text-white/90 text-sm sm:text-base leading-relaxed">
+              <span className="font-semibold text-white">Proudly serving Friendswood &amp; the Bay Area:</span>{" "}
+              {[
+                { name: "League City", href: "/areas/league-city" },
+                { name: "Clear Lake", href: "/areas/clear-lake" },
+                { name: "Deer Park", href: "/areas/deer-park" },
+                { name: "Pasadena", href: "/areas/pasadena" },
+                { name: "Webster", href: "/areas/league-city" },
+              ].map((c, i, arr) => (
+                <span key={c.name}>
+                  <Link
+                    href={c.href}
+                    className="underline decoration-white/30 underline-offset-2 hover:decoration-accent hover:text-accent transition-colors"
+                  >
+                    {c.name}
+                  </Link>
+                  {i < arr.length - 1 && <span className="text-white/40"> · </span>}
+                </span>
+              ))}
+            </p>
           </div>
 
           {/* Trust badges */}
