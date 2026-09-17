@@ -655,6 +655,11 @@ export const locations = [
 
       <p>The Houston Ship Channel corridor and Galveston Bay proximity mean Pasadena's Gulf Coast climate runs hot and humid for most of the year, and AC systems here log serious runtime hours from May through October. Regular filter changes, coil cleanings, and airflow checks keep your equipment running efficiently and your monthly electric bills manageable — we cover all of that on every service call.</p>
 
+      <h3>Recent Pasadena Work — A Weekend Breakdown, Handled Start to Finish</h3>
+      <p>Air conditioners have a way of quitting at the worst possible time. One Pasadena homeowner's system gave out on a brutally hot Saturday evening, and he reached out to us right through the service request on this website. We got him onto the schedule as an urgent job, and because a full system replacement was an unexpected hit to the budget, we also helped him get approved for financing so the surprise cost didn't have to stand between his family and a cool house.</p>
+      <p>By first thing Monday morning our technicians had him and his wife up and cooling again with a new air conditioner and matching evaporator coil — start to finish, from a Saturday-night breakdown to comfort before the work week was underway. He was thrilled with the speed, the crew, and the whole experience, and was kind enough to leave us a review afterward.</p>
+      <p>That's the way we like to handle an emergency: answer fast, get you scheduled, take the sting out of the cost when we can, and get your home comfortable again as quickly as possible.</p>
+
       <h3>Why Pasadena Homeowners Trust Mabry's</h3>
       <ul>
         <li>Straightforward flat-rate pricing — no surprises on the invoice</li>
