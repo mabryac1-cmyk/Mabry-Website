@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LeadForm } from "@/components/LeadForm";
 import { GoalCompletionBlock } from "@/components/GoalCompletionBlock";
+import { PricingBand } from "@/components/PricingBand";
 import { locations, getLocationBySlug, businessInfo, services } from "@/lib/data";
 import { ArrowLeft, Phone, CheckCircle, Wrench } from "lucide-react";
 
@@ -166,6 +167,9 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
           </div>
         </div>
       </section>
+
+      {/* Visible pricing band — transparent pricing up top */}
+      <PricingBand className="bg-white pt-10 pb-2" />
 
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

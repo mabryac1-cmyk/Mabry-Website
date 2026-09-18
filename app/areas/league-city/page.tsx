@@ -4,6 +4,7 @@ import Link from "next/link";
 import { LeadForm } from "@/components/LeadForm";
 import { FAQSection } from "@/components/FAQSection";
 import { GoalCompletionBlock } from "@/components/GoalCompletionBlock";
+import { PricingBand } from "@/components/PricingBand";
 import { services, businessInfo } from "@/lib/data";
 import { ArrowLeft, Phone, CheckCircle, Wrench, Shield, Clock, Award } from "lucide-react";
 
@@ -170,6 +171,9 @@ export default function LeagueCityPage() {
           </p>
         </div>
       </section>
+
+      {/* Visible pricing band — transparent pricing up top */}
+      <PricingBand className="bg-white pt-10 pb-2" />
 
       {/* Trust Bar */}
       <section className="bg-white py-8 border-b border-gray-100">
