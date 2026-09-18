@@ -117,6 +117,9 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
   const reviewsWidgetId = friendswoodZoneSlugs.has(slug)
     ? "b3584e39-3dd0-448f-a2f3-f6bcd278e919"
     : "35a13954-516a-4f3e-aead-43fd4158b663";
+  const bbbSealHref = friendswoodZoneSlugs.has(slug)
+    ? "https://www.bbb.org/us/tx/friendswood/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805/addressId/92394#sealclick"
+    : "https://www.bbb.org/us/tx/alvin/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805#sealclick";
 
   const pageSchema = {
     "@context": "https://schema.org",
@@ -170,6 +173,28 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
               <CheckCircle className="w-5 h-5 text-accent" />
               <span>Serving {location.zipCodes.join(", ")}</span>
             </div>
+          </div>
+
+          {/* Trust badges */}
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            <a
+              href={bbbSealHref}
+              target="_blank"
+              rel="nofollow"
+              aria-label="Mabry's Air Conditioning & Heating BBB Business Review"
+            >
+              <img
+                src="https://seal-houston.bbb.org/seals/blue-seal-200-42-bbb-50000805.png"
+                alt="BBB Accredited Business — A+ Rated"
+                width={200}
+                height={42}
+                style={{ border: 0 }}
+                className="rounded"
+              />
+            </a>
+            <span className="inline-flex items-center gap-1.5 bg-accent/25 border border-accent/50 text-white text-xs font-semibold px-3 py-1.5 rounded-full">
+              <Award className="w-3.5 h-3.5 shrink-0" /> Voted Favorite AC Company
+            </span>
           </div>
         </div>
       </section>
