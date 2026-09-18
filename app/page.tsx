@@ -104,30 +104,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white py-16 -mt-8 relative z-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { icon: Clock, title: "Same-Day Service", desc: "Fast response when you need it most" },
-              { icon: Shield, title: "Licensed & Insured", desc: `License ${businessInfo.license}` },
-              { icon: Award, title: "Flat-Rate Pricing", desc: "No hidden charges, ever" },
-            ].map((item, i) => (
-              <div key={i} className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 flex items-start gap-4 hover:shadow-xl transition-all hover:-translate-y-1">
-                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary shrink-0">
-                  <item.icon className="w-7 h-7" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-2 text-primary">{item.title}</h3>
-                  <p className="text-muted-foreground">{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Visible pricing band — transparent pricing up top */}
-      <section className="bg-white pb-16">
+      <section className="bg-white pt-16 pb-8 -mt-8 relative z-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-4">
             {/* Service call price */}
@@ -158,6 +136,28 @@ export default function Home() {
                 </p>
               </div>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { icon: Clock, title: "Same-Day Service", desc: "Fast response when you need it most" },
+              { icon: Shield, title: "Licensed & Insured", desc: `License ${businessInfo.license}` },
+              { icon: Award, title: "Flat-Rate Pricing", desc: "No hidden charges, ever" },
+            ].map((item, i) => (
+              <div key={i} className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 flex items-start gap-4 hover:shadow-xl transition-all hover:-translate-y-1">
+                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary shrink-0">
+                  <item.icon className="w-7 h-7" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2 text-primary">{item.title}</h3>
+                  <p className="text-muted-foreground">{item.desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
