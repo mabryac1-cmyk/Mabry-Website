@@ -6,7 +6,7 @@ import { LeadForm } from "@/components/LeadForm";
 import { GoalCompletionBlock } from "@/components/GoalCompletionBlock";
 import { PricingBand } from "@/components/PricingBand";
 import { locations, getLocationBySlug, businessInfo, services } from "@/lib/data";
-import { ArrowLeft, Phone, CheckCircle, Wrench } from "lucide-react";
+import { ArrowLeft, Phone, CheckCircle, Wrench, Clock, Shield, Award } from "lucide-react";
 
 const areaGoalCompletion: Record<string, {
   paragraph: string;
@@ -112,6 +112,12 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
     notFound();
   }
 
+  // Reviews widget by GBP zone: Bay Area (Friendswood) cities vs Alvin-zone cities
+  const friendswoodZoneSlugs = new Set(["deer-park", "pasadena"]);
+  const reviewsWidgetId = friendswoodZoneSlugs.has(slug)
+    ? "b3584e39-3dd0-448f-a2f3-f6bcd278e919"
+    : "35a13954-516a-4f3e-aead-43fd4158b663";
+
   const pageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -170,6 +176,37 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
 
       {/* Visible pricing band — transparent pricing up top */}
       <PricingBand className="bg-white pt-10 pb-2" />
+
+      {/* Trust Bar */}
+      <section className="bg-white py-8 border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { icon: Clock, title: "Same-Day Service", desc: "Fast response when you need it most" },
+              { icon: Shield, title: "Licensed & Insured", desc: `License ${businessInfo.license}` },
+              { icon: Award, title: "Flat-Rate Pricing", desc: "No hidden charges, ever" },
+            ].map((item, i) => (
+              <div key={i} className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary shrink-0">
+                  <item.icon className="w-6 h-6" />
+                </div>
+                <div>
+                  <p className="font-bold text-primary">{item.title}</p>
+                  <p className="text-sm text-muted-foreground">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Reviews */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Script src="https://elfsightcdn.com/platform.js" strategy="lazyOnload" />
+          <div className={`elfsight-app-${reviewsWidgetId}`} data-elfsight-app-lazy></div>
+        </div>
+      </section>
 
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
