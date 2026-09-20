@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { LeadForm } from "@/components/LeadForm";
 import { GoalCompletionBlock } from "@/components/GoalCompletionBlock";
 import { PricingBand } from "@/components/PricingBand";
+import { pricingMainEntity } from "@/lib/pricingSchema";
 import { locations, getLocationBySlug, businessInfo, services } from "@/lib/data";
 import { ArrowLeft, Phone, CheckCircle, Wrench, Clock, Shield, Award } from "lucide-react";
 
@@ -131,20 +132,13 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
       "@type": "HVACBusiness",
       "@id": "https://mabryac.com/#business"
     },
-    "mainEntity": {
-      "@type": "Service",
-      "name": `HVAC Services in ${location.name}, ${location.state}`,
-      "provider": {
-        "@type": "HVACBusiness",
-        "@id": "https://mabryac.com/#business"
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": location.name,
-        "addressRegion": location.state
-      },
-      "telephone": `+1-${location.phone}`
-    }
+    "mainEntity": pricingMainEntity({
+      cityName: location.name,
+      state: location.state,
+      phone: location.phone,
+      serviceName: `HVAC Services in ${location.name}, ${location.state}`,
+      license: businessInfo.license,
+    })
   };
 
   return (

@@ -5,6 +5,7 @@ import { LeadForm } from "@/components/LeadForm";
 import { FAQSection } from "@/components/FAQSection";
 import { GoalCompletionBlock } from "@/components/GoalCompletionBlock";
 import { PricingBand } from "@/components/PricingBand";
+import { pricingMainEntity } from "@/lib/pricingSchema";
 import { services, businessInfo } from "@/lib/data";
 import { ArrowLeft, Phone, CheckCircle, Wrench, Shield, Clock, Award } from "lucide-react";
 
@@ -92,20 +93,13 @@ export default function AngletonPage() {
       "@type": "HVACBusiness",
       "@id": "https://mabryac.com/#business"
     },
-    "mainEntity": {
-      "@type": "Service",
-      "name": "AC Repair & HVAC Service in Angleton, TX",
-      "provider": {
-        "@type": "HVACBusiness",
-        "@id": "https://mabryac.com/#business"
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Angleton",
-        "addressRegion": "TX"
-      },
-      "telephone": "+1-281-331-5248"
-    }
+    "mainEntity": pricingMainEntity({
+      cityName: "Angleton",
+      state: "TX",
+      phone: "281-331-5248",
+      serviceName: "AC Repair & HVAC Service in Angleton, TX",
+      license: businessInfo.license,
+    })
   };
 
   return (

@@ -5,6 +5,7 @@ import { LeadForm } from "@/components/LeadForm";
 import { FAQSection } from "@/components/FAQSection";
 import { GoalCompletionBlock } from "@/components/GoalCompletionBlock";
 import { PricingBand } from "@/components/PricingBand";
+import { pricingMainEntity } from "@/lib/pricingSchema";
 import { services, businessInfo } from "@/lib/data";
 import { ArrowLeft, Phone, CheckCircle, Wrench, Shield, Clock, Award } from "lucide-react";
 
@@ -93,19 +94,13 @@ export default function ClearLakePage() {
       "@type": "HVACBusiness",
       "@id": "https://mabryac.com/#business"
     },
-    "mainEntity": {
-      "@type": "Service",
-      "name": "AC Repair & HVAC Service in Clear Lake, TX",
-      "provider": {
-        "@type": "HVACBusiness",
-        "@id": "https://mabryac.com/#business"
-      },
-      "areaServed": {
-        "@type": "Place",
-        "name": "Clear Lake, Houston, TX"
-      },
-      "telephone": "+1-281-482-8400"
-    }
+    "mainEntity": pricingMainEntity({
+      cityName: "Clear Lake",
+      state: "TX",
+      phone: "281-482-8400",
+      serviceName: "AC Repair & HVAC Service in Clear Lake, TX",
+      license: businessInfo.license,
+    })
   };
 
   return (

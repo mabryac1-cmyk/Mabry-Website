@@ -5,6 +5,7 @@ import { LeadForm } from "@/components/LeadForm";
 import { FAQSection } from "@/components/FAQSection";
 import { GoalCompletionBlock } from "@/components/GoalCompletionBlock";
 import { PricingBand } from "@/components/PricingBand";
+import { pricingMainEntity } from "@/lib/pricingSchema";
 import { services, businessInfo } from "@/lib/data";
 import { ArrowLeft, Phone, CheckCircle, Wrench, Shield, Clock, Award } from "lucide-react";
 
@@ -92,20 +93,13 @@ export default function LeagueCityPage() {
       "@type": "HVACBusiness",
       "@id": "https://mabryac.com/#business"
     },
-    "mainEntity": {
-      "@type": "Service",
-      "name": "AC Repair & HVAC Service in League City, TX",
-      "provider": {
-        "@type": "HVACBusiness",
-        "@id": "https://mabryac.com/#business"
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "League City",
-        "addressRegion": "TX"
-      },
-      "telephone": "+1-281-482-8400"
-    }
+    "mainEntity": pricingMainEntity({
+      cityName: "League City",
+      state: "TX",
+      phone: "281-482-8400",
+      serviceName: "AC Repair & HVAC Service in League City, TX",
+      license: businessInfo.license,
+    })
   };
 
   return (
