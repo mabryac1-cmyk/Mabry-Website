@@ -6,6 +6,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { GoalCompletionBlock } from "@/components/GoalCompletionBlock";
 import { services, businessInfo } from "@/lib/data";
 import { ArrowLeft, Phone, CheckCircle, Wrench, Shield, Clock, Award } from "lucide-react";
+import { getStartingPrices, fmtUSD } from "@/lib/crm-catalog";
 import { PricingBand } from "@/components/PricingBand";
 
 export const metadata: Metadata = {
@@ -74,7 +75,10 @@ const alvinContent = `
   <p>From the historic downtown neighborhoods near Nolan Ryan Ballpark to the newer communities along Highway 6, Mabry's is Alvin's HVAC company. Call us at 281-331-5248.</p>
 `;
 
-export default function AlvinPage() {
+export default async function AlvinPage() {
+  // Source of truth: equipment "starting at" prices come from the CRM feed (same as
+  // /pricing) so this page can never drift.
+  const starting = await getStartingPrices();
   const pageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -111,7 +115,7 @@ export default function AlvinPage() {
             "areaServed": { "@type": "City", "name": "Alvin", "addressRegion": "TX" },
             "offers": {
               "@type": "Offer",
-              "price": "12140.00",
+              "price": starting.value.toFixed(2),
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock",
               "url": "https://mabryac.com/pricing",
@@ -130,7 +134,7 @@ export default function AlvinPage() {
             "areaServed": { "@type": "City", "name": "Alvin", "addressRegion": "TX" },
             "offers": {
               "@type": "Offer",
-              "price": "13637.00",
+              "price": starting.choice.toFixed(2),
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock",
               "url": "https://mabryac.com/pricing",
@@ -149,7 +153,7 @@ export default function AlvinPage() {
             "areaServed": { "@type": "City", "name": "Alvin", "addressRegion": "TX" },
             "offers": {
               "@type": "Offer",
-              "price": "18272.00",
+              "price": starting.premier.toFixed(2),
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock",
               "url": "https://mabryac.com/pricing",
@@ -330,7 +334,7 @@ export default function AlvinPage() {
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
                   For our Alvin neighbors and the surrounding community, our flat-rate installation
                   pricing keeps things simple. Complete new AC &amp; heating system installations start at
-                  just <strong className="text-primary">$12,140</strong> — the same honest, transparent
+                  just <strong className="text-primary">{fmtUSD(starting.value)}</strong> — the same honest, transparent
                   approach we&apos;ve used since we opened our doors on South Gordon Street in 1986.
                 </p>
                 <Link

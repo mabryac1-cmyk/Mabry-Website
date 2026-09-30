@@ -6,6 +6,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { GoalCompletionBlock } from "@/components/GoalCompletionBlock";
 import { services, businessInfo } from "@/lib/data";
 import { ArrowLeft, Phone, CheckCircle, Wrench, Shield, Clock, Award } from "lucide-react";
+import { getStartingPrices, fmtUSD } from "@/lib/crm-catalog";
 import { PricingBand } from "@/components/PricingBand";
 
 export const metadata: Metadata = {
@@ -74,7 +75,10 @@ const friendswoodContent = `
   <p>From neighborhoods near Friendswood High School and the historic downtown area to communities along FM 518, Mabry's is the HVAC company Friendswood has counted on for nearly 40 years.</p>
 `;
 
-export default function FriendswoodPage() {
+export default async function FriendswoodPage() {
+  // Source of truth: equipment "starting at" prices come from the CRM feed (same as
+  // /pricing) so this page can never drift.
+  const starting = await getStartingPrices();
   const pageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -111,7 +115,7 @@ export default function FriendswoodPage() {
             "areaServed": { "@type": "City", "name": "Friendswood", "addressRegion": "TX" },
             "offers": {
               "@type": "Offer",
-              "price": "12140.00",
+              "price": starting.value.toFixed(2),
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock",
               "url": "https://mabryac.com/pricing",
@@ -130,7 +134,7 @@ export default function FriendswoodPage() {
             "areaServed": { "@type": "City", "name": "Friendswood", "addressRegion": "TX" },
             "offers": {
               "@type": "Offer",
-              "price": "13637.00",
+              "price": starting.choice.toFixed(2),
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock",
               "url": "https://mabryac.com/pricing",
@@ -149,7 +153,7 @@ export default function FriendswoodPage() {
             "areaServed": { "@type": "City", "name": "Friendswood", "addressRegion": "TX" },
             "offers": {
               "@type": "Offer",
-              "price": "18272.00",
+              "price": starting.premier.toFixed(2),
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock",
               "url": "https://mabryac.com/pricing",
@@ -328,7 +332,7 @@ export default function FriendswoodPage() {
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
                   Friendswood homeowners have several options when it&apos;s time to replace their AC &amp;
                   heating system. Our most popular tier — the trusted Trane Single-Stage — starts at
-                  <strong className="text-primary"> $13,637</strong> for a complete installation. From the
+                  <strong className="text-primary"> {fmtUSD(starting.choice)}</strong> for a complete installation. From the
                   Forest of Friendswood to communities throughout the Bay Area, we keep our pricing flat-rate
                   and straightforward. No surprises.
                 </p>

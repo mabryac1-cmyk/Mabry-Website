@@ -132,7 +132,7 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
       "@type": "HVACBusiness",
       "@id": "https://mabryac.com/#business"
     },
-    "mainEntity": pricingMainEntity({
+    "mainEntity": await pricingMainEntity({
       cityName: location.name,
       state: location.state,
       phone: location.phone,

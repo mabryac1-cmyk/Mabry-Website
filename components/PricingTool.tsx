@@ -27,7 +27,9 @@ import {
   furnaceBtuSize,
   systemRetail,
   furnaceRetail,
+  sectionSystemType,
 } from "@/lib/pricing";
+import { type CrmPriceMaps, crmSystemPrice, crmFurnacePrice, crmAddOnPrice } from "@/lib/crm-catalog";
 
 type Step =
   | "brand"
@@ -39,7 +41,7 @@ type Step =
   | "quote"
   | "service";
 
-export default function PricingTool() {
+export default function PricingTool({ crm = null }: { crm?: CrmPriceMaps | null }) {
   const [step, setStep] = useState<Step>("brand");
   const [brand, setBrand] = useState<Brand | null>(null);
   const [systemType, setSystemType] = useState<SystemTypeV2 | null>(null);
@@ -105,23 +107,39 @@ export default function PricingTool() {
     return getFurnacesByTier(furnaceTier);
   }, [furnaceTier]);
 
+  // SOURCE OF TRUTH: equipment/add-on prices come from the CRM feed (`crm`) when
+  // present; fall back to bundled compute only if the feed is unavailable.
+  const addOnPrice = (id: string): number => {
+    const fromCrm = crmAddOnPrice(crm, id);
+    if (fromCrm != null) return fromCrm;
+    return ADD_ONS.find((a) => a.id === id)?.price ?? 0;
+  };
+
   const availableAddOns = useMemo(() => {
     if (!systemType || systemType === "furnace") return [];
-    return ADD_ONS.filter((a) => (a.availableOn as SystemType[]).includes(systemType as SystemType));
-  }, [systemType]);
+    return ADD_ONS
+      .filter((a) => (a.availableOn as SystemType[]).includes(systemType as SystemType))
+      .map((a) => ({ id: a.id, name: a.name, price: addOnPrice(a.id) }));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [systemType, crm]);
 
   const baseQuote = useMemo(() => {
-    if (system && tonnage) return systemRetail(system, tonnage);
-    if (furnace) return furnaceRetail(furnace.cost);
+    if (system && tonnage) {
+      const fromCrm = crmSystemPrice(crm, sectionSystemType(system.section), system.base, tonnage);
+      return fromCrm != null ? fromCrm : systemRetail(system, tonnage);
+    }
+    if (furnace) {
+      const fromCrm = crmFurnacePrice(crm, furnace.model);
+      return fromCrm != null ? fromCrm : furnaceRetail(furnace.cost);
+    }
     return null;
-  }, [system, tonnage, furnace]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [system, tonnage, furnace, crm]);
 
   const addOnTotal = useMemo(() => {
-    return selectedAddOns.reduce((sum, id) => {
-      const addOn = ADD_ONS.find((a) => a.id === id);
-      return sum + (addOn?.price ?? 0);
-    }, 0);
-  }, [selectedAddOns]);
+    return selectedAddOns.reduce((sum, id) => sum + addOnPrice(id), 0);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedAddOns, crm]);
 
   const totalQuote = (baseQuote ?? 0) + addOnTotal;
 
@@ -449,7 +467,7 @@ function QuoteCard({
   furnace: StandaloneFurnace | null;
   baseQuote: number;
   totalQuote: number;
-  availableAddOns: typeof ADD_ONS[number][];
+  availableAddOns: { id: string; name: string; price: number }[];
   selectedAddOns: string[];
   toggleAddOn: (id: string) => void;
   onReset: () => void;

@@ -7,6 +7,7 @@ import { GoalCompletionBlock } from "@/components/GoalCompletionBlock";
 import { PricingBand } from "@/components/PricingBand";
 import { services, businessInfo } from "@/lib/data";
 import { ArrowLeft, Phone, CheckCircle, Wrench, Shield, Clock, Award } from "lucide-react";
+import { getStartingPrices, fmtUSD } from "@/lib/crm-catalog";
 
 export const metadata: Metadata = {
   title: "AC Repair Pearland TX | Mabry's AC & Heating",
@@ -70,7 +71,10 @@ const pearlandContent = `
   </ul>
 `;
 
-export default function PearlandPage() {
+export default async function PearlandPage() {
+  // Source of truth: equipment "starting at" prices come from the CRM feed (same as
+  // /pricing) so this page can never drift.
+  const starting = await getStartingPrices();
   const pageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -107,7 +111,7 @@ export default function PearlandPage() {
             "areaServed": { "@type": "City", "name": "Pearland", "addressRegion": "TX" },
             "offers": {
               "@type": "Offer",
-              "price": "12140.00",
+              "price": starting.value.toFixed(2),
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock",
               "url": "https://mabryac.com/pricing",
@@ -126,7 +130,7 @@ export default function PearlandPage() {
             "areaServed": { "@type": "City", "name": "Pearland", "addressRegion": "TX" },
             "offers": {
               "@type": "Offer",
-              "price": "13637.00",
+              "price": starting.choice.toFixed(2),
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock",
               "url": "https://mabryac.com/pricing",
@@ -145,7 +149,7 @@ export default function PearlandPage() {
             "areaServed": { "@type": "City", "name": "Pearland", "addressRegion": "TX" },
             "offers": {
               "@type": "Offer",
-              "price": "18272.00",
+              "price": starting.premier.toFixed(2),
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock",
               "url": "https://mabryac.com/pricing",
@@ -299,8 +303,8 @@ export default function PearlandPage() {
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
                   Whether you&apos;re in Silverlake, Shadow Creek Ranch, or anywhere across Pearland, we&apos;ve
                   kept our pricing simple for nearly four decades. Complete AC &amp; heating system installations
-                  start at just <strong className="text-primary">$12,140</strong> — with our most popular
-                  Trane Single-Stage tier at <strong className="text-primary">$13,637</strong>. Honest,
+                  start at just <strong className="text-primary">{fmtUSD(starting.value)}</strong> — with our most popular
+                  Trane Single-Stage tier at <strong className="text-primary">{fmtUSD(starting.choice)}</strong>. Honest,
                   flat-rate pricing since 1986.
                 </p>
                 <Link

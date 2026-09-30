@@ -1,20 +1,22 @@
 import Link from "next/link";
 import { Wrench, CheckCircle } from "lucide-react";
+import { getStartingPrices, fmtUSD } from "@/lib/crm-catalog";
 
 /**
  * Visible, transparent pricing band (Caleb visible-pricing playbook).
  * Two price-forward cards: $79 service call + "new system from $X" (links to /pricing).
- * Used on the homepage and every city page so it stays consistent and
- * future price changes happen in ONE place.
+ * Used on the homepage and every city page so it stays consistent.
  *
- * ⚠️ Prices below are brand-wide and must stay in sync with lib/pricing.ts,
- * the /pricing hero cards, and the city Offer schemas. When Trane pricing
- * changes: update lib/pricing.ts first, then update these two values.
+ * SOURCE OF TRUTH: the "new system from" price is fed from the CRM's published
+ * catalog (same feed as /pricing), so it can never drift. The $79 service call is a
+ * fixed flat rate. This is a server component, so every page that renders it gets the
+ * live price automatically with no per-page changes.
  */
 const SERVICE_CALL_PRICE = "$79";
-const NEW_SYSTEM_FROM_PRICE = "$12,140";
 
-export function PricingBand({ className = "bg-white pt-10 pb-2" }: { className?: string }) {
+export async function PricingBand({ className = "bg-white pt-10 pb-2" }: { className?: string }) {
+  const starting = await getStartingPrices();
+  const NEW_SYSTEM_FROM_PRICE = fmtUSD(starting.value);
   return (
     <section className={className}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -3,6 +3,7 @@ import Script from "next/script";
 import Link from "next/link";
 import { Phone, CheckCircle, DollarSign, Wrench, Home, Zap } from "lucide-react";
 import PricingTool from "@/components/PricingTool";
+import { getCrmPriceMaps, getStartingPrices, fmtUSD } from "@/lib/crm-catalog";
 import { businessInfo } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -14,7 +15,8 @@ export const metadata: Metadata = {
   },
 };
 
-const pricingSchema = {
+function buildPricingSchema(starting: { value: number; choice: number; premier: number }) {
+ return {
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: "HVAC Pricing — Mabry's Air Conditioning & Heating",
@@ -62,14 +64,14 @@ const pricingSchema = {
           areaServed: "Greater Houston, TX",
           offers: {
             "@type": "Offer",
-            price: "12140.00",
+            price: starting.value.toFixed(2),
             priceCurrency: "USD",
             availability: "https://schema.org/InStock",
             url: "https://mabryac.com/pricing",
             priceValidUntil: "2026-12-31",
             priceSpecification: {
               "@type": "PriceSpecification",
-              price: "12140.00",
+              price: starting.value.toFixed(2),
               priceCurrency: "USD",
               valueAddedTaxIncluded: false,
             },
@@ -88,14 +90,14 @@ const pricingSchema = {
           areaServed: "Greater Houston, TX",
           offers: {
             "@type": "Offer",
-            price: "13637.00",
+            price: starting.choice.toFixed(2),
             priceCurrency: "USD",
             availability: "https://schema.org/InStock",
             url: "https://mabryac.com/pricing",
             priceValidUntil: "2026-12-31",
             priceSpecification: {
               "@type": "PriceSpecification",
-              price: "13637.00",
+              price: starting.choice.toFixed(2),
               priceCurrency: "USD",
               valueAddedTaxIncluded: false,
             },
@@ -114,14 +116,14 @@ const pricingSchema = {
           areaServed: "Greater Houston, TX",
           offers: {
             "@type": "Offer",
-            price: "18272.00",
+            price: starting.premier.toFixed(2),
             priceCurrency: "USD",
             availability: "https://schema.org/InStock",
             url: "https://mabryac.com/pricing",
             priceValidUntil: "2026-12-31",
             priceSpecification: {
               "@type": "PriceSpecification",
-              price: "18272.00",
+              price: starting.premier.toFixed(2),
               priceCurrency: "USD",
               valueAddedTaxIncluded: false,
             },
@@ -142,9 +144,14 @@ const pricingSchema = {
       },
     ],
   },
-};
+ };
+}
 
-export default function PricingPage() {
+export default async function PricingPage() {
+  // Source of truth: all prices on this page come from the CRM published catalog.
+  const crm = await getCrmPriceMaps();
+  const starting = await getStartingPrices();
+  const pricingSchema = buildPricingSchema(starting);
   return (
     <>
       <Script
@@ -229,7 +236,7 @@ export default function PricingPage() {
               </p>
               <div className="mb-6">
                 <span className="text-sm text-gray-600">Starting at</span>
-                <div className="text-4xl font-black text-primary">$12,140</div>
+                <div className="text-4xl font-black text-primary">{fmtUSD(starting.value)}</div>
                 <div className="text-xs text-gray-500 mt-1">Complete system, fully installed</div>
               </div>
               <ul className="space-y-2 text-sm text-gray-700 mb-6 flex-grow">
@@ -266,7 +273,7 @@ export default function PricingPage() {
               </p>
               <div className="mb-6">
                 <span className="text-sm text-gray-600">Starting at</span>
-                <div className="text-4xl font-black text-primary">$13,637</div>
+                <div className="text-4xl font-black text-primary">{fmtUSD(starting.choice)}</div>
                 <div className="text-xs text-gray-500 mt-1">Complete system, fully installed</div>
               </div>
               <ul className="space-y-2 text-sm text-gray-700 mb-6 flex-grow">
@@ -300,7 +307,7 @@ export default function PricingPage() {
               </p>
               <div className="mb-6">
                 <span className="text-sm text-gray-600">Starting at</span>
-                <div className="text-4xl font-black text-primary">$18,272</div>
+                <div className="text-4xl font-black text-primary">{fmtUSD(starting.premier)}</div>
                 <div className="text-xs text-gray-500 mt-1">Complete system, fully installed</div>
               </div>
               <ul className="space-y-2 text-sm text-gray-700 mb-6 flex-grow">
@@ -339,7 +346,7 @@ export default function PricingPage() {
       {/* Pricing Tool */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <PricingTool />
+          <PricingTool crm={crm} />
         </div>
       </section>
 

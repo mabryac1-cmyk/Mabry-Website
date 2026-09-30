@@ -83,7 +83,7 @@ const clearLakeContent = `
   <p>From the original NASA-era neighborhoods around Bay Oaks and Clear Lake Forest to the waterfront homes of Nassau Bay and Taylor Lake Village, and out to Webster, Seabrook, El Lago, and Kemah, Mabry's is the Bay Area HVAC company that's been here, will be here, and treats your home like it's our own. Call us at 281-482-8400.</p>
 `;
 
-export default function ClearLakePage() {
+export default async function ClearLakePage() {
   const pageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -94,7 +94,7 @@ export default function ClearLakePage() {
       "@type": "HVACBusiness",
       "@id": "https://mabryac.com/#business"
     },
-    "mainEntity": pricingMainEntity({
+    "mainEntity": await pricingMainEntity({
       cityName: "Clear Lake",
       state: "TX",
       phone: "281-482-8400",

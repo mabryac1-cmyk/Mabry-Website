@@ -82,7 +82,7 @@ const leagueCityContent = `
   <p>From the waterfront homes of South Shore Harbour to the established neighborhoods around Tuscan Lakes and the historic streets of Old League City, Mabry's is the Bay Area HVAC company that's been here, will be here, and treats your home like it's our own. Call us at 281-482-8400.</p>
 `;
 
-export default function LeagueCityPage() {
+export default async function LeagueCityPage() {
   const pageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -93,7 +93,7 @@ export default function LeagueCityPage() {
       "@type": "HVACBusiness",
       "@id": "https://mabryac.com/#business"
     },
-    "mainEntity": pricingMainEntity({
+    "mainEntity": await pricingMainEntity({
       cityName: "League City",
       state: "TX",
       phone: "281-482-8400",

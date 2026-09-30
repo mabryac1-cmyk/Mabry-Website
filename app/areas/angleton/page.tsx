@@ -82,7 +82,7 @@ const angletonContent = `
   <p>From the historic neighborhoods around downtown Angleton to the newer subdivisions out by Highway 288, Mabry's is the Brazoria County HVAC company that's been here, will be here, and treats your home like it's our own. Call us at 281-331-5248.</p>
 `;
 
-export default function AngletonPage() {
+export default async function AngletonPage() {
   const pageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -93,7 +93,7 @@ export default function AngletonPage() {
       "@type": "HVACBusiness",
       "@id": "https://mabryac.com/#business"
     },
-    "mainEntity": pricingMainEntity({
+    "mainEntity": await pricingMainEntity({
       cityName: "Angleton",
       state: "TX",
       phone: "281-331-5248",
