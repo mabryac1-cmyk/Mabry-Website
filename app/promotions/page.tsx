@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Phone, CheckCircle, CreditCard, DollarSign, Wrench } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "$89 AC Tune-Up & 10% Off Repairs | Mabry's AC & Heating | Alvin & Houston Area",
-  description: "Current HVAC special offers: $89 pre-season AC tune-up (through May 15, 2026), 10% off AC & heating repairs, new system financing from $38/week. Serving Alvin, Friendswood, Pearland & Greater Houston.",
+  title: "$79 Heater Tune-Up & 10% Off Repairs | Mabry's AC & Heating | Alvin & Houston Area",
+  description: "Current HVAC special offers: $79 fall heater tune-up (through March 31, 2027), 10% off AC & heating repairs, new system financing from $38/week. Serving Alvin, Friendswood, Pearland & Greater Houston.",
   alternates: {
     canonical: "/promotions",
   },
@@ -19,11 +19,11 @@ const promotionsSchema = {
     {
       "@type": "Offer",
       "position": 1,
-      "name": "Pre-Season AC Tune-Up — $89",
-      "description": "Pre-season AC tune-up special for standard residential systems. Includes refrigerant check, capacitor inspection, coil inspection, drain flush, thermostat calibration, and system performance check.",
-      "price": "89",
+      "name": "Fall Heater Tune-Up — $79",
+      "description": "Fall heater tune-up special for standard residential systems. Includes heat exchanger inspection, burner and ignition check, flame sensor cleaning, gas connections check, thermostat calibration, blower and airflow check, and a carbon monoxide safety check.",
+      "price": "79",
       "priceCurrency": "USD",
-      "validThrough": "2026-05-15",
+      "validThrough": "2027-03-31",
       "availability": "https://schema.org/InStock",
       "seller": { "@type": "HVACBusiness", "name": "Mabry's Air Conditioning & Heating, Inc." }
     },
@@ -84,21 +84,21 @@ export default function PromotionsPage() {
               <div className="bg-white rounded-2xl shadow-xl border-2 border-accent overflow-hidden flex flex-col">
                 {/* Badge */}
                 <div className="bg-accent text-white text-center py-3 px-4">
-                  <span className="text-xs font-bold uppercase tracking-widest">Special Offer — Now Through May 15, 2026</span>
+                  <span className="text-xs font-bold uppercase tracking-widest">Special Offer — Now Through March 31, 2027</span>
                 </div>
 
                 <div className="px-6 py-6 flex flex-col flex-1">
                   <h3 className="text-xl font-bold text-primary text-center mb-1">
-                    Pre-Season AC Tune-Up
+                    Fall Heater Tune-Up
                   </h3>
                   <p className="text-center text-muted-foreground text-sm mb-4">
-                    Get your AC ready before the Houston summer heat arrives
+                    Get your heat checked and ready before winter arrives
                   </p>
 
                   {/* Price */}
                   <div className="bg-primary rounded-xl py-4 px-4 text-center mb-5">
                     <p className="text-white/80 text-xs font-semibold uppercase tracking-wider mb-1">Special Promotional Price</p>
-                    <p className="text-5xl font-bold text-white">$89</p>
+                    <p className="text-5xl font-bold text-white">$79</p>
                     <p className="text-accent text-sm font-semibold mt-1">Standard Residential Systems</p>
                   </div>
 
@@ -107,13 +107,14 @@ export default function PromotionsPage() {
                     <p className="text-xs font-bold text-primary uppercase tracking-wider mb-3">What's Included:</p>
                     <ul className="space-y-2">
                       {[
-                        "Refrigerant level check",
-                        "Capacitor & contactor inspection",
-                        "Condenser coil inspection",
-                        "Condensate drain flush",
+                        "Heat exchanger inspection",
+                        "Burner & ignition system check",
+                        "Flame sensor cleaning & test",
+                        "Gas line & connections check",
                         "Thermostat calibration & test",
                         "Electrical connections check",
-                        "Overall system performance check",
+                        "Blower motor & airflow check",
+                        "Carbon monoxide safety check",
                       ].map((item) => (
                         <li key={item} className="flex items-center gap-2 text-sm">
                           <CheckCircle className="w-4 h-4 text-accent shrink-0" />
@@ -340,7 +341,7 @@ export default function PromotionsPage() {
           {/* ── Disclosure ── */}
           <div className="border-t pt-8">
             <p className="text-xs text-muted-foreground leading-relaxed text-center max-w-3xl mx-auto">
-              <strong>Promotional Pricing & Financing Disclosure:</strong> $89 AC tune-up special valid through May 15, 2026 on standard residential systems only. 10% repair discount applies to repair services only and does not apply to new equipment purchases or installations. Promotional pricing, special offers, and discounts cannot be combined with rebates, coupons, other promotional offers, manufacturer incentives, promotional financing offers, or other discounts unless explicitly stated in writing. *Financing example based on a financed amount of $11,500 at 9.99% APR for 120 months with a monthly payment of approximately $151.80 ($35.06/week). Actual payment depends on amount financed and loan terms selected. 100% financing available with approved credit through participating lenders; standard rates apply. Financing terms are subject to change without notice. Service Finance Company, LLC | FHA Title I Lender.
+              <strong>Promotional Pricing & Financing Disclosure:</strong> $79 heater tune-up special valid through March 31, 2027 on standard residential systems only. 10% repair discount applies to repair services only and does not apply to new equipment purchases or installations. Promotional pricing, special offers, and discounts cannot be combined with rebates, coupons, other promotional offers, manufacturer incentives, promotional financing offers, or other discounts unless explicitly stated in writing. *Financing example based on a financed amount of $11,500 at 9.99% APR for 120 months with a monthly payment of approximately $151.80 ($35.06/week). Actual payment depends on amount financed and loan terms selected. 100% financing available with approved credit through participating lenders; standard rates apply. Financing terms are subject to change without notice. Service Finance Company, LLC | FHA Title I Lender.
             </p>
           </div>
 

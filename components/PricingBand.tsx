@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Wrench, CheckCircle } from "lucide-react";
+import { Wrench, CheckCircle, Flame } from "lucide-react";
 import { getStartingPrices, fmtUSD } from "@/lib/crm-catalog";
 
 /**
@@ -14,12 +14,41 @@ import { getStartingPrices, fmtUSD } from "@/lib/crm-catalog";
  */
 const SERVICE_CALL_PRICE = "$79";
 
+/**
+ * SEASONAL PROMO RIBBON — sits above the two permanent price cards and mirrors the
+ * current offer on /promotions. ⚠️ SWAP THIS EACH SEASON so it never goes stale:
+ *   Fall/Winter → "Heater Tune-Up"   |   Spring/Summer → "AC Tune-Up"
+ * Set active:false to hide it between promos. Keep it in sync with the /promotions page.
+ */
+const SEASONAL_PROMO = {
+  active: true,
+  label: "Fall Special",
+  offer: "$79 Heater Tune-Up",
+  tagline: "Get your heat checked before winter",
+  validThrough: "Now through March 31, 2027",
+  href: "/promotions",
+};
+
 export async function PricingBand({ className = "bg-white pt-10 pb-2" }: { className?: string }) {
   const starting = await getStartingPrices();
   const NEW_SYSTEM_FROM_PRICE = fmtUSD(starting.value);
   return (
     <section className={className}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {SEASONAL_PROMO.active && (
+          <Link
+            href={SEASONAL_PROMO.href}
+            className="mb-4 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 rounded-2xl border border-accent/40 bg-accent/10 px-5 py-3 text-center transition-all hover:border-accent hover:shadow-md group"
+          >
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-accent px-2.5 py-0.5 text-xs font-bold uppercase tracking-wide text-white shrink-0">
+              <Flame className="w-3.5 h-3.5 shrink-0" /> {SEASONAL_PROMO.label}
+            </span>
+            <span className="text-base sm:text-lg font-black text-primary">{SEASONAL_PROMO.offer}</span>
+            <span className="text-muted-foreground text-sm hidden sm:inline">— {SEASONAL_PROMO.tagline}</span>
+            <span className="text-muted-foreground text-xs">· {SEASONAL_PROMO.validThrough}</span>
+            <span className="text-accent font-semibold text-sm group-hover:underline shrink-0">See details →</span>
+          </Link>
+        )}
         <div className="grid md:grid-cols-2 gap-4">
           {/* Service call price */}
           <div className="flex items-start gap-4 bg-accent/5 border border-accent/20 rounded-2xl p-6">
