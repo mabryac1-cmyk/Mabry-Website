@@ -20,11 +20,11 @@ export const metadata: Metadata = {
 const angletonFaqs = [
   {
     question: "How fast can you get to Angleton for AC repair?",
-    answer: "Angleton is right in our home service territory, so we can be there quick. We offer same-day service for most AC repairs in Angleton's 77515 and 77516 zip codes, with flat-rate pricing — the price we quote is the price you pay.",
+    answer: "Angleton is right in our home service territory, so we can be there quick. We offer same-day service for most AC repairs in Angleton's 77515 and 77516 zip codes, with flat-rate pricing, the price we quote is the price you pay.",
   },
   {
     question: "Do you service older homes in downtown Angleton?",
-    answer: "Yes. A lot of Angleton's older housing stock near the downtown courthouse area was built in the 1940s through 1970s, and we work in homes like these every week. Older homes often have legacy ductwork, undersized return air, or equipment using phased-out R-22 refrigerant — all things we diagnose and fix regularly.",
+    answer: "Yes. A lot of Angleton's older housing stock near the downtown courthouse area was built in the 1940s through 1970s, and we work in homes like these every week. Older homes often have legacy ductwork, undersized return air, or equipment using phased-out R-22 refrigerant, all things we diagnose and fix regularly.",
   },
   {
     question: "Does the Gulf Coast salt air affect outdoor AC units in Angleton?",
@@ -32,51 +32,51 @@ const angletonFaqs = [
   },
   {
     question: "Are you a local Brazoria County HVAC company or a chain?",
-    answer: "Family-owned and based right here in Brazoria County. Mabry's Air Conditioning & Heating has been serving Angleton and the surrounding communities since 1986 — nearly 40 years. Not a franchise, not a national chain.",
+    answer: "Family-owned and based right here in Brazoria County. Mabry's Air Conditioning & Heating has been serving Angleton and the surrounding communities since 1986, nearly 40 years. Not a franchise, not a national chain.",
   },
   {
     question: "Do you charge extra for evening or weekend service in Angleton?",
-    answer: "No — flat-rate pricing with no extra charge for evenings or weekends. Ever. The price you're quoted up front is the price you pay, regardless of time of day or day of the week.",
+    answer: "No, flat-rate pricing with no extra charge for evenings or weekends. Ever. The price you're quoted up front is the price you pay, regardless of time of day or day of the week.",
   },
   {
     question: "What HVAC brands do you service in Angleton?",
-    answer: "We service and repair all major brands: Trane, Carrier, Lennox, Rheem, York, American Standard, Goodman, Bryant, and others. We're brand-agnostic — if it's installed in your Angleton home, we can work on it.",
+    answer: "We service and repair all major brands: Trane, Carrier, Lennox, Rheem, York, American Standard, Goodman, Bryant, and others. We're brand-agnostic, if it's installed in your Angleton home, we can work on it.",
   },
 ];
 
 const angletonContent = `
   <h2>HVAC Service in Angleton, TX — Brazoria County's Trusted Local AC Company</h2>
-  <p>Angleton is the seat of Brazoria County, and it's right in our home territory. We've been handling residential AC repair, heating service, and installations for Angleton homeowners for nearly 40 years. When the AC goes out in July down here, you don't want to wait on a Houston company — you want a Brazoria County HVAC company that already knows the area.</p>
+  <p>Angleton is the seat of Brazoria County, and it's right in our home territory. We've been handling residential AC repair, heating service, and installations for Angleton homeowners for nearly 40 years. When the AC goes out in July down here, you don't want to wait on a Houston company, you want a Brazoria County HVAC company that already knows the area.</p>
 
   <p>That's where Mabry's comes in. Family-owned since 1986, fully licensed (TACLB12058E), and BBB A+ accredited.</p>
 
   <h3>HVAC Services We Provide in Angleton</h3>
   <ul>
-    <li><strong>AC repair</strong> — same-day service for Angleton homes, all makes and models</li>
-    <li><strong>Heating repair</strong> — furnace and heat pump diagnostics when those Gulf Coast cold fronts roll in</li>
-    <li><strong>New AC installation</strong> — proper Manual J load calculations, top brands, licensed installation</li>
-    <li><strong>Annual maintenance tune-ups</strong> — spring AC and fall heating service to catch problems before they break down</li>
+    <li><strong>AC repair</strong>, same-day service for Angleton homes, all makes and models</li>
+    <li><strong>Heating repair</strong>, furnace and heat pump diagnostics when those Gulf Coast cold fronts roll in</li>
+    <li><strong>New AC installation</strong>, proper Manual J load calculations, top brands, licensed installation</li>
+    <li><strong>Annual maintenance tune-ups</strong>, spring AC and fall heating service to catch problems before they break down</li>
   </ul>
 
   <h3>We Know Angleton Homes</h3>
-  <p>Angleton's housing mix is one of the more varied in Brazoria County. Around the historic downtown courthouse area you've got older homes from the 1940s through 1970s — well-built, but often with aging ductwork, original return air sized for smaller equipment, and in some cases AC systems still using R-22 refrigerant that was phased out in 2020. Out toward the highways and the newer subdivisions on the outskirts, the housing tends to be larger 1990s-and-newer construction with builder-grade HVAC equipment that benefits from regular maintenance to hit its full lifespan.</p>
+  <p>Angleton's housing mix is one of the more varied in Brazoria County. Around the historic downtown courthouse area you've got older homes from the 1940s through 1970s, well-built, but often with aging ductwork, original return air sized for smaller equipment, and in some cases AC systems still using R-22 refrigerant that was phased out in 2020. Out toward the highways and the newer subdivisions on the outskirts, the housing tends to be larger 1990s-and-newer construction with builder-grade HVAC equipment that benefits from regular maintenance to hit its full lifespan.</p>
 
-  <p>The Gulf Coast climate doesn't make any of this easier. Angleton sits roughly 20 miles inland from the coast, which means high humidity year-round, brutal summer heat indexes, and salt air that can accelerate corrosion on outdoor condenser coils — especially on homes closer to the Brazos River bottom or further south toward Lake Jackson. We've been diagnosing the specific failure patterns of Brazoria County homes for four decades, and we know what to look for.</p>
+  <p>The Gulf Coast climate doesn't make any of this easier. Angleton sits roughly 20 miles inland from the coast, which means high humidity year-round, brutal summer heat indexes, and salt air that can accelerate corrosion on outdoor condenser coils, especially on homes closer to the Brazos River bottom or further south toward Lake Jackson. We've been diagnosing the specific failure patterns of Brazoria County homes for four decades, and we know what to look for.</p>
 
   <h3>Recent Angleton Work — Honoring an Informed Homeowner's Choice</h3>
-  <p>Not every customer comes to us unsure of what they want. On a recent Angleton install, the homeowner had done a lot of her own research and had settled on a specific high-efficiency air conditioning and heating system she wanted for her home. We think that's great — an informed homeowner asks better questions and ends up happier with the result.</p>
-  <p>Our job was to make sure her choice was the right fit. Before we ordered anything, we did a thorough review of her home and her existing ductwork to confirm the system she'd picked would be properly sized and would perform the way it was designed to — because even the best equipment underperforms if the home and ductwork aren't matched to it. Everything checked out, and we were glad to install exactly the system she wanted, paired with the top-quality installation standards we hold ourselves to on every job.</p>
-  <p>She's thrilled — both with the high-efficiency system she researched and chose, and with the company that made sure it was done right. Whether you already know exactly what you want or you'd like us to help you weigh the options, we're happy to meet you wherever you are.</p>
+  <p>Not every customer comes to us unsure of what they want. On a recent Angleton install, the homeowner had done a lot of her own research and had settled on a specific high-efficiency air conditioning and heating system she wanted for her home. We think that's great, an informed homeowner asks better questions and ends up happier with the result.</p>
+  <p>Our job was to make sure her choice was the right fit. Before we ordered anything, we did a thorough review of her home and her existing ductwork to confirm the system she'd picked would be properly sized and would perform the way it was designed to, because even the best equipment underperforms if the home and ductwork aren't matched to it. Everything checked out, and we were glad to install exactly the system she wanted, paired with the top-quality installation standards we hold ourselves to on every job.</p>
+  <p>She's thrilled, both with the high-efficiency system she researched and chose, and with the company that made sure it was done right. Whether you already know exactly what you want or you'd like us to help you weigh the options, we're happy to meet you wherever you are.</p>
 
   <h3>Why Angleton Homeowners Choose Mabry's</h3>
   <ul>
-    <li>Brazoria County–based — a local company that knows Angleton, not a Houston outfit</li>
-    <li>Flat-rate pricing with no hidden charges — we tell you the price before we start the work</li>
-    <li>No extra charge for evenings or weekends — ever</li>
-    <li>Family-owned and operated since 1986 — talk to us, not a national call center</li>
+    <li>Brazoria County–based, a local company that knows Angleton, not a Houston outfit</li>
+    <li>Flat-rate pricing with no hidden charges, we tell you the price before we start the work</li>
+    <li>No extra charge for evenings or weekends, ever</li>
+    <li>Family-owned and operated since 1986, talk to us, not a national call center</li>
     <li>BBB A+ Accredited Business, multiple BBB Gold Star Award winner</li>
     <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
-    <li>Residential specialists — homes are all we do, no commercial detours</li>
+    <li>Residential specialists, homes are all we do, no commercial detours</li>
   </ul>
 
   <p>From the historic neighborhoods around downtown Angleton to the newer subdivisions out by Highway 288, Mabry's is the Brazoria County HVAC company that's been here, will be here, and treats your home like it's our own. Call us at 281-331-5248.</p>
@@ -120,7 +120,7 @@ export default async function AngletonPage() {
             AC Repair &amp; HVAC Service in Angleton, TX — Brazoria County's Trusted Choice Since 1986
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mb-6">
-            Family-owned and Brazoria County–based since 1986 — same-day AC repair for Angleton homes, no extra charge for evenings or weekends.
+            Family-owned and Brazoria County–based since 1986, same-day AC repair for Angleton homes, no extra charge for evenings or weekends.
           </p>
           <div className="flex flex-wrap gap-4 items-center mb-6">
             <a
@@ -146,7 +146,7 @@ export default async function AngletonPage() {
             >
               <img
                 src="https://seal-houston.bbb.org/seals/blue-seal-200-42-bbb-50000805.png"
-                alt="BBB Accredited Business — A+ Rated"
+                alt="BBB Accredited Business, A+ Rated"
                 width={200}
                 height={42}
                 style={{ border: 0 }}
@@ -161,12 +161,12 @@ export default async function AngletonPage() {
           {/* Urgency */}
           <p className="text-white/80 text-sm flex items-center gap-2">
             <Clock className="w-4 h-4 text-accent shrink-0" />
-            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends — ever.
+            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends, ever.
           </p>
         </div>
       </section>
 
-      {/* Visible pricing band — transparent pricing up top */}
+      {/* Visible pricing band, transparent pricing up top */}
       <PricingBand className="bg-white pt-10 pb-2" />
 
       {/* Trust Bar */}

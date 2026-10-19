@@ -20,11 +20,11 @@ export const metadata: Metadata = {
 const leagueCityFaqs = [
   {
     question: "How fast can you get to League City for AC repair?",
-    answer: "Our Friendswood operation is right next door — League City is essentially across the street, and we serve South Shore Harbour, Tuscan Lakes, Magnolia Creek, Marina Bay, and the rest of League City with same-day AC repair in the 77573 and 77574 zip codes.",
+    answer: "Our Friendswood operation is right next door, League City is essentially across the street, and we serve South Shore Harbour, Tuscan Lakes, Magnolia Creek, Marina Bay, and the rest of League City with same-day AC repair in the 77573 and 77574 zip codes.",
   },
   {
     question: "Do you service homes in South Shore Harbour and Marina Bay?",
-    answer: "Yes — waterfront and near-water homes in South Shore Harbour, Marina Bay, and the marina-area neighborhoods see accelerated salt-air corrosion on outdoor condenser units and electrical components. We routinely inspect for coastal-zone wear and can recommend protective measures specific to waterfront homes.",
+    answer: "Yes, waterfront and near-water homes in South Shore Harbour, Marina Bay, and the marina-area neighborhoods see accelerated salt-air corrosion on outdoor condenser units and electrical components. We routinely inspect for coastal-zone wear and can recommend protective measures specific to waterfront homes.",
   },
   {
     question: "What about newer master-planned communities like Tuscan Lakes and Magnolia Creek?",
@@ -32,51 +32,51 @@ const leagueCityFaqs = [
   },
   {
     question: "Are you a local Bay Area HVAC company or a national chain?",
-    answer: "Family-owned, Bay Area–based since 1986. Mabry's Air Conditioning & Heating has been serving League City and the surrounding Friendswood/Clear Lake area for nearly 40 years. Not a franchise, not a national chain — you talk to us, not a call center.",
+    answer: "Family-owned, Bay Area–based since 1986. Mabry's Air Conditioning & Heating has been serving League City and the surrounding Friendswood/Clear Lake area for nearly 40 years. Not a franchise, not a national chain, you talk to us, not a call center.",
   },
   {
     question: "Do you charge extra for evening or weekend service in League City?",
-    answer: "No — flat-rate pricing with no extra charge for evenings or weekends. Ever. The price you're quoted up front is the price you pay, regardless of what time we come out.",
+    answer: "No, flat-rate pricing with no extra charge for evenings or weekends. Ever. The price you're quoted up front is the price you pay, regardless of what time we come out.",
   },
   {
     question: "What HVAC brands do you service in League City?",
-    answer: "We service and repair all major brands: Trane, Carrier, Lennox, Rheem, York, American Standard, Goodman, Bryant, and others. We're brand-agnostic — if it's installed in your League City home, we can work on it.",
+    answer: "We service and repair all major brands: Trane, Carrier, Lennox, Rheem, York, American Standard, Goodman, Bryant, and others. We're brand-agnostic, if it's installed in your League City home, we can work on it.",
   },
 ];
 
 const leagueCityContent = `
   <h2>HVAC Service in League City, TX — The Bay Area's Family-Owned AC Company Since 1986</h2>
-  <p>League City is one of the fastest-growing cities in Galveston County, sitting right on the edge of Clear Lake and the NASA-Johnson Space Center area. We've been servicing AC units in League City homes for nearly 40 years — close by in the Bay Area, so response times feel like we're right next door, because we essentially are.</p>
+  <p>League City is one of the fastest-growing cities in Galveston County, sitting right on the edge of Clear Lake and the NASA-Johnson Space Center area. We've been servicing AC units in League City homes for nearly 40 years, close by in the Bay Area, so response times feel like we're right next door, because we essentially are.</p>
 
   <p>From the older established neighborhoods near Old League City and Heritage Park to the master-planned communities that have built up over the last two decades, we know the housing here. And we know what the Bay Area climate does to HVAC equipment.</p>
 
   <h3>HVAC Services We Provide in League City</h3>
   <ul>
-    <li><strong>AC repair</strong> — same-day service for League City homes, all makes and models</li>
-    <li><strong>Heating repair</strong> — furnace and heat pump diagnostics for those Bay Area cold snaps</li>
-    <li><strong>New AC installation</strong> — proper Manual J load calculations, top brands, licensed installation</li>
-    <li><strong>Annual maintenance tune-ups</strong> — spring AC and fall heating service to prevent breakdowns</li>
+    <li><strong>AC repair</strong>, same-day service for League City homes, all makes and models</li>
+    <li><strong>Heating repair</strong>, furnace and heat pump diagnostics for those Bay Area cold snaps</li>
+    <li><strong>New AC installation</strong>, proper Manual J load calculations, top brands, licensed installation</li>
+    <li><strong>Annual maintenance tune-ups</strong>, spring AC and fall heating service to prevent breakdowns</li>
   </ul>
 
   <h3>We Know League City Homes</h3>
-  <p>League City's housing is incredibly varied. Around the Old League City historic district near Main Street you've got homes dating back decades — well-built but often with aging ductwork, undersized return air, and in some cases AC equipment still using R-22 refrigerant that was phased out in 2020. Out toward I-45 and FM 518 you've got the master-planned communities — South Shore Harbour, Tuscan Lakes, Magnolia Creek, Marina Bay, Mar Bella, Westover Park — many of which were built between the 1990s and 2010s. The HVAC systems in those neighborhoods are now reaching the 10-to-20-year mark where regular maintenance becomes critical and replacements start to make economic sense.</p>
+  <p>League City's housing is incredibly varied. Around the Old League City historic district near Main Street you've got homes dating back decades, well-built but often with aging ductwork, undersized return air, and in some cases AC equipment still using R-22 refrigerant that was phased out in 2020. Out toward I-45 and FM 518 you've got the master-planned communities, South Shore Harbour, Tuscan Lakes, Magnolia Creek, Marina Bay, Mar Bella, Westover Park, many of which were built between the 1990s and 2010s. The HVAC systems in those neighborhoods are now reaching the 10-to-20-year mark where regular maintenance becomes critical and replacements start to make economic sense.</p>
 
-  <p>Then there's the climate. League City sits on the western shore of Clear Lake and Galveston Bay, which means high humidity year-round, hurricane and tropical storm exposure, and salt-laden air that accelerates corrosion on outdoor condenser coils and electrical contactors — especially in waterfront communities like South Shore Harbour and Marina Bay. We've been diagnosing the specific failure patterns of Bay Area homes for four decades, and we know what salt air does to a condenser.</p>
+  <p>Then there's the climate. League City sits on the western shore of Clear Lake and Galveston Bay, which means high humidity year-round, hurricane and tropical storm exposure, and salt-laden air that accelerates corrosion on outdoor condenser coils and electrical contactors, especially in waterfront communities like South Shore Harbour and Marina Bay. We've been diagnosing the specific failure patterns of Bay Area homes for four decades, and we know what salt air does to a condenser.</p>
 
   <h3>Recent League City Work — Standing Behind an Install, Years Later</h3>
-  <p>One of the best parts of being a family business that's been here since 1986 is that a lot of our League City customers aren't one-time calls — they're people we've worked with for years. We recently heard from a homeowner we'd originally outfitted with two complete Trane systems, a 3&frac12;-ton and a 2&frac12;-ton, tied into their existing ductwork with new plenums, media filters, and fresh drain lines. That install was years back, and the equipment has been running well ever since.</p>
-  <p>This time it was something small: water dripping down from a ceiling vent in a bathroom. In a Bay Area summer that's almost always a condensate drain line backing up — the line that carries away the water your AC pulls out of our humid air. In this climate those lines work hard, and a partial clog can send water backing up into the pan and out where it doesn't belong. Because we'd installed the system, we knew exactly how it was piped: we cleared the line, checked the drain pan and the safety float switch, and had the family back to normal the same afternoon — no ceiling damage, and cool air right through the hottest stretch of the summer.</p>
+  <p>One of the best parts of being a family business that's been here since 1986 is that a lot of our League City customers aren't one-time calls, they're people we've worked with for years. We recently heard from a homeowner we'd originally outfitted with two complete Trane systems, a 3&frac12;-ton and a 2&frac12;-ton, tied into their existing ductwork with new plenums, media filters, and fresh drain lines. That install was years back, and the equipment has been running well ever since.</p>
+  <p>This time it was something small: water dripping down from a ceiling vent in a bathroom. In a Bay Area summer that's almost always a condensate drain line backing up, the line that carries away the water your AC pulls out of our humid air. In this climate those lines work hard, and a partial clog can send water backing up into the pan and out where it doesn't belong. Because we'd installed the system, we knew exactly how it was piped: we cleared the line, checked the drain pan and the safety float switch, and had the family back to normal the same afternoon, no ceiling damage, and cool air right through the hottest stretch of the summer.</p>
   <p>That's the part we're proud of. Whether it's a two-system installation or clearing a drain line years later, League City homeowners get the same family company on the other end of the phone. We install it, and we stand behind it.</p>
 
   <h3>Why League City Homeowners Choose Mabry's</h3>
   <ul>
-    <li>Bay Area–based — we're not driving in from Houston, we're already here</li>
-    <li>Flat-rate pricing with no hidden charges — we tell you the price before we start</li>
-    <li>No extra charge for evenings or weekends — ever</li>
-    <li>Family-owned and operated since 1986 — talk to us, not a national call center</li>
+    <li>Bay Area–based, we're not driving in from Houston, we're already here</li>
+    <li>Flat-rate pricing with no hidden charges, we tell you the price before we start</li>
+    <li>No extra charge for evenings or weekends, ever</li>
+    <li>Family-owned and operated since 1986, talk to us, not a national call center</li>
     <li>BBB A+ Accredited Business, multiple BBB Gold Star Award winner</li>
     <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
-    <li>Residential specialists — homes are all we do, no commercial detours</li>
+    <li>Residential specialists, homes are all we do, no commercial detours</li>
   </ul>
 
   <p>From the waterfront homes of South Shore Harbour to the established neighborhoods around Tuscan Lakes and the historic streets of Old League City, Mabry's is the Bay Area HVAC company that's been here, will be here, and treats your home like it's our own. Call us at 281-482-8400.</p>
@@ -120,7 +120,7 @@ export default async function LeagueCityPage() {
             AC Repair &amp; HVAC Service in League City, TX — Bay Area's Trusted Choice Since 1986
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mb-6">
-            Family-owned and Bay Area–based. Same-day AC repair for South Shore Harbour, Tuscan Lakes, Magnolia Creek, and all of League City — no extra charge for evenings or weekends.
+            Family-owned and Bay Area–based. Same-day AC repair for South Shore Harbour, Tuscan Lakes, Magnolia Creek, and all of League City, no extra charge for evenings or weekends.
           </p>
           <div className="flex flex-wrap gap-4 items-center mb-6">
             <a
@@ -146,7 +146,7 @@ export default async function LeagueCityPage() {
             >
               <img
                 src="https://seal-houston.bbb.org/seals/blue-seal-200-42-bbb-50000805.png"
-                alt="BBB Accredited Business — A+ Rated"
+                alt="BBB Accredited Business, A+ Rated"
                 width={200}
                 height={42}
                 style={{ border: 0 }}
@@ -161,12 +161,12 @@ export default async function LeagueCityPage() {
           {/* Urgency */}
           <p className="text-white/80 text-sm flex items-center gap-2">
             <Clock className="w-4 h-4 text-accent shrink-0" />
-            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends — ever.
+            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends, ever.
           </p>
         </div>
       </section>
 
-      {/* Visible pricing band — transparent pricing up top */}
+      {/* Visible pricing band, transparent pricing up top */}
       <PricingBand className="bg-white pt-10 pb-2" />
 
       {/* Trust Bar */}

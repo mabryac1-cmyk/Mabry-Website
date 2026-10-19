@@ -5,43 +5,43 @@ import { LeadForm } from "@/components/LeadForm";
 import { services, locations, getServiceBySlug, getLocationBySlug, businessInfo } from "@/lib/data";
 import { Phone, CheckCircle, MapPin } from "lucide-react";
 
-// City-specific HVAC context — unique intro, climate, and housing notes per city
+// City-specific HVAC context, unique intro, climate, and housing notes per city
 const cityContext: Record<string, { intro: string; climate: string; housing: string }> = {
   "alvin": {
     intro:
-      "Our shop is right here at 2110 S Gordon St in Alvin — we live and work in this community. When your AC goes out, we're already nearby.",
+      "Our shop is right here at 2110 S Gordon St in Alvin, we live and work in this community. When your AC goes out, we're already nearby.",
     climate:
-      "Alvin's Gulf Coast location in Brazoria County means your AC runs up to 9 months per year under intense heat and humidity. The failure patterns we see most often in Alvin's 77511 and 77512 zip codes — capacitor burnout from overworked compressors, condensate drain clogs from persistent Gulf Coast humidity — are things we've been diagnosing and fixing for nearly four decades.",
+      "Alvin's Gulf Coast location in Brazoria County means your AC runs up to 9 months per year under intense heat and humidity. The failure patterns we see most often in Alvin's 77511 and 77512 zip codes, capacitor burnout from overworked compressors, condensate drain clogs from persistent Gulf Coast humidity, are things we've been diagnosing and fixing for nearly four decades.",
     housing:
       "Alvin homes range from historic downtown neighborhoods near Nolan Ryan Ballpark to newer subdivisions along Highway 6 and Kendall Lakes. Older Alvin homes often have aging ductwork and legacy R-22 equipment approaching or past end-of-life. Newer build areas benefit most from proactive maintenance to maximize system life.",
   },
   "friendswood": {
     intro:
-      "Friendswood families have relied on Mabry's since 1986. Our dedicated Friendswood line — 281-482-8400 — means you always reach a local team that knows your neighborhood.",
+      "Friendswood families have relied on Mabry's since 1986. Our dedicated Friendswood line, 281-482-8400, means you always reach a local team that knows your neighborhood.",
     climate:
-      "Friendswood's proximity to Clear Lake and Galveston Bay keeps humidity elevated year-round. Condensate drain clogs are among our most common service calls in Friendswood's 77546 and 77549 zip codes — Gulf Coast humidity fills drip pans fast, and an overflowing condensate pan can cause serious water damage inside your home.",
+      "Friendswood's proximity to Clear Lake and Galveston Bay keeps humidity elevated year-round. Condensate drain clogs are among our most common service calls in Friendswood's 77546 and 77549 zip codes, Gulf Coast humidity fills drip pans fast, and an overflowing condensate pan can cause serious water damage inside your home.",
     housing:
-      "Friendswood's established neighborhoods — many with homes built in the 1970s and 1980s near Friendswood High School and FM 518 — sit alongside newer FM 2351 corridor developments. We've serviced HVAC systems in this community long enough to work for multiple generations of the same families.",
+      "Friendswood's established neighborhoods, many with homes built in the 1970s and 1980s near Friendswood High School and FM 518, sit alongside newer FM 2351 corridor developments. We've serviced HVAC systems in this community long enough to work for multiple generations of the same families.",
   },
   "pearland": {
     intro:
-      "Mabry's has been serving Pearland homeowners through the city's entire growth — from the established Old Townsite neighborhoods to Shadow Creek Ranch and Silverlake.",
+      "Mabry's has been serving Pearland homeowners through the city's entire growth, from the established Old Townsite neighborhoods to Shadow Creek Ranch and Silverlake.",
     climate:
-      "Pearland's position between Houston and Alvin puts it squarely in Gulf Coast humidity territory. Homes in Pearland's 77581, 77584, and 77588 zip codes face 100°F+ summers, high humidity, and cooling seasons that stretch from April through October — among the most demanding HVAC conditions in the country.",
+      "Pearland's position between Houston and Alvin puts it squarely in Gulf Coast humidity territory. Homes in Pearland's 77581, 77584, and 77588 zip codes face 100°F+ summers, high humidity, and cooling seasons that stretch from April through October, among the most demanding HVAC conditions in the country.",
     housing:
       "Pearland spans Brazoria and Harris counties with an enormous range of housing: 1970s-era homes in Old Pearland and Country Place, mid-2000s master-planned communities in Shadow Creek Ranch and Silverlake (whose builder-grade systems are now 15–20 years old), and newer developments along Highway 288.",
   },
   "clear-lake": {
     intro:
-      "The Clear Lake area — including Nassau Bay, El Lago, and Taylor Lake Village — presents some of the most demanding HVAC conditions in Greater Houston. Bay-area humidity and salt air are relentless on residential equipment.",
+      "The Clear Lake area, including Nassau Bay, El Lago, and Taylor Lake Village, presents some of the most demanding HVAC conditions in Greater Houston. Bay-area humidity and salt air are relentless on residential equipment.",
     climate:
-      "Clear Lake's proximity to Galveston Bay means elevated humidity year-round and salt air that accelerates corrosion on outdoor condenser units and coils. Annual maintenance is especially critical here — we routinely find coastal corrosion damage in Clear Lake homes that goes undetected until it triggers a full system failure.",
+      "Clear Lake's proximity to Galveston Bay means elevated humidity year-round and salt air that accelerates corrosion on outdoor condenser units and coils. Annual maintenance is especially critical here, we routinely find coastal corrosion damage in Clear Lake homes that goes undetected until it triggers a full system failure.",
     housing:
       "Much of Clear Lake's housing stock was built in the 1970s and 1980s to house the aerospace community around NASA's Johnson Space Center. These 40–50-year-old homes in zip codes 77058, 77059, and 77062 often have original or older replacement ductwork and systems that have been through multiple replacement cycles.",
   },
   "deer-park": {
     intro:
-      "Deer Park homeowners have relied on Mabry's for dependable HVAC service since 1986. Flat-rate pricing, no surprises — that's how we do business in the 77536 area.",
+      "Deer Park homeowners have relied on Mabry's for dependable HVAC service since 1986. Flat-rate pricing, no surprises, that's how we do business in the 77536 area.",
     climate:
       "Deer Park's location in East Harris County, near the Ship Channel and Galveston Bay, means Gulf Coast humidity is a constant factor and AC equipment runs nearly nonstop from May through October. Condensate drains, outdoor unit corrosion in waterfront-adjacent areas, and coil maintenance are recurring HVAC concerns we address regularly throughout the 77536 area.",
     housing:
@@ -51,41 +51,41 @@ const cityContext: Record<string, { intro: string; climate: string; housing: str
     intro:
       "League City has become one of the fastest-growing communities on the I-45 Gulf Freeway corridor, and Mabry's has been serving League City homeowners with reliable, flat-rate HVAC service since 1986.",
     climate:
-      "League City's Galveston County location puts it in the heart of Gulf Coast humidity territory. Clear Lake and Galveston Bay mean elevated moisture year-round — accelerating condensate drain clogs and outdoor unit corrosion that we address regularly in League City's 77573 and 77574 zip codes.",
+      "League City's Galveston County location puts it in the heart of Gulf Coast humidity territory. Clear Lake and Galveston Bay mean elevated moisture year-round, accelerating condensate drain clogs and outdoor unit corrosion that we address regularly in League City's 77573 and 77574 zip codes.",
     housing:
-      "League City includes established communities near the historic downtown and Clear Creek alongside large master-planned developments — South Shore Harbour, Tuscan Lakes, Victory Lakes, and Bay Colony — built in the 2000s and 2010s. The newer communities have builder-grade systems now reaching the 12–20 year repair-or-replace decision window.",
+      "League City includes established communities near the historic downtown and Clear Creek alongside large master-planned developments, South Shore Harbour, Tuscan Lakes, Victory Lakes, and Bay Colony, built in the 2000s and 2010s. The newer communities have builder-grade systems now reaching the 12–20 year repair-or-replace decision window.",
   },
   "pasadena": {
     intro:
-      "Mabry's serves the residential communities of South Pasadena — the 77504 and 77505 zip codes — with the flat-rate, licensed HVAC service Greater Houston homeowners have relied on since 1986.",
+      "Mabry's serves the residential communities of South Pasadena, the 77504 and 77505 zip codes, with the flat-rate, licensed HVAC service Greater Houston homeowners have relied on since 1986.",
     climate:
       "Pasadena's location in the Houston Ship Channel corridor and its proximity to Galveston Bay means Gulf Coast heat and humidity define the local climate. Heat indexes regularly above 110°F and sustained humidity make reliable AC non-negotiable for Pasadena families, and AC systems in this part of Greater Houston run nearly nonstop from May through October.",
     housing:
-      "The South Pasadena neighborhoods we serve — along the Burke Road corridor and throughout 77504 and 77505 — include established residential areas with homes built primarily from the 1960s through the 1990s. These homes often have older ductwork, original-era equipment that's been replaced once or twice, and in some cases attic ductwork that has developed leaks or deteriorated over the decades.",
+      "The South Pasadena neighborhoods we serve, along the Burke Road corridor and throughout 77504 and 77505, include established residential areas with homes built primarily from the 1960s through the 1990s. These homes often have older ductwork, original-era equipment that's been replaced once or twice, and in some cases attic ductwork that has developed leaks or deteriorated over the decades.",
   },
   "sienna": {
     intro:
-      "Sienna — one of Fort Bend County's premier master-planned communities — features newer homes built for modern HVAC systems. Mabry's provides trusted service throughout Sienna's neighborhoods with flat-rate pricing and no surprises.",
+      "Sienna, one of Fort Bend County's premier master-planned communities, features newer homes built for modern HVAC systems. Mabry's provides trusted service throughout Sienna's neighborhoods with flat-rate pricing and no surprises.",
     climate:
-      "Despite being inland, Sienna's Fort Bend County location keeps it fully in Gulf Coast humidity territory. Summer heat indexes above 105°F and long cooling seasons mean even newer, higher-efficiency systems in Sienna homes work hard — and benefit significantly from annual maintenance to protect that investment.",
+      "Despite being inland, Sienna's Fort Bend County location keeps it fully in Gulf Coast humidity territory. Summer heat indexes above 105°F and long cooling seasons mean even newer, higher-efficiency systems in Sienna homes work hard, and benefit significantly from annual maintenance to protect that investment.",
     housing:
-      "Sienna Plantation was developed primarily from the late 1990s through the 2010s — including Waters Lake, Sawmill Lake, Sienna Village, and Lake Olympia — meaning a significant portion of the community's original HVAC equipment is now entering the 15–25 year replacement range. These systems, often builder-grade, are reaching the point where maintenance or proactive replacement becomes the smart financial decision.",
+      "Sienna Plantation was developed primarily from the late 1990s through the 2010s, including Waters Lake, Sawmill Lake, Sienna Village, and Lake Olympia, meaning a significant portion of the community's original HVAC equipment is now entering the 15–25 year replacement range. These systems, often builder-grade, are reaching the point where maintenance or proactive replacement becomes the smart financial decision.",
   },
   "angleton": {
     intro:
-      "Angleton is right in Mabry's home territory — the county seat of Brazoria County, where we've served homeowners since 1986. Fast response times and honest, flat-rate pricing for Angleton — the price we quote is the price you pay.",
+      "Angleton is right in Mabry's home territory, the county seat of Brazoria County, where we've served homeowners since 1986. Fast response times and honest, flat-rate pricing for Angleton, the price we quote is the price you pay.",
     climate:
-      "Angleton's Brazoria County location subjects homes to full Gulf Coast heat and humidity — the area regularly sees summer heat indexes above 105°F and cooling seasons that stretch from spring through October. Annual condensate drain maintenance remains important in Angleton's 77515 and 77516 zip codes despite being somewhat further from the bay.",
+      "Angleton's Brazoria County location subjects homes to full Gulf Coast heat and humidity, the area regularly sees summer heat indexes above 105°F and cooling seasons that stretch from spring through October. Annual condensate drain maintenance remains important in Angleton's 77515 and 77516 zip codes despite being somewhat further from the bay.",
     housing:
       "Angleton has a mix of housing reflecting its history as a long-established county seat: older homes near the historic downtown and the Brazoria County Courthouse, mid-century neighborhoods that expanded through the 1950s–1980s, and newer development on the city's outskirts. Many Angleton homeowners have systems approaching typical replacement age.",
   },
   "manvel": {
     intro:
-      "Mabry's is your true local neighbor for HVAC service in the Manvel 77578 area — fast response and honest, flat-rate pricing since 1986.",
+      "Mabry's is your true local neighbor for HVAC service in the Manvel 77578 area, fast response and honest, flat-rate pricing since 1986.",
     climate:
       "Manvel's Brazoria County location means full Gulf Coast heat loads in summer. The rapid residential growth in Manvel has brought many newer homes whose builder-grade systems need proper maintenance to achieve their full lifespan under these demanding climate conditions.",
     housing:
-      "Manvel's 77578 zip code now includes Rodeo Palms — one of the area's original planned neighborhoods — alongside newer developments like Pomona that have brought thousands of newer homes to the area. Most Manvel homes are 2010s–2020s construction with modern systems that reward proactive maintenance to maximize their lifespan.",
+      "Manvel's 77578 zip code now includes Rodeo Palms, one of the area's original planned neighborhoods, alongside newer developments like Pomona that have brought thousands of newer homes to the area. Most Manvel homes are 2010s–2020s construction with modern systems that reward proactive maintenance to maximize their lifespan.",
   },
   "rosharon": {
     intro:
@@ -93,31 +93,31 @@ const cityContext: Record<string, { intro: string; climate: string; housing: str
     climate:
       "Rosharon's rural Brazoria County setting doesn't insulate it from Gulf Coast heat and humidity. Summer heat indexes above 100°F and a 9-month effective cooling season mean residential HVAC systems in the 77583 area work as hard as anywhere in the greater Houston area.",
     housing:
-      "The 77583 zip code covers a wide range of residential properties — from rural acreage homes and older farmstead properties to newer residential developments that have grown along the Highway 288 corridor. Rural and semi-rural properties sometimes present unique HVAC configurations that require experienced technicians.",
+      "The 77583 zip code covers a wide range of residential properties, from rural acreage homes and older farmstead properties to newer residential developments that have grown along the Highway 288 corridor. Rural and semi-rural properties sometimes present unique HVAC configurations that require experienced technicians.",
   },
   "sugar-land": {
     intro:
-      "Sugar Land is one of Fort Bend County's most established communities, and Mabry's brings the flat-rate, licensed HVAC service that Sugar Land homeowners expect — nearly four decades of Gulf Coast HVAC experience.",
+      "Sugar Land is one of Fort Bend County's most established communities, and Mabry's brings the flat-rate, licensed HVAC service that Sugar Land homeowners expect, nearly four decades of Gulf Coast HVAC experience.",
     climate:
-      "Sugar Land's Fort Bend County location puts it in full Gulf Coast territory for heat and humidity. The city's well-developed master-planned communities represent significant real estate investments that depend on reliable HVAC performance through demanding Houston summers — with heat indexes regularly pushing above 105°F.",
+      "Sugar Land's Fort Bend County location puts it in full Gulf Coast territory for heat and humidity. The city's well-developed master-planned communities represent significant real estate investments that depend on reliable HVAC performance through demanding Houston summers, with heat indexes regularly pushing above 105°F.",
     housing:
       "Sugar Land includes master-planned communities like First Colony and Riverstone spanning multiple decades of construction. First Colony homes from the 1980s and 1990s are approaching their second or third HVAC replacement cycle. Newer Riverstone, Telfair, and New Territory homes from the 2000s–2010s benefit from the maintenance that protects newer systems from premature failure.",
   },
   "lake-jackson": {
     intro:
-      "Lake Jackson — the planned Brazoria County town built for Dow Chemical in the 1940s, famous for street names like This Way, That Way, and Winding Way — is part of the Brazosport-area community we've served with flat-rate, licensed HVAC since 1986.",
+      "Lake Jackson, the planned Brazoria County town built for Dow Chemical in the 1940s, famous for street names like This Way, That Way, and Winding Way, is part of the Brazosport-area community we've served with flat-rate, licensed HVAC since 1986.",
     climate:
-      "This far south in Brazoria County, Lake Jackson sits close to the Gulf. The Brazosport area's heat, relentless humidity, and salt-influenced coastal air are hard on residential equipment. Condensate drain clogs are among the most common calls we get in the 77566 area — Gulf humidity fills drip pans fast, and an overflowing pan can cause real water damage inside a home.",
+      "This far south in Brazoria County, Lake Jackson sits close to the Gulf. The Brazosport area's heat, relentless humidity, and salt-influenced coastal air are hard on residential equipment. Condensate drain clogs are among the most common calls we get in the 77566 area, Gulf humidity fills drip pans fast, and an overflowing pan can cause real water damage inside a home.",
     housing:
-      "Lake Jackson's housing runs from the original mid-century Dow-era homes — many past the typical HVAC replacement age — to newer developments that have grown the 77566 area over recent decades. Older planned-town homes often have ductwork and equipment through one or two replacement cycles; newer builds reward the proactive maintenance that protects them from premature Gulf Coast failure.",
+      "Lake Jackson's housing runs from the original mid-century Dow-era homes, many past the typical HVAC replacement age, to newer developments that have grown the 77566 area over recent decades. Older planned-town homes often have ductwork and equipment through one or two replacement cycles; newer builds reward the proactive maintenance that protects them from premature Gulf Coast failure.",
   },
   "houston": {
     intro:
-      "Mabry's serves the Clear Lake area of Houston — Clear Lake City, the Space Center and NASA-area neighborhoods, and Southeast Houston's 77058, 77059, and 77062 zip codes that were annexed into the city decades ago but kept their Clear Lake identity.",
+      "Mabry's serves the Clear Lake area of Houston, Clear Lake City, the Space Center and NASA-area neighborhoods, and Southeast Houston's 77058, 77059, and 77062 zip codes that were annexed into the city decades ago but kept their Clear Lake identity.",
     climate:
-      "This corner of Houston sits right by Galveston Bay, so its Gulf Coast climate is relentless — sustained summer heat, year-round humidity, and salt-influenced air that's harder on outdoor equipment than it is inland. AC systems here run nine months a year with heat indexes above 105°F common from May through September.",
+      "This corner of Houston sits right by Galveston Bay, so its Gulf Coast climate is relentless, sustained summer heat, year-round humidity, and salt-influenced air that's harder on outdoor equipment than it is inland. AC systems here run nine months a year with heat indexes above 105°F common from May through September.",
     housing:
-      "The Clear Lake area of Houston grew up around NASA's Johnson Space Center, so much of the housing in the 77058, 77059, and 77062 zip codes dates to the aerospace boom of the 1960s through 1980s. Many of these well-built homes still run original single-stage equipment and older ductwork — prime territory for repair, replacement, and efficiency upgrades, all of which we handle.",
+      "The Clear Lake area of Houston grew up around NASA's Johnson Space Center, so much of the housing in the 77058, 77059, and 77062 zip codes dates to the aerospace boom of the 1960s through 1980s. Many of these well-built homes still run original single-stage equipment and older ductwork, prime territory for repair, replacement, and efficiency upgrades, all of which we handle.",
   },
 };
 
@@ -142,7 +142,7 @@ export async function generateMetadata({
   if (!service || !location) return { title: "Page Not Found" };
 
   const title = `${service.name} in ${location.name}, TX | Mabry's AC & Heating`;
-  const description = `Licensed ${service.name} for ${location.name}, TX homeowners. Flat-rate pricing, no hidden charges. BBB A+ rated. License ${businessInfo.license}. Call ${location.phone} — serving ${location.zipCodes.join(", ")}.`;
+  const description = `Licensed ${service.name} for ${location.name}, TX homeowners. Flat-rate pricing, no hidden charges. BBB A+ rated. License ${businessInfo.license}. Call ${location.phone}, serving ${location.zipCodes.join(", ")}.`;
 
   return {
     title,
@@ -179,7 +179,7 @@ export default async function ServiceCityPage({
   const otherLocations = locations.filter((l) => l.slug !== location.slug);
   const ctx = cityContext[location.slug] ?? {
     intro: `${businessInfo.name} has been serving ${location.name} homeowners since ${businessInfo.established}.`,
-    climate: `Gulf Coast heat and humidity define the HVAC demands in ${location.name}, TX — with summer heat indexes regularly above 100°F and cooling seasons that stretch 9 months of the year.`,
+    climate: `Gulf Coast heat and humidity define the HVAC demands in ${location.name}, TX, with summer heat indexes regularly above 100°F and cooling seasons that stretch 9 months of the year.`,
     housing: `${location.name} homes span a range of ages and styles that our experienced technicians are equipped to handle.`,
   };
 
@@ -245,7 +245,7 @@ export default async function ServiceCityPage({
             <span className="text-white">{location.name}</span>
           </div>
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            {service.name} in {location.name}, {location.state}{tagline ? ` — ${tagline}` : ""}
+            {service.name} in {location.name}, {location.state}{tagline ? `, ${tagline}` : ""}
           </h1>
           <p className="text-xl text-white/90 max-w-2xl">
             {service.description} Trusted by homeowners in {location.name} since{" "}
@@ -297,7 +297,7 @@ export default async function ServiceCityPage({
                     <p>
                       {ctx.intro} Mabry&apos;s Air Conditioning &amp; Heating has been the trusted
                       name for fast, reliable AC repair in {location.name}, TX since{" "}
-                      {businessInfo.established} — with flat-rate pricing, licensed technicians,
+                      {businessInfo.established}, with flat-rate pricing, licensed technicians,
                       and no hidden charges. When your AC goes out during a {location.name} summer,
                       we show up.
                     </p>
@@ -308,7 +308,7 @@ export default async function ServiceCityPage({
                     <h2>Heating Repair for {location.name} Homes — All Makes &amp; Models</h2>
                     <p>
                       A broken heater on a cold January night in {location.name} is a serious
-                      problem — especially for families with young children or elderly members.{" "}
+                      problem, especially for families with young children or elderly members.{" "}
                       {ctx.intro} Mabry&apos;s Air Conditioning &amp; Heating has been fixing
                       furnaces and heat pumps for {location.name} homeowners since{" "}
                       {businessInfo.established}.
@@ -320,7 +320,7 @@ export default async function ServiceCityPage({
                     <h2>Professional AC Installation in {location.name}, TX</h2>
                     <p>
                       When it&apos;s time for a new air conditioning system in {location.name},
-                      the stakes are high — the wrong size unit or a poor installation means higher
+                      the stakes are high, the wrong size unit or a poor installation means higher
                       energy bills, uncomfortable rooms, and more breakdowns. {ctx.intro}{" "}
                       Mabry&apos;s Air Conditioning &amp; Heating has been installing quality AC
                       systems in {location.name} homes since {businessInfo.established}. We do it
@@ -333,7 +333,7 @@ export default async function ServiceCityPage({
                     <h2>AC &amp; Heating Tune-Up for {location.name} Homeowners</h2>
                     <p>
                       In {location.name}, your air conditioning system works harder than almost
-                      anywhere in the country — up to 9 months per year under Gulf Coast heat and
+                      anywhere in the country, up to 9 months per year under Gulf Coast heat and
                       humidity. Annual preventive maintenance is the single best thing you can do
                       to prevent a breakdown on the hottest day of August and keep your energy bills
                       under control. {ctx.intro}
@@ -353,25 +353,25 @@ export default async function ServiceCityPage({
                     </p>
                     <ul>
                       <li>
-                        <strong>Trane</strong> — including XR, XL, and Comfort series systems
+                        <strong>Trane</strong>, including XR, XL, and Comfort series systems
                       </li>
                       <li>
-                        <strong>Carrier</strong> — including Infinity, Performance, and Comfort
+                        <strong>Carrier</strong>, including Infinity, Performance, and Comfort
                         series
                       </li>
                       <li>
-                        <strong>Lennox</strong> — including Elite, Merit, and Dave Lennox Signature
+                        <strong>Lennox</strong>, including Elite, Merit, and Dave Lennox Signature
                         series
                       </li>
                       <li>
-                        <strong>Rheem</strong> — including Prestige, Classic Plus, and Classic
+                        <strong>Rheem</strong>, including Prestige, Classic Plus, and Classic
                         series
                       </li>
                       <li>
                         <strong>Goodman</strong> and <strong>Amana</strong> systems
                       </li>
                       <li>
-                        <strong>American Standard</strong> — including Gold and Silver series
+                        <strong>American Standard</strong>, including Gold and Silver series
                       </li>
                       <li>
                         <strong>York</strong>, <strong>Bryant</strong>, <strong>Daikin</strong>,
@@ -383,7 +383,7 @@ export default async function ServiceCityPage({
                     <ul>
                       <li>AC not cooling or blowing warm air</li>
                       <li>Unit won&apos;t turn on or keeps shutting off</li>
-                      <li>Strange noises — banging, squealing, clicking</li>
+                      <li>Strange noises, banging, squealing, clicking</li>
                       <li>Frozen evaporator coils</li>
                       <li>Refrigerant leaks (R-410A and legacy R-22 systems)</li>
                       <li>Thermostat malfunctions and wiring issues</li>
@@ -403,17 +403,17 @@ export default async function ServiceCityPage({
                     </p>
                     <ul>
                       <li>
-                        <strong>Trane</strong> — gas furnaces, heat pumps, and air handlers
+                        <strong>Trane</strong>, gas furnaces, heat pumps, and air handlers
                       </li>
                       <li>
-                        <strong>Carrier</strong> — Infinity, Performance, and Comfort series
+                        <strong>Carrier</strong>: Infinity, Performance, and Comfort series
                         furnaces and heat pumps
                       </li>
                       <li>
-                        <strong>Lennox</strong> — Elite, Merit, and Dave Lennox Signature furnaces
+                        <strong>Lennox</strong>: Elite, Merit, and Dave Lennox Signature furnaces
                       </li>
                       <li>
-                        <strong>Rheem</strong> — Classic, Classic Plus, and Prestige series
+                        <strong>Rheem</strong>: Classic, Classic Plus, and Prestige series
                       </li>
                       <li>
                         <strong>Goodman</strong> and <strong>Amana</strong> gas furnaces and heat
@@ -433,8 +433,7 @@ export default async function ServiceCityPage({
                       <li>Electric air handler and strip heat repair</li>
                       <li>Igniter and flame sensor replacement</li>
                       <li>
-                        Heat exchanger inspection (critical safety check for gas furnaces —
-                        cracked exchangers can leak carbon monoxide)
+                        Heat exchanger inspection (critical safety check for gas furnaces,                         cracked exchangers can leak carbon monoxide)
                       </li>
                       <li>Gas valve, draft inducer, and control board repair</li>
                       <li>Thermostat calibration and replacement</li>
@@ -453,27 +452,27 @@ export default async function ServiceCityPage({
                     </p>
                     <ul>
                       <li>
-                        <strong>Trane</strong> — known for durability and reliability in
+                        <strong>Trane</strong>, known for durability and reliability in
                         Houston&apos;s demanding climate
                       </li>
                       <li>
-                        <strong>Carrier</strong> — the inventor of modern air conditioning, with
+                        <strong>Carrier</strong>, the inventor of modern air conditioning, with
                         excellent efficiency ratings
                       </li>
                       <li>
-                        <strong>Lennox</strong> — industry-leading efficiency for homeowners
+                        <strong>Lennox</strong>, industry-leading efficiency for homeowners
                         focused on energy savings
                       </li>
                       <li>
-                        <strong>Rheem</strong> — strong reliability and value, excellent warranty
+                        <strong>Rheem</strong>, strong reliability and value, excellent warranty
                         coverage
                       </li>
                       <li>
-                        <strong>Goodman</strong> and <strong>Amana</strong> — great value for
+                        <strong>Goodman</strong> and <strong>Amana</strong>, great value for
                         budget-conscious homeowners
                       </li>
                       <li>
-                        <strong>American Standard</strong> — Trane technology in a different
+                        <strong>American Standard</strong>: Trane technology in a different
                         product line
                       </li>
                     </ul>
@@ -481,30 +480,30 @@ export default async function ServiceCityPage({
                     <h3>Our Installation Process in {location.name}</h3>
                     <ul>
                       <li>
-                        <strong>Free In-Home Consultation</strong> — we assess your{" "}
+                        <strong>Free In-Home Consultation</strong>, we assess your{" "}
                         {location.name} home&apos;s specific cooling needs
                       </li>
                       <li>
-                        <strong>Load Calculation</strong> — Manual J calculation for proper sizing
+                        <strong>Load Calculation</strong>: Manual J calculation for proper sizing
                       </li>
                       <li>
-                        <strong>Brand &amp; Efficiency Recommendation</strong> — options at
+                        <strong>Brand &amp; Efficiency Recommendation</strong>, options at
                         multiple price points
                       </li>
                       <li>
-                        <strong>Professional Installation</strong> — licensed technicians,
+                        <strong>Professional Installation</strong>, licensed technicians,
                         permit-ready
                       </li>
                       <li>
-                        <strong>Refrigerant Line &amp; Ductwork Check</strong> — we don&apos;t
+                        <strong>Refrigerant Line &amp; Ductwork Check</strong>, we don&apos;t
                         just swap the equipment
                       </li>
                       <li>
-                        <strong>System Testing &amp; Commissioning</strong> — we verify
+                        <strong>System Testing &amp; Commissioning</strong>, we verify
                         everything before we leave
                       </li>
                       <li>
-                        <strong>Customer Walkthrough</strong> — we show you how to maximize your
+                        <strong>Customer Walkthrough</strong>, we show you how to maximize your
                         new system
                       </li>
                     </ul>
@@ -518,7 +517,7 @@ export default async function ServiceCityPage({
                         Some rooms are never comfortable regardless of thermostat setting
                       </li>
                       <li>
-                        The system uses R-22 refrigerant (phased out — repairs are costly)
+                        The system uses R-22 refrigerant (phased out, repairs are costly)
                       </li>
                       <li>
                         The system runs constantly but can&apos;t keep up with{" "}
@@ -537,47 +536,47 @@ export default async function ServiceCityPage({
                     </p>
                     <ul>
                       <li>
-                        <strong>Refrigerant level check</strong> — verify proper charge (low
+                        <strong>Refrigerant level check</strong>, verify proper charge (low
                         refrigerant = poor cooling and compressor damage)
                       </li>
                       <li>
-                        <strong>Capacitor testing</strong> — capacitor failures are the #1 cause
+                        <strong>Capacitor testing</strong>, capacitor failures are the #1 cause
                         of AC breakdowns in Houston summers
                       </li>
                       <li>
-                        <strong>Contactor inspection</strong> — worn contactors cause compressor
+                        <strong>Contactor inspection</strong>, worn contactors cause compressor
                         and fan motor failure
                       </li>
                       <li>
-                        <strong>Condenser coil cleaning</strong> — dirty coils reduce efficiency
+                        <strong>Condenser coil cleaning</strong>, dirty coils reduce efficiency
                         and cause overheating
                       </li>
                       <li>
-                        <strong>Evaporator coil inspection</strong> — check for ice buildup,
+                        <strong>Evaporator coil inspection</strong>, check for ice buildup,
                         dirt, and refrigerant issues
                       </li>
                       <li>
-                        <strong>Condensate drain flush</strong> — prevent clogged drains and
+                        <strong>Condensate drain flush</strong>, prevent clogged drains and
                         water damage (Gulf Coast humidity makes this critical for{" "}
                         {location.name} homes)
                       </li>
                       <li>
-                        <strong>Blower motor and belt inspection</strong> — ensure proper airflow
+                        <strong>Blower motor and belt inspection</strong>, ensure proper airflow
                         throughout your home
                       </li>
                       <li>
-                        <strong>Thermostat calibration</strong> — confirm your system responds
+                        <strong>Thermostat calibration</strong>, confirm your system responds
                         accurately
                       </li>
                       <li>
-                        <strong>Electrical connections and wiring check</strong> — loose
+                        <strong>Electrical connections and wiring check</strong>, loose
                         connections cause failures and safety hazards
                       </li>
                       <li>
                         <strong>Filter inspection and replacement guidance</strong>
                       </li>
                       <li>
-                        <strong>Overall system performance assessment</strong> — temperature
+                        <strong>Overall system performance assessment</strong>, temperature
                         differential check
                       </li>
                     </ul>
@@ -589,23 +588,23 @@ export default async function ServiceCityPage({
                     </p>
                     <ul>
                       <li>
-                        <strong>Heat exchanger inspection</strong> — critical safety check for
+                        <strong>Heat exchanger inspection</strong>, critical safety check for
                         gas furnaces (cracked exchangers can leak carbon monoxide)
                       </li>
                       <li>
-                        <strong>Burner and igniter inspection</strong> — ensure reliable ignition
+                        <strong>Burner and igniter inspection</strong>, ensure reliable ignition
                         on first use
                       </li>
                       <li>
-                        <strong>Flame sensor cleaning</strong> — dirty sensors cause nuisance
+                        <strong>Flame sensor cleaning</strong>, dirty sensors cause nuisance
                         shutdowns
                       </li>
                       <li>
-                        <strong>Gas valve and pressure check</strong> — verify safe, proper gas
+                        <strong>Gas valve and pressure check</strong>, verify safe, proper gas
                         flow
                       </li>
                       <li>
-                        <strong>Heat pump reversing valve check</strong> — ensures proper heating
+                        <strong>Heat pump reversing valve check</strong>, ensures proper heating
                         mode operation
                       </li>
                       <li>
@@ -636,7 +635,7 @@ export default async function ServiceCityPage({
                   <p>
                     For new installations in {location.name}, we recommend systems with a minimum{" "}
                     <strong>16 SEER2</strong> rating. Higher-efficiency units (18–21+ SEER2) can
-                    deliver significant energy savings given our 9-month cooling season — and
+                    deliver significant energy savings given our 9-month cooling season, and
                     we&apos;ll calculate the exact payback period so you can make an informed
                     decision.
                   </p>
@@ -644,8 +643,8 @@ export default async function ServiceCityPage({
 
                 {slug === "ac-maintenance" && (
                   <p>
-                    The most common AC emergencies we see in {location.name} — failed capacitors,
-                    low refrigerant, clogged condensate drains — are almost always detectable
+                    The most common AC emergencies we see in {location.name}, failed capacitors,
+                    low refrigerant, clogged condensate drains, are almost always detectable
                     during a routine maintenance visit. A pre-season tune-up that catches a
                     failing capacitor saves you an emergency service call on a 100°F Saturday in
                     July. Maintenance also keeps your manufacturer&apos;s warranty valid on newer

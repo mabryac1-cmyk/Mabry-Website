@@ -40,7 +40,7 @@ export default function Home() {
               <p className="text-white/90 text-sm font-semibold mb-1">Call for Urgent or Emergency Service:</p>
               <p className="text-white/70 text-xs mb-3 flex items-center gap-1.5">
                 <Clock className="w-3.5 h-3.5 shrink-0" />
-                Mon–Fri 7am–7pm · Sat 7am–1pm · On-call after hours — flat-rate pricing, no after-hours fees
+                Mon–Fri 7am–7pm · Sat 7am–1pm · On-call after hours, flat-rate pricing, no after-hours fees
               </p>
               <div className="flex flex-col gap-3">
                 <a
@@ -86,12 +86,12 @@ export default function Home() {
                 />
               </a>
               <span className="inline-flex items-center gap-1.5 bg-accent/25 border border-accent/50 text-white text-xs font-semibold px-3 py-1.5 rounded-full">
-                <Award className="w-3.5 h-3.5 shrink-0" /> Voted Favorite AC Company — Alvin Sun &amp; Advertiser
+                <Award className="w-3.5 h-3.5 shrink-0" /> Voted Favorite AC Company, Alvin Sun &amp; Advertiser
               </span>
             </div>
 
             <p className="text-lg text-white/90 max-w-lg leading-relaxed">
-              Proudly serving Alvin, Friendswood, Pearland, Manvel, Clear Lake, League City, Deer Park, Missouri City, and communities throughout the Greater Houston area. Licensed residential HVAC — {businessInfo.license}.
+              Proudly serving Alvin, Friendswood, Pearland, Manvel, Clear Lake, League City, Deer Park, Missouri City, and communities throughout the Greater Houston area. Licensed residential HVAC, {businessInfo.license}.
             </p>
 
             <p className="text-sm text-white/70">
@@ -105,7 +105,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Visible pricing band — transparent pricing up top */}
+      {/* Visible pricing band, transparent pricing up top */}
       <PricingBand className="bg-white pt-16 pb-8 -mt-8 relative z-20" />
 
       <section className="bg-white pb-16">
@@ -130,7 +130,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3 — Reviews (moved up for trust signal) */}
+      {/* 3, Reviews (moved up for trust signal) */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <Script src="https://elfsightcdn.com/platform.js" strategy="lazyOnload" />
@@ -138,7 +138,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4 — Our HVAC Services */}
+      {/* 4, Our HVAC Services */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -173,7 +173,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5 — Our Locations */}
+      {/* 5, Our Locations */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -194,7 +194,7 @@ export default function Home() {
                   <span>281-331-5248</span>
                 </a>
                 <p className="text-sm text-muted-foreground pt-2">
-                  Serving South & Southwest Houston — Alvin, Manvel, Pearland, Sienna & surrounding communities
+                  Serving South & Southwest Houston, Alvin, Manvel, Pearland, Sienna & surrounding communities
                 </p>
                 <Link href="/areas/alvin" className="inline-flex items-center gap-1 text-sm font-semibold text-accent hover:text-accent/80 transition-colors pt-1">
                   View Alvin Area <ArrowRight className="w-4 h-4" />
@@ -214,7 +214,7 @@ export default function Home() {
                   <span>281-482-8400</span>
                 </a>
                 <p className="text-sm text-muted-foreground pt-2">
-                  Serving Bay Area & Southeast Houston — Friendswood, Clear Lake, League City, Deer Park, Pasadena & surrounding communities
+                  Serving Bay Area & Southeast Houston, Friendswood, Clear Lake, League City, Deer Park, Pasadena & surrounding communities
                 </p>
                 <Link href="/areas/friendswood" className="inline-flex items-center gap-1 text-sm font-semibold text-accent hover:text-accent/80 transition-colors pt-1">
                   View Friendswood Area <ArrowRight className="w-4 h-4" />
@@ -225,7 +225,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6 — Proudly Serving Your Community (city pills) */}
+      {/* 6, Proudly Serving Your Community (city pills) */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-primary rounded-3xl p-8 lg:p-16 text-center relative overflow-hidden">
@@ -258,7 +258,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 7 — FAQ */}
+      {/* 7, FAQ */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">

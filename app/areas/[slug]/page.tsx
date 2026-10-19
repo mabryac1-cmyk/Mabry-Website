@@ -179,7 +179,7 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
             >
               <img
                 src="https://seal-houston.bbb.org/seals/blue-seal-200-42-bbb-50000805.png"
-                alt="BBB Accredited Business — A+ Rated"
+                alt="BBB Accredited Business, A+ Rated"
                 width={200}
                 height={42}
                 style={{ border: 0 }}
@@ -193,7 +193,7 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
         </div>
       </section>
 
-      {/* Visible pricing band — transparent pricing up top */}
+      {/* Visible pricing band, transparent pricing up top */}
       <PricingBand className="bg-white pt-10 pb-2" />
 
       {/* Trust Bar */}

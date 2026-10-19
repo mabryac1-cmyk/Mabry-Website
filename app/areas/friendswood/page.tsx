@@ -20,15 +20,15 @@ export const metadata: Metadata = {
 const friendswoodFaqs = [
   {
     question: "How fast can you respond to AC repairs in Friendswood?",
-    answer: "We offer fast response times for Friendswood homes — typically same-day or next-day service for most AC repairs in the 77546 and 77549 zip codes. Call our dedicated Friendswood line at 281-482-8400.",
+    answer: "We offer fast response times for Friendswood homes, typically same-day or next-day service for most AC repairs in the 77546 and 77549 zip codes. Call our dedicated Friendswood line at 281-482-8400.",
   },
   {
     question: "Do you charge extra for evening or weekend service calls in Friendswood?",
-    answer: "No — flat-rate pricing applies to all calls, all times. No extra charge for evenings or weekends — ever. The price you're quoted is the price you pay.",
+    answer: "No, flat-rate pricing applies to all calls, all times. No extra charge for evenings or weekends, ever. The price you're quoted is the price you pay.",
   },
   {
     question: "What is your dedicated Friendswood phone number?",
-    answer: "Our dedicated Friendswood service line is 281-482-8400. This line is specifically for Friendswood and the Bay Area — you'll get faster routing and someone familiar with your area.",
+    answer: "Our dedicated Friendswood service line is 281-482-8400. This line is specifically for Friendswood and the Bay Area, you'll get faster routing and someone familiar with your area.",
   },
   {
     question: "How long have you been serving Friendswood?",
@@ -42,34 +42,34 @@ const friendswoodFaqs = [
 
 const friendswoodContent = `
   <h2>Friendswood's Trusted HVAC Company — Serving This Community Since 1986</h2>
-  <p>Friendswood has been part of Mabry's story since the beginning. We've been serving families in the 77546 and 77549 zip codes for nearly four decades — long enough to have worked on systems for the same families across generations. Friendswood is a community that values trust and quality work, and that's exactly what we've built our reputation on.</p>
+  <p>Friendswood has been part of Mabry's story since the beginning. We've been serving families in the 77546 and 77549 zip codes for nearly four decades, long enough to have worked on systems for the same families across generations. Friendswood is a community that values trust and quality work, and that's exactly what we've built our reputation on.</p>
 
   <p>For Friendswood service, call our dedicated line: <strong>281-482-8400</strong>.</p>
 
   <h3>HVAC Services We Provide in Friendswood</h3>
   <ul>
-    <li><strong>AC repair</strong> — all makes and models, fast response</li>
-    <li><strong>Heating repair</strong> — furnace and heat pump service</li>
-    <li><strong>New AC installation</strong> — Trane, Carrier, Lennox, Rheem and other top brands</li>
-    <li><strong>Annual maintenance tune-ups</strong> — prevent breakdowns before they happen</li>
+    <li><strong>AC repair</strong>, all makes and models, fast response</li>
+    <li><strong>Heating repair</strong>, furnace and heat pump service</li>
+    <li><strong>New AC installation</strong>: Trane, Carrier, Lennox, Rheem and other top brands</li>
+    <li><strong>Annual maintenance tune-ups</strong>, prevent breakdowns before they happen</li>
   </ul>
 
   <h3>We Know Friendswood Homes</h3>
-  <p>Friendswood's housing stock is a mix of established neighborhoods — many with homes built in the 1970s and 1980s — alongside newer developments that have expanded the city over recent decades. The older ranch-style homes in established Friendswood neighborhoods often feature ductwork and equipment that's seen one or two replacement cycles, and owners who know the value of a contractor they can trust over the long term. Newer homes near FM 518 and FM 2351 corridors benefit most from proper maintenance to maximize equipment life.</p>
+  <p>Friendswood's housing stock is a mix of established neighborhoods, many with homes built in the 1970s and 1980s, alongside newer developments that have expanded the city over recent decades. The older ranch-style homes in established Friendswood neighborhoods often feature ductwork and equipment that's seen one or two replacement cycles, and owners who know the value of a contractor they can trust over the long term. Newer homes near FM 518 and FM 2351 corridors benefit most from proper maintenance to maximize equipment life.</p>
 
-  <p>The Gulf Coast humidity that defines Friendswood's climate means condensate drain maintenance is critical — clogged drains are one of the most common service calls we make in the 77546 area during summer.</p>
+  <p>The Gulf Coast humidity that defines Friendswood's climate means condensate drain maintenance is critical, clogged drains are one of the most common service calls we make in the 77546 area during summer.</p>
 
   <h3>Recent Friendswood Work</h3>
-  <p>Friendswood holds its contractors to a high standard — the city's inspection process is among the more rigorous in our service area, and honestly, we like it that way. This past July, when a heat wave pushed an aging Friendswood system past its limit, we installed a complete new AC and heating system and passed the City of Friendswood inspection without a single issue. Passing a stringent inspection isn't luck — it's what a proper, to-code installation looks like every time, and it's the standard Friendswood families have counted on from us for nearly four decades.</p>
+  <p>Friendswood holds its contractors to a high standard, the city's inspection process is among the more rigorous in our service area, and honestly, we like it that way. This past July, when a heat wave pushed an aging Friendswood system past its limit, we installed a complete new AC and heating system and passed the City of Friendswood inspection without a single issue. Passing a stringent inspection isn't luck, it's what a proper, to-code installation looks like every time, and it's the standard Friendswood families have counted on from us for nearly four decades.</p>
 
   <h3>Why Friendswood Homeowners Choose Mabry's</h3>
   <ul>
-    <li>Dedicated Friendswood service line — 281-482-8400</li>
+    <li>Dedicated Friendswood service line, 281-482-8400</li>
     <li>Nearly 40 years serving this specific community</li>
-    <li>Flat-rate pricing — know your cost before work begins</li>
-    <li>BBB A+ Accredited Business — multiple BBB Gold Star Award winner</li>
+    <li>Flat-rate pricing, know your cost before work begins</li>
+    <li>BBB A+ Accredited Business, multiple BBB Gold Star Award winner</li>
     <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
-    <li>Residential specialists — homes are our only business</li>
+    <li>Residential specialists, homes are our only business</li>
   </ul>
 
   <p>From neighborhoods near Friendswood High School and the historic downtown area to communities along FM 518, Mabry's is the HVAC company Friendswood has counted on for nearly 40 years.</p>
@@ -129,7 +129,7 @@ export default async function FriendswoodPage() {
           "item": {
             "@type": "Service",
             "name": "Trane Single-Stage AC & Heating System Installation in Friendswood, TX — Choice Tier",
-            "description": "Complete new Trane single-stage AC and heating system installation for Friendswood homeowners — our most popular installation tier. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Serving the Bay Area since 1986.",
+            "description": "Complete new Trane single-stage AC and heating system installation for Friendswood homeowners, our most popular installation tier. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Serving the Bay Area since 1986.",
             "provider": { "@id": "https://mabryac.com/#business" },
             "areaServed": { "@type": "City", "name": "Friendswood", "addressRegion": "TX" },
             "offers": {
@@ -148,7 +148,7 @@ export default async function FriendswoodPage() {
           "item": {
             "@type": "Service",
             "name": "Trane TruComfort Variable-Speed AC & Heating System Installation in Friendswood, TX — Premier Tier",
-            "description": "Complete new Trane TruComfort variable-speed AC and heating system installation for Friendswood homeowners — Trane's flagship Premier tier with whisper-quiet operation and lowest utility bills. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Serving the Bay Area since 1986.",
+            "description": "Complete new Trane TruComfort variable-speed AC and heating system installation for Friendswood homeowners, Trane's flagship Premier tier with whisper-quiet operation and lowest utility bills. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Serving the Bay Area since 1986.",
             "provider": { "@id": "https://mabryac.com/#business" },
             "areaServed": { "@type": "City", "name": "Friendswood", "addressRegion": "TX" },
             "offers": {
@@ -183,7 +183,7 @@ export default async function FriendswoodPage() {
             AC Repair &amp; HVAC Serving Friendswood, TX &amp; the Greater Bay Area — Trusted Since 1986
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mb-6">
-            Serving Friendswood families for nearly 40 years — along with the Greater Clear Lake area. Flat-rate pricing, BBB A+.
+            Serving Friendswood families for nearly 40 years, along with the Greater Clear Lake area. Flat-rate pricing, BBB A+.
           </p>
           <div className="flex flex-wrap gap-4 items-center mb-6">
             <a
@@ -199,7 +199,7 @@ export default async function FriendswoodPage() {
             </div>
           </div>
 
-          {/* Service area — inclusive city strip */}
+          {/* Service area, inclusive city strip */}
           <div className="mb-6 max-w-3xl">
             <p className="text-white/90 text-xl leading-relaxed">
               <span className="font-semibold text-white">Proudly serving Friendswood &amp; the Bay Area:</span>{" "}
@@ -234,7 +234,7 @@ export default async function FriendswoodPage() {
             >
               <img
                 src="https://seal-houston.bbb.org/seals/blue-seal-200-42-bbb-50000805.png"
-                alt="BBB Accredited Business — A+ Rated"
+                alt="BBB Accredited Business, A+ Rated"
                 width={200}
                 height={42}
                 style={{ border: 0 }}
@@ -249,12 +249,12 @@ export default async function FriendswoodPage() {
           {/* Urgency */}
           <p className="text-white/80 text-sm flex items-center gap-2">
             <Clock className="w-4 h-4 text-accent shrink-0" />
-            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends — ever.
+            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends, ever.
           </p>
         </div>
       </section>
 
-      {/* Visible pricing band — attention-grabbing, above reviews */}
+      {/* Visible pricing band, attention-grabbing, above reviews */}
       <PricingBand className="bg-white pt-10 pb-2" />
 
       {/* Trust Bar */}
@@ -331,7 +331,7 @@ export default async function FriendswoodPage() {
                 </div>
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
                   Friendswood homeowners have several options when it&apos;s time to replace their AC &amp;
-                  heating system. Our most popular tier — the trusted Trane Single-Stage — starts at
+                  heating system. Our most popular tier, the trusted Trane Single-Stage, starts at
                   <strong className="text-primary"> {fmtUSD(starting.choice)}</strong> for a complete installation. From the
                   Forest of Friendswood to communities throughout the Bay Area, we keep our pricing flat-rate
                   and straightforward. No surprises.

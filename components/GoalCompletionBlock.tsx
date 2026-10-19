@@ -23,7 +23,7 @@ export function GoalCompletionBlock({
     "Licensed TACLB12058E",
     "Serving homeowners since 1986",
     "BBB A+ rated",
-    "Flat-rate pricing — no hidden charges",
+    "Flat-rate pricing, no hidden charges",
   ];
 
   return (

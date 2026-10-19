@@ -16,15 +16,15 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: "How much does AC repair cost in Alvin TX?",
-    answer: "Common AC repairs in Alvin typically range from $150–$600 depending on the problem. Capacitor replacements run $150–$350. Refrigerant recharges run $200–$400. Major repairs like compressor work can run higher. We use flat-rate pricing — you know the exact cost before we start, no surprises.",
+    answer: "Common AC repairs in Alvin typically range from $150–$600 depending on the problem. Capacitor replacements run $150–$350. Refrigerant recharges run $200–$400. Major repairs like compressor work can run higher. We use flat-rate pricing, you know the exact cost before we start, no surprises.",
   },
   {
     question: "Do you offer same-day AC repair in Alvin?",
-    answer: "Yes. Our shop is right here at 2110 S Gordon St in Alvin — we're not driving from Houston. Same-day service is available for most AC repairs in the 77511 and 77512 zip codes. Call 281-331-5248.",
+    answer: "Yes. Our shop is right here at 2110 S Gordon St in Alvin, we're not driving from Houston. Same-day service is available for most AC repairs in the 77511 and 77512 zip codes. Call 281-331-5248.",
   },
   {
     question: "Is it worth repairing a 10-year-old AC in Alvin's climate?",
-    answer: "It depends on the repair cost vs. system value. A common rule: if the repair costs more than half the price of a new system, replacement is usually smarter. In Alvin's Gulf Coast climate, AC units typically last 12–15 years — shorter than national averages due to our 9-month cooling season. We'll give you an honest recommendation either way.",
+    answer: "It depends on the repair cost vs. system value. A common rule: if the repair costs more than half the price of a new system, replacement is usually smarter. In Alvin's Gulf Coast climate, AC units typically last 12–15 years, shorter than national averages due to our 9-month cooling season. We'll give you an honest recommendation either way.",
   },
   {
     question: "What are the most common AC problems in Alvin TX?",
@@ -32,28 +32,28 @@ const faqs = [
   },
   {
     question: "What should I check before calling for AC repair in Alvin?",
-    answer: "Check your thermostat settings, make sure your air filter isn't clogged, and verify your circuit breaker hasn't tripped. If the AC is running but not cooling, check that all vents are open. If you hear unusual noises or see ice on the unit — stop the system and call us. Running a damaged AC can cause more expensive damage.",
+    answer: "Check your thermostat settings, make sure your air filter isn't clogged, and verify your circuit breaker hasn't tripped. If the AC is running but not cooling, check that all vents are open. If you hear unusual noises or see ice on the unit, stop the system and call us. Running a damaged AC can cause more expensive damage.",
   },
 ];
 
 const content = `
   <h2>AC Repair in Alvin, TX — When It Breaks, We Fix It Fast</h2>
-  <p>In July in Alvin, a broken AC isn't an inconvenience — it's a health emergency. Heat indexes regularly push past 110°F in Brazoria County, and the Gulf Coast humidity makes an uncooled home genuinely dangerous, especially for children, elderly family members, and pets. When your AC goes out, you need it fixed today — not next week.</p>
-  <p>Mabry's Air Conditioning &amp; Heating has been the AC repair company Alvin calls since 1986. Our shop is at 2110 S Gordon St — we're already here. When you call 281-331-5248, you're not reaching a call center routing a tech from across Houston. You're calling your neighbors.</p>
+  <p>In July in Alvin, a broken AC isn't an inconvenience, it's a health emergency. Heat indexes regularly push past 110°F in Brazoria County, and the Gulf Coast humidity makes an uncooled home genuinely dangerous, especially for children, elderly family members, and pets. When your AC goes out, you need it fixed today, not next week.</p>
+  <p>Mabry's Air Conditioning &amp; Heating has been the AC repair company Alvin calls since 1986. Our shop is at 2110 S Gordon St, we're already here. When you call 281-331-5248, you're not reaching a call center routing a tech from across Houston. You're calling your neighbors.</p>
 
   <h3>Common AC Problems We Fix in Alvin</h3>
   <ul>
-    <li><strong>AC not blowing cold air</strong> — Low refrigerant, failed capacitor, or dirty evaporator coil. We diagnose and fix all three.</li>
-    <li><strong>AC running but not cooling the house</strong> — Often a refrigerant issue, an oversized cycling problem, or a failing compressor. Common in Alvin homes during peak summer months.</li>
-    <li><strong>AC stopped working suddenly</strong> — Could be a tripped breaker, failed capacitor, or burnt contactor. We carry common parts on every truck for same-day repairs.</li>
-    <li><strong>AC not keeping up with the heat</strong> — If your system runs constantly but can't hit your set temperature, it may be undersized, low on refrigerant, or have leaking ductwork.</li>
-    <li><strong>AC leaking water inside the house</strong> — A clogged condensate drain is the most common cause in Alvin's humid climate. Left unaddressed, it causes water damage to ceilings and walls.</li>
-    <li><strong>AC freezing up / ice on the coils</strong> — Turn the system off immediately. This indicates low refrigerant or restricted airflow. Running it further causes compressor damage.</li>
-    <li><strong>AC making loud or unusual noises</strong> — Squealing, grinding, or banging sounds all point to specific mechanical failures. Don't ignore them — they get more expensive fast.</li>
+    <li><strong>AC not blowing cold air</strong>: Low refrigerant, failed capacitor, or dirty evaporator coil. We diagnose and fix all three.</li>
+    <li><strong>AC running but not cooling the house</strong>: Often a refrigerant issue, an oversized cycling problem, or a failing compressor. Common in Alvin homes during peak summer months.</li>
+    <li><strong>AC stopped working suddenly</strong>: Could be a tripped breaker, failed capacitor, or burnt contactor. We carry common parts on every truck for same-day repairs.</li>
+    <li><strong>AC not keeping up with the heat</strong>: If your system runs constantly but can't hit your set temperature, it may be undersized, low on refrigerant, or have leaking ductwork.</li>
+    <li><strong>AC leaking water inside the house</strong>: A clogged condensate drain is the most common cause in Alvin's humid climate. Left unaddressed, it causes water damage to ceilings and walls.</li>
+    <li><strong>AC freezing up / ice on the coils</strong>: Turn the system off immediately. This indicates low refrigerant or restricted airflow. Running it further causes compressor damage.</li>
+    <li><strong>AC making loud or unusual noises</strong>: Squealing, grinding, or banging sounds all point to specific mechanical failures. Don't ignore them, they get more expensive fast.</li>
   </ul>
 
   <h3>What Does AC Repair Cost in Alvin, TX?</h3>
-  <p>We use flat-rate pricing — you get the exact price before work starts. Common repair ranges for Alvin homeowners:</p>
+  <p>We use flat-rate pricing, you get the exact price before work starts. Common repair ranges for Alvin homeowners:</p>
   <ul>
     <li>Capacitor replacement: $150–$350</li>
     <li>Refrigerant recharge (with leak check): $200–$450</li>
@@ -68,17 +68,17 @@ const content = `
   <p>Older homes in Alvin's 77511 zip code often have aging ductwork, equipment running R-22 refrigerant (phased out in 2020), and systems that have been through one or two replacement cycles. Newer subdivisions like Kendall Lakes have builder-grade equipment that benefits from regular maintenance to hit its full lifespan under Brazoria County's demanding climate.</p>
 
   <h3>Repair or Replace? We'll Be Honest With You</h3>
-  <p>Not every AC problem needs a new system — and we won't push you toward replacement if a repair makes more sense. A general rule: if the repair cost exceeds half the price of a comparable new system, and your unit is over 10 years old, replacement is usually the smarter long-term investment. We'll give you that honest assessment every time.</p>
+  <p>Not every AC problem needs a new system, and we won't push you toward replacement if a repair makes more sense. A general rule: if the repair cost exceeds half the price of a comparable new system, and your unit is over 10 years old, replacement is usually the smarter long-term investment. We'll give you that honest assessment every time.</p>
 
   <h3>Why Alvin Homeowners Call Mabry's First</h3>
   <ul>
-    <li>Based in Alvin at 2110 S Gordon St — fastest response times, no travel fees</li>
-    <li>Flat-rate pricing — know your cost before we start, no overtime charges</li>
+    <li>Based in Alvin at 2110 S Gordon St, fastest response times, no travel fees</li>
+    <li>Flat-rate pricing, know your cost before we start, no overtime charges</li>
     <li>Nearly 40 years serving Alvin and Brazoria County homes</li>
-    <li>BBB A+ Accredited — multiple BBB Gold Star Award winner</li>
-    <li>Voted Favorite AC Company — Alvin Sun &amp; Advertiser</li>
+    <li>BBB A+ Accredited, multiple BBB Gold Star Award winner</li>
+    <li>Voted Favorite AC Company, Alvin Sun &amp; Advertiser</li>
     <li>Licensed Texas HVAC contractor (TACLB12058E)</li>
-    <li>Family-owned — you talk to us, not a call center</li>
+    <li>Family-owned, you talk to us, not a call center</li>
   </ul>
 `;
 
@@ -119,7 +119,7 @@ export default function AcRepairAlvinPage() {
             AC Repair in Alvin, TX — Same-Day Service Since 1986
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mb-6">
-            Your AC broke down in Brazoria County heat? We're already here — shop at 2110 S Gordon St. Flat-rate pricing, all makes and models, no extra charge for evenings or weekends.
+            Your AC broke down in Brazoria County heat? We're already here, shop at 2110 S Gordon St. Flat-rate pricing, all makes and models, no extra charge for evenings or weekends.
           </p>
           <div className="flex flex-wrap gap-4 items-center mb-6">
             <a href="tel:2813315248" className="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors">
@@ -132,15 +132,15 @@ export default function AcRepairAlvinPage() {
           </div>
           <div className="flex flex-wrap items-center gap-3 mb-5">
             <a href="https://www.bbb.org/us/tx/alvin/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805#sealclick" target="_blank" rel="nofollow" aria-label="Mabry's BBB Business Review">
-              <img src="https://seal-houston.bbb.org/seals/blue-seal-200-42-bbb-50000805.png" alt="BBB Accredited Business — A+ Rated" width={200} height={42} style={{ border: 0 }} className="rounded" />
+              <img src="https://seal-houston.bbb.org/seals/blue-seal-200-42-bbb-50000805.png" alt="BBB Accredited Business, A+ Rated" width={200} height={42} style={{ border: 0 }} className="rounded" />
             </a>
             <span className="inline-flex items-center gap-1.5 bg-accent/25 border border-accent/50 text-white text-xs font-semibold px-3 py-1.5 rounded-full">
-              <Award className="w-3.5 h-3.5 shrink-0" /> Voted Favorite AC Company — Alvin Sun &amp; Advertiser
+              <Award className="w-3.5 h-3.5 shrink-0" /> Voted Favorite AC Company, Alvin Sun &amp; Advertiser
             </span>
           </div>
           <p className="text-white/80 text-sm flex items-center gap-2">
             <Clock className="w-4 h-4 text-accent shrink-0" />
-            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends — ever.
+            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends, ever.
           </p>
         </div>
       </section>
@@ -150,7 +150,7 @@ export default function AcRepairAlvinPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { icon: Clock, title: "Same-Day Service", desc: "In Alvin — no long drive from Houston" },
+              { icon: Clock, title: "Same-Day Service", desc: "In Alvin, no long drive from Houston" },
               { icon: Shield, title: "Licensed & Insured", desc: `License ${businessInfo.license}` },
               { icon: Award, title: "Flat-Rate Pricing", desc: "No hidden charges, no overtime fees" },
             ].map((item, i) => (
@@ -182,7 +182,7 @@ export default function AcRepairAlvinPage() {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
               <GoalCompletionBlock
-                answerParagraph="AC broken in Alvin? Call 281-331-5248 for same-day service. Flat-rate pricing — we tell you the cost before we start. No extra charge for evenings or weekends."
+                answerParagraph="AC broken in Alvin? Call 281-331-5248 for same-day service. Flat-rate pricing, we tell you the cost before we start. No extra charge for evenings or weekends."
                 phoneButtons={[{ label: "Call Alvin", number: "281-331-5248", tel: "2813315248" }]}
                 servingText="Same-day AC repair: Alvin, Manvel, Rosharon, Sienna, Angleton & surrounding areas"
               />
@@ -206,7 +206,7 @@ export default function AcRepairAlvinPage() {
               {/* CTA */}
               <div className="mt-8 p-6 bg-accent/10 rounded-xl border border-accent/20">
                 <h4 className="font-bold text-primary mb-2">AC Not Working in Alvin? Call Now.</h4>
-                <p className="text-muted-foreground mb-4">Same-day service available. Flat-rate pricing — know your cost before we start.</p>
+                <p className="text-muted-foreground mb-4">Same-day service available. Flat-rate pricing, know your cost before we start.</p>
                 <a href="tel:2813315248" className="inline-flex items-center gap-2 bg-accent text-white font-bold py-3 px-6 rounded-lg hover:bg-accent/90 transition-colors">
                   <Phone className="w-5 h-5" /> Call 281-331-5248
                 </a>
