@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: "How much does AC repair cost in Friendswood TX?",
-    answer: "Common AC repairs in Friendswood typically range from $150–$600. Capacitor replacements run $150–$350. Refrigerant recharges (with leak check) run $200–$450. Condensate drain clearing — one of our most common Friendswood calls due to Gulf Coast humidity — runs $100–$200. We use flat-rate pricing: you know the exact cost before we start.",
+    answer: "Common AC repairs in Friendswood typically range from $150–$600. Capacitor replacements run $150–$350. Refrigerant recharges (with leak check) run $200–$450. Condensate drain clearing, one of our most common Friendswood calls due to Gulf Coast humidity, runs $100–$200. We use flat-rate pricing: you know the exact cost before we start.",
   },
   {
     question: "Why is my AC struggling with the humidity in Friendswood?",
@@ -24,11 +24,11 @@ const faqs = [
   },
   {
     question: "Do you charge extra for evening or weekend calls in Friendswood?",
-    answer: "No. We use flat-rate pricing with no extra charge for evenings or weekends — ever. The price you're quoted is what you pay, regardless of when we show up.",
+    answer: "No. We use flat-rate pricing with no extra charge for evenings or weekends, ever. The price you're quoted is what you pay, regardless of when we show up.",
   },
   {
     question: "How quickly can you respond to AC emergencies in Friendswood?",
-    answer: "We offer same-day service for most AC repairs in Friendswood's 77546 and 77549 zip codes. Call our dedicated Friendswood line at 281-482-8400 — you'll reach a local team, not a call center.",
+    answer: "We offer same-day service for most AC repairs in Friendswood's 77546 and 77549 zip codes. Call our dedicated Friendswood line at 281-482-8400, you'll reach a local team, not a call center.",
   },
   {
     question: "What neighborhoods in Friendswood do you serve?",
@@ -38,21 +38,21 @@ const faqs = [
 
 const content = `
   <h2>AC Repair in Friendswood, TX — Fast, Reliable Service Since 1986</h2>
-  <p>When your AC breaks down in Friendswood's summer heat — with humidity from nearby Clear Lake and Galveston Bay making every degree feel worse — you need it fixed today. Mabry's Air Conditioning &amp; Heating has been Friendswood's trusted AC repair company since 1986. Call our dedicated Friendswood line at 281-482-8400 and reach a local team that knows your neighborhood.</p>
+  <p>When your AC breaks down in Friendswood's summer heat, with humidity from nearby Clear Lake and Galveston Bay making every degree feel worse, you need it fixed today. Mabry's Air Conditioning &amp; Heating has been Friendswood's trusted AC repair company since 1986. Call our dedicated Friendswood line at 281-482-8400 and reach a local team that knows your neighborhood.</p>
 
   <h3>Common AC Problems We Fix in Friendswood</h3>
   <ul>
-    <li><strong>AC not blowing cold air</strong> — Low refrigerant, failed capacitor, or a dirty evaporator coil. All common in Friendswood during the peak cooling season.</li>
-    <li><strong>AC running but house stays humid and warm</strong> — Gulf Coast humidity means your AC must remove moisture as well as heat. If it's not dehumidifying properly, refrigerant levels or coil cleanliness are likely the issue.</li>
-    <li><strong>Condensate drain clogged</strong> — One of our most frequent Friendswood calls. High Gulf Coast humidity fills condensate drain pans fast. An overflowing pan causes water damage to ceilings and walls — don't wait on this one.</li>
-    <li><strong>AC stopped working suddenly</strong> — Failed capacitor, tripped breaker, or burnt contactor. We carry common parts on every truck for same-day repairs.</li>
-    <li><strong>AC not keeping up in the afternoon heat</strong> — If your system struggles when it's hottest, it may be low on refrigerant, have a dirty filter restricting airflow, or need coil cleaning.</li>
-    <li><strong>AC freezing up</strong> — Turn the system off. Ice on the coils means restricted airflow or low refrigerant. Running it further damages the compressor.</li>
-    <li><strong>AC making strange noises</strong> — Squealing, grinding, or rattling all have specific causes. A quick diagnosis now prevents a larger repair bill later.</li>
+    <li><strong>AC not blowing cold air</strong>: Low refrigerant, failed capacitor, or a dirty evaporator coil. All common in Friendswood during the peak cooling season.</li>
+    <li><strong>AC running but house stays humid and warm</strong>: Gulf Coast humidity means your AC must remove moisture as well as heat. If it's not dehumidifying properly, refrigerant levels or coil cleanliness are likely the issue.</li>
+    <li><strong>Condensate drain clogged</strong>: One of our most frequent Friendswood calls. High Gulf Coast humidity fills condensate drain pans fast. An overflowing pan causes water damage to ceilings and walls, don't wait on this one.</li>
+    <li><strong>AC stopped working suddenly</strong>: Failed capacitor, tripped breaker, or burnt contactor. We carry common parts on every truck for same-day repairs.</li>
+    <li><strong>AC not keeping up in the afternoon heat</strong>: If your system struggles when it's hottest, it may be low on refrigerant, have a dirty filter restricting airflow, or need coil cleaning.</li>
+    <li><strong>AC freezing up</strong>: Turn the system off. Ice on the coils means restricted airflow or low refrigerant. Running it further damages the compressor.</li>
+    <li><strong>AC making strange noises</strong>: Squealing, grinding, or rattling all have specific causes. A quick diagnosis now prevents a larger repair bill later.</li>
   </ul>
 
   <h3>What Does AC Repair Cost in Friendswood, TX?</h3>
-  <p>Our flat-rate pricing means you get the exact cost before work begins — no surprises:</p>
+  <p>Our flat-rate pricing means you get the exact cost before work begins, no surprises:</p>
   <ul>
     <li>Capacitor replacement: $150–$350</li>
     <li>Refrigerant recharge (with leak check): $200–$450</li>
@@ -63,7 +63,7 @@ const content = `
   <p>No overtime charges. No after-hours fees. No hidden charges on the invoice.</p>
 
   <h3>We Know Friendswood's Homes and Neighborhoods</h3>
-  <p>Friendswood's established neighborhoods — many with homes built in the 1970s and 1980s near FM 518 and Friendswood High School — sit alongside newer developments in West Ranch and communities along FM 2351. We've worked in all of them for nearly four decades.</p>
+  <p>Friendswood's established neighborhoods, many with homes built in the 1970s and 1980s near FM 518 and Friendswood High School, sit alongside newer developments in West Ranch and communities along FM 2351. We've worked in all of them for nearly four decades.</p>
   <p>Older Friendswood homes in Forest of Friendswood, Polly Ranch Estates, and Heritage Park often have ductwork and equipment that's seen one or two replacement cycles. Newer West Ranch and Autumn Creek homes have modern systems that benefit most from regular maintenance under Gulf Coast humidity conditions. Whatever your home's age, we've been here long enough to know its HVAC history.</p>
 
   <h3>Repair or Replace? Honest Guidance Every Time</h3>
@@ -71,13 +71,13 @@ const content = `
 
   <h3>Why Friendswood Homeowners Choose Mabry's</h3>
   <ul>
-    <li>Dedicated Friendswood service line — 281-482-8400</li>
+    <li>Dedicated Friendswood service line, 281-482-8400</li>
     <li>Nearly 40 years serving the 77546 and 77549 zip codes</li>
-    <li>Flat-rate pricing — no overtime charges, no hidden fees</li>
-    <li>BBB A+ Accredited — multiple BBB Gold Star Award winner</li>
+    <li>Flat-rate pricing, no overtime charges, no hidden fees</li>
+    <li>BBB A+ Accredited, multiple BBB Gold Star Award winner</li>
     <li>Voted Favorite AC Company</li>
     <li>Licensed Texas HVAC contractor (TACLB12058E)</li>
-    <li>Family-owned — you talk to us directly, not a national dispatch center</li>
+    <li>Family-owned, you talk to us directly, not a national dispatch center</li>
   </ul>
 `;
 
@@ -131,7 +131,7 @@ export default function AcRepairFriendswoodPage() {
           </div>
           <div className="flex flex-wrap items-center gap-3 mb-5">
             <a href="https://www.bbb.org/us/tx/friendswood/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805/addressId/92394#sealclick" target="_blank" rel="nofollow" aria-label="Mabry's BBB Business Review">
-              <img src="https://seal-houston.bbb.org/seals/blue-seal-200-42-bbb-50000805.png" alt="BBB Accredited Business — A+ Rated" width={200} height={42} style={{ border: 0 }} className="rounded" />
+              <img src="https://seal-houston.bbb.org/seals/blue-seal-200-42-bbb-50000805.png" alt="BBB Accredited Business, A+ Rated" width={200} height={42} style={{ border: 0 }} className="rounded" />
             </a>
             <span className="inline-flex items-center gap-1.5 bg-accent/25 border border-accent/50 text-white text-xs font-semibold px-3 py-1.5 rounded-full">
               <Award className="w-3.5 h-3.5 shrink-0" /> Voted Favorite AC Company
@@ -139,7 +139,7 @@ export default function AcRepairFriendswoodPage() {
           </div>
           <p className="text-white/80 text-sm flex items-center gap-2">
             <Clock className="w-4 h-4 text-accent shrink-0" />
-            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends — ever.
+            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends, ever.
           </p>
         </div>
       </section>
@@ -181,7 +181,7 @@ export default function AcRepairFriendswoodPage() {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
               <GoalCompletionBlock
-                answerParagraph="AC not cooling in Friendswood? Call 281-482-8400 for same-day service. Flat-rate pricing — we tell you the cost before we start. No extra charge for evenings or weekends."
+                answerParagraph="AC not cooling in Friendswood? Call 281-482-8400 for same-day service. Flat-rate pricing, we tell you the cost before we start. No extra charge for evenings or weekends."
                 phoneButtons={[{ label: "Call Friendswood", number: "281-482-8400", tel: "2814828400" }]}
                 servingText="Same-day AC repair: Friendswood, League City, Clear Lake, Deer Park, Pasadena & surrounding areas"
               />
@@ -203,7 +203,7 @@ export default function AcRepairFriendswoodPage() {
 
               <div className="mt-8 p-6 bg-accent/10 rounded-xl border border-accent/20">
                 <h4 className="font-bold text-primary mb-2">AC Not Working in Friendswood? Call Now.</h4>
-                <p className="text-muted-foreground mb-4">Same-day service available. Flat-rate pricing — know your cost before we start.</p>
+                <p className="text-muted-foreground mb-4">Same-day service available. Flat-rate pricing, know your cost before we start.</p>
                 <a href="tel:2814828400" className="inline-flex items-center gap-2 bg-accent text-white font-bold py-3 px-6 rounded-lg hover:bg-accent/90 transition-colors">
                   <Phone className="w-5 h-5" /> Call 281-482-8400
                 </a>

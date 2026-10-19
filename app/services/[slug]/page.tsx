@@ -192,8 +192,8 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
               {slug === "ac-maintenance" && (
                 <div className="mt-8 bg-accent/10 border border-accent/30 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                   <div>
-                    <p className="text-sm font-bold uppercase tracking-wider text-accent mb-1">Special Offer — Through May 15, 2026</p>
-                    <p className="text-xl font-bold text-primary">Pre-Season AC Tune-Up — $89</p>
+                    <p className="text-sm font-bold uppercase tracking-wider text-accent mb-1">Special Offer, Through May 15, 2026</p>
+                    <p className="text-xl font-bold text-primary">Pre-Season AC Tune-Up, $89</p>
                     <p className="text-sm text-muted-foreground mt-1">Standard residential systems · Call to schedule</p>
                   </div>
                   <Link

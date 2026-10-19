@@ -24,11 +24,11 @@ const faqs = [
   },
   {
     question: "How long do AC units last in Alvin and Brazoria County?",
-    answer: "In Brazoria County's Gulf Coast climate, residential AC systems typically last 12–15 years — shorter than national averages because they run up to 9 months per year under heavy heat and humidity loads. Regular annual maintenance can extend system life by several years.",
+    answer: "In Brazoria County's Gulf Coast climate, residential AC systems typically last 12–15 years, shorter than national averages because they run up to 9 months per year under heavy heat and humidity loads. Regular annual maintenance can extend system life by several years.",
   },
   {
     question: "What size AC unit do I need for my Alvin home?",
-    answer: "Proper sizing requires a Manual J load calculation — not just square footage. We account for your home's insulation, window exposure, ceiling height, and orientation. An oversized unit short-cycles and leaves your home humid. An undersized unit runs constantly and can't keep up. We do this right.",
+    answer: "Proper sizing requires a Manual J load calculation, not just square footage. We account for your home's insulation, window exposure, ceiling height, and orientation. An oversized unit short-cycles and leaves your home humid. An undersized unit runs constantly and can't keep up. We do this right.",
   },
   {
     question: "Do you offer financing on new AC systems in Alvin?",
@@ -38,14 +38,14 @@ const faqs = [
 
 const content = `
   <h2>AC Installation &amp; Replacement in Alvin, TX — Done Right the First Time</h2>
-  <p>Replacing your AC system is one of the biggest home investments you'll make — and in Alvin's Gulf Coast climate, getting it right matters. An improperly sized or poorly installed system means higher energy bills, uneven cooling, and a shorter equipment life. Mabry's Air Conditioning &amp; Heating has been installing and replacing AC systems in Alvin since 1986. Our shop is right here at 2110 S Gordon St.</p>
+  <p>Replacing your AC system is one of the biggest home investments you'll make, and in Alvin's Gulf Coast climate, getting it right matters. An improperly sized or poorly installed system means higher energy bills, uneven cooling, and a shorter equipment life. Mabry's Air Conditioning &amp; Heating has been installing and replacing AC systems in Alvin since 1986. Our shop is right here at 2110 S Gordon St.</p>
 
   <h3>How Much Does AC Replacement Cost in Alvin, TX?</h3>
   <p>A complete AC system replacement in Alvin typically ranges from <strong>$6,000–$14,000+ fully installed</strong>, depending on:</p>
   <ul>
-    <li>System size (tonnage) — properly calculated for your specific home</li>
-    <li>SEER2 efficiency rating — higher efficiency means lower monthly bills</li>
-    <li>Brand and product line — we install all major brands</li>
+    <li>System size (tonnage), properly calculated for your specific home</li>
+    <li>SEER2 efficiency rating, higher efficiency means lower monthly bills</li>
+    <li>Brand and product line, we install all major brands</li>
     <li>Whether ductwork modifications or repairs are needed</li>
     <li>Whether you're replacing AC only or the full HVAC system</li>
   </ul>
@@ -53,19 +53,19 @@ const content = `
 
   <h3>Signs It's Time to Replace Your AC in Alvin</h3>
   <ul>
-    <li><strong>System is 12–15+ years old</strong> — In Brazoria County's climate, that's a full service life</li>
-    <li><strong>Frequent repairs adding up</strong> — If repair costs exceed 50% of replacement cost, a new system makes more financial sense</li>
-    <li><strong>Running R-22 refrigerant</strong> — R-22 was phased out in 2020 and is now expensive and scarce; it's usually more cost-effective to replace</li>
-    <li><strong>Energy bills climbing</strong> — Older systems lose efficiency; a new high-SEER2 system can reduce cooling costs significantly</li>
-    <li><strong>Uneven cooling throughout the house</strong> — May indicate an undersized or failing system</li>
-    <li><strong>System can't keep up on the hottest days</strong> — A properly sized new system should handle any Texas summer day</li>
+    <li><strong>System is 12–15+ years old</strong>: In Brazoria County's climate, that's a full service life</li>
+    <li><strong>Frequent repairs adding up</strong>: If repair costs exceed 50% of replacement cost, a new system makes more financial sense</li>
+    <li><strong>Running R-22 refrigerant</strong>: R-22 was phased out in 2020 and is now expensive and scarce; it's usually more cost-effective to replace</li>
+    <li><strong>Energy bills climbing</strong>: Older systems lose efficiency; a new high-SEER2 system can reduce cooling costs significantly</li>
+    <li><strong>Uneven cooling throughout the house</strong>: May indicate an undersized or failing system</li>
+    <li><strong>System can't keep up on the hottest days</strong>: A properly sized new system should handle any Texas summer day</li>
   </ul>
 
   <h3>What's Included in Our AC Installation</h3>
   <ul>
     <li>Free in-home estimate with proper Manual J sizing calculation</li>
     <li>Complete system removal and disposal of old equipment</li>
-    <li>New system installation — outdoor condenser, indoor air handler/furnace, and coil</li>
+    <li>New system installation, outdoor condenser, indoor air handler/furnace, and coil</li>
     <li>Refrigerant line set inspection and replacement if needed</li>
     <li>Electrical connections and thermostat setup</li>
     <li>Full system test and commissioning</li>
@@ -73,23 +73,23 @@ const content = `
   </ul>
 
   <h3>Choosing the Right System for Alvin's Climate</h3>
-  <p>For Brazoria County's Gulf Coast climate — high humidity, 100°F+ summers, 9-month cooling seasons — we recommend systems with a minimum <strong>16 SEER2</strong> efficiency rating. Higher-efficiency systems deliver meaningful monthly savings on the electricity bills that come with near-year-round cooling. We also focus on proper dehumidification capacity, which is as important as cooling capacity in Alvin's climate.</p>
+  <p>For Brazoria County's Gulf Coast climate, high humidity, 100°F+ summers, 9-month cooling seasons, we recommend systems with a minimum <strong>16 SEER2</strong> efficiency rating. Higher-efficiency systems deliver meaningful monthly savings on the electricity bills that come with near-year-round cooling. We also focus on proper dehumidification capacity, which is as important as cooling capacity in Alvin's climate.</p>
   <p>We install all major brands: Trane, Carrier, Lennox, Rheem, Goodman, York, and American Standard. We'll recommend the right brand and model for your home's specific needs and your budget.</p>
 
   <h3>We Know Alvin's Homes</h3>
-  <p>From older homes near Nolan Ryan Ballpark and downtown Alvin to newer subdivisions like Kendall Lakes and Country Meadows along Highway 6 — we know what each generation of Alvin construction needs from an HVAC system. Older homes often need ductwork evaluation as part of a system replacement. Newer homes typically need proper sizing verification, since builder-grade installations aren't always sized optimally.</p>
+  <p>From older homes near Nolan Ryan Ballpark and downtown Alvin to newer subdivisions like Kendall Lakes and Country Meadows along Highway 6, we know what each generation of Alvin construction needs from an HVAC system. Older homes often need ductwork evaluation as part of a system replacement. Newer homes typically need proper sizing verification, since builder-grade installations aren't always sized optimally.</p>
 
   <h3>Financing Available on New AC Systems</h3>
-  <p>We offer flexible financing through Service Finance Company — no money down on qualifying systems, with monthly payment options starting around $38/week. Ask about current promotions when you call for your free estimate.</p>
+  <p>We offer flexible financing through Service Finance Company, no money down on qualifying systems, with monthly payment options starting around $38/week. Ask about current promotions when you call for your free estimate.</p>
 
   <h3>Why Alvin Homeowners Choose Mabry's for AC Replacement</h3>
   <ul>
-    <li>Based in Alvin since 1986 — your true local contractor</li>
-    <li>Proper Manual J sizing — we don't guess</li>
+    <li>Based in Alvin since 1986, your true local contractor</li>
+    <li>Proper Manual J sizing, we don't guess</li>
     <li>All major brands installed and backed</li>
     <li>Flat-rate pricing with written estimates before work begins</li>
-    <li>BBB A+ Accredited — multiple BBB Gold Star Award winner</li>
-    <li>Voted Favorite AC Company — Alvin Sun &amp; Advertiser</li>
+    <li>BBB A+ Accredited, multiple BBB Gold Star Award winner</li>
+    <li>Voted Favorite AC Company, Alvin Sun &amp; Advertiser</li>
     <li>Licensed Texas HVAC contractor (TACLB12058E)</li>
     <li>Financing available through Service Finance Company</li>
   </ul>
@@ -132,7 +132,7 @@ export default function AcInstallationAlvinPage() {
             AC Installation &amp; Replacement in Alvin, TX — Proper Sizing, Licensed Install
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mb-6">
-            Ready for a new AC system? Free estimates, all major brands, financing available. Our shop is at 2110 S Gordon St in Alvin — your neighbors since 1986.
+            Ready for a new AC system? Free estimates, all major brands, financing available. Our shop is at 2110 S Gordon St in Alvin, your neighbors since 1986.
           </p>
           <div className="flex flex-wrap gap-4 items-center mb-6">
             <a href="tel:2813315248" className="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors">
@@ -145,15 +145,15 @@ export default function AcInstallationAlvinPage() {
           </div>
           <div className="flex flex-wrap items-center gap-3 mb-5">
             <a href="https://www.bbb.org/us/tx/alvin/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805#sealclick" target="_blank" rel="nofollow" aria-label="Mabry's BBB Business Review">
-              <img src="https://seal-houston.bbb.org/seals/blue-seal-200-42-bbb-50000805.png" alt="BBB Accredited Business — A+ Rated" width={200} height={42} style={{ border: 0 }} className="rounded" />
+              <img src="https://seal-houston.bbb.org/seals/blue-seal-200-42-bbb-50000805.png" alt="BBB Accredited Business, A+ Rated" width={200} height={42} style={{ border: 0 }} className="rounded" />
             </a>
             <span className="inline-flex items-center gap-1.5 bg-accent/25 border border-accent/50 text-white text-xs font-semibold px-3 py-1.5 rounded-full">
-              <Award className="w-3.5 h-3.5 shrink-0" /> Voted Favorite AC Company — Alvin Sun &amp; Advertiser
+              <Award className="w-3.5 h-3.5 shrink-0" /> Voted Favorite AC Company, Alvin Sun &amp; Advertiser
             </span>
           </div>
           <p className="text-white/80 text-sm flex items-center gap-2">
             <Clock className="w-4 h-4 text-accent shrink-0" />
-            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends — ever.
+            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends, ever.
           </p>
         </div>
       </section>
@@ -195,7 +195,7 @@ export default function AcInstallationAlvinPage() {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
               <GoalCompletionBlock
-                answerParagraph="Ready for a new AC system in Alvin? Get a free estimate from your local experts — at 2110 S Gordon St since 1986. Proper sizing, all major brands, financing available."
+                answerParagraph="Ready for a new AC system in Alvin? Get a free estimate from your local experts, at 2110 S Gordon St since 1986. Proper sizing, all major brands, financing available."
                 phoneButtons={[{ label: "Call Alvin", number: "281-331-5248", tel: "2813315248" }]}
                 servingText="New AC installations throughout Alvin, Manvel, Rosharon, Sienna, Angleton & surrounding areas"
               />

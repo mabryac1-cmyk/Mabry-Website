@@ -15,7 +15,7 @@ import { getStartingPrices, fmtUSD } from "@/lib/crm-catalog";
 const SERVICE_CALL_PRICE = "$79";
 
 /**
- * SEASONAL PROMO RIBBON — sits above the two permanent price cards and mirrors the
+ * SEASONAL PROMO RIBBON, sits above the two permanent price cards and mirrors the
  * current offer on /promotions. ⚠️ SWAP THIS EACH SEASON so it never goes stale:
  *   Fall/Winter → "Heater Tune-Up"   |   Spring/Summer → "AC Tune-Up"
  * Set active:false to hide it between promos. Keep it in sync with the /promotions page.
@@ -44,7 +44,7 @@ export async function PricingBand({ className = "bg-white pt-10 pb-2" }: { class
               <Flame className="w-3.5 h-3.5 shrink-0" /> {SEASONAL_PROMO.label}
             </span>
             <span className="text-base sm:text-lg font-black text-primary">{SEASONAL_PROMO.offer}</span>
-            <span className="text-muted-foreground text-sm hidden sm:inline">— {SEASONAL_PROMO.tagline}</span>
+            <span className="text-muted-foreground text-sm hidden sm:inline">· {SEASONAL_PROMO.tagline}</span>
             <span className="text-muted-foreground text-xs">· {SEASONAL_PROMO.validThrough}</span>
             <span className="text-accent font-semibold text-sm group-hover:underline shrink-0">See details →</span>
           </Link>
@@ -58,7 +58,7 @@ export async function PricingBand({ className = "bg-white pt-10 pb-2" }: { class
             <div>
               <div className="text-2xl font-black text-primary leading-tight">{SERVICE_CALL_PRICE} Flat-Rate Service Call</div>
               <p className="text-muted-foreground text-sm mt-1">
-                We come out, diagnose the problem, and walk you through the fix — no overtime charges, no surprises.
+                We come out, diagnose the problem, and walk you through the fix, no overtime charges, no surprises.
               </p>
             </div>
           </div>
@@ -73,7 +73,7 @@ export async function PricingBand({ className = "bg-white pt-10 pb-2" }: { class
             <div>
               <div className="text-2xl font-black text-primary leading-tight">New AC &amp; Heating Systems from {NEW_SYSTEM_FROM_PRICE}</div>
               <p className="text-muted-foreground text-sm mt-1">
-                Complete installations — flat-rate and transparent.{" "}
+                Complete installations, flat-rate and transparent.{" "}
                 <span className="text-accent font-semibold group-hover:underline">See full pricing →</span>
               </p>
             </div>

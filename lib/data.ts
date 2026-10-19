@@ -71,17 +71,17 @@ export const services = [
     description: "Fast, reliable residential AC repair services. We fix all makes and models with honest, flat-rate pricing.",
     content: `
       <h2>Fast AC Repair for Alvin, Friendswood, Pearland & Greater Houston Homes</h2>
-      <p>In the greater Houston area, a broken air conditioner during our brutal 100°F+ summers isn't just uncomfortable — it's a health risk. Mabry's Air Conditioning & Heating has been the trusted name for fast, reliable AC repair in Alvin, Friendswood, Pearland, Clear Lake, League City, and the surrounding Houston area since 1986. When your AC goes out, we show up.</p>
+      <p>In the greater Houston area, a broken air conditioner during our brutal 100°F+ summers isn't just uncomfortable, it's a health risk. Mabry's Air Conditioning & Heating has been the trusted name for fast, reliable AC repair in Alvin, Friendswood, Pearland, Clear Lake, League City, and the surrounding Houston area since 1986. When your AC goes out, we show up.</p>
 
       <h3>We Repair All Major AC Brands</h3>
       <p>Our licensed technicians are trained to diagnose and repair every major brand of residential air conditioning equipment, including:</p>
       <ul>
-        <li><strong>Trane</strong> — including XR, XL, and Comfort series systems</li>
-        <li><strong>Carrier</strong> — including Infinity, Performance, and Comfort series</li>
-        <li><strong>Lennox</strong> — including Elite, Merit, and Dave Lennox Signature series</li>
-        <li><strong>Rheem</strong> — including Prestige, Classic Plus, and Classic series</li>
+        <li><strong>Trane</strong>, including XR, XL, and Comfort series systems</li>
+        <li><strong>Carrier</strong>, including Infinity, Performance, and Comfort series</li>
+        <li><strong>Lennox</strong>, including Elite, Merit, and Dave Lennox Signature series</li>
+        <li><strong>Rheem</strong>, including Prestige, Classic Plus, and Classic series</li>
         <li><strong>Goodman</strong> and <strong>Amana</strong> systems</li>
-        <li><strong>American Standard</strong> — including Gold and Silver series</li>
+        <li><strong>American Standard</strong>, including Gold and Silver series</li>
         <li><strong>York</strong>, <strong>Bryant</strong>, <strong>Daikin</strong>, and all other residential brands</li>
       </ul>
 
@@ -89,7 +89,7 @@ export const services = [
       <ul>
         <li>AC not cooling or blowing warm air</li>
         <li>Unit won't turn on or keeps shutting off</li>
-        <li>Strange noises — banging, squealing, clicking</li>
+        <li>Strange noises, banging, squealing, clicking</li>
         <li>Frozen evaporator coils</li>
         <li>Refrigerant leaks (R-410A and legacy R-22 systems)</li>
         <li>Thermostat malfunctions and wiring issues</li>
@@ -99,15 +99,15 @@ export const services = [
       </ul>
 
       <h3>Houston's Climate Demands More From Your AC</h3>
-      <p>The Gulf Coast climate around Alvin, Friendswood, and Pearland is among the most demanding in the country for HVAC systems. High humidity, 9-month cooling seasons, and summer temperatures that regularly exceed 100°F put extreme stress on residential equipment. Our technicians understand the specific failure patterns common in our area — from refrigerant line sweating and drain clogs caused by humidity to capacitor failures from overworked compressors in the summer heat.</p>
+      <p>The Gulf Coast climate around Alvin, Friendswood, and Pearland is among the most demanding in the country for HVAC systems. High humidity, 9-month cooling seasons, and summer temperatures that regularly exceed 100°F put extreme stress on residential equipment. Our technicians understand the specific failure patterns common in our area, from refrigerant line sweating and drain clogs caused by humidity to capacitor failures from overworked compressors in the summer heat.</p>
 
       <h3>Why Choose Mabry's for AC Repair?</h3>
       <ul>
-        <li>Flat-rate pricing — no hidden charges, no hourly surprises</li>
+        <li>Flat-rate pricing, no hidden charges, no hourly surprises</li>
         <li>Texas licensed HVAC contractor (TACLB12058E)</li>
         <li>BBB A+ Accredited Business since 1986</li>
-        <li>Family-owned — your neighbor, not a national chain</li>
-        <li>Residential specialists — homes are our only business</li>
+        <li>Family-owned, your neighbor, not a national chain</li>
+        <li>Residential specialists, homes are our only business</li>
         <li>Serving Alvin, Friendswood, Pearland, Clear Lake & surrounding cities</li>
       </ul>
     `,
@@ -115,7 +115,7 @@ export const services = [
     faqs: [
       {
         question: "How much does AC repair cost in the Houston area?",
-        answer: "AC repair costs vary depending on the issue and parts required. Common repairs like capacitor replacement, refrigerant recharge, or thermostat replacement typically range from $150–$500. We provide honest, flat-rate pricing — you'll know the exact cost before any work begins, with no hidden charges."
+        answer: "AC repair costs vary depending on the issue and parts required. Common repairs like capacitor replacement, refrigerant recharge, or thermostat replacement typically range from $150–$500. We provide honest, flat-rate pricing, you'll know the exact cost before any work begins, with no hidden charges."
       },
       {
         question: "Why is my AC blowing warm air?",
@@ -127,11 +127,11 @@ export const services = [
       },
       {
         question: "Do you repair all AC brands?",
-        answer: "Yes — we repair all major residential AC brands including Trane, Carrier, Lennox, Rheem, Goodman, American Standard, York, Bryant, Daikin, and Amana. Our licensed technicians have been servicing residential systems since 1986."
+        answer: "Yes, we repair all major residential AC brands including Trane, Carrier, Lennox, Rheem, Goodman, American Standard, York, Bryant, Daikin, and Amana. Our licensed technicians have been servicing residential systems since 1986."
       },
       {
         question: "Should I repair or replace my AC unit?",
-        answer: "If your unit is 12–15+ years old and repairs are becoming frequent, replacement is often more cost-effective. If the system uses R-22 refrigerant (phased out as of 2020), repairs can be expensive due to limited refrigerant supply. We'll give you an honest assessment — we never push unnecessary replacements."
+        answer: "If your unit is 12–15+ years old and repairs are becoming frequent, replacement is often more cost-effective. If the system uses R-22 refrigerant (phased out as of 2020), repairs can be expensive due to limited refrigerant supply. We'll give you an honest assessment, we never push unnecessary replacements."
       },
       {
         question: "Do you service older R-22 AC systems?",
@@ -147,15 +147,15 @@ export const services = [
     description: "Professional furnace and heating system repair for all makes and models. Keep your home warm and safe all winter.",
     content: `
       <h2>Heating Repair for Alvin, Friendswood, Pearland & Greater Houston Homes</h2>
-      <p>While Houston winters are mild compared to northern states, a broken heater on a cold January night in Alvin, Friendswood, or Pearland is still a serious problem — especially for families with young children or elderly members. Mabry's Air Conditioning & Heating has been providing fast, reliable heating repair for Houston-area homeowners since 1986. We fix all types of residential heating systems, all major brands.</p>
+      <p>While Houston winters are mild compared to northern states, a broken heater on a cold January night in Alvin, Friendswood, or Pearland is still a serious problem, especially for families with young children or elderly members. Mabry's Air Conditioning & Heating has been providing fast, reliable heating repair for Houston-area homeowners since 1986. We fix all types of residential heating systems, all major brands.</p>
 
       <h3>We Repair All Major Heating Brands</h3>
       <p>Our licensed technicians service and repair every major brand of residential heating equipment:</p>
       <ul>
-        <li><strong>Trane</strong> — gas furnaces, heat pumps, and air handlers</li>
-        <li><strong>Carrier</strong> — Infinity, Performance, and Comfort series furnaces and heat pumps</li>
-        <li><strong>Lennox</strong> — Elite, Merit, and Dave Lennox Signature furnaces</li>
-        <li><strong>Rheem</strong> — Classic, Classic Plus, and Prestige series</li>
+        <li><strong>Trane</strong>, gas furnaces, heat pumps, and air handlers</li>
+        <li><strong>Carrier</strong>: Infinity, Performance, and Comfort series furnaces and heat pumps</li>
+        <li><strong>Lennox</strong>: Elite, Merit, and Dave Lennox Signature furnaces</li>
+        <li><strong>Rheem</strong>: Classic, Classic Plus, and Prestige series</li>
         <li><strong>Goodman</strong> and <strong>Amana</strong> gas furnaces and heat pumps</li>
         <li><strong>American Standard</strong>, <strong>York</strong>, <strong>Bryant</strong>, <strong>Daikin</strong>, and all other residential brands</li>
       </ul>
@@ -173,17 +173,17 @@ export const services = [
       </ul>
 
       <h3>Houston's Heating Season Has Unique Challenges</h3>
-      <p>In the Alvin, Friendswood, and Pearland area, most homes use heat pumps or gas furnaces that sit dormant for most of the year — and when the first cold front hits in November or December, they get called into action all at once. Systems that weren't properly maintained often fail right when you need them. Our technicians are experienced with the most common failure points for Houston-area heating equipment, including heat pump reversing valve failures, igniter burnout from infrequent use, and gas furnace issues common to our humidity-prone climate.</p>
+      <p>In the Alvin, Friendswood, and Pearland area, most homes use heat pumps or gas furnaces that sit dormant for most of the year, and when the first cold front hits in November or December, they get called into action all at once. Systems that weren't properly maintained often fail right when you need them. Our technicians are experienced with the most common failure points for Houston-area heating equipment, including heat pump reversing valve failures, igniter burnout from infrequent use, and gas furnace issues common to our humidity-prone climate.</p>
 
       <h3>Residential Focus Only</h3>
       <p>Unlike companies that split their attention between commercial and residential work, we focus exclusively on homes. This means our technicians are experts in the specific heating systems installed in Alvin, Friendswood, Pearland, Clear Lake, and surrounding Houston-area neighborhoods.</p>
 
       <h3>Why Choose Mabry's for Heating Repair?</h3>
       <ul>
-        <li>Flat-rate pricing — know your cost before we start</li>
+        <li>Flat-rate pricing, know your cost before we start</li>
         <li>Licensed Texas HVAC contractor (TACLB12058E)</li>
         <li>BBB A+ Accredited Business</li>
-        <li>Family-owned since 1986 — nearly 40 years in Greater Houston</li>
+        <li>Family-owned since 1986, nearly 40 years in Greater Houston</li>
         <li>Residential specialists who understand home heating systems</li>
       </ul>
     `,
@@ -195,15 +195,15 @@ export const services = [
       },
       {
         question: "How often should I have my heating system serviced?",
-        answer: "We recommend annual maintenance in the fall — before Houston's heating season arrives. Regular tune-ups catch problems early, ensure safe operation, and keep your system running efficiently. See our maintenance tune-up service for details."
+        answer: "We recommend annual maintenance in the fall, before Houston's heating season arrives. Regular tune-ups catch problems early, ensure safe operation, and keep your system running efficiently. See our maintenance tune-up service for details."
       },
       {
         question: "Do you repair heat pumps?",
-        answer: "Yes — heat pumps are very common in the Houston area because of our mild winters, and we repair all major brands including Trane, Carrier, Lennox, Rheem, Goodman, and American Standard heat pumps. Common issues include reversing valve failures, refrigerant leaks, and defrost board problems."
+        answer: "Yes, heat pumps are very common in the Houston area because of our mild winters, and we repair all major brands including Trane, Carrier, Lennox, Rheem, Goodman, and American Standard heat pumps. Common issues include reversing valve failures, refrigerant leaks, and defrost board problems."
       },
       {
         question: "Is a furnace tune-up worth it?",
-        answer: "Absolutely. In the Houston area, gas furnaces often go 6–9 months without running. A fall tune-up ensures safe ignition (especially critical for gas furnaces — cracked heat exchangers can cause carbon monoxide issues), verifies the system will handle cold fronts reliably, and extends equipment life."
+        answer: "Absolutely. In the Houston area, gas furnaces often go 6–9 months without running. A fall tune-up ensures safe ignition (especially critical for gas furnaces, cracked heat exchangers can cause carbon monoxide issues), verifies the system will handle cold fronts reliably, and extends equipment life."
       },
       {
         question: "How long do furnaces typically last in Houston?",
@@ -211,7 +211,7 @@ export const services = [
       },
       {
         question: "What brands of furnaces do you work on?",
-        answer: "We repair all residential heating brands — Trane, Carrier, Lennox, Rheem, Goodman, Amana, American Standard, York, Bryant, Daikin, and others. Our technicians are experienced with both gas furnaces and heat pump systems."
+        answer: "We repair all residential heating brands, Trane, Carrier, Lennox, Rheem, Goodman, Amana, American Standard, York, Bryant, Daikin, and others. Our technicians are experienced with both gas furnaces and heat pump systems."
       }
     ],
   },
@@ -223,33 +223,33 @@ export const services = [
     description: "Professional AC installation and replacement. We help you choose the right energy-efficient system for your Houston-area home.",
     content: `
       <h2>Professional AC Installation in Alvin, Friendswood, Pearland & Greater Houston</h2>
-      <p>When it's time for a new air conditioning system, the stakes are high — the wrong size unit or a poor installation means higher energy bills, uncomfortable rooms, and more breakdowns. Mabry's Air Conditioning & Heating has been installing quality AC systems in Houston-area homes since 1986. We do it right the first time.</p>
+      <p>When it's time for a new air conditioning system, the stakes are high, the wrong size unit or a poor installation means higher energy bills, uncomfortable rooms, and more breakdowns. Mabry's Air Conditioning & Heating has been installing quality AC systems in Houston-area homes since 1986. We do it right the first time.</p>
 
       <h3>Top Brands We Install</h3>
       <p>We install trusted, energy-efficient systems from leading manufacturers. During your consultation, we'll recommend the best option for your home and budget:</p>
       <ul>
-        <li><strong>Trane</strong> — known for durability and reliability; "It's Hard to Stop a Trane" isn't just a slogan</li>
-        <li><strong>Carrier</strong> — the inventor of modern air conditioning, with excellent efficiency ratings</li>
-        <li><strong>Lennox</strong> — industry-leading efficiency for homeowners focused on energy savings</li>
-        <li><strong>Rheem</strong> — strong reliability and value, excellent warranty coverage</li>
-        <li><strong>Goodman</strong> and <strong>Amana</strong> — great value for budget-conscious homeowners</li>
-        <li><strong>American Standard</strong> — Trane technology in a different product line</li>
+        <li><strong>Trane</strong>, known for durability and reliability; "It's Hard to Stop a Trane" isn't just a slogan</li>
+        <li><strong>Carrier</strong>, the inventor of modern air conditioning, with excellent efficiency ratings</li>
+        <li><strong>Lennox</strong>, industry-leading efficiency for homeowners focused on energy savings</li>
+        <li><strong>Rheem</strong>, strong reliability and value, excellent warranty coverage</li>
+        <li><strong>Goodman</strong> and <strong>Amana</strong>, great value for budget-conscious homeowners</li>
+        <li><strong>American Standard</strong>: Trane technology in a different product line</li>
       </ul>
 
       <h3>Right-Sizing for Houston's Climate</h3>
-      <p>In Alvin, Friendswood, Pearland, and the greater Houston area, proper system sizing is critical. Our hot, humid Gulf Coast climate means an undersized unit will run constantly and never properly dehumidify your home. An oversized unit short-cycles, leaving your home humid and wasting energy. We perform proper load calculations — accounting for your home's square footage, insulation, window exposure, and ceiling height — to ensure the perfect fit.</p>
+      <p>In Alvin, Friendswood, Pearland, and the greater Houston area, proper system sizing is critical. Our hot, humid Gulf Coast climate means an undersized unit will run constantly and never properly dehumidify your home. An oversized unit short-cycles, leaving your home humid and wasting energy. We perform proper load calculations, accounting for your home's square footage, insulation, window exposure, and ceiling height, to ensure the perfect fit.</p>
 
       <p>For new installations in the Houston area, we recommend systems with a minimum <strong>16 SEER2</strong> rating. Higher-efficiency units (18–21+ SEER2) can deliver significant energy savings given our 9-month cooling season.</p>
 
       <h3>Our Installation Process</h3>
       <ul>
-        <li><strong>Free In-Home Consultation</strong> — we assess your home's specific cooling needs</li>
-        <li><strong>Load Calculation</strong> — Manual J calculation for proper sizing</li>
-        <li><strong>Brand & Efficiency Recommendation</strong> — options at multiple price points</li>
-        <li><strong>Professional Installation</strong> — licensed technicians, permit-ready</li>
-        <li><strong>Refrigerant Line & Ductwork Check</strong> — we don't just swap the equipment</li>
-        <li><strong>System Testing & Commissioning</strong> — we verify everything before we leave</li>
-        <li><strong>Customer Walkthrough</strong> — we show you how to maximize your new system</li>
+        <li><strong>Free In-Home Consultation</strong>, we assess your home's specific cooling needs</li>
+        <li><strong>Load Calculation</strong>: Manual J calculation for proper sizing</li>
+        <li><strong>Brand & Efficiency Recommendation</strong>, options at multiple price points</li>
+        <li><strong>Professional Installation</strong>, licensed technicians, permit-ready</li>
+        <li><strong>Refrigerant Line & Ductwork Check</strong>, we don't just swap the equipment</li>
+        <li><strong>System Testing & Commissioning</strong>, we verify everything before we leave</li>
+        <li><strong>Customer Walkthrough</strong>, we show you how to maximize your new system</li>
       </ul>
 
       <h3>Signs You Need a New AC System</h3>
@@ -258,7 +258,7 @@ export const services = [
         <li>Repairs are becoming frequent or expensive</li>
         <li>Energy bills keep rising despite normal use</li>
         <li>Some rooms are never comfortable regardless of thermostat setting</li>
-        <li>The system uses R-22 refrigerant (phased out — repairs are costly)</li>
+        <li>The system uses R-22 refrigerant (phased out, repairs are costly)</li>
         <li>The system runs constantly but can't keep up with Houston summer heat</li>
       </ul>
 
@@ -273,11 +273,11 @@ export const services = [
       },
       {
         question: "What size AC do I need for my Houston-area home?",
-        answer: "Proper sizing requires a Manual J load calculation based on your home's square footage, ceiling height, insulation, windows, and other factors. In the Houston area, humidity is a critical factor — the right system must both cool AND dehumidify effectively. We never guess on sizing."
+        answer: "Proper sizing requires a Manual J load calculation based on your home's square footage, ceiling height, insulation, windows, and other factors. In the Houston area, humidity is a critical factor, the right system must both cool AND dehumidify effectively. We never guess on sizing."
       },
       {
         question: "What AC brands do you install?",
-        answer: "We install all major brands — Trane, Carrier, Lennox, Rheem, Goodman, Amana, and American Standard. During your consultation, we'll recommend the brand and efficiency level that best fits your home, budget, and goals. We're brand-agnostic — we recommend what's right for you."
+        answer: "We install all major brands, Trane, Carrier, Lennox, Rheem, Goodman, Amana, and American Standard. During your consultation, we'll recommend the brand and efficiency level that best fits your home, budget, and goals. We're brand-agnostic, we recommend what's right for you."
       },
       {
         question: "What SEER rating should I get for a Houston home?",
@@ -301,32 +301,32 @@ export const services = [
     description: "Annual AC tune-up and heating maintenance to prevent costly breakdowns, lower energy bills, and extend equipment life.",
     content: `
       <h2>Annual AC & Heating Tune-Up Service for Greater Houston Homes</h2>
-      <p>In the greater Houston area, your air conditioning system works harder than almost anywhere in the country — up to 9 months per year in some of the most demanding heat and humidity in the United States. Annual preventive maintenance is the single best thing you can do to prevent a breakdown on the hottest day of August, extend the life of your equipment, and keep your energy bills under control. Mabry's Air Conditioning & Heating has been providing thorough, honest maintenance tune-ups for Alvin, Friendswood, Pearland, and surrounding Houston-area homes since 1986.</p>
+      <p>In the greater Houston area, your air conditioning system works harder than almost anywhere in the country, up to 9 months per year in some of the most demanding heat and humidity in the United States. Annual preventive maintenance is the single best thing you can do to prevent a breakdown on the hottest day of August, extend the life of your equipment, and keep your energy bills under control. Mabry's Air Conditioning & Heating has been providing thorough, honest maintenance tune-ups for Alvin, Friendswood, Pearland, and surrounding Houston-area homes since 1986.</p>
 
       <h3>What Our AC Tune-Up Includes</h3>
       <p>Our spring AC tune-up is a comprehensive inspection and tune-up of your entire cooling system:</p>
       <ul>
-        <li><strong>Refrigerant level check</strong> — verify proper charge (low refrigerant = poor cooling and compressor damage)</li>
-        <li><strong>Capacitor testing</strong> — capacitor failures are the #1 cause of AC breakdowns in Houston summers</li>
-        <li><strong>Contactor inspection</strong> — worn contactors cause compressor and fan motor failure</li>
-        <li><strong>Condenser coil cleaning</strong> — dirty coils reduce efficiency and cause overheating</li>
-        <li><strong>Evaporator coil inspection</strong> — check for ice buildup, dirt, and refrigerant issues</li>
-        <li><strong>Condensate drain flush</strong> — prevent clogged drains and water damage (Houston humidity makes this critical)</li>
-        <li><strong>Blower motor and belt inspection</strong> — ensure proper airflow throughout your home</li>
-        <li><strong>Thermostat calibration</strong> — confirm your system responds accurately</li>
-        <li><strong>Electrical connections and wiring check</strong> — loose connections cause failures and safety hazards</li>
+        <li><strong>Refrigerant level check</strong>, verify proper charge (low refrigerant = poor cooling and compressor damage)</li>
+        <li><strong>Capacitor testing</strong>, capacitor failures are the #1 cause of AC breakdowns in Houston summers</li>
+        <li><strong>Contactor inspection</strong>, worn contactors cause compressor and fan motor failure</li>
+        <li><strong>Condenser coil cleaning</strong>, dirty coils reduce efficiency and cause overheating</li>
+        <li><strong>Evaporator coil inspection</strong>, check for ice buildup, dirt, and refrigerant issues</li>
+        <li><strong>Condensate drain flush</strong>, prevent clogged drains and water damage (Houston humidity makes this critical)</li>
+        <li><strong>Blower motor and belt inspection</strong>, ensure proper airflow throughout your home</li>
+        <li><strong>Thermostat calibration</strong>, confirm your system responds accurately</li>
+        <li><strong>Electrical connections and wiring check</strong>, loose connections cause failures and safety hazards</li>
         <li><strong>Filter inspection and replacement guidance</strong></li>
-        <li><strong>Overall system performance assessment</strong> — temperature differential check</li>
+        <li><strong>Overall system performance assessment</strong>, temperature differential check</li>
       </ul>
 
       <h3>What Our Heating Tune-Up Includes</h3>
       <p>Our fall heating tune-up prepares your system for the Houston winter season:</p>
       <ul>
-        <li><strong>Heat exchanger inspection</strong> — critical safety check for gas furnaces (cracked exchangers can leak carbon monoxide)</li>
-        <li><strong>Burner and igniter inspection</strong> — ensure reliable ignition on first use</li>
-        <li><strong>Flame sensor cleaning</strong> — dirty sensors cause nuisance shutdowns</li>
-        <li><strong>Gas valve and pressure check</strong> — verify safe, proper gas flow</li>
-        <li><strong>Heat pump reversing valve check</strong> — ensures proper heating mode operation</li>
+        <li><strong>Heat exchanger inspection</strong>, critical safety check for gas furnaces (cracked exchangers can leak carbon monoxide)</li>
+        <li><strong>Burner and igniter inspection</strong>, ensure reliable ignition on first use</li>
+        <li><strong>Flame sensor cleaning</strong>, dirty sensors cause nuisance shutdowns</li>
+        <li><strong>Gas valve and pressure check</strong>, verify safe, proper gas flow</li>
+        <li><strong>Heat pump reversing valve check</strong>, ensures proper heating mode operation</li>
         <li><strong>Electrical components and wiring inspection</strong></li>
         <li><strong>Thermostat calibration</strong></li>
         <li><strong>Airflow and ductwork assessment</strong></li>
@@ -336,14 +336,14 @@ export const services = [
       <h3>Why Houston-Area Homes Need Annual Maintenance</h3>
       <p>The Gulf Coast climate around Alvin, Friendswood, and Pearland creates specific maintenance challenges that homeowners in drier climates don't face:</p>
       <ul>
-        <li><strong>High humidity</strong> clogs condensate drains quickly — a clogged drain can overflow and cause water damage or mold</li>
+        <li><strong>High humidity</strong> clogs condensate drains quickly, a clogged drain can overflow and cause water damage or mold</li>
         <li><strong>Extended run times</strong> (9+ months of cooling) wear capacitors, contactors, and motors faster than national averages</li>
         <li><strong>Coastal air</strong> accelerates corrosion on outdoor condenser units</li>
         <li><strong>Heating systems that sit dormant</strong> for 6–9 months are more likely to fail on the first cold day</li>
       </ul>
 
       <h3>Catching Problems Before They Become Emergencies</h3>
-      <p>The most common AC emergencies we see — failed capacitors, low refrigerant, clogged drains — are almost always detectable during a routine maintenance visit. A $99–$150 tune-up that catches a failing capacitor saves you an emergency service call on a 100°F Saturday in July. Maintenance also keeps your manufacturer's warranty valid on newer systems and can extend equipment life by 3–5 years or more.</p>
+      <p>The most common AC emergencies we see, failed capacitors, low refrigerant, clogged drains, are almost always detectable during a routine maintenance visit. A $99–$150 tune-up that catches a failing capacitor saves you an emergency service call on a 100°F Saturday in July. Maintenance also keeps your manufacturer's warranty valid on newer systems and can extend equipment life by 3–5 years or more.</p>
 
       <h3>We Service All Major Brands</h3>
       <p>We perform maintenance tune-ups on all residential equipment brands including Trane, Carrier, Lennox, Rheem, Goodman, Amana, American Standard, York, Bryant, Daikin, and any other brand in your home.</p>
@@ -352,15 +352,15 @@ export const services = [
     faqs: [
       {
         question: "How often should I have my AC tuned up?",
-        answer: "Once per year at minimum — ideally in spring before the Houston summer heat kicks in. If you have both a cooling and heating system, an annual AC tune-up in spring and a heating tune-up in fall is the ideal schedule. Houston's demanding climate means your system works harder than average, making annual maintenance especially important."
+        answer: "Once per year at minimum, ideally in spring before the Houston summer heat kicks in. If you have both a cooling and heating system, an annual AC tune-up in spring and a heating tune-up in fall is the ideal schedule. Houston's demanding climate means your system works harder than average, making annual maintenance especially important."
       },
       {
         question: "What does an AC tune-up cost?",
-        answer: "We provide honest, flat-rate pricing on all maintenance visits. The investment in annual maintenance is typically far less than even a single emergency service call — and it dramatically reduces the likelihood of a breakdown on the hottest day of the year. Contact us for current pricing."
+        answer: "We provide honest, flat-rate pricing on all maintenance visits. The investment in annual maintenance is typically far less than even a single emergency service call, and it dramatically reduces the likelihood of a breakdown on the hottest day of the year. Contact us for current pricing."
       },
       {
         question: "What's the difference between a tune-up and a repair?",
-        answer: "A tune-up is preventive maintenance performed on a working system — cleaning, inspecting, adjusting, and testing components to prevent future failures. A repair fixes something that's already broken. The goal of regular tune-ups is to avoid the need for emergency repairs by catching problems early."
+        answer: "A tune-up is preventive maintenance performed on a working system, cleaning, inspecting, adjusting, and testing components to prevent future failures. A repair fixes something that's already broken. The goal of regular tune-ups is to avoid the need for emergency repairs by catching problems early."
       },
       {
         question: "Will maintenance help lower my energy bills?",
@@ -372,7 +372,7 @@ export const services = [
       },
       {
         question: "Do you service heat pumps and all system types?",
-        answer: "Yes — we perform maintenance on all residential system types including central AC, heat pumps, gas furnaces, electric air handlers, and mini-split systems. All major brands including Trane, Carrier, Lennox, Rheem, Goodman, American Standard, and others."
+        answer: "Yes, we perform maintenance on all residential system types including central AC, heat pumps, gas furnaces, electric air handlers, and mini-split systems. All major brands including Trane, Carrier, Lennox, Rheem, Goodman, American Standard, and others."
       }
     ],
   },
@@ -390,34 +390,34 @@ export const locations = [
     description: "Alvin's hometown HVAC company since 1986. Our shop is right here at 2110 S Gordon St — we live and work in this community.",
     content: `
       <h2>Alvin's Hometown HVAC Company — Located Right Here Since 1986</h2>
-      <p>If you've ever driven down South Gordon Street in downtown Alvin, you've passed our shop. Mabry's Air Conditioning & Heating has been located at 2110 S Gordon St in Alvin since 1986 — nearly 40 years. We're not a national chain with a local phone number. We're your neighbors, and Alvin is home.</p>
+      <p>If you've ever driven down South Gordon Street in downtown Alvin, you've passed our shop. Mabry's Air Conditioning & Heating has been located at 2110 S Gordon St in Alvin since 1986, nearly 40 years. We're not a national chain with a local phone number. We're your neighbors, and Alvin is home.</p>
 
       <p>That matters when your AC goes out in July. We're not driving from Houston. We're already here.</p>
 
       <h3>HVAC Services We Provide in Alvin</h3>
       <ul>
-        <li><strong>AC repair</strong> — same-day service for Alvin homes, all makes and models</li>
-        <li><strong>Heating repair</strong> — furnace and heat pump service when those cold fronts hit</li>
-        <li><strong>New AC installation</strong> — proper load calculations, top brands, licensed installation</li>
-        <li><strong>Annual maintenance tune-ups</strong> — spring AC and fall heating service to prevent breakdowns</li>
+        <li><strong>AC repair</strong>, same-day service for Alvin homes, all makes and models</li>
+        <li><strong>Heating repair</strong>, furnace and heat pump service when those cold fronts hit</li>
+        <li><strong>New AC installation</strong>, proper load calculations, top brands, licensed installation</li>
+        <li><strong>Annual maintenance tune-ups</strong>, spring AC and fall heating service to prevent breakdowns</li>
       </ul>
 
       <h3>We Know Alvin Homes</h3>
       <p>The housing stock in Alvin's 77511 and 77512 zip codes includes everything from older downtown homes built in the 1950s and 60s to newer subdivisions developed in the 2000s and beyond. We've worked in them all. Older Alvin homes often have aging ductwork, systems that have been through multiple replacements, and in some cases equipment still using R-22 refrigerant that was phased out in 2020. Newer homes in subdivisions like Kendall Lakes or Country Meadows often have builder-grade equipment that benefits from regular maintenance to hit its expected lifespan.</p>
 
-      <p>Our Gulf Coast climate — high humidity, 9-month cooling seasons, and heat indexes that push past 110°F — is tough on HVAC equipment. We've been diagnosing the specific failure patterns common to Brazoria County homes for four decades.</p>
+      <p>Our Gulf Coast climate, high humidity, 9-month cooling seasons, and heat indexes that push past 110°F, is tough on HVAC equipment. We've been diagnosing the specific failure patterns common to Brazoria County homes for four decades.</p>
 
       <h3>Recent Alvin Work</h3>
-      <p>During one of this summer's worst heat waves, an Alvin homeowner's old system broke down completely — about the worst time there is to lose cooling on the Gulf Coast. We replaced it start to finish with a new 5-ton Trane gas system and got her home comfortable again fast. And because we install to Alvin's code the first time, the job passed City of Alvin inspection on our workmanship — the same standard we hold ourselves to on every install. Passing local inspection isn't automatic in this trade; it's the difference between a job done right and a job done fast.</p>
+      <p>During one of this summer's worst heat waves, an Alvin homeowner's old system broke down completely, about the worst time there is to lose cooling on the Gulf Coast. We replaced it start to finish with a new 5-ton Trane gas system and got her home comfortable again fast. And because we install to Alvin's code the first time, the job passed City of Alvin inspection on our workmanship, the same standard we hold ourselves to on every install. Passing local inspection isn't automatic in this trade; it's the difference between a job done right and a job done fast.</p>
 
       <h3>Why Alvin Families Have Trusted Us for Generations</h3>
       <ul>
-        <li>Our shop is in your backyard — fast response times</li>
-        <li>Flat-rate pricing with no hidden charges — we tell you the price before we start</li>
-        <li>Family-owned and operated — you talk to us, not a call center</li>
+        <li>Our shop is in your backyard, fast response times</li>
+        <li>Flat-rate pricing with no hidden charges, we tell you the price before we start</li>
+        <li>Family-owned and operated, you talk to us, not a call center</li>
         <li>BBB A+ Accredited Business</li>
         <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
-        <li>Residential specialists — homes are all we do</li>
+        <li>Residential specialists, homes are all we do</li>
       </ul>
 
       <p>From the historic downtown neighborhoods near Nolan Ryan Ballpark to the newer communities along Highway 6, Mabry's is Alvin's HVAC company. Call us at 281-331-5248.</p>
@@ -435,34 +435,34 @@ export const locations = [
     description: "Serving Friendswood families for nearly 40 years. Dedicated Friendswood service line: 281-482-8400. Flat-rate pricing, BBB A+.",
     content: `
       <h2>Friendswood's Trusted HVAC Company — Serving This Community Since 1986</h2>
-      <p>Friendswood has been part of Mabry's story since the beginning. We've been serving families in the 77546 and 77549 zip codes for nearly four decades — long enough to have worked on systems for the same families across generations. Friendswood is a community that values trust and quality work, and that's exactly what we've built our reputation on.</p>
+      <p>Friendswood has been part of Mabry's story since the beginning. We've been serving families in the 77546 and 77549 zip codes for nearly four decades, long enough to have worked on systems for the same families across generations. Friendswood is a community that values trust and quality work, and that's exactly what we've built our reputation on.</p>
 
       <p>For Friendswood service, call our dedicated line: <strong>281-482-8400</strong>.</p>
 
       <h3>HVAC Services We Provide in Friendswood</h3>
       <ul>
-        <li><strong>AC repair</strong> — all makes and models, fast response</li>
-        <li><strong>Heating repair</strong> — furnace and heat pump service</li>
-        <li><strong>New AC installation</strong> — Trane, Carrier, Lennox, Rheem and other top brands</li>
-        <li><strong>Annual maintenance tune-ups</strong> — prevent breakdowns before they happen</li>
+        <li><strong>AC repair</strong>, all makes and models, fast response</li>
+        <li><strong>Heating repair</strong>, furnace and heat pump service</li>
+        <li><strong>New AC installation</strong>: Trane, Carrier, Lennox, Rheem and other top brands</li>
+        <li><strong>Annual maintenance tune-ups</strong>, prevent breakdowns before they happen</li>
       </ul>
 
       <h3>We Know Friendswood Homes</h3>
-      <p>Friendswood's housing stock is a mix of established neighborhoods — many with homes built in the 1970s and 1980s — alongside newer developments that have expanded the city over recent decades. The older ranch-style homes in established Friendswood neighborhoods often feature ductwork and equipment that's seen one or two replacement cycles, and owners who know the value of a contractor they can trust over the long term. Newer homes near FM 518 and FM 2351 corridors benefit most from proper maintenance to maximize equipment life.</p>
+      <p>Friendswood's housing stock is a mix of established neighborhoods, many with homes built in the 1970s and 1980s, alongside newer developments that have expanded the city over recent decades. The older ranch-style homes in established Friendswood neighborhoods often feature ductwork and equipment that's seen one or two replacement cycles, and owners who know the value of a contractor they can trust over the long term. Newer homes near FM 518 and FM 2351 corridors benefit most from proper maintenance to maximize equipment life.</p>
 
-      <p>The Gulf Coast humidity that defines Friendswood's climate means condensate drain maintenance is critical — clogged drains are one of the most common service calls we make in the 77546 area during summer.</p>
+      <p>The Gulf Coast humidity that defines Friendswood's climate means condensate drain maintenance is critical, clogged drains are one of the most common service calls we make in the 77546 area during summer.</p>
 
       <h3>Recent Friendswood Work</h3>
-      <p>Friendswood holds its contractors to a high standard — the city's inspection process is among the more rigorous in our service area, and honestly, we like it that way. This past July, when a heat wave pushed an aging Friendswood system past its limit, we installed a complete new AC and heating system and passed the City of Friendswood inspection without a single issue. Passing a stringent inspection isn't luck — it's what a proper, to-code installation looks like every time, and it's the standard Friendswood families have counted on from us for nearly four decades.</p>
+      <p>Friendswood holds its contractors to a high standard, the city's inspection process is among the more rigorous in our service area, and honestly, we like it that way. This past July, when a heat wave pushed an aging Friendswood system past its limit, we installed a complete new AC and heating system and passed the City of Friendswood inspection without a single issue. Passing a stringent inspection isn't luck, it's what a proper, to-code installation looks like every time, and it's the standard Friendswood families have counted on from us for nearly four decades.</p>
 
       <h3>Why Friendswood Homeowners Choose Mabry's</h3>
       <ul>
-        <li>Dedicated Friendswood service line — 281-482-8400</li>
+        <li>Dedicated Friendswood service line, 281-482-8400</li>
         <li>Nearly 40 years serving this specific community</li>
-        <li>Flat-rate pricing — know your cost before work begins</li>
+        <li>Flat-rate pricing, know your cost before work begins</li>
         <li>BBB A+ Accredited Business</li>
         <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
-        <li>Residential specialists — homes are our only business</li>
+        <li>Residential specialists, homes are our only business</li>
       </ul>
 
       <p>From neighborhoods near Friendswood High School and the historic downtown area to communities along FM 518, Mabry's is the HVAC company Friendswood has counted on for nearly 40 years.</p>
@@ -480,30 +480,30 @@ export const locations = [
     description: "Trusted HVAC service for Pearland families since 1986. Serving Shadow Creek Ranch, Silverlake, Old Townsite & all Pearland neighborhoods.",
     content: `
       <h2>Trusted HVAC Service for Pearland Homeowners — All Neighborhoods, All Brands</h2>
-      <p>Pearland has grown from a small bedroom community into one of the largest cities in Texas — and Mabry's Air Conditioning & Heating has been serving Pearland homeowners through all of it. Whether you're in an established neighborhood near Old Townsite or a newer subdivision in Shadow Creek Ranch, we know Pearland homes and we know what it takes to keep them comfortable through a Texas Gulf Coast summer.</p>
+      <p>Pearland has grown from a small bedroom community into one of the largest cities in Texas, and Mabry's Air Conditioning & Heating has been serving Pearland homeowners through all of it. Whether you're in an established neighborhood near Old Townsite or a newer subdivision in Shadow Creek Ranch, we know Pearland homes and we know what it takes to keep them comfortable through a Texas Gulf Coast summer.</p>
 
       <h3>HVAC Services We Provide in Pearland</h3>
       <ul>
-        <li><strong>AC repair</strong> — same-day service available, all makes and models</li>
-        <li><strong>Heating repair</strong> — furnace and heat pump service</li>
-        <li><strong>New AC installation</strong> — proper sizing, top brands, licensed installation</li>
-        <li><strong>Annual maintenance tune-ups</strong> — spring and fall service to prevent breakdowns</li>
+        <li><strong>AC repair</strong>, same-day service available, all makes and models</li>
+        <li><strong>Heating repair</strong>, furnace and heat pump service</li>
+        <li><strong>New AC installation</strong>, proper sizing, top brands, licensed installation</li>
+        <li><strong>Annual maintenance tune-ups</strong>, spring and fall service to prevent breakdowns</li>
       </ul>
 
       <h3>We Know Pearland's Neighborhoods</h3>
-      <p>Pearland spans three zip codes — 77581, 77584, and 77588 — and straddles both Brazoria and Harris counties. The city includes a wide range of housing: 1970s-era homes in Old Pearland and Country Place, the large-scale master-planned communities of Shadow Creek Ranch and Silverlake (built largely in the 2000s), and newer developments along the Highway 288 corridor. Each era of construction has its own HVAC challenges.</p>
+      <p>Pearland spans three zip codes, 77581, 77584, and 77588, and straddles both Brazoria and Harris counties. The city includes a wide range of housing: 1970s-era homes in Old Pearland and Country Place, the large-scale master-planned communities of Shadow Creek Ranch and Silverlake (built largely in the 2000s), and newer developments along the Highway 288 corridor. Each era of construction has its own HVAC challenges.</p>
 
-      <p>Older Pearland homes often have aging ductwork and systems approaching or past replacement age. Homes in Shadow Creek Ranch and Silverlake that were built with builder-grade equipment in the mid-2000s are now 15–20 years old — prime replacement territory. Our team is experienced across all of it.</p>
+      <p>Older Pearland homes often have aging ductwork and systems approaching or past replacement age. Homes in Shadow Creek Ranch and Silverlake that were built with builder-grade equipment in the mid-2000s are now 15–20 years old, prime replacement territory. Our team is experienced across all of it.</p>
 
       <h3>Recent Pearland Work</h3>
-      <p>A lot of Pearland's larger homes run two separate HVAC systems, and when both age out together — common in the mid-2000s Shadow Creek Ranch and Silverlake builds — the repair bills and energy costs pile up fast. We recently helped a Pearland homeowner break that cycle: he'd been sinking money into repeated repairs and high energy bills on two tired old systems, so we replaced both with new complete systems sized right for his home. No more throwing good money after bad on equipment past its prime — just lower, more predictable bills. Both installs passed inspection the first time, which for us is the rule, not the exception. Across nearly four decades we've built a first-time permit inspection pass rate near the top of the industry, because we do the job to code the first time, every time.</p>
+      <p>A lot of Pearland's larger homes run two separate HVAC systems, and when both age out together, common in the mid-2000s Shadow Creek Ranch and Silverlake builds, the repair bills and energy costs pile up fast. We recently helped a Pearland homeowner break that cycle: he'd been sinking money into repeated repairs and high energy bills on two tired old systems, so we replaced both with new complete systems sized right for his home. No more throwing good money after bad on equipment past its prime, just lower, more predictable bills. Both installs passed inspection the first time, which for us is the rule, not the exception. Across nearly four decades we've built a first-time permit inspection pass rate near the top of the industry, because we do the job to code the first time, every time.</p>
 
       <h3>Why Pearland Residents Choose Mabry's</h3>
       <ul>
-        <li>Nearly 40 years of experience — including decades serving Pearland</li>
-        <li>Honest, flat-rate pricing — no surprises on your invoice</li>
+        <li>Nearly 40 years of experience, including decades serving Pearland</li>
+        <li>Honest, flat-rate pricing, no surprises on your invoice</li>
         <li>BBB A+ Rating backed by nearly 40 years of honest work</li>
-        <li>Residential-only focus — homes are our specialty</li>
+        <li>Residential-only focus, homes are our specialty</li>
         <li>Licensed and insured (TACLB12058E)</li>
         <li>Dedicated service line for Pearland: 281-331-5248</li>
       </ul>
@@ -521,28 +521,28 @@ export const locations = [
     description: "Residential HVAC service for Clear Lake area homes. Serving Nassau Bay, El Lago, Taylor Lake Village & surrounding communities since 1986.",
     content: `
       <h2>HVAC Experts Serving the Clear Lake Area — Nassau Bay, El Lago, Taylor Lake Village & Beyond</h2>
-      <p>The Clear Lake area presents some of the most demanding conditions for residential HVAC equipment in the greater Houston area. Proximity to Galveston Bay and Clear Lake means elevated humidity year-round — and humidity is the enemy of HVAC efficiency and equipment longevity. Mabry's Air Conditioning & Heating has been keeping Clear Lake area homes comfortable since 1986.</p>
+      <p>The Clear Lake area presents some of the most demanding conditions for residential HVAC equipment in the greater Houston area. Proximity to Galveston Bay and Clear Lake means elevated humidity year-round, and humidity is the enemy of HVAC efficiency and equipment longevity. Mabry's Air Conditioning & Heating has been keeping Clear Lake area homes comfortable since 1986.</p>
 
       <h3>HVAC Services We Provide in Clear Lake</h3>
       <ul>
-        <li><strong>AC repair</strong> — fast response for Clear Lake homeowners, all brands</li>
-        <li><strong>Heating repair</strong> — furnace and heat pump service</li>
-        <li><strong>New AC installation</strong> — proper sizing for bay-area humidity, top brands</li>
-        <li><strong>Annual maintenance tune-ups</strong> — especially important in this high-humidity environment</li>
+        <li><strong>AC repair</strong>, fast response for Clear Lake homeowners, all brands</li>
+        <li><strong>Heating repair</strong>, furnace and heat pump service</li>
+        <li><strong>New AC installation</strong>, proper sizing for bay-area humidity, top brands</li>
+        <li><strong>Annual maintenance tune-ups</strong>, especially important in this high-humidity environment</li>
       </ul>
 
       <h3>Serving the Clear Lake Community</h3>
-      <p>We provide service throughout the Clear Lake area, including the independent municipalities of Nassau Bay, El Lago, and Taylor Lake Village — home to many families connected to NASA's Johnson Space Center. We also serve the surrounding Clear Lake City neighborhoods in zip codes 77058, 77059, and 77062.</p>
+      <p>We provide service throughout the Clear Lake area, including the independent municipalities of Nassau Bay, El Lago, and Taylor Lake Village, home to many families connected to NASA's Johnson Space Center. We also serve the surrounding Clear Lake City neighborhoods in zip codes 77058, 77059, and 77062.</p>
 
-      <p>Many homes in the Clear Lake area were built in the 1970s and 1980s to house the aerospace community that grew up around JSC. These homes — now 40–50 years old — often have ductwork that hasn't been updated and equipment that has been through several replacement cycles. Bay-area humidity accelerates corrosion on outdoor condenser units and condenser coils, making annual maintenance more important here than in drier inland communities.</p>
+      <p>Many homes in the Clear Lake area were built in the 1970s and 1980s to house the aerospace community that grew up around JSC. These homes, now 40–50 years old, often have ductwork that hasn't been updated and equipment that has been through several replacement cycles. Bay-area humidity accelerates corrosion on outdoor condenser units and condenser coils, making annual maintenance more important here than in drier inland communities.</p>
 
       <h3>Why Clear Lake Homeowners Choose Mabry's</h3>
       <ul>
         <li>Experience with the specific challenges of bay-area HVAC: corrosion, humidity, drain maintenance</li>
-        <li>Flat-rate pricing — no hourly surprises</li>
+        <li>Flat-rate pricing, no hourly surprises</li>
         <li>BBB A+ Accredited Business</li>
         <li>Texas Licensed (TACLB12058E)</li>
-        <li>Residential specialists — we only do homes</li>
+        <li>Residential specialists, we only do homes</li>
         <li>Call our Clear Lake service line: 281-482-8400</li>
       </ul>
     `,
@@ -563,25 +563,25 @@ export const locations = [
 
       <h3>HVAC Services We Provide in Deer Park</h3>
       <ul>
-        <li><strong>AC repair</strong> — fast response for all makes and models</li>
-        <li><strong>Heating repair</strong> — furnace and heat pump service</li>
-        <li><strong>New AC installation</strong> — top brands, proper sizing, licensed installation</li>
-        <li><strong>Annual maintenance tune-ups</strong> — prevent emergency breakdowns</li>
+        <li><strong>AC repair</strong>, fast response for all makes and models</li>
+        <li><strong>Heating repair</strong>, furnace and heat pump service</li>
+        <li><strong>New AC installation</strong>, top brands, proper sizing, licensed installation</li>
+        <li><strong>Annual maintenance tune-ups</strong>, prevent emergency breakdowns</li>
       </ul>
 
       <h3>We Know Deer Park Homes</h3>
       <p>Deer Park's residential neighborhoods range from post-war homes built in the 1940s and 50s near the city's older core to established mid-century neighborhoods developed through the 1960s–1980s and some newer developments toward the outskirts of the 77536 area. Many of Deer Park's homes are now at or past the typical 15–20 year replacement age for their HVAC systems, and our technicians have worked in them all.</p>
 
-      <p>Deer Park sits along the Houston Ship Channel and the eastern edge of Galveston Bay, which means high Gulf Coast humidity year-round and the kind of summer heat that has AC equipment running nearly nonstop from May through October. The hardworking families of Deer Park deserve HVAC contractors who show up when called and stand behind their work. Routine maintenance — filter changes, coil cleanings, condensate line checks — keeps your equipment running efficiently and your monthly electric bills under control.</p>
+      <p>Deer Park sits along the Houston Ship Channel and the eastern edge of Galveston Bay, which means high Gulf Coast humidity year-round and the kind of summer heat that has AC equipment running nearly nonstop from May through October. The hardworking families of Deer Park deserve HVAC contractors who show up when called and stand behind their work. Routine maintenance, filter changes, coil cleanings, condensate line checks, keeps your equipment running efficiently and your monthly electric bills under control.</p>
 
       <h3>Recent Deer Park Work — Getting a New Homeowner Moved In</h3>
-      <p>We work in Deer Park regularly, and the jobs run the full range — from a quick service call to a complete system replacement. One we're proud of was a family that had just purchased a home here. The house needed a full HVAC system — the old equipment had quit working entirely, and the new owners were eager to get moved in. We replaced the complete air conditioning and heating system, ductwork included, and got them up and running quickly so they could settle into their new home.</p>
+      <p>We work in Deer Park regularly, and the jobs run the full range, from a quick service call to a complete system replacement. One we're proud of was a family that had just purchased a home here. The house needed a full HVAC system, the old equipment had quit working entirely, and the new owners were eager to get moved in. We replaced the complete air conditioning and heating system, ductwork included, and got them up and running quickly so they could settle into their new home.</p>
       <p>That cooling turned out to be about more than comfort. The family had a list of projects to tackle inside the house before they were fully settled, and honestly, in a Deer Park summer, none of those interior home projects happen without air conditioning.</p>
       <p>A complete system with new ductwork is one of the bigger jobs we do, and it's a good reminder of what a fresh, properly sized system does for a home from day one: quiet, even cooling, better efficiency, and heating you can count on when the Deer Park cold snaps roll through.</p>
 
       <h3>Why Deer Park Homeowners Trust Mabry's</h3>
       <ul>
-        <li>No-nonsense flat-rate pricing — the price we quote is the price you pay</li>
+        <li>No-nonsense flat-rate pricing, the price we quote is the price you pay</li>
         <li>Nearly 40 years of experience serving the greater Houston area</li>
         <li>BBB A+ Accredited Business</li>
         <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
@@ -606,23 +606,23 @@ export const locations = [
 
       <h3>HVAC Services We Provide in League City</h3>
       <ul>
-        <li><strong>AC repair</strong> — same-day service available for League City homes</li>
-        <li><strong>Heating repair</strong> — furnace and heat pump service</li>
-        <li><strong>New AC installation</strong> — top brands with proper sizing for your specific home</li>
-        <li><strong>Annual maintenance tune-ups</strong> — especially important near the bay</li>
+        <li><strong>AC repair</strong>, same-day service available for League City homes</li>
+        <li><strong>Heating repair</strong>, furnace and heat pump service</li>
+        <li><strong>New AC installation</strong>, top brands with proper sizing for your specific home</li>
+        <li><strong>Annual maintenance tune-ups</strong>, especially important near the bay</li>
       </ul>
 
       <h3>League City's HVAC Challenges</h3>
-      <p>League City sits near the shores of Clear Lake and Galveston Bay, which creates specific HVAC challenges. Bay-area humidity is relentless — it puts extra strain on condenser coils and AC components, accelerates corrosion, and makes condensate drain maintenance critical to preventing water damage inside your home. Homes in League City's waterfront communities see more corrosion-related equipment wear than homes further inland.</p>
+      <p>League City sits near the shores of Clear Lake and Galveston Bay, which creates specific HVAC challenges. Bay-area humidity is relentless, it puts extra strain on condenser coils and AC components, accelerates corrosion, and makes condensate drain maintenance critical to preventing water damage inside your home. Homes in League City's waterfront communities see more corrosion-related equipment wear than homes further inland.</p>
 
-      <p>The city's rapid growth also means a large inventory of homes built in the 2000s and early 2010s with builder-grade HVAC equipment that is now 12–20 years old — squarely in the replacement and repair window. We service homes in 77573 and 77574 across the full range of League City neighborhoods: South Shore Harbour, Tuscan Lakes, Victory Lakes, Bay Colony, Westover Park, Mar Bella, and others.</p>
+      <p>The city's rapid growth also means a large inventory of homes built in the 2000s and early 2010s with builder-grade HVAC equipment that is now 12–20 years old, squarely in the replacement and repair window. We service homes in 77573 and 77574 across the full range of League City neighborhoods: South Shore Harbour, Tuscan Lakes, Victory Lakes, Bay Colony, Westover Park, Mar Bella, and others.</p>
 
       <h3>Why League City Residents Choose Mabry's</h3>
       <ul>
         <li>Nearly 40 years serving the greater Houston area</li>
-        <li>Honest, flat-rate pricing — know your cost upfront</li>
+        <li>Honest, flat-rate pricing, know your cost upfront</li>
         <li>BBB A+ Rating you can trust</li>
-        <li>Residential-only focus — homes are our specialty</li>
+        <li>Residential-only focus, homes are our specialty</li>
         <li>Licensed and insured (TACLB12058E)</li>
         <li>League City service line: 281-482-8400</li>
       </ul>
@@ -640,33 +640,33 @@ export const locations = [
     description: "Expert residential HVAC service for South Pasadena homeowners. Licensed HVAC contractor serving the south side of Greater Houston since 1986.",
     content: `
       <h2>HVAC Service for South Pasadena Homeowners — 77504 and 77505</h2>
-      <p>Mabry's Air Conditioning & Heating serves the residential communities in South Pasadena — specifically the 77504 and 77505 zip codes. These are established neighborhoods with hardworking families who value honest work and fair pricing. That's exactly what we've delivered since 1986.</p>
+      <p>Mabry's Air Conditioning & Heating serves the residential communities in South Pasadena, specifically the 77504 and 77505 zip codes. These are established neighborhoods with hardworking families who value honest work and fair pricing. That's exactly what we've delivered since 1986.</p>
 
       <h3>HVAC Services We Provide in Pasadena</h3>
       <ul>
-        <li><strong>AC repair</strong> — all makes and models, dependable service</li>
-        <li><strong>Heating repair</strong> — furnace and heat pump repair</li>
-        <li><strong>New AC installation</strong> — top brands with proper sizing</li>
-        <li><strong>Annual maintenance tune-ups</strong> — prevent costly breakdowns</li>
+        <li><strong>AC repair</strong>, all makes and models, dependable service</li>
+        <li><strong>Heating repair</strong>, furnace and heat pump repair</li>
+        <li><strong>New AC installation</strong>, top brands with proper sizing</li>
+        <li><strong>Annual maintenance tune-ups</strong>, prevent costly breakdowns</li>
       </ul>
 
       <h3>We Know South Pasadena's Homes</h3>
-      <p>The South Pasadena neighborhoods we serve — along the Burke Road corridor, near Pasadena Memorial High School, and throughout the 77504 and 77505 zip codes — include established residential areas with homes built primarily from the 1960s through the 1990s. These homes often have older ductwork, original-era equipment that's been replaced one or two times, and in some cases attic ductwork that has developed leaks or deterioration over the decades.</p>
+      <p>The South Pasadena neighborhoods we serve, along the Burke Road corridor, near Pasadena Memorial High School, and throughout the 77504 and 77505 zip codes, include established residential areas with homes built primarily from the 1960s through the 1990s. These homes often have older ductwork, original-era equipment that's been replaced one or two times, and in some cases attic ductwork that has developed leaks or deterioration over the decades.</p>
 
-      <p>The Houston Ship Channel corridor and Galveston Bay proximity mean Pasadena's Gulf Coast climate runs hot and humid for most of the year, and AC systems here log serious runtime hours from May through October. Regular filter changes, coil cleanings, and airflow checks keep your equipment running efficiently and your monthly electric bills manageable — we cover all of that on every service call.</p>
+      <p>The Houston Ship Channel corridor and Galveston Bay proximity mean Pasadena's Gulf Coast climate runs hot and humid for most of the year, and AC systems here log serious runtime hours from May through October. Regular filter changes, coil cleanings, and airflow checks keep your equipment running efficiently and your monthly electric bills manageable, we cover all of that on every service call.</p>
 
       <h3>Recent Pasadena Work — A Weekend Breakdown, Handled Start to Finish</h3>
       <p>Air conditioners have a way of quitting at the worst possible time. One Pasadena homeowner's system gave out on a brutally hot Saturday evening, and he reached out to us right through the service request on this website. We got him onto the schedule as an urgent job, and because a full system replacement was an unexpected hit to the budget, we also helped him get approved for financing so the surprise cost didn't have to stand between his family and a cool house.</p>
-      <p>By first thing Monday morning our technicians had him and his wife up and cooling again with a new air conditioner and matching evaporator coil — start to finish, from a Saturday-night breakdown to comfort before the work week was underway. He was thrilled with the speed, the crew, and the whole experience, and was kind enough to leave us a review afterward.</p>
+      <p>By first thing Monday morning our technicians had him and his wife up and cooling again with a new air conditioner and matching evaporator coil, start to finish, from a Saturday-night breakdown to comfort before the work week was underway. He was thrilled with the speed, the crew, and the whole experience, and was kind enough to leave us a review afterward.</p>
       <p>That's the way we like to handle an emergency: answer fast, get you scheduled, take the sting out of the cost when we can, and get your home comfortable again as quickly as possible.</p>
 
       <h3>Why Pasadena Homeowners Trust Mabry's</h3>
       <ul>
-        <li>Straightforward flat-rate pricing — no surprises on the invoice</li>
+        <li>Straightforward flat-rate pricing, no surprises on the invoice</li>
         <li>Nearly 40 years of experience with greater Houston homes</li>
         <li>BBB A+ Accredited Business</li>
         <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
-        <li>Residential specialists — homes only</li>
+        <li>Residential specialists, homes only</li>
         <li>Pasadena service line: 281-482-8400</li>
       </ul>
     `,
@@ -683,29 +683,29 @@ export const locations = [
     description: "Trusted HVAC service for Sienna Plantation homeowners. Serving Waters Lake, Sawmill Lake, Sienna Village & all Sienna neighborhoods.",
     content: `
       <h2>HVAC Service for Sienna — Waters Lake, Sawmill Lake, Sienna Village & All Neighborhoods</h2>
-      <p>Sienna Plantation is one of the premier master-planned communities in Fort Bend County, and the homeowners here have high standards — for their neighborhood, their homes, and the contractors they invite inside. Mabry's Air Conditioning & Heating brings those same high standards to every job. We've been serving Fort Bend County homeowners since 1986 with flat-rate pricing and work you can stand behind.</p>
+      <p>Sienna Plantation is one of the premier master-planned communities in Fort Bend County, and the homeowners here have high standards, for their neighborhood, their homes, and the contractors they invite inside. Mabry's Air Conditioning & Heating brings those same high standards to every job. We've been serving Fort Bend County homeowners since 1986 with flat-rate pricing and work you can stand behind.</p>
 
       <h3>HVAC Services We Provide in Sienna</h3>
       <ul>
-        <li><strong>AC repair</strong> — fast response, all major brands including Trane, Carrier, Lennox, Rheem</li>
-        <li><strong>Heating repair</strong> — furnace and heat pump service for those Fort Bend cold fronts</li>
-        <li><strong>New AC installation</strong> — high-efficiency systems sized correctly for your home</li>
-        <li><strong>Annual maintenance tune-ups</strong> — protect your investment and keep warranties valid</li>
+        <li><strong>AC repair</strong>, fast response, all major brands including Trane, Carrier, Lennox, Rheem</li>
+        <li><strong>Heating repair</strong>, furnace and heat pump service for those Fort Bend cold fronts</li>
+        <li><strong>New AC installation</strong>, high-efficiency systems sized correctly for your home</li>
+        <li><strong>Annual maintenance tune-ups</strong>, protect your investment and keep warranties valid</li>
       </ul>
 
       <h3>We Know Sienna's Homes</h3>
-      <p>Sienna Plantation was developed primarily in the late 1990s through the 2010s, meaning a significant portion of the community's original HVAC equipment is now entering the 15–25 year replacement range. Builder-grade equipment installed during the construction boom is being replaced with more efficient systems — and homeowners in HOA communities like Sienna rightly expect quality work that doesn't leave a mess, respects their property, and is done right the first time.</p>
+      <p>Sienna Plantation was developed primarily in the late 1990s through the 2010s, meaning a significant portion of the community's original HVAC equipment is now entering the 15–25 year replacement range. Builder-grade equipment installed during the construction boom is being replaced with more efficient systems, and homeowners in HOA communities like Sienna rightly expect quality work that doesn't leave a mess, respects their property, and is done right the first time.</p>
 
       <p>We serve all Sienna neighborhoods including Waters Lake, Sawmill Lake, Sienna Village, Lake Olympia, and the Camp Sienna areas throughout the 77459 zip code.</p>
 
       <h3>Recent Sienna Work</h3>
-      <p>When an AC system quits in the middle of a Gulf Coast summer, it's stressful enough — but this Sienna homeowner was away on a business trip, with his family and kids home in the heat. He needed a company he could trust to take care of them when he couldn't be there himself. We got his new Trane AC and heating system scheduled and installed, and had the house comfortable again fast. Here's something worth knowing about Sienna: parts of the community sit in unincorporated Fort Bend County, just outside Missouri City's limits, where a city inspection isn't even required. We install to full manufacturer specification either way — because doing the job right shouldn't depend on whether an inspector is coming. That's the standard that's earned our reputation over nearly four decades.</p>
+      <p>When an AC system quits in the middle of a Gulf Coast summer, it's stressful enough, but this Sienna homeowner was away on a business trip, with his family and kids home in the heat. He needed a company he could trust to take care of them when he couldn't be there himself. We got his new Trane AC and heating system scheduled and installed, and had the house comfortable again fast. Here's something worth knowing about Sienna: parts of the community sit in unincorporated Fort Bend County, just outside Missouri City's limits, where a city inspection isn't even required. We install to full manufacturer specification either way, because doing the job right shouldn't depend on whether an inspector is coming. That's the standard that's earned our reputation over nearly four decades.</p>
 
       <h3>Why Sienna Homeowners Choose Mabry's</h3>
       <ul>
-        <li>Fast response for Sienna and Missouri City — we can be there quick</li>
-        <li>Flat-rate pricing — zero surprises on your invoice</li>
-        <li>BBB A+ Accredited — you can verify our reputation</li>
+        <li>Fast response for Sienna and Missouri City, we can be there quick</li>
+        <li>Flat-rate pricing, zero surprises on your invoice</li>
+        <li>BBB A+ Accredited, you can verify our reputation</li>
         <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
         <li>Residential specialists who do careful, clean work</li>
         <li>Sienna service line: 281-331-5248</li>
@@ -728,21 +728,21 @@ export const locations = [
 
       <h3>HVAC Services We Provide in Angleton</h3>
       <ul>
-        <li><strong>AC repair</strong> — all makes and models, quick response</li>
-        <li><strong>Heating repair</strong> — furnace and heat pump service</li>
-        <li><strong>New AC installation</strong> — energy-efficient systems, proper sizing</li>
-        <li><strong>Annual maintenance tune-ups</strong> — prevent breakdowns in Brazoria County's demanding climate</li>
+        <li><strong>AC repair</strong>, all makes and models, quick response</li>
+        <li><strong>Heating repair</strong>, furnace and heat pump service</li>
+        <li><strong>New AC installation</strong>, energy-efficient systems, proper sizing</li>
+        <li><strong>Annual maintenance tune-ups</strong>, prevent breakdowns in Brazoria County's demanding climate</li>
       </ul>
 
       <h3>We Know Angleton's Homes</h3>
-      <p>Angleton has a mix of housing that reflects its history as a long-established county seat: older homes near the historic downtown and the Brazoria County Courthouse, mid-century neighborhoods that expanded through the 1950s–1980s, and newer development on the outskirts of the 77515 and 77516 zip codes. The Gulf Coast climate — especially the humidity that flows in from the Gulf near Surfside Beach — is relentless on HVAC equipment, and homes here benefit from the same preventive maintenance approach that protects systems closer to the Houston metro.</p>
+      <p>Angleton has a mix of housing that reflects its history as a long-established county seat: older homes near the historic downtown and the Brazoria County Courthouse, mid-century neighborhoods that expanded through the 1950s–1980s, and newer development on the outskirts of the 77515 and 77516 zip codes. The Gulf Coast climate, especially the humidity that flows in from the Gulf near Surfside Beach, is relentless on HVAC equipment, and homes here benefit from the same preventive maintenance approach that protects systems closer to the Houston metro.</p>
 
       <p>We're familiar with the common HVAC setups found in Angleton homes, including older systems that may not have been serviced regularly. We also serve the surrounding communities in southern Brazoria County.</p>
 
       <h3>Why Angleton Homeowners Trust Mabry's</h3>
       <ul>
-        <li>Genuinely local service — fast response for Angleton</li>
-        <li>Flat-rate pricing — what we quote is what you pay</li>
+        <li>Genuinely local service, fast response for Angleton</li>
+        <li>Flat-rate pricing, what we quote is what you pay</li>
         <li>Nearly 40 years of experience in Brazoria County</li>
         <li>BBB A+ Accredited Business</li>
         <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
@@ -766,28 +766,28 @@ export const locations = [
 
       <h3>HVAC Services We Provide in Manvel</h3>
       <ul>
-        <li><strong>AC repair</strong> — fast response from our nearby Alvin shop</li>
-        <li><strong>Heating repair</strong> — furnace and heat pump service</li>
-        <li><strong>New AC installation</strong> — top brands, proper load calculations for newer Manvel homes</li>
-        <li><strong>Annual maintenance tune-ups</strong> — protect newer equipment and keep warranties valid</li>
+        <li><strong>AC repair</strong>, fast response from our nearby Alvin shop</li>
+        <li><strong>Heating repair</strong>, furnace and heat pump service</li>
+        <li><strong>New AC installation</strong>, top brands, proper load calculations for newer Manvel homes</li>
+        <li><strong>Annual maintenance tune-ups</strong>, protect newer equipment and keep warranties valid</li>
       </ul>
 
       <h3>We Know Manvel's Growing Communities</h3>
-      <p>Manvel's 77578 zip code now includes established communities like Rodeo Palms — one of the area's original planned neighborhoods — alongside newer developments like Pomona, which has brought thousands of newer homes to the area. Many Manvel homeowners are dealing with one of two situations: newer homes (2010s–2020s construction) with builder-grade systems that benefit from annual maintenance to hit their expected lifespan, or older rural properties and estate homes with less standard HVAC configurations that require experienced technicians.</p>
+      <p>Manvel's 77578 zip code now includes established communities like Rodeo Palms, one of the area's original planned neighborhoods, alongside newer developments like Pomona, which has brought thousands of newer homes to the area. Many Manvel homeowners are dealing with one of two situations: newer homes (2010s–2020s construction) with builder-grade systems that benefit from annual maintenance to hit their expected lifespan, or older rural properties and estate homes with less standard HVAC configurations that require experienced technicians.</p>
 
-      <p>The Brazoria County climate — humid, hot, and demanding — is the same challenge all our service area homeowners face. We respond quickly and keep our pricing honest and flat-rate — the price we quote is the price you pay.</p>
+      <p>The Brazoria County climate, humid, hot, and demanding, is the same challenge all our service area homeowners face. We respond quickly and keep our pricing honest and flat-rate, the price we quote is the price you pay.</p>
 
       <h3>Recent Manvel Work — Looking After the Neighbors Who Need It Most</h3>
-      <p>Not long ago we were called out to a Manvel home where a retired U.S. military veteran and his wife — both up in years now — had lost their air conditioning during one of the hottest stretches of the summer. We care about every customer, but we pay extra attention to our elderly neighbors, because extreme summer heat and hard winter cold carry real health risks for them. Whenever we can, we move seniors up the schedule, and this was one of those times.</p>
-      <p>Our technicians went out hoping to get the family cooling again with a repair, but this system had reached the end of the road — it was beyond fixing and needed to be replaced. We got their new system installed quickly so they weren't left in the heat. And we were glad to take care of them on the price, too: on top of our senior discount, this gentleman had earned his veteran's discount, and we were honored to give him both.</p>
-      <p>That's the kind of company we've tried to be for nearly 40 years — the one you'd want showing up for your own parents or grandparents.</p>
+      <p>Not long ago we were called out to a Manvel home where a retired U.S. military veteran and his wife, both up in years now, had lost their air conditioning during one of the hottest stretches of the summer. We care about every customer, but we pay extra attention to our elderly neighbors, because extreme summer heat and hard winter cold carry real health risks for them. Whenever we can, we move seniors up the schedule, and this was one of those times.</p>
+      <p>Our technicians went out hoping to get the family cooling again with a repair, but this system had reached the end of the road, it was beyond fixing and needed to be replaced. We got their new system installed quickly so they weren't left in the heat. And we were glad to take care of them on the price, too: on top of our senior discount, this gentleman had earned his veteran's discount, and we were honored to give him both.</p>
+      <p>That's the kind of company we've tried to be for nearly 40 years, the one you'd want showing up for your own parents or grandparents.</p>
 
       <h3>Why Manvel Homeowners Choose Mabry's</h3>
       <ul>
         <li>Fast response for Manvel when you need us</li>
         <li>Nearly 40 years serving Brazoria County communities</li>
-        <li>Flat-rate pricing — no hidden charges</li>
-        <li>Senior and veteran discounts — our way of saying thank you</li>
+        <li>Flat-rate pricing, no hidden charges</li>
+        <li>Senior and veteran discounts, our way of saying thank you</li>
         <li>BBB A+ Accredited Business</li>
         <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
         <li>Manvel service line: 281-331-5248</li>
@@ -806,32 +806,32 @@ export const locations = [
     description: "Dependable residential HVAC service for Rosharon homeowners. Quick response for Brazoria County, flat-rate pricing since 1986.",
     content: `
       <h2>HVAC Service for Rosharon — Dependable, Local, Flat-Rate</h2>
-      <p>Rosharon sits in the heart of Brazoria County, along the Highway 288 corridor that has seen significant growth in recent years. Mabry's Air Conditioning & Heating serves Rosharon with fast response and honest, flat-rate pricing — the price we quote is the price you pay. We've been serving Brazoria County families since 1986.</p>
+      <p>Rosharon sits in the heart of Brazoria County, along the Highway 288 corridor that has seen significant growth in recent years. Mabry's Air Conditioning & Heating serves Rosharon with fast response and honest, flat-rate pricing, the price we quote is the price you pay. We've been serving Brazoria County families since 1986.</p>
 
       <h3>HVAC Services We Provide in Rosharon</h3>
       <ul>
-        <li><strong>AC repair</strong> — all makes and models, quick response</li>
-        <li><strong>Heating repair</strong> — furnace and heat pump service</li>
-        <li><strong>New AC installation</strong> — energy-efficient systems with proper sizing</li>
-        <li><strong>Annual maintenance tune-ups</strong> — prevent breakdowns before they happen</li>
+        <li><strong>AC repair</strong>, all makes and models, quick response</li>
+        <li><strong>Heating repair</strong>, furnace and heat pump service</li>
+        <li><strong>New AC installation</strong>, energy-efficient systems with proper sizing</li>
+        <li><strong>Annual maintenance tune-ups</strong>, prevent breakdowns before they happen</li>
       </ul>
 
       <h3>We Know Rosharon's Homes</h3>
-      <p>The 77583 zip code covers a wide range of residential properties — from rural acreage homes and established farmstead properties to newer residential developments that have come with Highway 288's growth. Rural and semi-rural properties in Rosharon sometimes present unique HVAC challenges: homes that were built with less common configurations, properties that have gone longer between service calls than ideal, and some older systems that have been maintained by the homeowner rather than a professional. We handle all of it without judgment and with honest, upfront pricing.</p>
+      <p>The 77583 zip code covers a wide range of residential properties, from rural acreage homes and established farmstead properties to newer residential developments that have come with Highway 288's growth. Rural and semi-rural properties in Rosharon sometimes present unique HVAC challenges: homes that were built with less common configurations, properties that have gone longer between service calls than ideal, and some older systems that have been maintained by the homeowner rather than a professional. We handle all of it without judgment and with honest, upfront pricing.</p>
 
-      <p>The Brazoria County climate is no different here — high humidity, long cooling seasons, and the occasional cold front that tests heating systems that haven't run in months.</p>
+      <p>The Brazoria County climate is no different here, high humidity, long cooling seasons, and the occasional cold front that tests heating systems that haven't run in months.</p>
 
       <h3>Recent Rosharon Work — A New System Plus Cleaner, Healthier Air</h3>
-      <p>A late-summer system failure is about the worst timing there is for losing your cooling. We fix far more systems than we replace — but every now and then we go out, look things over, and have to give a homeowner the honest answer: this system is old and worn out, and the cost and risk of repairing it just don't add up against a proper replacement. That was the case on a recent Rosharon job, and we walked the customer through why a new system was the smarter money.</p>
-      <p>What made this one a little different is that the homeowner wanted to do more than just replace what he had — he wanted his new setup to make the air in his home genuinely healthier. Along with the new air conditioning and heating system, we installed a high-efficiency media filter to trap far more dust and allergens than a standard one-inch filter, plus a UV germicidal light mounted at the coil to help inhibit the mold and mildew growth our humid Gulf Coast air loves to encourage. In a climate like Rosharon's, those two upgrades make a real difference in how clean and fresh a home feels.</p>
-      <p>He was thrilled with the new system — cooler, quieter, and with noticeably cleaner air than before. If you're already replacing a system, it's often the ideal moment to add air-quality improvements like these, and we're always glad to talk through the options.</p>
+      <p>A late-summer system failure is about the worst timing there is for losing your cooling. We fix far more systems than we replace, but every now and then we go out, look things over, and have to give a homeowner the honest answer: this system is old and worn out, and the cost and risk of repairing it just don't add up against a proper replacement. That was the case on a recent Rosharon job, and we walked the customer through why a new system was the smarter money.</p>
+      <p>What made this one a little different is that the homeowner wanted to do more than just replace what he had, he wanted his new setup to make the air in his home genuinely healthier. Along with the new air conditioning and heating system, we installed a high-efficiency media filter to trap far more dust and allergens than a standard one-inch filter, plus a UV germicidal light mounted at the coil to help inhibit the mold and mildew growth our humid Gulf Coast air loves to encourage. In a climate like Rosharon's, those two upgrades make a real difference in how clean and fresh a home feels.</p>
+      <p>He was thrilled with the new system, cooler, quieter, and with noticeably cleaner air than before. If you're already replacing a system, it's often the ideal moment to add air-quality improvements like these, and we're always glad to talk through the options.</p>
 
       <h3>Why Rosharon Homeowners Trust Mabry's</h3>
       <ul>
         <li>Fast response for the 77583 area when you need us</li>
         <li>Honest, flat-rate pricing with no hidden fees</li>
         <li>Nearly 40 years of Brazoria County experience</li>
-        <li>Indoor air-quality options — media filters, UV germicidal lights &amp; more</li>
+        <li>Indoor air-quality options, media filters, UV germicidal lights &amp; more</li>
         <li>BBB A+ Accredited Business</li>
         <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
         <li>Rosharon service line: 281-331-5248</li>
@@ -850,20 +850,20 @@ export const locations = [
     description: "Residential HVAC service for Lake Jackson homeowners. Fast, flat-rate service across Brazoria County and the Brazosport area since 1986.",
     content: `
       <h2>HVAC Service for Lake Jackson — Local to Brazoria County, Flat-Rate Pricing</h2>
-      <p>Lake Jackson is one of Brazoria County's most distinctive communities — a planned town originally built in the 1940s to house Dow Chemical workers, and still known today for its one-of-a-kind street names like This Way, That Way, Winding Way, and Circle Way, alongside the botanical streets — Camellia, Oleander, Silverbell, and Magnolia. Mabry's Air Conditioning & Heating serves Lake Jackson and the Brazosport area with fast response and honest, flat-rate pricing — the price we quote is the price you pay. We've served Brazoria County families since 1986.</p>
+      <p>Lake Jackson is one of Brazoria County's most distinctive communities, a planned town originally built in the 1940s to house Dow Chemical workers, and still known today for its one-of-a-kind street names like This Way, That Way, Winding Way, and Circle Way, alongside the botanical streets, Camellia, Oleander, Silverbell, and Magnolia. Mabry's Air Conditioning & Heating serves Lake Jackson and the Brazosport area with fast response and honest, flat-rate pricing, the price we quote is the price you pay. We've served Brazoria County families since 1986.</p>
 
       <h3>HVAC Services We Provide in Lake Jackson</h3>
       <ul>
-        <li><strong>AC repair</strong> — all makes and models, fast response</li>
-        <li><strong>Heating repair</strong> — furnace and heat pump service</li>
-        <li><strong>New AC installation</strong> — energy-efficient systems, properly sized for your home</li>
-        <li><strong>Annual maintenance tune-ups</strong> — critical this close to the Gulf</li>
+        <li><strong>AC repair</strong>, all makes and models, fast response</li>
+        <li><strong>Heating repair</strong>, furnace and heat pump service</li>
+        <li><strong>New AC installation</strong>, energy-efficient systems, properly sized for your home</li>
+        <li><strong>Annual maintenance tune-ups</strong>, critical this close to the Gulf</li>
       </ul>
 
       <h3>We Know Lake Jackson Homes</h3>
-      <p>Lake Jackson's housing stock runs from the original mid-century Dow-era homes — many now well past the typical replacement age for their HVAC systems — to the newer developments that have grown the 77566 area over recent decades. The older planned-town homes often have ductwork and equipment that has been through one or two replacement cycles, while newer builds reward proactive maintenance to get the most out of their systems.</p>
+      <p>Lake Jackson's housing stock runs from the original mid-century Dow-era homes, many now well past the typical replacement age for their HVAC systems, to the newer developments that have grown the 77566 area over recent decades. The older planned-town homes often have ductwork and equipment that has been through one or two replacement cycles, while newer builds reward proactive maintenance to get the most out of their systems.</p>
 
-      <p>This far south in Brazoria County, you're close to the coast — the Brazosport area's heat, relentless Gulf humidity, and salt-influenced air are hard on residential equipment. Condensate drain problems are among the most common calls we get down here: humidity fills drip pans fast, and a clogged drain line can cause real water damage inside a home. Recently we cleared exactly that — a condensate drain-line repair for a Lake Jackson homeowner — the kind of call that's routine for us but can turn into a ceiling stain if it's ignored. Annual maintenance and a working float switch are the cheapest insurance a Gulf Coast homeowner can buy.</p>
+      <p>This far south in Brazoria County, you're close to the coast, the Brazosport area's heat, relentless Gulf humidity, and salt-influenced air are hard on residential equipment. Condensate drain problems are among the most common calls we get down here: humidity fills drip pans fast, and a clogged drain line can cause real water damage inside a home. Recently we cleared exactly that, a condensate drain-line repair for a Lake Jackson homeowner, the kind of call that's routine for us but can turn into a ceiling stain if it's ignored. Annual maintenance and a working float switch are the cheapest insurance a Gulf Coast homeowner can buy.</p>
 
       <h3>Why Lake Jackson Homeowners Trust Mabry's</h3>
       <ul>
@@ -888,34 +888,34 @@ export const locations = [
     description: "Reliable residential HVAC service for Sugar Land homeowners. No hidden charges. Serving First Colony, Riverstone, Telfair & surrounding Fort Bend County communities.",
     content: `
       <h2>AC Repair & HVAC Service for Sugar Land Homeowners</h2>
-      <p>Sugar Land has grown into one of the most sought-after communities in Greater Houston — and Mabry's Air Conditioning & Heating has been serving Fort Bend County homeowners since 1986. Whether you're in an established First Colony home, a newer Riverstone or Telfair property, or anywhere across the Sugar Land area, you deserve HVAC service from a company that treats your home like their own.</p>
+      <p>Sugar Land has grown into one of the most sought-after communities in Greater Houston, and Mabry's Air Conditioning & Heating has been serving Fort Bend County homeowners since 1986. Whether you're in an established First Colony home, a newer Riverstone or Telfair property, or anywhere across the Sugar Land area, you deserve HVAC service from a company that treats your home like their own.</p>
 
-      <p>We bring nearly four decades of Gulf Coast HVAC experience to every Sugar Land service call — flat-rate pricing, licensed technicians, and honest work.</p>
+      <p>We bring nearly four decades of Gulf Coast HVAC experience to every Sugar Land service call, flat-rate pricing, licensed technicians, and honest work.</p>
 
       <h3>HVAC Services We Provide in Sugar Land</h3>
       <ul>
-        <li><strong>AC repair</strong> — fast diagnosis and repair on all makes and models</li>
-        <li><strong>Heating repair</strong> — furnace and heat pump service when those cold fronts hit</li>
-        <li><strong>New AC installation</strong> — Trane, Carrier, Lennox, Rheem and other top brands, properly sized</li>
-        <li><strong>Annual maintenance tune-ups</strong> — pre-season service to prevent summer breakdowns</li>
+        <li><strong>AC repair</strong>, fast diagnosis and repair on all makes and models</li>
+        <li><strong>Heating repair</strong>, furnace and heat pump service when those cold fronts hit</li>
+        <li><strong>New AC installation</strong>: Trane, Carrier, Lennox, Rheem and other top brands, properly sized</li>
+        <li><strong>Annual maintenance tune-ups</strong>, pre-season service to prevent summer breakdowns</li>
       </ul>
 
       <h3>We Know Sugar Land Homes</h3>
-      <p>Sugar Land's housing stock is remarkably diverse. First Colony — one of the Houston area's original master-planned communities — features homes built throughout the 1980s and 1990s, many of which are now approaching their second or third HVAC replacement cycle. Newer developments like Riverstone, Telfair, New Territory, and Commonwealth include homes built in the 2000s and 2010s that benefit from professional maintenance to maximize equipment life in our demanding Gulf Coast climate.</p>
+      <p>Sugar Land's housing stock is remarkably diverse. First Colony, one of the Houston area's original master-planned communities, features homes built throughout the 1980s and 1990s, many of which are now approaching their second or third HVAC replacement cycle. Newer developments like Riverstone, Telfair, New Territory, and Commonwealth include homes built in the 2000s and 2010s that benefit from professional maintenance to maximize equipment life in our demanding Gulf Coast climate.</p>
 
-      <p>Fort Bend County's heat and humidity are relentless. The combination of high summer temperatures and moisture levels that regularly push into the 90% range means your AC system is under sustained stress for nine months out of the year. Regular maintenance isn't optional here — it's what separates a system that lasts 15 years from one that fails at year 10.</p>
+      <p>Fort Bend County's heat and humidity are relentless. The combination of high summer temperatures and moisture levels that regularly push into the 90% range means your AC system is under sustained stress for nine months out of the year. Regular maintenance isn't optional here, it's what separates a system that lasts 15 years from one that fails at year 10.</p>
 
       <h3>Why Sugar Land Homeowners Choose Mabry's</h3>
       <ul>
         <li>Nearly 40 years serving Greater Houston and Fort Bend County</li>
-        <li>Flat-rate pricing — you know the cost before we start</li>
+        <li>Flat-rate pricing, you know the cost before we start</li>
         <li>All major brands serviced: Trane, Carrier, Lennox, Rheem, Goodman, American Standard</li>
         <li>BBB A+ Accredited Business</li>
         <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
-        <li>Residential specialists — homes are our only business</li>
+        <li>Residential specialists, homes are our only business</li>
       </ul>
 
-      <p>From Sugar Creek to Greatwood, First Colony to Riverstone — call Mabry's at 281-331-5248 for honest, flat-rate HVAC service.</p>
+      <p>From Sugar Creek to Greatwood, First Colony to Riverstone, call Mabry's at 281-331-5248 for honest, flat-rate HVAC service.</p>
     `,
     keywords: ["HVAC Sugar Land TX", "AC repair Sugar Land TX", "heating repair Sugar Land", "air conditioning Sugar Land 77478 77479", "AC service Fort Bend County"],
   },
@@ -930,35 +930,35 @@ export const locations = [
     description: "Residential HVAC service for the Clear Lake City and NASA area of Southeast Houston — zip codes 77058, 77059 & 77062. Family-owned, flat-rate pricing, BBB A+ since 1986. Call 281-331-5248.",
     content: `
       <h2>AC Repair & Heating Service for Houston's Clear Lake Area</h2>
-      <p>If your home is in Clear Lake City, near the Space Center, or anywhere in the NASA area of Southeast Houston, you have a Houston address — but you're really part of the close-knit Clear Lake community. This area was annexed into the City of Houston in the late 1970s and early 1980s, so the 77058, 77059, and 77062 zip codes are officially Houston even as they've kept their own identity. Mabry's Air Conditioning & Heating has been serving these neighborhoods since 1986, and we know this corner of Houston as well as anyone.</p>
+      <p>If your home is in Clear Lake City, near the Space Center, or anywhere in the NASA area of Southeast Houston, you have a Houston address, but you're really part of the close-knit Clear Lake community. This area was annexed into the City of Houston in the late 1970s and early 1980s, so the 77058, 77059, and 77062 zip codes are officially Houston even as they've kept their own identity. Mabry's Air Conditioning & Heating has been serving these neighborhoods since 1986, and we know this corner of Houston as well as anyone.</p>
 
-      <p>We're not a massive Houston call center. We're a family-owned company with real technicians who know these Clear Lake neighborhoods — and we charge flat-rate pricing with no hidden fees.</p>
+      <p>We're not a massive Houston call center. We're a family-owned company with real technicians who know these Clear Lake neighborhoods, and we charge flat-rate pricing with no hidden fees.</p>
 
       <h3>HVAC Services We Provide in the Clear Lake Area of Houston</h3>
       <ul>
-        <li><strong>AC repair</strong> — fast, accurate diagnosis on all makes and models</li>
-        <li><strong>Heating repair</strong> — furnace and heat pump service throughout the year</li>
-        <li><strong>New AC installation</strong> — energy-efficient systems, properly sized for your home</li>
-        <li><strong>Annual maintenance tune-ups</strong> — pre-season service to prevent breakdowns during Houston's brutal summers</li>
+        <li><strong>AC repair</strong>, fast, accurate diagnosis on all makes and models</li>
+        <li><strong>Heating repair</strong>, furnace and heat pump service throughout the year</li>
+        <li><strong>New AC installation</strong>, energy-efficient systems, properly sized for your home</li>
+        <li><strong>Annual maintenance tune-ups</strong>, pre-season service to prevent breakdowns during Houston's brutal summers</li>
       </ul>
 
       <h3>We Know Houston's Clear Lake Neighborhoods</h3>
-      <p>This part of Houston grew up around NASA's Johnson Space Center. Much of the Clear Lake City housing in the 77058, 77059, and 77062 zip codes was built during the aerospace boom of the 1960s, 70s, and 80s — solid, well-built homes, but many still running HVAC equipment and ductwork from an earlier era. Original single-stage systems, return air undersized for today's high-efficiency equipment, and in some cases AC units still using R-22 refrigerant (phased out in 2020 and now costly to recharge) are all things we service regularly in these neighborhoods.</p>
+      <p>This part of Houston grew up around NASA's Johnson Space Center. Much of the Clear Lake City housing in the 77058, 77059, and 77062 zip codes was built during the aerospace boom of the 1960s, 70s, and 80s, solid, well-built homes, but many still running HVAC equipment and ductwork from an earlier era. Original single-stage systems, return air undersized for today's high-efficiency equipment, and in some cases AC units still using R-22 refrigerant (phased out in 2020 and now costly to recharge) are all things we service regularly in these neighborhoods.</p>
 
-      <p>Being this close to Galveston Bay adds to it — year-round humidity and salt-influenced air that's harder on outdoor equipment than it is inland. These are established, tree-lined, close-knit neighborhoods full of engineers, aerospace families, and long-term residents who value a contractor they can trust and a price they can count on before the work begins.</p>
+      <p>Being this close to Galveston Bay adds to it, year-round humidity and salt-influenced air that's harder on outdoor equipment than it is inland. These are established, tree-lined, close-knit neighborhoods full of engineers, aerospace families, and long-term residents who value a contractor they can trust and a price they can count on before the work begins.</p>
 
       <h3>Recent Work in Houston's Clear Lake Area</h3>
-      <p>Not every breakdown means you need a new system — and we'll tell you so honestly. In fact, we repair the vast majority of the units we're called out on. We recently helped a Clear Lake family whose AC suddenly stopped cooling; our technicians traced it to a ruptured, leaking evaporator coil. Rather than push a full replacement, we assessed the age and condition of the rest of their system, determined it was well worth keeping, and replaced just the coil — getting them cool again fast and saving them thousands. One local note worth sharing: this family, like most folks out here, calls the area Clear Lake — but their mailing address is officially Houston. Same neighborhood, two names, and we're proud to serve it under both.</p>
+      <p>Not every breakdown means you need a new system, and we'll tell you so honestly. In fact, we repair the vast majority of the units we're called out on. We recently helped a Clear Lake family whose AC suddenly stopped cooling; our technicians traced it to a ruptured, leaking evaporator coil. Rather than push a full replacement, we assessed the age and condition of the rest of their system, determined it was well worth keeping, and replaced just the coil, getting them cool again fast and saving them thousands. One local note worth sharing: this family, like most folks out here, calls the area Clear Lake, but their mailing address is officially Houston. Same neighborhood, two names, and we're proud to serve it under both.</p>
 
       <h3>Why Houston's Clear Lake-Area Homeowners Choose Mabry's</h3>
       <ul>
         <li>Nearly 40 years serving the Clear Lake and NASA area</li>
-        <li>Flat-rate pricing — you know the full cost before we start</li>
+        <li>Flat-rate pricing, you know the full cost before we start</li>
         <li>All major brands: Trane, Carrier, Lennox, Rheem, Goodman, American Standard, York, Bryant</li>
         <li>BBB A+ Accredited Business</li>
         <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
-        <li>Residential specialists — homes are our entire focus</li>
-        <li>Family-owned and operated — you talk to us, not a call center</li>
+        <li>Residential specialists, homes are our entire focus</li>
+        <li>Family-owned and operated, you talk to us, not a call center</li>
       </ul>
     `,
     keywords: ["AC repair Houston TX", "HVAC Houston TX", "AC repair Clear Lake City Houston", "heating repair Southeast Houston", "air conditioning NASA area Houston", "HVAC 77058 77059 77062"],

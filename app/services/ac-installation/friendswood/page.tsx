@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     question: "What SEER2 rating should I choose for Friendswood's climate?",
-    answer: "For Friendswood's Gulf Coast climate — with high humidity, long cooling seasons, and proximity to Clear Lake and Galveston Bay — we recommend a minimum 16 SEER2. The higher efficiency reduces monthly electricity bills significantly over a system's 12–15 year lifespan, and better-performing systems also do a superior job of dehumidification, which is critical near the bay.",
+    answer: "For Friendswood's Gulf Coast climate, with high humidity, long cooling seasons, and proximity to Clear Lake and Galveston Bay, we recommend a minimum 16 SEER2. The higher efficiency reduces monthly electricity bills significantly over a system's 12–15 year lifespan, and better-performing systems also do a superior job of dehumidification, which is critical near the bay.",
   },
   {
     question: "What AC brands do you install in Friendswood?",
@@ -32,20 +32,20 @@ const faqs = [
   },
   {
     question: "Should I replace just the AC unit or the whole HVAC system?",
-    answer: "If your furnace or air handler is also aging, replacing the complete system at the same time is often more cost-effective and ensures matched components working at peak efficiency. Mismatched components — like a new condenser paired with an old air handler — can reduce efficiency and void manufacturer warranties. We'll give you an honest assessment.",
+    answer: "If your furnace or air handler is also aging, replacing the complete system at the same time is often more cost-effective and ensures matched components working at peak efficiency. Mismatched components, like a new condenser paired with an old air handler, can reduce efficiency and void manufacturer warranties. We'll give you an honest assessment.",
   },
 ];
 
 const content = `
   <h2>AC Installation &amp; Replacement in Friendswood, TX — Serving This Community Since 1986</h2>
-  <p>A new AC system is one of the largest home investments you'll make — and in Friendswood's Gulf Coast climate, with its proximity to Clear Lake and Galveston Bay, getting it right is especially important. High humidity, long cooling seasons, and bay-area moisture create specific demands that not every system handles equally well. Mabry's has been installing and replacing AC systems in Friendswood since 1986. Call our dedicated line: 281-482-8400.</p>
+  <p>A new AC system is one of the largest home investments you'll make, and in Friendswood's Gulf Coast climate, with its proximity to Clear Lake and Galveston Bay, getting it right is especially important. High humidity, long cooling seasons, and bay-area moisture create specific demands that not every system handles equally well. Mabry's has been installing and replacing AC systems in Friendswood since 1986. Call our dedicated line: 281-482-8400.</p>
 
   <h3>How Much Does AC Replacement Cost in Friendswood, TX?</h3>
   <p>A complete AC system replacement in Friendswood typically ranges from <strong>$6,000–$14,000+ fully installed</strong>, depending on:</p>
   <ul>
-    <li>System size (tonnage) — calculated for your specific home, not just square footage</li>
-    <li>SEER2 efficiency rating — higher efficiency means lower monthly energy bills</li>
-    <li>Brand and product line — we install all major brands</li>
+    <li>System size (tonnage), calculated for your specific home, not just square footage</li>
+    <li>SEER2 efficiency rating, higher efficiency means lower monthly energy bills</li>
+    <li>Brand and product line, we install all major brands</li>
     <li>Whether ductwork modifications or repairs are needed</li>
     <li>Full HVAC system vs. AC-only replacement</li>
   </ul>
@@ -53,19 +53,19 @@ const content = `
 
   <h3>Signs It's Time to Replace Your AC in Friendswood</h3>
   <ul>
-    <li><strong>System is 12–15+ years old</strong> — In Friendswood's climate, that's a full useful life for most systems</li>
-    <li><strong>Repair costs are adding up</strong> — If you're spending more than 50% of replacement cost on repairs, a new system makes financial sense</li>
-    <li><strong>Home feels humid even when the AC is running</strong> — Older or improperly sized systems often fail to adequately dehumidify Friendswood's bay-area air</li>
-    <li><strong>Running R-22 refrigerant</strong> — Phased out in 2020, now expensive and scarce; usually more cost-effective to replace the system</li>
-    <li><strong>Energy bills climbing year over year</strong> — Efficiency degrades as systems age; new high-SEER2 units can cut cooling costs significantly</li>
-    <li><strong>Uneven temperatures throughout the home</strong> — May indicate an undersized, failing, or improperly installed system</li>
+    <li><strong>System is 12–15+ years old</strong>: In Friendswood's climate, that's a full useful life for most systems</li>
+    <li><strong>Repair costs are adding up</strong>: If you're spending more than 50% of replacement cost on repairs, a new system makes financial sense</li>
+    <li><strong>Home feels humid even when the AC is running</strong>: Older or improperly sized systems often fail to adequately dehumidify Friendswood's bay-area air</li>
+    <li><strong>Running R-22 refrigerant</strong>: Phased out in 2020, now expensive and scarce; usually more cost-effective to replace the system</li>
+    <li><strong>Energy bills climbing year over year</strong>: Efficiency degrades as systems age; new high-SEER2 units can cut cooling costs significantly</li>
+    <li><strong>Uneven temperatures throughout the home</strong>: May indicate an undersized, failing, or improperly installed system</li>
   </ul>
 
   <h3>What's Included in Our AC Installation</h3>
   <ul>
     <li>Free in-home estimate with proper Manual J load calculation</li>
     <li>Complete removal and disposal of old equipment</li>
-    <li>New system installation — condenser, air handler/furnace, and evaporator coil</li>
+    <li>New system installation, condenser, air handler/furnace, and evaporator coil</li>
     <li>Refrigerant line set inspection and replacement if needed</li>
     <li>Electrical connections and thermostat programming</li>
     <li>Full system commissioning and test</li>
@@ -73,22 +73,22 @@ const content = `
   </ul>
 
   <h3>Choosing the Right System for Friendswood's Climate</h3>
-  <p>Friendswood's proximity to Clear Lake and Galveston Bay means elevated year-round humidity that your AC must manage as well as heat. We recommend systems with strong dehumidification capacity and at least <strong>16 SEER2</strong> efficiency. Variable-speed systems — which modulate output to match the actual cooling load — do especially well in humid coastal climates because they run longer at lower speeds, which removes more moisture from the air.</p>
+  <p>Friendswood's proximity to Clear Lake and Galveston Bay means elevated year-round humidity that your AC must manage as well as heat. We recommend systems with strong dehumidification capacity and at least <strong>16 SEER2</strong> efficiency. Variable-speed systems, which modulate output to match the actual cooling load, do especially well in humid coastal climates because they run longer at lower speeds, which removes more moisture from the air.</p>
   <p>We install all major brands and will give you an honest recommendation based on your home's specific needs, not on what carries the highest margin for us.</p>
 
   <h3>We Know Friendswood's Neighborhoods</h3>
-  <p>From the established neighborhoods of Forest of Friendswood, Polly Ranch Estates, and Heritage Park — with 1970s and 1980s homes that may have original or older replacement ductwork — to the newer master-planned West Ranch community and developments along FM 2351, we know what Friendswood homes need. We've been working in these neighborhoods long enough to have installed systems for multiple generations of the same families.</p>
+  <p>From the established neighborhoods of Forest of Friendswood, Polly Ranch Estates, and Heritage Park, with 1970s and 1980s homes that may have original or older replacement ductwork, to the newer master-planned West Ranch community and developments along FM 2351, we know what Friendswood homes need. We've been working in these neighborhoods long enough to have installed systems for multiple generations of the same families.</p>
 
   <h3>Financing Available on New AC Systems</h3>
-  <p>We offer financing through Service Finance Company with flexible terms — no money down on qualifying systems. Monthly payment options available. Ask about current promotional offers when you call for your free estimate.</p>
+  <p>We offer financing through Service Finance Company with flexible terms, no money down on qualifying systems. Monthly payment options available. Ask about current promotional offers when you call for your free estimate.</p>
 
   <h3>Why Friendswood Homeowners Choose Mabry's for AC Replacement</h3>
   <ul>
-    <li>Dedicated Friendswood service line — 281-482-8400</li>
+    <li>Dedicated Friendswood service line, 281-482-8400</li>
     <li>Nearly 40 years serving the 77546 and 77549 zip codes</li>
-    <li>Proper Manual J sizing — not just a square-footage guess</li>
+    <li>Proper Manual J sizing, not just a square-footage guess</li>
     <li>All major brands installed and backed</li>
-    <li>BBB A+ Accredited — multiple BBB Gold Star Award winner</li>
+    <li>BBB A+ Accredited, multiple BBB Gold Star Award winner</li>
     <li>Voted Favorite AC Company</li>
     <li>Licensed Texas HVAC contractor (TACLB12058E)</li>
     <li>Financing available through Service Finance Company</li>
@@ -145,7 +145,7 @@ export default function AcInstallationFriendswoodPage() {
           </div>
           <div className="flex flex-wrap items-center gap-3 mb-5">
             <a href="https://www.bbb.org/us/tx/friendswood/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805/addressId/92394#sealclick" target="_blank" rel="nofollow" aria-label="Mabry's BBB Business Review">
-              <img src="https://seal-houston.bbb.org/seals/blue-seal-200-42-bbb-50000805.png" alt="BBB Accredited Business — A+ Rated" width={200} height={42} style={{ border: 0 }} className="rounded" />
+              <img src="https://seal-houston.bbb.org/seals/blue-seal-200-42-bbb-50000805.png" alt="BBB Accredited Business, A+ Rated" width={200} height={42} style={{ border: 0 }} className="rounded" />
             </a>
             <span className="inline-flex items-center gap-1.5 bg-accent/25 border border-accent/50 text-white text-xs font-semibold px-3 py-1.5 rounded-full">
               <Award className="w-3.5 h-3.5 shrink-0" /> Voted Favorite AC Company
@@ -153,7 +153,7 @@ export default function AcInstallationFriendswoodPage() {
           </div>
           <p className="text-white/80 text-sm flex items-center gap-2">
             <Clock className="w-4 h-4 text-accent shrink-0" />
-            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends — ever.
+            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends, ever.
           </p>
         </div>
       </section>

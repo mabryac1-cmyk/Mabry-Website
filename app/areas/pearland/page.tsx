@@ -20,11 +20,11 @@ export const metadata: Metadata = {
 const pearlandFaqs = [
   {
     question: "How fast can you respond to AC repairs in Pearland?",
-    answer: "We offer same-day service for most AC repairs in Pearland's 77581, 77584, and 77588 zip codes. Call 281-331-5248 to schedule — we'll get you taken care of quickly.",
+    answer: "We offer same-day service for most AC repairs in Pearland's 77581, 77584, and 77588 zip codes. Call 281-331-5248 to schedule, we'll get you taken care of quickly.",
   },
   {
     question: "Do you charge extra for evening or weekend service calls in Pearland?",
-    answer: "No — our flat-rate pricing means no extra charge for evenings or weekends. The price you're quoted is what you pay, period.",
+    answer: "No, our flat-rate pricing means no extra charge for evenings or weekends. The price you're quoted is what you pay, period.",
   },
   {
     question: "What Pearland neighborhoods do you serve?",
@@ -36,36 +36,36 @@ const pearlandFaqs = [
   },
   {
     question: "What HVAC brands do you service in Pearland?",
-    answer: "All major brands — Trane, Carrier, Lennox, Rheem, York, American Standard, Goodman, and more. We're not brand-specific, so we can service whatever system is in your home.",
+    answer: "All major brands, Trane, Carrier, Lennox, Rheem, York, American Standard, Goodman, and more. We're not brand-specific, so we can service whatever system is in your home.",
   },
 ];
 
 const pearlandContent = `
   <h2>Trusted HVAC Service for Pearland Homeowners — All Neighborhoods, All Brands</h2>
-  <p>Pearland has grown from a small bedroom community into one of the largest cities in Texas — and Mabry's Air Conditioning &amp; Heating has been serving Pearland homeowners through all of it. Whether you're in an established neighborhood near Old Townsite or a newer subdivision in Shadow Creek Ranch, we know Pearland homes and we know what it takes to keep them comfortable through a Texas Gulf Coast summer.</p>
+  <p>Pearland has grown from a small bedroom community into one of the largest cities in Texas, and Mabry's Air Conditioning &amp; Heating has been serving Pearland homeowners through all of it. Whether you're in an established neighborhood near Old Townsite or a newer subdivision in Shadow Creek Ranch, we know Pearland homes and we know what it takes to keep them comfortable through a Texas Gulf Coast summer.</p>
 
   <h3>HVAC Services We Provide in Pearland</h3>
   <ul>
-    <li><strong>AC repair</strong> — same-day service available, all makes and models</li>
-    <li><strong>Heating repair</strong> — furnace and heat pump service</li>
-    <li><strong>New AC installation</strong> — proper sizing, top brands, licensed installation</li>
-    <li><strong>Annual maintenance tune-ups</strong> — spring and fall service to prevent breakdowns</li>
+    <li><strong>AC repair</strong>, same-day service available, all makes and models</li>
+    <li><strong>Heating repair</strong>, furnace and heat pump service</li>
+    <li><strong>New AC installation</strong>, proper sizing, top brands, licensed installation</li>
+    <li><strong>Annual maintenance tune-ups</strong>, spring and fall service to prevent breakdowns</li>
   </ul>
 
   <h3>We Know Pearland's Neighborhoods</h3>
-  <p>Pearland spans three zip codes — 77581, 77584, and 77588 — and straddles both Brazoria and Harris counties. The city includes a wide range of housing: 1970s-era homes in Old Pearland and Country Place, the large-scale master-planned communities of Shadow Creek Ranch and Silverlake (built largely in the 2000s), and newer developments along the Highway 288 corridor. Each era of construction has its own HVAC challenges.</p>
+  <p>Pearland spans three zip codes, 77581, 77584, and 77588, and straddles both Brazoria and Harris counties. The city includes a wide range of housing: 1970s-era homes in Old Pearland and Country Place, the large-scale master-planned communities of Shadow Creek Ranch and Silverlake (built largely in the 2000s), and newer developments along the Highway 288 corridor. Each era of construction has its own HVAC challenges.</p>
 
-  <p>Older Pearland homes often have aging ductwork and systems approaching or past replacement age. Homes in Shadow Creek Ranch and Silverlake that were built with builder-grade equipment in the mid-2000s are now 15–20 years old — prime replacement territory. Our team is experienced across all of it.</p>
+  <p>Older Pearland homes often have aging ductwork and systems approaching or past replacement age. Homes in Shadow Creek Ranch and Silverlake that were built with builder-grade equipment in the mid-2000s are now 15–20 years old, prime replacement territory. Our team is experienced across all of it.</p>
 
   <h3>Recent Pearland Work</h3>
-  <p>A lot of Pearland's larger homes run two separate HVAC systems, and when both age out together — common in the mid-2000s Shadow Creek Ranch and Silverlake builds — the repair bills and energy costs pile up fast. We recently helped a Pearland homeowner break that cycle: he'd been sinking money into repeated repairs and high energy bills on two tired old systems, so we replaced both with new complete systems sized right for his home. No more throwing good money after bad on equipment past its prime — just lower, more predictable bills. Both installs passed inspection the first time, which for us is the rule, not the exception. Across nearly four decades we've built a first-time permit inspection pass rate near the top of the industry, because we do the job to code the first time, every time.</p>
+  <p>A lot of Pearland's larger homes run two separate HVAC systems, and when both age out together, common in the mid-2000s Shadow Creek Ranch and Silverlake builds, the repair bills and energy costs pile up fast. We recently helped a Pearland homeowner break that cycle: he'd been sinking money into repeated repairs and high energy bills on two tired old systems, so we replaced both with new complete systems sized right for his home. No more throwing good money after bad on equipment past its prime, just lower, more predictable bills. Both installs passed inspection the first time, which for us is the rule, not the exception. Across nearly four decades we've built a first-time permit inspection pass rate near the top of the industry, because we do the job to code the first time, every time.</p>
 
   <h3>Why Pearland Residents Choose Mabry's</h3>
   <ul>
-    <li>Nearly 40 years of experience — including decades serving Pearland</li>
-    <li>Honest, flat-rate pricing — no surprises on your invoice</li>
-    <li>BBB A+ Accredited Business — multiple BBB Gold Star Award winner</li>
-    <li>Residential-only focus — homes are our specialty</li>
+    <li>Nearly 40 years of experience, including decades serving Pearland</li>
+    <li>Honest, flat-rate pricing, no surprises on your invoice</li>
+    <li>BBB A+ Accredited Business, multiple BBB Gold Star Award winner</li>
+    <li>Residential-only focus, homes are our specialty</li>
     <li>Licensed and insured (TACLB12058E)</li>
     <li>Dedicated service line for Pearland: 281-331-5248</li>
   </ul>
@@ -106,7 +106,7 @@ export default async function PearlandPage() {
           "item": {
             "@type": "Service",
             "name": "RunTru by Trane AC & Heating System Installation in Pearland, TX — Value Tier",
-            "description": "Complete new RunTru by Trane AC and heating system installation for Pearland homeowners — including Silverlake, Shadow Creek Ranch, and surrounding neighborhoods. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Family-owned since 1986.",
+            "description": "Complete new RunTru by Trane AC and heating system installation for Pearland homeowners, including Silverlake, Shadow Creek Ranch, and surrounding neighborhoods. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Family-owned since 1986.",
             "provider": { "@id": "https://mabryac.com/#business" },
             "areaServed": { "@type": "City", "name": "Pearland", "addressRegion": "TX" },
             "offers": {
@@ -125,7 +125,7 @@ export default async function PearlandPage() {
           "item": {
             "@type": "Service",
             "name": "Trane Single-Stage AC & Heating System Installation in Pearland, TX — Choice Tier",
-            "description": "Complete new Trane single-stage AC and heating system installation for Pearland homeowners — our most popular installation tier, serving Silverlake, Shadow Creek Ranch, and surrounding neighborhoods. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Family-owned since 1986.",
+            "description": "Complete new Trane single-stage AC and heating system installation for Pearland homeowners, our most popular installation tier, serving Silverlake, Shadow Creek Ranch, and surrounding neighborhoods. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Family-owned since 1986.",
             "provider": { "@id": "https://mabryac.com/#business" },
             "areaServed": { "@type": "City", "name": "Pearland", "addressRegion": "TX" },
             "offers": {
@@ -144,7 +144,7 @@ export default async function PearlandPage() {
           "item": {
             "@type": "Service",
             "name": "Trane TruComfort Variable-Speed AC & Heating System Installation in Pearland, TX — Premier Tier",
-            "description": "Complete new Trane TruComfort variable-speed AC and heating system installation for Pearland homeowners — Trane's flagship Premier tier with whisper-quiet operation and lowest utility bills, serving Silverlake, Shadow Creek Ranch, and surrounding neighborhoods. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Family-owned since 1986.",
+            "description": "Complete new Trane TruComfort variable-speed AC and heating system installation for Pearland homeowners, Trane's flagship Premier tier with whisper-quiet operation and lowest utility bills, serving Silverlake, Shadow Creek Ranch, and surrounding neighborhoods. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Family-owned since 1986.",
             "provider": { "@id": "https://mabryac.com/#business" },
             "areaServed": { "@type": "City", "name": "Pearland", "addressRegion": "TX" },
             "offers": {
@@ -205,7 +205,7 @@ export default async function PearlandPage() {
             >
               <img
                 src="https://seal-houston.bbb.org/seals/blue-seal-200-42-bbb-50000805.png"
-                alt="BBB Accredited Business — A+ Rated"
+                alt="BBB Accredited Business, A+ Rated"
                 width={200}
                 height={42}
                 style={{ border: 0 }}
@@ -220,12 +220,12 @@ export default async function PearlandPage() {
           {/* Urgency */}
           <p className="text-white/80 text-sm flex items-center gap-2">
             <Clock className="w-4 h-4 text-accent shrink-0" />
-            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends — ever.
+            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends, ever.
           </p>
         </div>
       </section>
 
-      {/* Visible pricing band — transparent pricing up top */}
+      {/* Visible pricing band, transparent pricing up top */}
       <PricingBand className="bg-white pt-10 pb-2" />
 
       {/* Trust Bar */}
@@ -303,7 +303,7 @@ export default async function PearlandPage() {
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
                   Whether you&apos;re in Silverlake, Shadow Creek Ranch, or anywhere across Pearland, we&apos;ve
                   kept our pricing simple for nearly four decades. Complete AC &amp; heating system installations
-                  start at just <strong className="text-primary">{fmtUSD(starting.value)}</strong> — with our most popular
+                  start at just <strong className="text-primary">{fmtUSD(starting.value)}</strong>, with our most popular
                   Trane Single-Stage tier at <strong className="text-primary">{fmtUSD(starting.choice)}</strong>. Honest,
                   flat-rate pricing since 1986.
                 </p>

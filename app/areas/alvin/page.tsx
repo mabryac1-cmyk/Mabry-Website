@@ -24,11 +24,11 @@ const alvinFaqs = [
   },
   {
     question: "Do you charge extra for evening or weekend service calls in Alvin?",
-    answer: "No — we offer flat-rate pricing with no extra charge for evenings or weekends. Ever. The price you're quoted is the price you pay, regardless of when we come out.",
+    answer: "No, we offer flat-rate pricing with no extra charge for evenings or weekends. Ever. The price you're quoted is the price you pay, regardless of when we come out.",
   },
   {
     question: "Are you a local Alvin company or a national chain?",
-    answer: "We're your neighbors. Mabry's Air Conditioning & Heating has been based at 2110 S Gordon St in Alvin since 1986 — nearly 40 years. We're family-owned and operated, not a franchise or national chain.",
+    answer: "We're your neighbors. Mabry's Air Conditioning & Heating has been based at 2110 S Gordon St in Alvin since 1986, nearly 40 years. We're family-owned and operated, not a franchise or national chain.",
   },
   {
     question: "What cities near Alvin do you serve?",
@@ -36,40 +36,40 @@ const alvinFaqs = [
   },
   {
     question: "What HVAC brands do you service in Alvin?",
-    answer: "We service and repair all major brands including Trane, Carrier, Lennox, Rheem, York, American Standard, Goodman, and more. We're brand-agnostic — if it's in your home, we can work on it.",
+    answer: "We service and repair all major brands including Trane, Carrier, Lennox, Rheem, York, American Standard, Goodman, and more. We're brand-agnostic, if it's in your home, we can work on it.",
   },
 ];
 
 const alvinContent = `
   <h2>Alvin's Hometown HVAC Company — Located Right Here Since 1986</h2>
-  <p>If you've ever driven down South Gordon Street in downtown Alvin, you've passed our shop. Mabry's Air Conditioning &amp; Heating has been located at 2110 S Gordon St in Alvin since 1986 — nearly 40 years. We're not a national chain with a local phone number. We're your neighbors, and Alvin is home.</p>
+  <p>If you've ever driven down South Gordon Street in downtown Alvin, you've passed our shop. Mabry's Air Conditioning &amp; Heating has been located at 2110 S Gordon St in Alvin since 1986, nearly 40 years. We're not a national chain with a local phone number. We're your neighbors, and Alvin is home.</p>
 
   <p>That matters when your AC goes out in July. We're not driving from Houston. We're already here.</p>
 
   <h3>HVAC Services We Provide in Alvin</h3>
   <ul>
-    <li><strong>AC repair</strong> — same-day service for Alvin homes, all makes and models</li>
-    <li><strong>Heating repair</strong> — furnace and heat pump service when those cold fronts hit</li>
-    <li><strong>New AC installation</strong> — proper load calculations, top brands, licensed installation</li>
-    <li><strong>Annual maintenance tune-ups</strong> — spring AC and fall heating service to prevent breakdowns</li>
+    <li><strong>AC repair</strong>, same-day service for Alvin homes, all makes and models</li>
+    <li><strong>Heating repair</strong>, furnace and heat pump service when those cold fronts hit</li>
+    <li><strong>New AC installation</strong>, proper load calculations, top brands, licensed installation</li>
+    <li><strong>Annual maintenance tune-ups</strong>, spring AC and fall heating service to prevent breakdowns</li>
   </ul>
 
   <h3>We Know Alvin Homes</h3>
   <p>The housing stock in Alvin's 77511 and 77512 zip codes includes everything from older downtown homes built in the 1950s and 60s to newer subdivisions developed in the 2000s and beyond. We've worked in them all. Older Alvin homes often have aging ductwork, systems that have been through multiple replacements, and in some cases equipment still using R-22 refrigerant that was phased out in 2020. Newer homes in subdivisions like Kendall Lakes or Country Meadows often have builder-grade equipment that benefits from regular maintenance to hit its expected lifespan.</p>
 
-  <p>Our Gulf Coast climate — high humidity, 9-month cooling seasons, and heat indexes that push past 110°F — is tough on HVAC equipment. We've been diagnosing the specific failure patterns common to Brazoria County homes for four decades.</p>
+  <p>Our Gulf Coast climate, high humidity, 9-month cooling seasons, and heat indexes that push past 110°F, is tough on HVAC equipment. We've been diagnosing the specific failure patterns common to Brazoria County homes for four decades.</p>
 
   <h3>Recent Alvin Work</h3>
-  <p>During one of this summer's worst heat waves, an Alvin homeowner's old system broke down completely — about the worst time there is to lose cooling on the Gulf Coast. We replaced it start to finish with a new 5-ton Trane gas system and got her home comfortable again fast. And because we install to Alvin's code the first time, the job passed City of Alvin inspection on our workmanship — the same standard we hold ourselves to on every install. Passing local inspection isn't automatic in this trade; it's the difference between a job done right and a job done fast.</p>
+  <p>During one of this summer's worst heat waves, an Alvin homeowner's old system broke down completely, about the worst time there is to lose cooling on the Gulf Coast. We replaced it start to finish with a new 5-ton Trane gas system and got her home comfortable again fast. And because we install to Alvin's code the first time, the job passed City of Alvin inspection on our workmanship, the same standard we hold ourselves to on every install. Passing local inspection isn't automatic in this trade; it's the difference between a job done right and a job done fast.</p>
 
   <h3>Why Alvin Families Have Trusted Us for Generations</h3>
   <ul>
-    <li>Our shop is in your backyard — fast response times</li>
-    <li>Flat-rate pricing with no hidden charges — we tell you the price before we start</li>
-    <li>Family-owned and operated — you talk to us, not a call center</li>
-    <li>BBB A+ Accredited Business — multiple BBB Gold Star Award winner</li>
+    <li>Our shop is in your backyard, fast response times</li>
+    <li>Flat-rate pricing with no hidden charges, we tell you the price before we start</li>
+    <li>Family-owned and operated, you talk to us, not a call center</li>
+    <li>BBB A+ Accredited Business, multiple BBB Gold Star Award winner</li>
     <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
-    <li>Residential specialists — homes are all we do</li>
+    <li>Residential specialists, homes are all we do</li>
   </ul>
 
   <p>From the historic downtown neighborhoods near Nolan Ryan Ballpark to the newer communities along Highway 6, Mabry's is Alvin's HVAC company. Call us at 281-331-5248.</p>
@@ -129,7 +129,7 @@ export default async function AlvinPage() {
           "item": {
             "@type": "Service",
             "name": "Trane Single-Stage AC & Heating System Installation in Alvin, TX — Choice Tier",
-            "description": "Complete new Trane single-stage AC and heating system installation for Alvin homeowners — our most popular installation tier. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Family-owned since 1986.",
+            "description": "Complete new Trane single-stage AC and heating system installation for Alvin homeowners, our most popular installation tier. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Family-owned since 1986.",
             "provider": { "@id": "https://mabryac.com/#business" },
             "areaServed": { "@type": "City", "name": "Alvin", "addressRegion": "TX" },
             "offers": {
@@ -148,7 +148,7 @@ export default async function AlvinPage() {
           "item": {
             "@type": "Service",
             "name": "Trane TruComfort Variable-Speed AC & Heating System Installation in Alvin, TX — Premier Tier",
-            "description": "Complete new Trane TruComfort variable-speed AC and heating system installation for Alvin homeowners — Trane's flagship Premier tier with whisper-quiet operation and lowest utility bills. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Family-owned since 1986.",
+            "description": "Complete new Trane TruComfort variable-speed AC and heating system installation for Alvin homeowners, Trane's flagship Premier tier with whisper-quiet operation and lowest utility bills. Fully installed by our licensed Texas HVAC technicians (TACLB12058E). Family-owned since 1986.",
             "provider": { "@id": "https://mabryac.com/#business" },
             "areaServed": { "@type": "City", "name": "Alvin", "addressRegion": "TX" },
             "offers": {
@@ -183,7 +183,7 @@ export default async function AlvinPage() {
             AC Repair &amp; HVAC Serving Alvin, TX &amp; the Greater Houston Area — Your Local Experts Since 1986
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mb-6">
-            Alvin&apos;s hometown HVAC company since 1986, proudly serving the Alvin, Pearland, and Manvel areas from our shop at 2110 S Gordon St — minutes from wherever you are.
+            Alvin&apos;s hometown HVAC company since 1986, proudly serving the Alvin, Pearland, and Manvel areas from our shop at 2110 S Gordon St, minutes from wherever you are.
           </p>
           <div className="flex flex-wrap gap-4 items-center mb-6">
             <a
@@ -199,7 +199,7 @@ export default async function AlvinPage() {
             </div>
           </div>
 
-          {/* Service area — inclusive city strip */}
+          {/* Service area, inclusive city strip */}
           <div className="mb-6 max-w-3xl">
             <p className="text-white/90 text-xl leading-relaxed">
               <span className="font-semibold text-white">Proudly serving Alvin &amp; the surrounding area:</span>{" "}
@@ -236,7 +236,7 @@ export default async function AlvinPage() {
             >
               <img
                 src="https://seal-houston.bbb.org/seals/blue-seal-200-42-bbb-50000805.png"
-                alt="BBB Accredited Business — A+ Rated"
+                alt="BBB Accredited Business, A+ Rated"
                 width={200}
                 height={42}
                 style={{ border: 0 }}
@@ -244,19 +244,19 @@ export default async function AlvinPage() {
               />
             </a>
             <span className="inline-flex items-center gap-1.5 bg-accent/25 border border-accent/50 text-white text-xs font-semibold px-3 py-1.5 rounded-full">
-              <Award className="w-3.5 h-3.5 shrink-0" /> Voted Favorite AC Company — Alvin Sun &amp; Advertiser
+              <Award className="w-3.5 h-3.5 shrink-0" /> Voted Favorite AC Company, Alvin Sun &amp; Advertiser
             </span>
           </div>
 
           {/* Urgency */}
           <p className="text-white/80 text-sm flex items-center gap-2">
             <Clock className="w-4 h-4 text-accent shrink-0" />
-            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends — ever.
+            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends, ever.
           </p>
         </div>
       </section>
 
-      {/* Visible pricing band — attention-grabbing, above reviews */}
+      {/* Visible pricing band, attention-grabbing, above reviews */}
       <PricingBand className="bg-white pt-10 pb-2" />
 
       {/* Trust Bar */}
@@ -334,7 +334,7 @@ export default async function AlvinPage() {
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
                   For our Alvin neighbors and the surrounding community, our flat-rate installation
                   pricing keeps things simple. Complete new AC &amp; heating system installations start at
-                  just <strong className="text-primary">{fmtUSD(starting.value)}</strong> — the same honest, transparent
+                  just <strong className="text-primary">{fmtUSD(starting.value)}</strong>, the same honest, transparent
                   approach we&apos;ve used since we opened our doors on South Gordon Street in 1986.
                 </p>
                 <Link

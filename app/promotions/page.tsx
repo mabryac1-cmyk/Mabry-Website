@@ -61,7 +61,7 @@ export default function PromotionsPage() {
       <section className="bg-primary py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            Current HVAC Special Offers — Alvin, Friendswood &amp; Greater Houston
+            Current HVAC Special Offers, Alvin, Friendswood &amp; Greater Houston
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
             Special offers and flexible financing options for Alvin, Friendswood, Pearland & surrounding Houston-area homeowners.
@@ -84,7 +84,7 @@ export default function PromotionsPage() {
               <div className="bg-white rounded-2xl shadow-xl border-2 border-accent overflow-hidden flex flex-col">
                 {/* Badge */}
                 <div className="bg-accent text-white text-center py-3 px-4">
-                  <span className="text-xs font-bold uppercase tracking-widest">Special Offer — Now Through March 31, 2027</span>
+                  <span className="text-xs font-bold uppercase tracking-widest">Special Offer, Now Through March 31, 2027</span>
                 </div>
 
                 <div className="px-6 py-6 flex flex-col flex-1">
@@ -164,7 +164,7 @@ export default function PromotionsPage() {
 
                   {/* Price */}
                   <div className="bg-primary rounded-xl py-4 px-4 text-center mb-5">
-                    <p className="text-white/80 text-xs font-semibold uppercase tracking-wider mb-1">Complete System — Fully Installed</p>
+                    <p className="text-white/80 text-xs font-semibold uppercase tracking-wider mb-1">Complete System, Fully Installed</p>
                     <p className="text-white font-bold leading-none mt-2">
                       <span className="text-2xl">As Low As</span>
                     </p>
@@ -245,7 +245,7 @@ export default function PromotionsPage() {
                         "All major brands serviced",
                         "Experienced, licensed technicians",
                         "Same-day service available",
-                        "No hidden fees — upfront pricing",
+                        "No hidden fees, upfront pricing",
                       ].map((item) => (
                         <li key={item} className="flex items-center gap-2 text-sm">
                           <CheckCircle className="w-4 h-4 text-accent shrink-0" />
@@ -352,7 +352,7 @@ export default function PromotionsPage() {
       <section className="py-12 bg-primary">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-white mb-2">Questions About Our Special Offers or Financing?</h2>
-          <p className="text-white/80 mb-6">Call us — we're happy to walk you through your options.</p>
+          <p className="text-white/80 mb-6">Call us, we're happy to walk you through your options.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:2813315248"

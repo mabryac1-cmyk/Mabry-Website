@@ -20,11 +20,11 @@ export const metadata: Metadata = {
 const clearLakeFaqs = [
   {
     question: "How fast can you get to Clear Lake for AC repair?",
-    answer: "Our Friendswood operation is right next door — Clear Lake is essentially across NASA Parkway, and we offer same-day AC repair throughout the Clear Lake area, including the 77058, 77059, and 77062 zip codes. No travel-fee surprises and no extra charge for evening or weekend calls.",
+    answer: "Our Friendswood operation is right next door, Clear Lake is essentially across NASA Parkway, and we offer same-day AC repair throughout the Clear Lake area, including the 77058, 77059, and 77062 zip codes. No travel-fee surprises and no extra charge for evening or weekend calls.",
   },
   {
     question: "Do you service older NASA-era homes in Clear Lake?",
-    answer: "Absolutely — and we know what to look for. A huge portion of Clear Lake's housing stock was built in the 1960s and 1970s during the buildup around NASA-Johnson Space Center. Homes from this era often have original ductwork that's now 50-plus years old, undersized return air for modern equipment, single-stage systems where two-stage or variable-speed would be a major efficiency upgrade, and in some cases AC equipment still using R-22 refrigerant that was phased out in 2020.",
+    answer: "Absolutely, and we know what to look for. A huge portion of Clear Lake's housing stock was built in the 1960s and 1970s during the buildup around NASA-Johnson Space Center. Homes from this era often have original ductwork that's now 50-plus years old, undersized return air for modern equipment, single-stage systems where two-stage or variable-speed would be a major efficiency upgrade, and in some cases AC equipment still using R-22 refrigerant that was phased out in 2020.",
   },
   {
     question: "Does Bay Area salt air affect outdoor AC units in Clear Lake?",
@@ -32,11 +32,11 @@ const clearLakeFaqs = [
   },
   {
     question: "Are you a local Bay Area HVAC company or a national chain?",
-    answer: "Family-owned, Bay Area–based since 1986. Mabry's Air Conditioning & Heating has been serving Clear Lake, Friendswood, League City, and the surrounding Bay Area communities for nearly 40 years. Not a franchise, not a national chain — when you call, you talk to us, not a national call center.",
+    answer: "Family-owned, Bay Area–based since 1986. Mabry's Air Conditioning & Heating has been serving Clear Lake, Friendswood, League City, and the surrounding Bay Area communities for nearly 40 years. Not a franchise, not a national chain, when you call, you talk to us, not a national call center.",
   },
   {
     question: "Do you charge extra for evening or weekend service in Clear Lake?",
-    answer: "No — flat-rate pricing with no extra charge for evenings or weekends. Ever. The price you're quoted up front is the price you pay, regardless of time of day or day of the week.",
+    answer: "No, flat-rate pricing with no extra charge for evenings or weekends. Ever. The price you're quoted up front is the price you pay, regardless of time of day or day of the week.",
   },
   {
     question: "What other Bay Area communities near Clear Lake do you serve?",
@@ -46,37 +46,37 @@ const clearLakeFaqs = [
 
 const clearLakeContent = `
   <h2>HVAC Service in Clear Lake, TX — The Bay Area's Family-Owned AC Company Since 1986</h2>
-  <p>Clear Lake is one of the most distinctive communities in the Houston metro — it grew up around NASA-Johnson Space Center in the 1960s and developed into the cultural and residential heart of the Bay Area. Today it's home to engineers, aerospace professionals, families, and waterfront homeowners across the 77058, 77059, and 77062 zip codes. We've been servicing AC units in Clear Lake homes for nearly 40 years, and we know this Bay Area community — its waterfront humidity and salt air included — inside and out.</p>
+  <p>Clear Lake is one of the most distinctive communities in the Houston metro, it grew up around NASA-Johnson Space Center in the 1960s and developed into the cultural and residential heart of the Bay Area. Today it's home to engineers, aerospace professionals, families, and waterfront homeowners across the 77058, 77059, and 77062 zip codes. We've been servicing AC units in Clear Lake homes for nearly 40 years, and we know this Bay Area community, its waterfront humidity and salt air included, inside and out.</p>
 
   <p>Family-owned since 1986. Licensed Texas HVAC contractor (TACLB12058E). BBB A+ accredited. We know this community.</p>
 
   <h3>HVAC Services We Provide in Clear Lake</h3>
   <ul>
-    <li><strong>AC repair</strong> — same-day service for Clear Lake homes, all makes and models</li>
-    <li><strong>Heating repair</strong> — furnace and heat pump diagnostics for those Bay Area cold snaps</li>
-    <li><strong>New AC installation</strong> — proper Manual J load calculations, top brands, licensed installation</li>
-    <li><strong>Annual maintenance tune-ups</strong> — spring AC and fall heating service to prevent breakdowns</li>
+    <li><strong>AC repair</strong>, same-day service for Clear Lake homes, all makes and models</li>
+    <li><strong>Heating repair</strong>, furnace and heat pump diagnostics for those Bay Area cold snaps</li>
+    <li><strong>New AC installation</strong>, proper Manual J load calculations, top brands, licensed installation</li>
+    <li><strong>Annual maintenance tune-ups</strong>, spring AC and fall heating service to prevent breakdowns</li>
   </ul>
 
   <h3>We Know Clear Lake Homes</h3>
-  <p>Clear Lake's housing tells the story of the Space Race. A huge portion of the area was built up between the 1960s and 1970s as NASA expanded — neighborhoods like Bay Oaks, Clear Lake Forest, Brook Forest, University Park, and the Nassau Bay community were designed and constructed during that boom. These homes are well-built, but the HVAC equipment and ductwork in many of them dates back to the original construction or hasn't been comprehensively updated. That means original cloth-wrapped ducting, undersized return air for modern high-efficiency systems, single-stage equipment where modern two-stage or variable-speed systems would deliver dramatic efficiency gains, and in some cases AC systems still using R-22 refrigerant that was phased out in 2020 and is now prohibitively expensive to recharge.</p>
+  <p>Clear Lake's housing tells the story of the Space Race. A huge portion of the area was built up between the 1960s and 1970s as NASA expanded, neighborhoods like Bay Oaks, Clear Lake Forest, Brook Forest, University Park, and the Nassau Bay community were designed and constructed during that boom. These homes are well-built, but the HVAC equipment and ductwork in many of them dates back to the original construction or hasn't been comprehensively updated. That means original cloth-wrapped ducting, undersized return air for modern high-efficiency systems, single-stage equipment where modern two-stage or variable-speed systems would deliver dramatic efficiency gains, and in some cases AC systems still using R-22 refrigerant that was phased out in 2020 and is now prohibitively expensive to recharge.</p>
 
   <p>The waterfront communities are a different challenge. Homes in Nassau Bay, Taylor Lake Village, El Lago, Seabrook, and along the shorelines of Clear Lake and Galveston Bay see accelerated corrosion on outdoor condenser units. Salt-laden Gulf air eats through coil fins, copper line sets, and electrical contactors faster than it does inland. We inspect for coastal wear during every maintenance visit and can recommend coastal-rated equipment when it's time to replace.</p>
 
-  <p>Then there's the climate. Clear Lake sits right on Galveston Bay, which means high humidity year-round, hurricane and tropical storm exposure (Hurricane Ike's 2008 storm surge devastated parts of this area), and the kind of summer heat where AC systems run nearly nonstop from May through October. Equipment in Clear Lake homes works harder than equipment in inland communities — which is why annual maintenance pays for itself many times over.</p>
+  <p>Then there's the climate. Clear Lake sits right on Galveston Bay, which means high humidity year-round, hurricane and tropical storm exposure (Hurricane Ike's 2008 storm surge devastated parts of this area), and the kind of summer heat where AC systems run nearly nonstop from May through October. Equipment in Clear Lake homes works harder than equipment in inland communities, which is why annual maintenance pays for itself many times over.</p>
 
   <h3>Recent Clear Lake Work</h3>
-  <p>Here's what that coastal wear looks like in practice. We recently replaced a Clear Lake homeowner's outdoor condenser that was badly corroded and worn out after years in this salt-air environment, along with a matching new evaporator coil. Her furnace, though, was still in good shape — so we left it alone and saved her a significant amount of money rather than selling her a full system she didn't need. That's the honest approach that's earned our reputation over nearly four decades: replace what's actually failed, keep what's still good, and get you comfortable again fast.</p>
+  <p>Here's what that coastal wear looks like in practice. We recently replaced a Clear Lake homeowner's outdoor condenser that was badly corroded and worn out after years in this salt-air environment, along with a matching new evaporator coil. Her furnace, though, was still in good shape, so we left it alone and saved her a significant amount of money rather than selling her a full system she didn't need. That's the honest approach that's earned our reputation over nearly four decades: replace what's actually failed, keep what's still good, and get you comfortable again fast.</p>
 
   <h3>Why Clear Lake Homeowners Choose Mabry's</h3>
   <ul>
-    <li>Bay Area–based — a local company that knows Clear Lake and the NASA Parkway communities</li>
-    <li>Flat-rate pricing with no hidden charges — we tell you the price before we start</li>
-    <li>No extra charge for evenings or weekends — ever</li>
-    <li>Family-owned and operated since 1986 — talk to us, not a national call center</li>
+    <li>Bay Area–based, a local company that knows Clear Lake and the NASA Parkway communities</li>
+    <li>Flat-rate pricing with no hidden charges, we tell you the price before we start</li>
+    <li>No extra charge for evenings or weekends, ever</li>
+    <li>Family-owned and operated since 1986, talk to us, not a national call center</li>
     <li>BBB A+ Accredited Business, multiple BBB Gold Star Award winner</li>
     <li>Licensed Texas HVAC Contractor (TACLB12058E)</li>
-    <li>Residential specialists — homes are all we do, no commercial detours</li>
+    <li>Residential specialists, homes are all we do, no commercial detours</li>
     <li>Experience with both NASA-era homes and modern construction across the Bay Area</li>
   </ul>
 
@@ -121,7 +121,7 @@ export default async function ClearLakePage() {
             AC Repair &amp; HVAC Service in Clear Lake, TX — Bay Area's Trusted Choice Since 1986
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mb-6">
-            Family-owned and Bay Area–based. Same-day AC repair for Bay Oaks, Nassau Bay, Clear Lake Forest, and the entire NASA-area community — no extra charge for evenings or weekends.
+            Family-owned and Bay Area–based. Same-day AC repair for Bay Oaks, Nassau Bay, Clear Lake Forest, and the entire NASA-area community, no extra charge for evenings or weekends.
           </p>
           <div className="flex flex-wrap gap-4 items-center mb-6">
             <a
@@ -147,7 +147,7 @@ export default async function ClearLakePage() {
             >
               <img
                 src="https://seal-houston.bbb.org/seals/blue-seal-200-42-bbb-50000805.png"
-                alt="BBB Accredited Business — A+ Rated"
+                alt="BBB Accredited Business, A+ Rated"
                 width={200}
                 height={42}
                 style={{ border: 0 }}
@@ -162,12 +162,12 @@ export default async function ClearLakePage() {
           {/* Urgency */}
           <p className="text-white/80 text-sm flex items-center gap-2">
             <Clock className="w-4 h-4 text-accent shrink-0" />
-            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends — ever.
+            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends, ever.
           </p>
         </div>
       </section>
 
-      {/* Visible pricing band — transparent pricing up top */}
+      {/* Visible pricing band, transparent pricing up top */}
       <PricingBand className="bg-white pt-10 pb-2" />
 
       {/* Trust Bar */}

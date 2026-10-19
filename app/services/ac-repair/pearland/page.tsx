@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: "How much does AC repair cost in Pearland TX?",
-    answer: "Common AC repairs in Pearland typically range from $150–$600. Capacitor replacements run $150–$350. Refrigerant recharges run $200–$450. Condensate drain clearing runs $100–$200. Major compressor-related repairs can run $400–$1,200+. We use flat-rate pricing — you get the exact cost before we start, no surprises.",
+    answer: "Common AC repairs in Pearland typically range from $150–$600. Capacitor replacements run $150–$350. Refrigerant recharges run $200–$450. Condensate drain clearing runs $100–$200. Major compressor-related repairs can run $400–$1,200+. We use flat-rate pricing, you get the exact cost before we start, no surprises.",
   },
   {
     question: "Why does my AC work in the morning but struggle in the afternoon in Pearland?",
@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     question: "Is it worth repairing my AC in Pearland, or should I replace it?",
-    answer: "The general rule: if repair cost exceeds half the replacement cost and your system is 10+ years old, replacement is usually the better investment. Many homes in Shadow Creek Ranch and Silverlake have systems built in the mid-2000s that are now 15–20 years old — we'll give you an honest assessment of whether a repair buys you meaningful additional life.",
+    answer: "The general rule: if repair cost exceeds half the replacement cost and your system is 10+ years old, replacement is usually the better investment. Many homes in Shadow Creek Ranch and Silverlake have systems built in the mid-2000s that are now 15–20 years old, we'll give you an honest assessment of whether a repair buys you meaningful additional life.",
   },
   {
     question: "What are the most common AC problems in Pearland TX?",
@@ -32,27 +32,27 @@ const faqs = [
   },
   {
     question: "Do you serve Shadow Creek Ranch and Silverlake in Pearland?",
-    answer: "Yes — we serve all of Pearland including Shadow Creek Ranch, Silverlake, Old Townsite, Country Place, Massey Ranch, Southern Trails, and all neighborhoods in the 77581, 77584, and 77588 zip codes.",
+    answer: "Yes, we serve all of Pearland including Shadow Creek Ranch, Silverlake, Old Townsite, Country Place, Massey Ranch, Southern Trails, and all neighborhoods in the 77581, 77584, and 77588 zip codes.",
   },
 ];
 
 const content = `
   <h2>AC Repair in Pearland, TX — All Neighborhoods, All Brands, Same-Day Service</h2>
-  <p>Pearland summers are no joke — heat indexes above 110°F combined with Gulf Coast humidity make a broken AC a genuine emergency. Whether you're in Shadow Creek Ranch, Silverlake, Old Townsite, or anywhere along the Highway 288 corridor, Mabry's Air Conditioning &amp; Heating is your local choice for fast, honest AC repair. Call 281-331-5248.</p>
+  <p>Pearland summers are no joke, heat indexes above 110°F combined with Gulf Coast humidity make a broken AC a genuine emergency. Whether you're in Shadow Creek Ranch, Silverlake, Old Townsite, or anywhere along the Highway 288 corridor, Mabry's Air Conditioning &amp; Heating is your local choice for fast, honest AC repair. Call 281-331-5248.</p>
 
   <h3>Common AC Problems We Fix in Pearland</h3>
   <ul>
-    <li><strong>AC not blowing cold air</strong> — Low refrigerant, failed capacitor, or dirty evaporator coil. All common in Pearland during the summer cooling season.</li>
-    <li><strong>AC running but not cooling the house</strong> — If your system runs all day but can't hit your set temperature, it may be low on refrigerant, have a restricted airflow problem, or be undersized for your home's load.</li>
-    <li><strong>AC struggling in the afternoon heat</strong> — When Gulf Coast temperatures and humidity peak, struggling AC systems reveal their underlying issues. Low refrigerant and dirty coils show up most clearly on the hottest days.</li>
-    <li><strong>Condensate drain clogged</strong> — High humidity means condensate pans fill fast. A clogged drain overflows into your ceiling or walls. We clear and treat drains on every maintenance call and offer emergency service when they fail.</li>
-    <li><strong>AC stopped working suddenly</strong> — Capacitor failure, tripped breaker, or burnt contactor. We carry the most common parts on every truck for same-day repairs.</li>
-    <li><strong>AC freezing up / ice on coils</strong> — Shut the system off immediately. This indicates low refrigerant or blocked airflow. Running it further destroys the compressor.</li>
-    <li><strong>AC making noise</strong> — Grinding, squealing, or banging all indicate specific mechanical failures. Diagnosing early costs far less than waiting.</li>
+    <li><strong>AC not blowing cold air</strong>: Low refrigerant, failed capacitor, or dirty evaporator coil. All common in Pearland during the summer cooling season.</li>
+    <li><strong>AC running but not cooling the house</strong>: If your system runs all day but can't hit your set temperature, it may be low on refrigerant, have a restricted airflow problem, or be undersized for your home's load.</li>
+    <li><strong>AC struggling in the afternoon heat</strong>: When Gulf Coast temperatures and humidity peak, struggling AC systems reveal their underlying issues. Low refrigerant and dirty coils show up most clearly on the hottest days.</li>
+    <li><strong>Condensate drain clogged</strong>: High humidity means condensate pans fill fast. A clogged drain overflows into your ceiling or walls. We clear and treat drains on every maintenance call and offer emergency service when they fail.</li>
+    <li><strong>AC stopped working suddenly</strong>: Capacitor failure, tripped breaker, or burnt contactor. We carry the most common parts on every truck for same-day repairs.</li>
+    <li><strong>AC freezing up / ice on coils</strong>: Shut the system off immediately. This indicates low refrigerant or blocked airflow. Running it further destroys the compressor.</li>
+    <li><strong>AC making noise</strong>: Grinding, squealing, or banging all indicate specific mechanical failures. Diagnosing early costs far less than waiting.</li>
   </ul>
 
   <h3>What Does AC Repair Cost in Pearland, TX?</h3>
-  <p>We use flat-rate pricing — exact cost before we start:</p>
+  <p>We use flat-rate pricing, exact cost before we start:</p>
   <ul>
     <li>Capacitor replacement: $150–$350</li>
     <li>Refrigerant recharge (with leak check): $200–$450</li>
@@ -63,21 +63,21 @@ const content = `
   <p>No overtime charges. No extra fees for evenings or weekends. No surprises.</p>
 
   <h3>We Know Pearland's Neighborhoods</h3>
-  <p>Pearland's three zip codes — 77581, 77584, and 77588 — span Brazoria and Harris counties and cover an enormous range of housing. Old Pearland and Country Place have 1970s-era homes with older ductwork and systems that may be on their second or third replacement. Shadow Creek Ranch and Silverlake — built primarily in the 2000s — have builder-grade systems that are now 15–20 years old and entering the repair-or-replace window. Newer developments along Highway 288 have modern systems that reward proactive maintenance.</p>
+  <p>Pearland's three zip codes, 77581, 77584, and 77588, span Brazoria and Harris counties and cover an enormous range of housing. Old Pearland and Country Place have 1970s-era homes with older ductwork and systems that may be on their second or third replacement. Shadow Creek Ranch and Silverlake, built primarily in the 2000s, have builder-grade systems that are now 15–20 years old and entering the repair-or-replace window. Newer developments along Highway 288 have modern systems that reward proactive maintenance.</p>
   <p>We've been serving Pearland through all of this growth, and we know what each generation of homes needs.</p>
 
   <h3>Should You Repair or Replace Your Pearland AC?</h3>
-  <p>Many Pearland homeowners — especially in Shadow Creek Ranch and Silverlake — are facing this question right now. If your mid-2000s builder-grade system needs a major repair, we'll give you the honest comparison: repair cost vs. a new system's long-term value. No pressure, no upsell — just the information you need to make a smart decision.</p>
+  <p>Many Pearland homeowners, especially in Shadow Creek Ranch and Silverlake, are facing this question right now. If your mid-2000s builder-grade system needs a major repair, we'll give you the honest comparison: repair cost vs. a new system's long-term value. No pressure, no upsell, just the information you need to make a smart decision.</p>
 
   <h3>Why Pearland Homeowners Choose Mabry's</h3>
   <ul>
     <li>Same-day service throughout Pearland's 77581, 77584, and 77588 zip codes</li>
-    <li>Nearly 40 years serving Pearland — through the city's entire growth</li>
-    <li>Flat-rate pricing — no overtime, no hidden charges</li>
-    <li>BBB A+ Accredited — multiple BBB Gold Star Award winner</li>
+    <li>Nearly 40 years serving Pearland, through the city's entire growth</li>
+    <li>Flat-rate pricing, no overtime, no hidden charges</li>
+    <li>BBB A+ Accredited, multiple BBB Gold Star Award winner</li>
     <li>Voted Favorite AC Company</li>
     <li>Licensed Texas HVAC contractor (TACLB12058E)</li>
-    <li>Residential specialists — homes are all we do</li>
+    <li>Residential specialists, homes are all we do</li>
   </ul>
 `;
 
@@ -118,7 +118,7 @@ export default function AcRepairPearlandPage() {
             AC Repair in Pearland, TX — All Neighborhoods, All Brands
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mb-6">
-            Shadow Creek Ranch, Silverlake, Old Townsite — wherever you are in Pearland, we're your same-day AC repair team. Flat-rate pricing, no extra charge for evenings or weekends.
+            Shadow Creek Ranch, Silverlake, Old Townsite, wherever you are in Pearland, we're your same-day AC repair team. Flat-rate pricing, no extra charge for evenings or weekends.
           </p>
           <div className="flex flex-wrap gap-4 items-center mb-6">
             <a href="tel:2813315248" className="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors">
@@ -131,7 +131,7 @@ export default function AcRepairPearlandPage() {
           </div>
           <div className="flex flex-wrap items-center gap-3 mb-5">
             <a href="https://www.bbb.org/us/tx/alvin/profile/air-conditioning-contractor/mabrys-air-conditioning-heating-inc-0915-50000805#sealclick" target="_blank" rel="nofollow" aria-label="Mabry's BBB Business Review">
-              <img src="https://seal-houston.bbb.org/seals/blue-seal-200-42-bbb-50000805.png" alt="BBB Accredited Business — A+ Rated" width={200} height={42} style={{ border: 0 }} className="rounded" />
+              <img src="https://seal-houston.bbb.org/seals/blue-seal-200-42-bbb-50000805.png" alt="BBB Accredited Business, A+ Rated" width={200} height={42} style={{ border: 0 }} className="rounded" />
             </a>
             <span className="inline-flex items-center gap-1.5 bg-accent/25 border border-accent/50 text-white text-xs font-semibold px-3 py-1.5 rounded-full">
               <Award className="w-3.5 h-3.5 shrink-0" /> Voted Favorite AC Company
@@ -139,7 +139,7 @@ export default function AcRepairPearlandPage() {
           </div>
           <p className="text-white/80 text-sm flex items-center gap-2">
             <Clock className="w-4 h-4 text-accent shrink-0" />
-            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends — ever.
+            Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends, ever.
           </p>
         </div>
       </section>
@@ -203,7 +203,7 @@ export default function AcRepairPearlandPage() {
 
               <div className="mt-8 p-6 bg-accent/10 rounded-xl border border-accent/20">
                 <h4 className="font-bold text-primary mb-2">AC Not Working in Pearland? Call Now.</h4>
-                <p className="text-muted-foreground mb-4">Same-day service available. Flat-rate pricing — know your cost before we start.</p>
+                <p className="text-muted-foreground mb-4">Same-day service available. Flat-rate pricing, know your cost before we start.</p>
                 <a href="tel:2813315248" className="inline-flex items-center gap-2 bg-accent text-white font-bold py-3 px-6 rounded-lg hover:bg-accent/90 transition-colors">
                   <Phone className="w-5 h-5" /> Call 281-331-5248
                 </a>
