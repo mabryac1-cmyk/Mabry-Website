@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { LeadForm } from "@/components/LeadForm";
 import { GoalCompletionBlock } from "@/components/GoalCompletionBlock";
 import { PricingBand } from "@/components/PricingBand";
+import { AreaHeroPhoto } from "@/components/AreaHeroPhoto";
 import { pricingMainEntity } from "@/lib/pricingSchema";
 import { locations, getLocationBySlug, businessInfo, services } from "@/lib/data";
 import { ArrowLeft, Phone, CheckCircle, Wrench, Clock, Shield, Award } from "lucide-react";
@@ -153,6 +154,8 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
           <Link href="/" className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors">
             <ArrowLeft className="w-4 h-4" /> Back to Home
           </Link>
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div>
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">{location.headline}</h1>
           <p className="text-xl text-white/90 max-w-2xl">{location.description}</p>
           <div className="mt-6 flex flex-wrap gap-4 items-center">
@@ -189,6 +192,11 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
             <span className="inline-flex items-center gap-1.5 bg-accent/25 border border-accent/50 text-white text-xs font-semibold px-3 py-1.5 rounded-full">
               <Award className="w-3.5 h-3.5 shrink-0" /> Voted Favorite AC Company
             </span>
+          </div>
+            </div>
+            <div className="mt-8 lg:mt-0">
+              <AreaHeroPhoto slug={slug} cityName={location.name} />
+            </div>
           </div>
         </div>
       </section>
