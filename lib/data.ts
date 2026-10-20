@@ -636,11 +636,11 @@ export const locations = [
     zipCodes: ["77504", "77505"],
     phone: "281-482-8400",
     isPrimary: false,
-    headline: "AC Repair & HVAC Service in Pasadena, TX (South Pasadena) — Flat-Rate Pricing",
-    description: "Expert residential HVAC service for South Pasadena homeowners. Licensed HVAC contractor serving the south side of Greater Houston since 1986.",
+    headline: "AC Repair & HVAC Service in Pasadena, TX — Flat-Rate Pricing",
+    description: "Expert residential HVAC service for Pasadena homeowners. Licensed HVAC contractor serving the south side of Greater Houston since 1986.",
     content: `
-      <h2>HVAC Service for South Pasadena Homeowners — 77504 and 77505</h2>
-      <p>Mabry's Air Conditioning & Heating serves the residential communities in South Pasadena, specifically the 77504 and 77505 zip codes. These are established neighborhoods with hardworking families who value honest work and fair pricing. That's exactly what we've delivered since 1986.</p>
+      <h2>HVAC Service for Pasadena Homeowners — 77504 and 77505</h2>
+      <p>Mabry's Air Conditioning & Heating serves the residential communities in Pasadena, specifically the 77504 and 77505 zip codes. These are established neighborhoods with hardworking families who value honest work and fair pricing. That's exactly what we've delivered since 1986.</p>
 
       <h3>HVAC Services We Provide in Pasadena</h3>
       <ul>
@@ -650,8 +650,8 @@ export const locations = [
         <li><strong>Annual maintenance tune-ups</strong>, prevent costly breakdowns</li>
       </ul>
 
-      <h3>We Know South Pasadena's Homes</h3>
-      <p>The South Pasadena neighborhoods we serve, along the Burke Road corridor, near Pasadena Memorial High School, and throughout the 77504 and 77505 zip codes, include established residential areas with homes built primarily from the 1960s through the 1990s. These homes often have older ductwork, original-era equipment that's been replaced one or two times, and in some cases attic ductwork that has developed leaks or deterioration over the decades.</p>
+      <h3>We Know Pasadena's Homes</h3>
+      <p>The Pasadena neighborhoods we serve, along the Burke Road corridor, near Pasadena Memorial High School, and throughout the 77504 and 77505 zip codes, include established residential areas with homes built primarily from the 1960s through the 1990s. These homes often have older ductwork, original-era equipment that's been replaced one or two times, and in some cases attic ductwork that has developed leaks or deterioration over the decades.</p>
 
       <p>The Houston Ship Channel corridor and Galveston Bay proximity mean Pasadena's Gulf Coast climate runs hot and humid for most of the year, and AC systems here log serious runtime hours from May through October. Regular filter changes, coil cleanings, and airflow checks keep your equipment running efficiently and your monthly electric bills manageable, we cover all of that on every service call.</p>
 
