@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Script from "next/script";
 import Link from "next/link";
 import { LeadForm } from "@/components/LeadForm";
+import { AreaHeroPhoto } from "@/components/AreaHeroPhoto";
 import { FAQSection } from "@/components/FAQSection";
 import { GoalCompletionBlock } from "@/components/GoalCompletionBlock";
 import { PricingBand } from "@/components/PricingBand";
@@ -116,6 +117,8 @@ export default async function LeagueCityPage() {
           <Link href="/" className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors">
             <ArrowLeft className="w-4 h-4" /> Back to Home
           </Link>
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div>
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
             AC Repair &amp; HVAC Service in League City, TX — Bay Area's Trusted Choice Since 1986
           </h1>
@@ -163,6 +166,11 @@ export default async function LeagueCityPage() {
             <Clock className="w-4 h-4 text-accent shrink-0" />
             Open late daily and Saturday for emergency and urgent calls. No extra charge for evenings or weekends, ever.
           </p>
+            </div>
+            <div className="mt-8 lg:mt-0">
+              <AreaHeroPhoto slug="league-city" cityName="League City" />
+            </div>
+          </div>
         </div>
       </section>
 
