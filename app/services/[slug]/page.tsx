@@ -170,6 +170,19 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             </div>
             {heroPhoto && (
               <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-xl border border-white/10">
+                <script
+                  type="application/ld+json"
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                      "@context": "https://schema.org",
+                      "@type": "ImageObject",
+                      url: `https://mabryac.com${heroPhoto.src}`,
+                      contentUrl: `https://mabryac.com${heroPhoto.src}`,
+                      caption: heroPhoto.alt,
+                      representativeOfPage: true,
+                    }),
+                  }}
+                />
                 <Image
                   src={heroPhoto.src}
                   alt={heroPhoto.alt}

@@ -9,8 +9,21 @@ import { getAreaHeroPhoto } from "@/lib/areaHeroPhoto";
  */
 export function AreaHeroPhoto({ slug, cityName }: { slug: string; cityName: string }) {
   const photo = getAreaHeroPhoto(slug, cityName);
+  const imageUrl = `https://mabryac.com${photo.src}`;
+  const imageSchema = {
+    "@context": "https://schema.org",
+    "@type": "ImageObject",
+    url: imageUrl,
+    contentUrl: imageUrl,
+    caption: photo.alt,
+    representativeOfPage: true,
+  };
   return (
     <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-xl border border-white/10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(imageSchema) }}
+      />
       <Image
         src={photo.src}
         alt={photo.alt}
