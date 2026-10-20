@@ -186,8 +186,8 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
               <Image
-                src="/photos/mabrys-ac-service-truck-neighborhood-alvin-tx.jpg"
-                alt="Mabry's Air Conditioning & Heating service truck at a customer's home in Alvin, TX"
+                src="/photos/mabrys-ac-shop-storefront-fleet-alvin-tx.jpg"
+                alt="Mabry's Air Conditioning & Heating shop storefront and service truck fleet in Alvin, TX"
                 width={1600}
                 height={1200}
                 className="w-full h-auto"
