@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { LeadForm } from "@/components/LeadForm";
 import { FAQSection } from "@/components/FAQSection";
@@ -67,6 +68,30 @@ const goalCompletionCopy: Record<string, string> = {
   "ac-maintenance": "Schedule your AC or heating tune-up anywhere in the Greater Houston area. We serve Alvin, Friendswood, Pearland, Manvel, Clear Lake, League City, Deer Park, Pasadena, and surrounding communities. Annual maintenance prevents costly breakdowns all year.",
 };
 
+/**
+ * Real above-the-fold photo for each service hero (Caleb visible-proof playbook).
+ * Rendered in a uniform 4:3 frame so every service page looks consistent regardless
+ * of the source photo's orientation. All files live in /public/photos.
+ */
+const serviceHeroPhoto: Record<string, { src: string; alt: string }> = {
+  "ac-repair": {
+    src: "/photos/mabrys-ac-repair-service-alvin-tx.jpg",
+    alt: "Mabry's Air Conditioning & Heating technician's gauges and tools during an AC repair in Alvin, TX",
+  },
+  "heating-repair": {
+    src: "/photos/mabrys-furnace-heating-installation-deer-park-tx.jpg",
+    alt: "Trane furnace installed and serviced by Mabry's Air Conditioning & Heating in the Greater Houston area",
+  },
+  "ac-installation": {
+    src: "/photos/mabrys-trane-ac-condenser-installation-alvin-tx.jpg",
+    alt: "New Trane AC condenser professionally installed by Mabry's Air Conditioning & Heating in Alvin, TX",
+  },
+  "ac-maintenance": {
+    src: "/photos/mabrys-ac-repair-service-friendswood-tx.jpg",
+    alt: "Mabry's Air Conditioning & Heating technician performing an AC and heating tune-up in the Greater Houston area",
+  },
+};
+
 const dualPhoneButtons = [
   { label: "", number: "281-331-5248", tel: "2813315248" },
   { label: "", number: "281-482-8400", tel: "2814828400" },
@@ -109,6 +134,8 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
     notFound();
   }
 
+  const heroPhoto = serviceHeroPhoto[slug];
+
   return (
     <>
       <script
@@ -120,20 +147,36 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <Link href="/" className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors">
             <ArrowLeft className="w-4 h-4" /> Back to Home
           </Link>
-          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">{service.title}</h1>
-          <p className="text-xl text-white/90 max-w-2xl">{service.description}</p>
-          <div className="mt-6 flex flex-wrap gap-4">
-            <a 
-              href={`tel:${businessInfo.phone}`}
-              className="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
-            >
-              <Phone className="w-5 h-5" />
-              {businessInfo.phone}
-            </a>
-            <div className="flex items-center gap-2 text-white/80">
-              <CheckCircle className="w-5 h-5 text-accent" />
-              <span>License {businessInfo.license}</span>
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">{service.title}</h1>
+              <p className="text-xl text-white/90 max-w-2xl">{service.description}</p>
+              <div className="mt-6 flex flex-wrap gap-4">
+                <a
+                  href={`tel:${businessInfo.phone}`}
+                  className="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
+                >
+                  <Phone className="w-5 h-5" />
+                  {businessInfo.phone}
+                </a>
+                <div className="flex items-center gap-2 text-white/80">
+                  <CheckCircle className="w-5 h-5 text-accent" />
+                  <span>License {businessInfo.license}</span>
+                </div>
+              </div>
             </div>
+            {heroPhoto && (
+              <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-xl border border-white/10">
+                <Image
+                  src={heroPhoto.src}
+                  alt={heroPhoto.alt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  priority
+                />
+              </div>
+            )}
           </div>
         </div>
       </section>
