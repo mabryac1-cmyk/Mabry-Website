@@ -4,7 +4,8 @@ import Script from "next/script";
 import { LeadForm } from "@/components/LeadForm";
 import { FAQSection } from "@/components/FAQSection";
 import { businessInfo, services, locations, generalFaqs } from "@/lib/data";
-import { Shield, Clock, Award, ArrowRight, MapPin, Phone, Star } from "lucide-react";
+import Image from "next/image";
+import { Shield, Clock, Award, ArrowRight, MapPin, Phone, Star, CheckCircle } from "lucide-react";
 import { PricingBand } from "@/components/PricingBand";
 
 export const metadata: Metadata = {
@@ -169,6 +170,43 @@ export default function Home() {
                 </div>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Shop & Fleet, real-business trust band */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
+              <Image
+                src="/photos/mabrys-ac-service-trucks-shop-alvin-tx.jpg"
+                alt="Mabry's Air Conditioning & Heating shop and service truck fleet in Alvin, TX"
+                width={1500}
+                height={1125}
+                className="w-full h-auto"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
+            <div>
+              <div className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Family-Owned Since 1986</div>
+              <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-4">A Real Shop and a Real Crew, Right Here in Alvin</h2>
+              <p className="text-lg text-muted-foreground mb-6">
+                When you call Mabry&apos;s, you reach a family business that&apos;s served the greater Houston area for nearly 40 years, from our shop at 2110 S Gordon Street in Alvin. Our fully stocked trucks and licensed technicians are out in your neighborhood every day, not a call center three states away.
+              </p>
+              <ul className="space-y-2">
+                {[
+                  "Local shop and fleet: we're your neighbors, not a national chain",
+                  "Licensed Texas HVAC contractor (TACLB12058E), BBB A+ rated",
+                  "Nearly four decades serving Alvin, Friendswood, Pearland and beyond",
+                ].map((t) => (
+                  <li key={t} className="flex items-start gap-2 text-primary">
+                    <CheckCircle className="w-5 h-5 text-accent shrink-0 mt-0.5" />
+                    <span>{t}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
