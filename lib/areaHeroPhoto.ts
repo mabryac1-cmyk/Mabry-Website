@@ -36,7 +36,9 @@ const CITY_PHOTOS: Record<string, AreaPhoto> = {
   pasadena: {
     src: "/photos/mabrys-trane-ac-condenser-service-pasadena-tx.jpg",
     alt: "Trane AC condenser serviced by Mabry's Air Conditioning & Heating in Pasadena, TX",
-    pos: "object-center",
+    // Tall equipment shot: anchor to top so the Trane badge + gauges show cleanly
+    // (crops the plain base/ground at the bottom instead of the top of the unit).
+    pos: "object-top",
   },
 };
 
