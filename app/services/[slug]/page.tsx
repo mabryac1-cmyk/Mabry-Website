@@ -73,10 +73,11 @@ const goalCompletionCopy: Record<string, string> = {
  * Rendered in a uniform 4:3 frame so every service page looks consistent regardless
  * of the source photo's orientation. All files live in /public/photos.
  */
-const serviceHeroPhoto: Record<string, { src: string; alt: string }> = {
+const serviceHeroPhoto: Record<string, { src: string; alt: string; pos?: string }> = {
   "ac-repair": {
     src: "/photos/mabrys-ac-repair-service-alvin-tx.jpg",
     alt: "Mabry's Air Conditioning & Heating technician's gauges and tools during an AC repair in Alvin, TX",
+    pos: "object-top", // tall shot: anchor crop to the top so the full condenser shows
   },
   "heating-repair": {
     src: "/photos/mabrys-furnace-heating-installation-deer-park-tx.jpg",
@@ -85,10 +86,12 @@ const serviceHeroPhoto: Record<string, { src: string; alt: string }> = {
   "ac-installation": {
     src: "/photos/mabrys-trane-ac-condenser-installation-alvin-tx.jpg",
     alt: "New Trane AC condenser professionally installed by Mabry's Air Conditioning & Heating in Alvin, TX",
+    pos: "object-top", // tall shot: keep the condenser in frame
   },
   "ac-maintenance": {
     src: "/photos/mabrys-ac-repair-service-friendswood-tx.jpg",
     alt: "Mabry's Air Conditioning & Heating technician performing an AC and heating tune-up in the Greater Houston area",
+    pos: "object-top", // tall shot: anchor crop to the top so the equipment shows
   },
 };
 
@@ -171,7 +174,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                   src={heroPhoto.src}
                   alt={heroPhoto.alt}
                   fill
-                  className="object-cover"
+                  className={`object-cover ${heroPhoto.pos ?? "object-center"}`}
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   priority
                 />
