@@ -22,9 +22,11 @@ interface LeadFormProps {
   className?: string;
   preselectedService?: string;
   preselectedCity?: string;
+  /** Optional real photo banner across the top of the card (used in the homepage hero). */
+  topPhoto?: { src: string; alt: string };
 }
 
-export function LeadForm({ className = "", preselectedService, preselectedCity }: LeadFormProps) {
+export function LeadForm({ className = "", preselectedService, preselectedCity, topPhoto }: LeadFormProps) {
   const [isSuccess, setIsSuccess] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
@@ -86,6 +88,16 @@ export function LeadForm({ className = "", preselectedService, preselectedCity }
 
   return (
     <div className={`bg-white rounded-2xl p-8 shadow-xl ${className}`}>
+      {topPhoto && (
+        <div className="-mx-8 -mt-8 mb-6 overflow-hidden rounded-t-2xl">
+          <img
+            src={topPhoto.src}
+            alt={topPhoto.alt}
+            className="w-full h-48 object-cover"
+            loading="eager"
+          />
+        </div>
+      )}
       {/* Service Call Pricing Ribbon */}
       <div className="mb-5 p-3 bg-accent/10 rounded-lg border border-accent/30">
         <p className="text-sm text-gray-800 leading-snug">
