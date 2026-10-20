@@ -44,7 +44,32 @@ const businessSchema = {
   "name": "Mabry's Air Conditioning & Heating, Inc.",
   "url": "https://mabryac.com",
   "logo": "https://mabryac.com/logo.png",
-  "image": "https://mabryac.com/logo.png",
+  "image": [
+    {
+      "@type": "ImageObject",
+      "url": "https://mabryac.com/photos/mabrys-ac-shop-storefront-fleet-alvin-tx.jpg",
+      "contentUrl": "https://mabryac.com/photos/mabrys-ac-shop-storefront-fleet-alvin-tx.jpg",
+      "caption": "Mabry's Air Conditioning & Heating shop storefront and service truck fleet at 2110 S Gordon St, Alvin, TX",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://mabryac.com/photos/mabrys-ac-service-trucks-shop-alvin-tx.jpg",
+      "contentUrl": "https://mabryac.com/photos/mabrys-ac-service-trucks-shop-alvin-tx.jpg",
+      "caption": "Mabry's Air Conditioning & Heating branded service truck fleet at the Alvin, TX shop",
+      "width": 1500,
+      "height": 1125
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://mabryac.com/photos/mabrys-trane-ac-condenser-installation-alvin-tx.jpg",
+      "contentUrl": "https://mabryac.com/photos/mabrys-trane-ac-condenser-installation-alvin-tx.jpg",
+      "caption": "New Trane AC condenser professionally installed by Mabry's Air Conditioning & Heating in Alvin, TX",
+      "width": 1543,
+      "height": 1600
+    }
+  ],
   "description": "Family-owned residential HVAC company serving the greater Houston area since 1986. AC repair, heating repair, and installation with flat-rate pricing and no hidden charges. BBB A+ rated. License TACLB12058E.",
   "foundingDate": "1986",
   "priceRange": "$$",
