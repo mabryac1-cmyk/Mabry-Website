@@ -242,6 +242,9 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4 text-primary">Our Locations</h2>
             <div className="w-24 h-1 bg-accent mx-auto"></div>
+            <p className="mt-6 text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              No matter where you are, we&apos;ve got you covered. Our two locations let us reach you fast, from Deer Park and Clear Lake to Sienna and Pearland, and all areas in between. Family-owned and local since 1986, we&apos;re never far when you need us.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
