@@ -157,6 +157,13 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Mobile-only Schedule Today form, moved up to right after the reviews so the social proof primes the ask (desktop uses the hero form) */}
+      <section className="lg:hidden py-16 px-4 bg-white">
+        <div className="max-w-md mx-auto">
+          <LeadForm />
+        </div>
+      </section>
+
       {/* 4, Our HVAC Services */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -326,12 +333,6 @@ export default function Home() {
             </p>
           </div>
           <FAQSection faqs={generalFaqs} title="" schemaId="faq-schema-homepage" />
-        </div>
-      </section>
-
-      <section className="lg:hidden py-16 px-4 bg-white">
-        <div className="max-w-md mx-auto">
-          <LeadForm />
         </div>
       </section>
     </>
