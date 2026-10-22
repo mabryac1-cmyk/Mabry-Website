@@ -37,14 +37,13 @@ export default function Home() {
               Full-Service HVAC — Air Conditioning, Heating &amp; Maintenance Since 1986
             </h2>
 
-            {/* Mobile-only hero photo: shop & fleet, high on the page for phones + mobile-first indexing (desktop shows it in the form card) */}
-            <div className="lg:hidden rounded-2xl overflow-hidden shadow-xl border border-white/20">
+            {/* Mobile-only hero photo: shop & fleet, cropped to a short 16:9 banner so the orange call-to-action box peeks above the fold on phones (desktop shows the full photo in the form card) */}
+            <div className="lg:hidden relative aspect-[16/9] w-full rounded-2xl overflow-hidden shadow-xl border border-white/20">
               <Image
                 src="/photos/mabrys-ac-service-trucks-shop-alvin-tx.jpg"
                 alt="Mabry's Air Conditioning & Heating shop and service truck fleet in Alvin, TX"
-                width={1500}
-                height={1125}
-                className="w-full h-auto"
+                fill
+                className="object-cover object-center"
                 sizes="100vw"
                 priority
               />
