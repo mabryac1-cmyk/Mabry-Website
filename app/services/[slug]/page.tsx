@@ -86,7 +86,7 @@ const serviceHeroPhoto: Record<string, { src: string; alt: string; pos?: string 
   "ac-installation": {
     src: "/photos/mabrys-trane-ac-condenser-installation-alvin-tx.jpg",
     alt: "New Trane AC condenser professionally installed by Mabry's Air Conditioning & Heating in Alvin, TX",
-    pos: "object-top", // tall shot: keep the condenser in frame
+    pos: "object-bottom", // the unit sits low in this shot: anchor to the bottom so the condenser shows, not the brick wall above it
   },
   "ac-maintenance": {
     src: "/photos/mabrys-ac-repair-service-friendswood-tx.jpg",
