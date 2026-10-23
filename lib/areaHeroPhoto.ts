@@ -40,6 +40,11 @@ const CITY_PHOTOS: Record<string, AreaPhoto> = {
     // (crops the plain base/ground at the bottom instead of the top of the unit).
     pos: "object-top",
   },
+  pearland: {
+    src: "/photos/mabrys-ac-service-truck-neighborhood-pearland-tx.jpg",
+    alt: "Mabry's Air Conditioning & Heating branded service truck at a Pearland, TX home",
+    pos: "object-center",
+  },
 };
 
 /**
