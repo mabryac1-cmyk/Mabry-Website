@@ -12,7 +12,7 @@ import { PricingBand } from "@/components/PricingBand";
 
 export const metadata: Metadata = {
   title: "AC Repair Alvin TX | Mabry's AC & Heating",
-  description: "Mabry's AC & Heating — Alvin's hometown HVAC company since 1986. Shop at 2110 S Gordon St. Same-day AC repair, flat-rate pricing, no extra charge for evenings or weekends. BBB A+. Call 281-331-5248.",
+  description: "Mabry's AC & Heating — Alvin-dispatched HVAC since 1986, serving Alvin, Pearland & surrounding communities. Same-day repair, flat-rate pricing, BBB A+.",
   alternates: {
     canonical: "/areas/alvin",
   },
