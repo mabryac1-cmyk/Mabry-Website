@@ -12,7 +12,7 @@ import { PricingBand } from "@/components/PricingBand";
 
 export const metadata: Metadata = {
   title: "AC Repair Friendswood TX | Mabry's AC & Heating",
-  description: "Trusted AC repair & HVAC service in Friendswood TX since 1986. Flat-rate pricing, no extra charge for evenings or weekends. BBB A+. Dedicated Friendswood line: 281-482-8400.",
+  description: "Serving Friendswood, Deer Park, Pasadena & Bay Area families since 1986 — same-day HVAC & AC repair, flat-rate pricing, BBB A+.",
   alternates: {
     canonical: "/areas/friendswood",
   },
@@ -183,10 +183,10 @@ export default async function FriendswoodPage() {
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            AC Repair &amp; HVAC Serving Friendswood, TX &amp; the Greater Bay Area — Trusted Since 1986
+            AC Repair &amp; HVAC Experts Serving Friendswood, Deer Park, Pasadena &amp; the Bay Area — Since 1986
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mb-6">
-            Serving Friendswood families for nearly 40 years, along with the Greater Clear Lake area. Flat-rate pricing, BBB A+.
+            Fast, friendly HVAC across the Bay Area since 1986 — wherever you are, we can help fast. Flat-rate pricing, BBB A+.
           </p>
           <div className="flex flex-wrap gap-4 items-center mb-6">
             <a
