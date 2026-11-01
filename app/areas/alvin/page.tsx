@@ -183,7 +183,7 @@ export default async function AlvinPage() {
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            AC Repair &amp; HVAC Serving Alvin, Pearland &amp; Surrounding Greater Houston Area — Your Local Experts Since 1986
+            AC Repair &amp; HVAC Experts Serving Alvin, Pearland &amp; Surrounding Communities — Since 1986
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mb-6">
             Alvin&apos;s hometown HVAC company since 1986, proudly serving the Alvin, Pearland, and Manvel areas from our shop at 2110 S Gordon St, minutes from wherever you are.
