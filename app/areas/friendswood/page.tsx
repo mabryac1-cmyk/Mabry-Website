@@ -207,12 +207,12 @@ export default async function FriendswoodPage() {
             <p className="text-white/90 text-xl leading-relaxed">
               <span className="font-semibold text-white">Proudly serving Friendswood &amp; the Bay Area:</span>{" "}
               {[
-                { name: "League City", href: "/areas/league-city" },
-                { name: "Clear Lake", href: "/areas/clear-lake" },
-                { name: "Kemah", href: "/areas/clear-lake" },
                 { name: "Deer Park", href: "/areas/deer-park" },
                 { name: "Pasadena", href: "/areas/pasadena" },
+                { name: "Clear Lake", href: "/areas/clear-lake" },
+                { name: "League City", href: "/areas/league-city" },
                 { name: "Webster", href: "/areas/league-city" },
+                { name: "Kemah", href: "/areas/clear-lake" },
               ].map((c, i, arr) => (
                 <span key={c.name}>
                   <Link
