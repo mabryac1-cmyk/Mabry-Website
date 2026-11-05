@@ -247,7 +247,7 @@ export const BRAND_INFO: Record<Brand, { name: string; tagline: string }> = {
 
 // ============================================================================
 // SERVICE & REPAIR PRICING
-// Source: Service Price List 2026 (effective 05/01/26)
+// Source: Service Price List 2026 (effective 05/01/26; repair prices updated 11/05/26)
 // "All items not listed shall be quoted thru office. Prices subject to change."
 // ============================================================================
 
@@ -287,10 +287,10 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     description: "Recharge for R-410A, R-454B, and R-32 systems",
     warning: "EPA R-22 Phaseout in Effect — R-22 refrigerant service is no longer available",
     items: [
-      { id: "recharge-low", name: "Recharge — Suction Below 50 psi", price: 239 },
-      { id: "recharge-high", name: "Recharge — Suction Above 50 psi", price: 149 },
-      { id: "filter-drier", name: "Filter / Drier Change Out", price: 860 },
-      { id: "exp-valve", name: "Expansion Valve Replacement", price: 1360, note: "If serviceable" },
+      { id: "recharge-low", name: "Recharge — Suction Below 50 psi", price: 339 },
+      { id: "recharge-high", name: "Recharge — Suction Above 50 psi", price: 239 },
+      { id: "filter-drier", name: "Filter / Drier Change Out", price: 1260 },
+      { id: "exp-valve", name: "Expansion Valve Replacement", price: 1860, note: "If serviceable" },
       { id: "leak-check", name: "Leak Check / Locate", price: 360, note: "No guarantee" },
     ],
   },
@@ -298,9 +298,9 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "fan-motors",
     name: "Fan Motors",
     items: [
-      { id: "condenser-fan", name: "Condenser Fan Motor", price: 519, note: "Variable speed = office quote" },
-      { id: "blower-small", name: "Blower Motor — 1/3 to 1/2 HP", priceRange: [679, 869] },
-      { id: "blower-large", name: "Blower Motor — 3/4 to 1 HP", priceRange: [789, 1260] },
+      { id: "condenser-fan", name: "Condenser Fan Motor", price: 749, note: "Variable speed = office quote" },
+      { id: "blower-small", name: "Blower Motor — 1/3 to 1/2 HP", price: 1069 },
+      { id: "blower-large", name: "Blower Motor — 3/4 to 1 HP", price: 1289 },
       { id: "blower-ecm", name: "Blower Motor — ECM Variable Speed", officeQuote: true, note: "Many require factory OEM motors only and programming" },
     ],
   },
@@ -309,8 +309,8 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     name: "Electrical Controls — Condenser",
     items: [
       { id: "contactor", name: "Contactor", price: 139 },
-      { id: "start-kit", name: "Start Kit", price: 239 },
-      { id: "soft-start-icm", name: "Soft Start Kit — ICM", price: 569 },
+      { id: "start-kit", name: "Start Kit", price: 289 },
+      { id: "soft-start-icm", name: "Soft Start Kit — ICM", price: 769 },
       { id: "cap-single", name: "Capacitor (Single)", price: 89 },
       { id: "cap-dual", name: "Capacitor (Dual)", price: 149 },
       { id: "disconnect", name: "Disconnect (includes whip)", price: 469 },
@@ -321,13 +321,13 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "electrical-heater",
     name: "Electrical Controls — Heater / Air Handler",
     items: [
-      { id: "transformer", name: "Transformer", price: 269 },
-      { id: "sequencer", name: "Sequencer", price: 269 },
+      { id: "transformer", name: "Transformer", price: 319 },
+      { id: "sequencer", name: "Sequencer", price: 369 },
       { id: "gas-valve", name: "Gas Valve", officeQuote: true },
-      { id: "pressure-switch", name: "Pressure Switch", price: 569 },
+      { id: "pressure-switch", name: "Pressure Switch", price: 869 },
       { id: "float-switch", name: "Float Switch", price: 269 },
       { id: "circuit-board", name: "Computer / Circuit Board", officeQuote: true },
-      { id: "ignitor", name: "Ignitor", price: 239 },
+      { id: "ignitor", name: "Ignitor", price: 279 },
       { id: "flame-sensor", name: "Flame Sensor", price: 219 },
       { id: "inducer-motor", name: "Inducer Motor Assembly", officeQuote: true },
     ],
@@ -336,8 +336,8 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "thermostats",
     name: "Thermostats",
     items: [
-      { id: "tstat-digital", name: "Digital Thermostat (Basic)", price: 239 },
-      { id: "tstat-wifi", name: "WiFi Digital Thermostat (Honeywell)", price: 469 },
+      { id: "tstat-digital", name: "Digital Thermostat (Basic)", price: 275 },
+      { id: "tstat-wifi", name: "WiFi Digital Thermostat (Honeywell)", price: 540 },
       { id: "tstat-controller", name: "Model-Specific Thermostat / Controller", officeQuote: true },
     ],
   },
